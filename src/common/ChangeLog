@@ -1,3 +1,8 @@
+2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* gst-xml.c (gst_xml_set_child_content): do not output any warning if
+	val == NULL
+
 2004-12-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c: put error = NULL in some gconf calls, we're not caring
