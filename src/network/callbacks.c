@@ -140,13 +140,9 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 
   dialog = GST_NETWORK_TOOL (tool)->dialog;
 
-  /* FIXME: add checks to the dialog */
-  if (TRUE)
+  if (dialog->changed)
     {
       connection_save (dialog);
-      g_object_unref (dialog->iface);
-      gtk_widget_hide (dialog->dialog);
-
       selection = gtk_tree_view_get_selection (GST_NETWORK_TOOL (tool)->interfaces_list);
 
       if (gtk_tree_selection_get_selected (selection, &model, &iter))
@@ -163,6 +159,9 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 	  gst_dialog_modify (tool->main_dialog);
 	}
     }
+
+  g_object_unref (dialog->iface);
+  gtk_widget_hide (dialog->dialog);
 }
 
 void
@@ -385,21 +384,30 @@ on_host_aliases_delete_clicked (GtkWidget *widget, gpointer data)
     }
 }
 
+void
+on_dialog_changed (GtkWidget *widget, gpointer data)
+{
+  GstNetworkTool *network_tool = GST_NETWORK_TOOL (tool);
+
+  network_tool->dialog->changed = TRUE;
+  connection_check_fields (network_tool->dialog);
+}
+
 gboolean
 callbacks_check_hostname_hook (GstDialog *dialog, gpointer data)
 {
   GstNetworkTool *network_tool;
-  gchar *hostname_old, *hostname_new;
-  xmlNode *root, *node;
-  GtkWidget *d;
-  gint res;
+  gchar          *hostname_old, *hostname_new;
+  xmlNodePtr      root, node;
+  GtkWidget      *d;
+  gint            res;
 
   network_tool = GST_NETWORK_TOOL (dialog->tool);
   root = gst_xml_doc_get_root (dialog->tool->config);
   node = gst_xml_element_find_first (root, "hostname");
 
   hostname_old = gst_xml_element_get_content (node);
-  hostname_new = gtk_entry_get_text (network_tool->hostname);
+  hostname_new = (gchar *) gtk_entry_get_text (network_tool->hostname);
 
   if (hostname_old && hostname_new &&
       (strcmp (hostname_new, hostname_old) != 0))

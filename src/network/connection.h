@@ -27,6 +27,7 @@ typedef struct _GstConnectionDialog GstConnectionDialog;
 
 struct _GstConnectionDialog {
   GstIface  *iface;
+  gboolean   changed;
   GtkWidget *dialog;
 
   /* notebook pages */
@@ -72,11 +73,14 @@ struct _GstConnectionDialog {
   GtkWidget *ethernet_frame;
   GtkWidget *plip_frame;
   GtkWidget *modem_frame;
+
+  GtkWidget *ok_button;
 };
 
 GstConnectionDialog *connection_dialog_init (void);
 void connection_dialog_prepare    (GstConnectionDialog*, GstIface*);
 void connection_save (GstConnectionDialog*);
+void connection_check_fields (GstConnectionDialog*);
 gchar *connection_detect_modem (void);
 
 #endif /* __CONNECTION_H */

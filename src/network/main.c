@@ -51,7 +51,28 @@ static GstDialogSignal signals[] = {
   { "connection_bootproto",         "changed", G_CALLBACK (on_bootproto_changed) },
   { "connection_cancel",            "clicked", G_CALLBACK (on_connection_cancel_clicked) },
   { "connection_ok",                "clicked", G_CALLBACK (on_connection_ok_clicked) },
-  { "connection_detect_modem",      "clicked", G_CALLBACK (on_detect_modem_clicked) }
+  { "connection_detect_modem",      "clicked", G_CALLBACK (on_detect_modem_clicked) },
+  /* dialog changing detection */
+  { "connection_ppp_device_active", "toggled", G_CALLBACK (on_dialog_changed) },
+  { "connection_device_active",     "toggled", G_CALLBACK (on_dialog_changed) },
+  { "connection_essid",             "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_wep_key",           "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_bootproto",         "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_address",           "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_netmask",           "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_gateway",           "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_local_address",     "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_remote_address",    "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_serial_port",       "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_dial_type",         "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_volume",            "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_phone_number",      "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_dial_prefix",       "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_login",             "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_password",          "changed", G_CALLBACK (on_dialog_changed) },
+  { "connection_default_gw",        "toggled", G_CALLBACK (on_dialog_changed) },
+  { "connection_persist",           "toggled", G_CALLBACK (on_dialog_changed) },
+  { NULL }
 };
 
 int

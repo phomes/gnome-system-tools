@@ -92,6 +92,15 @@ ethernet_dialog_save (GstConnectionDialog *dialog)
 		NULL);
 }
 
+static gboolean
+ethernet_dialog_check_fields (GstConnectionDialog *dialog)
+{
+  return ((!gtk_toggle_button_get_active (dialog->connection_configured)) ||
+	  (connection_get_bootproto (dialog) == GST_BOOTPROTO_DHCP) ||
+	  ((get_entry_text (dialog->address)) &&
+	   (get_entry_text (dialog->netmask))));
+}
+
 static GtkTreeModel*
 wireless_essid_get_model (const gchar *dev)
 {
@@ -187,6 +196,13 @@ wireless_dialog_save (GstConnectionDialog *dialog)
 		NULL);
 }
 
+static gboolean
+wireless_dialog_check_fields (GstConnectionDialog *dialog)
+{
+  return ((!gtk_toggle_button_get_active (dialog->connection_configured)) ||
+	  (get_entry_text (GTK_BIN (dialog->essid)->child)));
+}
+
 static void
 plip_dialog_prepare (GstConnectionDialog *dialog)
 {
@@ -213,6 +229,14 @@ plip_dialog_save (GstConnectionDialog *dialog)
 		"iface-local-address",  get_entry_text (dialog->local_address),
 		"iface-remote-address", get_entry_text (dialog->remote_address),
 		NULL);
+}
+
+static gboolean
+plip_dialog_check_fields (GstConnectionDialog *dialog)
+{
+  return ((!gtk_toggle_button_get_active (dialog->connection_configured)) ||
+	  ((get_entry_text (dialog->local_address)) &&
+	   (get_entry_text (dialog->remote_address))));
 }
 
 static void
@@ -277,6 +301,16 @@ modem_dialog_save (GstConnectionDialog *dialog)
                 NULL);
 }
 
+static gboolean
+modem_dialog_check_fields (GstConnectionDialog *dialog)
+{
+  return ((!gtk_toggle_button_get_active (dialog->connection_ppp_configured)) ||
+	  ((get_entry_text (dialog->login)) &&
+	   (get_entry_text (dialog->password)) &&
+	   (get_entry_text (GTK_BIN (dialog->serial_port)->child)) &&
+	   (get_entry_text (dialog->phone_number))));
+}
+
 GstConnectionDialog*
 connection_dialog_init (void)
 {
@@ -286,6 +320,8 @@ connection_dialog_init (void)
 
   gcd->iface  = NULL;
   gcd->dialog = gst_dialog_get_widget (tool->main_dialog, "connection_config_dialog");
+
+  gcd->ok_button = gst_dialog_get_widget (tool->main_dialog, "connection_ok");
 
   gcd->notebook         = gst_dialog_get_widget (tool->main_dialog, "connection_notebook");
   gcd->general_page     = gst_dialog_get_widget (tool->main_dialog, "connection_general_page");
@@ -407,6 +443,8 @@ connection_dialog_prepare (GstConnectionDialog *dialog, GstIface *iface)
 	  plip_dialog_prepare (dialog);
 	}
     }
+
+  dialog->changed = FALSE;
 }
 
 void
@@ -438,19 +476,38 @@ connection_save (GstConnectionDialog *dialog)
     gst_iface_set_configured (dialog->iface, active);
 }
 
+void
+connection_check_fields (GstConnectionDialog *dialog)
+{
+  gboolean active;
+
+  if (GST_IS_IFACE_WIRELESS (dialog->iface))
+    active = (wireless_dialog_check_fields (dialog) &&
+	      ethernet_dialog_check_fields (dialog));
+  else if (GST_IS_IFACE_ETHERNET (dialog->iface) ||
+	   GST_IS_IFACE_IRLAN    (dialog->iface))
+    active = ethernet_dialog_check_fields (dialog);
+  else if (GST_IS_IFACE_PLIP (dialog->iface))
+    active = plip_dialog_check_fields (dialog);
+  else
+    active = modem_dialog_check_fields (dialog);
+
+  gtk_widget_set_sensitive (dialog->ok_button, active);
+}
+
 gchar*
 connection_detect_modem (void)
 {
-	xmlNodePtr  root;
-	xmlDoc     *doc;
-	gchar      *device;
+  xmlNodePtr  root;
+  xmlDoc     *doc;
+  gchar      *device;
 
-	doc= gst_tool_run_get_directive (tool, NULL, "detect_modem", NULL);
-	g_return_val_if_fail (doc != NULL, NULL);
+  doc= gst_tool_run_get_directive (tool, NULL, "detect_modem", NULL);
+  g_return_val_if_fail (doc != NULL, NULL);
 
-	root   = gst_xml_doc_get_root (doc);
-	device = gst_xml_get_child_content (root, "device");
-	xmlFreeDoc (doc);
+  root   = gst_xml_doc_get_root (doc);
+  device = gst_xml_get_child_content (root, "device");
+  xmlFreeDoc (doc);
 	
-	return device;
+  return device;
 }

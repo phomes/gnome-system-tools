@@ -1,3 +1,10 @@
+2004-11-27  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* callbacks.[ch], connection.[ch], main.c: handled dialog changing and
+	fields checking.
+	* callbacks.c: fixed a compile warning
+	* connection.c: fixed a function indent
+
 2004-11-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch] (callbacks_check_hostname_hook): added

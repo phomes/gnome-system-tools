@@ -1,12 +1,10 @@
-- make it save correctly modem info in debian
+- context menus for the hosts, dns and search tables, as well as DnD for dns/search
+- create good functions for parsing/validating IP addresses
 - code _get_xml for modem
-- connection dialog fields checking, disabling the "OK" button if necessary
-  - create good functions for parsing/validating IP addresses
+- make it save correctly modem info in debian
+- check that it's handling correctly the wvdial modem connections
 - implement enable_iface_with_config for PPP devices
 - reimplement command line options
-- context menus for the hosts, dns and search tables
-- check that it's handling correctly the wvdial modem connections
 - complete the locations stuff
 - update user docs
 - drink some beer
-
