@@ -48,5 +48,6 @@ void          ifaces_list_setup_popup              (GtkWidget*);
 
 GtkComboBox*  gateways_combo_create                (void);
 void          gateways_combo_select                (gchar*);
+gchar*        gateways_combo_get_selected          (void);
 
 #endif /* __IFACES_LIST_H */

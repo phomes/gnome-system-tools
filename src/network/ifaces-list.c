@@ -301,17 +301,7 @@ add_combo_layout (GtkComboBox *combo)
   GtkCellRenderer *renderer;
 
   gtk_cell_layout_clear (GTK_CELL_LAYOUT (combo));
-/*
-  renderer = gtk_cell_renderer_pixbuf_new ();
-  gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (combo),
-			      renderer, FALSE);
-  gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (combo),
-				  renderer,
-				  "pixbuf", COL_IMAGE,
-				  "visible", COL_HAS_GATEWAY,
-				  NULL);
-  g_object_unref (renderer);
-*/
+
   renderer = gtk_cell_renderer_text_new ();
   gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (combo),
 			      renderer, TRUE);
@@ -368,4 +358,21 @@ gateways_combo_select (gchar *dev)
 
       g_free (iter_dev);
     }
+}
+
+gchar*
+gateways_combo_get_selected (void)
+{
+  GtkComboBox  *combo;
+  GtkTreeModel *model;
+  GtkTreeIter   iter;
+  gchar        *gatewaydev = NULL;
+
+  combo = GST_NETWORK_TOOL (tool)->gateways_list;
+  model = gtk_combo_box_get_model (combo);
+
+  if (gtk_combo_box_get_active_iter (combo, &iter))
+    gtk_tree_model_get (model, &iter, COL_DEV, &gatewaydev, -1);
+
+  return gatewaydev;
 }

@@ -8,6 +8,11 @@
 
 2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* ifaces-list.[ch] (gateways_combo_get_selected): added
+	* transfer.c: save gateway settings
+
+2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* hosts.[ch]: abstracted a bit more, made it able to save the config
 	* transfer.[ch]: somewhat improved
 

@@ -93,6 +93,20 @@ transfer_gateway_to_combo (xmlNodePtr root)
 }
 
 static void
+transfer_gateway_to_xml (xmlNodePtr root)
+{
+  gchar      *gatewaydev = gateways_combo_get_selected ();
+  xmlNodePtr  node       = gst_xml_element_find_first (root, "gatewaydev");
+
+  if (!gatewaydev)
+    gst_xml_element_destroy (node);
+  else
+    gst_xml_element_set_content (node, gatewaydev);
+
+  g_free (gatewaydev);
+}
+
+static void
 transfer_interfaces_to_gui (xmlNodePtr root)
 {
   xmlNodePtr node;
@@ -214,6 +228,7 @@ transfer_gui_to_xml (GstTool *tool, gpointer data)
   transfer_string_to_xml (root, "domain", network_tool->domain);
 
   transfer_interfaces_to_xml (root);
+  transfer_gateway_to_xml (root);
 
   transfer_host_aliases_to_xml (root);
 }
