@@ -209,13 +209,12 @@ gst_iface_wireless_set_config_from_xml (GstIfaceWireless *iface,
   xmlNodePtr configuration;
   gchar *essid, *key;
   
-  configuration = gst_xml_element_find_first (node, "configuration");
-
-  if (!configuration)
-    return;
-
   /* set ethernet configuration */
   gst_iface_ethernet_set_config_from_xml (GST_IFACE_ETHERNET (iface), node);
+
+  configuration = gst_xml_element_find_first (node, "configuration");
+  if (!configuration)
+    return;
 
   essid = gst_xml_get_child_content (configuration, "essid");
   key   = gst_xml_get_child_content (configuration, "key");

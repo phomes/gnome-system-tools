@@ -1,5 +1,11 @@
 2004-11-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* network-iface-wireless.[ch] (gst_iface_wireless_new_from_xml):
+	get the parent class configuration before checking that it's
+	configured
+
+2004-11-08  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* address-list.[ch], gst-network-tool.[ch], ifaces-list.[ch],
 	network-iface.[ch], network-iface-ethernet.[ch],
 	network-iface-irlan.[ch], network-iface-plip.[ch],
