@@ -2142,7 +2142,7 @@ Use this tool for configuring the way your system access to other computers</pro
 			  </child>
 
 			  <child>
-			    <widget class="GtkComboBoxEntry" id="comboboxentry1">
+			    <widget class="GtkComboBoxEntry" id="connection_serial_port">
 			      <property name="visible">True</property>
 			      <property name="items" translatable="yes">/dev/modem
 /dev/ttyS0
@@ -2160,7 +2160,7 @@ Use this tool for configuring the way your system access to other computers</pro
 			  </child>
 
 			  <child>
-			    <widget class="GtkComboBox" id="combobox6">
+			    <widget class="GtkComboBox" id="connection_dial_type">
 			      <property name="visible">True</property>
 			      <property name="items" translatable="yes">Tones
 Pulses</property>
@@ -2175,7 +2175,7 @@ Pulses</property>
 			  </child>
 
 			  <child>
-			    <widget class="GtkComboBox" id="combobox7">
+			    <widget class="GtkComboBox" id="connection_volume">
 			      <property name="visible">True</property>
 			      <property name="items" translatable="yes">Off
 Low
@@ -2297,7 +2297,6 @@ Loud</property>
 			      <property name="yalign">0.5</property>
 			      <property name="xpad">0</property>
 			      <property name="ypad">0</property>
-			      <property name="mnemonic_widget">entry20</property>
 			    </widget>
 			    <packing>
 			      <property name="left_attach">0</property>
@@ -2322,7 +2321,6 @@ Loud</property>
 			      <property name="yalign">0.5</property>
 			      <property name="xpad">0</property>
 			      <property name="ypad">0</property>
-			      <property name="mnemonic_widget">entry21</property>
 			    </widget>
 			    <packing>
 			      <property name="left_attach">0</property>
@@ -2335,7 +2333,7 @@ Loud</property>
 			  </child>
 
 			  <child>
-			    <widget class="GtkEntry" id="entry20">
+			    <widget class="GtkEntry" id="connection_phone_number">
 			      <property name="visible">True</property>
 			      <property name="can_focus">True</property>
 			      <property name="editable">True</property>
@@ -2356,7 +2354,7 @@ Loud</property>
 			  </child>
 
 			  <child>
-			    <widget class="GtkEntry" id="entry21">
+			    <widget class="GtkEntry" id="connection_dial_prefix">
 			      <property name="visible">True</property>
 			      <property name="can_focus">True</property>
 			      <property name="editable">True</property>
@@ -2448,7 +2446,6 @@ Loud</property>
 			      <property name="yalign">0.5</property>
 			      <property name="xpad">0</property>
 			      <property name="ypad">0</property>
-			      <property name="mnemonic_widget">entry22</property>
 			    </widget>
 			    <packing>
 			      <property name="left_attach">0</property>
@@ -2473,7 +2470,6 @@ Loud</property>
 			      <property name="yalign">0.5</property>
 			      <property name="xpad">0</property>
 			      <property name="ypad">0</property>
-			      <property name="mnemonic_widget">entry23</property>
 			    </widget>
 			    <packing>
 			      <property name="left_attach">0</property>
@@ -2486,7 +2482,7 @@ Loud</property>
 			  </child>
 
 			  <child>
-			    <widget class="GtkEntry" id="entry22">
+			    <widget class="GtkEntry" id="connection_login">
 			      <property name="visible">True</property>
 			      <property name="can_focus">True</property>
 			      <property name="editable">True</property>
@@ -2507,7 +2503,7 @@ Loud</property>
 			  </child>
 
 			  <child>
-			    <widget class="GtkEntry" id="entry23">
+			    <widget class="GtkEntry" id="connection_password">
 			      <property name="visible">True</property>
 			      <property name="can_focus">True</property>
 			      <property name="editable">True</property>
@@ -2611,7 +2607,7 @@ Loud</property>
 		      <property name="spacing">6</property>
 
 		      <child>
-			<widget class="GtkCheckButton" id="checkbutton3">
+			<widget class="GtkCheckButton" id="connection_default_gw">
 			  <property name="visible">True</property>
 			  <property name="can_focus">True</property>
 			  <property name="label" translatable="yes">_Set modem as default route to internet</property>
@@ -2630,7 +2626,7 @@ Loud</property>
 		      </child>
 
 		      <child>
-			<widget class="GtkCheckButton" id="checkbutton4">
+			<widget class="GtkCheckButton" id="connection_persist">
 			  <property name="visible">True</property>
 			  <property name="can_focus">True</property>
 			  <property name="label" translatable="yes">_Retry if the connection breaks or fails to start</property>
