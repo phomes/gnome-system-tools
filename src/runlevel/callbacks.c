@@ -42,7 +42,8 @@ on_main_dialog_update_complexity (GtkWidget *main_dialog, gpointer data)
 	table_update_state (complexity);
 }
 
-gboolean callbacks_conf_read_failed_hook (XstTool *tool, XstReportLine *rline, gpointer data)
+gboolean
+callbacks_conf_read_failed_hook (XstTool *tool, XstReportLine *rline, gpointer data)
 {
 	GtkWidget *dialog;
 	gchar *txt;

@@ -37,7 +37,6 @@
 #define RUNLEVEL_TABLE_SPEC "runlevel.etspec"
 
 extern XstTool *tool;
-extern gint used_runlevel;
 
 GtkWidget *runlevel_table;
 GArray *runlevel_array;
@@ -56,12 +55,14 @@ const gchar *runlevel_state_advanced = "\
   </grouping> \
 </ETableState>";
 
-int table_col_count (ETableModel *etc,void *data)
+static int
+table_col_count (ETableModel *etc,void *data)
 {
 	return COL_LEVEL6;
 }
 
-int table_row_count (ETableModel *etc, void *data)
+static int 
+table_row_count (ETableModel *etc, void *data)
 {
 	if (runlevel_array) {
 		return runlevel_array->len;
@@ -69,7 +70,8 @@ int table_row_count (ETableModel *etc, void *data)
 	return 0;
 }
 
-void* table_value_service(xmlNodePtr node)
+static void* 
+table_value_service(xmlNodePtr node)
 {
 	gchar *buf;
 	g_return_val_if_fail (node != NULL, NULL);
@@ -79,7 +81,8 @@ void* table_value_service(xmlNodePtr node)
 	return buf;
 }
 
-void* table_value_runlevel (xmlNodePtr node,gint runlevel)
+static void* 
+table_value_runlevel (xmlNodePtr node,gint runlevel)
 {
 	xmlNodePtr runlevels, rl;
 	gchar *level;
@@ -98,7 +101,8 @@ void* table_value_runlevel (xmlNodePtr node,gint runlevel)
 	return 0;
 }
 
-void* table_value_at (ETableModel *etc, int col, int row, void *data)
+static void*
+table_value_at (ETableModel *etc, int col, int row, void *data)
 {
 	xmlNodePtr node;
 	gint runlevel;
@@ -123,7 +127,8 @@ void* table_value_at (ETableModel *etc, int col, int row, void *data)
 	}
 }
 
-void table_set_value_at (ETableModel *etc, int col, int row, const void *val, void *data)
+static void
+table_set_value_at (ETableModel *etc, int col, int row, const void *val, void *data)
 {
 	xmlNodePtr node,runlevels,rl;
 	gchar *level, *buf;
@@ -157,7 +162,8 @@ void table_set_value_at (ETableModel *etc, int col, int row, const void *val, vo
 	}
 }
 
-gboolean table_is_cell_editable (ETableModel *etc, int col, int row, void *data)
+static gboolean
+table_is_cell_editable (ETableModel *etc, int col, int row, void *data)
 {
 	if (col == COL_SERVICE)
         return FALSE;
@@ -165,32 +171,38 @@ gboolean table_is_cell_editable (ETableModel *etc, int col, int row, void *data)
 		return TRUE;
 }
 
-void* table_duplicate_value (ETableModel *etc, int col, const void *value, void *data)
+static void*
+table_duplicate_value (ETableModel *etc, int col, const void *value, void *data)
 {
         return g_strdup (value);
 }
 
-void table_free_value (ETableModel *etc, int col, void *value, void *data)
+static void
+table_free_value (ETableModel *etc, int col, void *value, void *data)
 {
         g_free (value);
 }
 
-void* table_initialize_value (ETableModel *etc, int col, void *data)
+static void*
+table_initialize_value (ETableModel *etc, int col, void *data)
 {
         return g_strdup ("");
 }
 
-gboolean table_value_is_empty (ETableModel *etc, int col, const void *value, void *data)
+static gboolean
+table_value_is_empty (ETableModel *etc, int col, const void *value, void *data)
 {
         return !(value && *(char *)value);
 }
 
-char* table_value_to_string (ETableModel *etc, int col, const void *value, void *data)
+static char*
+table_value_to_string (ETableModel *etc, int col, const void *value, void *data)
 {
         return g_strdup (value);
 }
 
-ETableExtras* create_extras (void)
+static ETableExtras*
+create_extras (void)
 {
         ETableExtras *extras;
         ECell *ec;
@@ -200,15 +212,11 @@ ETableExtras* create_extras (void)
         return extras;
 }
 
-void on_runlevel_table_cursor_change (ETable *table, gint row, gpointer data)
-{
-}
-
-GtkWidget* table_create (char *widget)
+GtkWidget*
+table_create (char *widget)
 {
 	ETableModel *model;
 	ETableExtras *extras;
-	ETable *table;
 	gchar *spec;
 	if (runlevel_table)
 		return NULL;
@@ -239,13 +247,11 @@ GtkWidget* table_create (char *widget)
 	g_free (spec);
 	g_return_val_if_fail (runlevel_table != NULL, NULL);
 	
-	table = e_table_scrolled_get_table (E_TABLE_SCROLLED (runlevel_table));
-	gtk_signal_connect (GTK_OBJECT (table), "cursor_change", on_runlevel_table_cursor_change, NULL);
-	
 	return runlevel_table;
 }
 
-void table_populate (xmlNodePtr root)
+void 
+table_populate (xmlNodePtr root)
 {
 	xmlNodePtr service,services;
 	ETable *table;
@@ -265,10 +271,10 @@ void table_populate (xmlNodePtr root)
 	e_table_model_changed (table->model);
 }
 
-void table_update_headers (xmlNodePtr root)
+void
+table_update_headers (xmlNodePtr root)
 {
 	ETable *table;
-	xmlNodePtr runlevel;
 	gchar *state, *buf;
 	gint rl;
 	XstDialogComplexity complexity;
@@ -296,12 +302,11 @@ void table_update_headers (xmlNodePtr root)
 	g_free (state);
 }
 	
-	
-
-void table_update_state(XstDialogComplexity complexity)
+void 
+table_update_state(XstDialogComplexity complexity)
 {
 	ETable *table;
-	gchar *state, *runlevel;
+	gchar *state;
 
 	g_return_if_fail (runlevel_table != NULL);
 	

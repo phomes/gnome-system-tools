@@ -33,7 +33,7 @@
 
 extern XstTool *tool;
 
-void
+static void
 transfer_check_data (xmlNodePtr root)
 {
 	g_return_if_fail (root!=NULL);

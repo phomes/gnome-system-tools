@@ -40,15 +40,16 @@
 #include "callbacks.h"
 
 XstTool *tool;
-gint used_runlevel=2;
 
-void 
-connect_signals (XstTool *tool) {
+static void 
+connect_signals (XstTool *tool) 
+{
 	gtk_signal_connect (GTK_OBJECT (tool->main_dialog), "complexity_change", GTK_SIGNAL_FUNC (on_main_dialog_update_complexity), NULL);
 }
 
 
-int main (int argc, char *argv[])
+int 
+main (int argc, char *argv[])
 {
 	XstReportHookEntry report_hooks[]={
 		{"boot_conf_read_failed",	callbacks_conf_read_failed_hook,	XST_REPORT_HOOK_LOAD,	FALSE,	NULL},

@@ -38,12 +38,9 @@ enum {
 	COL_LEVEL6,
 };
 
-xmlNodePtr	get_selected_node	(gint);
-GtkWidget*	table_create		(char*);
-/*
-void 		table_add		(gint,gchar*,gint,gchar*);
-void 		table_delete		(gint);
-*/
-void 		table_populate		(xmlNodePtr);
+GtkWidget*		table_create				(char*);
+void			table_populate				(xmlNodePtr);
+void			table_update_headers		(xmlNodePtr);
+void			table_update_state			(XstDialogComplexity);
 
 #endif /* _E_TABLE_H */

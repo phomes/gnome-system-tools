@@ -29,8 +29,5 @@
 
 gboolean	callbacks_conf_read_failed_hook		(XstTool *tool, XstReportLine *rline, gpointer data);
 void		on_main_dialog_update_complexity	(GtkWidget *main_dialog, gpointer data);
-//void		on_service_add_clicked			(GtkWidget *button, gpointer data);
-//void		on_service_delete_clicked		(GtkWidget *button, gpointer data);
-void		on_buttons_set_sensitive		(gboolean state);
 
 #endif /* CALLBACKS_H */
