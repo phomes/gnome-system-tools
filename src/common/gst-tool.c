@@ -1686,6 +1686,9 @@ gst_tool_read_line_from_backend (GstTool *tool)
 	poll_backend (tool);
 	fgets (line, 1000, tool->read_stream);
 
+	while (gtk_events_pending ())
+		gtk_main_iteration ();
+
 	return g_strdup (line);
 }
 

@@ -1,5 +1,9 @@
 2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* gst-tool.c: made it not to block when su fails
+
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* gst-auth.c, gst-tool.[ch]: improved IO with backends, now updates
 	the GUI while waiting for data to read.
 	* gst-tool.[ch]: readded reports window, with a more modern look, use
