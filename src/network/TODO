@@ -1,4 +1,3 @@
-- ifup my dhpc+multiword essid wlan doesn't work
 - make it save correctly modem info in debian
 - code _get_xml for modem
 - connection dialog fields checking, disabling the "OK" button if necessary
