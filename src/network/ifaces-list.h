@@ -18,21 +18,34 @@
  * Authors: Carlos Garnacho Parro  <carlosg@gnome.org>
  */
 
-#ifndef __CALLBACKS_H
-#define __CALLBACKS_H
+#ifndef __IFACES_LIST_H
+#define __IFACES_LIST_H
 
-void  on_table_selection_changed   (GtkTreeSelection*, gpointer);
-void  on_iface_properties_clicked  (GtkWidget*, gpointer);
-void  on_activate_button_clicked   (GtkWidget*, gpointer);
+#include <gtk/gtktreeview.h>
+#include "network-iface.h"
+#include "gst-xml.h"
 
-void  on_iface_active_changed      (GtkWidget*, gpointer);
-void  on_bootproto_changed         (GtkWidget*, gpointer);
-void  on_connection_cancel_clicked (GtkWidget*, gpointer);
-void  on_connection_ok_clicked     (GtkWidget*, gpointer);
+enum {
+  COL_IMAGE,
+  COL_DESC,
+  COL_OBJECT,
+  COL_DEV,
+  COL_CONFIGURED,
+  COL_ENABLED,
+  COL_HAS_GATEWAY,
+  COL_LAST
+};
 
-gboolean on_table_button_press (GtkWidget*, GdkEventButton*, gpointer);
-gboolean on_table_popup_menu   (GtkWidget*, GtkWidget*);
+GtkTreeModel* ifaces_model_create                   (void);
+void          ifaces_model_add_interface            (GstIface*);
+void          ifaces_model_add_interface_from_xml   (xmlNodePtr);
+void          ifaces_model_modify_interface_at_iter (GtkTreeIter*);
 
+GtkTreeModelFilter* gateways_filter_model_create    (GtkTreeModel *model);
 
+GtkTreeView*  ifaces_list_create                   (void);
+void          ifaces_list_setup_popup              (GtkWidget*);
 
-#endif /* __CALLBACKS_H */
+GtkComboBox*  gateways_combo_create                (void);
+
+#endif /* __IFACES_LIST_H */

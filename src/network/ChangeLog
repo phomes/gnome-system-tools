@@ -1,3 +1,17 @@
+2004-11-08  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* address-list.[ch], gst-network-tool.[ch], ifaces-list.[ch],
+	network-iface.[ch], network-iface-ethernet.[ch],
+	network-iface-irlan.[ch], network-iface-plip.[ch],
+	network-iface-wireless.[ch]: Added files for the new network tool
+
+	* callbacks.[ch], connection.[ch], main.c, transfer.[ch], Makefile.am: 
+	Modified files for the new network tool
+
+	* dns.[ch], hosts.[ch], network-druid.[ch], profile.[ch],
+	profiles-table.[ch]: deleted files, any missing functionality will be
+	reimplemented
+
 2004-11-03  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1
