@@ -1,5 +1,12 @@
 2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* address-list.c, connection.c: fixed some compile warnings
+	* main.c, ifaces-list.[ch], connection.[ch], callbacks.c: readded
+	command line option
+	* network-iface-modem.c: added _get_xml implementation
+
+2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* address-list.c: added DnD
 
 2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>

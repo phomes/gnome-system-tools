@@ -75,10 +75,55 @@ static GstDialogSignal signals[] = {
   { NULL }
 };
 
+static void
+init_standalone_dialog (const gchar *interface)
+{
+  GstNetworkTool *network_tool;
+  GstIface       *iface;
+  GtkWidget      *d;
+
+  network_tool = GST_NETWORK_TOOL (tool);
+  gst_tool_main_with_hidden_dialog (tool, TRUE);
+  iface  = ifaces_model_get_iface_by_name (interface);
+
+  if (iface)
+    {
+      connection_dialog_prepare (network_tool->dialog, iface);
+      network_tool->dialog->standalone = TRUE;
+      g_object_unref (iface);
+
+      gtk_widget_show (network_tool->dialog->dialog);
+      gtk_main ();
+    }
+  else
+    {
+      d = gtk_message_dialog_new (GTK_WINDOW (tool->main_dialog),
+                                  GTK_DIALOG_MODAL,
+                                  GTK_MESSAGE_WARNING,
+                                  GTK_BUTTONS_CLOSE,
+                                  _("The interface \"%s\" does not exist"),
+                                  interface, NULL);
+      gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (d),
+                                                _("Check that it is correctly typed "
+                                                  "and that it is correctly supported "
+                                                  "by your system."),
+                                                NULL);
+      gtk_dialog_run (GTK_DIALOG (d));
+      gtk_widget_destroy (d);
+    }
+}
+
 int
 main (int argc, gchar *argv[])
 {
-  gst_init ("network-admin", argc, argv, NULL);
+  gchar *interface = NULL;
+
+  GOptionEntry entries[] = {
+    { "configure", 'c', 0, G_OPTION_ARG_STRING, &interface, N_("Configure a network interface"), N_("INTERFACE") },
+    { NULL }
+  };
+
+  gst_init ("network-admin", argc, argv, entries);
 
   tool = gst_network_tool_new ();
   gst_network_tool_construct (GST_NETWORK_TOOL (tool), "network", _("Network settings"));
@@ -87,7 +132,10 @@ main (int argc, gchar *argv[])
   gst_dialog_connect_signals (tool->main_dialog, signals);
   gst_dialog_add_apply_hook (tool->main_dialog, callbacks_check_hostname_hook, NULL);
 
-  gst_tool_main (tool, FALSE);
+  if (interface)
+    init_standalone_dialog (interface);
+  else
+    gst_tool_main (tool, FALSE);
 
   return 0;
 }

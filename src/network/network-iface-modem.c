@@ -45,6 +45,8 @@ static void gst_iface_modem_finalize   (GObject            *object);
 static const GdkPixbuf* gst_iface_modem_get_pixbuf   (GstIface *iface);
 static gchar*           gst_iface_modem_get_desc     (GstIface *iface);
 static gboolean         gst_iface_modem_has_gateway  (GstIface *iface);
+static void             gst_iface_modem_impl_get_xml (GstIface *iface,
+                                                      xmlNodePtr node);
 
 static void gst_iface_modem_set_property (GObject      *object,
                                           guint         prop_id,
@@ -152,6 +154,7 @@ gst_iface_modem_class_init (GstIfaceModemClass *class)
   iface_class->get_iface_pixbuf = gst_iface_modem_get_pixbuf;
   iface_class->get_iface_desc   = gst_iface_modem_get_desc;
   iface_class->has_gateway      = gst_iface_modem_has_gateway;
+  iface_class->get_xml          = gst_iface_modem_impl_get_xml;
   
   g_object_class_install_property (object_class,
                                    PROP_LOGIN,
@@ -362,6 +365,45 @@ static gboolean
 gst_iface_modem_has_gateway (GstIface *iface)
 {
   return FALSE;
+}
+
+static void
+gst_iface_modem_impl_get_xml (GstIface *iface, xmlNodePtr node)
+{
+  xmlNodePtr     configuration;
+  GstIfaceModem *iface_modem;
+  gchar         *str;
+
+  g_return_if_fail (GST_IS_IFACE_MODEM (iface));
+  iface_modem = GST_IFACE_MODEM (iface);
+
+  if (gst_iface_is_configured (iface))
+    {
+      configuration = gst_xml_element_find_first (node, "configuration");
+      if (!configuration)
+        configuration = gst_xml_element_add (node, "configuration");
+
+      gst_xml_set_child_content (configuration, "login",        iface_modem->_priv->login);
+      gst_xml_set_child_content (configuration, "password",     iface_modem->_priv->password);
+      gst_xml_set_child_content (configuration, "serial_port",  iface_modem->_priv->serial_port);
+      gst_xml_set_child_content (configuration, "phone_number", iface_modem->_priv->phone_number);
+      gst_xml_set_child_content (configuration, "dial_prefix",  iface_modem->_priv->dial_prefix);
+
+      str = g_strdup_printf ("%i", iface_modem->_priv->volume);
+      gst_xml_set_child_content (configuration, "volume", str);
+      g_free (str);
+
+      str = (iface_modem->_priv->dial_type == GST_DIAL_TYPE_TONES) ?
+	g_strdup ("ATDT") :
+	g_strdup ("ATDP");
+      gst_xml_set_child_content (configuration, "dial_type", str);
+      g_free (str);
+
+      gst_xml_element_set_boolean (configuration, "set_default_gw", iface_modem->_priv->default_gw);
+      gst_xml_element_set_boolean (configuration, "persist", iface_modem->_priv->persist);
+    }
+  
+  GST_IFACE_CLASS (parent_class)->get_xml (iface, node);
 }
 
 void

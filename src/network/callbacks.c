@@ -128,6 +128,9 @@ on_connection_cancel_clicked (GtkWidget *widget, gpointer data)
   dialog = GST_NETWORK_TOOL (tool)->dialog;
   g_object_unref (dialog->iface);
   gtk_widget_hide (dialog->dialog);
+
+  if (dialog->standalone)
+    gtk_main_quit ();
 }
 
 void
@@ -163,6 +166,12 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 
   g_object_unref (dialog->iface);
   gtk_widget_hide (dialog->dialog);
+
+  if (dialog->standalone)
+    {
+      gtk_signal_emit_by_name (GTK_OBJECT (tool->main_dialog), "apply", tool);
+      gtk_main_quit ();
+    }
 }
 
 void

@@ -397,7 +397,7 @@ setup_treeview (GstAddressList *list)
   table_popup = g_new0 (GstTablePopup, 1);
   table_popup->setup = NULL;
   table_popup->properties = NULL;
-  table_popup->popup = popup_menu_create (list->_priv->list);
+  table_popup->popup = popup_menu_create (GTK_WIDGET (list->_priv->list));
 
   g_signal_connect (G_OBJECT (list->_priv->list), "button-press-event",
 		    G_CALLBACK (on_table_button_press), (gpointer) table_popup);

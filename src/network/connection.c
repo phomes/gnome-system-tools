@@ -95,7 +95,7 @@ ethernet_dialog_save (GstConnectionDialog *dialog)
 static gboolean
 ethernet_dialog_check_fields (GstConnectionDialog *dialog)
 {
-  return ((!gtk_toggle_button_get_active (dialog->connection_configured)) ||
+  return ((!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->connection_configured))) ||
 	  (connection_get_bootproto (dialog) == GST_BOOTPROTO_DHCP) ||
 	  ((get_entry_text (dialog->address)) &&
 	   (get_entry_text (dialog->netmask))));
@@ -199,7 +199,7 @@ wireless_dialog_save (GstConnectionDialog *dialog)
 static gboolean
 wireless_dialog_check_fields (GstConnectionDialog *dialog)
 {
-  return ((!gtk_toggle_button_get_active (dialog->connection_configured)) ||
+  return ((!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->connection_configured))) ||
 	  (get_entry_text (GTK_BIN (dialog->essid)->child)));
 }
 
@@ -234,7 +234,7 @@ plip_dialog_save (GstConnectionDialog *dialog)
 static gboolean
 plip_dialog_check_fields (GstConnectionDialog *dialog)
 {
-  return ((!gtk_toggle_button_get_active (dialog->connection_configured)) ||
+  return ((!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->connection_configured))) ||
 	  ((get_entry_text (dialog->local_address)) &&
 	   (get_entry_text (dialog->remote_address))));
 }
@@ -304,7 +304,7 @@ modem_dialog_save (GstConnectionDialog *dialog)
 static gboolean
 modem_dialog_check_fields (GstConnectionDialog *dialog)
 {
-  return ((!gtk_toggle_button_get_active (dialog->connection_ppp_configured)) ||
+  return ((!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->connection_ppp_configured))) ||
 	  ((get_entry_text (dialog->login)) &&
 	   (get_entry_text (dialog->password)) &&
 	   (get_entry_text (GTK_BIN (dialog->serial_port)->child)) &&
@@ -318,6 +318,7 @@ connection_dialog_init (void)
 
   gcd = g_new0 (GstConnectionDialog, 1);
 
+  gcd->standalone = FALSE;
   gcd->iface  = NULL;
   gcd->dialog = gst_dialog_get_widget (tool->main_dialog, "connection_config_dialog");
 

@@ -40,6 +40,7 @@ GtkTreeModel* ifaces_model_create                   (void);
 void          ifaces_model_add_interface            (GstIface*);
 void          ifaces_model_add_interface_from_xml   (xmlNodePtr);
 void          ifaces_model_modify_interface_at_iter (GtkTreeIter*);
+GstIface*     ifaces_model_get_iface_by_name        (const gchar*);
 
 GtkTreeModelFilter* gateways_filter_model_create    (GtkTreeModel *model);
 

@@ -28,6 +28,7 @@ typedef struct _GstConnectionDialog GstConnectionDialog;
 struct _GstConnectionDialog {
   GstIface  *iface;
   gboolean   changed;
+  gboolean   standalone;
   GtkWidget *dialog;
 
   /* notebook pages */
