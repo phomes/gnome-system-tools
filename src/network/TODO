@@ -1,3 +1,4 @@
+- update the set_iface, delete_iface and *get_files in the backends, they depended on the interface hash format
 - complete the hosts stuff
 - complete the locations stuff
 - add modem devices

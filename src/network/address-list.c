@@ -25,6 +25,9 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include "address-list.h"
+#include "gst-tool.h"
+
+extern GstTool *tool;
 
 struct _GstAddressListPrivate {
   GtkTreeView       *list;
@@ -327,7 +330,7 @@ on_editing_canceled (GtkCellRenderer *renderer, gpointer data)
   gtk_tree_model_get (model, &iter, 1, &is_new_row, -1);
 
   if (is_new_row)
-    on_element_deleted (NULL, list);
+    gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
 }
 
 static void
@@ -351,6 +354,7 @@ on_editing_done (GtkCellRenderer *renderer,
 		      0, new_text,
 		      1, FALSE,
 		      -1);
+  gst_dialog_modify (tool->main_dialog);
 }
 
 static void
@@ -366,6 +370,8 @@ on_element_deleted (GtkWidget *widget, gpointer data)
 
   if (gtk_tree_selection_get_selected (selection, &model, &iter))
     gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+
+  gst_dialog_modify (tool->main_dialog);
 }
 
 static void
@@ -412,6 +418,30 @@ gst_address_list_add_address (GstAddressList *list,
 		      0, address,
 		      1, FALSE,
 		      -1);
+}
+
+GSList*
+gst_address_list_get_list (GstAddressList *list)
+{
+  GtkTreeModel *model;
+  GtkTreeIter   iter;
+  GSList       *l = NULL;
+  gboolean      valid;
+  gchar        *address;
+
+  g_return_if_fail (list != NULL);
+
+  model = gtk_tree_view_get_model (list->_priv->list);
+  valid = gtk_tree_model_get_iter_first (model, &iter);
+
+  while (valid)
+    {
+      gtk_tree_model_get (model, &iter, 0, &address, -1);
+      l = g_slist_append (l, address);
+      valid = gtk_tree_model_iter_next (model, &iter);
+    }
+
+  return l;
 }
 
 GstAddressList*

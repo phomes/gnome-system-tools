@@ -37,6 +37,9 @@ static GstDialogSignal signals[] = {
   /* connections tab */
   { "properties_button",            "clicked", G_CALLBACK (on_iface_properties_clicked) },
   { "activate_button",              "clicked", G_CALLBACK (on_activate_button_clicked) },
+  /* general tab */
+  { "hostname",                     "changed", G_CALLBACK (gst_dialog_modify_cb) },
+  { "domain",                       "changed", G_CALLBACK (gst_dialog_modify_cb) },
   /* connection dialog */
   { "connection_device_active",     "clicked", G_CALLBACK (on_iface_active_changed) },
   { "connection_ppp_device_active", "clicked", G_CALLBACK (on_iface_active_changed) },
@@ -53,7 +56,7 @@ main (int argc, gchar *argv[])
   tool = gst_network_tool_new ();
   gst_network_tool_construct (GST_NETWORK_TOOL (tool), "network", _("Network settings"));
 
-  gst_tool_set_xml_funcs (tool, transfer_xml_to_gui, NULL, NULL);
+  gst_tool_set_xml_funcs (tool, transfer_xml_to_gui, transfer_gui_to_xml, NULL);
   gst_dialog_connect_signals (tool->main_dialog, signals);
   gst_tool_main (tool, FALSE);
 

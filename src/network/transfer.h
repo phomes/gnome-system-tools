@@ -21,3 +21,4 @@
 #include "gst.h"
 
 void  transfer_xml_to_gui (GstTool*, gpointer);
+void  transfer_gui_to_xml (GstTool*, gpointer);
