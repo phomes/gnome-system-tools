@@ -107,15 +107,15 @@ static void
 purge_interfaces (xmlNodePtr root)
 {
   xmlNodePtr  node, node_next;
-  gchar      *dev;
+  gchar      *type;
 
   /* destroy all but lo */
   for (node = gst_xml_element_find_first (root, "interface"); node;)
     {
       node_next = gst_xml_element_find_next (node, "interface");
-      dev = gst_xml_get_child_content (node, "dev");
+      type = gst_xml_element_get_attribute (node, "type");
 
-      if (strcmp (dev, "lo") != 0)
+      if (!type || (type && (strcmp (type, "loopback") != 0)))
         gst_xml_element_destroy (node);
 
       node = node_next;

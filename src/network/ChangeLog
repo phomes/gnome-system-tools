@@ -1,3 +1,11 @@
+2004-11-18  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* callbacks.[ch], main.c, network-iface.c: it now disables interfaces
+	* transfer.c: do not delete loopback based on interface type, not dev
+	name
+	* connection.c, callbacks.c: moved a g_object_ref/unref to make the
+	code easier to read
+
 2004-11-17  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-ethernet.c: fixed silly bug that got me annoyed, woo!

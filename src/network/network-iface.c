@@ -22,7 +22,10 @@
 #include <glib/gi18n.h>
 #include <gdk/gdkpixbuf.h>
 #include "gst-xml.h"
+#include "gst-tool.h"
 #include "network-iface.h"
+
+extern GstTool *tool;
 
 struct _GstIfacePriv
 {
@@ -411,7 +414,10 @@ gst_iface_disable (GstIface *iface)
 {
   g_return_if_fail (GST_IS_IFACE (iface));
 
-  /* FIXME: do something!!! */
+  gst_tool_run_set_directive (tool, NULL, NULL,
+			      "enable_iface", iface->_priv->dev, "0", NULL);
+
+  iface->_priv->is_enabled = FALSE;
 }
 
 void

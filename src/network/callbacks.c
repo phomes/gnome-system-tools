@@ -56,7 +56,7 @@ on_table_selection_changed (GtkTreeSelection *selection, gpointer data)
     }
 
   gtk_widget_set_sensitive (properties, state_properties);
-  gtk_widget_set_sensitive (activate, state_activate);
+  gtk_widget_set_sensitive (activate,   state_activate);
   gtk_widget_set_sensitive (deactivate, state_deactivate);
 }
 
@@ -79,6 +79,7 @@ on_iface_properties_clicked (GtkWidget *widget, gpointer data)
 
       dialog = GST_NETWORK_TOOL (tool)->dialog;
       connection_dialog_prepare (dialog, iface);
+      g_object_unref (iface);
 
       gtk_window_set_transient_for (GTK_WINDOW (dialog->dialog), GTK_WINDOW (tool->main_dialog));
       gtk_widget_show (dialog->dialog);
@@ -149,6 +150,8 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 
       if (gtk_tree_selection_get_selected (selection, &model, &iter))
 	ifaces_model_modify_interface_at_iter (&iter);
+
+      gst_dialog_modify (tool->main_dialog);
     }
 }
 
@@ -223,4 +226,28 @@ void
 on_activate_button_clicked (GtkWidget *widget, gpointer data)
 {
   gtk_widget_destroy (GST_NETWORK_TOOL (tool)->interfaces_list);
+}
+
+void
+on_deactivate_button_clicked (GtkWidget *widget, gpointer data)
+{
+  GtkTreeSelection *selection;
+  GtkTreeModel *model;
+  GtkTreeIter   iter;
+  GstIface     *iface;
+
+  selection = gtk_tree_view_get_selection (GST_NETWORK_TOOL (tool)->interfaces_list);
+
+  if (gtk_tree_selection_get_selected (selection, &model, &iter))
+    {
+      gtk_tree_model_get (model, &iter,
+			  COL_OBJECT, &iface,
+			  -1);
+
+      gst_iface_disable (iface);
+      ifaces_model_modify_interface_at_iter (&iter);
+      g_object_unref (iface);
+
+      g_signal_emit_by_name (G_OBJECT (selection), "changed");
+    }
 }

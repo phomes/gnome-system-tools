@@ -258,7 +258,7 @@ connection_dialog_init (void)
 void
 connection_dialog_prepare (GstConnectionDialog *dialog, GstIface *iface)
 {
-  dialog->iface = iface;
+  dialog->iface = g_object_ref (iface);
   
   /* FIXME: at this moment there isn't modem connection implemented */
 
