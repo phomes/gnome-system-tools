@@ -1,5 +1,9 @@
 2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* address-list.c: added DnD
+
+2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* address-list.c, hosts.c: added popup menus
 	* callbacks.[ch], ifaces-list.[ch]: generalized a bit the popup menu
 	stuff.

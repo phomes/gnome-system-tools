@@ -298,11 +298,77 @@ popup_menu_create (GtkWidget *widget)
 }
 
 static void
+on_drag_data_get (GtkTreeView      *treeview,
+		  GdkDragContext   *context,
+		  GtkSelectionData *data,
+		  guint             info,
+		  guint             time,
+		  gpointer          user_data)
+{
+  GtkTreeSelection *selection;
+  GtkTreeModel     *model;
+  GtkTreeIter       iter;
+  gchar            *ip_address;
+
+  selection = gtk_tree_view_get_selection (treeview);
+
+  if (gtk_tree_selection_get_selected (selection, &model, &iter))
+    {
+      gtk_tree_model_get (model, &iter, 0, &ip_address, -1);
+      gtk_selection_data_set (data, gdk_atom_intern ("x/dns-data", FALSE),
+			      8, ip_address, strlen (ip_address) + 1);
+    }
+}
+
+static void
+on_drag_data_received (GtkTreeView *treeview,
+		       GdkDragContext *context,
+		       gint x,
+		       gint y,
+		       GtkSelectionData *data,
+		       guint info,
+		       guint time)
+{
+  GtkTreeModel *model = gtk_tree_view_get_model (treeview);
+  GtkTreePath *dest_path;
+  GtkTreeViewDropPosition pos;
+  GtkTreeIter dest_iter, iter;
+
+  if (data->data == NULL || data->length == -1)
+    {
+      gtk_drag_finish (context, FALSE, FALSE, GDK_CURRENT_TIME);
+      return;
+    }
+
+  if (gtk_tree_view_get_dest_row_at_pos (treeview, x, y, &dest_path, &pos))
+    {
+      if (!gtk_tree_model_get_iter (model, &dest_iter, dest_path))
+        {
+	  gtk_drag_finish (context, FALSE, FALSE, GDK_CURRENT_TIME);
+	  return;
+	}
+
+      if (pos == GTK_TREE_VIEW_DROP_BEFORE)
+	gtk_list_store_insert_before (GTK_LIST_STORE (model), &iter, &dest_iter);
+      else
+	gtk_list_store_insert_after (GTK_LIST_STORE (model), &iter, &dest_iter);
+    }
+  else
+    gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+
+  gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0, data->data, -1);
+  gtk_drag_finish (context, TRUE, TRUE, GDK_CURRENT_TIME);
+
+  gst_dialog_modify (tool->main_dialog);
+}
+
+static void
 setup_treeview (GstAddressList *list)
 {
   GtkCellRenderer *renderer;
   GtkTreeModel    *model;
   GstTablePopup   *table_popup;
+  GtkTargetEntry   target = { "dns", GTK_TARGET_SAME_WIDGET, 0 };
 
   model = GTK_TREE_MODEL (gtk_list_store_new (2, G_TYPE_STRING, G_TYPE_BOOLEAN));
   gtk_tree_view_set_model (list->_priv->list, model);
@@ -331,12 +397,28 @@ setup_treeview (GstAddressList *list)
   table_popup = g_new0 (GstTablePopup, 1);
   table_popup->setup = NULL;
   table_popup->properties = NULL;
-  table_popup->popup = popup_menu_create (list);
+  table_popup->popup = popup_menu_create (list->_priv->list);
 
   g_signal_connect (G_OBJECT (list->_priv->list), "button-press-event",
 		    G_CALLBACK (on_table_button_press), (gpointer) table_popup);
   g_signal_connect (G_OBJECT (list->_priv->list), "popup_menu",
 		    G_CALLBACK (on_table_popup_menu), (gpointer) table_popup);
+
+  g_signal_connect (G_OBJECT (list->_priv->list), "drag-data-get",
+		    G_CALLBACK (on_drag_data_get), NULL);
+  g_signal_connect (G_OBJECT (list->_priv->list), "drag_data_received",
+		    G_CALLBACK (on_drag_data_received), NULL);
+
+  gtk_tree_view_enable_model_drag_source (GTK_TREE_VIEW (list->_priv->list),
+					  GDK_BUTTON1_MASK,
+					  &target,
+					  1,
+					  GDK_ACTION_MOVE);
+
+  gtk_tree_view_enable_model_drag_dest (GTK_TREE_VIEW (list->_priv->list),
+					&target,
+					1,
+					GDK_ACTION_MOVE);
 }
 
 static void
