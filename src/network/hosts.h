@@ -18,24 +18,19 @@
  * Authors: Carlos Garnacho Parro  <carlosg@gnome.org>
  */
 
-#ifndef __CALLBACKS_H
-#define __CALLBACKS_H
+#ifndef __HOSTS_H_
+#define __HOSTS_H_
 
-void  on_table_selection_changed   (GtkTreeSelection*, gpointer);
-void  on_iface_properties_clicked  (GtkWidget*, gpointer);
-void  on_activate_button_clicked   (GtkWidget*, gpointer);
-void  on_deactivate_button_clicked (GtkWidget*, gpointer);
+#include <gtk/gtk.h>
 
-void  on_iface_active_changed      (GtkWidget*, gpointer);
-void  on_bootproto_changed         (GtkWidget*, gpointer);
-void  on_connection_cancel_clicked (GtkWidget*, gpointer);
-void  on_connection_ok_clicked     (GtkWidget*, gpointer);
+enum {
+  COL_HOST_IP,
+  COL_HOST_ALIASES,
+  COL_HOST_LAST
+};
 
-gboolean on_table_button_press (GtkWidget*, GdkEventButton*, gpointer);
-gboolean on_table_popup_menu   (GtkWidget*, GtkWidget*);
+GtkTreeView*   host_aliases_list_create (void);
+void           host_aliases_add (const gchar*, const gchar*);
+void           host_aliases_run_dialog (GtkTreeIter*);
 
-void  on_host_aliases_add_clicked        (GtkWidget*, gpointer);
-void  on_host_aliases_properties_clicked (GtkWidget*, gpointer);
-void  on_host_aliases_delete_clicked     (GtkWidget*, gpointer);
-
-#endif /* __CALLBACKS_H */
+#endif /* __HOSTS_H_ */

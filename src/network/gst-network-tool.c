@@ -23,6 +23,7 @@
 #include "gst-network-tool.h"
 #include "ifaces-list.h"
 #include "connection.h"
+#include "hosts.h"
 
 static void gst_network_tool_class_init (GstNetworkToolClass *class);
 static void gst_network_tool_init       (GstNetworkTool      *tool);
@@ -71,6 +72,7 @@ gst_network_tool_init (GstNetworkTool *tool)
   tool->hostname = NULL;
   tool->domain = NULL;
   tool->dialog = NULL;
+  tool->host_aliases_list = NULL;
   tool->icon_theme = gtk_icon_theme_get_default ();
 }
 
@@ -145,6 +147,8 @@ gst_network_tool_construct (GstNetworkTool *tool,
   tool->gateways_model   = gateways_filter_model_create (tool->interfaces_model);
   tool->interfaces_list  = ifaces_list_create ();
   tool->gateways_list    = gateways_combo_create ();
+
+  tool->host_aliases_list = host_aliases_list_create ();
 
   tool->dialog = connection_dialog_init ();
 }

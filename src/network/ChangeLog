@@ -1,3 +1,10 @@
+2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* hosts.[ch]: added for handling /etc/hosts editing
+	* Makefile.am: ditto
+	* callbacks.[ch], gst-network-tool.[ch], main.c, transfer.c: handled
+	hosts aliases editing
+
 2004-11-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c, network-iface.[ch]: made it able to enable ifaces

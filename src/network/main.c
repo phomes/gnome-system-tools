@@ -41,6 +41,10 @@ static GstDialogSignal signals[] = {
   /* general tab */
   { "hostname",                     "changed", G_CALLBACK (gst_dialog_modify_cb) },
   { "domain",                       "changed", G_CALLBACK (gst_dialog_modify_cb) },
+  /* host aliases tab */
+  { "host_aliases_add",             "clicked", G_CALLBACK (on_host_aliases_add_clicked) },
+  { "host_aliases_properties",      "clicked", G_CALLBACK (on_host_aliases_properties_clicked) },
+  { "host_aliases_delete",          "clicked", G_CALLBACK (on_host_aliases_delete_clicked) },
   /* connection dialog */
   { "connection_device_active",     "clicked", G_CALLBACK (on_iface_active_changed) },
   { "connection_ppp_device_active", "clicked", G_CALLBACK (on_iface_active_changed) },

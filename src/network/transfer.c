@@ -22,6 +22,7 @@
 #include "address-list.h"
 #include "gst-network-tool.h"
 #include "ifaces-list.h"
+#include "hosts.h"
 
 extern GstTool *tool;
 
@@ -144,6 +145,39 @@ transfer_interfaces_to_xml (xmlNodePtr root)
     }
 }
 
+static void
+transfer_host_aliases_to_gui (xmlNodePtr root)
+{
+  xmlNodePtr  node, alias;
+  GString    *aliases;
+  gchar      *address, *str;
+
+  for (node = gst_xml_element_find_first (root, "statichost");
+       node; node = gst_xml_element_find_next (node, "statichost"))
+    {
+      address = gst_xml_get_child_content (node, "ip");
+      aliases = NULL;
+
+      for (alias = gst_xml_element_find_first (node, "alias");
+	   alias; alias = gst_xml_element_find_next (alias, "alias"))
+        {
+	  str = gst_xml_element_get_content (alias);
+	  
+	  if (!aliases)
+	    aliases = g_string_new (str);
+	  else
+	    g_string_append_printf (aliases, " %s", str);
+
+	  g_free (str);
+	}
+
+      host_aliases_add (address, aliases->str);
+
+      g_free (address);
+      g_string_free (aliases, TRUE);
+    }
+}
+
 void
 transfer_xml_to_gui (GstTool *tool, gpointer data)
 {
@@ -161,6 +195,8 @@ transfer_xml_to_gui (GstTool *tool, gpointer data)
 
   transfer_interfaces_to_gui (root);
   transfer_gateway_to_combo (root);
+
+  transfer_host_aliases_to_gui (root);
 
   gst_dialog_set_modified (tool->main_dialog, FALSE);
 }

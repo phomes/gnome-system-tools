@@ -30,6 +30,7 @@ network_admin_SOURCES = 			\
 	ifaces-list.c ifaces-list.h		\
 	callbacks.c callbacks.h			\
 	connection.c connection.h		\
+	hosts.c hosts.h				\
 	main.c 
 
 toolpixmaps =

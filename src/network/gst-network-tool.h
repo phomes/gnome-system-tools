@@ -56,6 +56,8 @@ struct _GstNetworkTool
   GtkTreeView  *interfaces_list;
   GtkComboBox  *gateways_list;
 
+  GtkTreeView *host_aliases_list;
+
   GtkEntry *hostname;
   GtkEntry *domain;
 

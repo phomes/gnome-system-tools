@@ -271,3 +271,39 @@ on_deactivate_button_clicked (GtkWidget *widget, gpointer data)
 {
   enable_disable_iface (GST_NETWORK_TOOL (tool), FALSE);
 }
+
+void
+on_host_aliases_add_clicked (GtkWidget *widget, gpointer data)
+{
+  host_aliases_run_dialog (NULL);
+}
+
+void
+on_host_aliases_properties_clicked (GtkWidget *widget, gpointer data)
+{
+  GtkTreeSelection *selection;
+  GtkTreeView      *list;
+  GtkTreeModel     *model;
+  GtkTreeIter       iter;
+
+  list  = GST_NETWORK_TOOL (tool)->host_aliases_list;
+  selection = gtk_tree_view_get_selection (list);
+
+  if (gtk_tree_selection_get_selected (selection, &model, &iter))
+    host_aliases_run_dialog (&iter);
+}
+
+void
+on_host_aliases_delete_clicked (GtkWidget *widget, gpointer data)
+{
+  GtkTreeSelection *selection;
+  GtkTreeView      *list;
+  GtkTreeModel     *model;
+  GtkTreeIter       iter;
+
+  list  = GST_NETWORK_TOOL (tool)->host_aliases_list;
+  selection = gtk_tree_view_get_selection (list);
+
+  if (gtk_tree_selection_get_selected (selection, &model, &iter))
+    gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+}
