@@ -31,6 +31,7 @@ struct _GstIfacePriv
   gboolean  is_configured;
   gchar    *dev;
   gchar    *hwaddr;
+  gchar    *file;
 };
 
 static void gst_iface_class_init (GstIfaceClass *class);
@@ -55,6 +56,7 @@ enum {
   PROP_ENABLED,
   PROP_CONFIGURED,
   PROP_DEV,
+  PROP_FILE,
   PROP_HWADDR
 };
 
@@ -128,6 +130,13 @@ gst_iface_class_init (GstIfaceClass *class)
 							NULL,
 							G_PARAM_READWRITE));
   g_object_class_install_property (object_class,
+				   PROP_FILE,
+				   g_param_spec_string ("iface_file",
+							"Iface file",
+							"Filename of the iface",
+							NULL,
+							G_PARAM_READWRITE));
+  g_object_class_install_property (object_class,
 				   PROP_HWADDR,
 				   g_param_spec_string ("iface_hwaddr",
 							"Iface hwaddr",
@@ -157,6 +166,7 @@ gst_iface_finalize (GObject *object)
     {
       g_free (iface->_priv->dev);
       g_free (iface->_priv->hwaddr);
+      g_free (iface->_priv->file);
 
       g_free (iface->_priv);
       iface->_priv = NULL;
@@ -191,6 +201,10 @@ gst_iface_set_property (GObject      *object,
       g_free (iface->_priv->dev);
       iface->_priv->dev = g_value_dup_string (value);
       break;
+    case PROP_FILE:
+      g_free (iface->_priv->file);
+      iface->_priv->file = g_value_dup_string (value);
+      break;
     case PROP_HWADDR:
       g_free (iface->_priv->hwaddr);
       iface->_priv->hwaddr = g_value_dup_string (value);
@@ -222,6 +236,9 @@ gst_iface_get_property (GObject      *object,
     case PROP_DEV:
       g_value_set_string (value, iface->_priv->dev);
       break;
+    case PROP_FILE:
+      g_value_set_string (value, iface->_priv->file);
+      break;
     case PROP_HWADDR:
       g_value_set_string (value, iface->_priv->hwaddr);
       break;
@@ -247,6 +264,11 @@ gst_iface_impl_get_xml (GstIface *iface, xmlNodePtr node)
         configuration = gst_xml_element_add (node, "configuration");
 
       gst_xml_element_set_boolean (configuration, "auto", iface->_priv->is_auto);
+
+      if (iface->_priv->file)
+        gst_xml_set_child_content (configuration, "file", iface->_priv->file);
+      else
+        gst_xml_set_child_content (configuration, "file", iface->_priv->dev);
     }
 }
 
@@ -254,7 +276,7 @@ void
 gst_iface_set_config_from_xml (GstIface   *iface,
 			       xmlNodePtr  node)
 {
-  gchar      *dev, *hwaddr;
+  gchar      *dev, *file, *hwaddr;
   gboolean    enabled;
   xmlNodePtr  configuration;
 
@@ -262,12 +284,14 @@ gst_iface_set_config_from_xml (GstIface   *iface,
   g_return_if_fail (node != NULL);
 
   dev = gst_xml_get_child_content (node, "dev");
+  file = gst_xml_get_child_content (node, "file");
   hwaddr = gst_xml_get_child_content (node, "hwaddr");
   enabled = gst_xml_element_get_boolean (node, "enabled");
   configuration = gst_xml_element_find_first (node, "configuration");
 
   g_object_set (G_OBJECT (iface),
 		"iface-dev",        dev,
+		"iface-file",       file,
 		"iface-hwaddr",     hwaddr,
 		"iface-enabled",    enabled,
 		"iface-auto",       enabled,
@@ -275,6 +299,7 @@ gst_iface_set_config_from_xml (GstIface   *iface,
 		NULL);
 
   g_free (dev);
+  g_free (file);
   g_free (hwaddr);
 }
 

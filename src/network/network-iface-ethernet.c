@@ -321,14 +321,17 @@ gst_iface_ethernet_impl_get_xml (GstIface *iface, xmlNodePtr node)
       if (!configuration)
         configuration = gst_xml_element_add (node, "configuration");
 
-      gst_xml_set_child_content (configuration, "address", iface_ethernet->_priv->address);
-      gst_xml_set_child_content (configuration, "netmask", iface_ethernet->_priv->netmask);
-      gst_xml_set_child_content (configuration, "gateway", iface_ethernet->_priv->gateway);
-      gst_xml_set_child_content (configuration, "network", iface_ethernet->_priv->network);
-      gst_xml_set_child_content (configuration, "broadcast", iface_ethernet->_priv->broadcast);
-
-      gst_xml_set_child_content (configuration, "bootproto",
-				 (iface_ethernet->_priv->bootproto == GST_BOOTPROTO_DHCP) ? "dhcp" : "static");
+      if (iface_ethernet->_priv->bootproto == GST_BOOTPROTO_DHCP)
+        gst_xml_set_child_content (configuration, "bootproto", "dhcp");
+      else
+        {
+          gst_xml_set_child_content (configuration, "bootproto", "static");
+          gst_xml_set_child_content (configuration, "address",   iface_ethernet->_priv->address);
+          gst_xml_set_child_content (configuration, "netmask",   iface_ethernet->_priv->netmask);
+          gst_xml_set_child_content (configuration, "gateway",   iface_ethernet->_priv->gateway);
+          gst_xml_set_child_content (configuration, "network",   iface_ethernet->_priv->network);
+          gst_xml_set_child_content (configuration, "broadcast", iface_ethernet->_priv->broadcast);
+        }
     }
 
   GST_IFACE_CLASS (parent_class)->get_xml (iface, node);

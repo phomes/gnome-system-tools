@@ -54,7 +54,6 @@ transfer_address_list_to_xml (xmlNodePtr root, gchar *tag, GstAddressList *al)
     {
       node = gst_xml_element_add (root, tag);
       gst_xml_element_set_content (node, l->data);
-      g_print ("!!!!! %s %s\n", tag, l->data);
       l = l->next;
     }
 
@@ -105,6 +104,25 @@ transfer_interfaces_to_gui (xmlNodePtr root)
 }
 
 static void
+purge_interfaces (xmlNodePtr root)
+{
+  xmlNodePtr  node, node_next;
+  gchar      *dev;
+
+  /* destroy all but lo */
+  for (node = gst_xml_element_find_first (root, "interface"); node;)
+    {
+      node_next = gst_xml_element_find_next (node, "interface");
+      dev = gst_xml_get_child_content (node, "dev");
+
+      if (strcmp (dev, "lo") != 0)
+        gst_xml_element_destroy (node);
+
+      node = node_next;
+    }
+}
+
+static void
 transfer_interfaces_to_xml (xmlNodePtr root)
 {
   GtkTreeModel *model;
@@ -114,7 +132,7 @@ transfer_interfaces_to_xml (xmlNodePtr root)
 
   model = GST_NETWORK_TOOL (tool)->interfaces_model;
   valid = gtk_tree_model_get_iter_first (model, &iter);
-  gst_xml_element_destroy_children_by_name (root, "interface");
+  purge_interfaces (root);
 
   while (valid)
     {

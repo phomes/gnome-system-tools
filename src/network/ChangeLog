@@ -1,5 +1,11 @@
 2004-11-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* network-iface-ethernet.c: improved config saving
+	* network-iface.c: handled "file" tag
+	* transfer.c: delete all ifaces but loopback
+
+2004-11-16  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* network-iface.c network-iface-ethernet.c: implemented (get_xml)
 
 2004-11-15  Carlos Garnacho Parro  <carlosg@gnome.org>

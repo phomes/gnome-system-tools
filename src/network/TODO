@@ -1,5 +1,4 @@
-- get&save file tag
-- preserve lo iface
+- preserve lo iface based on iface type, not iface name
 - complete the hosts stuff
 - complete the locations stuff
 - add modem devices
