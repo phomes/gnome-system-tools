@@ -1,3 +1,7 @@
+2004-10-29  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+        * gst-tool.[ch] (gst_init): use GOption instead of popt
+
 2004-11-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c (gst_tool_run_set_directive_va): made it really able

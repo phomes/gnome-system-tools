@@ -1559,43 +1559,24 @@ try_show_usage_warning (void)
 }
 
 void
-gst_init (const gchar *app_name, int argc, char *argv [], const poptOption options)
+gst_init (const gchar *app_name, int argc, char *argv [], GOptionEntry *entries)
 {
-	GnomeProgram *program;
-	struct poptOption gst_options[] =
-	{
-		{NULL, '\0', 0, NULL, 0}
-	};
+	GnomeProgram   *program;
+	GOptionContext *context;
 
 	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
 
-#warning FIXME	
-#if 0	
-        gnomelib_register_popt_table (gst_options, "general GST options");
+	if (entries) {
+		context = g_option_context_new (NULL);
+		g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
+		g_option_context_add_group (context, gtk_get_option_group (TRUE));
+		g_option_context_parse (context, &argc, &argv, NULL);
+	}
 
-	if (options == NULL) {
-		gnome_init (app_name, VERSION, argc, argv);
-	} else {
-		poptContext ctx;
-		GList *args_list = NULL;
-		char **args;
-		gint i;
-		
-		gnome_init_with_popt_table (app_name, VERSION, argc, argv, options, 0, &ctx);
-
-		args = (char**) poptGetArgs(ctx);
-	
-		for (i = 0; args && args[i]; i++) {
-			args_list = g_list_append (args_list, args[i]);
-		}
-		poptFreeContext (ctx);
-	}	
-#endif
  	program = gnome_program_init (app_name, VERSION,
 				      LIBGNOMEUI_MODULE, argc, argv,
-				      GNOME_PARAM_POPT_TABLE, options,
 				      GNOME_PARAM_APP_DATADIR, DATADIR,
 				      GNOME_PARAM_HUMAN_READABLE_NAME,
 				      _("GNOME System Tools"),

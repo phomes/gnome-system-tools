@@ -125,7 +125,7 @@ GtkType      gst_tool_get_type            (void);
 
 void         gst_init                     (const gchar *app_name,
 					   int argc, char *argv [],
-					   const poptOption options);
+					   GOptionEntry *entries);
 
 void         gst_tool_main                (GstTool *tool, gboolean no_main_loop);
 void         gst_tool_main_with_hidden_dialog (GstTool *tool, gboolean no_main_loop);
