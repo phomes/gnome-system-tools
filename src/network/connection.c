@@ -390,7 +390,6 @@ connection_dialog_prepare (GstConnectionDialog *dialog, GstIface *iface)
 {
   dialog->iface = g_object_ref (iface);
   
-  /* FIXME: at this moment there isn't modem connection implemented */
   if (GST_IS_IFACE_MODEM (iface))
     {
       gtk_widget_hide (dialog->general_page);
@@ -487,7 +486,7 @@ connection_save (GstConnectionDialog *dialog)
         plip_dialog_save (dialog);
     }
 
-    gst_iface_set_configured (dialog->iface, active);
+  gst_iface_set_configured (dialog->iface, active);
 }
 
 void

@@ -63,6 +63,7 @@ GType    gst_address_list_get_type (void);
 GstAddressList *gst_address_list_new         (GtkTreeView*, GtkButton*, GtkButton*, GstAddressType);
 void            gst_address_list_add_address (GstAddressList*, const gchar*);
 GSList*         gst_address_list_get_list    (GstAddressList*);
+void            gst_address_list_clear       (GstAddressList*);
 
 #ifdef __cplusplus
 }

@@ -31,8 +31,9 @@ static void gst_iface_irlan_class_init (GstIfaceIrlanClass *class);
 static void gst_iface_irlan_init       (GstIfaceIrlan      *iface);
 static void gst_iface_irlan_finalize   (GObject *object);
 
-static const GdkPixbuf* gst_iface_irlan_get_pixbuf (GstIface *iface);
-static gchar*     gst_iface_irlan_get_desc   (GstIface *iface);
+static const GdkPixbuf* gst_iface_irlan_get_pixbuf     (GstIface *iface);
+static const gchar*     gst_iface_irlan_get_iface_type (GstIface *iface);
+static const gchar*     gst_iface_irlan_get_desc       (GstIface *iface);
 
 static gpointer parent_class;
 
@@ -72,9 +73,10 @@ gst_iface_irlan_class_init (GstIfaceIrlanClass *class)
 
   parent_class = g_type_class_peek_parent (class);
 
-  object_class->finalize     = gst_iface_irlan_finalize;
+  object_class->finalize        = gst_iface_irlan_finalize;
   iface_class->get_iface_pixbuf = gst_iface_irlan_get_pixbuf;
-  iface_class->get_iface_desc = gst_iface_irlan_get_desc;
+  iface_class->get_iface_type   = gst_iface_irlan_get_iface_type;
+  iface_class->get_iface_desc   = gst_iface_irlan_get_desc;
 }
 
 static void
@@ -111,7 +113,13 @@ gst_iface_irlan_get_pixbuf (GstIface *iface)
   return GST_IFACE_IRLAN (iface)->_priv->pixbuf;
 }
 
-static gchar*
+static const gchar*
+gst_iface_irlan_get_iface_type (GstIface *iface)
+{
+  return "irlan";
+}
+
+static const gchar*
 gst_iface_irlan_get_desc (GstIface *iface)
 {
   return _("Infrared connection");

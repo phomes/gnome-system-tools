@@ -1,3 +1,24 @@
+2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* address-list.[ch] (gst_address_list_clear): added
+	* callbacks.c: update button status when clicking ok in the interface
+	configuration dialog
+	* connection.c: fixed some indenting
+	* hosts.[ch] (host_aliases_clear): added
+	* ifaces-list.[ch] (ifaces_model_set_interface_from_node_at_iter),
+	(ifaces_model_set_interface_at_iter): added.
+	(ifaces_model_add_iface_from_node),
+	(ifaces_model_add_iface): use them to add new ifaces
+	(ifaces_model_clear): added
+	* network-iface.c, network-iface-ethernet.c, network-iface-wireless.c,
+	network-iface-irlan.c, network-iface-plip.c, network-iface-modem.c:
+	implemented _get_iface_type.
+	* transfer.[ch]: clear dialog before applying config, export some
+	functions for saving locations
+	* location.[ch]: added files for managing locations/profiles
+	* Makefile.am: ditto
+	* gst-network-tool.[ch]: added locations widget
+
 2004-12-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-modem.c: silly me, s/dial_type/dial_command/

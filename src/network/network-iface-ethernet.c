@@ -40,11 +40,12 @@ static void gst_iface_ethernet_class_init (GstIfaceEthernetClass *class);
 static void gst_iface_ethernet_init       (GstIfaceEthernet      *iface);
 static void gst_iface_ethernet_finalize   (GObject               *object);
 
-static const GdkPixbuf* gst_iface_ethernet_get_pixbuf   (GstIface *iface);
-static gchar*           gst_iface_ethernet_get_desc     (GstIface *iface);
-static gboolean         gst_iface_ethernet_has_gateway  (GstIface *iface);
-static void             gst_iface_ethernet_impl_get_xml (GstIface *iface,
-                                                         xmlNodePtr node);
+static const GdkPixbuf* gst_iface_ethernet_get_pixbuf     (GstIface *iface);
+static const gchar*     gst_iface_ethernet_get_iface_type (GstIface *iface);
+static const gchar*     gst_iface_ethernet_get_desc       (GstIface *iface);
+static gboolean         gst_iface_ethernet_has_gateway    (GstIface *iface);
+static void             gst_iface_ethernet_impl_get_xml   (GstIface *iface,
+                                                           xmlNodePtr node);
 
 static void gst_iface_ethernet_set_property (GObject      *object,
 					     guint         prop_id,
@@ -127,6 +128,7 @@ gst_iface_ethernet_class_init (GstIfaceEthernetClass *class)
   object_class->finalize     = gst_iface_ethernet_finalize;
 
   iface_class->get_iface_pixbuf = gst_iface_ethernet_get_pixbuf;
+  iface_class->get_iface_type   = gst_iface_ethernet_get_iface_type;
   iface_class->get_iface_desc   = gst_iface_ethernet_get_desc;
   iface_class->has_gateway      = gst_iface_ethernet_has_gateway;
   iface_class->get_xml          = gst_iface_ethernet_impl_get_xml;
@@ -291,7 +293,13 @@ gst_iface_ethernet_get_pixbuf (GstIface *iface)
   return GST_IFACE_ETHERNET (iface)->_priv->pixbuf;
 }
 
-static gchar*
+static const gchar*
+gst_iface_ethernet_get_iface_type (GstIface *iface)
+{
+  return "ethernet";
+}
+
+static const gchar*
 gst_iface_ethernet_get_desc (GstIface *iface)
 {
   return _("Ethernet connection");

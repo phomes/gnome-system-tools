@@ -24,6 +24,7 @@
 #include "ifaces-list.h"
 #include "connection.h"
 #include "hosts.h"
+#include "location.h"
 
 static void gst_network_tool_class_init (GstNetworkToolClass *class);
 static void gst_network_tool_init       (GstNetworkTool      *tool);
@@ -149,6 +150,11 @@ gst_network_tool_construct (GstNetworkTool *tool,
   tool->gateways_list    = gateways_combo_create ();
 
   tool->host_aliases_list = host_aliases_list_create ();
+
+  tool->location = gst_location_combo_new ();
+  gtk_widget_show (GTK_WIDGET (tool->location));
+  widget = gst_dialog_get_widget (GST_TOOL (tool)->main_dialog, "locations_box");
+  gtk_box_pack_start_defaults (GTK_BOX (widget), GTK_WIDGET (tool->location));
 
   tool->dialog = connection_dialog_init ();
 }

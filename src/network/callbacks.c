@@ -160,6 +160,7 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 	  ifaces_model_modify_interface_at_iter (&iter);
 	  g_object_unref (iface);
 
+	  g_signal_emit_by_name (G_OBJECT (selection), "changed");
 	  gst_dialog_modify (tool->main_dialog);
 	}
     }

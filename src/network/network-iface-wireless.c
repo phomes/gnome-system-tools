@@ -35,11 +35,12 @@ static void gst_iface_wireless_class_init (GstIfaceWirelessClass *class);
 static void gst_iface_wireless_init       (GstIfaceWireless      *iface);
 static void gst_iface_wireless_finalize   (GObject *object);
 
-static const GdkPixbuf* gst_iface_wireless_get_pixbuf (GstIface *iface);
-static gchar*           gst_iface_wireless_get_desc   (GstIface *iface);
-static void             gst_iface_wireless_get_xml    (GstIface *iface, xmlNodePtr root);
-static void             gst_iface_wireless_impl_get_xml (GstIface *iface,
-                                                         xmlNodePtr node);
+static const GdkPixbuf* gst_iface_wireless_get_pixbuf     (GstIface *iface);
+static const gchar*     gst_iface_wireless_get_iface_type (GstIface *iface);
+static const gchar*     gst_iface_wireless_get_desc       (GstIface *iface);
+static void             gst_iface_wireless_get_xml        (GstIface *iface, xmlNodePtr root);
+static void             gst_iface_wireless_impl_get_xml   (GstIface *iface,
+                                                           xmlNodePtr node);
 
 static void gst_iface_wireless_set_property (GObject      *object,
 					     guint         prop_id,
@@ -99,6 +100,7 @@ gst_iface_wireless_class_init (GstIfaceWirelessClass *class)
   object_class->finalize     = gst_iface_wireless_finalize;
 
   iface_class->get_iface_pixbuf = gst_iface_wireless_get_pixbuf;
+  iface_class->get_iface_type   = gst_iface_wireless_get_iface_type;
   iface_class->get_iface_desc   = gst_iface_wireless_get_desc;
   iface_class->get_xml          = gst_iface_wireless_impl_get_xml;
 
@@ -200,7 +202,13 @@ gst_iface_wireless_get_pixbuf (GstIface *iface)
   return GST_IFACE_WIRELESS (iface)->_priv->pixbuf;
 }
 
-static gchar*
+static const gchar*
+gst_iface_wireless_get_iface_type (GstIface *iface)
+{
+  return "wireless";
+}
+
+static const gchar*
 gst_iface_wireless_get_desc (GstIface *iface)
 {
   return _("Wireless connection");

@@ -32,6 +32,7 @@ network_admin_SOURCES = 			\
 	callbacks.c callbacks.h			\
 	connection.c connection.h		\
 	hosts.c hosts.h				\
+	location.c location.h			\
 	main.c 
 
 toolpixmaps =

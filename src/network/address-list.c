@@ -582,6 +582,15 @@ gst_address_list_get_list (GstAddressList *list)
   return l;
 }
 
+void
+gst_address_list_clear (GstAddressList *list)
+{
+  GtkTreeModel *model;
+
+  model = gtk_tree_view_get_model (list->_priv->list);
+  gtk_list_store_clear (GTK_LIST_STORE (model));
+}
+
 GstAddressList*
 gst_address_list_new (GtkTreeView    *treeview,
 		      GtkButton      *add_button,

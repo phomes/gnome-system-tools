@@ -205,7 +205,7 @@ ifaces_list_create (void)
 }
 
 void
-ifaces_model_add_interface_from_node (xmlNodePtr node)
+ifaces_model_set_interface_from_node_at_iter (xmlNodePtr node, GtkTreeIter *iter)
 {
   gchar    *type;
   GstIface *iface = NULL;
@@ -226,10 +226,16 @@ ifaces_model_add_interface_from_node (xmlNodePtr node)
 
   if (iface)
     {
-      ifaces_model_add_interface (iface);
+      ifaces_model_set_interface_at_iter (iface, iter);
       g_object_unref (iface);
       g_free (type);
     }
+}
+
+void
+ifaces_model_add_interface_from_node (xmlNodePtr node)
+{
+  ifaces_model_set_interface_from_node_at_iter (node, NULL);
 }
 
 GstIface*
@@ -312,20 +318,39 @@ ifaces_model_modify_interface_at_iter (GtkTreeIter *iter)
 }
 
 void
-ifaces_model_add_interface (GstIface *iface)
+ifaces_model_set_interface_at_iter (GstIface *iface, GtkTreeIter *iter)
 {
   GtkTreeModel *model;
-  GtkTreeIter   iter;
+  GtkTreeIter   it;
 
   g_return_if_fail (iface != NULL);
 
   model = GST_NETWORK_TOOL (tool)->interfaces_model;
 
-  gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-  gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+  if (!iter)
+    gtk_list_store_append (GTK_LIST_STORE (model), &it);
+  else
+    it = *iter;
+
+  gtk_list_store_set (GTK_LIST_STORE (model), &it,
 		      COL_OBJECT, iface,
 		      -1);
-  ifaces_model_modify_interface_at_iter (&iter);
+  ifaces_model_modify_interface_at_iter (&it);
+}
+
+void
+ifaces_model_add_interface (GstIface *iface)
+{
+  ifaces_model_set_interface_at_iter (iface, NULL);
+}
+
+void
+ifaces_model_clear (void)
+{
+  GtkTreeModel *model;
+
+  model = GST_NETWORK_TOOL (tool)->interfaces_model;
+  gtk_list_store_clear (GTK_LIST_STORE (model));
 }
 
 static void

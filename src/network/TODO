@@ -1,5 +1,5 @@
 - check that it's handling correctly the wvdial modem connections
-- implement enable_iface_with_config for PPP devices
 - complete the locations stuff
+- add ISDN support
 - update user docs
 - drink some beer

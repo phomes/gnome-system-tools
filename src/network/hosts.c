@@ -220,6 +220,18 @@ host_aliases_extract_to_xml (GtkTreeIter *iter, xmlNodePtr root)
   g_strfreev (arr);
 }
 
+void
+host_aliases_clear (void)
+{
+  GtkTreeView  *list;
+  GtkTreeModel *model;
+
+  list = GST_NETWORK_TOOL (tool)->host_aliases_list;
+  model = gtk_tree_view_get_model (list);
+
+  gtk_list_store_clear (GTK_LIST_STORE (model));
+}
+
 static void
 host_aliases_dialog_prepare (GtkTreeIter *iter)
 {

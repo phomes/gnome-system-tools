@@ -30,9 +30,10 @@ enum {
   COL_HOST_LAST
 };
 
-GtkTreeView*   host_aliases_list_create (void);
-void           host_aliases_add_from_xml (xmlNodePtr);
+GtkTreeView*   host_aliases_list_create    (void);
+void           host_aliases_add_from_xml   (xmlNodePtr);
 void           host_aliases_extract_to_xml (GtkTreeIter*, xmlNodePtr);
-void           host_aliases_run_dialog (GtkTreeIter*);
+void           host_aliases_run_dialog     (GtkTreeIter*);
+void           host_aliases_clear          (void);
 
 #endif /* __HOSTS_H_ */

@@ -23,6 +23,7 @@
 #include "gst-network-tool.h"
 #include "ifaces-list.h"
 #include "hosts.h"
+#include "location.h"
 
 extern GstTool *tool;
 
@@ -31,6 +32,8 @@ transfer_address_list_to_gui (xmlNodePtr root, gchar *tag, GstAddressList *al)
 {
   xmlNodePtr  node;
   gchar      *address;
+
+  gst_address_list_clear (al);
 
   for (node = gst_xml_element_find_first (root, tag);
        node; node = gst_xml_element_find_next (node, tag))
@@ -111,11 +114,11 @@ transfer_interfaces_to_gui (xmlNodePtr root)
 {
   xmlNodePtr node;
 
+  ifaces_model_clear ();
+
   for (node = gst_xml_element_find_first (root, "interface");
        node; node = gst_xml_element_find_next (node, "interface"))
-    {
-      ifaces_model_add_interface_from_node (node);
-    }
+    ifaces_model_add_interface_from_node (node);
 }
 
 static void
@@ -164,6 +167,8 @@ transfer_host_aliases_to_gui (xmlNodePtr root)
 {
   xmlNodePtr  node;
 
+  host_aliases_clear ();
+
   for (node = gst_xml_element_find_first (root, "statichost");
        node; node = gst_xml_element_find_next (node, "statichost"))
     host_aliases_add_from_xml (node);
@@ -190,13 +195,11 @@ transfer_host_aliases_to_xml (xmlNodePtr root)
 }
 
 void
-transfer_xml_to_gui (GstTool *tool, gpointer data)
+transfer_xml_profile_to_gui (GstTool *tool, xmlNodePtr root)
 {
   GstNetworkTool *network_tool;
-  xmlNode *root;
 
   network_tool = GST_NETWORK_TOOL (tool);
-  root = gst_xml_doc_get_root (tool->config);
 
   transfer_address_list_to_gui (root, "nameserver", network_tool->dns);
   transfer_address_list_to_gui (root, "searchdomain", network_tool->search);
@@ -204,11 +207,23 @@ transfer_xml_to_gui (GstTool *tool, gpointer data)
   transfer_string_to_gui (root, "hostname", network_tool->hostname);
   transfer_string_to_gui (root, "domain", network_tool->domain);
 
-  transfer_interfaces_to_gui (root);
-  transfer_gateway_to_combo (root);
-
   transfer_host_aliases_to_gui (root);
+  transfer_gateway_to_combo (root);
+}
 
+void
+transfer_xml_to_gui (GstTool *tool, gpointer data)
+{
+  xmlNodePtr root;
+  GstNetworkTool *network_tool;
+
+  network_tool = GST_NETWORK_TOOL (tool);
+  root = gst_xml_doc_get_root (tool->config);
+
+  transfer_interfaces_to_gui (root);
+  gst_location_combo_setup (network_tool->location, root);
+
+  transfer_xml_profile_to_gui (tool, root);
   gst_dialog_set_modified (tool->main_dialog, FALSE);
 }
 

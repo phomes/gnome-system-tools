@@ -52,7 +52,8 @@ struct _GstIfaceClass
   GObjectClass parent_class;
 
   const GdkPixbuf* (*get_iface_pixbuf) (GstIface*);
-  gchar* (*get_iface_desc) (GstIface*);
+  const gchar* (*get_iface_type) (GstIface*);
+  const gchar* (*get_iface_desc) (GstIface*);
   gboolean (*has_gateway) (GstIface*);
   void (*get_xml) (GstIface*, xmlNodePtr);
 };

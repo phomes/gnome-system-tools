@@ -34,6 +34,7 @@ extern "C" {
 #include "network-iface-irlan.h"
 #include "network-iface-modem.h"
 #include "connection.h"
+#include "location.h"
 
 #define GST_TYPE_NETWORK_TOOL           (gst_network_tool_get_type ())
 #define GST_NETWORK_TOOL(obj)           (G_TYPE_CHECK_INSTANCE_CAST ((obj), GST_TYPE_NETWORK_TOOL, GstNetworkTool))
@@ -58,6 +59,7 @@ struct _GstNetworkTool
   GtkComboBox  *gateways_list;
 
   GtkTreeView *host_aliases_list;
+  GstLocation *location;
 
   GtkEntry *hostname;
   GtkEntry *domain;

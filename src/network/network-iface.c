@@ -436,15 +436,29 @@ gst_iface_disable (GstIface *iface)
   iface->_priv->is_enabled = FALSE;
 }
 
+static const gchar*
+gst_iface_get_iface_type (GstIface *iface)
+{
+  if (GST_IFACE_GET_CLASS (iface)->get_iface_type == NULL)
+    return NULL;
+
+  return GST_IFACE_GET_CLASS (iface)->get_iface_type (iface);
+}
+
 void
 gst_iface_get_xml (GstIface *iface, xmlNodePtr root)
 {
-  xmlNodePtr interface;
+  xmlNodePtr   interface;
+  const gchar *type;
 
   if (GST_IFACE_GET_CLASS (iface)->get_xml == NULL)
     return;
 
   interface = gst_xml_element_add (root, "interface");
+  type = gst_iface_get_iface_type (iface);
+
+  if (type)
+    gst_xml_element_set_attribute (interface, "type", type);
 
   GST_IFACE_GET_CLASS (iface)->get_xml (iface, interface);
 }
@@ -463,7 +477,8 @@ gst_iface_get_pixbuf (GstIface *iface)
 gchar*
 gst_iface_get_desc (GstIface *iface)
 {
-  gchar *primary, *secondary, *text, *message;
+  gchar *secondary, *text, *message;
+  const gchar *primary;
 
   g_return_val_if_fail (GST_IS_IFACE (iface), NULL);
 
