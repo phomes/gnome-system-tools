@@ -1,5 +1,9 @@
 2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* gst-tool.c: removed a gst_xml_doc_dump()
+
+2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* gst-xml.c (gst_xml_set_child_content): do not output any warning if
 	val == NULL
 

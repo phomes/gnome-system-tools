@@ -1677,8 +1677,6 @@ gst_tool_write_xml_to_backend (GstTool *tool, xmlDoc *doc)
 	xmlChar *xml;
 	gchar *string;
 
-	gst_xml_doc_dump (doc);
-
 	xmlDocDumpMemory (doc, &xml, &size);
 	string = (gchar *) xml;
 
