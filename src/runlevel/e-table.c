@@ -30,6 +30,8 @@
 #include <gal/e-table/e-table-scrolled.h>
 #include <gal/e-table/e-table-simple.h>
 #include <gal/e-table/e-cell-text.h>
+#include <gal/e-table/e-cell-toggle.h>
+#include <gdk-pixbuf/gdk-pixbuf.h>
 
 #include "e-table.h"
 #include "callbacks.h"
@@ -54,6 +56,11 @@ const gchar *runlevel_state_advanced = "\
   <grouping> \
   </grouping> \
 </ETableState>";
+
+// Images used in table
+GdkPixbuf *start_icon;
+GdkPixbuf *stop_icon;
+GdkPixbuf *do_nothing_icon;
 
 static int
 table_col_count (ETableModel *etc,void *data)
@@ -85,20 +92,37 @@ static void*
 table_value_runlevel (xmlNodePtr node,gint runlevel)
 {
 	xmlNodePtr runlevels, rl;
-	gchar *level;
+	gchar *level, *action;
 	g_return_val_if_fail (node != NULL, NULL);
 	runlevels = xst_xml_element_find_first (node, "runlevels");
 	if (runlevels != NULL){
 		for (rl = xst_xml_element_find_first (runlevels, "runlevel"); rl != NULL; rl = xst_xml_element_find_next (rl, "runlevel"))
 		{
-			level = xst_xml_element_get_content (rl);
-			if (runlevel == (level[0] - '0'))
+			level = xst_xml_get_child_content (rl, "number");
+			if (runlevel == atoi (level))
 			{
-				return 1;
+				action = xst_xml_get_child_content (rl, "action");
+				if (strcmp (action, "start") == 0)
+				{
+					g_free (level);
+					g_free (action);
+					// returns start icon;
+					return GINT_TO_POINTER (0);
+				}
+				else
+				{
+					g_free (level);
+					g_free (action);
+					// returns stop icon;
+					return GINT_TO_POINTER (1);
+				}
 			}
+			g_free (level);
 		}
 	}
-	return 0;
+	// returns "do nothing" icon;
+	return GINT_TO_POINTER (2);
+
 }
 
 static void*
@@ -131,34 +155,54 @@ static void
 table_set_value_at (ETableModel *etc, int col, int row, const void *val, void *data)
 {
 	xmlNodePtr node,runlevels,rl;
-	gchar *level, *buf;
+	gchar *level;
 	
 	if (col != COL_SERVICE){
 		node = g_array_index (runlevel_array, xmlNodePtr, row);
 		runlevels = xst_xml_element_find_first (node, "runlevels");
-		if ((int)val == 1)  // if we are adding a service
+		
+		if ((int) val == 1) // the state turns to stopped
 		{
+			for (rl = xst_xml_element_find_first (runlevels, "runlevel"); rl != NULL; rl = xst_xml_element_find_next (rl, "runlevel"))
+			{
+				level = xst_xml_get_child_content (rl, "number");
+				if (col - 1 == atoi (level))
+				{
+					xst_xml_set_child_content (rl, "action", "stop");
+					break;
+				}
+			}
+		}
+		else if ((int) val == 0) // the state turns to started
+		{
+			gchar *buf;
+
 			if (runlevels == NULL){
 				runlevels= xst_xml_element_add (node, "runlevels");
 			}
 			rl = xst_xml_element_add (runlevels, "runlevel");
-			buf = g_strdup_printf ("%i",col-1);
-			xst_xml_element_set_content (rl, buf);
-		}			
-		else  // if we are deleting a service
+			xst_xml_element_add (rl, "number");
+			xst_xml_element_add (rl, "action");
+			buf = g_strdup_printf ("%i", col - 1);
+			xst_xml_set_child_content (rl, "number", buf);
+			xst_xml_set_child_content (rl, "action", "start");
+			g_free (buf);
+		}
+		else // The state turns to "do nothing"
 		{
 			for (rl = xst_xml_element_find_first (runlevels, "runlevel"); rl != NULL; rl = xst_xml_element_find_next (rl, "runlevel"))
 			{
-				level = xst_xml_element_get_content (rl);
-				if (col-1 == (level[0] - '0'))
+				level = xst_xml_get_child_content (rl, "number");
+				if (col - 1 == atoi (level))
 				{
 					xst_xml_element_destroy (rl);
 					break;
 				}
 			}
 		}
+		
 		e_table_model_row_changed (etc, row);
-		xst_dialog_modify (tool->main_dialog);	
+		xst_dialog_modify (tool->main_dialog);
 	}
 }
 
@@ -192,24 +236,37 @@ table_initialize_value (ETableModel *etc, int col, void *data)
 static gboolean
 table_value_is_empty (ETableModel *etc, int col, const void *value, void *data)
 {
-        return !(value && *(char *)value);
+	return !(value && *(char *)value);
 }
 
 static char*
 table_value_to_string (ETableModel *etc, int col, const void *value, void *data)
 {
-        return g_strdup (value);
+	return g_strdup (value);
 }
 
 static ETableExtras*
 create_extras (void)
 {
-        ETableExtras *extras;
-        ECell *ec;
-        extras = e_table_extras_new ();
-        ec = e_cell_text_new (NULL, GTK_JUSTIFY_LEFT);
-        e_table_extras_add_cell (extras, "centered_cell", ec);
-        return extras;
+	GdkPixbuf *images[3];
+	ETableExtras *extras;
+	
+	images[0] = start_icon;
+	images[1] = stop_icon;
+	images[2] = do_nothing_icon;
+	
+	extras = e_table_extras_new ();
+	e_table_extras_add_cell (extras, "centered_cell", e_cell_text_new (NULL, GTK_JUSTIFY_LEFT));
+	e_table_extras_add_cell (extras, "render_runlevel", e_cell_toggle_new (0,3, images));
+	return extras;
+}
+
+static void
+pixmaps_create (void)
+{
+	start_icon = gdk_pixbuf_new_from_file (PIXMAPS_DIR "/gnome-light-on.png");
+	stop_icon = gdk_pixbuf_new_from_file (PIXMAPS_DIR "/gnome-light-off.png");
+	do_nothing_icon = gdk_pixbuf_new_from_file (PIXMAPS_DIR "/stock_remove_24.png");
 }
 
 GtkWidget*
@@ -218,6 +275,10 @@ table_create (char *widget)
 	ETableModel *model;
 	ETableExtras *extras;
 	gchar *spec;
+	
+	// Creates the pixmaps that are going to be used in the table
+	pixmaps_create();
+	
 	if (runlevel_table)
 		return NULL;
 	extras = create_extras ();
@@ -246,7 +307,7 @@ table_create (char *widget)
 	runlevel_table = e_table_scrolled_new (E_TABLE_MODEL (model), extras, spec, runlevel_state_advanced);
 	g_free (spec);
 	g_return_val_if_fail (runlevel_table != NULL, NULL);
-	
+
 	return runlevel_table;
 }
 

@@ -62,7 +62,7 @@
 	<widget>
 	  <class>GnomePixmap</class>
 	  <name>pixmap17</name>
-	  <filename>sysV.png</filename>
+	  <filename>runlevel.png</filename>
 	</widget>
       </widget>
 
