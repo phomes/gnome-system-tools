@@ -50,7 +50,8 @@ static GstDialogSignal signals[] = {
   { "connection_ppp_device_active", "clicked", G_CALLBACK (on_iface_active_changed) },
   { "connection_bootproto",         "changed", G_CALLBACK (on_bootproto_changed) },
   { "connection_cancel",            "clicked", G_CALLBACK (on_connection_cancel_clicked) },
-  { "connection_ok",                "clicked", G_CALLBACK (on_connection_ok_clicked) }
+  { "connection_ok",                "clicked", G_CALLBACK (on_connection_ok_clicked) },
+  { "connection_detect_modem",      "clicked", G_CALLBACK (on_detect_modem_clicked) }
 };
 
 int

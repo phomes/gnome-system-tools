@@ -317,6 +317,7 @@ connection_dialog_init (void)
   gcd->login        = gst_dialog_get_widget (tool->main_dialog, "connection_login");
   gcd->password     = gst_dialog_get_widget (tool->main_dialog, "connection_password");
   gcd->serial_port  = gst_dialog_get_widget (tool->main_dialog, "connection_serial_port");
+  gcd->detect_modem = gst_dialog_get_widget (tool->main_dialog, "connection_detect_modem");
   gcd->phone_number = gst_dialog_get_widget (tool->main_dialog, "connection_phone_number");
   gcd->dial_prefix  = gst_dialog_get_widget (tool->main_dialog, "connection_dial_prefix");
   gcd->volume       = gst_dialog_get_widget (tool->main_dialog, "connection_volume");
@@ -435,4 +436,21 @@ connection_save (GstConnectionDialog *dialog)
     }
 
     gst_iface_set_configured (dialog->iface, active);
+}
+
+gchar*
+connection_detect_modem (void)
+{
+	xmlNodePtr  root;
+	xmlDoc     *doc;
+	gchar      *device;
+
+	doc= gst_tool_run_get_directive (tool, NULL, "detect_modem", NULL);
+	g_return_val_if_fail (doc != NULL, NULL);
+
+	root   = gst_xml_doc_get_root (doc);
+	device = gst_xml_get_child_content (root, "device");
+	xmlFreeDoc (doc);
+	
+	return device;
 }

@@ -59,6 +59,7 @@ struct _GstConnectionDialog {
   GtkWidget *login;
   GtkWidget *password;
   GtkWidget *serial_port;
+  GtkWidget *detect_modem;
   GtkWidget *phone_number;
   GtkWidget *dial_prefix;
   GtkWidget *volume;
@@ -76,5 +77,6 @@ struct _GstConnectionDialog {
 GstConnectionDialog *connection_dialog_init (void);
 void connection_dialog_prepare    (GstConnectionDialog*, GstIface*);
 void connection_save (GstConnectionDialog*);
+gchar *connection_detect_modem (void);
 
 #endif /* __CONNECTION_H */

@@ -165,6 +165,55 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
     }
 }
 
+void
+on_detect_modem_clicked (GtkWidget *widget, gpointer data)
+{
+  GstNetworkTool      *network_tool;
+  GstConnectionDialog *dialog;
+  GtkWidget           *d;
+  GdkCursor           *cursor;
+  gchar               *dev = NULL;
+
+  network_tool = GST_NETWORK_TOOL (tool);
+  dialog = network_tool->dialog;
+
+  /* give some feedback to let know the user that the tool is busy */
+  gtk_entry_set_text (GTK_ENTRY (GTK_BIN (GTK_COMBO_BOX (dialog->serial_port))->child), "");
+  gtk_widget_set_sensitive (dialog->serial_port, FALSE);
+  gtk_widget_set_sensitive (dialog->detect_modem, FALSE);
+
+  cursor = gdk_cursor_new (GDK_WATCH);
+  gdk_window_set_cursor (GTK_WIDGET (dialog->dialog)->window, cursor);
+  gdk_cursor_unref (cursor);
+
+  dev = connection_detect_modem ();
+
+  /* remove the user feedback */
+  gtk_widget_set_sensitive (dialog->detect_modem, TRUE);
+  gtk_widget_set_sensitive (dialog->serial_port, TRUE);
+  gdk_window_set_cursor (GTK_WIDGET (dialog->dialog)->window, NULL);
+
+  if (!dev || !*dev)
+    {
+      d = gtk_message_dialog_new (GTK_WINDOW (dialog->dialog),
+				  GTK_DIALOG_MODAL,
+				  GTK_MESSAGE_INFO,
+				  GTK_BUTTONS_CLOSE,
+				  _("Could not autodetect modem device"),
+				  NULL);
+      gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (d),
+						_("Check that the device is not busy and "
+						  "that is correctly attached to the computer"),
+						NULL);
+      gtk_dialog_run (GTK_DIALOG (d));
+      gtk_widget_destroy (d);
+    }
+  else
+    gtk_entry_set_text (GTK_ENTRY (GTK_BIN (GTK_COMBO_BOX (dialog->serial_port))->child), dev);
+
+  g_free (dev);
+}
+
 static void
 do_popup_menu (GtkWidget *table, GtkWidget *popup, GdkEventButton *event)
 {
@@ -239,6 +288,8 @@ enable_disable_iface (GstNetworkTool *network_tool, gboolean enable)
   GtkTreeModel *model;
   GtkTreeIter   iter;
   GstIface     *iface;
+  GtkWidget    *dialog;
+  gboolean      success;
 
   selection = gtk_tree_view_get_selection (network_tool->interfaces_list);
 
@@ -249,13 +300,36 @@ enable_disable_iface (GstNetworkTool *network_tool, gboolean enable)
 			  -1);
 
       if (enable)
-	gst_iface_enable (iface);
+        {
+	  gst_dialog_freeze (tool->main_dialog);
+	  success = gst_iface_enable (iface);
+	  gst_dialog_thaw   (tool->main_dialog);
+
+	  if (!success)
+	    {
+	      dialog = gtk_message_dialog_new (GTK_WINDOW (tool->main_dialog),
+					       GTK_DIALOG_MODAL,
+					       GTK_MESSAGE_ERROR,
+					       GTK_BUTTONS_CLOSE,
+					       _("Could not enable the interface %s"),
+					       gst_iface_get_dev (iface),
+					       NULL);
+	      gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+							_("Check that the settings are apropriate for "
+							  "this network and that the computer is correctly "
+							  "connected to it."),
+							NULL);
+	      gtk_dialog_run (GTK_DIALOG (dialog));
+	      gtk_widget_destroy (dialog);
+	    }
+	}
       else
 	gst_iface_disable (iface);
 
       ifaces_model_modify_interface_at_iter (&iter);
       g_object_unref (iface);
 
+      /* we need this to update the buttons state */
       g_signal_emit_by_name (G_OBJECT (selection), "changed");
     }
 }
@@ -305,5 +379,8 @@ on_host_aliases_delete_clicked (GtkWidget *widget, gpointer data)
   selection = gtk_tree_view_get_selection (list);
 
   if (gtk_tree_selection_get_selected (selection, &model, &iter))
-    gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+    {
+      gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+      gst_dialog_modify (tool->main_dialog);
+    }
 }

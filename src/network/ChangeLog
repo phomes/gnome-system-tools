@@ -1,3 +1,11 @@
+2004-11-26  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* callbacks.[ch] (on_detect_modem_clicked): added
+	(enable_disable_iface): warn when the iface could not be enabled
+	(on_host_aliases_delete_clicked): added gst_dialog_modify()
+	* connection.[ch], main.c: added some modem detection stuff
+	* hosts.c (host_aliases_run_dialog): added a gst_dialog_modify()
+
 2004-11-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* connection.[ch] (modem_dialog_prepare), (modem_dialog_save): added.

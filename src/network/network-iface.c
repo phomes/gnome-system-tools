@@ -414,7 +414,6 @@ gst_iface_enable (GstIface *iface)
 					"enable_iface_with_config", NULL);
 
   /* check that it has succeeded */
-  gst_xml_doc_dump (ret_doc);
   root = gst_xml_doc_get_root (ret_doc);
   ret  = gst_xml_element_get_boolean (root, "success");
 

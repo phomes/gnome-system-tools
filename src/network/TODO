@@ -1,11 +1,8 @@
+- ifup my dhpc+multiword essid wlan doesn't work
 - make it save correctly modem info in debian
 - code _get_xml for modem
-- modem detection
 - connection dialog fields checking, disabling the "OK" button if necessary
   - create good functions for parsing/validating IP addresses
-- UI blocking and dialog showing when enabling DHCP/PPP interfaces
-  - error dialog if it fails
-- check that gst_dialog_modify is called wherever necessary
 - implement enable_iface_with_config for PPP devices
 - reimplement command line options
 - context menus for the hosts, dns and search tables

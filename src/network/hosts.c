@@ -243,6 +243,7 @@ host_aliases_run_dialog (GtkTreeIter *iter)
       else
 	host_aliases_modify_at_iter (iter, addr, list);
 
+      gst_dialog_modify (tool->main_dialog);
       gtk_widget_hide (dialog);
       g_free (list);
     }
