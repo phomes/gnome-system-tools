@@ -1,5 +1,10 @@
 2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* location.c: use the "save_profiles" and "set_profile" directives
+	for changing profiles
+
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* callbacks.c (enable_iface): added, common function that shows a
 	dialog if there was any error. (on_connection_ok_clicked),
 	(enable_disable_iface): use enable_iface ()

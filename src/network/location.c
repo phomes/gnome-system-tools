@@ -244,12 +244,6 @@ replace_interfaces (xmlNodePtr profile)
 	  ifaces_model_set_interface_at_iter (iface, &iter);
 	}
 
-      /* FIXME: should check whether the interface changed too */
-      if (gst_iface_get_enabled (iface))
-	gst_iface_enable (iface);
-      else
-	gst_iface_disable (iface);
-
       g_free (dev);
       g_object_unref (iface);
       valid = gtk_tree_model_iter_next (model, &iter);
@@ -392,12 +386,32 @@ delete_location (GstLocation *location)
 }
 
 static void
+save_profiles (GstTool *tool)
+{
+  xmlNodePtr  root, profiledb, root_copy, copy;
+  xmlDoc     *doc;
+
+  doc  = gst_xml_doc_create ("network");
+  root_copy = gst_xml_doc_get_root (doc);
+
+  root = gst_xml_doc_get_root (tool->config);
+  profiledb = gst_xml_element_find_first (root, "profiledb");
+
+  copy = xmlDocCopyNode (profiledb, doc, 1);
+  gst_xml_element_add_child (root_copy, copy);
+
+  gst_tool_run_set_directive (tool, doc, NULL, "save_profiles", NULL);
+  gst_xml_doc_destroy (doc);
+}
+
+static void
 change_location (GstLocation *location)
 {
   GstLocationPrivate *priv;
   GtkTreeModel *model;
   GtkTreeIter   iter;
   xmlNodePtr    profile;
+  gchar        *name;
 
   priv  = GST_LOCATION_GET_PRIVATE (location);
   model = gtk_combo_box_get_model (GTK_COMBO_BOX (location));
@@ -407,12 +421,19 @@ change_location (GstLocation *location)
       replace_row_reference (&priv->last_selected, model, &iter);
       gtk_tree_model_get (model,
 			  &iter,
+			  LOCATION_COL_TEXT, &name,
 			  LOCATION_COL_DATA, &profile,
 			  -1);
+      save_profiles (tool);
+      gst_tool_run_set_directive (tool, NULL, _("Changing profile"),
+				  "set_profile", name, NULL);
+
       replace_interfaces (profile);
       transfer_xml_profile_to_gui (tool, profile);
+
       check_delete_button_sensitivity (location);
       gst_dialog_modify (tool->main_dialog);
+      g_free (name);
     }
 }
 
