@@ -326,6 +326,9 @@ gst_iface_ethernet_impl_get_xml (GstIface *iface, xmlNodePtr node)
       gst_xml_set_child_content (configuration, "gateway", iface_ethernet->_priv->gateway);
       gst_xml_set_child_content (configuration, "network", iface_ethernet->_priv->network);
       gst_xml_set_child_content (configuration, "broadcast", iface_ethernet->_priv->broadcast);
+
+      gst_xml_set_child_content (configuration, "bootproto",
+				 (iface_ethernet->_priv->bootproto == GST_BOOTPROTO_DHCP) ? "dhcp" : "static");
     }
 
   GST_IFACE_CLASS (parent_class)->get_xml (iface, node);

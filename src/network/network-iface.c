@@ -37,6 +37,9 @@ static void gst_iface_class_init (GstIfaceClass *class);
 static void gst_iface_init       (GstIface      *iface);
 static void gst_iface_finalize   (GObject       *object);
 
+static void gst_iface_impl_get_xml (GstIface   *iface,
+                                    xmlNodePtr  node);
+
 static void gst_iface_set_property (GObject      *object,
 				    guint         prop_id,
 				    const GValue *value,
@@ -45,9 +48,6 @@ static void gst_iface_get_property (GObject      *object,
 				    guint         prop_id,
 				    GValue       *value,
 				    GParamSpec   *pspec);
-
-static void gst_iface_impl_get_xml (GstIface   *iface,
-                                    xmlNodePtr  node);
 
 enum {
   PROP_0,
@@ -246,7 +246,7 @@ gst_iface_impl_get_xml (GstIface *iface, xmlNodePtr node)
       if (!configuration)
         configuration = gst_xml_element_add (node, "configuration");
 
-      gst_xml_element_set_boolean (node, "auto", iface->_priv->is_auto);
+      gst_xml_element_set_boolean (configuration, "auto", iface->_priv->is_auto);
     }
 }
 
@@ -390,10 +390,14 @@ gst_iface_disable (GstIface *iface)
 }
 
 void
-gst_iface_get_xml (GstIface *iface, xmlNodePtr interface)
+gst_iface_get_xml (GstIface *iface, xmlNodePtr root)
 {
+  xmlNodePtr interface;
+
   if (GST_IFACE_GET_CLASS (iface)->get_xml == NULL)
     return;
+
+  interface = gst_xml_element_add (root, "interface");
 
   GST_IFACE_GET_CLASS (iface)->get_xml (iface, interface);
 }

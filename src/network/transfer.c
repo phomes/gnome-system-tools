@@ -114,14 +114,13 @@ transfer_interfaces_to_xml (xmlNodePtr root)
 
   model = GST_NETWORK_TOOL (tool)->interfaces_model;
   valid = gtk_tree_model_get_iter_first (model, &iter);
+  gst_xml_element_destroy_children_by_name (root, "interface");
 
   while (valid)
     {
       gtk_tree_model_get (model, &iter, COL_OBJECT, &iface, -1);
       gst_iface_get_xml (iface, root);
       g_object_unref (iface);
-
-      g_print ("\n\n");
 
       valid = gtk_tree_model_iter_next (model, &iter);
     }

@@ -36,7 +36,10 @@ static void gst_iface_wireless_init       (GstIfaceWireless      *iface);
 static void gst_iface_wireless_finalize   (GObject *object);
 
 static const GdkPixbuf* gst_iface_wireless_get_pixbuf (GstIface *iface);
-static gchar*     gst_iface_wireless_get_desc   (GstIface *iface);
+static gchar*           gst_iface_wireless_get_desc   (GstIface *iface);
+static void             gst_iface_wireless_get_xml    (GstIface *iface, xmlNodePtr root);
+static void             gst_iface_wireless_impl_get_xml (GstIface *iface,
+                                                         xmlNodePtr node);
 
 static void gst_iface_wireless_set_property (GObject      *object,
 					     guint         prop_id,
@@ -96,7 +99,8 @@ gst_iface_wireless_class_init (GstIfaceWirelessClass *class)
   object_class->finalize     = gst_iface_wireless_finalize;
 
   iface_class->get_iface_pixbuf = gst_iface_wireless_get_pixbuf;
-  iface_class->get_iface_desc = gst_iface_wireless_get_desc;
+  iface_class->get_iface_desc   = gst_iface_wireless_get_desc;
+  iface_class->get_xml          = gst_iface_wireless_impl_get_xml;
 
   g_object_class_install_property (object_class,
 				   PROP_ESSID,
@@ -200,6 +204,28 @@ static gchar*
 gst_iface_wireless_get_desc (GstIface *iface)
 {
   return _("Wireless connection");
+}
+
+static void
+gst_iface_wireless_impl_get_xml (GstIface *iface, xmlNodePtr node)
+{
+  xmlNodePtr configuration;
+  GstIfaceWireless *iface_wireless;
+
+  g_return_if_fail (GST_IS_IFACE_WIRELESS (iface));
+  iface_wireless = GST_IFACE_WIRELESS (iface);
+
+  if (gst_iface_is_configured (iface))
+    {
+      configuration = gst_xml_element_find_first (node, "configuration");
+      if (!configuration)
+        configuration = gst_xml_element_add (node, "configuration");
+
+      gst_xml_set_child_content (configuration, "essid", iface_wireless->_priv->essid);
+      gst_xml_set_child_content (configuration, "key",   iface_wireless->_priv->wep_key);
+    }
+
+  GST_IFACE_CLASS (parent_class)->get_xml (iface, node);
 }
 
 void

@@ -34,9 +34,12 @@ static void gst_iface_plip_class_init (GstIfacePlipClass *class);
 static void gst_iface_plip_init       (GstIfacePlip      *iface);
 static void gst_iface_plip_finalize   (GObject           *object);
 
-static const GdkPixbuf* gst_iface_plip_get_pixbuf  (GstIface *iface);
-static gchar*           gst_iface_plip_get_desc    (GstIface *iface);
-static gboolean         gst_iface_plip_has_gateway (GstIface *iface);
+static const GdkPixbuf* gst_iface_plip_get_pixbuf   (GstIface *iface);
+static gchar*           gst_iface_plip_get_desc     (GstIface *iface);
+static gboolean         gst_iface_plip_has_gateway  (GstIface *iface);
+static void             gst_iface_plip_impl_get_xml (GstIface *iface,
+						     xmlNodePtr node);
+
 
 static void gst_iface_plip_set_property (GObject      *object,
 					 guint         prop_id,
@@ -95,8 +98,9 @@ gst_iface_plip_class_init (GstIfacePlipClass *class)
   object_class->finalize     = gst_iface_plip_finalize;
 
   iface_class->get_iface_pixbuf = gst_iface_plip_get_pixbuf;
-  iface_class->get_iface_desc = gst_iface_plip_get_desc;
-  iface_class->has_gateway = gst_iface_plip_has_gateway;
+  iface_class->get_iface_desc   = gst_iface_plip_get_desc;
+  iface_class->has_gateway      = gst_iface_plip_has_gateway;
+  iface_class->get_xml          = gst_iface_plip_impl_get_xml;
 
   g_object_class_install_property (object_class,
 				   PROP_ADDRESS,
@@ -206,6 +210,29 @@ static gboolean
 gst_iface_plip_has_gateway (GstIface *iface)
 {
   return TRUE;
+}
+
+static void
+gst_iface_plip_impl_get_xml (GstIface *iface, xmlNodePtr node)
+{
+  xmlNodePtr configuration;
+  GstIfacePlip *iface_plip;
+
+  g_return_if_fail (GST_IS_IFACE_PLIP (iface));
+  iface_plip = GST_IFACE_PLIP (iface);
+
+  if (gst_iface_is_configured (iface))
+    {
+      configuration = gst_xml_element_find_first (node, "configuration");
+      if (!configuration)
+        configuration = gst_xml_element_add (node, "configuration");
+
+      gst_xml_set_child_content (configuration, "address", iface_plip->_priv->address);
+      gst_xml_set_child_content (configuration, "remote_address", iface_plip->_priv->remote_address);
+      gst_xml_set_child_content (configuration, "gateway", iface_plip->_priv->remote_address);
+    }
+
+  GST_IFACE_CLASS (parent_class)->get_xml (iface, node);
 }
 
 void
