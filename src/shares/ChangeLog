@@ -1,4 +1,8 @@
 2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* Makefile.am: doh! added
+
+2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* Beginning of ChangeLog
 
