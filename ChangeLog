@@ -1,3 +1,9 @@
+2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* configure.in: build by default disks and shares too, this is
+	a development branch
+	* src/Makefile.am: added shares tool
+
 2004-08-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gnome-system-tools.schemas.in: removed some unused keys. defaulted
