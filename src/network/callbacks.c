@@ -22,6 +22,7 @@
 #include "gst-network-tool.h"
 #include "network-iface.h"
 #include "ifaces-list.h"
+#include "callbacks.h"
 
 extern GstTool *tool;
 
@@ -214,11 +215,11 @@ on_detect_modem_clicked (GtkWidget *widget, gpointer data)
 }
 
 static void
-do_popup_menu (GtkWidget *table, GtkWidget *popup, GdkEventButton *event)
+do_popup_menu (GtkWidget *table, GstTablePopup *table_popup, GdkEventButton *event)
 {
   gint button, event_time;
 
-  if (!popup)
+  if (!table_popup)
     return;
 
   if (event)
@@ -232,9 +233,10 @@ do_popup_menu (GtkWidget *table, GtkWidget *popup, GdkEventButton *event)
       event_time = gtk_get_current_event_time ();
     }
 
-  ifaces_list_setup_popup (table);
+  if (table_popup->setup)
+    (table_popup->setup) (table);
 
-  gtk_menu_popup (GTK_MENU (popup), NULL, NULL, NULL, NULL,
+  gtk_menu_popup (GTK_MENU (table_popup->popup), NULL, NULL, NULL, NULL,
 		  button, event_time);
 }
 
@@ -242,10 +244,10 @@ gboolean
 on_table_button_press (GtkWidget *table, GdkEventButton *event, gpointer data)
 {
   GtkTreePath      *path;
-  GtkWidget        *popup;
+  GstTablePopup    *table_popup;
   GtkTreeSelection *selection;
 
-  popup = (GtkWidget *) data;
+  table_popup = (GstTablePopup *) data;
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (table));
 
   if (event->button == 3)
@@ -259,24 +261,29 @@ on_table_button_press (GtkWidget *table, GdkEventButton *event, gpointer data)
 	  gtk_tree_selection_unselect_all (selection);
 	  gtk_tree_selection_select_path (selection, path);
 
-	  do_popup_menu (table, popup, event);
+	  do_popup_menu (table, table_popup, event);
 	}
 
       return TRUE;
     }
 
-  if (event->type == GDK_2BUTTON_PRESS || event->type == GDK_3BUTTON_PRESS) {
-    on_iface_properties_clicked (NULL, NULL);
-    return TRUE;
-  }
+  if (event->type == GDK_2BUTTON_PRESS || event->type == GDK_3BUTTON_PRESS)
+    {
+      if (table_popup->properties)
+	(table_popup->properties) (NULL, NULL);
+
+      return TRUE;
+    }
 
   return FALSE;
 }
 
 gboolean
-on_table_popup_menu (GtkWidget *widget, GtkWidget *popup)
+on_table_popup_menu (GtkWidget *widget, gpointer data)
 {
-  do_popup_menu (widget, popup, NULL);
+  GstTablePopup *table_popup = (GstTablePopup *) data;
+
+  do_popup_menu (widget, table_popup, NULL);
   return TRUE;
 }
 

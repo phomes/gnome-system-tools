@@ -26,6 +26,7 @@
 #include <gtk/gtk.h>
 #include "address-list.h"
 #include "gst-tool.h"
+#include "callbacks.h"
 
 extern GstTool *tool;
 
@@ -64,6 +65,18 @@ static void on_editing_done      (GtkCellRenderer *renderer,
 				  const gchar     *new_text,
 				  gpointer         data);
 
+GtkActionEntry address_list_popup_menu_items [] = {
+  { "Add",        GTK_STOCK_ADD,        N_("_Add"),        NULL, NULL, G_CALLBACK (on_element_added) },
+  { "Delete",     GTK_STOCK_DELETE,     N_("_Delete"),     NULL, NULL, G_CALLBACK (on_element_deleted) }
+};
+
+const gchar *address_list_ui_description =
+  "<ui>"
+  "  <popup name='MainMenu'>"
+  "    <menuitem action='Add'/>"
+  "    <menuitem action='Delete'/>"
+  "  </popup>"
+  "</ui>";
 
 enum {
   PROP_0,
@@ -262,11 +275,34 @@ gst_address_list_get_property (GObject    *object,
     }
 }
 
+static GtkWidget*
+popup_menu_create (GtkWidget *widget)
+{
+  GtkUIManager   *ui_manager;
+  GtkActionGroup *action_group;
+  GtkWidget      *popup;
+
+  action_group = gtk_action_group_new ("MenuActions");
+  gtk_action_group_add_actions (action_group, address_list_popup_menu_items, G_N_ELEMENTS (address_list_popup_menu_items), widget);
+
+  ui_manager = gtk_ui_manager_new ();
+  gtk_ui_manager_insert_action_group (ui_manager, action_group, 0);
+
+  if (!gtk_ui_manager_add_ui_from_string (ui_manager, address_list_ui_description, -1, NULL))
+    return NULL;
+
+  g_object_set_data (G_OBJECT (widget), "ui-manager", ui_manager);
+  popup = gtk_ui_manager_get_widget (ui_manager, "/MainMenu");
+
+  return popup;
+}
+
 static void
 setup_treeview (GstAddressList *list)
 {
   GtkCellRenderer *renderer;
   GtkTreeModel    *model;
+  GstTablePopup   *table_popup;
 
   model = GTK_TREE_MODEL (gtk_list_store_new (2, G_TYPE_STRING, G_TYPE_BOOLEAN));
   gtk_tree_view_set_model (list->_priv->list, model);
@@ -291,6 +327,16 @@ setup_treeview (GstAddressList *list)
 
   gtk_tree_view_insert_column (list->_priv->list,
 			       list->_priv->column, -1);
+
+  table_popup = g_new0 (GstTablePopup, 1);
+  table_popup->setup = NULL;
+  table_popup->properties = NULL;
+  table_popup->popup = popup_menu_create (list);
+
+  g_signal_connect (G_OBJECT (list->_priv->list), "button-press-event",
+		    G_CALLBACK (on_table_button_press), (gpointer) table_popup);
+  g_signal_connect (G_OBJECT (list->_priv->list), "popup_menu",
+		    G_CALLBACK (on_table_popup_menu), (gpointer) table_popup);
 }
 
 static void

@@ -44,7 +44,6 @@ void          ifaces_model_modify_interface_at_iter (GtkTreeIter*);
 GtkTreeModelFilter* gateways_filter_model_create    (GtkTreeModel *model);
 
 GtkTreeView*  ifaces_list_create                   (void);
-void          ifaces_list_setup_popup              (GtkWidget*);
 
 GtkComboBox*  gateways_combo_create                (void);
 void          gateways_combo_select                (gchar*);

@@ -115,7 +115,7 @@ popup_menu_create (GtkWidget *widget)
   return popup;
 }
 
-void
+static void
 ifaces_list_setup_popup (GtkWidget *table)
 {
   GtkUIManager     *ui_manager;
@@ -177,9 +177,9 @@ GtkTreeView*
 ifaces_list_create (void)
 {
   GtkWidget        *table = gst_dialog_get_widget (tool->main_dialog, "interfaces_list");
+  GstTablePopup    *table_popup;
   GtkTreeSelection *selection;
   GtkTreeModel     *model;
-  GtkWidget        *popup;
 
   model = GST_NETWORK_TOOL (tool)->interfaces_model;
   gtk_tree_view_set_model (GTK_TREE_VIEW (table), model);
@@ -191,12 +191,15 @@ ifaces_list_create (void)
   g_signal_connect (G_OBJECT (selection), "changed",
 		    G_CALLBACK (on_table_selection_changed), NULL);
 
-  popup = popup_menu_create (table);
+  table_popup = g_new0 (GstTablePopup, 1);
+  table_popup->setup = ifaces_list_setup_popup;
+  table_popup->properties = on_iface_properties_clicked;
+  table_popup->popup = popup_menu_create (table);
 
   g_signal_connect (G_OBJECT (table), "button-press-event",
-		    G_CALLBACK (on_table_button_press), (gpointer) popup);
+		    G_CALLBACK (on_table_button_press), (gpointer) table_popup);
   g_signal_connect (G_OBJECT (table), "popup_menu",
-		    G_CALLBACK (on_table_popup_menu), (gpointer) popup);
+		    G_CALLBACK (on_table_popup_menu), (gpointer) table_popup);
 
   return GTK_TREE_VIEW (table);
 }

@@ -21,6 +21,15 @@
 #ifndef __CALLBACKS_H
 #define __CALLBACKS_H
 
+typedef struct _GstTablePopup GstTablePopup;
+
+struct _GstTablePopup
+{
+  void (* setup) (GtkWidget *);
+  void (* properties) (GtkWidget*, gpointer);
+  GtkWidget *popup;
+};
+
 void  on_table_selection_changed   (GtkTreeSelection*, gpointer);
 void  on_iface_properties_clicked  (GtkWidget*, gpointer);
 void  on_activate_button_clicked   (GtkWidget*, gpointer);
@@ -33,7 +42,7 @@ void  on_connection_ok_clicked     (GtkWidget*, gpointer);
 void  on_detect_modem_clicked      (GtkWidget*, gpointer);
 
 gboolean on_table_button_press (GtkWidget*, GdkEventButton*, gpointer);
-gboolean on_table_popup_menu   (GtkWidget*, GtkWidget*);
+gboolean on_table_popup_menu   (GtkWidget*, gpointer);
 
 void  on_host_aliases_add_clicked        (GtkWidget*, gpointer);
 void  on_host_aliases_properties_clicked (GtkWidget*, gpointer);

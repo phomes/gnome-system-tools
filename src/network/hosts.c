@@ -25,8 +25,25 @@
 #include "hosts.h"
 #include "gst.h"
 #include "gst-network-tool.h"
+#include "callbacks.h"
 
 extern GstTool *tool;
+
+GtkActionEntry hosts_popup_menu_items [] = {
+  { "Add",        GTK_STOCK_ADD,        N_("_Add"),        NULL, NULL, G_CALLBACK (on_host_aliases_add_clicked) },
+  { "Properties", GTK_STOCK_PROPERTIES, N_("_Properties"), NULL, NULL, G_CALLBACK (on_host_aliases_properties_clicked) },
+  { "Delete",     GTK_STOCK_DELETE,     N_("_Delete"),     NULL, NULL, G_CALLBACK (on_host_aliases_delete_clicked) }
+};
+
+const gchar *hosts_ui_description =
+  "<ui>"
+  "  <popup name='MainMenu'>"
+  "    <menuitem action='Add'/>"
+  "    <separator/>"
+  "    <menuitem action='Properties'/>"
+  "    <menuitem action='Delete'/>"
+  "  </popup>"
+  "</ui>";
 
 static GtkTreeModel*
 host_aliases_model_create (void)
@@ -37,6 +54,28 @@ host_aliases_model_create (void)
 			      G_TYPE_STRING,
 			      G_TYPE_STRING);
   return GTK_TREE_MODEL (store);
+}
+
+static GtkWidget*
+popup_menu_create (GtkWidget *widget)
+{
+  GtkUIManager   *ui_manager;
+  GtkActionGroup *action_group;
+  GtkWidget      *popup;
+
+  action_group = gtk_action_group_new ("MenuActions");
+  gtk_action_group_add_actions (action_group, hosts_popup_menu_items, G_N_ELEMENTS (hosts_popup_menu_items), widget);
+
+  ui_manager = gtk_ui_manager_new ();
+  gtk_ui_manager_insert_action_group (ui_manager, action_group, 0);
+
+  if (!gtk_ui_manager_add_ui_from_string (ui_manager, hosts_ui_description, -1, NULL))
+    return NULL;
+
+  g_object_set_data (G_OBJECT (widget), "ui-manager", ui_manager);
+  popup = gtk_ui_manager_get_widget (ui_manager, "/MainMenu");
+
+  return popup;
 }
 
 static void
@@ -62,8 +101,9 @@ add_list_columns (GtkTreeView *list)
 GtkTreeView*
 host_aliases_list_create (void)
 {
-  GtkWidget    *list;
-  GtkTreeModel *model;
+  GtkWidget     *list;
+  GstTablePopup *table_popup;
+  GtkTreeModel  *model;
 
   list = gst_dialog_get_widget (tool->main_dialog, "host_aliases_list");
 
@@ -72,6 +112,16 @@ host_aliases_list_create (void)
   g_object_unref (model);
 
   add_list_columns (GTK_TREE_VIEW (list));
+
+  table_popup = g_new0 (GstTablePopup, 1);
+  table_popup->setup = NULL;
+  table_popup->properties = on_host_aliases_properties_clicked;
+  table_popup->popup = popup_menu_create (list);
+
+  g_signal_connect (G_OBJECT (list), "button-press-event",
+		    G_CALLBACK (on_table_button_press), (gpointer) table_popup);
+  g_signal_connect (G_OBJECT (list), "popup_menu",
+		    G_CALLBACK (on_table_popup_menu), (gpointer) table_popup);
 
   return GTK_TREE_VIEW (list);
 }
