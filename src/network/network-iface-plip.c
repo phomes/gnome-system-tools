@@ -227,6 +227,7 @@ gst_iface_plip_impl_get_xml (GstIface *iface, xmlNodePtr node)
       if (!configuration)
         configuration = gst_xml_element_add (node, "configuration");
 
+      gst_xml_set_child_content (configuration, "bootproto", "none");
       gst_xml_set_child_content (configuration, "address", iface_plip->_priv->address);
       gst_xml_set_child_content (configuration, "remote_address", iface_plip->_priv->remote_address);
       gst_xml_set_child_content (configuration, "gateway", iface_plip->_priv->remote_address);

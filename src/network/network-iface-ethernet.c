@@ -325,7 +325,7 @@ gst_iface_ethernet_impl_get_xml (GstIface *iface, xmlNodePtr node)
         gst_xml_set_child_content (configuration, "bootproto", "dhcp");
       else
         {
-          gst_xml_set_child_content (configuration, "bootproto", "static");
+          gst_xml_set_child_content (configuration, "bootproto", "none");
           gst_xml_set_child_content (configuration, "address",   iface_ethernet->_priv->address);
           gst_xml_set_child_content (configuration, "netmask",   iface_ethernet->_priv->netmask);
           gst_xml_set_child_content (configuration, "gateway",   iface_ethernet->_priv->gateway);
