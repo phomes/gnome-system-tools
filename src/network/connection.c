@@ -95,10 +95,17 @@ ethernet_dialog_save (GstConnectionDialog *dialog)
 static gboolean
 ethernet_dialog_check_fields (GstConnectionDialog *dialog)
 {
+  gchar *address, *netmask, *gateway;
+
+  address = get_entry_text (dialog->address);
+  netmask = get_entry_text (dialog->netmask);
+  gateway = get_entry_text (dialog->gateway);
+
   return ((!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->connection_configured))) ||
 	  (connection_get_bootproto (dialog) == GST_BOOTPROTO_DHCP) ||
-	  ((get_entry_text (dialog->address)) &&
-	   (get_entry_text (dialog->netmask))));
+	  ((gst_filter_check_ip_address (address) == GST_ADDRESS_IPV4) &&
+	   (gst_filter_check_ip_address (netmask) == GST_ADDRESS_IPV4) &&
+	   (!gateway || gst_filter_check_ip_address (gateway) == GST_ADDRESS_IPV4)));
 }
 
 static GtkTreeModel*
@@ -234,9 +241,14 @@ plip_dialog_save (GstConnectionDialog *dialog)
 static gboolean
 plip_dialog_check_fields (GstConnectionDialog *dialog)
 {
+  gchar *local_address, *remote_address;
+
+  local_address  = get_entry_text (dialog->local_address);
+  remote_address = get_entry_text (dialog->remote_address);
+
   return ((!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->connection_configured))) ||
-	  ((get_entry_text (dialog->local_address)) &&
-	   (get_entry_text (dialog->remote_address))));
+	  ((gst_filter_check_ip_address (local_address) == GST_ADDRESS_IPV4) &&
+	   (gst_filter_check_ip_address (remote_address) == GST_ADDRESS_IPV4)));
 }
 
 static void
@@ -290,15 +302,16 @@ static void
 modem_dialog_save (GstConnectionDialog *dialog)
 {
   g_object_set (G_OBJECT (dialog->iface),
-                "iface-login",       get_entry_text (dialog->login),
-                "iface-password",    get_entry_text (dialog->password),
-                "iface-serial-port", get_entry_text (GTK_BIN (dialog->serial_port)->child),
-                "iface-dial-prefix", get_entry_text (dialog->dial_prefix),
-                "iface-volume",      gtk_combo_box_get_active (GTK_COMBO_BOX (dialog->volume)),
-                "iface-dial-type",   gtk_combo_box_get_active (GTK_COMBO_BOX (dialog->dial_type)),
-                "iface-default-gw",  gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->default_gw)),
-                "iface-persist",     gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->persist)),
-                NULL);
+                "iface-login",        get_entry_text (dialog->login),
+                "iface-password",     get_entry_text (dialog->password),
+                "iface-serial-port",  get_entry_text (GTK_BIN (dialog->serial_port)->child),
+		"iface-phone-number", get_entry_text (dialog->phone_number),
+                "iface-dial-prefix",  get_entry_text (dialog->dial_prefix),
+                "iface-volume",       gtk_combo_box_get_active (GTK_COMBO_BOX (dialog->volume)),
+                "iface-dial-type",    gtk_combo_box_get_active (GTK_COMBO_BOX (dialog->dial_type)),
+                "iface-default-gw",   gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->default_gw)),
+                "iface-persist",      gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->persist)),
+		NULL);
 }
 
 static gboolean
@@ -511,4 +524,24 @@ connection_detect_modem (void)
   xmlFreeDoc (doc);
 	
   return device;
+}
+
+void
+connection_check_netmask (GtkWidget *address_widget, GtkWidget *netmask_widget)
+{
+  gchar *address, *netmask;
+  guint32 ip1;
+
+  address = (gchar *) gtk_entry_get_text (GTK_ENTRY (address_widget));
+  netmask = (gchar *) gtk_entry_get_text (GTK_ENTRY (netmask_widget));
+
+  if ((sscanf (address, "%d.", &ip1) == 1) && (strlen (netmask) == 0))
+    {
+      if (ip1 < 127)
+        gtk_entry_set_text (GTK_ENTRY (netmask_widget), "255.0.0.0");
+      else if (ip1 < 192)
+        gtk_entry_set_text (GTK_ENTRY (netmask_widget), "255.255.0.0");
+      else
+        gtk_entry_set_text (GTK_ENTRY (netmask_widget), "255.255.255.0");
+    }
 }

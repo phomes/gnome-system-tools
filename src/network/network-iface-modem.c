@@ -30,6 +30,7 @@ struct _GstIfaceModemPriv
   gchar *serial_port;
   gchar *phone_number;
   gchar *dial_prefix;
+  gchar *section;
 
   gint volume;
   gint dial_type;
@@ -67,7 +68,8 @@ enum {
   PROP_VOLUME,
   PROP_DIAL_TYPE,
   PROP_DEFAULT_GW,
-  PROP_PERSIST
+  PROP_PERSIST,
+  PROP_SECTION
 };
 
 static gpointer parent_class;
@@ -192,6 +194,13 @@ gst_iface_modem_class_init (GstIfaceModemClass *class)
                                                         NULL,
                                                         G_PARAM_READWRITE));
   g_object_class_install_property (object_class,
+                                   PROP_SECTION,
+                                   g_param_spec_string ("iface_section",
+                                                         "Iface section",
+                                                         "Name of the wvdial section or the provider name",
+                                                         NULL,
+                                                         G_PARAM_READWRITE));
+  g_object_class_install_property (object_class,
                                    PROP_VOLUME,
                                    g_param_spec_enum ("iface_volume",
                                                       "Iface volume",
@@ -236,6 +245,7 @@ gst_iface_modem_init (GstIfaceModem *iface)
   iface->_priv->serial_port = NULL;
   iface->_priv->phone_number = NULL;
   iface->_priv->dial_prefix = NULL;
+  iface->_priv->section = NULL;
 }
 
 static void
@@ -252,6 +262,7 @@ gst_iface_modem_finalize (GObject *object)
       g_free (iface->_priv->serial_port);
       g_free (iface->_priv->phone_number);
       g_free (iface->_priv->dial_prefix);
+      g_free (iface->_priv->section);
 
       g_free (iface->_priv);
     }
@@ -291,6 +302,9 @@ gst_iface_modem_set_property (GObject      *object,
     case PROP_DIAL_PREFIX:
       g_free (iface->_priv->dial_prefix);
       iface->_priv->dial_prefix = g_value_dup_string (value);
+      break;
+    case PROP_SECTION:
+      iface->_priv->section = g_value_dup_string (value);
       break;
     case PROP_VOLUME:
       iface->_priv->volume = g_value_get_enum (value);
@@ -333,6 +347,9 @@ gst_iface_modem_get_property (GObject      *object,
       break;
     case PROP_DIAL_PREFIX:
       g_value_set_string (value, iface->_priv->dial_prefix);
+      break;
+    case PROP_SECTION:
+      g_value_set_string (value, iface->_priv->section);
       break;
     case PROP_VOLUME:
       g_value_set_enum (value, iface->_priv->volume);
@@ -399,6 +416,11 @@ gst_iface_modem_impl_get_xml (GstIface *iface, xmlNodePtr node)
       gst_xml_set_child_content (configuration, "dial_type", str);
       g_free (str);
 
+      gst_xml_set_child_content (configuration, "section",
+                                 (iface_modem->_priv->section) ?
+				 iface_modem->_priv->section :
+				 gst_iface_get_dev (iface));
+
       gst_xml_element_set_boolean (configuration, "set_default_gw", iface_modem->_priv->default_gw);
       gst_xml_element_set_boolean (configuration, "persist", iface_modem->_priv->persist);
     }
@@ -410,7 +432,7 @@ void
 gst_iface_modem_set_config_from_xml (GstIfaceModem *iface,
 				     xmlNodePtr     node)
 {
-  gchar      *login, *password, *serial_port, *phone_number, *dial_prefix;
+  gchar      *login, *password, *serial_port, *phone_number, *dial_prefix, *section;
   gint        volume, dial_type;
   gboolean    default_gw, persist;
   xmlNodePtr  configuration;
@@ -428,6 +450,7 @@ gst_iface_modem_set_config_from_xml (GstIfaceModem *iface,
   serial_port  = gst_xml_get_child_content (configuration, "serial_port");
   phone_number = gst_xml_get_child_content (configuration, "phone_number");
   dial_prefix  = gst_xml_get_child_content (configuration, "dial_prefix");
+  section      = gst_xml_get_child_content (configuration, "section");
 
   str = gst_xml_get_child_content (configuration, "volume");
   volume = g_strtod (str, NULL);
@@ -454,6 +477,7 @@ gst_iface_modem_set_config_from_xml (GstIfaceModem *iface,
                 "iface-dial-type", dial_type,
                 "iface-default-gw", default_gw,
                 "iface-persist", persist,
+                "iface-section", section,
                 NULL);
 
   g_free (login);
@@ -461,6 +485,7 @@ gst_iface_modem_set_config_from_xml (GstIfaceModem *iface,
   g_free (serial_port);
   g_free (phone_number);
   g_free (dial_prefix);
+  g_free (section);
 }
 
 GstIfaceModem*

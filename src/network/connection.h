@@ -82,6 +82,7 @@ GstConnectionDialog *connection_dialog_init (void);
 void connection_dialog_prepare    (GstConnectionDialog*, GstIface*);
 void connection_save (GstConnectionDialog*);
 void connection_check_fields (GstConnectionDialog*);
+void connection_check_netmask (GtkWidget*, GtkWidget*);
 gchar *connection_detect_modem (void);
 
 #endif /* __CONNECTION_H */

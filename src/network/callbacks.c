@@ -462,3 +462,12 @@ callbacks_check_hostname_hook (GstDialog *dialog, gpointer data)
   g_free (hostname_old);
   return TRUE;
 }
+
+gboolean
+on_ip_address_focus_out (GtkWidget *widget, GdkEventFocus *event, gpointer data)
+{
+  GstConnectionDialog *dialog = GST_NETWORK_TOOL (tool)->dialog;
+
+  connection_check_netmask (dialog->address, dialog->netmask);
+  return FALSE;
+}

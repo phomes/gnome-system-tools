@@ -1,5 +1,13 @@
 2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* callbacks.[ch], connection.[ch], main.c: added some more IP addresses
+	checking
+	* connection.c: really save the phone number for modem connections
+	* network-iface-modem.c: handled wvdial sections and provider names,
+	this might be an internal detail in the backend, though.
+
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* address-list.c, main.c: handled IP address parsing/filtering
 
 2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>

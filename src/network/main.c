@@ -53,6 +53,7 @@ static GstDialogSignal signals[] = {
   { "connection_ok",                "clicked", G_CALLBACK (on_connection_ok_clicked) },
   { "connection_detect_modem",      "clicked", G_CALLBACK (on_detect_modem_clicked) },
   /* dialog changing detection */
+  { "connection_address",           "focus-out-event", G_CALLBACK (on_ip_address_focus_out) },
   { "connection_ppp_device_active", "toggled", G_CALLBACK (on_dialog_changed) },
   { "connection_device_active",     "toggled", G_CALLBACK (on_dialog_changed) },
   { "connection_essid",             "changed", G_CALLBACK (on_dialog_changed) },
