@@ -1,5 +1,9 @@
 2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* gst-filter.c (gst_filter_check_ip_address): handled NULL strings
+
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* gst-filter.[ch]: added for making generic GtkEntry filters
 	* gst.h, Makefile.am: added gst-filter.h
 

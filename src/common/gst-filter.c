@@ -54,10 +54,13 @@ get_address_section_value (const gchar *text, gint start, gint len)
 GstAddressRet
 gst_filter_check_ip_address (const gchar *text)
 {
-  gint i, len, numsep, section_val, nsegments;
+  gint      i, len, numsep, section_val, nsegments;
+  gboolean  has_double_colon, segment_has_alpha;
   IpVersion ver;
-  gchar c;
-  gboolean has_double_colon, segment_has_alpha;
+  gchar     c;
+
+  if (!text)
+    return GST_ADDRESS_INCOMPLETE;
 
   ver = IP_UNK;
   len = 0;
