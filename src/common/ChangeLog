@@ -1,3 +1,10 @@
+2004-11-20  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* gst-tool.c (gst_tool_run_set_directive_va): made it really able
+	to get some XML from the backend. 
+	(gst_tool_write_xml_to_backend) send the end of request. 
+	(gst_tool_read_junk_from_backend) removed.
+
 2004-11-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-platform.c, gst-tool.c: Added archlinux pixmap

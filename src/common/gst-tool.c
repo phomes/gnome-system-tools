@@ -652,7 +652,7 @@ gst_tool_read_xml_from_backend (GstTool *tool)
 	gchar *buffer = NULL;
 
 	if (!tool->xml_document)
-		return NULL;
+		tool->xml_document = g_string_new ("");
 
 	do {
 		g_free (buffer);
@@ -777,14 +777,6 @@ gst_tool_run_get_directive_va (GstTool *tool, const gchar *report_sign, const gc
 
 	xmlSubstituteEntitiesDefault (TRUE);
 
-	/* LibXML support for parsing from memory is good, but parsing from
-	 * opened filehandles is not supported unless you write your own feed
-	 * mechanism. Let's just load it all into memory, then. Also, refusing
-	 * enormous documents can be considered a plus. </dystopic> */
-	
-	if (tool->xml_document == NULL)
-		tool->xml_document = g_string_new ("");
-
 	if (location_id == NULL)
 		report_progress (tool);
 
@@ -832,10 +824,6 @@ gst_tool_run_set_directive_va (GstTool *tool, xmlDoc *xml,
 	if (xml)
 		gst_tool_write_xml_to_backend (tool, xml);
 
-	/* This is tipicaly to just read the end of request string,
-	   but a set directive may return some XML too. */
-	xml_out = gst_tool_read_xml_from_backend (tool);
-
 	/* FIXME: Instead of doing the following, we should pass around a value describing
 	 * tool I/O mode (as opposed to a string to report_progress ()). */
 	tool->report_hook_type = GST_REPORT_HOOK_SAVE;
@@ -843,7 +831,9 @@ gst_tool_run_set_directive_va (GstTool *tool, xmlDoc *xml,
 	if (location_id == NULL)
 		report_progress (tool);
 
-	gst_tool_read_junk_from_backend (tool, GST_TOOL_EOR "\r\n");
+	/* This is tipicaly to just read the end of request string,
+	   but a set directive may return some XML too. */
+	xml_out = gst_tool_read_xml_from_backend (tool);
 
 	tool->directive_running = FALSE;
 	gst_tool_idle_run_directives_add (tool);
@@ -1374,7 +1364,6 @@ gst_tool_set_xml_funcs (GstTool *tool, GstXmlFunc load_cb, GstXmlFunc save_cb, g
 
 	if (save_cb)
 		g_signal_connect (G_OBJECT (tool), "fill_xml", G_CALLBACK (save_cb), data);
-
 }
 
 void
@@ -1702,19 +1691,6 @@ gst_tool_read_line_from_backend (GstTool *tool)
 }
 
 void
-gst_tool_read_junk_from_backend (GstTool *tool, gchar *needle)
-{
-	gchar *buffer = NULL;
-
-	do {
-		g_free (buffer);
-		buffer = gst_tool_read_line_from_backend (tool);
-	} while (g_strrstr (buffer, needle) == NULL);
-
-	g_free (buffer);
-}
-
-void
 gst_tool_write_xml_to_backend (GstTool *tool, xmlDoc *doc)
 {
 	gint size;
@@ -1723,8 +1699,10 @@ gst_tool_write_xml_to_backend (GstTool *tool, xmlDoc *doc)
 
 	xmlDocDumpMemory (doc, &xml, &size);
 	string = (gchar *) xml;
-	
+
 	gst_tool_write_to_backend (tool, string);
+	gst_tool_write_to_backend (tool, GST_TOOL_EOR "\n");
+
 	xmlFree (xml);
 }
 
