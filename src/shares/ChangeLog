@@ -1,6 +1,7 @@
 2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Makefile.am: doh! added
+	* shares.dekstop.in.in: ditto
 
 2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
