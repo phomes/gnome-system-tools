@@ -403,14 +403,16 @@ gst_iface_enable (GstIface *iface)
   xmlDoc     *doc, *ret_doc;
   xmlNodePtr  root;
   gboolean    ret;
+  gchar      *report;
 
   doc = gst_xml_doc_create ("interface");
   root = gst_xml_doc_get_root (doc);
+  report = g_strdup_printf (_("Activating interface \"%s\""), gst_iface_get_dev (iface));
 
   /* get the interface xml directly in the root */
   GST_IFACE_GET_CLASS (iface)->get_xml (iface, root);
 
-  ret_doc = gst_tool_run_set_directive (tool, doc, NULL,
+  ret_doc = gst_tool_run_set_directive (tool, doc, report,
 					"enable_iface_with_config", NULL);
 
   /* check that it has succeeded */
@@ -421,6 +423,7 @@ gst_iface_enable (GstIface *iface)
   
   gst_xml_doc_destroy (ret_doc);
   gst_xml_doc_destroy (doc);
+  g_free (report);
 
   return ret;
 }

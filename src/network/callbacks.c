@@ -26,6 +26,33 @@
 
 extern GstTool *tool;
 
+static void
+enable_iface (GstIface *iface)
+{
+  GtkWidget *dialog;
+  gboolean   success;
+
+  success = gst_iface_enable (iface);
+
+  if (!success)
+    {
+      dialog = gtk_message_dialog_new (GTK_WINDOW (tool->main_dialog),
+				       GTK_DIALOG_MODAL,
+				       GTK_MESSAGE_ERROR,
+				       GTK_BUTTONS_CLOSE,
+				       _("Could not enable the interface %s"),
+				       gst_iface_get_dev (iface),
+				       NULL);
+      gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+						_("Check that the settings are apropriate for "
+						  "this network and that the computer is correctly "
+						  "connected to it."),
+						NULL);
+      gtk_dialog_run (GTK_DIALOG (dialog));
+      gtk_widget_destroy (dialog);
+    }
+}
+
 void
 on_table_selection_changed (GtkTreeSelection *selection, gpointer data)
 {
@@ -143,6 +170,7 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
   GstIface            *iface;
 
   dialog = GST_NETWORK_TOOL (tool)->dialog;
+  gtk_widget_hide (dialog->dialog);
 
   if (dialog->changed)
     {
@@ -155,7 +183,7 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 
 	  /* modify the config realtime */
 	  if (gst_iface_get_enabled (iface))
-	    gst_iface_enable (iface);
+	    enable_iface (iface);
 
 	  ifaces_model_modify_interface_at_iter (&iter);
 	  g_object_unref (iface);
@@ -166,7 +194,6 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
     }
 
   g_object_unref (dialog->iface);
-  gtk_widget_hide (dialog->dialog);
 
   if (dialog->standalone)
     {
@@ -304,8 +331,6 @@ enable_disable_iface (GstNetworkTool *network_tool, gboolean enable)
   GtkTreeModel *model;
   GtkTreeIter   iter;
   GstIface     *iface;
-  GtkWidget    *dialog;
-  gboolean      success;
 
   selection = gtk_tree_view_get_selection (network_tool->interfaces_list);
 
@@ -314,31 +339,8 @@ enable_disable_iface (GstNetworkTool *network_tool, gboolean enable)
       gtk_tree_model_get (model, &iter,
 			  COL_OBJECT, &iface,
 			  -1);
-
       if (enable)
-        {
-	  gst_dialog_freeze (tool->main_dialog);
-	  success = gst_iface_enable (iface);
-	  gst_dialog_thaw   (tool->main_dialog);
-
-	  if (!success)
-	    {
-	      dialog = gtk_message_dialog_new (GTK_WINDOW (tool->main_dialog),
-					       GTK_DIALOG_MODAL,
-					       GTK_MESSAGE_ERROR,
-					       GTK_BUTTONS_CLOSE,
-					       _("Could not enable the interface %s"),
-					       gst_iface_get_dev (iface),
-					       NULL);
-	      gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-							_("Check that the settings are apropriate for "
-							  "this network and that the computer is correctly "
-							  "connected to it."),
-							NULL);
-	      gtk_dialog_run (GTK_DIALOG (dialog));
-	      gtk_widget_destroy (dialog);
-	    }
-	}
+	enable_iface (iface);
       else
 	gst_iface_disable (iface);
 

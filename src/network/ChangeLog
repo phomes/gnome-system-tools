@@ -1,3 +1,11 @@
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* callbacks.c (enable_iface): added, common function that shows a
+	dialog if there was any error. (on_connection_ok_clicked),
+	(enable_disable_iface): use enable_iface ()
+	* network-iface.c (gst_iface_enable): added report text to the
+	directive
+
 2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.[ch] (gst_address_list_clear): added
