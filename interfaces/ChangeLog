@@ -1,3 +1,8 @@
+2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* shares.glade.in, shares.glade.inp: added
+	* Makefile.am: added shares
+
 2004-08-17  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* users.glade.in: reworked the user privileges stuff, now it's nice
