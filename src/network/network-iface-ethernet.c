@@ -40,9 +40,11 @@ static void gst_iface_ethernet_class_init (GstIfaceEthernetClass *class);
 static void gst_iface_ethernet_init       (GstIfaceEthernet      *iface);
 static void gst_iface_ethernet_finalize   (GObject               *object);
 
-static const GdkPixbuf* gst_iface_ethernet_get_pixbuf  (GstIface *iface);
-static gchar*           gst_iface_ethernet_get_desc    (GstIface *iface);
-static gboolean         gst_iface_ethernet_has_gateway (GstIface *iface);
+static const GdkPixbuf* gst_iface_ethernet_get_pixbuf   (GstIface *iface);
+static gchar*           gst_iface_ethernet_get_desc     (GstIface *iface);
+static gboolean         gst_iface_ethernet_has_gateway  (GstIface *iface);
+static void             gst_iface_ethernet_impl_get_xml (GstIface *iface,
+                                                         xmlNodePtr node);
 
 static void gst_iface_ethernet_set_property (GObject      *object,
 					     guint         prop_id,
@@ -127,6 +129,7 @@ gst_iface_ethernet_class_init (GstIfaceEthernetClass *class)
   iface_class->get_iface_pixbuf = gst_iface_ethernet_get_pixbuf;
   iface_class->get_iface_desc   = gst_iface_ethernet_get_desc;
   iface_class->has_gateway      = gst_iface_ethernet_has_gateway;
+  iface_class->get_xml          = gst_iface_ethernet_impl_get_xml;
 
   g_object_class_install_property (object_class,
 				   PROP_ADDRESS,
@@ -301,6 +304,31 @@ gst_iface_ethernet_has_gateway (GstIface *iface)
   
   return ((ethernet_iface->_priv->bootproto == GST_BOOTPROTO_DHCP) ||
 	  (ethernet_iface->_priv->gateway));
+}
+
+static void
+gst_iface_ethernet_impl_get_xml (GstIface *iface, xmlNodePtr node)
+{
+  xmlNodePtr configuration;
+  GstIfaceEthernet *iface_ethernet;
+
+  g_return_if_fail (GST_IS_IFACE_ETHERNET (iface));
+  iface_ethernet = GST_IFACE_ETHERNET (iface);
+
+  if (gst_iface_is_configured (iface))
+    {
+      configuration = gst_xml_element_find_first (node, "configuration");
+      if (!configuration)
+        configuration = gst_xml_element_add (node, "configuration");
+
+      gst_xml_set_child_content (configuration, "address", iface_ethernet->_priv->address);
+      gst_xml_set_child_content (configuration, "netmask", iface_ethernet->_priv->netmask);
+      gst_xml_set_child_content (configuration, "gateway", iface_ethernet->_priv->gateway);
+      gst_xml_set_child_content (configuration, "network", iface_ethernet->_priv->network);
+      gst_xml_set_child_content (configuration, "broadcast", iface_ethernet->_priv->broadcast);
+    }
+
+  GST_IFACE_CLASS (parent_class)->get_xml (iface, node);
 }
 
 void

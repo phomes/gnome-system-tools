@@ -46,6 +46,9 @@ static void gst_iface_get_property (GObject      *object,
 				    GValue       *value,
 				    GParamSpec   *pspec);
 
+static void gst_iface_impl_get_xml (GstIface   *iface,
+                                    xmlNodePtr  node);
+
 enum {
   PROP_0,
   PROP_AUTO,
@@ -93,6 +96,8 @@ gst_iface_class_init (GstIfaceClass *class)
   object_class->set_property = gst_iface_set_property;
   object_class->get_property = gst_iface_get_property;
   object_class->finalize     = gst_iface_finalize;
+
+  class->get_xml = gst_iface_impl_get_xml;
 
   g_object_class_install_property (object_class,
 				   PROP_AUTO,
@@ -220,6 +225,28 @@ gst_iface_get_property (GObject      *object,
     case PROP_HWADDR:
       g_value_set_string (value, iface->_priv->hwaddr);
       break;
+    }
+}
+
+static void
+gst_iface_impl_get_xml (GstIface *iface, xmlNodePtr node)
+{
+  xmlNodePtr configuration;
+
+  g_return_if_fail (GST_IS_IFACE (iface));
+
+  gst_xml_set_child_content   (node, "dev",     iface->_priv->dev);
+  gst_xml_set_child_content   (node, "hwaddr",  iface->_priv->hwaddr);
+  gst_xml_element_set_boolean (node, "enabled", iface->_priv->is_enabled);
+
+  if (iface->_priv->is_configured)
+    {
+      configuration = gst_xml_element_find_first (node, "configuration");
+
+      if (!configuration)
+        configuration = gst_xml_element_add (node, "configuration");
+
+      gst_xml_element_set_boolean (node, "auto", iface->_priv->is_auto);
     }
 }
 
@@ -363,14 +390,12 @@ gst_iface_disable (GstIface *iface)
 }
 
 void
-gst_iface_get_xml (GstIface *iface, xmlNodePtr parent)
+gst_iface_get_xml (GstIface *iface, xmlNodePtr interface)
 {
-  g_return_if_fail (GST_IS_IFACE (iface));
-
   if (GST_IFACE_GET_CLASS (iface)->get_xml == NULL)
     return;
 
-  GST_IFACE_GET_CLASS (iface)->get_xml (iface, parent);
+  GST_IFACE_GET_CLASS (iface)->get_xml (iface, interface);
 }
 
 const GdkPixbuf*
