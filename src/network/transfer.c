@@ -39,10 +39,25 @@ transfer_address_list_to_gui (xmlNodePtr root, gchar *tag, GstAddressList *al)
 static void
 transfer_string_to_entry (xmlNodePtr root, gchar *tag, GtkEntry *entry)
 {
-  gchar      *text;
+  gchar *text;
 
   if (text = gst_xml_get_child_content (root, tag))
-    gtk_entry_set_text (entry, text);
+    {
+      gtk_entry_set_text (entry, text);
+      g_free (text);
+    }
+}
+
+static void
+transfer_gateway_to_combo (xmlNodePtr root)
+{
+  gchar *text;
+
+  if (text = gst_xml_get_child_content (root, "gatewaydev"))
+    {
+      gateways_combo_select (text);
+      g_free (text);
+    }
 }
 
 static void
@@ -73,4 +88,5 @@ transfer_xml_to_gui (GstTool *tool, gpointer data)
   transfer_string_to_entry (root, "domain", network_tool->domain);
 
   transfer_interfaces_to_list (root);
+  transfer_gateway_to_combo (root);
 }

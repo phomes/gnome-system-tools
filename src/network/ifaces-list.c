@@ -230,10 +230,27 @@ ifaces_model_add_interface_from_node (xmlNodePtr node)
 static void
 update_gateways_combo (void)
 {
+  GtkTreeModel *model;
+  GtkTreeIter   iter;
+  gint          count = 0;
+  gboolean      valid;
+
   /* refilter the gateways model */
   gtk_tree_model_filter_refilter (GST_NETWORK_TOOL (tool)->gateways_model);
 
-  /* FIXME: put the widgets sensitive/unsensitive if there aren't possible gateways */
+  /* put sensitive/unsensitive the combo depending on the items number */
+  model = GTK_TREE_MODEL (GST_NETWORK_TOOL (tool)->gateways_model);
+  valid = gtk_tree_model_get_iter_first (model, &iter);
+
+  while (valid)
+    {
+      count++;
+      valid = gtk_tree_model_iter_next (model, &iter);
+    }
+
+  gtk_widget_set_sensitive (GTK_WIDGET (GST_NETWORK_TOOL (tool)->gateways_list), count > 0);
+  gtk_widget_set_sensitive (gst_dialog_get_widget (tool->main_dialog, "gateways_combo_label"),
+			    count > 0);
 }
 
 void
@@ -317,4 +334,36 @@ gateways_combo_create (void)
   add_combo_layout (GTK_COMBO_BOX (combo));
 
   return GTK_COMBO_BOX (combo);
+}
+
+void
+gateways_combo_select (gchar *dev)
+{
+  GtkComboBox  *combo = GST_NETWORK_TOOL (tool)->gateways_list;
+  GtkTreeModel *model;
+  GtkTreeIter   iter;
+  gboolean      valid;
+  gchar        *iter_dev;
+
+  g_return_if_fail (dev != NULL);
+
+  model = gtk_combo_box_get_model (GTK_COMBO_BOX (combo));
+  valid = gtk_tree_model_get_iter_first (model, &iter);
+
+  while (valid)
+    {
+      gtk_tree_model_get (model, &iter,
+			  COL_DEV, &iter_dev,
+			  -1);
+
+      if (iter_dev && (strcmp (dev, iter_dev) == 0))
+        {
+	  gtk_combo_box_set_active_iter (GTK_COMBO_BOX (combo), &iter);
+	  valid = FALSE; /* just exit */
+	}
+      else
+	valid = gtk_tree_model_iter_next (model, &iter);
+
+      g_free (iter_dev);
+    }
 }
