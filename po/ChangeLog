@@ -1,3 +1,8 @@
+2002-07-19  Christophe Merlet  <christophe@merlet.net>
+
+	* fr.po: Updated French translation from work of
+	Jean-Michel Ardantz <jmardantz@ifrance.com>.
+
 2002-05-30  Abel Cheung  <maddog@linux.org.hk>
 
 	* zh_TW.po: Updated traditional Chinese translation.
@@ -66,7 +71,7 @@
 
         * es.po: Updated Spanish translation
 	
-2001-11-07  Christophe Merlet  <redfox@eikonex.org>
+2001-11-07  Christophe Merlet  <christophe@merlet.net>
 
 	* fr.po: Updated French translation with work of
 	Jean-Michel Ardantz <jmardantz@ifrance.com>.
@@ -649,7 +654,7 @@
 
 	* sk.po: Updated Slovak translation.
 
-2001-03-02  Christophe Merlet  <redfox@eikonex.org>
+2001-03-02  Christophe Merlet  <christophe@merlet.net>
 
 	* fr.po: Added French translation.
 
