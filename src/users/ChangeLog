@@ -1,3 +1,11 @@
+2004-08-17  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* privileges-table.[ch]: added, it's the table which contains the
+	user privileges
+	* Makefile.am: ditto
+	* table.c, user-settings.c: used this new table
+	* main.c, user-group-xml.[ch]: removed unused code
+
 2004-08-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* user-group-xml.c: remove user visibility check. Fixes #145049
