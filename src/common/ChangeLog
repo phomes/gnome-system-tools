@@ -1,3 +1,8 @@
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* gst-filter.[ch]: added for making generic GtkEntry filters
+	* gst.h, Makefile.am: added gst-filter.h
+
 2004-10-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
         * gst-tool.[ch] (gst_init): use GOption instead of popt
