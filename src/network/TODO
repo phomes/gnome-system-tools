@@ -7,7 +7,6 @@
 - context menus for the hosts, dns and search tables
 - check that it's handling correctly the wvdial modem connections
 - complete the locations stuff
-- warn if the user changes hostname
 - update user docs
 - drink some beer
 

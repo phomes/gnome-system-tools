@@ -64,6 +64,8 @@ main (int argc, gchar *argv[])
 
   gst_tool_set_xml_funcs (tool, transfer_xml_to_gui, transfer_gui_to_xml, NULL);
   gst_dialog_connect_signals (tool->main_dialog, signals);
+  gst_dialog_add_apply_hook (tool->main_dialog, callbacks_check_hostname_hook, NULL);
+
   gst_tool_main (tool, FALSE);
 
   return 0;

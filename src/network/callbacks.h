@@ -39,4 +39,6 @@ void  on_host_aliases_add_clicked        (GtkWidget*, gpointer);
 void  on_host_aliases_properties_clicked (GtkWidget*, gpointer);
 void  on_host_aliases_delete_clicked     (GtkWidget*, gpointer);
 
+gboolean callbacks_check_hostname_hook (GstDialog*, gpointer);
+
 #endif /* __CALLBACKS_H */

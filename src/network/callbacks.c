@@ -384,3 +384,57 @@ on_host_aliases_delete_clicked (GtkWidget *widget, gpointer data)
       gst_dialog_modify (tool->main_dialog);
     }
 }
+
+gboolean
+callbacks_check_hostname_hook (GstDialog *dialog, gpointer data)
+{
+  GstNetworkTool *network_tool;
+  gchar *hostname_old, *hostname_new;
+  xmlNode *root, *node;
+  GtkWidget *d;
+  gint res;
+
+  network_tool = GST_NETWORK_TOOL (dialog->tool);
+  root = gst_xml_doc_get_root (dialog->tool->config);
+  node = gst_xml_element_find_first (root, "hostname");
+
+  hostname_old = gst_xml_element_get_content (node);
+  hostname_new = gtk_entry_get_text (network_tool->hostname);
+
+  if (hostname_old && hostname_new &&
+      (strcmp (hostname_new, hostname_old) != 0))
+    {
+      d = gtk_message_dialog_new (GTK_WINDOW (tool->main_dialog),
+				  GTK_DIALOG_MODAL,
+				  GTK_MESSAGE_WARNING,
+				  GTK_BUTTONS_NONE,
+				  _("The host name has changed"),
+				  NULL);
+      gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (d),
+						_("This will prevent you "
+						  "from launching new applications, and so you will "
+						  "have to log in again. Continue anyway?"),
+						NULL);
+      gtk_dialog_add_buttons (GTK_DIALOG (d),
+			      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
+			      _("Change _Host name"), GTK_RESPONSE_ACCEPT,
+			      NULL);
+
+      res = gtk_dialog_run (GTK_DIALOG (d));
+      gtk_widget_destroy (d);
+
+      switch (res)
+        {
+	case GTK_RESPONSE_ACCEPT:
+	  g_free (hostname_old);
+	  return TRUE;
+	case GTK_RESPONSE_CANCEL:
+	default:
+	  gtk_entry_set_text (network_tool->hostname, hostname_old);
+	  return FALSE;
+	}
+    }
+
+  g_free (hostname_old);
+  return TRUE;
+}

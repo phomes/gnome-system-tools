@@ -1,5 +1,10 @@
 2004-11-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* callbacks.[ch] (callbacks_check_hostname_hook): added
+	* main.c: added apply hook for checking when the hostname is changed
+
+2004-11-26  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* callbacks.[ch] (on_detect_modem_clicked): added
 	(enable_disable_iface): warn when the iface could not be enabled
 	(on_host_aliases_delete_clicked): added gst_dialog_modify()
