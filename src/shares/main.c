@@ -67,6 +67,14 @@ init_standalone_dialog (const gchar *path)
 	share_settings_dialog_run (path, TRUE);
 }
 
+void
+init_filters (void)
+{
+	gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "share_nfs_address")), GST_FILTER_IPV4);
+	gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "share_nfs_network")), GST_FILTER_IPV4);
+	gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "share_nfs_netmask")), GST_FILTER_IPV4);
+}
+
 int
 main (int argc, char *argv[])
 {
@@ -83,6 +91,7 @@ main (int argc, char *argv[])
 	gst_tool_construct (tool, "shares", _("Shared folders settings"));
 	gst_tool_set_xml_funcs (tool, transfer_xml_to_gui, transfer_gui_to_xml, NULL);
 	gst_dialog_connect_signals (tool->main_dialog, signals);
+	init_filters ();
 
 	initialize_tables ();
 
