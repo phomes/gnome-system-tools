@@ -154,7 +154,7 @@ Use this tool for configuring the way your system access to other computers</pro
 
 		      <child>
 			<widget class="GtkTreeView" id="interfaces_list">
-			  <property name="width_request">268</property>
+			  <property name="width_request">290</property>
 			  <property name="height_request">194</property>
 			  <property name="visible">True</property>
 			  <property name="can_focus">True</property>
@@ -2144,6 +2144,11 @@ Use this tool for configuring the way your system access to other computers</pro
 			  <child>
 			    <widget class="GtkComboBoxEntry" id="comboboxentry1">
 			      <property name="visible">True</property>
+			      <property name="items" translatable="yes">/dev/modem
+/dev/ttyS0
+/dev/ttyS1
+/dev/ttyS2
+/dev/ttyS3</property>
 			    </widget>
 			    <packing>
 			      <property name="left_attach">1</property>
@@ -2157,6 +2162,8 @@ Use this tool for configuring the way your system access to other computers</pro
 			  <child>
 			    <widget class="GtkComboBox" id="combobox6">
 			      <property name="visible">True</property>
+			      <property name="items" translatable="yes">Tones
+Pulses</property>
 			    </widget>
 			    <packing>
 			      <property name="left_attach">1</property>
@@ -2170,6 +2177,10 @@ Use this tool for configuring the way your system access to other computers</pro
 			  <child>
 			    <widget class="GtkComboBox" id="combobox7">
 			      <property name="visible">True</property>
+			      <property name="items" translatable="yes">Off
+Low
+Medium
+Loud</property>
 			    </widget>
 			    <packing>
 			      <property name="left_attach">1</property>
@@ -2500,7 +2511,7 @@ Use this tool for configuring the way your system access to other computers</pro
 			      <property name="visible">True</property>
 			      <property name="can_focus">True</property>
 			      <property name="editable">True</property>
-			      <property name="visibility">True</property>
+			      <property name="visibility">False</property>
 			      <property name="max_length">0</property>
 			      <property name="text" translatable="yes"></property>
 			      <property name="has_frame">True</property>
