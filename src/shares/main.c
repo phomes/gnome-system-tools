@@ -71,13 +71,13 @@ int
 main (int argc, char *argv[])
 {
 	gchar *path = NULL;
-	
-	struct poptOption options[] = {
-		{ "add-share", '\0', POPT_ARG_STRING, &path, 0, _("Add a shared path, modifies it if it already exists"), _("Path") },
-		{ NULL, '\0', 0, NULL, 0 }
+
+	GOptionEntry entries[] = {
+		{ "add-share", 'a', 0, G_OPTION_ARG_STRING, &path, N_("Add a shared path, modifies it if it already exists"), N_("PATH") },
+		{ NULL }
 	};
 	
-	gst_init ("shares-admin", argc, argv, options);
+	gst_init ("shares-admin", argc, argv, entries);
 
 	tool = gst_tool_new ();
 	gst_tool_construct (tool, "shares", _("Shared folders settings"));
