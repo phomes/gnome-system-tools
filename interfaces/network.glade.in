@@ -77,7 +77,6 @@ Use this tool for configuring the way your system access to other computers</pro
 
       <child>
 	<widget class="GtkHBox" id="hbox2">
-	  <property name="visible">True</property>
 	  <property name="homogeneous">False</property>
 	  <property name="spacing">12</property>
 
@@ -180,7 +179,7 @@ Use this tool for configuring the way your system access to other computers</pro
 		      <property name="spacing">12</property>
 
 		      <child>
-			<widget class="GtkLabel" id="label9">
+			<widget class="GtkLabel" id="gateways_combo_label">
 			  <property name="visible">True</property>
 			  <property name="label" translatable="yes">Default _gateway device:</property>
 			  <property name="use_underline">True</property>
@@ -229,7 +228,7 @@ Use this tool for configuring the way your system access to other computers</pro
 		<widget class="GtkVButtonBox" id="vbuttonbox1">
 		  <property name="visible">True</property>
 		  <property name="layout_style">GTK_BUTTONBOX_START</property>
-		  <property name="spacing">0</property>
+		  <property name="spacing">6</property>
 
 		  <child>
 		    <widget class="GtkButton" id="properties_button">
@@ -860,7 +859,6 @@ Use this tool for configuring the way your system access to other computers</pro
 	  <child>
 	    <widget class="GtkVBox" id="vbox8">
 	      <property name="border_width">12</property>
-	      <property name="visible">True</property>
 	      <property name="homogeneous">False</property>
 	      <property name="spacing">12</property>
 
@@ -1865,7 +1863,7 @@ Use this tool for configuring the way your system access to other computers</pro
 			<widget class="GtkTable" id="table8">
 			  <property name="border_width">6</property>
 			  <property name="visible">True</property>
-			  <property name="n_rows">3</property>
+			  <property name="n_rows">2</property>
 			  <property name="n_columns">2</property>
 			  <property name="homogeneous">False</property>
 			  <property name="row_spacing">6</property>
@@ -1916,28 +1914,6 @@ Use this tool for configuring the way your system access to other computers</pro
 			      <property name="right_attach">1</property>
 			      <property name="top_attach">1</property>
 			      <property name="bottom_attach">2</property>
-			      <property name="x_options">fill</property>
-			      <property name="y_options"></property>
-			    </packing>
-			  </child>
-
-			  <child>
-			    <widget class="GtkCheckButton" id="checkbutton2">
-			      <property name="visible">True</property>
-			      <property name="can_focus">True</property>
-			      <property name="label" translatable="yes">_Use remote IP as default gateway</property>
-			      <property name="use_underline">True</property>
-			      <property name="relief">GTK_RELIEF_NORMAL</property>
-			      <property name="focus_on_click">True</property>
-			      <property name="active">False</property>
-			      <property name="inconsistent">False</property>
-			      <property name="draw_indicator">True</property>
-			    </widget>
-			    <packing>
-			      <property name="left_attach">0</property>
-			      <property name="right_attach">2</property>
-			      <property name="top_attach">2</property>
-			      <property name="bottom_attach">3</property>
 			      <property name="x_options">fill</property>
 			      <property name="y_options"></property>
 			    </packing>
