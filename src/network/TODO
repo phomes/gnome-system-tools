@@ -1,0 +1,10 @@
+- complete the gateway stuff
+- complete the hosts stuff
+- complete the locations stuff
+- add modem devices
+- warn if the user changes hostname
+- add support for essid scanning
+- make the backend actually save the information
+- create good functions for parsing/validating IP addresses
+- drink some beer
+
