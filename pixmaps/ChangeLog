@@ -1,3 +1,8 @@
+2002-05-17  Carlos Garnacho Parro <garparr@teleline.es>
+
+	* s/sysV.png/runlevel.png
+	* stock_remove_24.png
+
 2002-02-08  Chema Celorio  <chema@celorio.com>
 
 	* configure.in: 0.12.0 here we go
