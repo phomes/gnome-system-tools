@@ -1,3 +1,10 @@
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* gst-auth.c, gst-tool.[ch]: improved IO with backends, now updates
+	the GUI while waiting for data to read.
+	* gst-tool.[ch]: readded reports window, with a more modern look, use
+	it if the directive has report text and lasts for >2 secs.
+
 2004-12-15  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.[ch], gst-auth.c: made comunication a lot more sane, now 

@@ -23,6 +23,7 @@
 #define GST_TOOL_H
 
 #include <glade/glade.h>
+#include <gtk/gtk.h>
 
 #include "gst-types.h"
 
@@ -66,6 +67,7 @@ struct _GstTool {
 	xmlDoc  *config;
 	xmlDoc  *original_config;
 
+	GtkIconTheme *icon_theme;
 	GstDialog *main_dialog;
 
 	/* Remote configuration stuff */
@@ -85,11 +87,12 @@ struct _GstTool {
 	GtkWidget *remote_hosts_list;
 
 	/* Progress report widgets */
-	GladeXML  *report_gui;
-	GtkWidget *report_arrow;
-
 	GtkWidget *report_window;
 	GtkWidget *report_label;
+	GtkWidget *report_progress;
+	GtkWidget *report_pixmap;
+	guint      report_timeout_id;
+	guint      report_animate_id;
 
 	GString *line;
 	GString *xml_document;
@@ -174,7 +177,6 @@ void         gst_tool_clear_supported_platforms (GstTool *tool);
 void         gst_tool_process_startup (GstTool*);
 
 gchar*       gst_tool_read_from_backend (GstTool*, gchar*, ...);
-gchar*       gst_tool_read_line_from_backend (GstTool*);
 void         gst_tool_read_junk_from_backend (GstTool*, gchar*);
 void         gst_tool_write_to_backend (GstTool*, gchar*);
 void         gst_tool_write_xml_to_backend (GstTool*, xmlDoc*);

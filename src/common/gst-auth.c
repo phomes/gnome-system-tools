@@ -148,16 +148,18 @@ gst_auth_run_term (GstTool *tool, gchar *args[])
 	} else {
 #ifndef __FreeBSD__
 		/* Linux's su works ok with echo disabling */
-		tcgetattr (tool->write_fd, &t);
+/*		tcgetattr (tool->write_fd, &t);
 		t.c_lflag ^= ECHO;
 		tcsetattr (tool->write_fd, TCSANOW, &t);
+*/
 #endif
 		close (p[1]);
 
 		tool->read_fd      = p[0];
 		tool->timeout_id   = g_timeout_add (1000, (GSourceFunc) gst_auth_wait_child, tool);
-		tool->write_stream = fdopen (tool->write_fd, "w");
 		tool->read_stream  = fdopen (tool->read_fd, "r");
+		tool->write_stream = fdopen (tool->write_fd, "w");
+		setvbuf (tool->read_stream, NULL, _IONBF, 0);
 		fcntl (tool->read_fd, F_SETFL, 0);
 	}
 }
@@ -295,9 +297,10 @@ gst_auth_do_authentication (GstTool *tool, gchar *args[])
 
 #ifdef __FreeBSD__
 	/* FreeBSD seems to have weird issues with su and echo disabling */
-	tcgetattr (tool->write_fd, &t);
+/*	tcgetattr (tool->write_fd, &t);
 	t.c_lflag ^= ECHO;
 	tcsetattr (tool->write_fd, TCSANOW, &t);
+*/
 #endif
 }
 
