@@ -71,6 +71,7 @@ gst_network_tool_init (GstNetworkTool *tool)
   tool->hostname = NULL;
   tool->domain = NULL;
   tool->dialog = NULL;
+  tool->icon_theme = gtk_icon_theme_get_default ();
 }
 
 static void

@@ -92,28 +92,97 @@ ethernet_dialog_save (GstConnectionDialog *dialog)
 		NULL);
 }
 
+static GtkTreeModel*
+wireless_essid_get_model (const gchar *dev)
+{
+  GtkTreeModel *model;
+  GtkTreeIter   iter;
+  xmlNodePtr    root, node;
+  xmlDoc       *doc;
+  GdkPixbuf    *locked, *unlocked, *pix;
+  gchar        *essid;
+  gboolean      encrypted;
+
+  model = GTK_TREE_MODEL (gtk_list_store_new (2, GDK_TYPE_PIXBUF, G_TYPE_STRING));
+  doc   = gst_tool_run_get_directive (tool, NULL, "detect_essids", dev, NULL);
+  locked = gtk_icon_theme_load_icon (GST_NETWORK_TOOL (tool)->icon_theme,
+				     "gnome-dev-wavelan-encrypted", 16, 0, NULL);
+  unlocked = gtk_icon_theme_load_icon (GST_NETWORK_TOOL (tool)->icon_theme,
+				       "gnome-dev-wavelan", 16, 0, NULL);
+
+  g_return_if_fail (doc != NULL);
+  root  = gst_xml_doc_get_root (doc);
+
+  for (node = gst_xml_element_find_first (root, "network");
+       node; node = gst_xml_element_find_next (node, "network"))
+    {
+      essid = gst_xml_get_child_content (node, "essid");
+      encrypted = gst_xml_element_get_boolean (node, "encrypted");
+
+      pix = (encrypted) ? locked : unlocked;
+
+      gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+      gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+			  0, pix, 1, essid, -1);
+
+      g_free (essid);
+    }
+
+  gdk_pixbuf_unref (locked);
+  gdk_pixbuf_unref (unlocked);
+
+  return model;
+}
+
+static void
+wireless_dialog_prepare_essid_entry (GtkComboBoxEntry *combo, const gchar *dev)
+{
+  GtkTreeModel *model;
+  GtkEntryCompletion *completion;
+  GtkCellRenderer *renderer;
+
+  model = wireless_essid_get_model (dev);
+  g_return_if_fail (model != NULL);
+
+  gtk_combo_box_set_model (GTK_COMBO_BOX (combo), model);
+  g_object_unref (model);
+
+  gtk_combo_box_entry_set_text_column (combo, 1);
+
+  /* Add the pixbuf cell renderer */
+  renderer = gtk_cell_renderer_pixbuf_new ();
+  gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (combo),
+			      renderer, FALSE);
+  gtk_cell_layout_add_attribute (GTK_CELL_LAYOUT (combo),
+				 renderer, "pixbuf", 0);
+}
+
 static void
 wireless_dialog_prepare (GstConnectionDialog *dialog)
 {
-  gchar *essid, *key;
+  gchar *essid, *key, *dev;
 
   g_object_get (G_OBJECT (dialog->iface),
 		"iface-essid", &essid,
 		"iface-wep-key",   &key,
+		"iface-dev", &dev,
 		NULL);
 
-  gtk_entry_set_text (GTK_ENTRY (dialog->essid), (essid) ? essid : "");
+  gtk_entry_set_text (GTK_ENTRY (GTK_BIN (dialog->essid)->child), (essid) ? essid : "");
   gtk_entry_set_text (GTK_ENTRY (dialog->wep_key), (key) ? key : "");
+
+  wireless_dialog_prepare_essid_entry (GTK_COMBO_BOX_ENTRY (dialog->essid), dev);
 
   g_free (essid);
   g_free (key);
+  g_free (dev);
 }
 
 static void
 wireless_dialog_save (GstConnectionDialog *dialog)
 {
   g_object_set (G_OBJECT (dialog->iface),
-		"iface-essid",   get_entry_text (dialog->essid),
+		"iface-essid",   get_entry_text (GTK_BIN (dialog->essid)->child),
 		"iface-wep-key", get_entry_text (dialog->wep_key),
 		NULL);
 }

@@ -60,6 +60,7 @@ struct _GstNetworkTool
   GtkEntry *domain;
 
   GstConnectionDialog *dialog;
+  GtkIconTheme *icon_theme;
 };
 
 struct _GstNetworkToolClass
