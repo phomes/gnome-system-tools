@@ -413,7 +413,7 @@ gst_iface_modem_impl_get_xml (GstIface *iface, xmlNodePtr node)
       str = (iface_modem->_priv->dial_type == GST_DIAL_TYPE_TONES) ?
 	g_strdup ("ATDT") :
 	g_strdup ("ATDP");
-      gst_xml_set_child_content (configuration, "dial_type", str);
+      gst_xml_set_child_content (configuration, "dial_command", str);
       g_free (str);
 
       gst_xml_set_child_content (configuration, "section",
@@ -456,7 +456,7 @@ gst_iface_modem_set_config_from_xml (GstIfaceModem *iface,
   volume = g_strtod (str, NULL);
   g_free (str);
 
-  str = gst_xml_get_child_content (configuration, "dial_type");
+  str = gst_xml_get_child_content (configuration, "dial_command");
   if (str && (g_strcasecmp (str, "atdt") == 0))
     dial_type = GST_DIAL_TYPE_TONES;
   else

@@ -1,5 +1,9 @@
 2004-12-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* network-iface-modem.c: silly me, s/dial_type/dial_command/
+
+2004-12-02  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* network-iface-modem.c: fixed dial_prefix getting/setting in XML
 
 2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
