@@ -28,6 +28,20 @@ extern "C" {
 #include "network-iface.h"
 #include "gst-xml.h"
 
+typedef enum {
+  GST_MODEM_VOLUME_SILENT,
+  GST_MODEM_VOLUME_LOW,
+  GST_MODEM_VOLUME_MEDIUM,
+  GST_MODEM_VOLUME_LOUD
+} GstModemVolume;
+
+typedef enum {
+  GST_DIAL_TYPE_TONES,
+  GST_DIAL_TYPE_PULSES
+} GstDialType;
+
+#define GST_MODEM_VOLUME               (gst_modem_volume_get_type ())
+#define GST_DIAL_TYPE                  (gst_dial_type_get_type ())
 #define GST_TYPE_IFACE_MODEM           (gst_iface_modem_get_type ())
 #define GST_IFACE_MODEM(obj)           (G_TYPE_CHECK_INSTANCE_CAST ((obj), GST_TYPE_IFACE_MODEM, GstIfaceModem))
 #define GST_IFACE_MODEM_CLASS(obj)     (G_TYPE_CHECK_CLASS_CAST ((obj),    GST_TYPE_IFACE_MODEM, GstIfaceModemClass))

@@ -1,3 +1,9 @@
+2004-11-24  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* connection.[ch] (modem_dialog_prepare), (modem_dialog_save): added.
+	Handled modem GUI.
+	* network-iface-modem.[ch]: added missing properties
+
 2004-11-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-modem.[ch]: added files to handle PPP devices

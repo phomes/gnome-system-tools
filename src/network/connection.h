@@ -38,6 +38,8 @@ struct _GstConnectionDialog {
 
   GtkWidget *connection_configured;
   GtkWidget *connection_device;
+  GtkWidget *connection_ppp_configured;
+  GtkWidget *connection_ppp_device;
 
   /* ethernet */
   GtkWidget *bootproto_combo;
@@ -52,6 +54,17 @@ struct _GstConnectionDialog {
   /* plip */
   GtkWidget *local_address;
   GtkWidget *remote_address;
+
+  /* modem */
+  GtkWidget *login;
+  GtkWidget *password;
+  GtkWidget *serial_port;
+  GtkWidget *phone_number;
+  GtkWidget *dial_prefix;
+  GtkWidget *volume;
+  GtkWidget *dial_type;
+  GtkWidget *default_gw;
+  GtkWidget *persist;
 
   /* frames */
   GtkWidget *wireless_frame;
