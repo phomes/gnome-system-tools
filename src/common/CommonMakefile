@@ -16,3 +16,4 @@ desktop = $(toolname).desktop
 all-local: $(desktop)
 
 etspecs_DATA = $(etspecs)
+etspecsdir = $(datadir)/ximian-setup-tools/etspecs

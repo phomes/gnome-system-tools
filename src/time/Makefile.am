@@ -29,4 +29,3 @@ time_admin_SOURCES = \
 
 toolpixmaps =
 etspecs = 
-etspecs_DATA = $(etspecs)

@@ -62,4 +62,6 @@ pixmaps_DATA = \
 	xstdruidbg-3.png         \
 	ximian30.png
 
+pixmapsdir = $(datadir)/ximian-setup-tools/pixmaps
+
 EXTRA_DIST = $(pixmaps_DATA)

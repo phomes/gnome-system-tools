@@ -17,6 +17,7 @@ interfaces = \
 	font.glade
 
 interfaces_DATA = $(interfaces)
+interfacesdir = $(datadir)/ximian-setup-tools/interfaces
 
 EXTRA_DIST = \
 	fix.pl				\

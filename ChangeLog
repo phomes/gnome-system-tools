@@ -1,3 +1,8 @@
+2002-02-11  Rodney Dawes  <dobey@free.fr>
+
+	* find ./ -name "Makefile.am": Fixed missing dir variables for
+	corresponding _(DATA|SCRIPS) variables
+	
 2002-02-08  Chema Celorio  <chema@celorio.com>
 
 	* configure.in: 0.12.0 here we go
