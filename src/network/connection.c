@@ -261,48 +261,70 @@ connection_dialog_prepare (GstConnectionDialog *dialog, GstIface *iface)
   dialog->iface = g_object_ref (iface);
   
   /* FIXME: at this moment there isn't modem connection implemented */
-
-  gtk_widget_hide (dialog->ppp_general_page);
-  gtk_widget_hide (dialog->account_page);
-  gtk_widget_hide (dialog->options_page);
-
-  gtk_notebook_set_show_tabs (GTK_NOTEBOOK (dialog->notebook), FALSE);
-  gtk_notebook_set_show_border (GTK_NOTEBOOK (dialog->notebook), FALSE);
-
-  gtk_container_set_border_width (GTK_CONTAINER (dialog->general_page), 0);
-  gtk_container_set_border_width (GTK_CONTAINER (dialog->notebook), 0);
-
-  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->connection_configured),
-				gst_iface_is_configured (iface));
-
-  gtk_label_set_text (GTK_LABEL (dialog->connection_device),
-		      gst_iface_get_dev (iface));
-
-  if (GST_IS_IFACE_WIRELESS (iface))
+  if (GST_IS_IFACE_MODEM (iface))
     {
-      gtk_widget_show (dialog->wireless_frame);
-      gtk_widget_show (dialog->ethernet_frame);
-      gtk_widget_hide (dialog->plip_frame);
+      gtk_widget_hide (dialog->general_page);
+      gtk_widget_show (dialog->ppp_general_page);
+      gtk_widget_show (dialog->account_page);
+      gtk_widget_show (dialog->options_page);
 
-      wireless_dialog_prepare (dialog);
-      ethernet_dialog_prepare (dialog);
+      gtk_notebook_set_show_tabs (GTK_NOTEBOOK (dialog->notebook), TRUE);
+      gtk_notebook_set_show_border (GTK_NOTEBOOK (dialog->notebook), TRUE);
+
+      gtk_container_set_border_width (GTK_CONTAINER (dialog->notebook), 6);
+/*
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->connection_configured),
+				    gst_iface_is_configured (iface));
+
+      gtk_label_set_text (GTK_LABEL (dialog->connection_device),
+			  gst_iface_get_dev (iface));
+*/
     }
-  else if (GST_IS_IFACE_ETHERNET (iface)
-	   || GST_IS_IFACE_IRLAN (iface))
+  else
     {
-      gtk_widget_hide (dialog->wireless_frame);
-      gtk_widget_show (dialog->ethernet_frame);
-      gtk_widget_hide (dialog->plip_frame);
+      gtk_widget_show (dialog->general_page);
+      gtk_widget_hide (dialog->ppp_general_page);
+      gtk_widget_hide (dialog->account_page);
+      gtk_widget_hide (dialog->options_page);
 
-      ethernet_dialog_prepare (dialog);
-    }
-  else if (GST_IS_IFACE_PLIP (iface))
-    {
-      gtk_widget_hide (dialog->wireless_frame);
-      gtk_widget_hide (dialog->ethernet_frame);
-      gtk_widget_show (dialog->plip_frame);
+      gtk_notebook_set_show_tabs (GTK_NOTEBOOK (dialog->notebook), FALSE);
+      gtk_notebook_set_show_border (GTK_NOTEBOOK (dialog->notebook), FALSE);
 
-      plip_dialog_prepare (dialog);
+      gtk_container_set_border_width (GTK_CONTAINER (dialog->general_page), 0);
+      gtk_container_set_border_width (GTK_CONTAINER (dialog->notebook), 0);
+
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dialog->connection_configured),
+				    gst_iface_is_configured (iface));
+
+      gtk_label_set_text (GTK_LABEL (dialog->connection_device),
+			  gst_iface_get_dev (iface));
+
+      if (GST_IS_IFACE_WIRELESS (iface))
+        {
+	  gtk_widget_show (dialog->wireless_frame);
+	  gtk_widget_show (dialog->ethernet_frame);
+	  gtk_widget_hide (dialog->plip_frame);
+
+	  wireless_dialog_prepare (dialog);
+	  ethernet_dialog_prepare (dialog);
+	}
+      else if (GST_IS_IFACE_ETHERNET (iface)
+	       || GST_IS_IFACE_IRLAN (iface))
+        {
+	  gtk_widget_hide (dialog->wireless_frame);
+	  gtk_widget_show (dialog->ethernet_frame);
+	  gtk_widget_hide (dialog->plip_frame);
+
+	  ethernet_dialog_prepare (dialog);
+	}
+      else if (GST_IS_IFACE_PLIP (iface))
+        {
+	  gtk_widget_hide (dialog->wireless_frame);
+	  gtk_widget_hide (dialog->ethernet_frame);
+	  gtk_widget_show (dialog->plip_frame);
+
+	  plip_dialog_prepare (dialog);
+	}
     }
 }
 

@@ -32,6 +32,7 @@ extern "C" {
 #include "network-iface-wireless.h"
 #include "network-iface-plip.h"
 #include "network-iface-irlan.h"
+#include "network-iface-modem.h"
 #include "connection.h"
 
 #define GST_TYPE_NETWORK_TOOL           (gst_network_tool_get_type ())

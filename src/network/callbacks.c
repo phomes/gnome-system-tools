@@ -97,10 +97,10 @@ on_iface_active_changed (GtkWidget *widget, gpointer data)
 
   gtk_widget_set_sensitive (dialog->wireless_frame, active);
   gtk_widget_set_sensitive (dialog->ethernet_frame, active);
-  gtk_widget_set_sensitive (dialog->plip_frame, active);
-  gtk_widget_set_sensitive (dialog->modem_frame, active);
-  gtk_widget_set_sensitive (dialog->account_page, active);
-  gtk_widget_set_sensitive (dialog->options_page, active);
+  gtk_widget_set_sensitive (dialog->plip_frame,     active);
+  gtk_widget_set_sensitive (dialog->modem_frame,    active);
+  gtk_widget_set_sensitive (dialog->account_page,   active);
+  gtk_widget_set_sensitive (dialog->options_page,   active);
 }
 
 void

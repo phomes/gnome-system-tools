@@ -218,6 +218,8 @@ ifaces_model_add_interface_from_node (xmlNodePtr node)
     iface = GST_IFACE (gst_iface_irlan_new_from_xml (node));
   else if (strcmp (type, "plip") == 0)
     iface = GST_IFACE (gst_iface_plip_new_from_xml (node));
+  else if (strcmp (type, "modem") == 0)
+    iface = GST_IFACE (gst_iface_modem_new_from_xml (node));
 
   if (iface)
     {

@@ -1,3 +1,11 @@
+2004-11-23  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* network-iface-modem.[ch]: added files to handle PPP devices
+	* Makefile.am: ditto
+	* connection.c, gst-network-tool.h, ifaces-list.c: began to handle
+	PPP devices
+	* callbacks.c: somewhat prettify code
+
 2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* hosts.[ch]: abstracted a bit more, made it able to save the config
