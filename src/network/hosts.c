@@ -93,7 +93,7 @@ host_aliases_modify_at_iter (GtkTreeIter *iter,
 		      -1);
 }
 
-void
+static void
 host_aliases_add (const gchar *address, const gchar *aliases)
 {
   GtkTreeView  *list;
@@ -105,6 +105,69 @@ host_aliases_add (const gchar *address, const gchar *aliases)
 
   gtk_list_store_append (GTK_LIST_STORE (model), &iter);
   host_aliases_modify_at_iter (&iter, address, aliases);
+}
+
+void
+host_aliases_add_from_xml (xmlNodePtr node)
+{
+  xmlNodePtr  alias;
+  gchar      *address, *str;
+  GString    *aliases = NULL;
+  
+  address = gst_xml_get_child_content (node, "ip");
+
+  for (alias = gst_xml_element_find_first (node, "alias");
+       alias; alias = gst_xml_element_find_next (alias, "alias"))
+    {
+      str = gst_xml_element_get_content (alias);
+
+      if (!aliases)
+        aliases = g_string_new (str);
+      else
+        g_string_append_printf (aliases, " %s", str);
+
+      g_free (str);
+    }
+
+  host_aliases_add (address, aliases->str);
+
+  g_free (address);
+  g_string_free (aliases, TRUE);
+}
+
+void
+host_aliases_extract_to_xml (GtkTreeIter *iter, xmlNodePtr root)
+{
+  GtkTreeView  *list;
+  GtkTreeModel *model;
+  xmlNodePtr    host, alias;
+  gchar        *address, *aliases, **arr, **str;
+
+  g_return_if_fail (iter != NULL);
+  g_return_if_fail (root != NULL);
+
+  list = GST_NETWORK_TOOL (tool)->host_aliases_list;
+  model = gtk_tree_view_get_model (list);
+  
+  gtk_tree_model_get (model, iter,
+                      COL_HOST_IP, &address,
+                      COL_HOST_ALIASES, &aliases,
+                      -1);
+
+  arr = g_strsplit (aliases, " ", -1);
+
+  host = gst_xml_element_add (root, "statichost");
+  gst_xml_set_child_content (host, "ip", address);
+
+  for (str = arr; *str; str++)
+    {
+      alias = gst_xml_element_add (host, "alias");
+      gst_xml_element_set_content (alias, *str);
+    }
+
+  g_free (address);
+  g_free (aliases);
+  g_strfreev (arr);
 }
 
 static void

@@ -148,33 +148,30 @@ transfer_interfaces_to_xml (xmlNodePtr root)
 static void
 transfer_host_aliases_to_gui (xmlNodePtr root)
 {
-  xmlNodePtr  node, alias;
-  GString    *aliases;
-  gchar      *address, *str;
+  xmlNodePtr  node;
 
   for (node = gst_xml_element_find_first (root, "statichost");
        node; node = gst_xml_element_find_next (node, "statichost"))
+    host_aliases_add_from_xml (node);
+}
+
+static void
+transfer_host_aliases_to_xml (xmlNodePtr root)
+{
+  GtkTreeView  *list;
+  GtkTreeModel *model;
+  GtkTreeIter   iter;
+  gboolean      valid;
+
+  list  = GST_NETWORK_TOOL (tool)->host_aliases_list;
+  model = gtk_tree_view_get_model (list);
+  valid = gtk_tree_model_get_iter_first (model, &iter);
+  gst_xml_element_destroy_children_by_name (root, "statichost");
+
+  while (valid)
     {
-      address = gst_xml_get_child_content (node, "ip");
-      aliases = NULL;
-
-      for (alias = gst_xml_element_find_first (node, "alias");
-	   alias; alias = gst_xml_element_find_next (alias, "alias"))
-        {
-	  str = gst_xml_element_get_content (alias);
-	  
-	  if (!aliases)
-	    aliases = g_string_new (str);
-	  else
-	    g_string_append_printf (aliases, " %s", str);
-
-	  g_free (str);
-	}
-
-      host_aliases_add (address, aliases->str);
-
-      g_free (address);
-      g_string_free (aliases, TRUE);
+      host_aliases_extract_to_xml (&iter, root);
+      valid = gtk_tree_model_iter_next (model, &iter);
     }
 }
 
@@ -217,4 +214,6 @@ transfer_gui_to_xml (GstTool *tool, gpointer data)
   transfer_string_to_xml (root, "domain", network_tool->domain);
 
   transfer_interfaces_to_xml (root);
+
+  transfer_host_aliases_to_xml (root);
 }

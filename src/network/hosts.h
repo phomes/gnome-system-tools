@@ -22,6 +22,7 @@
 #define __HOSTS_H_
 
 #include <gtk/gtk.h>
+#include "gst.h"
 
 enum {
   COL_HOST_IP,
@@ -30,7 +31,8 @@ enum {
 };
 
 GtkTreeView*   host_aliases_list_create (void);
-void           host_aliases_add (const gchar*, const gchar*);
+void           host_aliases_add_from_xml (xmlNodePtr);
+void           host_aliases_extract_to_xml (GtkTreeIter*, xmlNodePtr);
 void           host_aliases_run_dialog (GtkTreeIter*);
 
 #endif /* __HOSTS_H_ */

@@ -1,5 +1,10 @@
 2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* hosts.[ch]: abstracted a bit more, made it able to save the config
+	* transfer.[ch]: somewhat improved
+
+2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* hosts.[ch]: added for handling /etc/hosts editing
 	* Makefile.am: ditto
 	* callbacks.[ch], gst-network-tool.[ch], main.c, transfer.c: handled
