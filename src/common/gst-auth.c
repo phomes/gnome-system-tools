@@ -128,6 +128,7 @@ gst_auth_run_term (GstTool *tool, gchar *args[])
 
 	if (tool->backend_pid < 0) {
 		g_warning ("could not fork to backend");
+		exit (255);
 	}
 	else if (tool->backend_pid == 0) {
 		/* It's the child process */
