@@ -136,6 +136,7 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
   GtkTreeSelection    *selection;
   GtkTreeModel        *model;
   GtkTreeIter          iter;
+  GstIface            *iface;
 
   dialog = GST_NETWORK_TOOL (tool)->dialog;
 
@@ -149,9 +150,18 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
       selection = gtk_tree_view_get_selection (GST_NETWORK_TOOL (tool)->interfaces_list);
 
       if (gtk_tree_selection_get_selected (selection, &model, &iter))
-	ifaces_model_modify_interface_at_iter (&iter);
+        {
+	  gtk_tree_model_get (model, &iter, COL_OBJECT, &iface, -1);
 
-      gst_dialog_modify (tool->main_dialog);
+	  /* modify the config realtime */
+	  if (gst_iface_get_enabled (iface))
+	    gst_iface_enable (iface);
+
+	  ifaces_model_modify_interface_at_iter (&iter);
+	  g_object_unref (iface);
+
+	  gst_dialog_modify (tool->main_dialog);
+	}
     }
 }
 
@@ -222,21 +232,15 @@ on_table_popup_menu (GtkWidget *widget, GtkWidget *popup)
   return TRUE;
 }
 
-void
-on_activate_button_clicked (GtkWidget *widget, gpointer data)
-{
-  gtk_widget_destroy (GST_NETWORK_TOOL (tool)->interfaces_list);
-}
-
-void
-on_deactivate_button_clicked (GtkWidget *widget, gpointer data)
+static void
+enable_disable_iface (GstNetworkTool *network_tool, gboolean enable)
 {
   GtkTreeSelection *selection;
   GtkTreeModel *model;
   GtkTreeIter   iter;
   GstIface     *iface;
 
-  selection = gtk_tree_view_get_selection (GST_NETWORK_TOOL (tool)->interfaces_list);
+  selection = gtk_tree_view_get_selection (network_tool->interfaces_list);
 
   if (gtk_tree_selection_get_selected (selection, &model, &iter))
     {
@@ -244,10 +248,26 @@ on_deactivate_button_clicked (GtkWidget *widget, gpointer data)
 			  COL_OBJECT, &iface,
 			  -1);
 
-      gst_iface_disable (iface);
+      if (enable)
+	gst_iface_enable (iface);
+      else
+	gst_iface_disable (iface);
+
       ifaces_model_modify_interface_at_iter (&iter);
       g_object_unref (iface);
 
       g_signal_emit_by_name (G_OBJECT (selection), "changed");
     }
+}
+
+void
+on_activate_button_clicked (GtkWidget *widget, gpointer data)
+{
+  enable_disable_iface (GST_NETWORK_TOOL (tool), TRUE);
+}
+
+void
+on_deactivate_button_clicked (GtkWidget *widget, gpointer data)
+{
+  enable_disable_iface (GST_NETWORK_TOOL (tool), FALSE);
 }

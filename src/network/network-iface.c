@@ -397,16 +397,33 @@ gst_iface_has_gateway (GstIface *iface)
   return GST_IFACE_GET_CLASS (iface)->has_gateway (iface);
 }
 
-
-void
+gboolean
 gst_iface_enable (GstIface *iface)
 {
-  g_return_if_fail (GST_IS_IFACE (iface));
+  xmlDoc     *doc, *ret_doc;
+  xmlNodePtr  root;
+  gboolean    ret;
 
-  if (GST_IFACE_GET_CLASS (iface)->enable_iface == NULL)
-    return;
+  doc = gst_xml_doc_create ("interface");
+  root = gst_xml_doc_get_root (doc);
 
-  return GST_IFACE_GET_CLASS (iface)->enable_iface (iface);
+  /* get the interface xml directly in the root */
+  GST_IFACE_GET_CLASS (iface)->get_xml (iface, root);
+
+  ret_doc = gst_tool_run_set_directive (tool, doc, NULL,
+					"enable_iface_with_config", NULL);
+
+  /* check that it has succeeded */
+  gst_xml_doc_dump (ret_doc);
+  root = gst_xml_doc_get_root (ret_doc);
+  ret  = gst_xml_element_get_boolean (root, "success");
+
+  iface->_priv->is_enabled = (ret == TRUE);
+  
+  gst_xml_doc_destroy (ret_doc);
+  gst_xml_doc_destroy (doc);
+
+  return ret;
 }
 
 void

@@ -1,3 +1,7 @@
+2004-11-20  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* callbacks.c, network-iface.[ch]: made it able to enable ifaces
+
 2004-11-18  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch], main.c, network-iface.c: it now disables interfaces

@@ -54,7 +54,6 @@ struct _GstIfaceClass
   const GdkPixbuf* (*get_iface_pixbuf) (GstIface*);
   gchar* (*get_iface_desc) (GstIface*);
   gboolean (*has_gateway) (GstIface*);
-  void (*enable_iface) (GstIface*);
   void (*get_xml) (GstIface*, xmlNodePtr);
 };
 
@@ -74,7 +73,7 @@ void         gst_iface_set_dev (GstIface*, const gchar*);
 const gchar *gst_iface_get_hwaddr (GstIface*);
 void         gst_iface_set_hwaddr (GstIface*, const gchar*);
 
-void         gst_iface_enable (GstIface*);
+gboolean     gst_iface_enable (GstIface*);
 void         gst_iface_disable (GstIface*);
 
 void         gst_iface_get_xml (GstIface*, xmlNodePtr);
