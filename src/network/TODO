@@ -1,3 +1,4 @@
+- phone number breaks if the chatscript already exists
 - check that it's handling correctly the wvdial modem connections
 - implement enable_iface_with_config for PPP devices
 - complete the locations stuff

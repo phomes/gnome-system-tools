@@ -404,7 +404,7 @@ gst_iface_modem_impl_get_xml (GstIface *iface, xmlNodePtr node)
       gst_xml_set_child_content (configuration, "password",     iface_modem->_priv->password);
       gst_xml_set_child_content (configuration, "serial_port",  iface_modem->_priv->serial_port);
       gst_xml_set_child_content (configuration, "phone_number", iface_modem->_priv->phone_number);
-      gst_xml_set_child_content (configuration, "dial_prefix",  iface_modem->_priv->dial_prefix);
+      gst_xml_set_child_content (configuration, "external_line",  iface_modem->_priv->dial_prefix);
 
       str = g_strdup_printf ("%i", iface_modem->_priv->volume);
       gst_xml_set_child_content (configuration, "volume", str);
@@ -449,7 +449,7 @@ gst_iface_modem_set_config_from_xml (GstIfaceModem *iface,
   password     = gst_xml_get_child_content (configuration, "password");
   serial_port  = gst_xml_get_child_content (configuration, "serial_port");
   phone_number = gst_xml_get_child_content (configuration, "phone_number");
-  dial_prefix  = gst_xml_get_child_content (configuration, "dial_prefix");
+  dial_prefix  = gst_xml_get_child_content (configuration, "external_line");
   section      = gst_xml_get_child_content (configuration, "section");
 
   str = gst_xml_get_child_content (configuration, "volume");
