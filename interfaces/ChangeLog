@@ -1,3 +1,7 @@
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* common.glade.in: improved the report dialog, it's being used again
+
 2004-12-14  Carlos Garnacho parro  <carlosg@gnome.org>
 
 	* network.glade.in: made locations widgets visible
