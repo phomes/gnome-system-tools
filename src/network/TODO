@@ -1,4 +1,4 @@
-- create good functions for parsing/validating IP addresses
+- re-add the function that filled the ethernet mask
 - make it save correctly modem info in debian
 - check that it's handling correctly the wvdial modem connections
 - implement enable_iface_with_config for PPP devices

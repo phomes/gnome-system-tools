@@ -26,6 +26,7 @@
 #include <gtk/gtk.h>
 #include "address-list.h"
 #include "gst-tool.h"
+#include "gst-filter.h"
 #include "callbacks.h"
 
 extern GstTool *tool;
@@ -59,7 +60,7 @@ static void on_editing_canceled  (GtkCellRenderer *renderer, gpointer data);
 static void on_editing_started   (GtkCellRenderer *renderer,
 				  GtkCellEditable *editable,
 				  gchar           *path,
-				  gpointer         data);
+				  GstAddressList  *list);
 static void on_editing_done      (GtkCellRenderer *renderer,
 				  const gchar     *path_string,
 				  const gchar     *new_text,
@@ -422,10 +423,14 @@ setup_treeview (GstAddressList *list)
 }
 
 static void
-on_editable_activate (GtkWidget *widget, gpointer data)
+on_editable_activate (GtkWidget *widget, GstAddressList *list)
 {
-  /* FIXME: check the address */
-  if (FALSE)
+  gchar *text;
+
+  text = (gchar *) gtk_entry_get_text (GTK_ENTRY (widget));
+
+  if (list->_priv->type == GST_ADDRESS_TYPE_IP &&
+      gst_filter_check_ip_address (text) != GST_ADDRESS_IPV4)
     g_signal_stop_emission_by_name (widget, "activate");
 }
 
@@ -433,11 +438,16 @@ static void
 on_editing_started (GtkCellRenderer *renderer,
 		    GtkCellEditable *editable,
 		    gchar           *path,
-		    gpointer         data)
+		    GstAddressList  *list)
 {
   if (GTK_IS_ENTRY (editable))
-    g_signal_connect (G_OBJECT (editable), "activate",
-		      G_CALLBACK (on_editable_activate), NULL);
+    {
+      g_signal_connect (G_OBJECT (editable), "activate",
+			G_CALLBACK (on_editable_activate), list);
+
+      if (list->_priv->type == GST_ADDRESS_TYPE_IP)
+	gst_filter_init  (GTK_ENTRY (editable), GST_FILTER_IPV4);
+    }
 }
 
 static void

@@ -113,6 +113,19 @@ init_standalone_dialog (const gchar *interface)
     }
 }
 
+static void
+init_filters (void)
+{
+  gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "host_alias_address")), GST_FILTER_IP);
+
+  gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "connection_address")), GST_FILTER_IPV4);
+  gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "connection_netmask")), GST_FILTER_IPV4);
+  gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "connection_gateway")), GST_FILTER_IPV4);
+
+  gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "connection_local_address")), GST_FILTER_IPV4);
+  gst_filter_init (GTK_ENTRY (gst_dialog_get_widget (tool->main_dialog, "connection_remote_address")), GST_FILTER_IPV4);
+}
+
 int
 main (int argc, gchar *argv[])
 {
@@ -131,6 +144,7 @@ main (int argc, gchar *argv[])
   gst_tool_set_xml_funcs (tool, transfer_xml_to_gui, transfer_gui_to_xml, NULL);
   gst_dialog_connect_signals (tool->main_dialog, signals);
   gst_dialog_add_apply_hook (tool->main_dialog, callbacks_check_hostname_hook, NULL);
+  init_filters ();
 
   if (interface)
     init_standalone_dialog (interface);

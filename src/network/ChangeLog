@@ -1,3 +1,7 @@
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* address-list.c, main.c: handled IP address parsing/filtering
+
 2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c, connection.c: fixed some compile warnings
