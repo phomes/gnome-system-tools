@@ -23,7 +23,6 @@
 #define GST_TOOL_H
 
 #include <glade/glade.h>
-#include <popt.h>
 
 #include "gst-types.h"
 
@@ -57,9 +56,11 @@ struct _GstTool {
 
 	/* backend process */
 	int backend_pid;
-	int backend_master_fd;
+	int write_fd;
+	int read_fd;
 
-	FILE *backend_stream;
+	FILE *write_stream;
+	FILE *read_stream;
 
 	/* configuration */
 	xmlDoc  *config;

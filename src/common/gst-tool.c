@@ -45,7 +45,6 @@
 #include <gconf/gconf-client.h>
 
 #include <stdio.h>
-#include <fcntl.h>
 #include <errno.h>
 
 #include <sys/types.h>
@@ -658,7 +657,7 @@ gst_tool_read_xml_from_backend (GstTool *tool)
 		g_free (buffer);
 		buffer = gst_tool_read_line_from_backend (tool);
 		g_string_append (tool->xml_document, buffer);
-	} while (g_strrstr (buffer, GST_TOOL_EOR "\r\n") == NULL);
+	} while (g_strrstr (buffer, GST_TOOL_EOR) == NULL);
 
 	g_free (buffer);
 
@@ -1319,7 +1318,8 @@ gst_tool_construct (GstTool *tool, const char *name, const char *title)
 	gst_tool_add_report_hooks (tool, common_report_hooks);
 
 	tool->backend_pid = -1;
-	tool->backend_master_fd = -1;
+	tool->write_fd = -1;
+	tool->read_fd = -1;
 	gst_tool_set_close_func (tool, gst_tool_kill_tool, NULL);
 
 	tool->directive_running = FALSE;
@@ -1614,9 +1614,9 @@ gst_tool_read_from_backend_va (GstTool *tool, gchar *needle, va_list ap)
 	va_end (ap);
 
 	while (!is_string_complete (str->str, list)) {
-		c = fgetc (tool->backend_stream);
+		c = fgetc (tool->read_stream);
 		i++;
-		
+
 		if (*str->str)
 			g_string_append_c (str, c);
 		else {
@@ -1625,7 +1625,6 @@ gst_tool_read_from_backend_va (GstTool *tool, gchar *needle, va_list ap)
 			 */
 			if (c != EOF) {
 				g_string_append_c (str, c);
-				fcntl (tool->backend_master_fd, F_SETFL, 0);
 			}
 			
 			usleep (500);
@@ -1639,7 +1638,6 @@ gst_tool_read_from_backend_va (GstTool *tool, gchar *needle, va_list ap)
 		}
 	}
 
-	fcntl (tool->backend_master_fd, F_SETFL, O_NONBLOCK);
 	ptr = str->str;
 	g_string_free (str, FALSE);
 
@@ -1660,9 +1658,7 @@ gst_tool_read_line_from_backend (GstTool *tool)
 {
 	gchar line[1000];
 
-	fcntl (tool->backend_master_fd, F_SETFL, 0);
-	fgets (line, 1000, tool->backend_stream);
-	fcntl (tool->backend_master_fd, F_SETFL, O_NONBLOCK);
+	fgets (line, 1000, tool->read_stream);
 
 	while (gtk_events_pending ())
 		gtk_main_iteration ();
@@ -1693,11 +1689,8 @@ gst_tool_write_to_backend (GstTool *tool, gchar *string)
 	int ret;
 	gchar *p;
 
-	/* turn the descriptor blocking for writing the configuration */
-	fcntl (tool->backend_master_fd, F_SETFL, 0);
-
 	do {
-		ret = fputc (string [nread], tool->backend_stream);
+		ret = fputc (string [nread], tool->write_stream);
 
 		if (ret != EOF)
 			nread++;
@@ -1708,9 +1701,7 @@ gst_tool_write_to_backend (GstTool *tool, gchar *string)
 				gtk_main_iteration ();
 	} while (nread < strlen (string));
 
-	while (fflush (tool->backend_stream) != 0);
-
-	fcntl (tool->backend_master_fd, F_SETFL, O_NONBLOCK);
+	while (fflush (tool->write_stream) != 0);
 }
 
 void
