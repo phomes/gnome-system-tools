@@ -318,6 +318,7 @@ src/display/Makefile
 src/location-manager/Makefile
 src/internetsharing/Makefile
 src/font/Makefile
+src/runlevel/Makefile
 doc/Makefile
 doc/nameresolution/Makefile
 doc/networking/Makefile
