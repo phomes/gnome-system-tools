@@ -1,5 +1,10 @@
 2004-11-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
+	* ifaces-list.c: fixed context menu for ifaces, now it
+	enables/disables correctly
+
+2004-11-27  Carlos Garnacho Parro  <carlosg@gnome.org>
+
 	* callbacks.[ch], connection.[ch], main.c: handled dialog changing and
 	fields checking.
 	* callbacks.c: fixed a compile warning

@@ -30,8 +30,8 @@ extern GstTool *tool;
 
 GtkActionEntry popup_menu_items [] = {
   { "Properties",  GTK_STOCK_PROPERTIES, N_("_Properties"), NULL, NULL, G_CALLBACK (on_iface_properties_clicked) },
-  { "Activate",    GTK_STOCK_EXECUTE,    N_("_Activate"),   NULL, NULL, G_CALLBACK (on_iface_properties_clicked) },
-  { "Deactivate",  GTK_STOCK_STOP,       N_("_Deactivate"), NULL, NULL, G_CALLBACK (on_iface_properties_clicked) }
+  { "Activate",    GTK_STOCK_EXECUTE,    N_("_Activate"),   NULL, NULL, G_CALLBACK (on_activate_button_clicked) },
+  { "Deactivate",  GTK_STOCK_STOP,       N_("_Deactivate"), NULL, NULL, G_CALLBACK (on_deactivate_button_clicked) }
 };
 
 const gchar *ui_description =
