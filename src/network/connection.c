@@ -289,6 +289,7 @@ isdn_dialog_save (GstConnectionDialog *dialog)
                 "iface-phone-number", get_entry_text (dialog->phone_number),
                 "iface-dial-prefix",  get_entry_text (dialog->dial_prefix),
                 "iface-default-gw",   gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->default_gw)),
+                "iface-peerdns",      gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->default_gw)),
                 "iface-persist",      gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dialog->persist)),
                 NULL);
 }

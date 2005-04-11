@@ -1,3 +1,9 @@
+2005-04-11  Michael Vogt  <michael.vogt@ubuntu.com>
+
+	* connection.c, network-iface-isdn.c: make update_dns match
+	set_default_gw, default this to TRUE, as most users will want
+	this enabled
+
 2005-04-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c: allow IPV6 DNSs too. Fixes #171826
