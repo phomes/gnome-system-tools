@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-29 15:53+0200\n"
+"POT-Creation-Date: 2005-05-10 16:47+0200\n"
 "PO-Revision-Date: 2005-03-22 17:46+0200\n"
 "Last-Translator: Canonical Ltd <translations@canonical.com>\n"
 "Language-Team: Xhosa <xh-translate@ubuntu.com>\n"
@@ -201,14 +201,12 @@ msgid "Seconds to wait before loading default kernel or OS"
 msgstr "Iisekondi zokulinda phambi kokukopisha ikernel emiyo okanye i-OS"
 
 #: ../interfaces/boot.glade.in.h:30
-#, fuzzy
 msgid "Select a kernel image"
-msgstr "Umfanekiso weKernel"
+msgstr "Khetha umfanekiso weKernel"
 
 #: ../interfaces/boot.glade.in.h:31
-#, fuzzy
 msgid "Select an initrd image"
-msgstr "Khetha igama lendawo"
+msgstr "Khetha umfanekiso we-initrd"
 
 #: ../interfaces/boot.glade.in.h:32
 msgid "Specify the partition on which the operating system is installed."
@@ -604,14 +602,12 @@ msgid "<b>Shared folder</b>"
 msgstr "<b>isigcini-zifayili ekwabelwana ngaso</b>"
 
 #: ../interfaces/shares.glade.in.h:5
-#, fuzzy
 msgid "<b>WINS server</b>"
-msgstr "<b>IiSeva ze-DNS</b>"
+msgstr "<b>Iseva ye-WINS</b>"
 
 #: ../interfaces/shares.glade.in.h:6
-#, fuzzy
 msgid "<b>Windows sharing Settings</b>"
-msgstr "<b>UMiselo loMququzeleli</b>"
+msgstr "<b>IMimiselo yokwabelana ye-Windows</b>"
 
 #: ../interfaces/shares.glade.in.h:7
 msgid "Add allowed hosts"
@@ -631,15 +627,15 @@ msgstr "Izimvo:"
 
 #: ../interfaces/shares.glade.in.h:11
 msgid "Do not use WINS server"
-msgstr ""
+msgstr "Musa ukusebenzisa iseva ye-WINS"
 
 #: ../interfaces/shares.glade.in.h:12
 msgid "Domain / _Workgroup"
-msgstr ""
+msgstr "Ummandla / _Iqela elisebenzayo"
 
 #: ../interfaces/shares.glade.in.h:13
 msgid "General Windows sharing settings"
-msgstr ""
+msgstr "I-Windows Jikelele yabelana ngemimiselo"
 
 #: ../interfaces/shares.glade.in.h:14
 msgid "Host name:"
@@ -671,26 +667,23 @@ msgstr "Yabelana no:"
 
 #: ../interfaces/shares.glade.in.h:22
 msgid "This computer is a WINS server"
-msgstr ""
+msgstr "Le khompyutha yiseva ye-WINS"
 
 #: ../interfaces/shares.glade.in.h:23
-#, fuzzy
 msgid "Use WINS Server"
-msgstr "Yongeza iSeva ye-NTP"
+msgstr "Sebenzisa iSeva ye-WINS"
 
 #: ../interfaces/shares.glade.in.h:24
-#, fuzzy
 msgid "Windows sharing settings"
-msgstr "Umiselo olungolunye lomququzeleli"
+msgstr "I-Windows yabelana ngemimiselo"
 
 #: ../interfaces/shares.glade.in.h:25
 msgid "_Add host"
 msgstr "_Yongeza umququzeleli"
 
 #: ../interfaces/shares.glade.in.h:26
-#, fuzzy
 msgid "_Host description:"
-msgstr "Inkcazelo:"
+msgstr "_Inkcazelo ngomququzeleli:"
 
 #: ../interfaces/shares.glade.in.h:27
 msgid "_Path:"
@@ -889,9 +882,8 @@ msgid "Password set to: "
 msgstr "I-password imiselwe: "
 
 #: ../interfaces/users.glade.in.h:36
-#, fuzzy
 msgid "Privileges"
-msgstr "Amalungelo omsebenzisi"
+msgstr "Amalungelo awodwa"
 
 #: ../interfaces/users.glade.in.h:37
 msgid "Profile _name:"
@@ -1082,11 +1074,11 @@ msgstr "Isixhobo somsebenzi onikwe amandla akhethekileyo asisebenzi: \"%s\""
 msgid "_Module path:"
 msgstr "Indlela ye_modyuli:"
 
-#: ../src/boot/boot-settings.c:406
+#: ../src/boot/boot-settings.c:405
 msgid "Password confirmation is not correct"
 msgstr "Isiqinisekiso se-password asichanekanga"
 
-#: ../src/boot/boot-settings.c:431
+#: ../src/boot/boot-settings.c:430
 msgid "Error modifying boot image"
 msgstr "Impazamo ekulungiseni umfanekiso weboot"
 
@@ -1204,13 +1196,13 @@ msgid "An unexpected error has ocurred"
 msgstr "Impazamo engalindelekanga yenzekile"
 
 #: ../src/common/gst-auth.c:132
-#, fuzzy
 msgid "Could not execute the backend"
-msgstr "Ayikwazi kuvula umdibaniso wemida %s"
+msgstr "Ayikwazi ukusebenzisa isiphelo esingemva"
 
 #: ../src/common/gst-auth.c:133
 msgid "There was an error creating the child process, the tool will close now."
 msgstr ""
+"Kubekho na impazama kuyilo inkqubo yomntwana, isixhobo siza kuvala ngoku."
 
 #: ../src/common/gst-dialog.c:59
 #, c-format
@@ -1348,11 +1340,11 @@ msgstr "Ingaba ufuna ukususa le ndawo?"
 msgid "Changing profile"
 msgstr "Itshintsha inkangeleko"
 
-#: ../src/network/main.c:108
+#: ../src/network/main.c:109
 msgid "The interface does not exist"
 msgstr "Umdibaniso wemida awukho"
 
-#: ../src/network/main.c:110
+#: ../src/network/main.c:111
 msgid ""
 "Check that it is correctly typed and that it is correctly supported by your "
 "system."
@@ -1360,23 +1352,23 @@ msgstr ""
 "Jonga ukuba ibhalwe ngokuchanekileyo kwaye ixhaswa ngokuchanekileyo yinkqubo "
 "yakho."
 
-#: ../src/network/main.c:155
+#: ../src/network/main.c:156
 msgid "Configure a network interface"
 msgstr "Misa isimo sothungelwano lomdibaniso wemida"
 
-#: ../src/network/main.c:155
+#: ../src/network/main.c:156
 msgid "INTERFACE"
 msgstr "UMDIBANISO WEMIDA"
 
-#: ../src/network/main.c:156
+#: ../src/network/main.c:157
 msgid "Configure the first network interface with a specific type"
 msgstr "Misa umdibaniso wemida wothungelwano lokuqala nohlobo olulodwa"
 
-#: ../src/network/main.c:156
+#: ../src/network/main.c:157
 msgid "TYPE"
 msgstr "UHLOBO"
 
-#: ../src/network/main.c:163
+#: ../src/network/main.c:164
 msgid "Network settings"
 msgstr "Umiselo lothungelwano"
 
@@ -1396,10 +1388,9 @@ msgstr "Unxulumano lwe-ethernet"
 msgid "Infrared connection"
 msgstr "Unxulumano lwe-infrared"
 
-#: ../src/network/network-iface-isdn.c:311
-#, fuzzy
+#: ../src/network/network-iface-isdn.c:332
 msgid "ISDN connection"
-msgstr "Unxulumano lwemodem"
+msgstr "Unxulumano lwe-ISDN"
 
 #: ../src/network/network-iface-modem.c:251
 msgid "Modem connection"
@@ -1482,27 +1473,25 @@ msgstr "Uqinisekile ufuna ukucima olu lwabelwano?"
 msgid "Other computers in your network will stop viewing this"
 msgstr "Ezinye iikhompyutha kuthungelwano lwakho ziya kuyeka ukujonga oku"
 
-#: ../src/shares/main.c:86
+#: ../src/shares/main.c:88
 msgid "Add a shared path, modifies it if it already exists"
 msgstr "Yongeza indlela ekwabelwana ngayo, yiphawule ukuba sele ikhona"
 
-#: ../src/shares/main.c:86
+#: ../src/shares/main.c:88
 msgid "PATH"
 msgstr "INDLELA"
 
-#: ../src/shares/main.c:93
+#: ../src/shares/main.c:95
 msgid "Shared folders settings"
 msgstr "Umiselo lwesigcini-zifayili"
 
 #: ../src/shares/nautilus/nautilus-shares.c:129
-#, fuzzy
 msgid "_Share folder"
-msgstr "Yabelana ngovimba weefayili"
+msgstr "_Yabelana ngovimba weefayili"
 
 #: ../src/shares/nautilus/nautilus-shares.c:130
-#, fuzzy
 msgid "Share this folder with other computers"
-msgstr "Isixhobo asikwazi kuthungelana nekhompyutha"
+msgstr "Yabelana ngalo vimba weefayili nezinye iikhompyutha"
 
 #: ../src/shares/nfs-acl-table.c:49
 msgid "Allowed host/network"
@@ -1549,13 +1538,15 @@ msgstr "Isigcini-zifayili ekwabelwana ngazo"
 
 #: ../src/shares/transfer.c:42
 msgid "Sharing services are not installed"
-msgstr ""
+msgstr "Iinkonzo zokwabelana azifakwanga kuseko-zixhobo"
 
 #: ../src/shares/transfer.c:44
 msgid ""
 "You need to install at least either Samba or NFS in order to share your "
 "folders. The tool will close now."
 msgstr ""
+"Kufuneka useko-zixhobo lwe-Samba ubuncinane okanye i-NFS ukuze ukwazi "
+"ukwabelana ngeziqulathi zeefayili zakho. Isixhobo siza kuvala ngoku."
 
 #: ../src/time/main.c:461
 msgid "NTP support is not running"
@@ -1793,6 +1784,8 @@ msgid ""
 "This will disable the access of this user to the system, but his home "
 "directory will not be deleted"
 msgstr ""
+"Oku kuya kwenza ufikelelo lungenzeki lalo msebenzisi kwinkqubo, kodwa uvimba "
+"weefayili zasekhaya akasayi kucinywa"
 
 #: ../src/users/user-settings.c:187
 msgid "User Account Editor"
@@ -1933,106 +1926,26 @@ msgstr "Jonga ukuba unikezele i-password efanayo kwiibhokisi zombini zokubhala"
 msgid "Settings for User %s"
 msgstr "UMiselo loMsebenzisi %s"
 
-#: ../src/users/users-table.c:45
+#: ../src/users/users-table.c:59
 msgid "User"
 msgstr "Umsebenzisi"
 
-#: ../src/users/users-table.c:46
+#: ../src/users/users-table.c:60
 msgid "Home"
 msgstr "Ekhaya"
 
-#: ../src/users/users-table.c:47
+#: ../src/users/users-table.c:61
 msgid "User details"
 msgstr "Iinkcukacha zomsebenzisi"
 
-#: ../src/users/users-table.c:48
+#: ../src/users/users-table.c:62
 msgid "UID"
 msgstr "I-UID"
 
-#: ../src/users/users-table.c:49
+#: ../src/users/users-table.c:63
 msgid "Shell"
 msgstr "Itoliki yemiyalelo"
 
 #: ../src/users/users.desktop.in.in.h:1
 msgid "Add or remove users and groups"
 msgstr "Yongeza okanye susa abasebenzisi namaqela"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid ""
-#~ "<span size=\"larger\" weight=\"bold\">Bootloader settings</span>\n"
-#~ "Use this tool to specify which operating systems users can choose at "
-#~ "startup"
-#~ msgstr ""
-#~ "<span size=\"larger\" weight=\"bold\">Umiselo lwe-bootloader</span>\n"
-#~ "Sebenzisa esi sixhobo ukubalula ukuba zeziphi na iinkqubo abasebenzisi "
-#~ "abanokuzikhetha ukuvula"
-
-#~ msgid ""
-#~ "<span weight=\"bold\" size=\"larger\">Network settings</span>\n"
-#~ "Use this tool for configuring the way your system access to other "
-#~ "computers"
-#~ msgstr ""
-#~ "<span weight=\"bold\" size=\"larger\">Umiselo lothungelwano</span>\n"
-#~ "Sebenzisa esi sixhobo ekumiseni indlela inkqubo yakho efikelela ngayo "
-#~ "kwezinye iikhompyutha"
-
-#~ msgid ""
-#~ "<span size=\"larger\" weight=\"bold\">Services settings</span>\n"
-#~ "use this tool to specify which services to run at boot time"
-#~ msgstr ""
-#~ "<span size=\"larger\" weight=\"bold\">Umiselo lweeNkonzo</span>\n"
-#~ "sebenzisa esi sixhobo ukubalula ukuba zeziphi iinkonzo emaziqhutywe "
-#~ "kwixesha lokuboota"
-
-#~ msgid ""
-#~ "<span weight=\"bold\" size=\"larger\">Shared folders configuration</"
-#~ "span>\n"
-#~ "Use this tool for making available folders to your local network "
-#~ "neighborhood"
-#~ msgstr ""
-#~ "<span weight=\"bold\" size=\"larger\">Isimo sikavimba weefayili "
-#~ "ekwabelwana ngaye</span>\n"
-#~ "Sebenzisa esi sixholo sokweenza iifowlda ezifumanekayo kuthungelwano "
-#~ "lwasebumelwaneni bakho kwingingqi"
-
-#~ msgid ""
-#~ "<span size=\"larger\" weight=\"bold\">Time and date settings</span>\n"
-#~ "Use this tool for setting your current date, time and time zone"
-#~ msgstr ""
-#~ "<span size=\"larger\" weight=\"bold\">Umiselo lomhla nexesha</span>\n"
-#~ "Sebenzisa esi sixhobo ekumiseleni umhla wakho, ixesha nezowuni yexesha"
-
-#~ msgid "<span weight=\"bold\">Time Configuration</span>"
-#~ msgstr "<span weight=\"bold\">Isimo seXesha</span>"
-
-#~ msgid "date"
-#~ msgstr "umhla"
-
-#~ msgid "hours"
-#~ msgstr "iiyure"
-
-#~ msgid "minutes"
-#~ msgstr "imizuzu"
-
-#~ msgid "seconds"
-#~ msgstr "iisekondi"
-
-#~ msgid ""
-#~ "<span weight=\"bold\" size=\"larger\">Users and groups settings</span>\n"
-#~ "Use this tool for configuring users and groups settings in your system"
-#~ msgstr ""
-#~ "<span weight=\"bold\" size=\"larger\">Umiselo lwabasebenzisi namaqela</"
-#~ "span>\n"
-#~ "Sebenzisa esi sixhobo ekumiseni useto lwabasebenzisi namaqela kwinkqubo "
-#~ "yakho"
-
-#~ msgid "GST Shares admin component"
-#~ msgstr "Isebe lolawulo loLwabelwano lwe-GST"
-
-#~ msgid "GST Shares sharing operations"
-#~ msgstr "Imisebenzi yolwabelwano kwiZabelo ze-GST"
-
-#~ msgid "_Share Folder"
-#~ msgstr "_Yabelana ngeSigcini-zifayili"
