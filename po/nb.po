@@ -1512,7 +1512,7 @@ msgid ""
 "folders. The tool will close now."
 msgstr ""
 "Du må installere Samba eller NFS for å kunne dele dine mapper. Programmet "
-"vil kukkes nå."
+"vil lukkes nå."
 
 #: ../src/time/main.c:461
 msgid "NTP support is not running"
