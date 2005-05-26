@@ -204,7 +204,7 @@ msgid ""
 "The new boot image has been added. Please click \"Apply\" to save your "
 "changes."
 msgstr ""
-"Uus aldlaadimiskirje on lisatud. Muudatuste rakendamiseks vajuta \"Rakenda\"."
+"Uus alglaadimiskirje on lisatud. Muudatuste rakendamiseks vajuta \"Rakenda\"."
 
 #: interfaces/boot.glade.in.h:34
 msgid ""
@@ -265,6 +265,8 @@ msgid ""
 "<span weight=\"bold\" size=\"larger\">The platform you are running is not "
 "supported by this tool</span>"
 msgstr ""
+"<span weight=\"bold\" size=\"larger\">Sinu poolt kasutatav platvorm pole "
+"käesoleva vahendi poolt toetatud</span>"
 
 #: interfaces/common.glade.in.h:3
 msgid "Enter Password"
@@ -321,7 +323,7 @@ msgstr ""
 
 #: interfaces/network.glade.in.h:6
 msgid "<b>Account data</b>"
-msgstr ""
+msgstr "<b>Konto andmed</b>"
 
 #: interfaces/network.glade.in.h:7
 msgid "<b>Connection settings</b>"
@@ -409,7 +411,7 @@ msgstr "Asukoht:"
 
 #: interfaces/network.glade.in.h:28
 msgid "Modem"
-msgstr ""
+msgstr "Modem"
 
 #: interfaces/network.glade.in.h:29
 msgid "Network name (_ESSID):"
@@ -422,6 +424,10 @@ msgid ""
 "Medium\n"
 "Loud"
 msgstr ""
+"Väljas\n"
+"Vaikne\n"
+"Keskmine\n"
+"Valju"
 
 #: interfaces/network.glade.in.h:34
 msgid "Options"
@@ -449,7 +455,7 @@ msgstr ""
 
 #: interfaces/network.glade.in.h:40
 msgid "WEP _key:"
-msgstr ""
+msgstr "WEP _võti:"
 
 #: interfaces/network.glade.in.h:41 src/network/ifaces-list.c:33
 msgid "_Activate"
@@ -1296,7 +1302,7 @@ msgstr "Kas soovid seda asukohta kustutada?"
 
 #: src/network/location.c:436
 msgid "Changing profile"
-msgstr ""
+msgstr "Profiili vahetamine"
 
 #: src/network/main.c:107
 msgid "The interface does not exist"
@@ -1363,7 +1369,7 @@ msgstr "Traadita ühendu"
 #: src/network/network-iface.c:410
 #, c-format
 msgid "Activating interface \"%s\""
-msgstr ""
+msgstr "Liidese \"%s\" aktiveerimine"
 
 #: src/network/network-iface.c:494
 #, c-format
@@ -1685,7 +1691,7 @@ msgstr "Vaikimisi profiili ei tohiks kustutada"
 
 #: src/users/profile-settings.c:206
 msgid "This profile is used for setting default data for new users"
-msgstr ""
+msgstr "Seda profiili kasutatakse uute kasutajate andmete seadmisel"
 
 #: src/users/profile-settings.c:215
 #, c-format
@@ -1711,11 +1717,11 @@ msgstr "_Puhasta"
 
 #: src/users/search-bar/search-bar.c:326
 msgid "Choice"
-msgstr ""
+msgstr "Valik"
 
 #: src/users/search-bar/search-bar.c:336
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: src/users/user-settings.c:71
 msgid "The \"root\" user should not be deleted"
