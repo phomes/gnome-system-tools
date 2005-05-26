@@ -1,6 +1,10 @@
+2005-05-26  Carlos Garnacho  <carlosg@gnome.org>
+
+	* Fixed build broken by Vincent
+
 2005-05-20  Vincent van Adrighem  <adrighem@gnome.org>
 
-* Added dutch (nl) docs (Myckel Habets).
+	* Added dutch (nl) docs (Myckel Habets).
 
 2005-03-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
