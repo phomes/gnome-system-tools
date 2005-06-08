@@ -1068,11 +1068,11 @@ msgstr ""
 
 #: src/boot/boot.desktop.in.in.h:2
 msgid "Configure the system boot process"
-msgstr ""
+msgstr "Alglaadimisprotsessi seadistamine"
 
 #: src/boot/callbacks.c:81
 msgid "Boot Image Editor"
-msgstr ""
+msgstr "Alglaadimistõmmise redaktor"
 
 #: src/boot/callbacks.c:179
 msgid "Boot Append Editor"
@@ -1102,7 +1102,7 @@ msgstr ""
 #: src/boot/callbacks.c:466
 #, c-format
 msgid "The file \"%s\" is missing or could not be read"
-msgstr ""
+msgstr "Fail \"%s\" puudub või on loetamatu"
 
 #: src/boot/table.c:41
 msgid "Name"
@@ -1144,6 +1144,8 @@ msgid ""
 "Check that you have access to this network and that the computer is actually "
 "working and running SSHD"
 msgstr ""
+"Kontrolli, et sul oleks sellesse võrku ligipääs ja sellel arvutil oleks "
+"töötav SSHD"
 
 #. the proccess was running su
 #: src/common/gst-auth.c:93
@@ -1257,6 +1259,7 @@ msgid ""
 "Check that the device is not busy and that is correctly attached to the "
 "computer"
 msgstr ""
+"Veendu, et seade poleks hõivatud ja on arvutiga korralikult ühendatud"
 
 #: src/network/callbacks.c:439
 msgid "The host name has changed"
@@ -1413,7 +1416,7 @@ msgstr "Teenuste sätted"
 
 #: src/services/services.desktop.in.in.h:1
 msgid "Configure which services will be run when the system starts"
-msgstr ""
+msgstr "Süsteemi käivitamisel käivitatavate teenuste valimine"
 
 #: src/services/services.desktop.in.in.h:2
 msgid "Services"
@@ -1433,7 +1436,7 @@ msgstr ""
 
 #: src/shares/callbacks.c:186
 msgid "Other computers in your network will stop viewing this"
-msgstr ""
+msgstr "Teised võrgus olevad arvutid ei näe seda enam"
 
 #: src/shares/main.c:86
 msgid "Add a shared path, modifies it if it already exists"
@@ -1462,7 +1465,7 @@ msgstr "Lubatud host/võrk"
 #: src/shares/share-nfs-add-hosts.c:112
 #, c-format
 msgid "Hosts in the %s network"
-msgstr ""
+msgstr "Hostid %s võrgus"
 
 #: src/shares/share-nfs-add-hosts.c:144
 msgid "Specify hostname"
@@ -1498,13 +1501,15 @@ msgstr "Jagatud kataloogid"
 
 #: src/shares/transfer.c:42
 msgid "Sharing services are not installed"
-msgstr ""
+msgstr "Jagamisteenuseid pole paigaldatud"
 
 #: src/shares/transfer.c:44
 msgid ""
 "You need to install at least either Samba or NFS in order to share your "
 "folders. The tool will close now."
 msgstr ""
+"Oma kataloogide jagamiseks peab sul olema paigaldatud Samba või NFS server. "
+"Rakendus lõpetab praegu töö."
 
 #: src/time/main.c:461
 msgid "NTP support is not running"
