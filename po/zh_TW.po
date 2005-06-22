@@ -1,7 +1,7 @@
 # translation of gnome-system-tools.HEAD.po to 
 # traditional Chinese translation for gnome-system-tools.
 # Copyright (C) 2001, 2002, 2003, 2004 Free Software Foundation, Inc.
-# Abel Cheung <maddog@linux.org.hk>, 2001-2003.
+# Abel Cheung <abel@oaka.org>, 2001-2003.
 # Chao-Hsiung Liao <pesder.liao@msa.hinet.net>, 2004.
 # 
 # 
@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools 2.9.92\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-17 07:54+0800\n"
+"POT-Creation-Date: 2005-06-22 12:59+0000\n"
 "PO-Revision-Date: 2005-03-17 07:51+0800\n"
 "Last-Translator: Chao-Hsiung Liao <pesder.liao@msa.hinet.net>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"Language-Team: Chinese (traditional) <community@linuxhall.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1055,11 +1055,11 @@ msgstr "無效的 root 裝置：‘%s’"
 msgid "_Module path:"
 msgstr "模組路徑(_M)："
 
-#: ../src/boot/boot-settings.c:406
+#: ../src/boot/boot-settings.c:405
 msgid "Password confirmation is not correct"
 msgstr "確認密碼並不正確"
 
-#: ../src/boot/boot-settings.c:431
+#: ../src/boot/boot-settings.c:430
 msgid "Error modifying boot image"
 msgstr "修正開機影像檔時發生錯誤"
 
@@ -1310,33 +1310,33 @@ msgstr "您確定要移除這位置？"
 msgid "Changing profile"
 msgstr "更改設定組合"
 
-#: ../src/network/main.c:108
+#: ../src/network/main.c:109
 msgid "The interface does not exist"
 msgstr "介面不存在"
 
-#: ../src/network/main.c:110
+#: ../src/network/main.c:111
 msgid ""
 "Check that it is correctly typed and that it is correctly supported by your "
 "system."
 msgstr "請檢查輸入是否正確及您的系統是否支援該裝置。"
 
-#: ../src/network/main.c:155
+#: ../src/network/main.c:156
 msgid "Configure a network interface"
 msgstr "設定網路界面"
 
-#: ../src/network/main.c:155
+#: ../src/network/main.c:156
 msgid "INTERFACE"
 msgstr "介面"
 
-#: ../src/network/main.c:156
+#: ../src/network/main.c:157
 msgid "Configure the first network interface with a specific type"
 msgstr "以指定的類型來設定第一個網路介面"
 
-#: ../src/network/main.c:156
+#: ../src/network/main.c:157
 msgid "TYPE"
 msgstr "輸入"
 
-#: ../src/network/main.c:163
+#: ../src/network/main.c:164
 msgid "Network settings"
 msgstr "網路連線"
 
@@ -1356,7 +1356,7 @@ msgstr "乙太網連線"
 msgid "Infrared connection"
 msgstr "紅外線連線"
 
-#: ../src/network/network-iface-isdn.c:311
+#: ../src/network/network-iface-isdn.c:332
 msgid "ISDN connection"
 msgstr "ISDN 數據機連線"
 
@@ -1441,15 +1441,15 @@ msgstr "您確定要刪除這個共享？"
 msgid "Other computers in your network will stop viewing this"
 msgstr "其它在您的網路上的電腦會停止查看此分享"
 
-#: ../src/shares/main.c:86
+#: ../src/shares/main.c:88
 msgid "Add a shared path, modifies it if it already exists"
 msgstr "加入共享的路徑，如果它已存在請修改它"
 
-#: ../src/shares/main.c:86
+#: ../src/shares/main.c:88
 msgid "PATH"
 msgstr "路徑"
 
-#: ../src/shares/main.c:93
+#: ../src/shares/main.c:95
 msgid "Shared folders settings"
 msgstr "共享資料夾設定"
 
@@ -1881,23 +1881,23 @@ msgstr "請檢查您是否在兩個文字欄位中提供相同的密碼"
 msgid "Settings for User %s"
 msgstr "使用者 %s 的設定"
 
-#: ../src/users/users-table.c:45
+#: ../src/users/users-table.c:59
 msgid "User"
 msgstr "使用者"
 
-#: ../src/users/users-table.c:46
+#: ../src/users/users-table.c:60
 msgid "Home"
 msgstr "個人目錄"
 
-#: ../src/users/users-table.c:47
+#: ../src/users/users-table.c:61
 msgid "User details"
 msgstr "使用者詳細資訊"
 
-#: ../src/users/users-table.c:48
+#: ../src/users/users-table.c:62
 msgid "UID"
 msgstr "UID"
 
-#: ../src/users/users-table.c:49
+#: ../src/users/users-table.c:63
 msgid "Shell"
 msgstr "命令殼"
 
