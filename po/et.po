@@ -32,7 +32,7 @@ msgstr ""
 
 #: gnome-system-tools.schemas.in.h:3
 msgid "Preferred bootloader that boot-admin will configure"
-msgstr ""
+msgstr "Eelistatud alglaadur, mida boot-admin peab seadistama"
 
 #: gnome-system-tools.schemas.in.h:4
 msgid "Remote hosts"
@@ -94,6 +94,9 @@ msgid ""
 "\n"
 "please select which do you want to configure"
 msgstr ""
+"<span size=\"larger\" weight=\"bold\">Leiti mitu alglaadurit</span>\n"
+"\n"
+"palun vali, millist sa soovid seadistada"
 
 #: interfaces/boot.glade.in.h:9 interfaces/users.glade.in.h:3
 msgid "<span weight=\"bold\">Basic Settings</span>"
@@ -152,8 +155,7 @@ msgstr "IDE SCSI emulatsiooni lubamine"
 msgid ""
 "Enter a name for the boot image, and specify what kind of operating system "
 "it is."
-msgstr ""
-"Sisesta alglaadimistõmmise nimi ja määra sellele operatsioonisüsteem."
+msgstr "Sisesta alglaadimistõmmise nimi ja määra sellele operatsioonisüsteem."
 
 #: interfaces/boot.glade.in.h:22
 msgid "Finished"
