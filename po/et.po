@@ -9,10 +9,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-system-tools\n"
+"Project-Id-Version: gnome-system-tools GNOME 2.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-08 15:07+0100\n"
-"PO-Revision-Date: 2005-02-03 23:28+0200\n"
+"PO-Revision-Date: 2005-07-10 00:43+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr "Eelistatud alglaadur, mida boot-admin peab seadistama"
 
 #: gnome-system-tools.schemas.in.h:4
 msgid "Remote hosts"
-msgstr "K_augIP"
+msgstr "Kaughostid"
 
 #: gnome-system-tools.schemas.in.h:5
 msgid ""
@@ -517,7 +517,7 @@ msgstr ""
 
 #: interfaces/network.glade.in.h:55
 msgid "_Set modem as default route to internet"
-msgstr ""
+msgstr "_Modem on määratud vaikimisi ruutinguks internetti"
 
 #: interfaces/network.glade.in.h:56
 msgid "_Subnet mask:"
@@ -829,7 +829,7 @@ msgstr "Grupid"
 
 #: interfaces/users.glade.in.h:27
 msgid "Ma_ximum days a password may be used:"
-msgstr ""
+msgstr "_Suurim päevade arv, millal parooli saab kasutada:"
 
 #: interfaces/users.glade.in.h:28
 msgid "Maximum UID:"
@@ -837,7 +837,7 @@ msgstr "Suurim UID:"
 
 #: interfaces/users.glade.in.h:29
 msgid "Mi_nimum days between password changes:"
-msgstr ""
+msgstr "_Väikseim päevade vahemik paroolimuutmiste vahel:"
 
 #: interfaces/users.glade.in.h:30
 msgid "Minimum GID:"
@@ -921,7 +921,7 @@ msgstr "_Kommentaarid"
 
 #: interfaces/users.glade.in.h:50
 msgid "_Days between warning and password expiration:"
-msgstr ""
+msgstr "_Päevade arv hoiatuse ja parooli aegumise vahel:"
 
 #: interfaces/users.glade.in.h:51 src/boot/table.c:52
 #: src/network/address-list.c:71 src/network/hosts.c:35 src/shares/table.c:41
@@ -1066,7 +1066,7 @@ msgstr "Viga alglaadimistõmmise muutmisel"
 
 #: src/boot/boot.desktop.in.in.h:1
 msgid "Boot"
-msgstr ""
+msgstr "Alglaadimine"
 
 #: src/boot/boot.desktop.in.in.h:2
 msgid "Configure the system boot process"
@@ -1188,7 +1188,7 @@ msgstr "Vidinat pole võimalik leida: %s"
 
 #: src/common/gst-dialog.c:382
 msgid "There are changes which have not been applied"
-msgstr ""
+msgstr "Siin on muutusi, mida pole veel rakendatud"
 
 #: src/common/gst-dialog.c:384
 msgid "Apply them now?"
@@ -1329,7 +1329,7 @@ msgstr "LIIDES"
 
 #: src/network/main.c:155
 msgid "Configure the first network interface with a specific type"
-msgstr ""
+msgstr "Esimese võrguliidese seadistamine määratud tüübi abil"
 
 #: src/network/main.c:155
 msgid "TYPE"
