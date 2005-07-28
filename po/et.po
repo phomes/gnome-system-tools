@@ -1,5 +1,5 @@
 # Gnome System Tools'i eesti keele tõlge.
-# Estonian translation of Gnome System Tools
+# Estonian translation of Gnome System Tools.
 #
 # Copyright (C) 2002, 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-system-tools package.
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools GNOME 2.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-08 15:07+0100\n"
-"PO-Revision-Date: 2005-07-10 00:43+0300\n"
+"PO-Revision-Date: 2005-07-27 23:05+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: gnome-system-tools.schemas.in.h:2
 msgid "Last GST version executed"
-msgstr ""
+msgstr "Viimatikäivitatud GST versioon"
 
 #: gnome-system-tools.schemas.in.h:3
 msgid "Preferred bootloader that boot-admin will configure"
@@ -577,7 +577,7 @@ msgstr "<b>Hosti sätted</b>"
 
 #: interfaces/shares.glade.in.h:3
 msgid "<b>Share properties</b>"
-msgstr ""
+msgstr "<b>Jagatud kataloogi omadused</b>"
 
 #: interfaces/shares.glade.in.h:4
 msgid "<b>Shared folder</b>"
@@ -589,7 +589,7 @@ msgstr "<b>WINS server</b>"
 
 #: interfaces/shares.glade.in.h:6
 msgid "<b>Windows sharing Settings</b>"
-msgstr ""
+msgstr "<b>Windowsi jagatud kataloogide sätted</b>"
 
 #: interfaces/shares.glade.in.h:7
 msgid "Add allowed hosts"
@@ -617,7 +617,7 @@ msgstr "Domeen / _Töögrupp"
 
 #: interfaces/shares.glade.in.h:13
 msgid "General Windows sharing settings"
-msgstr ""
+msgstr "Üldised Windowsi jagatud kataloogide sätted"
 
 #: interfaces/shares.glade.in.h:14
 msgid "Host name:"
@@ -641,7 +641,7 @@ msgstr "Ainult lugemiseks"
 
 #: interfaces/shares.glade.in.h:20
 msgid "Share folder"
-msgstr ""
+msgstr "Kataloogi jagamine"
 
 #: interfaces/shares.glade.in.h:21
 msgid "Share with:"
@@ -657,7 +657,7 @@ msgstr "WINS serveri kasutamine"
 
 #: interfaces/shares.glade.in.h:24
 msgid "Windows sharing settings"
-msgstr ""
+msgstr "Windowsi jagatud kataloogide sätted"
 
 #: interfaces/shares.glade.in.h:25
 msgid "_Add host"
@@ -849,11 +849,11 @@ msgstr "Väikseim UID:"
 
 #: interfaces/users.glade.in.h:32
 msgid "Minimum days allowed between password changes:"
-msgstr ""
+msgstr "Vähim lubatud arv päevi paroolimuutmiste vahel:"
 
 #: interfaces/users.glade.in.h:33
 msgid "Number of days that a password may be used:"
-msgstr ""
+msgstr "Päevade arv, mil parooli tohib kasutada:"
 
 #: interfaces/users.glade.in.h:34
 msgid "O_ffice location:"
@@ -1227,7 +1227,7 @@ msgstr "Hoiatus"
 
 #: src/common/gst-tool.c:1546
 msgid "Don't show me this again"
-msgstr ""
+msgstr "Seda rohkem mitte näidata"
 
 #: src/common/gst-tool.c:1603
 msgid "GNOME System Tools"
@@ -1458,7 +1458,7 @@ msgstr "_Jaga kataloog"
 
 #: src/shares/nautilus/nautilus-shares.c:130
 msgid "Share this folder with other computers"
-msgstr "Kataloogi jagamine teistele arvutitele"
+msgstr "Kataloogi jagamine ühiskasutuseks teiste arvutitega"
 
 #: src/shares/nfs-acl-table.c:49
 msgid "Allowed host/network"
