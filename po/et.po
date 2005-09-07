@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools GNOME 2.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-08 15:07+0100\n"
-"PO-Revision-Date: 2005-07-27 23:05+0300\n"
+"PO-Revision-Date: 2005-09-07 17:57+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -25,6 +25,8 @@ msgid ""
 "Comma separated list of hosts that the GST will be able to access when the "
 "remote configuration option is enabled"
 msgstr ""
+"Komaga eraldatud nimekiri hostidest, mida GST tohib kaughalduse lubamise "
+"korral hallata."
 
 #: gnome-system-tools.schemas.in.h:2
 msgid "Last GST version executed"
@@ -43,10 +45,12 @@ msgid ""
 "The GST are able to do remote configuration through SSH, enable this option "
 "to use this feature"
 msgstr ""
+"GST on võimaline SSH abil teostama kaughaldust. Selle valiku lubamisega saab "
+"seda võimalust kasutada."
 
 #: gnome-system-tools.schemas.in.h:6
 msgid "The last GST version that this computer has run"
-msgstr ""
+msgstr "Selles arvutis viimati käivitatud GST versioon"
 
 #: gnome-system-tools.schemas.in.h:7
 msgid ""
@@ -593,7 +597,7 @@ msgstr "<b>Windowsi jagatud kataloogide sätted</b>"
 
 #: interfaces/shares.glade.in.h:7
 msgid "Add allowed hosts"
-msgstr ""
+msgstr "Lubatud hostide lisamine"
 
 #: interfaces/shares.glade.in.h:8
 msgid "Allow _browsing folder"
@@ -1210,7 +1214,7 @@ msgstr ""
 #: src/common/gst-tool.c:1503
 #, c-format
 msgid "Welcome to the %s prerelease of the GNOME System Tools"
-msgstr ""
+msgstr "Tere tulemast GNOME Süsteemitööriistade eelversiooni %s"
 
 #: src/common/gst-tool.c:1505
 msgid ""
