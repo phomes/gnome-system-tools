@@ -1,18 +1,18 @@
 # Gnome Süsteemitööriistade eesti keele tõlge.
 # Estonian translation of Gnome System Tools.
 #
-# Copyright (C) 2002, 2005 Free Software Foundation, Inc.
+# Copyright (C) 2002, 2005, 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-system-tools package.
 #
 # Tõivo Leedjärv <toivo@linux.ee>, 2002.
-# Ivar Smolin <okul@linux.ee>, 2005.
+# Ivar Smolin <okul@linux.ee>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools GNOME 2.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-19 06:53+0000\n"
-"PO-Revision-Date: 2005-10-13 11:45+0300\n"
+"PO-Revision-Date: 2006-02-19 15:33+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -61,15 +61,17 @@ msgstr ""
 
 #: ../gnome-system-tools.schemas.in.h:8
 msgid "Whether the tools will use remote administration or not"
-msgstr ""
+msgstr "Kas tööriistad kasutavad kaughaldust või mitte"
 
 #: ../gnome-system-tools.schemas.in.h:9
 msgid "Whether the users-admin tool should show all users and groups or not"
 msgstr ""
+"Kas kasutajate haldamise vahend peab näitama kõiki kasutajaid ja gruppe või "
+"mitte"
 
 #: ../gnome-system-tools.schemas.in.h:10
 msgid "Whether the warning dialog should be shown or not"
-msgstr ""
+msgstr "Kas hoiatusdialoogi peab näitama või mitte"
 
 #: ../interfaces/boot.glade.in.h:1
 msgid "/dev/hda"
@@ -569,7 +571,7 @@ msgstr "Laiendatud sätted:"
 
 #: ../interfaces/services.glade.in.h:2
 msgid "Select the services that you wish to activate:"
-msgstr ""
+msgstr "Vali teenused, mida soovid aktiveerida:"
 
 #: ../interfaces/shares.glade.in.h:1
 msgid "<b>Allowed hosts</b>"
@@ -1533,7 +1535,7 @@ msgstr "Veebilehtede jagamine internetti"
 
 #: ../src/shares/callbacks.c:187
 msgid "Are you sure you want to delete this share?"
-msgstr ""
+msgstr "Kas sa soovid kustutada seda jagatud ressurssi?"
 
 #: ../src/shares/callbacks.c:189
 msgid "Other computers in your network will stop viewing this."
@@ -2010,4 +2012,3 @@ msgstr "Kest"
 #: ../src/users/users.desktop.in.in.h:1
 msgid "Add or remove users and groups"
 msgstr "Lisa või eemalda kasutajaid ja gruppe"
-
