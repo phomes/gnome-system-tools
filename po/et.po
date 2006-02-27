@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools GNOME 2.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-19 06:53+0000\n"
-"PO-Revision-Date: 2006-02-19 15:33+0200\n"
+"PO-Revision-Date: 2006-02-26 11:21+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../gnome-system-tools.schemas.in.h:10
 msgid "Whether the warning dialog should be shown or not"
-msgstr "Kas hoiatusdialoogi peab näitama või mitte"
+msgstr "Kas hoiatusdialoogi tuleb näidata või mitte"
 
 #: ../interfaces/boot.glade.in.h:1
 msgid "/dev/hda"
@@ -208,7 +208,7 @@ msgstr "Initrd tõmmise valimine"
 
 #: ../interfaces/boot.glade.in.h:32
 msgid "Specify the partition on which the operating system is installed."
-msgstr ""
+msgstr "Määra jaotis, kuhu operatsioonisüsteem on paigaldatud."
 
 #: ../interfaces/boot.glade.in.h:33
 msgid ""
@@ -603,7 +603,7 @@ msgstr "Lubatud hostide lisamine"
 
 #: ../interfaces/shares.glade.in.h:8
 msgid "Allow _browsing folder"
-msgstr ""
+msgstr "Kataloogi si_rvimine lubatud"
 
 #: ../interfaces/shares.glade.in.h:9
 msgid "Allowed hosts:"
@@ -1097,7 +1097,7 @@ msgstr "Ilma ühegi alglaadimistõmmiseta pole arvuti võimeline käivituma."
 #: ../src/boot/callbacks.c:433
 #, c-format
 msgid "Are you sure you want to delete \"%s\"?"
-msgstr "Kas sa soovid eemaldada \"%s\"?"
+msgstr "Kas soovid eemaldada \"%s\"?"
 
 #: ../src/boot/callbacks.c:435
 msgid "This may leave this operating system unbootable."
@@ -1146,7 +1146,7 @@ msgstr "_Omadused"
 #. the proccess was running ssh
 #: ../src/common/gst-auth.c:88
 msgid "The tool could not connect to the computer"
-msgstr ""
+msgstr "Tööriist ei saa arvutiga ühenduda"
 
 #: ../src/common/gst-auth.c:89
 msgid ""
@@ -1427,11 +1427,11 @@ msgstr "Sissetulevate sõnumite viirusevastane analüüs"
 
 #: ../src/services/service.c:33
 msgid "Volumes mounter"
-msgstr ""
+msgstr "Kettaseadmete ühendaja"
 
 #: ../src/services/service.c:33
 msgid "Mounts your volumes automatically"
-msgstr ""
+msgstr "Kettaseadmete automaatne ühendamine"
 
 #: ../src/services/service.c:34
 msgid "Actions scheduler"
@@ -1511,11 +1511,11 @@ msgstr "Rakendustest printerikasutamise lubamine"
 
 #: ../src/services/service.c:44
 msgid "Remote shell server"
-msgstr ""
+msgstr "Remote shell server"
 
 #: ../src/services/service.c:44
 msgid "Secure shell server"
-msgstr ""
+msgstr "Secure shell server"
 
 #: ../src/services/service.c:45
 msgid "Computer activity logger"
@@ -1535,7 +1535,7 @@ msgstr "Veebilehtede jagamine internetti"
 
 #: ../src/shares/callbacks.c:187
 msgid "Are you sure you want to delete this share?"
-msgstr "Kas sa soovid kustutada seda jagatud ressurssi?"
+msgstr "Kas soovid kustutada seda jagatud kataloogi?"
 
 #: ../src/shares/callbacks.c:189
 msgid "Other computers in your network will stop viewing this."
@@ -1584,7 +1584,7 @@ msgstr "Võrgu määramine"
 
 #: ../src/shares/share-settings.c:123
 msgid "Do not share"
-msgstr ""
+msgstr "Mitte jagada"
 
 #: ../src/shares/share-settings.c:131
 msgid "SMB"
@@ -1729,7 +1729,7 @@ msgstr "Gruppi \"root\" ei tohiks kustutada"
 #: ../src/users/group-settings.c:299
 #, c-format
 msgid "Are you sure you want to delete group \"%s\"?"
-msgstr "Kas sa soovid eemaldada gruppi \"%s\"?"
+msgstr "Kas soovid eemaldada gruppi \"%s\"?"
 
 #: ../src/users/group-settings.c:301
 msgid "This may leave files with invalid group ID in the filesystem."
@@ -1843,7 +1843,7 @@ msgstr "See võib mõjuda halvasti süsteemi stabiilsusele."
 #: ../src/users/user-settings.c:83
 #, c-format
 msgid "Are you sure you want to delete user \"%s\"?"
-msgstr "Kas sa soovid eemaldada kasutajat \"%s\"?"
+msgstr "Kas soovid eemaldada kasutajat \"%s\"?"
 
 #: ../src/users/user-settings.c:85
 msgid ""
@@ -1955,6 +1955,8 @@ msgid ""
 "Several users may share a single user ID, but it's not common and may lead "
 "to security problems."
 msgstr ""
+"Mitmel kasutajal on ühe kasutaja ID aga see pole tavapärane praktija ja võib "
+"viidata turvaprobleemidele."
 
 #: ../src/users/user-settings.c:473
 msgid "Incomplete path in shell"
