@@ -1520,7 +1520,7 @@ msgstr "Thiết lập của thư mục dùng chung"
 
 #:../src/shares/nautilus/nautilus-shares.c:129
 msgid "_Share folder"
-msgstr "Thư mục dùng _chung"
+msgstr "_Chia sẻ thư mục"
 
 #:../src/shares/nautilus/nautilus-shares.c:130
 msgid "Share this folder with other computers"
