@@ -1,3 +1,8 @@
+2006-05-28  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* share-export-nfs.c (gst_share_nfs_new_from_xml): avoid a double
+	free()
+
 2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.1
