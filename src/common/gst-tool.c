@@ -1660,7 +1660,7 @@ poll_backend (GstTool *tool)
 	struct pollfd fd;
 
 	fd.fd = tool->read_fd;
-	fd.events = POLLIN || POLLPRI;
+	fd.events = POLLIN | POLLPRI;
 
 	while (poll (&fd, 1, 100) <= 0) {
 		while (gtk_events_pending ())

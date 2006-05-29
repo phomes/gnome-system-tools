@@ -1,3 +1,8 @@
+2005-06-29  Joe Marcus Clarke  <marcus@freebsd.org>
+
+	* gst-auth.c: implement forkpty for FreeBSD
+	* gst-tool.c: fix a s/||/|/ typo
+
 2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.1
