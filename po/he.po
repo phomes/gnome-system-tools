@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-30 12:02+0300\n"
-"PO-Revision-Date: 2005-08-30 12:41+0300\n"
-"Last-Translator: Yair Hershkovitz <>\n"
+"POT-Creation-Date: 2006-06-24 13:27+0200\n"
+"PO-Revision-Date: 2006-06-24 20:13+0200\n"
+"Last-Translator: Yaniv Abir <yanivabir at gmail dot com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../gnome-system-tools.schemas.in.h:1
 msgid ""
@@ -64,189 +64,174 @@ msgid "Whether the warning dialog should be shown or not"
 msgstr ""
 
 #: ../interfaces/boot.glade.in.h:1
-msgid "/dev/hda"
-msgstr "/dev/hda"
-
-#: ../interfaces/boot.glade.in.h:2
-msgid "/dev/hdb"
-msgstr "/dev/hdb"
-
-#: ../interfaces/boot.glade.in.h:3
-msgid "/dev/hdc"
-msgstr "/dev/hdc"
-
-#: ../interfaces/boot.glade.in.h:4
-msgid "/dev/hdd"
-msgstr "/dev/hdd"
-
-#: ../interfaces/boot.glade.in.h:5
 msgid "<b>Security</b>"
 msgstr "<b>אבטחה</b>"
 
-#: ../interfaces/boot.glade.in.h:6
+#: ../interfaces/boot.glade.in.h:2
 msgid ""
 "<span size=\"larger\" weight=\"bold\">Several bootloaders have been found</"
 "span>\n"
 "\n"
 "please select which do you want to configure"
 msgstr ""
-"<span size=\"larger\" weight=\"bold\">נמצאו מספר מנהלי אתחול</"
-"span>\n"
+"<span size=\"larger\" weight=\"bold\">נמצאו מספר מנהלי אתחול</span>\n"
 "\n"
 "יש לבחור במנהל האתחול שברצונך להגדיר"
 
-#: ../interfaces/boot.glade.in.h:9 ../interfaces/users.glade.in.h:3
+#: ../interfaces/boot.glade.in.h:5 ../interfaces/users.glade.in.h:3
 msgid "<span weight=\"bold\">Basic Settings</span>"
 msgstr "<span weight=\"bold\">אפשרויות בסיסיות</span>"
 
-#: ../interfaces/boot.glade.in.h:10
+#: ../interfaces/boot.glade.in.h:6
 msgid "<span weight=\"bold\">Image Settings</span>"
 msgstr "<span weight=\"bold\">אפשרויות תמונה</span>"
 
-#: ../interfaces/boot.glade.in.h:11
+#: ../interfaces/boot.glade.in.h:7
 msgid "<span weight=\"bold\">Other Settings</span>"
 msgstr "<span weight=\"bold\">אפשרויות אחרות</span>"
 
-#: ../interfaces/boot.glade.in.h:12
+#: ../interfaces/boot.glade.in.h:8
 msgid "<span weight=\"bold\">Starting the Computer</span>"
 msgstr "<span weight=\"bold\">אתחול המחשב</span>"
 
-#: ../interfaces/boot.glade.in.h:13
+#: ../interfaces/boot.glade.in.h:9
 msgid "Ask at boot"
 msgstr "שאל באת האתחול"
 
-#: ../interfaces/boot.glade.in.h:14 ../src/boot/main.c:71
+#: ../interfaces/boot.glade.in.h:10 ../src/boot/main.c:71
 msgid "Boot Manager Settings"
 msgstr "אפשרויות מנהל האתחול"
 
-#: ../interfaces/boot.glade.in.h:15
+#: ../interfaces/boot.glade.in.h:11
 msgid ""
 "Choose a kernel image to boot, and a partition to mount as the root "
 "partition. Optionally, you may also enter parameters passed to the kernel at "
 "boot time."
-msgstr "בחר תמונת כרעין לאתחול, ומחיצה לעגון כמחיצת השורש. יש אפשרות להכניס פרמטרים שיועברו לגרעין בזמן האתחול."
+msgstr ""
+"בחר תמונת גרעין לאתחול, ומחיצה לעגון כמחיצת השורש. יש אפשרות להכניס פרמטרים "
+"שיועברו לגרעין בזמן האתחול."
 
-#: ../interfaces/boot.glade.in.h:16
+#: ../interfaces/boot.glade.in.h:12
 msgid "Click \"Forward\" to continue"
 msgstr "הקש \"קדימה\" להמשך"
 
-#: ../interfaces/boot.glade.in.h:17
+#: ../interfaces/boot.glade.in.h:13
 msgid "Confirmation"
 msgstr "אשרור"
 
 #. set window title
-#: ../interfaces/boot.glade.in.h:18 ../src/boot/boot-druid.c:442
+#: ../interfaces/boot.glade.in.h:14 ../src/boot/boot-druid.c:442
 #: ../src/boot/boot-druid.c:454
 msgid "Creating a new boot image"
 msgstr "יוצר תמונת אתחול חדשה"
 
-#: ../interfaces/boot.glade.in.h:19
+#: ../interfaces/boot.glade.in.h:15
 msgid "Don't ask me again"
 msgstr "אל תשאל שוב"
 
-#: ../interfaces/boot.glade.in.h:20
+#: ../interfaces/boot.glade.in.h:16
 msgid "Enable IDE SCSI emulation"
 msgstr "אפשר חיקוי IDE SCSI"
 
-#: ../interfaces/boot.glade.in.h:21
+#: ../interfaces/boot.glade.in.h:17
 msgid ""
 "Enter a name for the boot image, and specify what kind of operating system "
 "it is."
 msgstr "הכנס שם עבור תמונת האתחול, וציין איזה מערכת הפעלה זו."
 
-#: ../interfaces/boot.glade.in.h:22
+#: ../interfaces/boot.glade.in.h:18
 msgid "Finished"
 msgstr "סיום"
 
-#: ../interfaces/boot.glade.in.h:23
+#: ../interfaces/boot.glade.in.h:19
 msgid "Manual"
 msgstr ""
 
-#: ../interfaces/boot.glade.in.h:24
+#: ../interfaces/boot.glade.in.h:20
 msgid "Number of colors:"
 msgstr "מספר הצבעים:"
 
-#: ../interfaces/boot.glade.in.h:25
+#: ../interfaces/boot.glade.in.h:21
 msgid "Other parameters:"
 msgstr "פרמטרים אחרים:"
 
-#: ../interfaces/boot.glade.in.h:26
+#: ../interfaces/boot.glade.in.h:22
 msgid "Password"
 msgstr "סיסמא"
 
-#: ../interfaces/boot.glade.in.h:27
+#: ../interfaces/boot.glade.in.h:23
 msgid "Protect with password"
 msgstr "הגן בעזרת סיסמא"
 
-#: ../interfaces/boot.glade.in.h:28
+#: ../interfaces/boot.glade.in.h:24
 msgid "Resolution:"
 msgstr "הפרדה:"
 
-#: ../interfaces/boot.glade.in.h:29
+#: ../interfaces/boot.glade.in.h:25
 msgid "Seconds to wait before loading default kernel or OS"
 msgstr "שניות לחכות לפני טעינת גרעין או מערכת הפעלה ברירת המחדל"
 
-#: ../interfaces/boot.glade.in.h:30
+#: ../interfaces/boot.glade.in.h:26
 msgid "Select a kernel image"
 msgstr "בחר תמונת גרעין"
 
-#: ../interfaces/boot.glade.in.h:31
+#: ../interfaces/boot.glade.in.h:27
 msgid "Select an initrd image"
 msgstr "בחר תמונת initrd"
 
-#: ../interfaces/boot.glade.in.h:32
+#: ../interfaces/boot.glade.in.h:28
 msgid "Specify the partition on which the operating system is installed."
 msgstr "ציין את המחיצה בה מותקנת מערכת ההפעלה."
 
-#: ../interfaces/boot.glade.in.h:33
+#: ../interfaces/boot.glade.in.h:29
 msgid ""
 "The new boot image has been added. Please click \"Apply\" to save your "
 "changes."
 msgstr "תמונת האתחול החדשה הוספה. אנא הקש \"החל\" בכדי לשמור את השינויים."
 
-#: ../interfaces/boot.glade.in.h:34
+#: ../interfaces/boot.glade.in.h:30
 msgid ""
 "This assistant is designed to help you quickly and easily add a new boot "
 "image to your system."
 msgstr ""
 
-#: ../interfaces/boot.glade.in.h:35
+#: ../interfaces/boot.glade.in.h:31
 msgid "Video modes (only frame buffer)"
 msgstr "מצבי וידאו (frame buffer בלבד)"
 
-#: ../interfaces/boot.glade.in.h:36
+#: ../interfaces/boot.glade.in.h:32
 msgid "_Add..."
 msgstr "_הוסף..."
 
-#: ../interfaces/boot.glade.in.h:37
+#: ../interfaces/boot.glade.in.h:33
 msgid "_Device:"
 msgstr "ה_תקן:"
 
-#: ../interfaces/boot.glade.in.h:38
+#: ../interfaces/boot.glade.in.h:34
 msgid "_Edit"
 msgstr "_עריכה"
 
-#: ../interfaces/boot.glade.in.h:39 ../src/boot/boot-settings.c:44
+#: ../interfaces/boot.glade.in.h:35 ../src/boot/boot-settings.c:44
 msgid "_Initrd image path:"
 msgstr "נתיב תמונת _Initrd:"
 
-#: ../interfaces/boot.glade.in.h:40
+#: ../interfaces/boot.glade.in.h:36
 msgid "_Kernel image path:"
 msgstr "נתיב תמונת _גרעין:"
 
-#: ../interfaces/boot.glade.in.h:41
+#: ../interfaces/boot.glade.in.h:37
 msgid "_Name:"
 msgstr "_שם:"
 
-#: ../interfaces/boot.glade.in.h:42
+#: ../interfaces/boot.glade.in.h:38
 msgid "_Operating system:"
 msgstr "_מערכת הפעלה:"
 
-#: ../interfaces/boot.glade.in.h:43
+#: ../interfaces/boot.glade.in.h:39
 msgid "_Parameters:"
 msgstr "_פרמטרים:"
 
-#: ../interfaces/boot.glade.in.h:44
+#: ../interfaces/boot.glade.in.h:40
 msgid "_Root file system device:"
 msgstr ""
 
@@ -261,7 +246,8 @@ msgid ""
 "<span weight=\"bold\" size=\"larger\">The platform you are running is not "
 "supported by this tool</span>"
 msgstr ""
-"<span weight=\"bold\" size=\"larger\">המערכת שאתה מריץ אינה נתמכת על ידי כלי זה</span>"
+"<span weight=\"bold\" size=\"larger\">המערכת שאתה מריץ אינה נתמכת על ידי כלי "
+"זה</span>"
 
 #: ../interfaces/common.glade.in.h:3
 msgid "Enter Password"
@@ -291,142 +277,126 @@ msgid "Use this window to select the computer you wish to configure"
 msgstr "השתמש בחלון זה לבחור את המחשב שברצונך להגדיר"
 
 #: ../interfaces/common.glade.in.h:9
-msgid ""
-"You need administrator privileges to use this tool. Enter a password to "
-"modify\n"
-"your system configuration."
-msgstr ""
-"יש צורך בהרשאות מנהל מערכת כדי להשתמש בכלי זה. הכנס סיסמא כדי לשנות\n"
-"את הגדרות המערכת."
+msgid "You need administrator privileges to use this tool. Enter a password to modify your system configuration."
+msgstr "יש צורך בהרשאות מנהל מערכת כדי להשתמש בכלי זה. הכנס סיסמא כדי לשנות את הגדרות המערכת."
 
-
-#: ../interfaces/common.glade.in.h:11
+#: ../interfaces/common.glade.in.h:10
 msgid "_Password:"
 msgstr "_סיסמא:"
 
 #: ../interfaces/network.glade.in.h:1
-msgid ""
-"/dev/modem\n"
-"/dev/ttyS0\n"
-"/dev/ttyS1\n"
-"/dev/ttyS2\n"
-"/dev/ttyS3"
-msgstr ""
-"/dev/modem\n"
-"/dev/ttyS0\n"
-"/dev/ttyS1\n"
-"/dev/ttyS2\n"
-"/dev/ttyS3"
-
-#: ../interfaces/network.glade.in.h:6
 msgid "<b>Account data</b>"
 msgstr "<b>מידע חשבון</b>"
 
-#: ../interfaces/network.glade.in.h:7
+#: ../interfaces/network.glade.in.h:2
 msgid "<b>Connection settings</b>"
 msgstr "<b>הגדרות חיבור</b>"
 
-#: ../interfaces/network.glade.in.h:8
+#: ../interfaces/network.glade.in.h:3
 msgid "<b>Connection</b>"
 msgstr "<b>חיבור</b>"
 
-#: ../interfaces/network.glade.in.h:9
+#: ../interfaces/network.glade.in.h:4
 msgid "<b>DNS Servers</b>"
 msgstr "<b>שרתי DNS</b>"
 
-#: ../interfaces/network.glade.in.h:10
+#: ../interfaces/network.glade.in.h:5
 msgid "<b>Host Settings</b>"
 msgstr "<b>הגדרות מארח</b>"
 
-#: ../interfaces/network.glade.in.h:11
+#: ../interfaces/network.glade.in.h:6
 msgid "<b>Internet service provider data</b>"
 msgstr "<b>מידע ספק אינטרנט</b>"
 
-#: ../interfaces/network.glade.in.h:12
+#: ../interfaces/network.glade.in.h:7
 msgid "<b>Modem settings</b>"
 msgstr "<b>הגדרות מודם</b>"
 
-#: ../interfaces/network.glade.in.h:13
+#: ../interfaces/network.glade.in.h:8
 msgid "<b>Search Domains</b>"
 msgstr "<b>חיפוש מתחמים</b>"
 
-#: ../interfaces/network.glade.in.h:14
+#: ../interfaces/network.glade.in.h:9
 msgid "<b>Wireless settings</b>"
 msgstr "<b>הגדרות אל-חוט</b>"
 
-#: ../interfaces/network.glade.in.h:15
+#: ../interfaces/network.glade.in.h:10
 msgid "Aliases:"
 msgstr "כינויים:"
 
-#: ../interfaces/network.glade.in.h:16
+#: ../interfaces/network.glade.in.h:11
 msgid "C_onfiguration:"
 msgstr "ה_גדרות:"
 
-#: ../interfaces/network.glade.in.h:17
+#: ../interfaces/network.glade.in.h:12
 msgid "Connections"
 msgstr "חיבורים"
 
-#: ../interfaces/network.glade.in.h:18
+#: ../interfaces/network.glade.in.h:13
 msgid "DNS"
 msgstr "DNS"
 
-#: ../interfaces/network.glade.in.h:19
+#: ../interfaces/network.glade.in.h:14
 msgid "D_omain name:"
 msgstr "_שם מתחם:"
 
-#: ../interfaces/network.glade.in.h:20
+#: ../interfaces/network.glade.in.h:15
 msgid "Default _gateway device:"
 msgstr ""
 
-#: ../interfaces/network.glade.in.h:21
+#: ../interfaces/network.glade.in.h:16
 msgid "Device:"
 msgstr "התקן:"
 
-#: ../interfaces/network.glade.in.h:22
+#: ../interfaces/network.glade.in.h:17
 msgid "E_nable this connection"
 msgstr "_אפשר חיבור זה"
 
-#: ../interfaces/network.glade.in.h:23 ../interfaces/users.glade.in.h:20
+#: ../interfaces/network.glade.in.h:18 ../interfaces/users.glade.in.h:21
 msgid "General"
 msgstr "כללי"
 
-#: ../interfaces/network.glade.in.h:24
+#: ../interfaces/network.glade.in.h:19
 msgid "Host alias settings"
 msgstr "הגדרות כינוי מארח"
 
-#: ../interfaces/network.glade.in.h:25
+#: ../interfaces/network.glade.in.h:20
 msgid "Hosts"
 msgstr "מארחים"
 
-#: ../interfaces/network.glade.in.h:26 ../interfaces/shares.glade.in.h:15
+#: ../interfaces/network.glade.in.h:21 ../interfaces/shares.glade.in.h:15
 msgid "IP address:"
 msgstr "כתובת IP:"
 
-#: ../interfaces/network.glade.in.h:27
-msgid "Interface properties"
-msgstr ""
+#: ../interfaces/network.glade.in.h:22
+msgid "Interface name:"
+msgstr "שם ממשק:"
 
-#: ../interfaces/network.glade.in.h:28
+#: ../interfaces/network.glade.in.h:23
+msgid "Interface properties"
+msgstr "מאפייני ממשק"
+
+#: ../interfaces/network.glade.in.h:24
 msgid "Key _type:"
 msgstr "_סוג מפתח:"
 
-#: ../interfaces/network.glade.in.h:29
+#: ../interfaces/network.glade.in.h:25
 msgid "Location name:"
 msgstr "שם מיקום:"
 
-#: ../interfaces/network.glade.in.h:30
+#: ../interfaces/network.glade.in.h:26
 msgid "Location:"
 msgstr "מיקום:"
 
-#: ../interfaces/network.glade.in.h:31
+#: ../interfaces/network.glade.in.h:27
 msgid "Modem"
 msgstr "מודם"
 
-#: ../interfaces/network.glade.in.h:32
+#: ../interfaces/network.glade.in.h:28
 msgid "Network name (_ESSID):"
-msgstr ""
+msgstr "שם רשת (_ESSID):"
 
-#: ../interfaces/network.glade.in.h:33
+#: ../interfaces/network.glade.in.h:29
 msgid ""
 "Off\n"
 "Low\n"
@@ -438,15 +408,15 @@ msgstr ""
 "בינוני\n"
 "חזק"
 
-#: ../interfaces/network.glade.in.h:37
+#: ../interfaces/network.glade.in.h:33
 msgid "Options"
 msgstr "אפשרויות"
 
-#: ../interfaces/network.glade.in.h:38
+#: ../interfaces/network.glade.in.h:34
 msgid "P_assword"
 msgstr "_סיסמא"
 
-#: ../interfaces/network.glade.in.h:39
+#: ../interfaces/network.glade.in.h:35
 msgid ""
 "Plain (ASCII)\n"
 "Hexadecimal"
@@ -454,11 +424,11 @@ msgstr ""
 "נקי (ASCII)\n"
 "הקסאדצימאלי"
 
-#: ../interfaces/network.glade.in.h:41
+#: ../interfaces/network.glade.in.h:37
 msgid "Select location name"
 msgstr "בחר שם מיקום"
 
-#: ../interfaces/network.glade.in.h:42
+#: ../interfaces/network.glade.in.h:38
 msgid ""
 "Static IP address\n"
 "DHCP"
@@ -466,7 +436,7 @@ msgstr ""
 "כתובת IP סטאטית\n"
 "‏DHCP"
 
-#: ../interfaces/network.glade.in.h:44
+#: ../interfaces/network.glade.in.h:40
 msgid ""
 "Tones\n"
 "Pulses"
@@ -474,79 +444,79 @@ msgstr ""
 "טונים\n"
 "צלילים"
 
-#: ../interfaces/network.glade.in.h:46
+#: ../interfaces/network.glade.in.h:42
 msgid "Use the Internet service provider nameservers"
 msgstr ""
 
-#: ../interfaces/network.glade.in.h:47
+#: ../interfaces/network.glade.in.h:43
 msgid "WEP _key:"
-msgstr ""
+msgstr "_מפתח WEP:"
 
-#: ../interfaces/network.glade.in.h:48 ../src/network/ifaces-list.c:34
+#: ../interfaces/network.glade.in.h:44 ../src/network/ifaces-list.c:34
 msgid "_Activate"
 msgstr "_אפשר"
 
-#: ../interfaces/network.glade.in.h:49
+#: ../interfaces/network.glade.in.h:45
 msgid "_Autodetect"
-msgstr ""
+msgstr "_זיהוי אוטומטי"
 
-#: ../interfaces/network.glade.in.h:50 ../src/network/ifaces-list.c:35
+#: ../interfaces/network.glade.in.h:46 ../src/network/ifaces-list.c:35
 msgid "_Deactivate"
 msgstr "_נתק"
 
-#: ../interfaces/network.glade.in.h:51
+#: ../interfaces/network.glade.in.h:47
 msgid "_Dial prefix:"
 msgstr "_קידומת חיוג:"
 
-#: ../interfaces/network.glade.in.h:52
+#: ../interfaces/network.glade.in.h:48
 msgid "_Dial type:"
 msgstr "_סוג חיוג:"
 
-#: ../interfaces/network.glade.in.h:53
+#: ../interfaces/network.glade.in.h:49
 msgid "_Gateway address:"
 msgstr ""
 
-#: ../interfaces/network.glade.in.h:54
+#: ../interfaces/network.glade.in.h:50
 msgid "_Hostname:"
 msgstr "שם _מארח:"
 
-#: ../interfaces/network.glade.in.h:55
+#: ../interfaces/network.glade.in.h:51
 msgid "_IP address:"
 msgstr "כתובת _IP:"
 
-#: ../interfaces/network.glade.in.h:56
+#: ../interfaces/network.glade.in.h:52
 msgid "_Local IP:"
 msgstr "IP _מקומי"
 
-#: ../interfaces/network.glade.in.h:57
+#: ../interfaces/network.glade.in.h:53
 msgid "_Modem port:"
 msgstr ""
 
-#: ../interfaces/network.glade.in.h:58
+#: ../interfaces/network.glade.in.h:54
 msgid "_Phone number:"
 msgstr "מספר _טלפון:"
 
-#: ../interfaces/network.glade.in.h:59
+#: ../interfaces/network.glade.in.h:55
 msgid "_Remote IP:"
 msgstr "IP מ_רוחק"
 
-#: ../interfaces/network.glade.in.h:60
+#: ../interfaces/network.glade.in.h:56
 msgid "_Retry if the connection breaks or fails to start"
-msgstr ""
+msgstr "_נסה שנית אם החיבור מתנתק או נכשל בהפעלה"
 
-#: ../interfaces/network.glade.in.h:61
+#: ../interfaces/network.glade.in.h:57
 msgid "_Set modem as default route to internet"
 msgstr ""
 
-#: ../interfaces/network.glade.in.h:62
+#: ../interfaces/network.glade.in.h:58
 msgid "_Subnet mask:"
 msgstr ""
 
-#: ../interfaces/network.glade.in.h:63 ../interfaces/users.glade.in.h:60
+#: ../interfaces/network.glade.in.h:59 ../interfaces/users.glade.in.h:61
 msgid "_Username:"
 msgstr "שם מש_תמש:"
 
-#: ../interfaces/network.glade.in.h:64
+#: ../interfaces/network.glade.in.h:60
 msgid "_Volume:"
 msgstr "_עוצמה"
 
@@ -580,7 +550,7 @@ msgstr "<b>שרת WINS</b>"
 
 #: ../interfaces/shares.glade.in.h:6
 msgid "<b>Windows sharing Settings</b>"
-msgstr ""
+msgstr "<b>הגדרות שיתוף Windows</b>"
 
 #: ../interfaces/shares.glade.in.h:7
 msgid "Add allowed hosts"
@@ -608,7 +578,7 @@ msgstr ""
 
 #: ../interfaces/shares.glade.in.h:13
 msgid "General Windows sharing settings"
-msgstr ""
+msgstr "הגדרות שיתוף Windows כלליות"
 
 #: ../interfaces/shares.glade.in.h:14
 msgid "Host name:"
@@ -648,7 +618,7 @@ msgstr "השתמש בשרת WINS"
 
 #: ../interfaces/shares.glade.in.h:24
 msgid "Windows sharing settings"
-msgstr ""
+msgstr "הגדרות שיתוף Windows"
 
 #: ../interfaces/shares.glade.in.h:25
 msgid "_Add host"
@@ -671,54 +641,50 @@ msgid "(unconfigured)"
 msgstr "(לא מוגדר)"
 
 #: ../interfaces/time.glade.in.h:2
-msgid ":"
-msgstr ":"
-
-#: ../interfaces/time.glade.in.h:3
 msgid "<b>Selection</b>"
 msgstr "<b>בחירה</b>"
 
-#: ../interfaces/time.glade.in.h:4
+#: ../interfaces/time.glade.in.h:3
 msgid "<b>Time zone</b>"
 msgstr "<b>איזור זמן</b>"
 
-#: ../interfaces/time.glade.in.h:5
+#: ../interfaces/time.glade.in.h:4
 msgid "Add NTP Server"
 msgstr "הוסף שרת NTP"
 
-#: ../interfaces/time.glade.in.h:6
+#: ../interfaces/time.glade.in.h:5
 msgid "NTP server"
 msgstr "שרת NTP"
 
-#: ../interfaces/time.glade.in.h:7
+#: ../interfaces/time.glade.in.h:6
 msgid "S_ynchronize clock with Internet servers:"
 msgstr "_סנכרן שעון עם שרתי אינטרנט:"
 
-#: ../interfaces/time.glade.in.h:8
+#: ../interfaces/time.glade.in.h:7
 msgid "Se_lect Servers..."
 msgstr "_בחר שרתים..."
 
-#: ../interfaces/time.glade.in.h:9
+#: ../interfaces/time.glade.in.h:8
 msgid "Time servers"
 msgstr "שרתי זמן"
 
-#: ../interfaces/time.glade.in.h:10
+#: ../interfaces/time.glade.in.h:9
 msgid "Time zone"
 msgstr "איזור זמן"
 
-#: ../interfaces/time.glade.in.h:11
+#: ../interfaces/time.glade.in.h:10
 msgid "Time zone:"
 msgstr "איזור זמן:"
 
-#: ../interfaces/time.glade.in.h:12
+#: ../interfaces/time.glade.in.h:11
 msgid "_Date:"
 msgstr "_תאריך:"
 
-#: ../interfaces/time.glade.in.h:13
+#: ../interfaces/time.glade.in.h:12
 msgid "_Select Time Zone..."
 msgstr "_בחר איזור זמן..."
 
-#: ../interfaces/time.glade.in.h:14
+#: ../interfaces/time.glade.in.h:13
 msgid "_Time:"
 msgstr "_זמן:"
 
@@ -771,188 +737,193 @@ msgid "Advanced"
 msgstr "מתקדם"
 
 #: ../interfaces/users.glade.in.h:14
+#, fuzzy
+msgid "Allow user to:"
+msgstr "כ_ל המשתמשים:"
+
+#: ../interfaces/users.glade.in.h:15
 msgid "Assign a random password by default"
 msgstr "הקצה סיסמא אקראית כברירת מחדל"
 
-#: ../interfaces/users.glade.in.h:15
+#: ../interfaces/users.glade.in.h:16
 msgid "Check password _quality"
 msgstr "בדוק _איעות סיסמא"
 
-#: ../interfaces/users.glade.in.h:16
+#: ../interfaces/users.glade.in.h:17
 msgid "Con_firmation:"
 msgstr "_אשרור:"
 
-#: ../interfaces/users.glade.in.h:17
+#: ../interfaces/users.glade.in.h:18
 msgid "Days between warning and password expiration:"
 msgstr ""
 
-#: ../interfaces/users.glade.in.h:18
+#: ../interfaces/users.glade.in.h:19
 msgid "Default _group:"
 msgstr "קבוצת _ברירת המחדל:"
 
-#: ../interfaces/users.glade.in.h:19
+#: ../interfaces/users.glade.in.h:20
 msgid "Default _shell:"
 msgstr ""
 
-#: ../interfaces/users.glade.in.h:21
+#: ../interfaces/users.glade.in.h:22
 msgid "Generate _random password"
 msgstr "צור סיסמא _אקראית"
 
-#: ../interfaces/users.glade.in.h:22
+#: ../interfaces/users.glade.in.h:23
 msgid "Group _ID:"
 msgstr "זיהוי קבוצה:"
 
-#: ../interfaces/users.glade.in.h:23
+#: ../interfaces/users.glade.in.h:24
 msgid "Group _members:"
 msgstr "ח_ברים בקבוצה:"
 
-#: ../interfaces/users.glade.in.h:24
+#: ../interfaces/users.glade.in.h:25
 msgid "Group _name:"
 msgstr "שם קבוצה:"
 
-#: ../interfaces/users.glade.in.h:25
+#: ../interfaces/users.glade.in.h:26
 msgid "Group properties"
 msgstr "אפשרויות קבוצה:"
 
-#: ../interfaces/users.glade.in.h:26
+#: ../interfaces/users.glade.in.h:27
 msgid "Groups"
 msgstr "קבוצות"
 
-#: ../interfaces/users.glade.in.h:27
+#: ../interfaces/users.glade.in.h:28
 msgid "Ma_ximum days a password may be used:"
 msgstr "מספר הימים המקסימלי שאפשר להשתמש בסיסמא"
 
-#: ../interfaces/users.glade.in.h:28
+#: ../interfaces/users.glade.in.h:29
 msgid "Maximum UID:"
 msgstr "זיהוי משתמש מקסימלי:"
 
-#: ../interfaces/users.glade.in.h:29
+#: ../interfaces/users.glade.in.h:30
 msgid "Mi_nimum days between password changes:"
 msgstr ""
 
-#: ../interfaces/users.glade.in.h:30
+#: ../interfaces/users.glade.in.h:31
 msgid "Minimum GID:"
 msgstr "זיהוי קבוצה מינימלי:"
 
-#: ../interfaces/users.glade.in.h:31
+#: ../interfaces/users.glade.in.h:32
 msgid "Minimum UID:"
 msgstr "זיהוי משתמש מינימלי:"
 
-#: ../interfaces/users.glade.in.h:32
+#: ../interfaces/users.glade.in.h:33
 msgid "Minimum days allowed between password changes:"
 msgstr ""
 
-#: ../interfaces/users.glade.in.h:33
+#: ../interfaces/users.glade.in.h:34
 msgid "Number of days that a password may be used:"
 msgstr ""
 
-#: ../interfaces/users.glade.in.h:34
+#: ../interfaces/users.glade.in.h:35
 msgid "O_ffice location:"
 msgstr "מיקום משרד:"
 
-#: ../interfaces/users.glade.in.h:35
+#: ../interfaces/users.glade.in.h:36
 msgid "Password set to: "
 msgstr "סיסמא נקבעה ל:"
 
-#: ../interfaces/users.glade.in.h:36
+#: ../interfaces/users.glade.in.h:37
 msgid "Privileges"
 msgstr "זכויות"
 
-#: ../interfaces/users.glade.in.h:37
+#: ../interfaces/users.glade.in.h:38
 msgid "Profile _name:"
 msgstr "שם _פרופיל:"
 
-#: ../interfaces/users.glade.in.h:38
+#: ../interfaces/users.glade.in.h:39
 msgid "Set password b_y hand"
 msgstr "קבע סיסמא _ידנית"
 
-#: ../interfaces/users.glade.in.h:39
+#: ../interfaces/users.glade.in.h:40
 msgid "Show a_ll users and groups"
 msgstr "הצג את _כל המשתמשים והקבוצות"
 
-#: ../interfaces/users.glade.in.h:40
+#: ../interfaces/users.glade.in.h:41
 msgid "User _ID:"
 msgstr "זיהוי _משתמש:"
 
-#: ../interfaces/users.glade.in.h:41
+#: ../interfaces/users.glade.in.h:42
 msgid "User _password:"
 msgstr "_סיסמת משתמש:"
 
-#: ../interfaces/users.glade.in.h:42
+#: ../interfaces/users.glade.in.h:43
 msgid "User privileges"
 msgstr "זכויות משתמש"
 
-#: ../interfaces/users.glade.in.h:43
+#: ../interfaces/users.glade.in.h:44
 msgid "User profiles"
 msgstr "פרופילי משתמש"
 
-#: ../interfaces/users.glade.in.h:44
+#: ../interfaces/users.glade.in.h:45
 msgid "Users"
 msgstr "משתמשים"
 
-#: ../interfaces/users.glade.in.h:45
+#: ../interfaces/users.glade.in.h:46
 msgid "_Add Group..."
 msgstr "הוסף _קבוצה..."
 
-#: ../interfaces/users.glade.in.h:46
+#: ../interfaces/users.glade.in.h:47
 msgid "_Add Profile..."
 msgstr "_הוסף פ_רופיל..."
 
-#: ../interfaces/users.glade.in.h:47
+#: ../interfaces/users.glade.in.h:48
 msgid "_Add User..."
 msgstr "הוסף _משתמש..."
 
-#: ../interfaces/users.glade.in.h:48
+#: ../interfaces/users.glade.in.h:49
 msgid "_All users:"
 msgstr "כ_ל המשתמשים:"
 
-#: ../interfaces/users.glade.in.h:49
+#: ../interfaces/users.glade.in.h:50
 msgid "_Comments"
 msgstr "ה_ערות"
 
-#: ../interfaces/users.glade.in.h:50
+#: ../interfaces/users.glade.in.h:51
 msgid "_Days between warning and password expiration:"
 msgstr ""
 
-#: ../interfaces/users.glade.in.h:51 ../src/boot/table.c:54
+#: ../interfaces/users.glade.in.h:52 ../src/boot/table.c:54
 #: ../src/network/address-list.c:72 ../src/network/hosts.c:39
 #: ../src/shares/table.c:42 ../src/users/table.c:50
 msgid "_Delete"
 msgstr "_מחק"
 
-#: ../interfaces/users.glade.in.h:52
+#: ../interfaces/users.glade.in.h:53
 msgid "_Edit User Profiles..."
 msgstr "_ערוך פרופילי משתמש..."
 
-#: ../interfaces/users.glade.in.h:53
+#: ../interfaces/users.glade.in.h:54
 msgid "_Generate"
 msgstr "_צור"
 
-#: ../interfaces/users.glade.in.h:54
+#: ../interfaces/users.glade.in.h:55
 msgid "_Home directory:"
 msgstr "סיפריית ה_בית:"
 
-#: ../interfaces/users.glade.in.h:55
+#: ../interfaces/users.glade.in.h:56
 msgid "_Home phone:"
 msgstr "_טלפון בית:"
 
-#: ../interfaces/users.glade.in.h:56
+#: ../interfaces/users.glade.in.h:57
 msgid "_Main group:"
 msgstr "קבוצה _ראשית:"
 
-#: ../interfaces/users.glade.in.h:57
+#: ../interfaces/users.glade.in.h:58
 msgid "_Profile:"
 msgstr "_פרופיל:"
 
-#: ../interfaces/users.glade.in.h:58
+#: ../interfaces/users.glade.in.h:59
 msgid "_Real name:"
 msgstr "שם _אמיתי:"
 
-#: ../interfaces/users.glade.in.h:59
+#: ../interfaces/users.glade.in.h:60
 msgid "_Shell:"
 msgstr ""
 
-#: ../interfaces/users.glade.in.h:61
+#: ../interfaces/users.glade.in.h:62
 msgid "_Work phone:"
 msgstr "ט_לפון עבודה:"
 
@@ -1057,11 +1028,11 @@ msgstr ""
 
 #: ../src/boot/boot.desktop.in.in.h:1
 msgid "Boot"
-msgstr ""
+msgstr "אתחול"
 
 #: ../src/boot/boot.desktop.in.in.h:2
 msgid "Configure the system boot process"
-msgstr ""
+msgstr "הגדרת תהליך האתחול של המערכת"
 
 #: ../src/boot/callbacks.c:81
 msgid "Boot Image Editor"
@@ -1099,15 +1070,15 @@ msgstr ""
 
 #: ../src/boot/table.c:43
 msgid "Name"
-msgstr ""
+msgstr "שם"
 
 #: ../src/boot/table.c:44
 msgid "Default"
-msgstr ""
+msgstr "ברירת מחדל"
 
 #: ../src/boot/table.c:45
 msgid "Type"
-msgstr ""
+msgstr "סוג"
 
 #: ../src/boot/table.c:46
 msgid "Kernel Image"
@@ -1115,59 +1086,60 @@ msgstr ""
 
 #: ../src/boot/table.c:47
 msgid "Device"
-msgstr ""
+msgstr "התקן"
 
 #: ../src/boot/table.c:52 ../src/network/address-list.c:71
 #: ../src/network/hosts.c:37 ../src/shares/table.c:40 ../src/users/table.c:48
 msgid "_Add"
-msgstr ""
+msgstr "_הוסף"
+
 
 #: ../src/boot/table.c:53 ../src/network/hosts.c:38
 #: ../src/network/ifaces-list.c:33 ../src/shares/table.c:41
 #: ../src/users/table.c:49
 msgid "_Properties"
-msgstr ""
+msgstr "_מאפיינים"
 
 #. the proccess was running ssh
-#: ../src/common/gst-auth.c:88
+#: ../src/common/gst-auth.c:89
 msgid "The tool could not connect to the computer"
 msgstr ""
 
-#: ../src/common/gst-auth.c:89
+#: ../src/common/gst-auth.c:90
 msgid ""
 "Check that you have access to this network and that the computer is actually "
-"working and running SSHD"
+"working and running the SSH daemon"
 msgstr ""
 
 #. the proccess was running su
-#: ../src/common/gst-auth.c:93
+#: ../src/common/gst-auth.c:94
 msgid "The entered password is invalid"
 msgstr ""
 
-#: ../src/common/gst-auth.c:94
+#: ../src/common/gst-auth.c:95
 msgid ""
 "Check that you typed it correctly and that you haven't activated the \"caps "
 "lock\" key"
 msgstr ""
 
-#: ../src/common/gst-auth.c:103
+#: ../src/common/gst-auth.c:104
 #, c-format
 msgid "Could not run \"%s\""
 msgstr ""
 
-#: ../src/common/gst-auth.c:104
+#: ../src/common/gst-auth.c:105
 msgid "Check that you have permissions to run this command"
 msgstr ""
 
-#: ../src/common/gst-auth.c:106
+#: ../src/common/gst-auth.c:107
 msgid "An unexpected error has occurred"
 msgstr ""
 
-#: ../src/common/gst-auth.c:132
+#: ../src/common/gst-auth.c:133
 msgid "Could not execute the backend"
 msgstr ""
 
-#: ../src/common/gst-auth.c:133
+#: ../src/common/gst-auth.c:134
 msgid "There was an error creating the child process, the tool will close now."
 msgstr ""
 
@@ -1213,19 +1185,19 @@ msgstr ""
 
 #: ../src/common/gst-tool.c:1532
 msgid "Warning"
-msgstr ""
+msgstr "אזהרה"
 
 #: ../src/common/gst-tool.c:1552
 msgid "Don't show me this again"
-msgstr ""
+msgstr "אל תציג זאת שוב"
 
 #: ../src/common/gst-tool.c:1609
 msgid "GNOME System Tools"
-msgstr ""
+msgstr "כלי המערכת של GNOME"
 
 #: ../src/common/gst-tool.c:1755
 msgid "Could not display help"
-msgstr ""
+msgstr "לא ניתן להציג עזרה"
 
 #: ../src/network/address-list.c:555
 msgid "Type address"
@@ -1234,7 +1206,7 @@ msgstr ""
 #: ../src/network/callbacks.c:46
 #, c-format
 msgid "Could not enable the interface %s"
-msgstr ""
+msgstr "לא ניתן להפעיל את הממשק %s"
 
 #: ../src/network/callbacks.c:50
 msgid ""
@@ -1244,13 +1216,11 @@ msgstr ""
 
 #: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
-msgstr ""
+msgstr "לא ניתן למצוא התקן מודם אוטומטית"
 
 #: ../src/network/callbacks.c:240
-msgid ""
-"Check that the device is not busy and that is correctly attached to the "
-"computer."
-msgstr ""
+msgid "Check that the device is not busy and that is correctly attached to the computer."
+msgstr "בדקו שההתקן לא עסוק, ושהוא מחובר למחשב כהלכה."
 
 #: ../src/network/callbacks.c:451
 msgid "The host name has changed"
@@ -1274,19 +1244,19 @@ msgstr "כתובת IP"
 msgid "Aliases"
 msgstr "כינויים"
 
-#: ../src/network/location.c:144
+#: ../src/network/location.c:145
 msgid "Create location"
 msgstr "צור מיקום"
 
-#: ../src/network/location.c:152
+#: ../src/network/location.c:153
 msgid "Delete current location"
 msgstr ""
 
-#: ../src/network/location.c:366
+#: ../src/network/location.c:367
 msgid "Do you want to remove this location?"
 msgstr ""
 
-#: ../src/network/location.c:439
+#: ../src/network/location.c:440
 msgid "Changing profile"
 msgstr ""
 
@@ -1322,27 +1292,27 @@ msgstr "Network settings"
 
 #: ../src/network/network.desktop.in.in.h:1
 msgid "Configure network devices and connections"
-msgstr ""
+msgstr "הגדרת התקני רשת וחיבורים"
 
 #: ../src/network/network.desktop.in.in.h:2
 msgid "Networking"
-msgstr ""
+msgstr "רשתות"
 
 #: ../src/network/network-iface-ethernet.c:302
 msgid "Ethernet connection"
-msgstr ""
+msgstr "חיבור Ethernet"
 
 #: ../src/network/network-iface-irlan.c:122
 msgid "Infrared connection"
-msgstr ""
+msgstr "חיבור אינפרא-אדום"
 
 #: ../src/network/network-iface-isdn.c:330
 msgid "ISDN connection"
-msgstr ""
+msgstr "חיבור ISDN"
 
 #: ../src/network/network-iface-modem.c:253
 msgid "Modem connection"
-msgstr ""
+msgstr "חיבור מודם"
 
 #: ../src/network/network-iface-plip.c:211
 msgid "Parallel port connection"
@@ -1350,63 +1320,61 @@ msgstr ""
 
 #: ../src/network/network-iface-wireless.c:245
 msgid "Wireless connection"
-msgstr ""
+msgstr "חיבור אלחוטי"
 
 #: ../src/network/network-iface.c:410
 #, c-format
 msgid "Activating interface \"%s\""
-msgstr ""
+msgstr "מפעיל ממשק \"%s\""
 
 #: ../src/network/network-iface.c:522
 #, c-format
 msgid "The interface %s is not configured"
-msgstr ""
+msgstr "הממשק %s לא מוגדר"
 
 #: ../src/network/network-iface.c:524
 #, c-format
 msgid "The interface %s is not active"
-msgstr ""
+msgstr "הממשק %s לא מופעל"
 
 #: ../src/network/network-iface.c:526
 #, c-format
 msgid "The interface %s is active"
-msgstr ""
+msgstr "הממשק %s מופעל"
 
 #: ../src/services/callbacks.c:64
 #, c-format
 msgid "Settings for \"%s\""
-msgstr ""
+msgstr "הגדרות עבור \"%s\""
 
 #. FIXME: put service name !!!
 #: ../src/services/callbacks.c:153
 msgid "Are you sure you want to deactivate this service?"
-msgstr ""
+msgstr "האם ברצונך לכבות את השירות?"
 
 #: ../src/services/callbacks.c:156
-msgid ""
-"This may affect your system behavior in several ways, possibly leading to "
-"data loss"
-msgstr ""
+msgid "This may affect your system behavior in several ways, possibly leading to data loss"
+msgstr "הפעולה עלולה להשפיע על המערכת בדרכים שונות, ואף להוביל לאובדן מידע"
 
 #: ../src/services/main.c:55
 msgid "Services settings"
-msgstr ""
+msgstr "הגדרות שירותים"
 
 #: ../src/services/services.desktop.in.in.h:1
 msgid "Configure which services will be run when the system starts"
-msgstr ""
+msgstr "הגדרת השירותים שיופעלו עם הפעלת המערכת"
 
 #: ../src/services/services.desktop.in.in.h:2
 msgid "Services"
-msgstr ""
+msgstr "שירותים"
 
 #: ../src/services/service.c:32
 msgid "Antivirus"
-msgstr ""
+msgstr "אנטי-וירוס"
 
 #: ../src/services/service.c:32
 msgid "Analyzes your incoming mail for virus"
-msgstr ""
+msgstr "סורק את הדואר האלקטרוני הנכנס למציאת וירוסים"
 
 #: ../src/services/service.c:33
 msgid "Volumes mounter"
@@ -1418,15 +1386,15 @@ msgstr ""
 
 #: ../src/services/service.c:34
 msgid "Actions scheduler"
-msgstr ""
+msgstr "מתזמן משימות"
 
 #: ../src/services/service.c:34
 msgid "Executes scheduled actions"
-msgstr ""
+msgstr "מבצע משימות מתוזמנות"
 
 #: ../src/services/service.c:35
 msgid "Database server"
-msgstr ""
+msgstr "שרת בסיס נתונים"
 
 #: ../src/services/service.c:35
 msgid "Data storage system"
@@ -1434,27 +1402,27 @@ msgstr ""
 
 #: ../src/services/service.c:36
 msgid "Graphical login manager"
-msgstr ""
+msgstr "מנהל התחברות גרפי"
 
 #: ../src/services/service.c:36
 msgid "Allows users to login graphically"
-msgstr ""
+msgstr "מאפשר למשתמשים להתחבר באופן גרפי"
 
 #: ../src/services/service.c:37
 msgid "Folder sharing service"
-msgstr ""
+msgstr "שירות שיתוף תיקיות"
 
 #: ../src/services/service.c:37
-msgid "Shares folders through your network"
-msgstr ""
+msgid "Shares folders over your network"
+msgstr "משתף תיקיות ברשת"
 
 #: ../src/services/service.c:38
 msgid "File sharing service"
-msgstr ""
+msgstr "שירות שיתוף קבצים"
 
 #: ../src/services/service.c:38 ../src/services/service.c:39
-msgid "Shares files though internet"
-msgstr ""
+msgid "Shares files over the Internet"
+msgstr "משתף קבצים באינטרנט"
 
 #: ../src/services/service.c:39
 msgid "FTP service"
@@ -1473,24 +1441,24 @@ msgid "Mail agent"
 msgstr ""
 
 #: ../src/services/service.c:41
-msgid "Delivers your mails through internet"
+msgid "Delivers your outgoing mail"
 msgstr ""
 
 #: ../src/services/service.c:42
 msgid "Clock synchronization service"
-msgstr ""
+msgstr "שירות סינכרון שעון"
 
 #: ../src/services/service.c:42
-msgid "Synchronizes your computer clock with internet time servers"
-msgstr ""
+msgid "Synchronizes your computer clock with Internet time servers"
+msgstr "מסנכרון את שעון המערכת עם שרתי שעון באינטרנט"
 
 #: ../src/services/service.c:43
 msgid "Printer service"
-msgstr ""
+msgstr "שירות הדפסה"
 
 #: ../src/services/service.c:43
 msgid "Allows applications to use printers"
-msgstr ""
+msgstr "מאפשר ליישומים להדפיס"
 
 #: ../src/services/service.c:44
 msgid "Remote shell server"
@@ -1510,11 +1478,11 @@ msgstr ""
 
 #: ../src/services/service.c:46
 msgid "Web server"
-msgstr ""
+msgstr "שרת Web"
 
 #: ../src/services/service.c:46
-msgid "Shares your web pages through internet"
-msgstr ""
+msgid "Shares your web pages over the Internet"
+msgstr "משתף את דפי ה-Web שלך באינטרנט"
 
 #: ../src/shares/callbacks.c:187
 msgid "Are you sure you want to delete this share?"
@@ -1534,15 +1502,15 @@ msgstr ""
 
 #: ../src/shares/main.c:97
 msgid "Shared folders settings"
-msgstr ""
+msgstr "הגדרות תיקיות משותפות"
 
 #: ../src/shares/nautilus/nautilus-shares.c:129
 msgid "_Share folder"
-msgstr ""
+msgstr "_שתף תיקיה"
 
 #: ../src/shares/nautilus/nautilus-shares.c:130
 msgid "Share this folder with other computers"
-msgstr ""
+msgstr "שתף תיקיה זו עם מחשבים אחרים"
 
 #: ../src/shares/nfs-acl-table.c:51
 msgid "Allowed host/network"
@@ -1559,23 +1527,23 @@ msgstr ""
 
 #: ../src/shares/share-nfs-add-hosts.c:153
 msgid "Specify IP address"
-msgstr ""
+msgstr "הזן כתובת IP"
 
 #: ../src/shares/share-nfs-add-hosts.c:160
 msgid "Specify network"
-msgstr ""
+msgstr "הגדר רשת"
 
 #: ../src/shares/share-settings.c:123
 msgid "Do not share"
-msgstr ""
+msgstr "אל תשתף"
 
 #: ../src/shares/share-settings.c:131
 msgid "SMB"
-msgstr ""
+msgstr "SMB"
 
 #: ../src/shares/share-settings.c:139
 msgid "NFS"
-msgstr ""
+msgstr "NFS"
 
 #: ../src/shares/shares.desktop.in.in.h:1
 msgid "Configure which folders are available for your network neighborhood"
@@ -1583,13 +1551,12 @@ msgstr ""
 
 #: ../src/shares/shares.desktop.in.in.h:2
 msgid "Shared Folders"
-msgstr ""
+msgstr "תיקיות משותפות"
 
 #: ../src/shares/transfer.c:44
 msgid "Sharing services are not installed"
-msgstr ""
+msgstr "שירותי שיתוף לא מותקנים"
 
-#: ../src/shares/transfer.c:46
 msgid ""
 "You need to install at least either Samba or NFS in order to share your "
 "folders. The tool will close now."
@@ -1602,20 +1569,19 @@ msgstr ""
 #: ../src/time/main.c:466
 msgid ""
 "Please install and activate NTP support in the system to enable "
-"synchronization of your local time server with internet time servers."
+"synchronization of your local time server with Internet time servers."
 msgstr ""
 
 #: ../src/time/main.c:762
 msgid "Time and Date Settings"
-msgstr ""
+msgstr "הגדרות זמן ותאריך"
 
 #: ../src/time/time.desktop.in.in.h:1
 msgid "Change system time, date, and timezone"
-msgstr ""
+msgstr "כיוון השעון, התאריך ואיזור הזמן של המערכת"
 
-#: ../src/time/time.desktop.in.in.h:2
 msgid "Time and Date"
-msgstr ""
+msgstr "זמן ותאריך"
 
 #: ../src/users/callbacks.c:571
 msgid "Error saving profile"
@@ -1632,9 +1598,8 @@ msgstr ""
 
 #: ../src/users/group-settings.c:91
 msgid "Create New Group"
-msgstr ""
+msgstr "צור קבוצה חדשה"
 
-#. Check if gid is available
 #: ../src/users/group-settings.c:164 ../src/users/group-settings.c:172
 msgid "Invalid group ID"
 msgstr ""
@@ -1648,8 +1613,8 @@ msgstr ""
 msgid "Group ID of the \"root\" user should not be modified"
 msgstr ""
 
-#: ../src/users/group-settings.c:169 ../src/users/group-settings.c:215
-#: ../src/users/group-settings.c:285
+#: ../src/users/group-settings.c:169 ../src/users/group-settings.c:218
+#: ../src/users/group-settings.c:288
 msgid "This would leave the system unusable"
 msgstr ""
 
@@ -1661,67 +1626,71 @@ msgstr ""
 #. If empty.
 #: ../src/users/group-settings.c:198
 msgid "Group name is empty"
-msgstr ""
+msgstr "שם הקבוצה ריק"
 
 #: ../src/users/group-settings.c:199
 msgid "A group name must be specified"
-msgstr ""
+msgstr "יש להזין שם קבוצה"
 
 #. If too long.
 #: ../src/users/group-settings.c:202
 msgid "The group name is too long"
-msgstr ""
+msgstr "שם הקבוצה ארוך מדי"
 
 #: ../src/users/group-settings.c:203
 #, c-format
-msgid "The group name should have less than %i characters for being valid"
-msgstr ""
+msgid "To be valid, the group name should have less than %d character"
+msgid_plural "To be valid, the group name should have less than %d characters"
+msgstr[0] ""
+"שם קבוצה חייב להיות קצר מתו %d"
+msgstr[1] ""
+"שם קבוצה חייב להיות קצר מ-%d תוים"
 
 #. if invalid.
-#: ../src/users/group-settings.c:206
+#: ../src/users/group-settings.c:209
 msgid "Group name has invalid characters"
 msgstr ""
 
-#: ../src/users/group-settings.c:207
+#: ../src/users/group-settings.c:210
 msgid "Please set a valid group name, using only lower case letters"
 msgstr ""
 
 #. if !exist.
-#: ../src/users/group-settings.c:210
+#: ../src/users/group-settings.c:213
 #, c-format
 msgid "Group \"%s\" already exists"
 msgstr ""
 
-#: ../src/users/group-settings.c:211
+#: ../src/users/group-settings.c:214
 msgid "Please select a different group name"
 msgstr ""
 
 #. if it's the root group
-#: ../src/users/group-settings.c:214
+#: ../src/users/group-settings.c:217
 msgid "Group name of the \"root\" user should not be modified"
 msgstr ""
 
-#: ../src/users/group-settings.c:284
+#: ../src/users/group-settings.c:287
 msgid "The group \"root\" should not be deleted"
 msgstr ""
 
-#: ../src/users/group-settings.c:299
+#: ../src/users/group-settings.c:302
 #, c-format
 msgid "Are you sure you want to delete group \"%s\"?"
 msgstr ""
 
-#: ../src/users/group-settings.c:301
+#: ../src/users/group-settings.c:304
 msgid "This may leave files with invalid group ID in the filesystem."
 msgstr ""
 
-#: ../src/users/group-settings.c:361
+#: ../src/users/group-settings.c:364
 #, c-format
 msgid "Settings for Group %s"
 msgstr ""
 
 #: ../src/users/groups-table.c:44
 msgid "Group"
-msgstr ""
+msgstr "קבוצה"
 
 #: ../src/users/groups-table.c:45
 msgid "GID"
@@ -1745,11 +1714,11 @@ msgstr ""
 
 #: ../src/users/main.c:245 ../src/users/users.desktop.in.in.h:2
 msgid "Users and Groups"
-msgstr ""
+msgstr "משתמשים וקבוצות"
 
 #: ../src/users/passwd.c:168
 msgid "Passwords do not match"
-msgstr ""
+msgstr "הסיסמאות לא תואמות"
 
 #: ../src/users/passwd.c:173
 #, c-format
@@ -1790,15 +1759,15 @@ msgstr ""
 #. Column name,          Adv_state_show,	Basic_state_show
 #: ../src/users/profiles-table.c:39
 msgid "Profile"
-msgstr ""
+msgstr "פרופיל"
 
 #: ../src/users/profiles-table.c:40
 msgid "Comment"
-msgstr ""
+msgstr "הערה"
 
 #: ../src/users/search-bar/search-bar.c:228
 msgid "C_lear"
-msgstr ""
+msgstr "נ_קה"
 
 #: ../src/users/search-bar/search-bar.c:329
 msgid "Choice"
@@ -1806,14 +1775,14 @@ msgstr ""
 
 #: ../src/users/search-bar/search-bar.c:339
 msgid "Text"
-msgstr ""
+msgstr "טקסט"
 
 #: ../src/users/user-settings.c:73
 msgid "The \"root\" user should not be deleted"
 msgstr ""
 
-#: ../src/users/user-settings.c:74 ../src/users/user-settings.c:305
-#: ../src/users/user-settings.c:400 ../src/users/user-settings.c:436
+#: ../src/users/user-settings.c:74 ../src/users/user-settings.c:311
+#: ../src/users/user-settings.c:406 ../src/users/user-settings.c:442
 msgid "This would leave the system unusable."
 msgstr ""
 
@@ -1834,126 +1803,131 @@ msgstr ""
 
 #: ../src/users/user-settings.c:285
 msgid "The user name is empty"
-msgstr ""
+msgstr "שם המשתמש ריק"
 
 #: ../src/users/user-settings.c:286
 msgid "A user name must be specified."
-msgstr ""
+msgstr "יש להזין שם משתמש."
 
 #. = sizeof (ut.ut_name)
-#: ../src/users/user-settings.c:292 ../src/users/user-settings.c:297
+#: ../src/users/user-settings.c:292 ../src/users/user-settings.c:300
 msgid "The user name is too long"
-msgstr ""
+msgstr "שם המשתמש ארוך מדי"
 
-#: ../src/users/user-settings.c:293 ../src/users/user-settings.c:298
+#: ../src/users/user-settings.c:293
+#: ../src/users/user-settings.c:301
 #, c-format
-msgid "To be valid, the user name should have less than %i characters."
-msgstr ""
+msgid "To be valid, the user name should have less than %d character"
+msgid_plural "To be valid, the user name should have less than %d characters"
+msgstr[0] ""
+"שם משתמש חייב להיות קצר מתו %d"
+msgstr[1] ""
+"שם משתמש חייב להיות קצר מ-%d תווים"
 
-#: ../src/users/user-settings.c:304
+#: ../src/users/user-settings.c:310
 msgid "User name for the \"root\" user should not be modified"
 msgstr ""
 
-#: ../src/users/user-settings.c:310
+#: ../src/users/user-settings.c:316
 msgid "User name has invalid characters"
 msgstr ""
 
-#: ../src/users/user-settings.c:311
+#: ../src/users/user-settings.c:317
 msgid ""
 "Please set a valid user name consisting of a lower case letter followed by "
 "lower case letters and numbers."
 msgstr ""
 
-#: ../src/users/user-settings.c:317
+#: ../src/users/user-settings.c:323
 #, c-format
 msgid "User name \"%s\" already exists"
 msgstr ""
 
-#: ../src/users/user-settings.c:318
+#: ../src/users/user-settings.c:324
 msgid "Please select a different user name."
 msgstr ""
 
-#: ../src/users/user-settings.c:343
+#: ../src/users/user-settings.c:349
 #, c-format
 msgid "Invalid character \"%c\" in comment"
 msgstr ""
 
-#: ../src/users/user-settings.c:344
+#: ../src/users/user-settings.c:350
 msgid "Check that this character is not used."
 msgstr ""
 
-#: ../src/users/user-settings.c:392
+#: ../src/users/user-settings.c:398
 msgid "Home directory should not be empty"
 msgstr ""
 
-#: ../src/users/user-settings.c:393
+#: ../src/users/user-settings.c:399
 msgid "Make sure you provide a home directory."
 msgstr ""
 
-#: ../src/users/user-settings.c:395
+#: ../src/users/user-settings.c:401
 msgid "Incomplete path in home directory"
 msgstr ""
 
-#: ../src/users/user-settings.c:396
+#: ../src/users/user-settings.c:402
 msgid ""
 "Please enter full path for home directory\n"
 "<span size=\"smaller\">i.e.: /home/john</span>."
 msgstr ""
 
-#: ../src/users/user-settings.c:399
+#: ../src/users/user-settings.c:405
 msgid "Home directory of the \"root\" user should not be modified"
 msgstr ""
 
-#: ../src/users/user-settings.c:432
+#: ../src/users/user-settings.c:438
 msgid "Invalid user ID"
 msgstr ""
 
-#: ../src/users/user-settings.c:433
+#: ../src/users/user-settings.c:439
 msgid "User ID must be a positive number."
 msgstr ""
 
-#: ../src/users/user-settings.c:435
+#: ../src/users/user-settings.c:441
 msgid "User ID of the \"root\" user should not be modified"
 msgstr ""
 
-#: ../src/users/user-settings.c:453
+#: ../src/users/user-settings.c:459
 #, c-format
 msgid "User ID %s already exists"
 msgstr ""
 
-#: ../src/users/user-settings.c:455
+#: ../src/users/user-settings.c:461
 msgid ""
 "Several users may share a single user ID, but it's not common and may lead "
 "to security problems."
 msgstr ""
 
-#: ../src/users/user-settings.c:473
+#: ../src/users/user-settings.c:479
 msgid "Incomplete path in shell"
 msgstr ""
 
-#: ../src/users/user-settings.c:474
+#: ../src/users/user-settings.c:480
 msgid ""
 "Please enter full path for shell\n"
 "<span size=\"smaller\">i.e.: /bin/sh</span>."
 msgstr ""
 
-#: ../src/users/user-settings.c:496
+#: ../src/users/user-settings.c:502
 msgid "Password should not be empty"
 msgstr ""
 
-#: ../src/users/user-settings.c:497
+#: ../src/users/user-settings.c:503
 msgid "A password must be provided."
 msgstr ""
 
-#: ../src/users/user-settings.c:499
+#: ../src/users/user-settings.c:505
 msgid "Password confirmation isn't correct"
 msgstr ""
 
-#: ../src/users/user-settings.c:500
+#: ../src/users/user-settings.c:506
 msgid "Check that you have provided the same password in both text fields."
 msgstr ""
 
-#: ../src/users/user-settings.c:774
+#: ../src/users/user-settings.c:780
 #, c-format
 msgid "Settings for User %s"
 msgstr "הגדרות עבור המשתמש %s"
@@ -1981,3 +1955,31 @@ msgstr ""
 #: ../src/users/users.desktop.in.in.h:1
 msgid "Add or remove users and groups"
 msgstr "הוסף או הסר משתמשים וקבוצות"
+
+#~ msgid "/dev/hda"
+#~ msgstr "/dev/hda"
+
+#~ msgid "/dev/hdb"
+#~ msgstr "/dev/hdb"
+
+#~ msgid "/dev/hdc"
+#~ msgstr "/dev/hdc"
+
+#~ msgid "/dev/hdd"
+#~ msgstr "/dev/hdd"
+
+#~ msgid ""
+#~ "/dev/modem\n"
+#~ "/dev/ttyS0\n"
+#~ "/dev/ttyS1\n"
+#~ "/dev/ttyS2\n"
+#~ "/dev/ttyS3"
+#~ msgstr ""
+#~ "/dev/modem\n"
+#~ "/dev/ttyS0\n"
+#~ "/dev/ttyS1\n"
+#~ "/dev/ttyS2\n"
+#~ "/dev/ttyS3"
+
+#~ msgid ":"
+#~ msgstr ":"
