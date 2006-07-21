@@ -1,19 +1,20 @@
 # French translation of gnome-system-tools.
-# Copyright (C) 2001-2005 Free Software Foundation, Inc.
+# Copyright (C) 2001-2006 Free Software Foundation, Inc.
 # This file is distributed under the GNU General Public License Version 2.
 #
-# Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2001-2005.
+# Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2001-2006.
 # Guillaume Desmottes <cass@skynet.be>, 2006.
 # maintainer: Jean-Michel Ardantz <jmardantz@ifrance.com>, 2001-2006.
-#
+# Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-system-tools 1.4.1\n"
+"Project-Id-Version: gnome-system-tools 2.14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-18 19:01+0100\n"
-"PO-Revision-Date: 2006-02-18 19:05+0100\n"
-"Last-Translator: Jean-Michel Ardantz <jmardantz@ifrance.com>\n"
-"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"POT-Creation-Date: 2006-07-21 16:58+0200\n"
+"PO-Revision-Date: 2006-07-21 16:21+0200\n"
+"Last-Translator: Robert-André Mauchin <zebob.m@gmail.com>\n"
+"Language-Team: French <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,12 +25,12 @@ msgid ""
 "Comma separated list of hosts that the GST will be able to access when the "
 "remote configuration option is enabled"
 msgstr ""
-"Liste séparée par des virgules d'hôtes accessibles par l'outil lorsque "
+"Liste délimitée par des virgules des hôtes accessibles par l'outil lorsque "
 "l'option de configuration distante est activée"
 
 #: ../gnome-system-tools.schemas.in.h:2
 msgid "Last GST version executed"
-msgstr "Dernière version de GST exécutée"
+msgstr "Dernière version de GST lancée"
 
 #: ../gnome-system-tools.schemas.in.h:3
 msgid "Preferred bootloader that boot-admin will configure"
@@ -44,12 +45,12 @@ msgid ""
 "The GST are able to do remote configuration through SSH, enable this option "
 "to use this feature"
 msgstr ""
-"GST est capable d'administrer à distante via SSH, activez cette option pour "
+"GST est capable d'administrer à distance via SSH, activez cette option pour "
 "utiliser cette fonctionnalité"
 
 #: ../gnome-system-tools.schemas.in.h:6
 msgid "The last GST version that this computer has run"
-msgstr "La dernière version de GST exécutée sur cet ordinateur"
+msgstr "La dernière version de GST lancée sur cet ordinateur"
 
 #: ../gnome-system-tools.schemas.in.h:7
 msgid ""
@@ -111,7 +112,7 @@ msgstr "<span weight=\"bold\">Au démarrage de l'ordinateur</span>"
 
 #: ../interfaces/boot.glade.in.h:9
 msgid "Ask at boot"
-msgstr "Choisir au démarrage"
+msgstr "Demander au démarrage"
 
 #: ../interfaces/boot.glade.in.h:10 ../src/boot/main.c:71
 msgid "Boot Manager Settings"
@@ -232,7 +233,7 @@ msgstr "_Partition :"
 
 #: ../interfaces/boot.glade.in.h:34
 msgid "_Edit"
-msgstr "Édit_er"
+msgstr "É_diter"
 
 #: ../interfaces/boot.glade.in.h:35 ../src/boot/boot-settings.c:44
 msgid "_Initrd image path:"
@@ -284,9 +285,9 @@ msgid ""
 "system configuration or downright cripple your computer."
 msgstr ""
 "Choisissez l'une des distributions ci-dessous à condition que vous soyez "
-"certain que cet outil fonctionne comme l'une d'entre elles. Notez, cependant "
-"que ceci peut endommager la configuration système et de ce fait perturber le "
-"fonctionnement de votre ordinateur."
+"certain que votre système fonctionne comme l'une d'entre elles. Notez, "
+"cependant que ceci peut endommager la configuration système et de ce fait "
+"perturber le fonctionnement de votre ordinateur."
 
 #: ../interfaces/common.glade.in.h:5
 msgid "Remote administration"
@@ -310,7 +311,9 @@ msgstr ""
 msgid ""
 "You need administrator privileges to use this tool. Enter a password to "
 "modify your system configuration."
-msgstr "Cet outil nécessite les privilèges d'administrateur. Veuillez saisir le mot de passe pour modifier la configuration de votre système."
+msgstr ""
+"Cet outil nécessite les privilèges d'administrateur. Veuillez saisir le mot "
+"de passe pour modifier la configuration de votre système."
 
 #: ../interfaces/common.glade.in.h:10
 msgid "_Password:"
@@ -338,7 +341,7 @@ msgstr "<b>Paramètres de l'hôte</b>"
 
 #: ../interfaces/network.glade.in.h:6
 msgid "<b>Internet service provider data</b>"
-msgstr "<b>Données du fournisseur de service Internet</b>"
+msgstr "<b>Données du fournisseur d'accès Internet</b>"
 
 #: ../interfaces/network.glade.in.h:7
 msgid "<b>Modem settings</b>"
@@ -574,7 +577,7 @@ msgstr "<b>Propriétés du partage</b>"
 
 #: ../interfaces/shares.glade.in.h:4
 msgid "<b>Shared folder</b>"
-msgstr "<b>Répertoire partagé</b>"
+msgstr "<b>Dossier partagé</b>"
 
 #: ../interfaces/shares.glade.in.h:5
 msgid "<b>WINS server</b>"
@@ -602,7 +605,7 @@ msgstr "Commentaire :"
 
 #: ../interfaces/shares.glade.in.h:11
 msgid "Do not use WINS server"
-msgstr "Ne pas utiliser de serveur DNS"
+msgstr "Ne pas utiliser de serveur WINS"
 
 #: ../interfaces/shares.glade.in.h:12
 msgid "Domain / _Workgroup"
@@ -634,7 +637,7 @@ msgstr "Lecture seule"
 
 #: ../interfaces/shares.glade.in.h:20
 msgid "Share folder"
-msgstr "Répertoire partagé"
+msgstr "Dossier partagé"
 
 #: ../interfaces/shares.glade.in.h:21
 msgid "Share with:"
@@ -730,7 +733,7 @@ msgstr "<span weight=\"bold\">Affectation automatique des UID/GID</span>"
 
 #: ../interfaces/users.glade.in.h:4
 msgid "<span weight=\"bold\">Contact Information</span>"
-msgstr "<span weight=\"bold\">Information contact</span>"
+msgstr "<span weight=\"bold\">Informations contact</span>"
 
 #: ../interfaces/users.glade.in.h:5
 msgid "<span weight=\"bold\">Group Members</span>"
@@ -754,7 +757,7 @@ msgstr "<span weight=\"bold\">Paramètres du profil</span>"
 
 #: ../interfaces/users.glade.in.h:10
 msgid "<span weight=\"bold\">System Defaults</span>"
-msgstr "<span weight=\"bold\">Options systèmes par défaut</span>"
+msgstr "<span weight=\"bold\">Options système par défaut</span>"
 
 #: ../interfaces/users.glade.in.h:11
 msgid "<span weight=\"bold\">User Profile</span>"
@@ -787,7 +790,7 @@ msgstr "Con_firmation :"
 #: ../interfaces/users.glade.in.h:18
 msgid "Days between warning and password expiration:"
 msgstr ""
-"Nombre de jours entre l'avertissement et l'expiration du mot de passe :"
+"Nombre de jours entre l'avertissement et l'expiration du mot de passe :"
 
 #: ../interfaces/users.glade.in.h:19
 msgid "Default _group:"
@@ -803,7 +806,7 @@ msgstr "_Générer un mot de passe aléatoire"
 
 #: ../interfaces/users.glade.in.h:23
 msgid "Group _ID:"
-msgstr "_ID Groupe :"
+msgstr "_ID du groupe :"
 
 #: ../interfaces/users.glade.in.h:24
 msgid "Group _members:"
@@ -843,11 +846,11 @@ msgstr "UID minimum :"
 
 #: ../interfaces/users.glade.in.h:33
 msgid "Minimum days allowed between password changes:"
-msgstr "Nombre minimum de jours entre deux changements de mot de passe :"
+msgstr "Nombre minimum de jours entre deux changements de mot de passe :"
 
 #: ../interfaces/users.glade.in.h:34
 msgid "Number of days that a password may be used:"
-msgstr "Validité du mot de passe en jours :"
+msgstr "Validité du mot de passe en jours :"
 
 #: ../interfaces/users.glade.in.h:35
 msgid "O_ffice location:"
@@ -855,7 +858,7 @@ msgstr "_Adresse bureau :"
 
 #: ../interfaces/users.glade.in.h:36
 msgid "Password set to: "
-msgstr "Mot de passe changé en :"
+msgstr "Mot de passe changé en :"
 
 #: ../interfaces/users.glade.in.h:37
 msgid "Privileges"
@@ -1024,7 +1027,7 @@ msgstr "GNU/Hurd"
 #: ../src/boot/boot-image.c:279
 #, c-format
 msgid "\"%s\" is an invalid path"
-msgstr "« %s » est une partition non valide"
+msgstr "« %s » n'est pas une partition valide"
 
 #: ../src/boot/boot-image.c:295
 #, c-format
@@ -1034,12 +1037,12 @@ msgstr "« %s » existe déjà, veuillez sélectionner un autre nom."
 #: ../src/boot/boot-image.c:301
 #, c-format
 msgid "Invalid image name: \"%s\"."
-msgstr "Nom d'image invalide : « %s »."
+msgstr "Nom d'image non valide : « %s »."
 
 #: ../src/boot/boot-image.c:314
 #, c-format
 msgid "Invalid image: \"%s\"."
-msgstr "Image invalide : « %s »."
+msgstr "Image non valide : « %s »."
 
 #: ../src/boot/boot-image.c:332
 #, c-format
@@ -1081,7 +1084,7 @@ msgstr "Erreur dans la suppression de l'entrée de démarrage"
 #: ../src/boot/callbacks.c:414
 msgid "Without at least one boot image your computer will not start."
 msgstr ""
-"Sans une entrée de démarrage au minimun, votre système ne pourra pas "
+"Sans une entrée de démarrage au minimum, votre système ne pourra pas "
 "démarrer."
 
 #: ../src/boot/callbacks.c:433
@@ -1142,7 +1145,9 @@ msgstr "Impossible de se connecter à l'ordinateur"
 msgid ""
 "Check that you have access to this network and that the computer is actually "
 "working and running the SSH daemon"
-msgstr "Veuillez vérifier que vous avez bien accès à ce réseau et que le serveur de commande sécurisé (SSHD) est actif sur votre ordinateur"
+msgstr ""
+"Veuillez vérifier que vous avez bien accès à ce réseau et que le serveur de "
+"commande sécurisé (SSHD) est actif sur cet ordinateur"
 
 #. the proccess was running su
 #: ../src/common/gst-auth.c:94
@@ -1196,11 +1201,11 @@ msgstr "Appliquer les changements ?"
 #: ../src/common/gst-dialog.c:492
 #, c-format
 msgid "Error connection signal `%s' in widget `%s'"
-msgstr "Erreur d'appel du signal « %s » dans le composant « %s »"
+msgstr "Erreur de connexion du signal « %s » dans le composant « %s »"
 
 #: ../src/common/gst-tool.c:1026
 msgid "The configuration could not be loaded"
-msgstr "Chargement de la configuration impossible"
+msgstr "Impossible de charger de la configuration"
 
 #: ../src/common/gst-tool.c:1028
 msgid "There was an error running the backend script"
@@ -1224,7 +1229,7 @@ msgstr ""
 "contenir de nombreux bugs. Vu la nature de ces outils, les bugs peuvent "
 "rendre votre ordinateur <span weight=\"bold\">totalement instable</span>. "
 "Cet avertissement effectué, nous vous remercions de tester cette version des "
-"Outils système GNOME et de nous reporter les bugs rencontrés."
+"Outils système GNOME et de nous signaler les anomalies rencontrés."
 
 #: ../src/common/gst-tool.c:1532
 msgid "Warning"
@@ -1244,7 +1249,7 @@ msgstr "Impossible d'afficher l'aide"
 
 #: ../src/network/address-list.c:555
 msgid "Type address"
-msgstr "Type d'adresse"
+msgstr "Saisissez l'adresse"
 
 #: ../src/network/callbacks.c:46
 #, c-format
@@ -1256,8 +1261,8 @@ msgid ""
 "Check that the settings are correct for this network and that the computer "
 "is correctly connected to it."
 msgstr ""
-"Vérifier que les réglages sont correctes pour ce réseau et que l'ordinateur "
-"y est correctement connecté."
+"Vérifier que les réglages sont corrects pour ce réseau et que l'ordinateur y "
+"est correctement connecté."
 
 #: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
@@ -1443,11 +1448,11 @@ msgstr "Monte les volumes automatiquement"
 
 #: ../src/services/service.c:34
 msgid "Actions scheduler"
-msgstr "Planificateur d'évènements"
+msgstr "Planificateur d'événements"
 
 #: ../src/services/service.c:34
 msgid "Executes scheduled actions"
-msgstr "Exécute des évènements planifiés"
+msgstr "Exécute des événements planifiés"
 
 #: ../src/services/service.c:35
 msgid "Database server"
@@ -1459,7 +1464,7 @@ msgstr "Système de stockage"
 
 #: ../src/services/service.c:36
 msgid "Graphical login manager"
-msgstr "Gestionnaire de connexions graphique"
+msgstr "Gestionnaire de connexions graphiques"
 
 #: ../src/services/service.c:36
 msgid "Allows users to login graphically"
@@ -1471,7 +1476,7 @@ msgstr "Service de partage de dossiers"
 
 #: ../src/services/service.c:37
 msgid "Shares folders over your network"
-msgstr "Partage des dossiers à travers votre réseau"
+msgstr "Partage de dossiers à travers votre réseau"
 
 #: ../src/services/service.c:38
 msgid "File sharing service"
@@ -1554,7 +1559,7 @@ msgstr ""
 
 #: ../src/shares/main.c:90
 msgid "Add a shared path, modifies it if it already exists"
-msgstr "Ajoute un répertoire partagé, le modifie s'il existe déjà"
+msgstr "Ajoute un répertoire partagé ou le modifie s'il existe déjà"
 
 #: ../src/shares/main.c:90
 msgid "PATH"
@@ -1608,7 +1613,7 @@ msgstr "NFS"
 #: ../src/shares/shares.desktop.in.in.h:1
 msgid "Configure which folders are available for your network neighborhood"
 msgstr ""
-"Configure les répertoires qui seront accessibles aux autres utilisateurs du "
+"Configure les dossiers qui seront accessibles aux autres utilisateurs du "
 "réseau"
 
 #: ../src/shares/shares.desktop.in.in.h:2
@@ -1645,7 +1650,7 @@ msgstr "Configuration de la date et de l'heure"
 
 #: ../src/time/time.desktop.in.in.h:1
 msgid "Change system time, date, and timezone"
-msgstr "Change la date, l'heure et le fuseau."
+msgstr "Change la date, l'heure et le fuseau horaire."
 
 #: ../src/time/time.desktop.in.in.h:2
 msgid "Time and Date"
@@ -1653,7 +1658,7 @@ msgstr "Date et heure"
 
 #: ../src/users/callbacks.c:571
 msgid "Error saving profile"
-msgstr "Erreur dans la sauvegarde du modèle"
+msgstr "Erreur dans la sauvegarde du profil"
 
 #: ../src/users/callbacks.c:613
 msgid "Create New profile"
@@ -1671,7 +1676,7 @@ msgstr "Créer un nouveau groupe"
 #. Check if gid is available
 #: ../src/users/group-settings.c:164 ../src/users/group-settings.c:172
 msgid "Invalid group ID"
-msgstr "Groupe ID non valide"
+msgstr "ID de groupe non valide"
 
 #: ../src/users/group-settings.c:165
 msgid "Group ID must be a positive number"
@@ -1699,7 +1704,7 @@ msgstr "Le nom du groupe est vide"
 
 #: ../src/users/group-settings.c:199
 msgid "A group name must be specified"
-msgstr "Un groupe doit être définit"
+msgstr "Un groupe doit être défini"
 
 #. If too long.
 #: ../src/users/group-settings.c:202
@@ -1712,12 +1717,13 @@ msgid "To be valid, the group name should have less than %d character"
 msgid_plural "To be valid, the group name should have less than %d characters"
 msgstr[0] ""
 "Le nom du groupe devrait avoir moins de %d caractère afin d'être valide"
-msgstr[1] "Le nom du groupe devrait avoir moins de %d caractères afin d'être valide"
+msgstr[1] ""
+"Le nom du groupe devrait avoir moins de %d caractères afin d'être valide"
 
 #. if invalid.
 #: ../src/users/group-settings.c:209
 msgid "Group name has invalid characters"
-msgstr "Le nom de groupe possède des caractères non valide"
+msgstr "Le nom de groupe possède des caractères non valides"
 
 #: ../src/users/group-settings.c:210
 msgid "Please set a valid group name, using only lower case letters"
@@ -1774,7 +1780,7 @@ msgstr "Le nom de l'utilisateur contient"
 
 #: ../src/users/main.c:124
 msgid "User ID is"
-msgstr "l'ID de l'utilisateur est"
+msgstr "L'ID de l'utilisateur est"
 
 #: ../src/users/main.c:125
 msgid "Group name contains"
@@ -1820,18 +1826,18 @@ msgstr "Le profil par défaut ne doit pas être supprimé"
 #: ../src/users/profile-settings.c:209
 msgid "This profile is used for setting default data for new users"
 msgstr ""
-"Ce modèle est utilisé pour définir les données par défaut des nouveaux "
+"Ce profil est utilisé pour définir les données par défaut des nouveaux "
 "utilisateurs"
 
 #: ../src/users/profile-settings.c:218
 #, c-format
 msgid "Delete profile \"%s\"?"
-msgstr "Supprimer le modèle « %s » ?"
+msgstr "Supprimer le profil « %s » ?"
 
 #: ../src/users/profile-settings.c:220
 msgid "You will not be able to recover this profile after pressing \"apply\"."
 msgstr ""
-"Vous ne pourrez plus utiliser ce modèle après avoir appliqué les changements."
+"Vous ne pourrez plus utiliser ce profil après avoir appliqué les changements."
 
 #. Column name,          Adv_state_show,	Basic_state_show
 #: ../src/users/profiles-table.c:39
@@ -1873,8 +1879,8 @@ msgid ""
 "This will disable this user's access to the system without deleting the "
 "user's home directory."
 msgstr ""
-"Ceci désactivera l'accès au système à cet utilisateur, mais son répertoire "
-"personnel ne sera pas supprimé."
+"Ceci désactivera l'accès au système pour cet utilisateur, mais son "
+"répertoire personnel ne sera pas supprimé."
 
 #: ../src/users/user-settings.c:189
 msgid "User Account Editor"
@@ -1899,7 +1905,8 @@ msgid "To be valid, the user name should have less than %d character"
 msgid_plural "To be valid, the user name should have less than %d characters"
 msgstr[0] ""
 "Le nom d'utilisateur devrait avoir moins de %d caractère afin d'être valide"
-msgstr[1] "Le nom d'utilisateur devrait avoir moins de %d caractères afin d'être valide"
+msgstr[1] ""
+"Le nom d'utilisateur devrait avoir moins de %d caractères afin d'être valide"
 
 #: ../src/users/user-settings.c:310
 msgid "User name for the \"root\" user should not be modified"
@@ -1915,8 +1922,8 @@ msgid ""
 "Please set a valid user name consisting of a lower case letter followed by "
 "lower case letters and numbers."
 msgstr ""
-"Veuillez sélectionner un utilisateur valide c'est à dire une lettre "
-"minuscule suivi par des lettres minuscule ou des chiffres."
+"Veuillez sélectionner un nom d'utilisateur valide c'est à dire une lettre "
+"minuscule suivie par des lettres minuscules ou des chiffres."
 
 #: ../src/users/user-settings.c:323
 #, c-format
@@ -1934,7 +1941,7 @@ msgstr "Caractère non valide « %c » dans le commentaire"
 
 #: ../src/users/user-settings.c:350
 msgid "Check that this character is not used."
-msgstr "Vérifiez que ce caractère n'est pas utilisé.."
+msgstr "Vérifiez que ce caractère n'est pas utilisé."
 
 #: ../src/users/user-settings.c:398
 msgid "Home directory should not be empty"
@@ -1958,7 +1965,8 @@ msgstr ""
 
 #: ../src/users/user-settings.c:405
 msgid "Home directory of the \"root\" user should not be modified"
-msgstr "L'ID de l'utilisateur « root » ne devrait pas être modifié"
+msgstr ""
+"Le dossier personnel de l'utilisateur « root » ne devrait pas être modifié"
 
 #: ../src/users/user-settings.c:438
 msgid "Invalid user ID"
@@ -2003,7 +2011,7 @@ msgstr "Le mot de passe ne peut pas être vide"
 
 #: ../src/users/user-settings.c:503
 msgid "A password must be provided."
-msgstr "Le mot de passe doit être renseigné."
+msgstr "Un mot de passe doit être fourni."
 
 #: ../src/users/user-settings.c:505
 msgid "Password confirmation isn't correct"
@@ -2012,7 +2020,7 @@ msgstr "La confirmation du mot de passe est incorrecte"
 #: ../src/users/user-settings.c:506
 msgid "Check that you have provided the same password in both text fields."
 msgstr ""
-"Veuillez vérifier si vous avez fourni le même mot de passe dans les deux "
+"Veuillez vérifier que vous avez saisi le même mot de passe dans les deux "
 "champs."
 
 #: ../src/users/user-settings.c:780
@@ -2030,7 +2038,7 @@ msgstr "Dossier personnel"
 
 #: ../src/users/users-table.c:63
 msgid "User details"
-msgstr "Détail utilisateur"
+msgstr "Détails utilisateur"
 
 #: ../src/users/users-table.c:64
 msgid "UID"
@@ -2043,31 +2051,3 @@ msgstr "Shell"
 #: ../src/users/users.desktop.in.in.h:1
 msgid "Add or remove users and groups"
 msgstr "Ajouter ou supprimer des utilisateurs et groupes"
-
-#~ msgid "/dev/hda"
-#~ msgstr "/dev/hda"
-
-#~ msgid "/dev/hdb"
-#~ msgstr "/dev/hdb"
-
-#~ msgid "/dev/hdc"
-#~ msgstr "/dev/hdc"
-
-#~ msgid "/dev/hdd"
-#~ msgstr "/dev/hdd"
-
-#~ msgid ""
-#~ "/dev/modem\n"
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3"
-#~ msgstr ""
-#~ "/dev/modem\n"
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3"
-
-#~ msgid ":"
-#~ msgstr ":"
