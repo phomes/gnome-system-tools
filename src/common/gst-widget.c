@@ -30,49 +30,32 @@ gst_widget_apply_policy (GstWidget *xw)
 {
 	GstDialogComplexity complexity;
 	gboolean have_access;
-	GstWidgetMode mode;
+	GstTool *tool;
 
 	g_return_if_fail (xw != NULL);
 
-	complexity = GST_DIALOG_ADVANCED;
-	have_access = gst_tool_is_authenticated (xw->dialog->tool);
+	tool = gst_dialog_get_tool (xw->dialog);
+	have_access = gst_tool_is_authenticated (tool);
 
-	if (complexity == GST_DIALOG_BASIC)
-		mode = xw->basic;
-	else if (complexity == GST_DIALOG_ADVANCED)
-		mode = xw->advanced;
-	else
-	{
-		mode = xw->basic;
-		g_error ("Unhandled complexity.");
-	}
-
-	if (xw->user < mode)
-		mode = xw->user;
-
-	/* Show or hide the widget. */
-
-	if (mode == GST_WIDGET_MODE_HIDDEN)
-		gtk_widget_hide (xw->widget);
-	else if (mode == GST_WIDGET_MODE_INSENSITIVE ||
-		 mode == GST_WIDGET_MODE_SENSITIVE)
-		gtk_widget_show (xw->widget);
-	else
-		g_error ("Unhandled widget mode.");
-
-	/* Sensitize or desensitize the widget. Done separately for readability. */
-
-	if (mode == GST_WIDGET_MODE_INSENSITIVE ||
-	    (have_access == FALSE && xw->need_access == TRUE))
+	/*
+	if (!xw->user_sensitive)
 		gtk_widget_set_sensitive (xw->widget, FALSE);
-	else
-		gtk_widget_set_sensitive (xw->widget, TRUE);
+	else {
+		if (xw->need_root_access)
+			gtk_widget_set_sensitive (xw->widget, have_access);
+		else
+			gtk_widget_set_sensitive (xw->widget, TRUE);
+	}
+	*/
+
+
+	gtk_widget_set_sensitive (xw->widget,
+				  ((!xw->need_root_access || have_access) && xw->user_sensitive));
 }
 
 
 GstWidget *
-gst_widget_new_full (GtkWidget *w, GstDialog *d, GstWidgetMode basic, GstWidgetMode advanced,
-		     gboolean need_access, gboolean user_sensitive)
+gst_widget_new_full (GtkWidget *w, GstDialog *d, gboolean need_root_access, gboolean user_sensitive)
 {
 	GstWidget *xw;
 
@@ -81,19 +64,11 @@ gst_widget_new_full (GtkWidget *w, GstDialog *d, GstWidgetMode basic, GstWidgetM
 
 	xw = g_new0 (GstWidget, 1);
 
-	xw->widget         = w;
-	xw->dialog         = d;
-	xw->basic          = basic;
-	xw->advanced       = advanced;
-	xw->need_access    = need_access;
+	xw->widget = w;
+	xw->dialog = d;
+	xw->need_root_access = need_root_access;
+	xw->user_sensitive = user_sensitive;
 
-	if (user_sensitive)
-		xw->user = GST_WIDGET_MODE_SENSITIVE;
-	else
-		xw->user = GST_WIDGET_MODE_INSENSITIVE;
-
-	d->gst_widget_list = g_slist_prepend (d->gst_widget_list, xw);
-	
 	return xw;
 }
 
@@ -101,27 +76,14 @@ GstWidget *
 gst_widget_new (GstDialog *dialog, GstWidgetPolicy policy)
 {
 	return gst_widget_new_full (gst_dialog_get_widget (dialog, policy.widget),
-				    dialog,
-				    policy.basic, policy.advanced,
-				    policy.need_access, policy.user_sensitive);
+				    dialog, policy.need_root_access, policy.user_sensitive);
 }
-
-void
-gst_widget_set_user_mode (GstWidget *xw, GstWidgetMode mode)
-{
-	xw->user = mode;
-	gst_widget_apply_policy (xw);
-}
-
 
 /* Backwards compatibility function. Will be removed as soon as all references to
  * it are cleaned out. */
-
 void
 gst_widget_set_user_sensitive (GstWidget *xw, gboolean user_sensitive)
 {
-	if (user_sensitive)
-		gst_widget_set_user_mode (xw, GST_WIDGET_MODE_SENSITIVE);
-	else
-		gst_widget_set_user_mode (xw, GST_WIDGET_MODE_INSENSITIVE);
+	xw->user_sensitive = user_sensitive;
+	gst_widget_apply_policy (xw);
 }

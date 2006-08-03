@@ -59,17 +59,18 @@ static GstDialogSignal signals[] = {
 	{ NULL }};
 
 static const GstWidgetPolicy policies[] = {
-	/* Name                     Basic                        Advanced                   Root   User */
-	{ "user_new",               GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  TRUE  },
-	{ "user_delete",            GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  FALSE },
-	{ "user_settings",          GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  FALSE },
-	{ "groups_table",           GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, FALSE, TRUE  },
-	{ "group_new",              GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  TRUE  },
-	{ "group_delete",           GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  FALSE },
-	{ "group_settings",         GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  FALSE },
-	{ "profile_new",            GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  TRUE  },
-	{ "profile_delete",         GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  FALSE },
-	{ "profile_settings",       GST_WIDGET_MODE_SENSITIVE,   GST_WIDGET_MODE_SENSITIVE, TRUE,  FALSE },
+	/* Name                     Root   User */
+	{ "users_table",            TRUE,  TRUE  },
+	{ "user_new",               TRUE,  TRUE  },
+	{ "user_delete",            TRUE,  FALSE },
+	{ "user_settings",          TRUE,  FALSE },
+	{ "groups_table",           TRUE,  TRUE  },
+	{ "group_new",              TRUE,  TRUE  },
+	{ "group_delete",           TRUE,  FALSE },
+	{ "group_settings",         TRUE,  FALSE },
+	{ "profile_new",            TRUE,  TRUE  },
+	{ "profile_delete",         TRUE,  FALSE },
+	{ "profile_settings",       TRUE,  FALSE },
 	{ NULL }
 };
 

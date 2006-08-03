@@ -60,6 +60,18 @@ static GstDialogSignal signals[] = {
 	{ NULL, NULL }
 };
 
+static GstWidgetPolicy policies [] = {
+	/* Name                      Root   User */
+	{ "hours",                   TRUE,  TRUE },
+	{ "minutes",                 TRUE,  TRUE },
+	{ "seconds",                 TRUE,  TRUE },
+	{ "calendar",                TRUE,  TRUE },
+	{ "timezone_button",         TRUE,  TRUE },
+	{ "timeserver_button",       TRUE,  TRUE },
+	{ "ntp_use",                 TRUE,  TRUE },
+	{ NULL }
+};
+
 #define is_leap_year(yyy) ((((yyy % 4) == 0) && ((yyy % 100) != 0)) || ((yyy % 400) == 0));
 
 static void
@@ -271,6 +283,7 @@ main (int argc, char *argv[])
 	gst_init_tool ("time-admin", argc, argv, NULL);
 	tool = GST_TOOL (gst_time_tool_new ());
 
+	gst_dialog_set_widget_policies (tool->main_dialog, policies);
 	gst_dialog_connect_signals (tool->main_dialog, signals);
 	gtk_widget_show (GTK_WIDGET (tool->main_dialog));
 	gtk_main ();

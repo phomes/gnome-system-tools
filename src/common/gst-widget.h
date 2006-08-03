@@ -27,22 +27,16 @@
 #include "gst-types.h"
 
 struct _GstWidget {
-	GtkWidget     *widget;
-	GstDialog     *dialog;
-
-	GstWidgetMode  basic;
-	GstWidgetMode  advanced;
-	GstWidgetMode  user;
-	gboolean       need_access;
+	GtkWidget *widget;
+	GstDialog *dialog;
+	gboolean   need_root_access;
+	gboolean   user_sensitive;
 };
 
 struct _GstWidgetPolicy {
-	const gchar   *widget;
-
-	GstWidgetMode  basic;
-	GstWidgetMode  advanced;
-	gboolean       need_access;
-	gboolean       user_sensitive;
+	const gchar *widget;
+	gboolean     need_root_access;
+	gboolean     user_sensitive;
 };
 
 struct _GstWidgetUserPolicy {
@@ -52,14 +46,9 @@ struct _GstWidgetUserPolicy {
 };
 
 GstWidget * gst_widget_new      (GstDialog *dialog, GstWidgetPolicy policy);
-GstWidget * gst_widget_new_full (GtkWidget *gtk_widget, GstDialog *dialog,
-				 GstWidgetMode basic, GstWidgetMode advanced,
-				 gboolean need_access, gboolean user_sensitive);
-
+GstWidget * gst_widget_new_full (GtkWidget *gtk_widget, GstDialog *dialog, gboolean need_root_access, gboolean user_sensitive);
 
 void       gst_widget_apply_policy       (GstWidget *xw);
-
-void       gst_widget_set_user_mode      (GstWidget *xw, GstWidgetMode mode);
 void       gst_widget_set_user_sensitive (GstWidget *xw, gboolean user_sensitive);
 
 #endif /* GST_WIDGET_H */

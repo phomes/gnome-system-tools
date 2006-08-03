@@ -58,6 +58,18 @@ static GstDialogSignal signals [] = {
 	{ NULL }
 };
 
+static GstWidgetPolicy policies [] = {
+	/* Name                      Root   User */
+	{ "shares_table",            TRUE,  TRUE },
+	{ "add_share",               TRUE,  TRUE },
+	{ "edit_share",              TRUE,  FALSE },
+	{ "delete_share",            TRUE,  FALSE },
+	{ "smb_workgroup",           TRUE,  TRUE },
+	{ "smb_is_wins",             TRUE,  TRUE },
+	{ "smb_wins_server",         TRUE,  TRUE },
+	{ NULL }
+};
+
 void
 initialize_tables (GstTool *tool)
 {
@@ -95,6 +107,7 @@ main (int argc, char *argv[])
 	tool = GST_TOOL (gst_shares_tool_new ());
 
 	initialize_tables (tool);
+	gst_dialog_set_widget_policies (tool->main_dialog, policies);
 	gst_dialog_connect_signals (tool->main_dialog, signals);
 	initialize_filters ();
 

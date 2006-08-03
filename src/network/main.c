@@ -35,8 +35,10 @@ GstTool *tool;
 static GstDialogSignal signals[] = {
   /* connections tab */
   { "properties_button",            "clicked", G_CALLBACK (on_iface_properties_clicked) },
+  /*
   { "activate_button",              "clicked", G_CALLBACK (on_activate_button_clicked) },
   { "deactivate_button",            "clicked", G_CALLBACK (on_deactivate_button_clicked) },
+  */
   { "gateways_combo",               "changed", G_CALLBACK (on_gateway_combo_changed) },
   /* general tab */
   { "domain",                       "focus-out-event", G_CALLBACK (on_domain_focus_out) },
@@ -81,6 +83,25 @@ static GstDialogSignal signals[] = {
 
 static GstDialogSignal signals_after[] = {
   { "hostname",                     "focus-out-event", G_CALLBACK (on_hostname_focus_out) },
+  { NULL }
+};
+
+static const GstWidgetPolicy policies[] = {
+  /* Name                      Root   User */
+  { "properties_button",       TRUE,  FALSE },
+  { "interfaces_list",         TRUE,  TRUE },
+  { "hostname",                TRUE,  TRUE },
+  { "domain",                  TRUE,  TRUE },
+  { "dns_list",                TRUE,  TRUE },
+  { "dns_list_add",            TRUE,  TRUE },
+  { "dns_list_delete",         TRUE,  TRUE },
+  { "search_domain_list",      TRUE,  TRUE },
+  { "search_domain_add",       TRUE,  TRUE },
+  { "search_domain_delete",    TRUE,  TRUE },
+  { "host_aliases_list",       TRUE,  TRUE },
+  { "host_aliases_add",        TRUE,  TRUE },
+  { "host_aliases_properties", TRUE,  TRUE },
+  { "host_aliases_delete",     TRUE,  TRUE },
   { NULL }
 };
 
@@ -164,6 +185,7 @@ main (int argc, gchar *argv[])
   gst_init_tool ("network-admin", argc, argv, entries);
   tool = gst_network_tool_new ();
 
+  gst_dialog_set_widget_policies (tool->main_dialog, policies);
   gst_dialog_connect_signals (tool->main_dialog, signals);
   gst_dialog_connect_signals_after (tool->main_dialog, signals_after);
   set_text_buffers_callback ();

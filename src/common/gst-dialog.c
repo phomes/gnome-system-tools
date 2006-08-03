@@ -44,10 +44,13 @@ struct _GstDialogPrivate {
 	GladeXML  *gui;
 	GtkWidget *child;
 
-	gboolean modified;
-	gboolean frozen;
+	GtkWidget *lock_button;
+	GtkWidget *lock_button_label;
 
 	GSList *gst_widget_list;
+
+	gboolean modified : 1;
+	gboolean frozen   : 1;
 };
 
 static void gst_dialog_class_init (GstDialogClass *class);
@@ -117,6 +120,70 @@ gst_dialog_class_init (GstDialogClass *class)
 }
 
 static void
+on_lock_toggled (GtkWidget *widget, gpointer data)
+{
+	GstDialog *dialog = (GstDialog *) data;
+	GstDialogPrivate *priv = GST_DIALOG_GET_PRIVATE (dialog);
+	GstTool *tool = gst_dialog_get_tool (dialog);
+	gboolean active = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget));
+	GtkWidget *d;
+
+	gtk_widget_set_sensitive (GTK_WIDGET (dialog), FALSE);
+
+	if (oobs_session_set_authenticated (tool->session, active)) {
+		/* authentication succeeded */
+		gst_dialog_apply_widget_policies (dialog);
+		gtk_label_set_text_with_mnemonic (priv->lock_button_label,
+						  (active) ? _("_Lock") : _("Un_lock"));
+	} else {
+		g_signal_handlers_block_by_func (widget, on_lock_toggled, data);
+		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget), !active);
+		g_signal_handlers_unblock_by_func (widget, on_lock_toggled, data);
+
+		d = gtk_message_dialog_new (GTK_WINDOW (dialog),
+					    GTK_DIALOG_MODAL,
+					    GTK_MESSAGE_ERROR,
+					    GTK_BUTTONS_CLOSE,
+					    _("Authentication error"));
+		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (d),
+							  _("Check that you typed your password correctly and "
+							    "that you haven't activated the \"Caps Lock\" key"));
+		gtk_dialog_run (GTK_DIALOG (d));
+		gtk_widget_destroy (d);
+	}
+
+	gtk_widget_set_sensitive (GTK_WIDGET (dialog), TRUE);
+}
+
+static GtkWidget *
+construct_lock_toggle_button (GstDialog *dialog)
+{
+	GstDialogPrivate *priv;
+	GtkWidget *image, *hbox, *alignment;
+
+	priv = GST_DIALOG_GET_PRIVATE (dialog);
+
+	hbox = gtk_hbox_new (FALSE, 6);
+	alignment = gtk_alignment_new (0.5, 0.5, 0.0, 0.0);
+	image = gtk_image_new_from_stock ("gnome-stock-authentication", GTK_ICON_SIZE_BUTTON);
+	priv->lock_button_label = gtk_label_new_with_mnemonic (_("Un_lock"));
+	gtk_misc_set_alignment (GTK_MISC (priv->lock_button_label), 0.0, 0.5);
+
+	gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (hbox), priv->lock_button_label, FALSE, FALSE, 0);
+
+	priv->lock_button = gtk_toggle_button_new ();
+	gtk_container_add (GTK_CONTAINER (alignment), hbox);
+	gtk_container_add (GTK_CONTAINER (priv->lock_button), alignment);
+
+	gtk_widget_show_all (priv->lock_button);
+	gtk_dialog_add_action_widget (GTK_DIALOG (dialog), priv->lock_button, GTK_RESPONSE_NONE);
+
+	g_signal_connect (priv->lock_button, "toggled",
+			  G_CALLBACK (on_lock_toggled), dialog);
+}
+
+static void
 gst_dialog_init (GstDialog *dialog)
 {
 	GstDialogPrivate *priv;
@@ -134,6 +201,7 @@ gst_dialog_init (GstDialog *dialog)
 
 	priv->gst_widget_list = NULL;
 
+	construct_lock_toggle_button (dialog);
 	gtk_dialog_add_buttons (GTK_DIALOG (dialog),
 				GTK_STOCK_HELP, GTK_RESPONSE_HELP,
 				GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,
@@ -238,6 +306,8 @@ gst_dialog_map (GtkWidget *widget)
 	gst_dialog_freeze_visible (dialog);
 	gst_tool_update_gui (priv->tool);
 	gst_dialog_thaw_visible (dialog);
+
+	gst_dialog_apply_widget_policies (dialog);
 }
 
 GstDialog*
@@ -280,7 +350,6 @@ gst_dialog_apply_widget_policies (GstDialog *dialog)
 
 	priv = GST_DIALOG_GET_PRIVATE (dialog);
 
-	/* Hide, show + desensitize or show + sensitize widgets based on access level */
 	for (list = priv->gst_widget_list; list; list = g_slist_next (list)) {
 		gst_widget_apply_policy (list->data);
 	}
@@ -403,47 +472,32 @@ gst_dialog_modify_cb (GtkWidget *w, gpointer data)
 void
 gst_dialog_set_widget_policies (GstDialog *dialog, const GstWidgetPolicy *wp)
 {
+	GstDialogPrivate *priv;
 	GstWidget *w;
 	int i;
 
+	priv = GST_DIALOG_GET_PRIVATE (dialog);
+
 	for (i = 0; wp [i].widget; i++) {
 		w = gst_widget_new (dialog, wp [i]);
+		priv->gst_widget_list = g_slist_prepend (priv->gst_widget_list, w);
 	}
-}
-
-void
-gst_dialog_set_widget_user_modes (GstDialog *xd, const GstWidgetUserPolicy *xwup)
-{
-	GstWidget *xw;
-	int i;
-
-	for (i = 0; xwup [i].widget; i++)
-	{
-		xw = gst_dialog_get_gst_widget (xd, xwup [i].widget);
-
-		if (!xw)
-			xw = gst_widget_new_full (gst_dialog_get_widget (xd, xwup [i].widget), xd,
-						  GST_WIDGET_MODE_SENSITIVE, GST_WIDGET_MODE_SENSITIVE,
-						  FALSE, TRUE);
-
-		gst_widget_set_user_mode (xw, xwup [i].mode);
-	}
-
-	gst_dialog_apply_widget_policies (xd);
 }
 
 GstWidget *
 gst_dialog_get_gst_widget (GstDialog *xd, const gchar *name)
 {
+	GstDialogPrivate *priv;
 	GstWidget *xw = NULL;
 	GtkWidget *widget;
 	GSList *list;
 
 	g_return_val_if_fail (xd != NULL, NULL);
 
+	priv = GST_DIALOG_GET_PRIVATE (xd);
 	widget = gst_dialog_get_widget (xd, name);
 
-	for (list = xd->gst_widget_list; list; list = g_slist_next (list))
+	for (list = priv->gst_widget_list; list; list = g_slist_next (list))
 	{
 		if (((GstWidget *) list->data)->widget == widget)
 		{
@@ -467,25 +521,12 @@ gst_dialog_get_tool (GstDialog *dialog)
 }
 
 void
-gst_dialog_widget_set_user_mode (GstDialog *xd, const gchar *name, GstWidgetMode mode)
-{
-	GstWidget *xw;
-
-	g_return_if_fail (xd != NULL);
-
-	xw = gst_dialog_get_gst_widget (xd, name);
-	g_return_if_fail (xw != NULL);
-	
-	gst_widget_set_user_mode (xw, mode);
-}
-
-void
 gst_dialog_widget_set_user_sensitive (GstDialog *xd, const gchar *name, gboolean state)
 {
 	GstWidget *xw;
 
 	g_return_if_fail (xd != NULL);
-	
+
 	xw = gst_dialog_get_gst_widget (xd, name);
 	g_return_if_fail (xw != NULL);
 

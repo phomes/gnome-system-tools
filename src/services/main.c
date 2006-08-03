@@ -40,6 +40,8 @@ static GstDialogSignal signals [] = {
 };
 
 static GstWidgetPolicy policies [] = {
+	/* Name                      Root   User */
+	{ "services_list",           TRUE,  TRUE },
 	{ NULL }
 };
 

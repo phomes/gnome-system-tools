@@ -1,3 +1,7 @@
+2006-08-03  Carlos Garnacho  <carlosg@gnome.org>
+
+        * main.c: lockdown widgets when not authenticated
+
 2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.1

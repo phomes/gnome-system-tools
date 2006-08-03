@@ -58,6 +58,10 @@ struct _GstTool {
 	GtkIconTheme *icon_theme;
 	GstDialog *main_dialog;
 
+	/* password dialog */
+	GtkWidget *password_dialog;
+	GtkWidget *password_entry;
+
 	/* Remote configuration stuff */
 	/*
 	gboolean remote_config;

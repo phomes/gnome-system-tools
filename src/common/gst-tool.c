@@ -172,6 +172,25 @@ report_window_close_cb (GtkWidget *widget, GdkEventAny *event, gpointer data)
 	return TRUE;
 }
 
+static gchar *
+authentication_func (OobsSession *session,
+		     gpointer     data)
+{
+	GstTool *tool = (GstTool *) data;
+	gint response;
+
+	gtk_window_set_transient_for (GTK_WINDOW (tool->password_dialog),
+				      GTK_WINDOW (tool->main_dialog));
+	gtk_entry_set_text (tool->password_entry, "");
+	response = gtk_dialog_run (GTK_DIALOG (tool->password_dialog));
+	gtk_widget_hide (tool->password_dialog);
+
+	if (response == GTK_RESPONSE_OK)
+		return gtk_entry_get_text (GTK_ENTRY (tool->password_entry));
+	else
+		return "";
+}
+
 static void
 gst_tool_init (GstTool *tool)
 {
@@ -182,6 +201,7 @@ gst_tool_init (GstTool *tool)
 	tool->glade_common_path  = INTERFACES_DIR "/common.glade";
 
 	tool->session = oobs_session_get ();
+	oobs_session_set_authentication_func (tool->session, authentication_func, tool, NULL);
 	tool->gconf_client = gconf_client_get_default ();
 
 	xml = gst_tool_load_glade_common (tool, "report_window");
@@ -198,6 +218,12 @@ gst_tool_init (GstTool *tool)
 
 	if (pixbuf)
 		gdk_pixbuf_unref (pixbuf);
+
+	g_object_unref (xml);
+
+	xml = gst_tool_load_glade_common (tool, "password_dialog");
+	tool->password_dialog = glade_xml_get_widget (xml, "password_dialog");
+	tool->password_entry = glade_xml_get_widget (xml, "password_entry");
 
 	g_object_unref (xml);
 }
@@ -411,8 +437,7 @@ gst_tool_get_dialog (GstTool *tool)
 gboolean
 gst_tool_is_authenticated (GstTool *tool)
 {
-	/* FIXME */
-	return TRUE;
+	return oobs_session_get_authenticated (tool->session);
 }
 
 static GSList *
