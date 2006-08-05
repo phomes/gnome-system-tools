@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools 2.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-02-26 09:43+0100\n"
-"PO-Revision-Date: 2006-02-26 11:21+0200\n"
-"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
+"PO-Revision-Date: 2006-06-13 23:23+0300\n"
+"Last-Translator: Priit Laes <amd@store20.com>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,13 +24,11 @@ msgstr ""
 msgid ""
 "Comma separated list of hosts that the GST will be able to access when the "
 "remote configuration option is enabled"
-msgstr ""
-"Komaga eraldatud nimekiri hostidest, mida GST tohib kaughalduse lubamise "
-"korral hallata."
+msgstr "Komaga eraldatud nimekiri hostidest, mida GST tohib kaughalduse lubamise korral hallata."
 
 #: ../gnome-system-tools.schemas.in.h:2
 msgid "Last GST version executed"
-msgstr "Viimatikäivitatud GST versioon"
+msgstr "GST viimatikäivitatud versioon"
 
 #: ../gnome-system-tools.schemas.in.h:3
 msgid "Preferred bootloader that boot-admin will configure"
@@ -44,9 +42,7 @@ msgstr "Kaughostid"
 msgid ""
 "The GST are able to do remote configuration through SSH, enable this option "
 "to use this feature"
-msgstr ""
-"GST on võimaline SSH abil teostama kaughaldust. Selle valiku lubamisega saab "
-"seda võimalust kasutada."
+msgstr "GST on võimaline SSH abil teostama kaughaldust. Selle valiku lubamisega saab seda võimalust kasutada."
 
 #: ../gnome-system-tools.schemas.in.h:6
 msgid "The last GST version that this computer has run"
@@ -57,7 +53,7 @@ msgid ""
 "This key stores the bootloader that boot-admin will configure if there are "
 "more than one installed, if it's not set or isn't valid, then boot-admin "
 "will ask the user"
-msgstr ""
+msgstr "Selle võtme alla salvestab boot-admin mitme paigaldatud alglaaduri puhul vaikimisi alglaaduri. Kui seda pole määratud või see on vigane, siis küsib boot-admin õiget vastust kasutaja käest."
 
 #: ../gnome-system-tools.schemas.in.h:8
 msgid "Whether the tools will use remote administration or not"
@@ -65,9 +61,7 @@ msgstr "Kas tööriistad kasutavad kaughaldust või mitte"
 
 #: ../gnome-system-tools.schemas.in.h:9
 msgid "Whether the users-admin tool should show all users and groups or not"
-msgstr ""
-"Kas kasutajate haldamise vahend peab näitama kõiki kasutajaid ja gruppe või "
-"mitte"
+msgstr "Kas kasutajate haldamise vahend peab näitama kõiki kasutajaid ja gruppe või mitte"
 
 #: ../gnome-system-tools.schemas.in.h:10
 msgid "Whether the warning dialog should be shown or not"
@@ -252,16 +246,13 @@ msgstr "_Juurfailisüsteemi seade:"
 #: ../interfaces/common.glade.in.h:1
 msgid ""
 "<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
-msgstr ""
-"<span weight=\"bold\" size=\"larger\">Palun sisesta oma root parool</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Palun sisesta oma root parool</span>"
 
 #: ../interfaces/common.glade.in.h:2
 msgid ""
 "<span weight=\"bold\" size=\"larger\">The platform you are running is not "
 "supported by this tool</span>"
-msgstr ""
-"<span weight=\"bold\" size=\"larger\">Sinu poolt kasutatav platvorm pole "
-"käesoleva vahendi poolt toetatud</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Sinu poolt kasutatav platvorm pole käesoleva vahendi poolt toetatud</span>"
 
 #: ../interfaces/common.glade.in.h:3
 msgid "Enter Password"
@@ -272,7 +263,7 @@ msgid ""
 "If you know for sure that it works like one of the platforms listed below, "
 "you can select that and continue. Note, however, that this might damage the "
 "system configuration or downright cripple your computer."
-msgstr ""
+msgstr "Kui Sa oled kindel, et see töötab samamoodi nagu allpoolloetletud platvormide, siis võid sa selle tööriistaga tegelemist jätkata. Olgu siinkohal märgitud, et see võib rikkuda Su süsteemi seadistused ja muuta Sinu arvuti kasutamiskõlbmatuks."
 
 #: ../interfaces/common.glade.in.h:5
 msgid "Remote administration"
@@ -520,7 +511,7 @@ msgstr "K_augIP:"
 
 #: ../interfaces/network.glade.in.h:56
 msgid "_Retry if the connection breaks or fails to start"
-msgstr ""
+msgstr "Ühenduse katkemisel või tõrke korral _proovitakse uuesti"
 
 #: ../interfaces/network.glade.in.h:57
 msgid "_Set modem as default route to internet"
@@ -1250,7 +1241,7 @@ msgstr "Hosti nimi on muudetud"
 msgid ""
 "This will prevent you from launching new applications, and so you will have "
 "to log in again. Continue anyway?"
-msgstr ""
+msgstr "See keelab uute rakenduste käivitamist ja seetõttu pead Sa uuesti sisse logima. Kas jätkata ikkagi?"
 
 #: ../src/network/callbacks.c:460
 msgid "Change _Host name"
@@ -1288,7 +1279,7 @@ msgstr "Liidest pole olemas"
 msgid ""
 "Check that it is correctly typed and that it is correctly supported by your "
 "system."
-msgstr ""
+msgstr "Kontrolli, kas see on õigest sisestatud ja see on Sinu süsteemi poolt toetatud."
 
 #: ../src/network/main.c:157
 msgid "Configure a network interface"
@@ -1420,7 +1411,7 @@ msgstr "Andmebaasiserver"
 
 #: ../src/services/service.c:35
 msgid "Data storage system"
-msgstr ""
+msgstr "Andmete salvestamises süsteem"
 
 #: ../src/services/service.c:36
 msgid "Graphical login manager"
@@ -1464,7 +1455,7 @@ msgstr "E-posti agent"
 
 #: ../src/services/service.c:41
 msgid "Delivers your outgoing mail"
-msgstr ""
+msgstr "Väljuva posti edastaja"
 
 #: ../src/services/service.c:42
 msgid "Clock synchronization service"
@@ -1516,7 +1507,7 @@ msgstr "Teised võrgus olevad arvutid ei näe seda enam."
 
 #: ../src/shares/main.c:90
 msgid "Add a shared path, modifies it if it already exists"
-msgstr ""
+msgstr "Jagatud raja lisamine või selle muutmine olemasolu korral"
 
 #: ../src/shares/main.c:90
 msgid "PATH"
@@ -1824,9 +1815,7 @@ msgstr "Kas soovid eemaldada kasutajat \"%s\"?"
 msgid ""
 "This will disable this user's access to the system without deleting the "
 "user's home directory."
-msgstr ""
-"Selle abil saab keelata kasutajal süsteemi ligipääsu ilma kasutaja "
-"kodukataloogi kustutamata."
+msgstr "Selle abil saab keelata kasutajal süsteemi ligipääsu ilma kasutaja kodukataloogi kustutamata."
 
 #: ../src/users/user-settings.c:189
 msgid "User Account Editor"
@@ -1864,9 +1853,7 @@ msgstr "Kasutajanimi sisaldab lubamatuid sümboleid"
 msgid ""
 "Please set a valid user name consisting of a lower case letter followed by "
 "lower case letters and numbers."
-msgstr ""
-"Palun sisesta korrektne grupinimi, kasutades esimese tähena väiketähte, "
-"millele järgnevad ainult väiketähed ja/või numbrid."
+msgstr "Palun sisesta korrektne grupinimi, kasutades esimese tähena väiketähte, millele järgnevad ainult väiketähed ja/või numbrid."
 
 #: ../src/users/user-settings.c:323
 #, c-format
@@ -1990,275 +1977,4 @@ msgstr "Kest"
 
 #: ../src/users/users.desktop.in.in.h:1
 msgid "Add or remove users and groups"
-msgstr "Lisa või eemalda kasutajaid ja gruppe"
-
-#~ msgid "/dev/hda"
-#~ msgstr "/dev/hda"
-
-#~ msgid "/dev/hdb"
-#~ msgstr "/dev/hdb"
-
-#~ msgid "/dev/hdc"
-#~ msgstr "/dev/hdc"
-
-#~ msgid "/dev/hdd"
-#~ msgstr "/dev/hdd"
-
-#~ msgid ""
-#~ "/dev/modem\n"
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3"
-#~ msgstr ""
-#~ "/dev/modem\n"
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3"
-
-#~ msgid ":"
-#~ msgstr ":"
-
-#~ msgid "The group name should have less than %i characters for being valid"
-#~ msgstr "Lubatud grupinimi peab sisaldama vähem kui %i sümbolit"
-
-#~ msgid "<b>Available services:</b>"
-#~ msgstr "<b>Saadaolevad teenused:</b>"
-
-#~ msgid "<span weight=\"bold\">General Information</span>"
-#~ msgstr "<span weight=\"bold\">Üldine teave</span>"
-
-#~ msgid "<span weight=\"bold\">Service Settings</span>"
-#~ msgstr "<span weight=\"bold\">Teenuse sätted</span>"
-
-#~ msgid "Description:"
-#~ msgstr "Kirjeldus:"
-
-#~ msgid "Service _Properties"
-#~ msgstr "_Teenuse omadused"
-
-#~ msgid "Service:"
-#~ msgstr "Teenus:"
-
-#~ msgid "Status:"
-#~ msgstr "Olek:"
-
-#~ msgid "_Order list by startup sequence"
-#~ msgstr "_Nimekirja järjestamine startimise järjekorras"
-
-#~ msgid "_Start"
-#~ msgstr "_Käivita"
-
-#~ msgid "_Startup sequence:"
-#~ msgstr "Startimise _järjekord:"
-
-#~ msgid "No description available."
-#~ msgstr "Kirjeldus puudub."
-
-#~ msgid "Running"
-#~ msgstr "Käivitatud"
-
-#~ msgid "Stopped"
-#~ msgstr "Seisab"
-
-#~ msgid "Could not get info"
-#~ msgstr "Teavet pole võimalik hankida"
-
-#~ msgid "Settings for service %s"
-#~ msgstr "Teenuse %s sätted"
-
-#~ msgid "Active"
-#~ msgstr "Aktiivne"
-
-#~ msgid "Service"
-#~ msgstr "Teenus"
-
-#~ msgid "DHCP"
-#~ msgstr "DHCP"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "Scanning system configuration..."
-#~ msgstr "Süsteemi sätete skannimine..."
-
-#~ msgid "<span weight=\"bold\">Access Settings</span>"
-#~ msgstr "<span weight=\"bold\">Ligipääsu sätted</span>"
-
-#~ msgid "<span weight=\"bold\">Account Data</span>"
-#~ msgstr "<span weight=\"bold\">Kontoandmed</span>"
-
-#~ msgid "<span weight=\"bold\">Connection</span>"
-#~ msgstr "<span weight=\"bold\">Ühendus</span>"
-
-#~ msgid "<span weight=\"bold\">DNS Servers</span>"
-#~ msgstr "<span weight=\"bold\">Nimeserverid</span>"
-
-#~ msgid "<span weight=\"bold\">Host Settings</span>"
-#~ msgstr "<span weight=\"bold\">Hosti sätted</span>"
-
-#~ msgid "<span weight=\"bold\">PPP Settings</span>"
-#~ msgstr "<span weight=\"bold\">PPP sätted</span>"
-
-#~ msgid "<span weight=\"bold\">Search Domains</span>"
-#~ msgstr "<span weight=\"bold\">Otsingudomeenid</span>"
-
-#~ msgid "<span weight=\"bold\">Windows Networking</span>"
-#~ msgstr "<span weight=\"bold\">Windows'i võrk</span>"
-
-#~ msgid "<span weight=\"bold\">Wireless settings:</span>"
-#~ msgstr "<span weight=\"bold\">Traadita võrgu sätted:</span>"
-
-#~ msgid "Add DNS server"
-#~ msgstr "Lisa nimeserver"
-
-#~ msgid "Add search domain"
-#~ msgstr "Lisa otsingudomeen"
-
-#~ msgid "Address configuration"
-#~ msgstr "Aadressi seaded"
-
-#~ msgid "Connection type"
-#~ msgstr "Ühenduse tüüp"
-
-#~ msgid "Creating a new network connection"
-#~ msgstr "Võrguühenduse loomine"
-
-#~ msgid "Current network profile:"
-#~ msgstr "Praegune võrguprofiil:"
-
-#~ msgid "ISP phone number"
-#~ msgstr "Teenusepakkuja telefoninumber"
-
-#~ msgid "Network profiles"
-#~ msgstr "Võrguprofiilid"
-
-#~ msgid "New network profile"
-#~ msgstr "Uus võrguprofiil"
-
-#~ msgid "PPPD _options:"
-#~ msgstr "_PPPD valikud:"
-
-#~ msgid "Pa_ssword (confirm):"
-#~ msgstr "Parool (_korda):"
-
-#~ msgid "Phone _number:"
-#~ msgstr "Telefoni_number:"
-
-#~ msgid "Set _DNS servers manually"
-#~ msgstr "Säti _nimeserverid käsitsi"
-
-#~ msgid "Username and password"
-#~ msgstr "Kasutajanimi ja parool"
-
-#~ msgid "Wireless device:"
-#~ msgstr "Traadita võrgu seade:"
-
-#~ msgid "_Configuration:"
-#~ msgstr "_Sätted:"
-
-#~ msgid "_Ethernet"
-#~ msgstr "_Ethernet"
-
-#~ msgid "_IR LAN"
-#~ msgstr "_IR LAN"
-
-#~ msgid "_Modem (PPP)"
-#~ msgstr "_Modem (PPP)"
-
-#~ msgid "_Network Profiles"
-#~ msgstr "_Võrguprofiilid"
-
-#~ msgid "_Network name:"
-#~ msgstr "Võrgi _nimi:"
-
-#~ msgid "_Parallel Line"
-#~ msgstr "_Rööpliin"
-
-#~ msgid "_Primary:"
-#~ msgstr "_Peamine:"
-
-#~ msgid "_Remote IP address:"
-#~ msgstr "Kaug_IP aadress:"
-
-#~ msgid "_Wireless"
-#~ msgstr "_Traadita võrk"
-
-#~ msgid "<span weight=\"bold\">Time Configuration</span>"
-#~ msgstr "<span weight=\"bold\">Aja sätted</span>"
-
-#~ msgid "date"
-#~ msgstr "kuupäev"
-
-#~ msgid "hours"
-#~ msgstr "tundi"
-
-#~ msgid "minutes"
-#~ msgstr "minutit"
-
-#~ msgid "seconds"
-#~ msgstr "sekundit"
-
-#~ msgid "Other Groups"
-#~ msgstr "Muud grupid"
-
-#~ msgid "_Available groups:"
-#~ msgstr "_Saadaolevad grupid:"
-
-#~ msgid "_Generate Password"
-#~ msgstr "Parooli_generaator"
-
-#~ msgid "_User's groups:"
-#~ msgstr "_Kasutajagrupid:"
-
-#~ msgid "_Continue"
-#~ msgstr "_Jätka"
-
-#~ msgid "_Disable"
-#~ msgstr "_Keela"
-
-#~ msgid "Low"
-#~ msgstr "Vaikne"
-
-#~ msgid "Medium"
-#~ msgstr "Keskmine"
-
-#~ msgid "Loud"
-#~ msgstr "Valju"
-
-#~ msgid "Ethernet LAN card"
-#~ msgstr "Võrgukaart"
-
-#~ msgid "Wireless LAN card"
-#~ msgstr "Traadita võrgu kaart"
-
-#~ msgid "Modem or transfer cable"
-#~ msgstr "Modem või ühenduskaabel"
-
-#~ msgid "Parallel line"
-#~ msgstr "Rööpliin"
-
-#~ msgid "Infrared LAN"
-#~ msgstr "Infrapunane võrk"
-
-#~ msgid "Unknown interface type"
-#~ msgstr "Tundmatu liidese tüüp"
-
-#~ msgid "Automatic (DHCP)"
-#~ msgstr "Automaatne (DHCP)"
-
-#~ msgid "Automatic (BOOTP)"
-#~ msgstr "Automaatne (BOOTP)"
-
-#~ msgid "Tones"
-#~ msgstr "Toon"
-
-#~ msgid "Error in IP address"
-#~ msgstr "Viga IP aadressis"
-
-#~ msgid "Invalid phone number"
-#~ msgstr "Vigane telefoninumber"
-
-#~ msgid "Profile name"
-#~ msgstr "Profiili nimi"
+msgstr "Kasutajate ja gruppide lisamine või eemaldamine"
