@@ -1,3 +1,8 @@
+2006-08-17  Christophe Bliard  <christophe.bliard@trux.info>
+
+	* fr/figures/network-tool.png:
+	* fr/fr.po: Add French translation
+
 2006-03-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.14.0
