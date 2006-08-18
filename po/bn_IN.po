@@ -1,0 +1,2229 @@
+# Bengali India translation of gnome-system-tools
+# This file is distributed under the same license as the gnome-system-tools package.
+# Copyright (C) 2004 Free Software Foundation.
+# Runa Bhattacharjee <runa@bengalinux.org>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-system-tools\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-18 00:18+0200\n"
+"PO-Revision-Date: 2006-08-17 17:09+0530\n"
+"Last-Translator: Runa Bhattacharjee <runabh@gmail.com>\n"
+"Language-Team: Bengali India\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
+"\n"
+
+#: ../gnome-system-tools.schemas.in.h:1
+msgid ""
+"Comma separated list of hosts that the GST will be able to access when the "
+"remote configuration option is enabled"
+msgstr ""
+"দূরবর্তী কনফিগারেশনের অপশন সক্রিয় করা হলে GST'র দ্বারা ব্যবহারযোগ্য হোস্টগুলির "
+"তালিকা, কমা চিহ্ন দ্বারা বিভাজিত।"
+
+#: ../gnome-system-tools.schemas.in.h:2
+msgid "Last GST version executed"
+msgstr "সর্বশেষ ব্যবহৃত GST'র সংস্করণ"
+
+#: ../gnome-system-tools.schemas.in.h:3
+msgid "Preferred bootloader that boot-admin will configure"
+msgstr "boot-admin'র দ্বারা কনফিগার করার যোগ্য বাঞ্ছনীয় বুট-লোডার"
+
+#: ../gnome-system-tools.schemas.in.h:4
+msgid "Remote hosts"
+msgstr "দূরবর্তী হোস্ট"
+
+#: ../gnome-system-tools.schemas.in.h:5
+msgid ""
+"The GST are able to do remote configuration through SSH, enable this option "
+"to use this feature"
+msgstr ""
+"SSH'র সাহায্যে GST দ্বারা দূরবর্তী অবস্থান থেকে কনফিগারেশন করা যাবে। এই বৈশিষ্ট্য "
+"ব্যবহারের জন্য চিহ্নিত অপশন সক্রিয়।"
+
+#: ../gnome-system-tools.schemas.in.h:6
+msgid "The last GST version that this computer has run"
+msgstr "বর্তমান কম্পিউটারে নির্বাহিত সর্বশেষ GST'র সংস্করণ"
+
+#: ../gnome-system-tools.schemas.in.h:7
+msgid ""
+"This key stores the bootloader that boot-admin will configure if there are "
+"more than one installed, if it's not set or isn't valid, then boot-admin "
+"will ask the user"
+msgstr ""
+"একাধিক বুট-লোডার ইনস্টল করা থাকলে boot-admin'র দ্বারা যে বুট-লোডারটি কনফিগার করা "
+"হবে সেটির তথ্য এই কি'র মাধ্যমে সংরক্ষিত হয়। এই মান নির্ধারিত না থাকলে অথবা বৈধ "
+"না হলে boot-admin'র দ্বারা ব্যবহারকারীকে জিজ্ঞাসা করা হবে।"
+
+#: ../gnome-system-tools.schemas.in.h:8
+msgid "Whether the tools will use remote administration or not"
+msgstr "সরঞ্জামগুলির দ্বারা দূরবর্তী পরিচালন ব্যবস্থা ব্যবহার করা হবে কিনা"
+
+#: ../gnome-system-tools.schemas.in.h:9
+msgid "Whether the users-admin tool should show all users and groups or not"
+msgstr ""
+"users-admin নামক সরঞ্জামের দ্বারা সমস্ত ব্যবহারকারী ও দলের তথ্য প্রদর্শিত হবে কি না"
+
+#: ../gnome-system-tools.schemas.in.h:10
+msgid "Whether the warning dialog should be shown or not"
+msgstr "সতর্কবার্তার ডায়লগ বক্সটি প্রদর্শিত হবে কি না"
+
+#: ../interfaces/boot.glade.in.h:1
+#, fuzzy
+msgid "<b>Security</b>"
+msgstr "<b>নির্বাচন</b>"
+
+#: ../interfaces/boot.glade.in.h:2
+msgid ""
+"<span size=\"larger\" weight=\"bold\">Several bootloaders have been found</"
+"span>\n"
+"\n"
+"please select which do you want to configure"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:5 ../interfaces/users.glade.in.h:3
+msgid "<span weight=\"bold\">Basic Settings</span>"
+msgstr "<span weight=\"bold\">মৌলিক বৈশিষ্ট্যাবলী</span>"
+
+#: ../interfaces/boot.glade.in.h:6
+#, fuzzy
+msgid "<span weight=\"bold\">Image Settings</span>"
+msgstr "<span weight=\"bold\">মৌলিক বৈশিষ্ট্যাবলী</span>"
+
+#: ../interfaces/boot.glade.in.h:7
+#, fuzzy
+msgid "<span weight=\"bold\">Other Settings</span>"
+msgstr "<span weight=\"bold\">ঐচ্ছিক বৈশিষ্ট্য</span>"
+
+#: ../interfaces/boot.glade.in.h:8
+#, fuzzy
+msgid "<span weight=\"bold\">Starting the Computer</span>"
+msgstr "<span weight=\"bold\">দলের সদস্যবৃন্দ</span>"
+
+#: ../interfaces/boot.glade.in.h:9
+msgid "Ask at boot"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:10 ../src/boot/main.c:71
+#, fuzzy
+msgid "Boot Manager Settings"
+msgstr "সময় এবং তারিখ সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../interfaces/boot.glade.in.h:11
+msgid ""
+"Choose a kernel image to boot, and a partition to mount as the root "
+"partition. Optionally, you may also enter parameters passed to the kernel at "
+"boot time."
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:12
+msgid "Click \"Forward\" to continue"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:13
+#, fuzzy
+msgid "Confirmation"
+msgstr "নিশ্চায়ন:(_f)"
+
+#. set window title
+#: ../interfaces/boot.glade.in.h:14 ../src/boot/boot-druid.c:442
+#: ../src/boot/boot-druid.c:454
+msgid "Creating a new boot image"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:15
+msgid "Don't ask me again"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:16
+msgid "Enable IDE SCSI emulation"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:17
+msgid ""
+"Enter a name for the boot image, and specify what kind of operating system "
+"it is."
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:18
+msgid "Finished"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:19
+msgid "Manual"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:20
+msgid "Number of colors:"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:21
+msgid "Other parameters:"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:22
+#, fuzzy
+msgid "Password"
+msgstr "পাসওয়ার্ড (_a)"
+
+#: ../interfaces/boot.glade.in.h:23
+#, fuzzy
+msgid "Protect with password"
+msgstr "নেটওয়ার্ক পাসওয়ার্ড:(_p)"
+
+#: ../interfaces/boot.glade.in.h:24
+#, fuzzy
+msgid "Resolution:"
+msgstr "অবস্থান মুছে ফেলুন"
+
+#: ../interfaces/boot.glade.in.h:25
+msgid "Seconds to wait before loading default kernel or OS"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:26
+msgid "Select a kernel image"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:27
+#, fuzzy
+msgid "Select an initrd image"
+msgstr "অবস্থানের নাম নির্বাচন করুন"
+
+#: ../interfaces/boot.glade.in.h:28
+msgid "Specify the partition on which the operating system is installed."
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:29
+msgid ""
+"The new boot image has been added. Please click \"Apply\" to save your "
+"changes."
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:30
+msgid ""
+"This assistant is designed to help you quickly and easily add a new boot "
+"image to your system."
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:31
+msgid "Video modes (only frame buffer)"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:32
+#, fuzzy
+msgid "_Add..."
+msgstr "যোগ করুন (_A)"
+
+#: ../interfaces/boot.glade.in.h:33
+#, fuzzy
+msgid "_Device:"
+msgstr "পরিসেবা"
+
+#: ../interfaces/boot.glade.in.h:34
+msgid "_Edit"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:35 ../src/boot/boot-settings.c:44
+msgid "_Initrd image path:"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:36
+msgid "_Kernel image path:"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:37
+#, fuzzy
+msgid "_Name:"
+msgstr "নাম:"
+
+#: ../interfaces/boot.glade.in.h:38
+msgid "_Operating system:"
+msgstr ""
+
+#: ../interfaces/boot.glade.in.h:39
+#, fuzzy
+msgid "_Parameters:"
+msgstr "বৈশিষ্ট্যাবলী (_P)"
+
+#: ../interfaces/boot.glade.in.h:40
+msgid "_Root file system device:"
+msgstr ""
+
+#: ../interfaces/common.glade.in.h:1
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">অনুগ্রহ করে root পাসওয়ার্ড লিখুন</span>"
+
+#: ../interfaces/common.glade.in.h:2
+#, fuzzy
+msgid ""
+"<span weight=\"bold\" size=\"larger\">The platform you are running is not "
+"supported by this tool</span>"
+msgstr "এই সরঞ্জামের দ্বারা আপনার ব্যবহৃত প্ল্যাটফর্ম সমর্থিত হয় না"
+
+#: ../interfaces/common.glade.in.h:3
+msgid "Enter Password"
+msgstr "পাসওয়ার্ড লিখুন"
+
+#: ../interfaces/common.glade.in.h:4
+msgid ""
+"If you know for sure that it works like one of the platforms listed below, "
+"you can select that and continue. Note, however, that this might damage the "
+"system configuration or downright cripple your computer."
+msgstr ""
+"নীচে উল্লিখিত কোনো একটি প্ল্যাটফর্মে রূপে এটি চালতে সক্ষম জানলে সেটি নির্বাচন করে "
+"এগিয়ে চলুন। উল্লেখ্য, এর ফলের সিস্টেমের কনফিগারেশন ক্ষতিগ্রস্থ হতে পারে অথবা "
+"কম্পিউটারের কর্মহানী হওয়া সম্ভব।"
+
+#: ../interfaces/common.glade.in.h:5
+#, fuzzy
+msgid "Remote administration"
+msgstr "অবস্থান মুছে ফেলুন"
+
+#: ../interfaces/common.glade.in.h:6
+#, fuzzy
+msgid "Run _Without Password"
+msgstr "পাসওয়ার্ড লিখুন"
+
+#: ../interfaces/common.glade.in.h:7
+#, fuzzy
+msgid "Unsupported Platform"
+msgstr "অসমর্থিত প্ল্যাটফর্ম"
+
+#: ../interfaces/common.glade.in.h:8
+msgid "Use this window to select the computer you wish to configure"
+msgstr ""
+
+#: ../interfaces/common.glade.in.h:9
+#, fuzzy
+msgid ""
+"You need administrator privileges to use this tool. Enter a password to "
+"modify your system configuration."
+msgstr ""
+"এই সরঞ্জাম ব্যবহারের জন্য প্রশাসনিক অধিকার থাকা আবশ্যক। সিস্টেম কনফিগারেশন "
+"পরিবর্তনের \n"
+"জন্য পাসওয়ার্ড লিখুন।"
+
+#: ../interfaces/common.glade.in.h:10
+msgid "_Password:"
+msgstr "পাসওয়ার্ড: (_P)"
+
+#: ../interfaces/network.glade.in.h:1
+msgid "<b>Account data</b>"
+msgstr "<b>অ্যাকাউন্ট সংক্রান্ত তথ্য</b>"
+
+#: ../interfaces/network.glade.in.h:2
+msgid "<b>Connection settings</b>"
+msgstr "<b>সংযোগ সংক্রান্ত বৈশিষ্ট্য</b>"
+
+#: ../interfaces/network.glade.in.h:3
+#, fuzzy
+msgid "<b>Connection</b>"
+msgstr "<b>সংযোগ সংক্রান্ত বৈশিষ্ট্য</b>"
+
+#: ../interfaces/network.glade.in.h:4
+msgid "<b>DNS Servers</b>"
+msgstr "<b>DNS সার্ভার</b>"
+
+#: ../interfaces/network.glade.in.h:5
+msgid "<b>Host Settings</b>"
+msgstr "<b>হোস্ট সংক্রান্ত বৈশিষ্ট্য</b>"
+
+#: ../interfaces/network.glade.in.h:6
+msgid "<b>Internet service provider data</b>"
+msgstr "<b>ইন্টারনেট পরিসেবা উপলব্ধকারী সংক্রান্ত তথ্য</b>"
+
+#: ../interfaces/network.glade.in.h:7
+msgid "<b>Modem settings</b>"
+msgstr "<b>মোডেম সংক্রান্ত বৈশিষ্ট্য</b>"
+
+#: ../interfaces/network.glade.in.h:8
+msgid "<b>Search Domains</b>"
+msgstr "<b>অনুসন্ধানের ডোমেইন</b>"
+
+#: ../interfaces/network.glade.in.h:9
+msgid "<b>Wireless settings</b>"
+msgstr "<b>বেতার সংক্রান্ত বৈশিষ্ট্যাবলী</b>"
+
+#: ../interfaces/network.glade.in.h:10
+msgid "Aliases:"
+msgstr "উপনাম:"
+
+#: ../interfaces/network.glade.in.h:11
+msgid "C_onfiguration:"
+msgstr "কনফিগারেশন: (_o)"
+
+#: ../interfaces/network.glade.in.h:12
+msgid "Connections"
+msgstr "সংযোগ"
+
+#: ../interfaces/network.glade.in.h:13
+msgid "DNS"
+msgstr "DNS"
+
+#: ../interfaces/network.glade.in.h:14
+msgid "D_omain name:"
+msgstr "ডোমেইনের নাম: (_o)"
+
+#: ../interfaces/network.glade.in.h:15
+msgid "Default _gateway device:"
+msgstr "ডিফল্ট গেটওয়ে ডিভাইস: (_g)"
+
+#: ../interfaces/network.glade.in.h:16
+#, fuzzy
+msgid "Device:"
+msgstr "পরিসেবা"
+
+#: ../interfaces/network.glade.in.h:17
+msgid "E_nable this connection"
+msgstr "চিহ্নিত সংযোগ সক্রিয় করা হবে (_n)"
+
+#: ../interfaces/network.glade.in.h:18 ../interfaces/users.glade.in.h:21
+msgid "General"
+msgstr "সাধারণ"
+
+#: ../interfaces/network.glade.in.h:19
+msgid "Host alias settings"
+msgstr "হোস্টের উপনাম সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../interfaces/network.glade.in.h:20
+msgid "Hosts"
+msgstr "হোস্ট"
+
+#: ../interfaces/network.glade.in.h:21 ../interfaces/shares.glade.in.h:15
+msgid "IP address:"
+msgstr "IP ঠিকানা:"
+
+#: ../interfaces/network.glade.in.h:22
+#, fuzzy
+msgid "Interface name:"
+msgstr "ইন্টারফেস সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../interfaces/network.glade.in.h:23
+msgid "Interface properties"
+msgstr "ইন্টারফেস সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../interfaces/network.glade.in.h:24
+msgid "Key _type:"
+msgstr ""
+
+#: ../interfaces/network.glade.in.h:25
+msgid "Location name:"
+msgstr "অবস্থানের নাম:"
+
+#: ../interfaces/network.glade.in.h:26
+msgid "Location:"
+msgstr "অবস্থান:"
+
+#: ../interfaces/network.glade.in.h:27
+msgid "Modem"
+msgstr "মোডেম"
+
+#: ../interfaces/network.glade.in.h:28
+msgid "Network name (_ESSID):"
+msgstr "নেটওয়ার্কের নাম (ESSID):(_E)"
+
+#: ../interfaces/network.glade.in.h:29
+msgid ""
+"Off\n"
+"Low\n"
+"Medium\n"
+"Loud"
+msgstr ""
+"বন্ধ\n"
+"স্বল্প\n"
+"মাঝারি\n"
+"জোরে"
+
+#: ../interfaces/network.glade.in.h:33
+msgid "Options"
+msgstr "বিকল্প"
+
+#: ../interfaces/network.glade.in.h:34
+msgid "P_assword"
+msgstr "পাসওয়ার্ড (_a)"
+
+#: ../interfaces/network.glade.in.h:35
+msgid ""
+"Plain (ASCII)\n"
+"Hexadecimal"
+msgstr ""
+"সাধারণ (ASCII)\n"
+"হেক্সাডেসিমাল"
+
+#: ../interfaces/network.glade.in.h:37
+msgid "Select location name"
+msgstr "অবস্থানের নাম নির্বাচন করুন"
+
+#: ../interfaces/network.glade.in.h:38
+#, fuzzy
+msgid ""
+"Static IP address\n"
+"DHCP"
+msgstr "IP ঠিকানা উল্লেখ করুন"
+
+#: ../interfaces/network.glade.in.h:40
+msgid ""
+"Tones\n"
+"Pulses"
+msgstr ""
+"টোন\n"
+"পালস"
+
+#: ../interfaces/network.glade.in.h:42
+msgid "Use the Internet service provider nameservers"
+msgstr "ইন্টারনেট পরিসেবা উপলব্ধকারীদের নেমসার্ভার ব্যবহার করা হবে"
+
+#: ../interfaces/network.glade.in.h:43
+msgid "WEP _key:"
+msgstr ""
+
+#: ../interfaces/network.glade.in.h:44 ../src/network/ifaces-list.c:34
+msgid "_Activate"
+msgstr "সক্রিয় করা হবে (_A)"
+
+#: ../interfaces/network.glade.in.h:45
+msgid "_Autodetect"
+msgstr "স্বয়ংক্রিয় সনাক্তকরণ ব্যবস্থা (_A)"
+
+#: ../interfaces/network.glade.in.h:46 ../src/network/ifaces-list.c:35
+msgid "_Deactivate"
+msgstr "নিষ্ক্রিয় করা হবে (_D)"
+
+#: ../interfaces/network.glade.in.h:47
+msgid "_Dial prefix:"
+msgstr "ডায়াল করার পূর্বে উল্লিখিত সংখ্যা: (_D)"
+
+#: ../interfaces/network.glade.in.h:48
+msgid "_Dial type:"
+msgstr "ডায়াল করার প্রকৃতি: (_D)"
+
+#: ../interfaces/network.glade.in.h:49
+msgid "_Gateway address:"
+msgstr "গেটওয়ের ঠিকানা: (_G)"
+
+#: ../interfaces/network.glade.in.h:50
+#, fuzzy
+msgid "_Hostname:"
+msgstr "হোস্ট-নেম:(_H)"
+
+#: ../interfaces/network.glade.in.h:51
+msgid "_IP address:"
+msgstr "IP ঠিকানা: (_I)"
+
+#: ../interfaces/network.glade.in.h:52
+msgid "_Local IP:"
+msgstr "স্থানীয় IP: (_L)"
+
+#: ../interfaces/network.glade.in.h:53
+msgid "_Modem port:"
+msgstr "মোডেমের পোর্ট:(_M)"
+
+#: ../interfaces/network.glade.in.h:54
+msgid "_Phone number:"
+msgstr "ফোন নম্বর: (_P)"
+
+#: ../interfaces/network.glade.in.h:55
+msgid "_Remote IP:"
+msgstr "দূরবর্তী IP: (_R)"
+
+#: ../interfaces/network.glade.in.h:56
+msgid "_Retry if the connection breaks or fails to start"
+msgstr "সংযোগ বিচ্ছিন্ন হলে অথবা স্থাপিত না হলে পুনরা চেষ্টা করা হবে (_R)"
+
+#: ../interfaces/network.glade.in.h:57
+msgid "_Set modem as default route to internet"
+msgstr "ইন্টারনেটের সাথে সংযোগ স্থাপনের ডিফল্ট পদ্ধতি হিসাবে মোডেম ব্যবহৃত হবে (_S)"
+
+#: ../interfaces/network.glade.in.h:58
+msgid "_Subnet mask:"
+msgstr "সাবনেট মাস্ক: (_S)"
+
+#: ../interfaces/network.glade.in.h:59 ../interfaces/users.glade.in.h:61
+msgid "_Username:"
+msgstr "ব্যবহারকারী নাম: (_U)"
+
+#: ../interfaces/network.glade.in.h:60
+msgid "_Volume:"
+msgstr "আওয়াজ:(_V)"
+
+#: ../interfaces/services.glade.in.h:1
+msgid "Advanced settings:"
+msgstr "উন্নত বৈশিষ্ট্য:"
+
+#: ../interfaces/services.glade.in.h:2
+msgid "Select the services that you wish to activate:"
+msgstr "সক্রিয় করার উদ্দেশ্যে প্রয়োজনীয় পরিসেবা নির্বাচন করুন:"
+
+#: ../interfaces/shares.glade.in.h:1
+#, fuzzy
+msgid "<b>Allowed hosts</b>"
+msgstr "<b>অনুমতি প্রাপ্ত হোস্ট</b>"
+
+#: ../interfaces/shares.glade.in.h:2
+#, fuzzy
+msgid "<b>Hosts settings</b>"
+msgstr "<b>হোস্ট সংক্রান্ত বৈশিষ্ট্য</b>"
+
+#: ../interfaces/shares.glade.in.h:3
+#, fuzzy
+msgid "<b>Share properties</b>"
+msgstr "<b>শেয়ার সংক্রান্ত বৈশিষ্ট্য</b>"
+
+#: ../interfaces/shares.glade.in.h:4
+#, fuzzy
+msgid "<b>Shared folder</b>"
+msgstr "<b>শেয়ার করা ফোল্ডার</b>"
+
+#: ../interfaces/shares.glade.in.h:5
+#, fuzzy
+msgid "<b>WINS server</b>"
+msgstr "<b>DNS সার্ভার</b>"
+
+#: ../interfaces/shares.glade.in.h:6
+#, fuzzy
+msgid "<b>Windows sharing Settings</b>"
+msgstr "<b>Windows শেয়ার</b>"
+
+#: ../interfaces/shares.glade.in.h:7
+msgid "Add allowed hosts"
+msgstr "অনুমোদিত হোস্ট যোগ করুন"
+
+#: ../interfaces/shares.glade.in.h:8
+msgid "Allow _browsing folder"
+msgstr ""
+
+#: ../interfaces/shares.glade.in.h:9
+msgid "Allowed hosts:"
+msgstr "অনুমোদিত হোস্ট:"
+
+#: ../interfaces/shares.glade.in.h:10
+msgid "Comment:"
+msgstr "বক্তব্য:"
+
+#: ../interfaces/shares.glade.in.h:11
+#, fuzzy
+msgid "Do not use WINS server"
+msgstr "বর্তমান কম্পিউটার একটি WINS সার্ভার (_W)"
+
+#: ../interfaces/shares.glade.in.h:12
+#, fuzzy
+msgid "Domain / _Workgroup"
+msgstr "ডোমেইন / ওয়ার্কগ্রুপ (_W)"
+
+#: ../interfaces/shares.glade.in.h:13
+msgid "General Windows sharing settings"
+msgstr ""
+
+#: ../interfaces/shares.glade.in.h:14
+msgid "Host name:"
+msgstr "হোস্ট-নেম:"
+
+#: ../interfaces/shares.glade.in.h:16
+msgid "Name:"
+msgstr "নাম:"
+
+#: ../interfaces/shares.glade.in.h:17
+msgid "Netmask:"
+msgstr "নেটমাস্ক:"
+
+#: ../interfaces/shares.glade.in.h:18
+msgid "Network:"
+msgstr "নেটওয়ার্ক:"
+
+#: ../interfaces/shares.glade.in.h:19 ../src/shares/nfs-acl-table.c:57
+msgid "Read only"
+msgstr "শুধুমাত্র পাঠযোগ্য"
+
+#: ../interfaces/shares.glade.in.h:20
+#, fuzzy
+msgid "Share folder"
+msgstr "শেয়ার করা ফোল্ডার (_S)"
+
+#: ../interfaces/shares.glade.in.h:21
+#, fuzzy
+msgid "Share with:"
+msgstr "চিহ্নিত বস্তু দ্বারা শেয়ার করা হবে:"
+
+#: ../interfaces/shares.glade.in.h:22
+#, fuzzy
+msgid "This computer is a WINS server"
+msgstr "বর্তমান কম্পিউটার একটি WINS সার্ভার (_W)"
+
+#: ../interfaces/shares.glade.in.h:23
+#, fuzzy
+msgid "Use WINS Server"
+msgstr "WINS সার্ভার ব্যবহার করা হবে:(_s)"
+
+#: ../interfaces/shares.glade.in.h:24
+#, fuzzy
+msgid "Windows sharing settings"
+msgstr "<b>Windows শেয়ার</b>"
+
+#: ../interfaces/shares.glade.in.h:25
+#, fuzzy
+msgid "_Add host"
+msgstr "ব্যবহারকারী যোগ করুন (_A)"
+
+#: ../interfaces/shares.glade.in.h:26
+msgid "_Host description:"
+msgstr ""
+
+#: ../interfaces/shares.glade.in.h:27
+msgid "_Path:"
+msgstr "পাথ:(_P)"
+
+#: ../interfaces/shares.glade.in.h:28
+msgid "_Read only"
+msgstr "শুধুমাত্র পাঠযোগ্য (_R)"
+
+#: ../interfaces/time.glade.in.h:1
+msgid "(unconfigured)"
+msgstr "(কনফিগার করা হয়নি)"
+
+#: ../interfaces/time.glade.in.h:2
+msgid "<b>Selection</b>"
+msgstr "<b>নির্বাচন</b>"
+
+#: ../interfaces/time.glade.in.h:3
+#, fuzzy
+msgid "<b>Time zone</b>"
+msgstr "<b>সময়ের অঞ্চল</b>"
+
+#: ../interfaces/time.glade.in.h:4
+msgid "Add NTP Server"
+msgstr "NTP সার্ভার যোগ করুন"
+
+#: ../interfaces/time.glade.in.h:5
+msgid "NTP server"
+msgstr "NTP সার্ভার"
+
+#: ../interfaces/time.glade.in.h:6
+msgid "S_ynchronize clock with Internet servers:"
+msgstr "ইন্টারনেট সার্ভারের সাথে ঘড়ি সুসংগত করা হবে: (_y)"
+
+#: ../interfaces/time.glade.in.h:7
+#, fuzzy
+msgid "Se_lect Servers..."
+msgstr "সার্ভার নির্বাচন করুন(_l)"
+
+#: ../interfaces/time.glade.in.h:8
+msgid "Time servers"
+msgstr "সময়ের সার্ভার"
+
+#: ../interfaces/time.glade.in.h:9
+msgid "Time zone"
+msgstr "সময়ের অঞ্চল"
+
+#: ../interfaces/time.glade.in.h:10
+msgid "Time zone:"
+msgstr "সময়ের অঞ্চল:"
+
+#: ../interfaces/time.glade.in.h:11
+msgid "_Date:"
+msgstr "তারিখ:(_D)"
+
+#: ../interfaces/time.glade.in.h:12
+msgid "_Select Time Zone..."
+msgstr "সময়ের অঞ্চল নির্বাচন করুন...(_S)"
+
+#: ../interfaces/time.glade.in.h:13
+msgid "_Time:"
+msgstr "সময়:(_T)"
+
+#: ../interfaces/users.glade.in.h:1
+msgid "<span weight=\"bold\">Advanced Settings</span>"
+msgstr "<span weight=\"bold\">উন্নত বৈশিষ্ট্য</span>"
+
+#: ../interfaces/users.glade.in.h:2
+msgid "<span weight=\"bold\">Automatic UID/GID</span>"
+msgstr "<span weight=\"bold\">স্বয়ংক্রিয় UID/GID</span>"
+
+#: ../interfaces/users.glade.in.h:4
+msgid "<span weight=\"bold\">Contact Information</span>"
+msgstr "<span weight=\"bold\">যোগাযোগ সংক্রান্ত তথ্য</span>"
+
+#: ../interfaces/users.glade.in.h:5
+msgid "<span weight=\"bold\">Group Members</span>"
+msgstr "<span weight=\"bold\">দলের সদস্যবৃন্দ</span>"
+
+#: ../interfaces/users.glade.in.h:6
+msgid "<span weight=\"bold\">Optional Settings</span>"
+msgstr "<span weight=\"bold\">ঐচ্ছিক বৈশিষ্ট্য</span>"
+
+#: ../interfaces/users.glade.in.h:7
+msgid "<span weight=\"bold\">Password Settings</span>"
+msgstr "<span weight=\"bold\">পাসওয়ার্ড সংক্রান্ত বৈশিষ্ট্য</span>"
+
+#: ../interfaces/users.glade.in.h:8
+msgid "<span weight=\"bold\">Password</span>"
+msgstr "<span weight=\"bold\">পাসওয়ার্ড</span>"
+
+#: ../interfaces/users.glade.in.h:9
+msgid "<span weight=\"bold\">Profile Settings</span>"
+msgstr "<span weight=\"bold\">প্রোফাইল সংক্রান্ত বৈশিষ্ট্য</span>"
+
+#: ../interfaces/users.glade.in.h:10
+msgid "<span weight=\"bold\">System Defaults</span>"
+msgstr "<span weight=\"bold\">সিস্টেমের ডিফল্ট মান</span>"
+
+#: ../interfaces/users.glade.in.h:11
+msgid "<span weight=\"bold\">User Profile</span>"
+msgstr "<span weight=\"bold\">ব্যবহারকারীর প্রোফাইল</span>"
+
+#: ../interfaces/users.glade.in.h:12
+msgid "Account"
+msgstr "অ্যাকাউন্ট"
+
+#: ../interfaces/users.glade.in.h:13
+msgid "Advanced"
+msgstr "উন্নত"
+
+#: ../interfaces/users.glade.in.h:14
+#, fuzzy
+msgid "Allow user to:"
+msgstr "অনুমোদিত হোস্ট:"
+
+#: ../interfaces/users.glade.in.h:15
+msgid "Assign a random password by default"
+msgstr "ডিফল্ট রূপে যথেচ্ছ পাসওয়ার্ড স্থাপিত হবে"
+
+#: ../interfaces/users.glade.in.h:16
+msgid "Check password _quality"
+msgstr "পাসওয়ার্ডের দৃঢ়তা পরীক্ষা করা হবে (_q)"
+
+#: ../interfaces/users.glade.in.h:17
+msgid "Con_firmation:"
+msgstr "নিশ্চায়ন:(_f)"
+
+#: ../interfaces/users.glade.in.h:18
+msgid "Days between warning and password expiration:"
+msgstr ""
+"পাসওয়ার্ডের মেয়াদ উত্তীর্ণ হওয়ার সতর্কবার্তা এবং অকার্য়করী হওয়ার সঠিক তারিখের "
+"মধ্যবর্তী দিনের সংখ্যা :"
+
+#: ../interfaces/users.glade.in.h:19
+msgid "Default _group:"
+msgstr "ডিফল্ট দল: (_g)"
+
+#: ../interfaces/users.glade.in.h:20
+msgid "Default _shell:"
+msgstr "ডিফল্ট শেল: (_s)"
+
+#: ../interfaces/users.glade.in.h:22
+msgid "Generate _random password"
+msgstr "যথেচ্ছ পাসওয়ার্ড নির্মাণ করা হবে (_r)"
+
+#: ../interfaces/users.glade.in.h:23
+msgid "Group _ID:"
+msgstr "দলের ID:(_I)"
+
+#: ../interfaces/users.glade.in.h:24
+#, fuzzy
+msgid "Group _members:"
+msgstr "দলের নাম:(_n)"
+
+#: ../interfaces/users.glade.in.h:25
+msgid "Group _name:"
+msgstr "দলের নাম:(_n)"
+
+#: ../interfaces/users.glade.in.h:26
+msgid "Group properties"
+msgstr "দলের বৈশিষ্ট্য"
+
+#: ../interfaces/users.glade.in.h:27
+#, fuzzy
+msgid "Groups"
+msgstr "দলের ID:(_I)"
+
+#: ../interfaces/users.glade.in.h:28
+msgid "Ma_ximum days a password may be used:"
+msgstr "সর্বাধিক যে সংখ্যক দিন একটি পাসওয়ার্ড ব্যবহার করা সম্ভব:(_x)"
+
+#: ../interfaces/users.glade.in.h:29
+msgid "Maximum UID:"
+msgstr "সর্বাধিক UID:"
+
+#: ../interfaces/users.glade.in.h:30
+msgid "Mi_nimum days between password changes:"
+msgstr "পাসওয়ার্ড পরিবর্তনের মধ্যবর্তী সর্বনিম্ন দিনের সংখ্যা: (_i)"
+
+#: ../interfaces/users.glade.in.h:31
+msgid "Minimum GID:"
+msgstr "সর্বনিম্ন GID:"
+
+#: ../interfaces/users.glade.in.h:32
+msgid "Minimum UID:"
+msgstr "সর্বনিম্ন UID:"
+
+#: ../interfaces/users.glade.in.h:33
+msgid "Minimum days allowed between password changes:"
+msgstr "পাসওয়ার্ড পরিবর্তনের পূর্বে অপেক্ষার সর্বনিম্ন দিনের সংখ্যা:"
+
+#: ../interfaces/users.glade.in.h:34
+msgid "Number of days that a password may be used:"
+msgstr "একটি পাসওয়ার্ড যে সংখ্যক দিন ব্যবহার করা সম্ভব:"
+
+#: ../interfaces/users.glade.in.h:35
+msgid "O_ffice location:"
+msgstr "অফিসের অবস্থান:(_f)"
+
+#: ../interfaces/users.glade.in.h:36
+msgid "Password set to: "
+msgstr "নির্ধারিত পাসওয়ার্ড: "
+
+#: ../interfaces/users.glade.in.h:37
+msgid "Privileges"
+msgstr "অধিকার"
+
+#: ../interfaces/users.glade.in.h:38
+msgid "Profile _name:"
+msgstr "প্রোফাইলের নাম:(_n)"
+
+#: ../interfaces/users.glade.in.h:39
+msgid "Set password b_y hand"
+msgstr "পাসওয়ার্ড স্বয়ং নির্ধারণ করুন (_y)"
+
+#: ../interfaces/users.glade.in.h:40
+#, fuzzy
+msgid "Show a_ll users and groups"
+msgstr "ব্যবহারকারী এবং দল যোগ করুন অথবা মুছে ফেলুন"
+
+#: ../interfaces/users.glade.in.h:41
+#, fuzzy
+msgid "User _ID:"
+msgstr "ব্যবহারকারীর ID:"
+
+#: ../interfaces/users.glade.in.h:42
+msgid "User _password:"
+msgstr "ব্যবহারকারীর পাসওয়ার্ড:(_p)"
+
+#: ../interfaces/users.glade.in.h:43
+#, fuzzy
+msgid "User privileges"
+msgstr "ব্যবহারকারীর অধিকার"
+
+#: ../interfaces/users.glade.in.h:44
+msgid "User profiles"
+msgstr "ব্যবহারকারীর প্রোফাইল"
+
+#: ../interfaces/users.glade.in.h:45
+#, fuzzy
+msgid "Users"
+msgstr "ব্যবহারকারীর ID:"
+
+#: ../interfaces/users.glade.in.h:46
+#, fuzzy
+msgid "_Add Group..."
+msgstr "দল যোগ করুন (_A)"
+
+#: ../interfaces/users.glade.in.h:47
+#, fuzzy
+msgid "_Add Profile..."
+msgstr "প্রোফাইল যোগ করুন (_A)"
+
+#: ../interfaces/users.glade.in.h:48
+#, fuzzy
+msgid "_Add User..."
+msgstr "ব্যবহারকারী যোগ করুন (_A)"
+
+#: ../interfaces/users.glade.in.h:49
+#, fuzzy
+msgid "_All users:"
+msgstr "উপনাম:"
+
+#: ../interfaces/users.glade.in.h:50
+msgid "_Comments"
+msgstr "বক্তব্য (_C)"
+
+#: ../interfaces/users.glade.in.h:51
+msgid "_Days between warning and password expiration:"
+msgstr ""
+"পাসওয়ার্ডের মেয়াদ পূর্তীর সতর্কবার্তা এবং তা পূর্তীর সঠিক তারিখের মধ্যবর্তী দিনের "
+"সংখ্যা: (_D)"
+
+#: ../interfaces/users.glade.in.h:52 ../src/boot/table.c:54
+#: ../src/network/address-list.c:72 ../src/network/hosts.c:39
+#: ../src/shares/table.c:42 ../src/users/table.c:50
+msgid "_Delete"
+msgstr "মুছে ফেলুন (_D)"
+
+#: ../interfaces/users.glade.in.h:53
+msgid "_Edit User Profiles..."
+msgstr "ব্যবহারকারীর প্রোফাইল সম্পাদনা...(_E)"
+
+#: ../interfaces/users.glade.in.h:54
+msgid "_Generate"
+msgstr "উত্‌পন্ন করুন (_G)"
+
+#: ../interfaces/users.glade.in.h:55
+msgid "_Home directory:"
+msgstr "ব্যক্তিগত ডিরেক্টরি:(_H)"
+
+#: ../interfaces/users.glade.in.h:56
+msgid "_Home phone:"
+msgstr "বাড়ির ফোন:(_H)"
+
+#: ../interfaces/users.glade.in.h:57
+msgid "_Main group:"
+msgstr "প্রধান দল:(_M)"
+
+#: ../interfaces/users.glade.in.h:58
+msgid "_Profile:"
+msgstr "প্রোফাইল:(_P)"
+
+#: ../interfaces/users.glade.in.h:59
+msgid "_Real name:"
+msgstr "সঠিক নাম:(_R)"
+
+#: ../interfaces/users.glade.in.h:60
+msgid "_Shell:"
+msgstr "শেল:(_S)"
+
+#: ../interfaces/users.glade.in.h:62
+msgid "_Work phone:"
+msgstr "কর্মস্থলের ফোন:(_W)"
+
+#: ../src/boot/boot-append-gui.c:140
+msgid "32,768"
+msgstr ""
+
+#: ../src/boot/boot-append-gui.c:141
+msgid "65,536"
+msgstr ""
+
+#: ../src/boot/boot-append-gui.c:142
+msgid "16,777,216"
+msgstr ""
+
+#: ../src/boot/boot-append-gui.c:253
+msgid "Invalid VGA value"
+msgstr ""
+
+#: ../src/boot/boot-append-gui.c:255
+#, c-format
+msgid "\"%s\" is not a valid VGA value."
+msgstr ""
+
+#: ../src/boot/boot-druid.c:113
+msgid "Error creating boot image"
+msgstr ""
+
+#: ../src/boot/boot-druid.c:443
+#, c-format
+msgid "Creating a new boot image (%d of %d)"
+msgstr ""
+
+#: ../src/boot/boot-druid.c:444
+msgid "Finished creating a new boot image"
+msgstr ""
+
+#: ../src/boot/boot-image.c:43
+msgid "Unknown"
+msgstr ""
+
+#: ../src/boot/boot-image.c:44
+msgid "Windows NT"
+msgstr ""
+
+#: ../src/boot/boot-image.c:45
+msgid "Windows 9x"
+msgstr ""
+
+#: ../src/boot/boot-image.c:46
+msgid "Dos"
+msgstr ""
+
+#: ../src/boot/boot-image.c:47
+msgid "Linux"
+msgstr ""
+
+#: ../src/boot/boot-image.c:48
+msgid "Linux swap"
+msgstr ""
+
+#: ../src/boot/boot-image.c:49
+msgid "GNU/Hurd"
+msgstr ""
+
+#: ../src/boot/boot-image.c:279
+#, c-format
+msgid "\"%s\" is an invalid path"
+msgstr ""
+
+#: ../src/boot/boot-image.c:295
+#, c-format
+msgid "\"%s\" already exists, please set another name."
+msgstr ""
+
+#: ../src/boot/boot-image.c:301
+#, c-format
+msgid "Invalid image name: \"%s\"."
+msgstr ""
+
+#: ../src/boot/boot-image.c:314
+#, c-format
+msgid "Invalid image: \"%s\"."
+msgstr ""
+
+#: ../src/boot/boot-image.c:332
+#, c-format
+msgid "Invalid root device: \"%s\"."
+msgstr ""
+
+#: ../src/boot/boot-settings.c:45
+#, fuzzy
+msgid "_Module path:"
+msgstr "মোডেমের পোর্ট:(_M)"
+
+#: ../src/boot/boot-settings.c:407
+#, fuzzy
+msgid "Password confirmation is not correct."
+msgstr "পাসওয়ার্ডে নিশ্চায়নে সমস্যা"
+
+#: ../src/boot/boot-settings.c:432
+msgid "Error modifying boot image"
+msgstr ""
+
+#: ../src/boot/boot.desktop.in.in.h:1
+msgid "Boot"
+msgstr ""
+
+#: ../src/boot/boot.desktop.in.in.h:2
+msgid "Configure the system boot process"
+msgstr ""
+
+#: ../src/boot/callbacks.c:81
+msgid "Boot Image Editor"
+msgstr ""
+
+#: ../src/boot/callbacks.c:179
+msgid "Boot Append Editor"
+msgstr ""
+
+#: ../src/boot/callbacks.c:412
+msgid "Error deleting boot image"
+msgstr ""
+
+#: ../src/boot/callbacks.c:414
+msgid "Without at least one boot image your computer will not start."
+msgstr ""
+
+#: ../src/boot/callbacks.c:433
+#, fuzzy, c-format
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr "আপনি কি নিশ্চিতরূপে \"%s\" দলটি মুছে ফেলতে ইচ্ছুক?"
+
+#: ../src/boot/callbacks.c:435
+#, fuzzy
+msgid "This may leave this operating system unbootable."
+msgstr "এর দরুন সিস্টেমটি ব্যবহারের-অযোগ্য হয়ে যেতে পারে।"
+
+#: ../src/boot/callbacks.c:464
+msgid "The configuration will show empty"
+msgstr ""
+
+#: ../src/boot/callbacks.c:466
+#, c-format
+msgid "The file \"%s\" is missing or could not be read."
+msgstr ""
+
+#: ../src/boot/table.c:43
+msgid "Name"
+msgstr "নাম"
+
+#: ../src/boot/table.c:44
+#, fuzzy
+msgid "Default"
+msgstr "ডিফল্ট শেল: (_s)"
+
+#: ../src/boot/table.c:45
+msgid "Type"
+msgstr ""
+
+#: ../src/boot/table.c:46
+msgid "Kernel Image"
+msgstr ""
+
+#: ../src/boot/table.c:47
+#, fuzzy
+msgid "Device"
+msgstr "পরিসেবা"
+
+#: ../src/boot/table.c:52 ../src/network/address-list.c:71
+#: ../src/network/hosts.c:37 ../src/shares/table.c:40 ../src/users/table.c:48
+msgid "_Add"
+msgstr "যোগ করুন (_A)"
+
+#: ../src/boot/table.c:53 ../src/network/hosts.c:38
+#: ../src/network/ifaces-list.c:33 ../src/shares/table.c:41
+#: ../src/users/table.c:49
+msgid "_Properties"
+msgstr "বৈশিষ্ট্যাবলী (_P)"
+
+#. the proccess was running ssh
+#: ../src/common/gst-auth.c:89
+#, fuzzy
+msgid "The tool could not connect to the computer"
+msgstr "চিহ্নিত ফোল্ডারটি অন্যান্য কম্পিউটারের সাথে শেয়ার করা হবে"
+
+#: ../src/common/gst-auth.c:90
+msgid ""
+"Check that you have access to this network and that the computer is actually "
+"working and running the SSH daemon"
+msgstr ""
+
+#. the proccess was running su
+#: ../src/common/gst-auth.c:94
+msgid "The entered password is invalid"
+msgstr ""
+
+#: ../src/common/gst-auth.c:95
+msgid ""
+"Check that you typed it correctly and that you haven't activated the \"caps "
+"lock\" key"
+msgstr ""
+
+#: ../src/common/gst-auth.c:104
+#, c-format
+msgid "Could not run \"%s\""
+msgstr ""
+
+#: ../src/common/gst-auth.c:105
+msgid "Check that you have permissions to run this command"
+msgstr ""
+
+#: ../src/common/gst-auth.c:107
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: ../src/common/gst-auth.c:133
+#, fuzzy
+msgid "Could not execute the backend"
+msgstr "মোডেম ডিভাইস স্বয়ংক্রিয়রূপে সনাক্ত করা যায়নি"
+
+#: ../src/common/gst-auth.c:134
+msgid "There was an error creating the child process, the tool will close now."
+msgstr ""
+
+#: ../src/common/gst-dialog.c:60
+#, c-format
+msgid "Could not find widget: %s"
+msgstr ""
+
+#: ../src/common/gst-dialog.c:383
+msgid "There are changes which have not been applied"
+msgstr ""
+
+#: ../src/common/gst-dialog.c:385
+msgid "Apply them now?"
+msgstr ""
+
+#: ../src/common/gst-dialog.c:492
+#, c-format
+msgid "Error connection signal `%s' in widget `%s'"
+msgstr ""
+
+#: ../src/common/gst-tool.c:1026
+msgid "The configuration could not be loaded"
+msgstr ""
+
+#: ../src/common/gst-tool.c:1028
+msgid "There was an error running the backend script"
+msgstr ""
+
+#: ../src/common/gst-tool.c:1509
+#, c-format
+msgid "Welcome to the %s prerelease of the GNOME System Tools"
+msgstr ""
+
+#: ../src/common/gst-tool.c:1511
+msgid ""
+"This is still a work in progress, and so it may have serious bugs. Due to "
+"the nature of these tools, bugs may render your computer <span weight=\"bold"
+"\">practically useless</span>, costing time, effort and sanity points. You "
+"have been warned. Thank you for trying out this prerelease of the GNOME "
+"System Tools!"
+msgstr ""
+
+#: ../src/common/gst-tool.c:1532
+msgid "Warning"
+msgstr ""
+
+#: ../src/common/gst-tool.c:1552
+msgid "Don't show me this again"
+msgstr ""
+
+#: ../src/common/gst-tool.c:1609
+msgid "GNOME System Tools"
+msgstr "GNOME System Tools"
+
+#: ../src/common/gst-tool.c:1755
+msgid "Could not display help"
+msgstr "সহায়িকা প্রদর্শন করা যায়নি"
+
+#: ../src/network/address-list.c:555
+msgid "Type address"
+msgstr "ঠিকানা লিখুন"
+
+#: ../src/network/callbacks.c:46
+#, c-format
+msgid "Could not enable the interface %s"
+msgstr ""
+
+#: ../src/network/callbacks.c:50
+#, fuzzy
+msgid ""
+"Check that the settings are correct for this network and that the computer "
+"is correctly connected to it."
+msgstr ""
+"অনুগ্রহ করে পরীক্ষা করুন এটি সঠিকরূপে টাইপ করা হয়েছে কিনা এবং আপনার সিস্টেমের "
+"দ্বারা সমর্থিত কিনা।"
+
+#: ../src/network/callbacks.c:237
+msgid "Could not autodetect modem device"
+msgstr "মোডেম ডিভাইস স্বয়ংক্রিয়রূপে সনাক্ত করা যায়নি"
+
+#: ../src/network/callbacks.c:240
+msgid ""
+"Check that the device is not busy and that is correctly attached to the "
+"computer."
+msgstr ""
+"অনুগ্রহ করে পরীক্ষা করুন ডিভাইসটি বর্তমানে ব্যস্ত আছে কি না এবং তা কম্পিউটারের সাথে "
+"সঠিকভাবে সংযুক্ত আছে কি না।"
+
+#: ../src/network/callbacks.c:451
+msgid "The host name has changed"
+msgstr "হোস্ট-নেম পরিবর্তিত হয়েছে"
+
+#: ../src/network/callbacks.c:454
+msgid ""
+"This will prevent you from launching new applications, and so you will have "
+"to log in again. Continue anyway?"
+msgstr ""
+"এর দরুন নতুন অ্যাপ্লিকেশন আরম্ভ করতে প্রতিরোধ করা হবে এবং আপনাকে পুনরায় লগ-ইন করতে "
+"হবে। এগিয়ে যাবেন কি?"
+
+#: ../src/network/callbacks.c:460
+msgid "Change _Host name"
+msgstr "হোস্ট-নেম পরিবর্তন করুন (_H)"
+
+#: ../src/network/hosts.c:92
+msgid "IP Address"
+msgstr "IP ঠিকানা"
+
+#: ../src/network/hosts.c:100
+msgid "Aliases"
+msgstr "উপনাম"
+
+#: ../src/network/location.c:145
+#, fuzzy
+msgid "Create location"
+msgstr "অবস্থান মুছে ফেলুন"
+
+#: ../src/network/location.c:153
+#, fuzzy
+msgid "Delete current location"
+msgstr "অবস্থানের নাম নির্বাচন করুন"
+
+#: ../src/network/location.c:367
+#, fuzzy
+msgid "Do you want to remove this location?"
+msgstr "আপনি কি \"%s\" অবস্থান মুছে ফেলতে ইচ্ছুক?"
+
+#: ../src/network/location.c:440
+msgid "Changing profile"
+msgstr ""
+
+#: ../src/network/main.c:110
+msgid "The interface does not exist"
+msgstr "ইন্টারফেসটি বর্তমানে উপস্থিত নেই"
+
+#: ../src/network/main.c:112
+msgid ""
+"Check that it is correctly typed and that it is correctly supported by your "
+"system."
+msgstr ""
+"অনুগ্রহ করে পরীক্ষা করুন এটি সঠিকরূপে টাইপ করা হয়েছে কিনা এবং আপনার সিস্টেমের "
+"দ্বারা সমর্থিত কিনা।"
+
+#: ../src/network/main.c:157
+msgid "Configure a network interface"
+msgstr "নেটওয়ার্ক ইন্টারফেস কনফিগার করুন"
+
+#: ../src/network/main.c:157
+msgid "INTERFACE"
+msgstr "INTERFACE"
+
+#: ../src/network/main.c:158
+msgid "Configure the first network interface with a specific type"
+msgstr "সুনির্দিষ্ট ধরন সহ প্রথম নেটওয়ার্ক ইন্টারফেস কনফিগার করুন"
+
+#: ../src/network/main.c:158
+msgid "TYPE"
+msgstr "TYPE"
+
+#: ../src/network/main.c:165
+#, fuzzy
+msgid "Network settings"
+msgstr "নেটওয়ার্ক সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../src/network/network.desktop.in.in.h:1
+msgid "Configure network devices and connections"
+msgstr "নেটওয়ার্ক ডিভাইস এবং সংযোগ কনফিগার করুন"
+
+#: ../src/network/network.desktop.in.in.h:2
+msgid "Networking"
+msgstr "নেটওয়ার্ক ব্যবস্থা"
+
+#: ../src/network/network-iface-ethernet.c:302
+#, fuzzy
+msgid "Ethernet connection"
+msgstr "বেতার সংযোগ"
+
+#: ../src/network/network-iface-irlan.c:122
+msgid "Infrared connection"
+msgstr "ইনফ্রারেড সংযোগ"
+
+#: ../src/network/network-iface-isdn.c:330
+msgid "ISDN connection"
+msgstr "ISDN সংযোগ"
+
+#: ../src/network/network-iface-modem.c:253
+msgid "Modem connection"
+msgstr "মোডেম সংযোগ"
+
+#: ../src/network/network-iface-plip.c:211
+msgid "Parallel port connection"
+msgstr "প্যারালেল পোর্ট সংযোগ ব্যবস্থা"
+
+#: ../src/network/network-iface-wireless.c:245
+msgid "Wireless connection"
+msgstr "বেতার সংযোগ"
+
+#: ../src/network/network-iface.c:410
+#, fuzzy, c-format
+msgid "Activating interface \"%s\""
+msgstr "ইন্টারফেস সক্রিয়করণ প্রণালী"
+
+#: ../src/network/network-iface.c:522
+#, fuzzy, c-format
+msgid "The interface %s is not configured"
+msgstr "ইন্টারফেস কনফিগার করা যায়নি"
+
+#: ../src/network/network-iface.c:524
+#, fuzzy, c-format
+msgid "The interface %s is not active"
+msgstr "ইন্টারফেসটি বর্তমানে উপস্থিত নেই"
+
+#: ../src/network/network-iface.c:526
+#, fuzzy, c-format
+msgid "The interface %s is active"
+msgstr "ইন্টারফেসটি বর্তমানে উপস্থিত নেই"
+
+#: ../src/services/callbacks.c:64
+#, fuzzy, c-format
+msgid "Settings for \"%s\""
+msgstr "%s পরিসেবা সংক্রান্ত বৈশিষ্ট্য"
+
+#. FIXME: put service name !!!
+#: ../src/services/callbacks.c:153
+#, fuzzy
+msgid "Are you sure you want to deactivate this service?"
+msgstr "আপনি কি নিশ্চিতরূপে \"%s\" নিষ্ক্রিয় করতে ইচ্ছুক?"
+
+#: ../src/services/callbacks.c:156
+#, fuzzy
+msgid ""
+"This may affect your system behavior in several ways, possibly leading to "
+"data loss"
+msgstr ""
+"এর ফলে আপনার সিস্টেমের আচরণ প্রভাবিত হওয়ার সম্ভাবনা রয়েছে যার দরুণ সংরক্ষিত তথ্যের "
+"হানি হতে পারে।"
+
+#: ../src/services/main.c:55
+msgid "Services settings"
+msgstr "পরিসেবা সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../src/services/services.desktop.in.in.h:1
+msgid "Configure which services will be run when the system starts"
+msgstr "সিস্টেম আরম্ভ কালে চালনার উদ্দেশ্যে পরিসেবাগুলি কনফিগার করুন"
+
+#: ../src/services/services.desktop.in.in.h:2
+msgid "Services"
+msgstr "পরিসেবা"
+
+#: ../src/services/service.c:32
+msgid "Antivirus"
+msgstr "অ্যান্টি-ভাইরাস"
+
+#: ../src/services/service.c:32
+msgid "Analyzes your incoming mail for virus"
+msgstr "আগমণকারী ই-মেইলের মধ্যে ভাইরাস অনুসন্ধান করে"
+
+#: ../src/services/service.c:33
+msgid "Volumes mounter"
+msgstr "ভলিউম মাউন্ট ব্যবস্থা"
+
+#: ../src/services/service.c:33
+msgid "Mounts your volumes automatically"
+msgstr "স্বয়ংক্রিয়রূপে ভলিউম মাউন্ট করে"
+
+#: ../src/services/service.c:34
+msgid "Actions scheduler"
+msgstr "কর্ম নির্ধারণ ব্যবস্থা"
+
+#: ../src/services/service.c:34
+msgid "Executes scheduled actions"
+msgstr "নির্ধারিত কর্ম চালনা করে"
+
+#: ../src/services/service.c:35
+msgid "Database server"
+msgstr "ডাটাবেস সার্ভার"
+
+#: ../src/services/service.c:35
+msgid "Data storage system"
+msgstr "তথ্য সংরক্ষণ ব্যবস্থা"
+
+#: ../src/services/service.c:36
+msgid "Graphical login manager"
+msgstr "গ্রাফিকান লগ-ইন ব্যবস্থা"
+
+#: ../src/services/service.c:36
+msgid "Allows users to login graphically"
+msgstr "গ্রাফিকাল পরিবেশে ব্যবহারকারীদের লগ-ইনের সুবিধা উপলব্ধ করে"
+
+#: ../src/services/service.c:37
+msgid "Folder sharing service"
+msgstr "ফোল্ডার শেয়ার ব্যবস্থা"
+
+#: ../src/services/service.c:37
+msgid "Shares folders over your network"
+msgstr "নেটওয়ার্কের মাধ্যমে ফোল্ডার শেয়ার করতে সহায়ক"
+
+#: ../src/services/service.c:38
+msgid "File sharing service"
+msgstr "ফাইল শেয়ার ব্যবস্থা"
+
+#: ../src/services/service.c:38 ../src/services/service.c:39
+msgid "Shares files over the Internet"
+msgstr "ইন্টারনেটের মাধ্যমে ফাইল শেয়ার করতে সহায়ক"
+
+#: ../src/services/service.c:39
+msgid "FTP service"
+msgstr "FTP পরিসেবা"
+
+#: ../src/services/service.c:40
+msgid "Mail fetcher"
+msgstr "মেইল আহরণকারী"
+
+#: ../src/services/service.c:40
+msgid "Downloads your mail from remote accounts"
+msgstr "দূরবর্তী অ্যাকউন্ট থেকে মেইল ডাউনলোড করতে সহায়ক"
+
+#: ../src/services/service.c:41
+msgid "Mail agent"
+msgstr "মেইল এজেন্ট"
+
+#: ../src/services/service.c:41
+msgid "Delivers your outgoing mail"
+msgstr "প্রেরিত মেইল বন্টন ব্যবস্থা"
+
+#: ../src/services/service.c:42
+msgid "Clock synchronization service"
+msgstr "ঘড়ি সুসংগতি ব্যবস্থা"
+
+#: ../src/services/service.c:42
+msgid "Synchronizes your computer clock with Internet time servers"
+msgstr "ইন্টারনেট টাইম সার্ভারের সাথে কম্পিউটারের ঘড়ি সুসংগত করে"
+
+#: ../src/services/service.c:43
+msgid "Printer service"
+msgstr "প্রিন্টার পরিসেবা"
+
+#: ../src/services/service.c:43
+msgid "Allows applications to use printers"
+msgstr "বিভিন্ন অ্যাপ্লিকেশনের দ্বারা প্রিন্টার ব্যবহারের সুবিধা উপলব্ধ করে"
+
+#: ../src/services/service.c:44
+msgid "Remote shell server"
+msgstr "দূরবর্তী শেল সার্ভার"
+
+#: ../src/services/service.c:44
+msgid "Secure shell server"
+msgstr "নিরাপদ শেল সার্ভার"
+
+#: ../src/services/service.c:45
+msgid "Computer activity logger"
+msgstr "কম্পিউটারের কর্ম সংক্রান্ত লগ ব্যবস্থা"
+
+#: ../src/services/service.c:45
+msgid "Keeps a log of your computer activity"
+msgstr "কম্পিউটারের বিভিন্ন কর্ম সংক্রান্ত লগ সংরক্ষণ করে"
+
+#: ../src/services/service.c:46
+msgid "Web server"
+msgstr "ওয়েব সার্ভার"
+
+#: ../src/services/service.c:46
+msgid "Shares your web pages over the Internet"
+msgstr "আপনার ওয়েব পেজ ইন্টারনেটের মাধ্যমে উপলব্ধ করা হয়"
+
+#: ../src/shares/callbacks.c:187
+msgid "Are you sure you want to delete this share?"
+msgstr "আপনি কি নিশ্চিতরূপে চিহ্নিত শেয়ার মুছে ফেলতে ইচ্ছুক?"
+
+#: ../src/shares/callbacks.c:189
+msgid "Other computers in your network will stop viewing this."
+msgstr "নেটওয়ার্কের অন্যান্য কম্পিউটারগুলিকে এটি প্রদর্শন করা হবে না।"
+
+#: ../src/shares/main.c:90
+msgid "Add a shared path, modifies it if it already exists"
+msgstr "শেয়ার করা পাথ যোগ করে, পাথ উপস্থিত থাকলে পরিবর্তন করা যাবে"
+
+#: ../src/shares/main.c:90
+msgid "PATH"
+msgstr "PATH"
+
+#: ../src/shares/main.c:97
+#, fuzzy
+msgid "Shared folders settings"
+msgstr "শেয়ার করা ফোল্ডার"
+
+#: ../src/shares/nautilus/nautilus-shares.c:129
+msgid "_Share folder"
+msgstr "শেয়ার করা ফোল্ডার (_S)"
+
+#: ../src/shares/nautilus/nautilus-shares.c:130
+msgid "Share this folder with other computers"
+msgstr "চিহ্নিত ফোল্ডারটি অন্যান্য কম্পিউটারের সাথে শেয়ার করা হবে"
+
+#: ../src/shares/nfs-acl-table.c:51
+msgid "Allowed host/network"
+msgstr "অনুমতিপ্রাপ্ত হোস্ট/নেটওয়ার্ক"
+
+#: ../src/shares/share-nfs-add-hosts.c:114
+#, c-format
+msgid "Hosts in the %s network"
+msgstr "%s নেটওয়ার্কে উপস্থিত হোস্ট"
+
+#: ../src/shares/share-nfs-add-hosts.c:146
+msgid "Specify hostname"
+msgstr "হোস্ট-নেম উল্লেখ করুন"
+
+#: ../src/shares/share-nfs-add-hosts.c:153
+msgid "Specify IP address"
+msgstr "IP ঠিকানা উল্লেখ করুন"
+
+#: ../src/shares/share-nfs-add-hosts.c:160
+msgid "Specify network"
+msgstr "নেটওয়ার্ক উল্লেখ করুন"
+
+#: ../src/shares/share-settings.c:123
+msgid "Do not share"
+msgstr "শেয়ার করা হবে না"
+
+#: ../src/shares/share-settings.c:131
+msgid "SMB"
+msgstr ""
+
+#: ../src/shares/share-settings.c:139
+#, fuzzy
+msgid "NFS"
+msgstr "DNS"
+
+#: ../src/shares/shares.desktop.in.in.h:1
+msgid "Configure which folders are available for your network neighborhood"
+msgstr "নেটওয়ার্ক পরিবেশে উপলব্ধ ফোল্ডার চিহ্নিত করুন"
+
+#: ../src/shares/shares.desktop.in.in.h:2
+msgid "Shared Folders"
+msgstr "শেয়ার করা ফোল্ডার"
+
+#: ../src/shares/transfer.c:44
+#, fuzzy
+msgid "Sharing services are not installed"
+msgstr "NTP সমর্থন বর্তমানে ইনস্টল করা হয়নি"
+
+#: ../src/shares/transfer.c:46
+msgid ""
+"You need to install at least either Samba or NFS in order to share your "
+"folders. The tool will close now."
+msgstr ""
+
+#: ../src/time/main.c:464
+msgid "NTP support is not installed"
+msgstr "NTP সমর্থন বর্তমানে ইনস্টল করা হয়নি"
+
+#: ../src/time/main.c:466
+#, fuzzy
+msgid ""
+"Please install and activate NTP support in the system to enable "
+"synchronization of your local time server with Internet time servers."
+msgstr ""
+"আপনার স্থানীয় টাইম সার্ভারের সাথে ইন্টারনেট টাইম সার্ভার সুসংগত করতে, অনুগ্রহ করে "
+"NTP সমর্থন সক্রিয় করুন।"
+
+#: ../src/time/main.c:762
+msgid "Time and Date Settings"
+msgstr "সময় এবং তারিখ সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../src/time/time.desktop.in.in.h:1
+msgid "Change system time, date, and timezone"
+msgstr "সিস্টেমের সময়, তারিখ এবং সময়ের-অঞ্চল পরিবর্তন করুন"
+
+#: ../src/time/time.desktop.in.in.h:2
+msgid "Time and Date"
+msgstr "সময় এবং তারিখ"
+
+#: ../src/users/callbacks.c:571
+msgid "Error saving profile"
+msgstr ""
+
+#: ../src/users/callbacks.c:613
+msgid "Create New profile"
+msgstr ""
+
+#: ../src/users/callbacks.c:649
+#, fuzzy, c-format
+msgid "Settings for profile %s"
+msgstr "%s পরিসেবা সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../src/users/group-settings.c:91
+#, fuzzy
+msgid "Create New Group"
+msgstr "নতুন দল নির্মাণ করুন"
+
+#. Check if gid is available
+#: ../src/users/group-settings.c:164 ../src/users/group-settings.c:172
+msgid "Invalid group ID"
+msgstr ""
+
+#: ../src/users/group-settings.c:165
+msgid "Group ID must be a positive number"
+msgstr ""
+
+#. if group is root
+#: ../src/users/group-settings.c:168
+#, fuzzy
+msgid "Group ID of the \"root\" user should not be modified"
+msgstr "অ্যাডমিনিস্ট্রেটর দলের ব্যবহারকারীর দলের নাম পরিবর্তন করা উচিত নয়"
+
+#: ../src/users/group-settings.c:169 ../src/users/group-settings.c:218
+#: ../src/users/group-settings.c:288
+#, fuzzy
+msgid "This would leave the system unusable"
+msgstr "এর দরুন সিস্টেমটি ব্যবহারের-অযোগ্য হয়ে যেতে পারে।"
+
+#: ../src/users/group-settings.c:173
+#, fuzzy, c-format
+msgid "Group ID %s already exists"
+msgstr "\"%s\" দলটি বর্তমানে উপস্থিত আছে"
+
+#. If empty.
+#: ../src/users/group-settings.c:198
+msgid "Group name is empty"
+msgstr "দলের নাম উল্লেখ করা হয়নি"
+
+#: ../src/users/group-settings.c:199
+#, fuzzy
+msgid "A group name must be specified"
+msgstr "দলের নাম উল্লেখ করা আবশ্যক"
+
+#. If too long.
+#: ../src/users/group-settings.c:202
+#, fuzzy
+msgid "The group name is too long"
+msgstr "দলের নাম উল্লেখ করা হয়নি"
+
+#: ../src/users/group-settings.c:203
+#, c-format
+msgid "To be valid, the group name should have less than %d character"
+msgid_plural "To be valid, the group name should have less than %d characters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. if invalid.
+#: ../src/users/group-settings.c:209
+msgid "Group name has invalid characters"
+msgstr "দলের নামে অবৈধ অক্ষর লেখা হয়েছে"
+
+#: ../src/users/group-settings.c:210
+#, fuzzy
+msgid "Please set a valid group name, using only lower case letters"
+msgstr "অনুগ্রহ করে ছোট হাতের অক্ষর এবং সংখ্যা যুক্ত একটি বৈধ দলের নাম নির্ধারণ করুন।"
+
+#. if !exist.
+#: ../src/users/group-settings.c:213
+#, c-format
+msgid "Group \"%s\" already exists"
+msgstr "\"%s\" দলটি বর্তমানে উপস্থিত আছে"
+
+#: ../src/users/group-settings.c:214
+#, fuzzy
+msgid "Please select a different group name"
+msgstr "অনুগ্রহ করে পৃথক ব্যবহারকারীর নাম নির্বাচন করুন।"
+
+#. if it's the root group
+#: ../src/users/group-settings.c:217
+#, fuzzy
+msgid "Group name of the \"root\" user should not be modified"
+msgstr "অ্যাডমিনিস্ট্রেটর দলের ব্যবহারকারীর দলের নাম পরিবর্তন করা উচিত নয়"
+
+#: ../src/users/group-settings.c:287
+msgid "The group \"root\" should not be deleted"
+msgstr ""
+
+#: ../src/users/group-settings.c:302
+#, c-format
+msgid "Are you sure you want to delete group \"%s\"?"
+msgstr "আপনি কি নিশ্চিতরূপে \"%s\" দলটি মুছে ফেলতে ইচ্ছুক?"
+
+#: ../src/users/group-settings.c:304
+msgid "This may leave files with invalid group ID in the filesystem."
+msgstr ""
+"এর দরুন অবৈধ দলের ID সমেত কিছু ফাইল ফাইল-সিস্টেমে উপস্থিত থাকার সম্ভবনা রয়েছে।"
+
+#: ../src/users/group-settings.c:364
+#, fuzzy, c-format
+msgid "Settings for Group %s"
+msgstr "%s পরিসেবা সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../src/users/groups-table.c:44
+#, fuzzy
+msgid "Group"
+msgstr "দলের নাম"
+
+#: ../src/users/groups-table.c:45
+msgid "GID"
+msgstr ""
+
+#: ../src/users/main.c:123
+#, fuzzy
+msgid "User name contains"
+msgstr "ব্যবহারকারীর নাম উল্লেখ করা হয়নি"
+
+#: ../src/users/main.c:124
+#, fuzzy
+msgid "User ID is"
+msgstr "ব্যবহারকারীর ID:"
+
+#: ../src/users/main.c:125
+#, fuzzy
+msgid "Group name contains"
+msgstr "দলের নাম"
+
+#: ../src/users/main.c:126
+#, fuzzy
+msgid "User GID is"
+msgstr "ব্যবহারকারীর ID:"
+
+#: ../src/users/main.c:245 ../src/users/users.desktop.in.in.h:2
+msgid "Users and Groups"
+msgstr "ব্যবহারকারী এবং দল"
+
+#: ../src/users/passwd.c:168
+#, fuzzy
+msgid "Passwords do not match"
+msgstr "পাসওয়ার্ডের স্থান ফাঁকা রাখা চলবে না"
+
+#: ../src/users/passwd.c:173
+#, c-format
+msgid ""
+"Bad password: %s.\n"
+"Please try with a new password"
+msgstr ""
+
+#: ../src/users/profile-settings.c:125
+msgid "The profile must have a name"
+msgstr ""
+
+#: ../src/users/profile-settings.c:130
+msgid "The profile must have a default home"
+msgstr ""
+
+#: ../src/users/profile-settings.c:135 ../src/users/profile-settings.c:140
+msgid "The profile must have a default shell"
+msgstr ""
+
+#: ../src/users/profile-settings.c:208
+msgid "The default profile should not be deleted"
+msgstr ""
+
+#: ../src/users/profile-settings.c:209
+msgid "This profile is used for setting default data for new users"
+msgstr ""
+
+#: ../src/users/profile-settings.c:218
+#, fuzzy, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "ব্যবহারকারীর প্রোফাইল"
+
+#: ../src/users/profile-settings.c:220
+msgid "You will not be able to recover this profile after pressing \"apply\"."
+msgstr ""
+
+#. Column name,          Adv_state_show,	Basic_state_show
+#: ../src/users/profiles-table.c:39
+#, fuzzy
+msgid "Profile"
+msgstr "প্রোফাইল:(_P)"
+
+#: ../src/users/profiles-table.c:40
+#, fuzzy
+msgid "Comment"
+msgstr "বক্তব্য:"
+
+#: ../src/users/search-bar/search-bar.c:228
+msgid "C_lear"
+msgstr ""
+
+#: ../src/users/search-bar/search-bar.c:329
+msgid "Choice"
+msgstr ""
+
+#: ../src/users/search-bar/search-bar.c:339
+msgid "Text"
+msgstr ""
+
+#: ../src/users/user-settings.c:73
+msgid "The \"root\" user should not be deleted"
+msgstr ""
+
+#: ../src/users/user-settings.c:74 ../src/users/user-settings.c:311
+#: ../src/users/user-settings.c:406 ../src/users/user-settings.c:442
+msgid "This would leave the system unusable."
+msgstr "এর দরুন সিস্টেমটি ব্যবহারের-অযোগ্য হয়ে যেতে পারে।"
+
+#: ../src/users/user-settings.c:83
+#, fuzzy, c-format
+msgid "Are you sure you want to delete user \"%s\"?"
+msgstr "আপনি কি নিশ্চিতরূপে \"%s\" দলটি মুছে ফেলতে ইচ্ছুক?"
+
+#: ../src/users/user-settings.c:85
+msgid ""
+"This will disable this user's access to the system without deleting the "
+"user's home directory."
+msgstr ""
+"ব্যবহারকারী ব্যক্তিগত ডিরেক্টরি না মুছে ব্যবহারকারীর দ্বারা সিস্টেম ব্যবহার করা সম্ভব "
+"হবে না।"
+
+#: ../src/users/user-settings.c:189
+msgid "User Account Editor"
+msgstr ""
+
+#: ../src/users/user-settings.c:285
+#, fuzzy
+msgid "The user name is empty"
+msgstr "ব্যবহারকারীর নাম উল্লেখ করা হয়নি"
+
+#: ../src/users/user-settings.c:286
+msgid "A user name must be specified."
+msgstr "ব্যবহারকারীর নাম উল্লেখ করা আবশ্যক।"
+
+#. = sizeof (ut.ut_name)
+#: ../src/users/user-settings.c:292 ../src/users/user-settings.c:300
+#, fuzzy
+msgid "The user name is too long"
+msgstr "ব্যবহারকারীর নাম উল্লেখ করা হয়নি"
+
+#: ../src/users/user-settings.c:293 ../src/users/user-settings.c:301
+#, c-format
+msgid "To be valid, the user name should have less than %d character"
+msgid_plural "To be valid, the user name should have less than %d characters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/users/user-settings.c:310
+#, fuzzy
+msgid "User name for the \"root\" user should not be modified"
+msgstr "অ্যাডমিনিস্ট্রেটর অ্যাকাউন্টের ব্যবহারকারীর নাম পরিবর্তন করা উচিত নয়"
+
+#: ../src/users/user-settings.c:316
+msgid "User name has invalid characters"
+msgstr "ব্যবহারকারীর নামের মাঝে অবৈধ অক্ষর লেখা হয়েছে"
+
+#: ../src/users/user-settings.c:317
+msgid ""
+"Please set a valid user name consisting of a lower case letter followed by "
+"lower case letters and numbers."
+msgstr ""
+"অনুগ্রহ করে ছোট হাতের অক্ষর এবং সংখ্যা যুক্ত একটি বৈধ ব্যবহারকারীর নাম নির্ধারণ করুন।"
+
+#: ../src/users/user-settings.c:323
+#, c-format
+msgid "User name \"%s\" already exists"
+msgstr "\"%s\" নামক ব্যবহারকারী বর্তমানে উপস্থিত রয়েছে"
+
+#: ../src/users/user-settings.c:324
+msgid "Please select a different user name."
+msgstr "অনুগ্রহ করে পৃথক ব্যবহারকারীর নাম নির্বাচন করুন।"
+
+#: ../src/users/user-settings.c:349
+#, c-format
+msgid "Invalid character \"%c\" in comment"
+msgstr "বক্তব্যের মাঝে অবৈধ অক্ষর \"%c\" লেখা হয়েছে"
+
+#: ../src/users/user-settings.c:350
+msgid "Check that this character is not used."
+msgstr "অনুগ্রহ করে এই অক্ষরটি ব্যবহার না করা সম্বন্ধে সতর্কতা অবলম্বন করুন।"
+
+#: ../src/users/user-settings.c:398
+#, fuzzy
+msgid "Home directory should not be empty"
+msgstr "পাসওয়ার্ডের স্থান ফাঁকা রাখা চলবে না"
+
+#: ../src/users/user-settings.c:399
+msgid "Make sure you provide a home directory."
+msgstr ""
+
+#: ../src/users/user-settings.c:401
+msgid "Incomplete path in home directory"
+msgstr "ব্যক্তিগত ডিরেক্টরির পাথ সম্পূর্ণরূপে লেখা হয়নি"
+
+#: ../src/users/user-settings.c:402
+msgid ""
+"Please enter full path for home directory\n"
+"<span size=\"smaller\">i.e.: /home/john</span>."
+msgstr ""
+"অনুগ্রহ করে ব্যক্তিগত ডিরেক্টরির সম্পূর্ণ পাথ লিখুন\n"
+"<span size=\"smaller\">উদাহরণস্বরূপ: /home/john</span>"
+
+#: ../src/users/user-settings.c:405
+#, fuzzy
+msgid "Home directory of the \"root\" user should not be modified"
+msgstr "অ্যাডমিনিস্ট্রেটর দলের ব্যবহারকারীর দলের নাম পরিবর্তন করা উচিত নয়"
+
+#: ../src/users/user-settings.c:438
+msgid "Invalid user ID"
+msgstr ""
+
+#: ../src/users/user-settings.c:439
+msgid "User ID must be a positive number."
+msgstr ""
+
+#: ../src/users/user-settings.c:441
+#, fuzzy
+msgid "User ID of the \"root\" user should not be modified"
+msgstr "অ্যাডমিনিস্ট্রেটর অ্যাকাউন্টের ব্যবহারকারীর ID পরিবর্তন করা উচিত নয়"
+
+#: ../src/users/user-settings.c:459
+#, fuzzy, c-format
+msgid "User ID %s already exists"
+msgstr "\"%s\" নামক ব্যবহারকারী বর্তমানে উপস্থিত রয়েছে"
+
+#: ../src/users/user-settings.c:461
+msgid ""
+"Several users may share a single user ID, but it's not common and may lead "
+"to security problems."
+msgstr ""
+
+#: ../src/users/user-settings.c:479
+msgid "Incomplete path in shell"
+msgstr "শেলের পাথ সম্পূর্ণরূপে লেখা হয়নি"
+
+#: ../src/users/user-settings.c:480
+#, fuzzy
+msgid ""
+"Please enter full path for shell\n"
+"<span size=\"smaller\">i.e.: /bin/sh</span>."
+msgstr ""
+"অনুগ্রহ করে শেলের জন্য সম্পূর্ণ পাথ লিখুন\n"
+"<span size=\"smaller\">উদাহরণস্বরূপ: /bin/bash</span>"
+
+#: ../src/users/user-settings.c:502
+msgid "Password should not be empty"
+msgstr "পাসওয়ার্ডের স্থান ফাঁকা রাখা চলবে না"
+
+#: ../src/users/user-settings.c:503
+msgid "A password must be provided."
+msgstr "পাসওয়ার্ড উল্লেখ করা আবশ্যক।"
+
+#: ../src/users/user-settings.c:505
+msgid "Password confirmation isn't correct"
+msgstr "পাসওয়ার্ডে নিশ্চায়নে সমস্যা"
+
+#: ../src/users/user-settings.c:506
+msgid "Check that you have provided the same password in both text fields."
+msgstr "দুটি ক্ষেত্রে একই পাসওয়ার্ড লেখা হয়েছে কিনা তা অনুগ্রহ করে পরীক্ষা করুন।"
+
+#: ../src/users/user-settings.c:780
+#, fuzzy, c-format
+msgid "Settings for User %s"
+msgstr "%s পরিসেবা সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../src/users/users-table.c:61
+#, fuzzy
+msgid "User"
+msgstr "ব্যবহারকারীর ID:"
+
+#: ../src/users/users-table.c:62
+msgid "Home"
+msgstr ""
+
+#: ../src/users/users-table.c:63
+#, fuzzy
+msgid "User details"
+msgstr "ব্যবহারকারীর বৈশিষ্ট্য"
+
+#: ../src/users/users-table.c:64
+msgid "UID"
+msgstr ""
+
+#: ../src/users/users-table.c:65
+#, fuzzy
+msgid "Shell"
+msgstr "শেল:(_S)"
+
+#: ../src/users/users.desktop.in.in.h:1
+msgid "Add or remove users and groups"
+msgstr "ব্যবহারকারী এবং দল যোগ করুন অথবা মুছে ফেলুন"
+
+#~ msgid ""
+#~ "Automatic Configuration (DHCP)\n"
+#~ "Static IP address"
+#~ msgstr ""
+#~ "স্বয়ংক্রিয় কনফিগারেশন (DHCP)\n"
+#~ "স্থায়ী IP ঠিকানা"
+
+#~ msgid "Password _type:"
+#~ msgstr "পাসওয়ার্ডের ধরন:(_t)"
+
+#~ msgid "Save current network configuration as a location"
+#~ msgstr "বর্তমান নেটওয়ার্ক কনফিগারেশন একটি অবস্থানরূপে সংরক্ষণ করুন"
+
+#~ msgid "General Properties"
+#~ msgstr "সাধারণ বৈশিষ্ট্য"
+
+#~ msgid "Groups settings"
+#~ msgstr "দল সংক্রান্ত বৈশিষ্ট্য"
+
+#~ msgid "_Manage Groups"
+#~ msgstr "দল পরিচালনা (_M)"
+
+#~ msgid "Changing interface configuration"
+#~ msgstr "ইন্টারফেস কনফিগারেশন পরিবর্তন করা হচ্ছে"
+
+#~ msgid "<b>Essid:</b> %s "
+#~ msgstr "<b>Essid:</b> %s "
+
+#~ msgid "<b>Address:</b> %s <b>Subnet mask:</b> %s"
+#~ msgstr "<b>ঠিকানা:</b> %s <b>সাবনেট মাস্ক:</b> %s"
+
+#~ msgid "<b>Address:</b> DHCP"
+#~ msgstr "<b>ঠিকানা:</b> DHCP"
+
+#~ msgid "<b>Address:</b> %s <b>Remote address:</b> %s"
+#~ msgstr "<b>ঠিকানা:</b> %s <b>দূরবর্তী:</b> %s"
+
+#~ msgid "<b>Phone number:</b> %s <b>Login:</b> %s"
+#~ msgstr "<b>ফোন সংখ্যা:</b> %s <b>লগ-ইন:</b> %s"
+
+#~ msgid "Changing network location"
+#~ msgstr "নেটওয়ার্ক অবস্থান পরিবর্তন করা হচ্ছে"
+
+#~ msgid "There is already a location with that name"
+#~ msgstr "উল্লিখিত নামের একটি অবস্থান বর্তমানে উপস্থিত রয়েছে"
+
+#~ msgid "Overwrite it?"
+#~ msgstr "নতুন করে লেখা হবে কি?"
+
+#~ msgid "Add new location"
+#~ msgstr "নতুন অবস্থান যোগ করুন"
+
+#~ msgid "Start"
+#~ msgstr "আরম্ভ করা হবে"
+
+#~ msgid "Stop"
+#~ msgstr "বন্ধ করা হবে"
+
+#~ msgid "Ignore"
+#~ msgstr "উপেক্ষা করা হবে"
+
+#~ msgid "Runlevel"
+#~ msgstr "রান-লেভেল"
+
+#~ msgid "Status"
+#~ msgstr "অবস্থা"
+
+#~ msgid "Priority"
+#~ msgstr "গুরুত্ব"
+
+#~ msgid "File System"
+#~ msgstr "ফাইল-সিস্টেম"
+
+#~ msgid "Windows networks (SMB)"
+#~ msgstr "Windows নেটওয়ার্ক (SMB)"
+
+#~ msgid "Unix networks (NFS)"
+#~ msgstr "Unix নেটওয়ার্ক (NFS)"
+
+#~ msgid "Administrator group can not be deleted"
+#~ msgstr "অ্যাডমিনিস্ট্রেটর দল মুছে ফেলা যাবে না"
+
+#~ msgid "Group '%s' Properties"
+#~ msgstr "'%s' দলের বৈশিষ্ট্য"
+
+#~ msgid "Group ID of the Administrator account should not be modified"
+#~ msgstr "অ্যাডমিনিস্ট্রেটর অ্যাকাউন্টের দলের ID পরিবর্তন করা উচিত নয়"
+
+#~ msgid "Monitor system logs"
+#~ msgstr "সিস্টেম লগ পর্যবেক্ষণ করুন"
+
+#~ msgid "Administer the system"
+#~ msgstr "সিস্টেমের প্রশাসনিক নিয়ন্ত্রণ"
+
+#~ msgid "Use audio devices"
+#~ msgstr "অডিও ডিভাইস ব্যবহার করুন"
+
+#~ msgid "Use CD-ROM drives"
+#~ msgstr "CD-ROM ড্রাইভ ব্যবহার করুন"
+
+#~ msgid "Use modems"
+#~ msgstr "মোডেম ব্যবহার করুন"
+
+#~ msgid "Connect to Internet using a modem"
+#~ msgstr "মোডেম সহযোগে ইন্টারনেটের সাথে সংযোগ"
+
+#~ msgid "Send and receive faxes"
+#~ msgstr "ফ্যাক্স গ্রহণ ও প্রেরণ করুন"
+
+#~ msgid "Use floppy drives"
+#~ msgstr "ফ্লপি ড্রাইভ ব্যবহার করুন"
+
+#~ msgid "Access external storage devices automatically"
+#~ msgstr "স্বয়ংক্রিয়রূপে বহিস্থিত স্টোরেজ ডিভাইস ব্যবহার করুন"
+
+#~ msgid "Use scanners"
+#~ msgstr "স্ক্যানার ব্যবহার করুন"
+
+#~ msgid "Use tape drives"
+#~ msgstr "টেপ-ড্রাইভ ব্যবহার করুন"
+
+#~ msgid "Be able to get administrator privileges"
+#~ msgstr "প্রশাসনিক অধিকার প্রাপ্ত করুন"
+
+#~ msgid "Administrator account can not be deleted"
+#~ msgstr "অ্যাডমিনিস্ট্রেটর অ্যাকাউন্ট মুছে ফেলা যাবে না"
+
+#~ msgid "Are you sure you want to delete account \"%s\"?"
+#~ msgstr "আপনি কি নিশ্চিতরূপে \"%s\" অ্যাকাউন্ট মুছে ফেলতে ইচ্ছুক?"
+
+#~ msgid "New user account"
+#~ msgstr "নতুন ব্যবহারকারীর অ্যাকাউন্ট"
+
+#~ msgid "Account '%s' Properties"
+#~ msgstr "'%s' অ্যাকাউন্টের বৈশিষ্ট্য"
+
+#~ msgid "Login name"
+#~ msgstr "লগ-ইন নাম"
+
+#~ msgid "Home directory"
+#~ msgstr "ব্যক্তিগত ডিরেক্টরি"
