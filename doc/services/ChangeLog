@@ -1,3 +1,8 @@
+2006-08-20  Daniel Nylander <po@danielnylander.se>
+
+	* sv/sv.po: Added Swedish translation
+	* Makefile.am: Added sv
+		
 2006-04-09  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* C/services-admin.xml: Changed the main menu location, now it is
