@@ -1,0 +1,1943 @@
+# Slovenian translation of gnome-syste-tools.
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-system-tools package.
+#
+# Matic Žgur <mr.zgur@gmail.com>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-system-tools\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-22 16:34+0200\n"
+"PO-Revision-Date: 2006-08-25 10:43+0100\n"
+"Last-Translator: Matic Žgur <mr.zgur@gmail.com>\n"
+"Language-Team: Slovenian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+"X-Poedit-Language: Slovenian\n"
+
+#: ../gnome-system-tools.schemas.in.h:1
+msgid "Comma separated list of hosts that the GST will be able to access when the remote configuration option is enabled"
+msgstr "Z vejico ločen seznam gostiteljev, do katerih bo lahko dostopal GST, ko je vključena možnost oddaljene nastavitve."
+
+#: ../gnome-system-tools.schemas.in.h:2
+msgid "Last GST version executed"
+msgstr "Zadnja različica GST zagnana"
+
+#: ../gnome-system-tools.schemas.in.h:3
+msgid "Preferred bootloader that boot-admin will configure"
+msgstr "Prednosten zagonski nalagalnik, ki ga bo boot-admin nastavil"
+
+#: ../gnome-system-tools.schemas.in.h:4
+msgid "Remote hosts"
+msgstr "Oddaljeni gostitelji"
+
+#: ../gnome-system-tools.schemas.in.h:5
+msgid "The GST are able to do remote configuration through SSH, enable this option to use this feature"
+msgstr "GST je zmožen oddaljene nastavitve preko SSH, vključite to možnost za uporabo te zmožnosti"
+
+#: ../gnome-system-tools.schemas.in.h:6
+msgid "The last GST version that this computer has run"
+msgstr "Zadnja različica GST, ki je bila zagnana na tem računalniku"
+
+#: ../gnome-system-tools.schemas.in.h:7
+msgid "This key stores the bootloader that boot-admin will configure if there are more than one installed, if it's not set or isn't valid, then boot-admin will ask the user"
+msgstr "Ta ključ vsebuje zagonski nalagalnik, katerega bo boot-admin nastavil, če je nameščen več kot eden zagonski nalagalnik. Če ključ ni nastavljen ali če ni veljaven, bo boot-admin vprašal uporabnika."
+
+#: ../gnome-system-tools.schemas.in.h:8
+msgid "Whether the tools will use remote administration or not"
+msgstr "Ali bodo orodja uporabljala oddaljeno administracijo ali ne"
+
+#: ../gnome-system-tools.schemas.in.h:9
+msgid "Whether the users-admin tool should show all users and groups or not"
+msgstr "Ali naj orodje user-admin pokaže vse uporabnike in skupine ali ne"
+
+#: ../gnome-system-tools.schemas.in.h:10
+msgid "Whether the warning dialog should be shown or not"
+msgstr "Ali naj je opozorilno pogovorno okno prikazano ali ne"
+
+#: ../interfaces/boot.glade.in.h:1
+msgid "<b>Security</b>"
+msgstr "<b>Varnost</b>"
+
+#: ../interfaces/boot.glade.in.h:2
+msgid ""
+"<span size=\"larger\" weight=\"bold\">Several bootloaders have been found</span>\n"
+"\n"
+"please select which do you want to configure"
+msgstr ""
+"<span size=\"larger\" weight=\"bold\">Najdenih je bilo več zagonskih nalagalnikov</span>\n"
+"\n"
+"prosim izberite, katerega želite nastaviti"
+
+#: ../interfaces/boot.glade.in.h:5
+#: ../interfaces/users.glade.in.h:3
+msgid "<span weight=\"bold\">Basic Settings</span>"
+msgstr "<span weight=\"bold\">Osnovne nastavitve</span>"
+
+#: ../interfaces/boot.glade.in.h:6
+msgid "<span weight=\"bold\">Image Settings</span>"
+msgstr "<span weight=\"bold\">Nastavitve slike</span>"
+
+#: ../interfaces/boot.glade.in.h:7
+msgid "<span weight=\"bold\">Other Settings</span>"
+msgstr "<span weight=\"bold\">Ostale nastavitve</span>"
+
+#: ../interfaces/boot.glade.in.h:8
+msgid "<span weight=\"bold\">Starting the Computer</span>"
+msgstr "<span weight=\"bold\">Zaganjanje računalnika</span>"
+
+#: ../interfaces/boot.glade.in.h:9
+msgid "Ask at boot"
+msgstr "Vprašaj pri zagonu"
+
+#: ../interfaces/boot.glade.in.h:10
+#: ../src/boot/main.c:71
+msgid "Boot Manager Settings"
+msgstr "Nastavitve upravitelja zagona"
+
+#: ../interfaces/boot.glade.in.h:11
+msgid "Choose a kernel image to boot, and a partition to mount as the root partition. Optionally, you may also enter parameters passed to the kernel at boot time."
+msgstr "Izberi sliko jedra za zagon in particijo, ki bo priklopljena kot korenska particija. Če želite, lahko tudi vnesete parametre, ki bodo podani jedru pri zagonu."
+
+#: ../interfaces/boot.glade.in.h:12
+msgid "Click \"Forward\" to continue"
+msgstr "Kliknite \"Naprej\" za nadaljevanje"
+
+#: ../interfaces/boot.glade.in.h:13
+msgid "Confirmation"
+msgstr "Potrditev"
+
+#. set window title
+#: ../interfaces/boot.glade.in.h:14
+#: ../src/boot/boot-druid.c:442
+#: ../src/boot/boot-druid.c:454
+msgid "Creating a new boot image"
+msgstr "Izdelovanje nove zagonske slike"
+
+#: ../interfaces/boot.glade.in.h:15
+msgid "Don't ask me again"
+msgstr "Ne vprašaj me več"
+
+#: ../interfaces/boot.glade.in.h:16
+msgid "Enable IDE SCSI emulation"
+msgstr "Vključi posnemanje IDE SCSI"
+
+#: ../interfaces/boot.glade.in.h:17
+msgid "Enter a name for the boot image, and specify what kind of operating system it is."
+msgstr "Vnesite ime zagonske slike in navedite, kakšna vrsta operacijskega sistema je to."
+
+#: ../interfaces/boot.glade.in.h:18
+msgid "Finished"
+msgstr "Zaključeno"
+
+#: ../interfaces/boot.glade.in.h:19
+#, fuzzy
+msgid "Manual"
+msgstr "Ročno"
+
+#: ../interfaces/boot.glade.in.h:20
+msgid "Number of colors:"
+msgstr "Število barv:"
+
+#: ../interfaces/boot.glade.in.h:21
+msgid "Other parameters:"
+msgstr "Ostali parametri:"
+
+#: ../interfaces/boot.glade.in.h:22
+msgid "Password"
+msgstr "Geslo"
+
+#: ../interfaces/boot.glade.in.h:23
+msgid "Protect with password"
+msgstr "Zaščiti z geslom"
+
+#: ../interfaces/boot.glade.in.h:24
+msgid "Resolution:"
+msgstr "Ločljivost:"
+
+#: ../interfaces/boot.glade.in.h:25
+msgid "Seconds to wait before loading default kernel or OS"
+msgstr "Koliko sekund je potrebno počakati preden se zažene privzeto jedro ali OS"
+
+#: ../interfaces/boot.glade.in.h:26
+msgid "Select a kernel image"
+msgstr "Izberite sliko jedra"
+
+#: ../interfaces/boot.glade.in.h:27
+msgid "Select an initrd image"
+msgstr "Izberite sliko initrd"
+
+#: ../interfaces/boot.glade.in.h:28
+msgid "Specify the partition on which the operating system is installed."
+msgstr "Navedite particijo, na kateri je nameščen operacijski sistem."
+
+#: ../interfaces/boot.glade.in.h:29
+msgid "The new boot image has been added. Please click \"Apply\" to save your changes."
+msgstr "Dodana je bila nova zagonska slika. Prosim kliknite \"Uveljavi\", da shranite spremembe."
+
+#: ../interfaces/boot.glade.in.h:30
+msgid "This assistant is designed to help you quickly and easily add a new boot image to your system."
+msgstr "Asistent je zasnovan tako, da vam omogoči hitro in enostavno dodajanje novih zagonskih slik v sistem."
+
+#: ../interfaces/boot.glade.in.h:31
+msgid "Video modes (only frame buffer)"
+msgstr "Video načini (samo medpomnilnik slik)"
+
+#: ../interfaces/boot.glade.in.h:32
+msgid "_Add..."
+msgstr "_Dodaj ..."
+
+#: ../interfaces/boot.glade.in.h:33
+msgid "_Device:"
+msgstr "_Naprava:"
+
+#: ../interfaces/boot.glade.in.h:34
+msgid "_Edit"
+msgstr "_Uredi"
+
+#: ../interfaces/boot.glade.in.h:35
+#: ../src/boot/boot-settings.c:44
+msgid "_Initrd image path:"
+msgstr "Pot do slike _initrd:"
+
+#: ../interfaces/boot.glade.in.h:36
+msgid "_Kernel image path:"
+msgstr "Pod do slike _jedra:"
+
+#: ../interfaces/boot.glade.in.h:37
+msgid "_Name:"
+msgstr "_Ime:"
+
+#: ../interfaces/boot.glade.in.h:38
+msgid "_Operating system:"
+msgstr "_Operacijski sistem:"
+
+#: ../interfaces/boot.glade.in.h:39
+msgid "_Parameters:"
+msgstr "_Parametri:"
+
+#: ../interfaces/boot.glade.in.h:40
+msgid "_Root file system device:"
+msgstr "_Naprava s korenskim sistemom:"
+
+#: ../interfaces/common.glade.in.h:1
+msgid "<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Prosim vpišite administrativno (root) geslo</span>"
+
+#: ../interfaces/common.glade.in.h:2
+msgid "<span weight=\"bold\" size=\"larger\">The platform you are running is not supported by this tool</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Platforma, ki jo uporabljate, ni podprta v tem orodjul</span>"
+
+#: ../interfaces/common.glade.in.h:3
+msgid "Enter Password"
+msgstr "Vpišite geslo"
+
+#: ../interfaces/common.glade.in.h:4
+msgid "If you know for sure that it works like one of the platforms listed below, you can select that and continue. Note, however, that this might damage the system configuration or downright cripple your computer."
+msgstr "Če ste prepričani, da deluje kot kakšna izmed spodaj naštetih platform, lahko le-to izberete in nadaljujete. Lahko pa to poškoduje nastavitev sistema ali ohromi računalnik"
+
+#: ../interfaces/common.glade.in.h:5
+msgid "Remote administration"
+msgstr "Oddaljena administracija"
+
+#: ../interfaces/common.glade.in.h:6
+msgid "Run _Without Password"
+msgstr "Zaženi _brez gesla"
+
+#: ../interfaces/common.glade.in.h:7
+msgid "Unsupported Platform"
+msgstr "Nepodprta platforma"
+
+#: ../interfaces/common.glade.in.h:8
+msgid "Use this window to select the computer you wish to configure"
+msgstr "Uporabite to okno za izbiro računalnika, ki ga želite nastaviti"
+
+#: ../interfaces/common.glade.in.h:9
+msgid "You need administrator privileges to use this tool. Enter a password to modify your system configuration."
+msgstr "Za uporabo tega orodja potrebujete administratorske privilegije. Vpišite geslo za spreminjanje nastavitev sistema."
+
+#: ../interfaces/common.glade.in.h:10
+msgid "_Password:"
+msgstr "_Geslo:"
+
+#: ../interfaces/network.glade.in.h:1
+msgid "<b>Account data</b>"
+msgstr "<b>Podatki računa</b>"
+
+#: ../interfaces/network.glade.in.h:2
+msgid "<b>Connection settings</b>"
+msgstr "<b>Nastavitve povezave</b>"
+
+#: ../interfaces/network.glade.in.h:3
+msgid "<b>Connection</b>"
+msgstr "<b>Povezava</b>"
+
+#: ../interfaces/network.glade.in.h:4
+msgid "<b>DNS Servers</b>"
+msgstr "<b>Strežniki DNS</b>"
+
+#: ../interfaces/network.glade.in.h:5
+msgid "<b>Host Settings</b>"
+msgstr "<b>Nastavitve gostitelja</b>"
+
+#: ../interfaces/network.glade.in.h:6
+msgid "<b>Internet service provider data</b>"
+msgstr "<b>Podatki o ponudniku internetnih storitev</b>"
+
+#: ../interfaces/network.glade.in.h:7
+msgid "<b>Modem settings</b>"
+msgstr "<b>Nastavitve modema</b>"
+
+#: ../interfaces/network.glade.in.h:8
+msgid "<b>Search Domains</b>"
+msgstr "<b>Iskanje domen</b>"
+
+#: ../interfaces/network.glade.in.h:9
+msgid "<b>Wireless settings</b>"
+msgstr "<b>Brezžične nastavitve</b>"
+
+#: ../interfaces/network.glade.in.h:10
+msgid "Aliases:"
+msgstr "Vzdevki:"
+
+#: ../interfaces/network.glade.in.h:11
+msgid "C_onfiguration:"
+msgstr "_Nastavitve:"
+
+#: ../interfaces/network.glade.in.h:12
+msgid "Connections"
+msgstr "Povezave"
+
+#: ../interfaces/network.glade.in.h:13
+msgid "DNS"
+msgstr "DNS"
+
+#: ../interfaces/network.glade.in.h:14
+msgid "D_omain name:"
+msgstr "_Ime domene:"
+
+#: ../interfaces/network.glade.in.h:15
+msgid "Default _gateway device:"
+msgstr "Privzeta _prehodna naprava:"
+
+#: ../interfaces/network.glade.in.h:16
+msgid "Device:"
+msgstr "Naprava:"
+
+#: ../interfaces/network.glade.in.h:17
+msgid "E_nable this connection"
+msgstr "_Omogoči to povezavo"
+
+#: ../interfaces/network.glade.in.h:18
+#: ../interfaces/users.glade.in.h:21
+msgid "General"
+msgstr "Splošno"
+
+#: ../interfaces/network.glade.in.h:19
+msgid "Host alias settings"
+msgstr "Nastavitve vzdevka gostitelja"
+
+#: ../interfaces/network.glade.in.h:20
+msgid "Hosts"
+msgstr "Gostitelji"
+
+#: ../interfaces/network.glade.in.h:21
+#: ../interfaces/shares.glade.in.h:15
+msgid "IP address:"
+msgstr "Naslov IP:"
+
+#: ../interfaces/network.glade.in.h:22
+msgid "Interface name:"
+msgstr "Ime vmesnika:"
+
+#: ../interfaces/network.glade.in.h:23
+msgid "Interface properties"
+msgstr "Lastnosti vmesnika"
+
+#: ../interfaces/network.glade.in.h:24
+msgid "Key _type:"
+msgstr "_Vrsta ključa:"
+
+#: ../interfaces/network.glade.in.h:25
+msgid "Location name:"
+msgstr "Ime mesta:"
+
+#: ../interfaces/network.glade.in.h:26
+msgid "Location:"
+msgstr "Mesto:"
+
+#: ../interfaces/network.glade.in.h:27
+msgid "Modem"
+msgstr "Modem"
+
+#: ../interfaces/network.glade.in.h:28
+msgid "Network name (_ESSID):"
+msgstr "Omrežno ime (_ESSID):"
+
+#: ../interfaces/network.glade.in.h:29
+msgid ""
+"Off\n"
+"Low\n"
+"Medium\n"
+"Loud"
+msgstr ""
+"Izključeno\n"
+"Nizko\n"
+"Srednje\n"
+"Glasno"
+
+#: ../interfaces/network.glade.in.h:33
+msgid "Options"
+msgstr "Možnosti"
+
+#: ../interfaces/network.glade.in.h:34
+msgid "P_assword"
+msgstr "_Geslo"
+
+#: ../interfaces/network.glade.in.h:35
+msgid ""
+"Plain (ASCII)\n"
+"Hexadecimal"
+msgstr ""
+"Golo besedilo (ASCII)\n"
+"Šestnajstiški"
+
+#: ../interfaces/network.glade.in.h:37
+msgid "Select location name"
+msgstr "Izberite ime kraja"
+
+#: ../interfaces/network.glade.in.h:38
+msgid ""
+"Static IP address\n"
+"DHCP"
+msgstr ""
+"Statični naslov IP\n"
+"DHCP"
+
+#: ../interfaces/network.glade.in.h:40
+msgid ""
+"Tones\n"
+"Pulses"
+msgstr ""
+"Tonski\n"
+"Pulzni"
+
+#: ../interfaces/network.glade.in.h:42
+msgid "Use the Internet service provider nameservers"
+msgstr "Uporabi imenske strežnike ponudnika internetnih storitev"
+
+#: ../interfaces/network.glade.in.h:43
+msgid "WEP _key:"
+msgstr "_Ključ WEP:"
+
+#: ../interfaces/network.glade.in.h:44
+#: ../src/network/ifaces-list.c:34
+msgid "_Activate"
+msgstr "_Vključi"
+
+#: ../interfaces/network.glade.in.h:45
+msgid "_Autodetect"
+msgstr "_Samodejno zaznaj"
+
+#: ../interfaces/network.glade.in.h:46
+#: ../src/network/ifaces-list.c:35
+msgid "_Deactivate"
+msgstr "_Izključi"
+
+#: ../interfaces/network.glade.in.h:47
+msgid "_Dial prefix:"
+msgstr "_Klicna predpona:"
+
+#: ../interfaces/network.glade.in.h:48
+msgid "_Dial type:"
+msgstr "_Vrsta klica:"
+
+#: ../interfaces/network.glade.in.h:49
+msgid "_Gateway address:"
+msgstr "_Geslo za prehod:"
+
+#: ../interfaces/network.glade.in.h:50
+msgid "_Hostname:"
+msgstr "_Ime gostitelja:"
+
+#: ../interfaces/network.glade.in.h:51
+msgid "_IP address:"
+msgstr "_Naslov IP:"
+
+#: ../interfaces/network.glade.in.h:52
+msgid "_Local IP:"
+msgstr "_Lokalni IP:"
+
+#: ../interfaces/network.glade.in.h:53
+msgid "_Modem port:"
+msgstr "_Vrata modema:"
+
+#: ../interfaces/network.glade.in.h:54
+msgid "_Phone number:"
+msgstr "_Telefonska številka:"
+
+#: ../interfaces/network.glade.in.h:55
+msgid "_Remote IP:"
+msgstr "_Oddaljeni IP:"
+
+#: ../interfaces/network.glade.in.h:56
+msgid "_Retry if the connection breaks or fails to start"
+msgstr "_Ponovno poskusi, če povezava propade ali se ne vzpostavi"
+
+#: ../interfaces/network.glade.in.h:57
+msgid "_Set modem as default route to internet"
+msgstr "_Nastavi modem kot privzeto smer do interneta"
+
+#: ../interfaces/network.glade.in.h:58
+msgid "_Subnet mask:"
+msgstr "_Podomrežna maska:"
+
+#: ../interfaces/network.glade.in.h:59
+#: ../interfaces/users.glade.in.h:61
+msgid "_Username:"
+msgstr "_Uporabniško ime:"
+
+#: ../interfaces/network.glade.in.h:60
+msgid "_Volume:"
+msgstr "_Nosilec:"
+
+#: ../interfaces/services.glade.in.h:1
+msgid "Advanced settings:"
+msgstr "Napredne nastavitve:"
+
+#: ../interfaces/services.glade.in.h:2
+msgid "Select the services that you wish to activate:"
+msgstr "Izberite storitev, ki jo želite aktivirati:"
+
+#: ../interfaces/shares.glade.in.h:1
+msgid "<b>Allowed hosts</b>"
+msgstr "<b>Dovoljeni gostitelji</b>"
+
+#: ../interfaces/shares.glade.in.h:2
+msgid "<b>Hosts settings</b>"
+msgstr "<b>Nastavitve gostiteljev</b>"
+
+#: ../interfaces/shares.glade.in.h:3
+msgid "<b>Share properties</b>"
+msgstr "<b>Lastnosti deljenja</b>"
+
+#: ../interfaces/shares.glade.in.h:4
+msgid "<b>Shared folder</b>"
+msgstr "<b>Deljene mape</b>"
+
+#: ../interfaces/shares.glade.in.h:5
+msgid "<b>WINS server</b>"
+msgstr "<b>Strežnik WINS</b>"
+
+#: ../interfaces/shares.glade.in.h:6
+msgid "<b>Windows sharing Settings</b>"
+msgstr "<b>Nastavitve deljenja Windows</b>"
+
+#: ../interfaces/shares.glade.in.h:7
+msgid "Add allowed hosts"
+msgstr "Dodaj dovoljene gostitelje"
+
+#: ../interfaces/shares.glade.in.h:8
+msgid "Allow _browsing folder"
+msgstr "Dovoli _brskanje map"
+
+#: ../interfaces/shares.glade.in.h:9
+msgid "Allowed hosts:"
+msgstr "Dovoljeni gostitelji:"
+
+#: ../interfaces/shares.glade.in.h:10
+msgid "Comment:"
+msgstr "Komentar:"
+
+#: ../interfaces/shares.glade.in.h:11
+msgid "Do not use WINS server"
+msgstr "Ne uporabi strežnika WINS"
+
+#: ../interfaces/shares.glade.in.h:12
+msgid "Domain / _Workgroup"
+msgstr "Domena/Delovna _skupina"
+
+#: ../interfaces/shares.glade.in.h:13
+msgid "General Windows sharing settings"
+msgstr "Splošne nastavitve deljenja Windows"
+
+#: ../interfaces/shares.glade.in.h:14
+msgid "Host name:"
+msgstr "Ime gostitelja:"
+
+#: ../interfaces/shares.glade.in.h:16
+msgid "Name:"
+msgstr "Ime:"
+
+#: ../interfaces/shares.glade.in.h:17
+msgid "Netmask:"
+msgstr "Omrežna maska:"
+
+#: ../interfaces/shares.glade.in.h:18
+msgid "Network:"
+msgstr "Omrežje:"
+
+#: ../interfaces/shares.glade.in.h:19
+#: ../src/shares/nfs-acl-table.c:57
+msgid "Read only"
+msgstr "Samo za branje"
+
+#: ../interfaces/shares.glade.in.h:20
+msgid "Share folder"
+msgstr "Deli mapo"
+
+#: ../interfaces/shares.glade.in.h:21
+msgid "Share with:"
+msgstr "Deli z:"
+
+#: ../interfaces/shares.glade.in.h:22
+msgid "This computer is a WINS server"
+msgstr "Ta računalnik je strežnik WINS"
+
+#: ../interfaces/shares.glade.in.h:23
+msgid "Use WINS Server"
+msgstr "Uporabi strežnik WINS"
+
+#: ../interfaces/shares.glade.in.h:24
+msgid "Windows sharing settings"
+msgstr "Nastavitve deljenja Windows"
+
+#: ../interfaces/shares.glade.in.h:25
+msgid "_Add host"
+msgstr "_Dodaj gostitelja"
+
+#: ../interfaces/shares.glade.in.h:26
+msgid "_Host description:"
+msgstr "_Opis gostitelja"
+
+#: ../interfaces/shares.glade.in.h:27
+msgid "_Path:"
+msgstr "_Pot:"
+
+#: ../interfaces/shares.glade.in.h:28
+msgid "_Read only"
+msgstr "_Samo za branje"
+
+#: ../interfaces/time.glade.in.h:1
+msgid "(unconfigured)"
+msgstr "(ni nastavljeno)"
+
+#: ../interfaces/time.glade.in.h:2
+msgid "<b>Selection</b>"
+msgstr "<b>Izbira</b> "
+
+#: ../interfaces/time.glade.in.h:3
+msgid "<b>Time zone</b>"
+msgstr "<b>Časovni pas</b>"
+
+#: ../interfaces/time.glade.in.h:4
+msgid "Add NTP Server"
+msgstr "Dodaj strežnik NTP"
+
+#: ../interfaces/time.glade.in.h:5
+msgid "NTP server"
+msgstr "Strežnik NTP"
+
+#: ../interfaces/time.glade.in.h:6
+msgid "S_ynchronize clock with Internet servers:"
+msgstr "S_inhroniziraj uro z internetnimi strežniki:"
+
+#: ../interfaces/time.glade.in.h:7
+msgid "Se_lect Servers..."
+msgstr "_Izberite strežnike ..."
+
+#: ../interfaces/time.glade.in.h:8
+msgid "Time servers"
+msgstr "Časovni strežniki"
+
+#: ../interfaces/time.glade.in.h:9
+msgid "Time zone"
+msgstr "Časovni pas"
+
+#: ../interfaces/time.glade.in.h:10
+msgid "Time zone:"
+msgstr "Časovni pas:"
+
+#: ../interfaces/time.glade.in.h:11
+msgid "_Date:"
+msgstr "_Datum:"
+
+#: ../interfaces/time.glade.in.h:12
+msgid "_Select Time Zone..."
+msgstr "_Izberi časovni pas ..."
+
+#: ../interfaces/time.glade.in.h:13
+msgid "_Time:"
+msgstr "Č_as:"
+
+#: ../interfaces/users.glade.in.h:1
+msgid "<span weight=\"bold\">Advanced Settings</span>"
+msgstr "<span weight=\"bold\">Napredne nastavitve</span>"
+
+#: ../interfaces/users.glade.in.h:2
+msgid "<span weight=\"bold\">Automatic UID/GID</span>"
+msgstr "<span weight=\"bold\">Samodejen UID/GID</span>"
+
+#: ../interfaces/users.glade.in.h:4
+msgid "<span weight=\"bold\">Contact Information</span>"
+msgstr "<span weight=\"bold\">Kontaktne informacije</span>"
+
+#: ../interfaces/users.glade.in.h:5
+msgid "<span weight=\"bold\">Group Members</span>"
+msgstr "<span weight=\"bold\">Člani skupine</span>"
+
+#: ../interfaces/users.glade.in.h:6
+msgid "<span weight=\"bold\">Optional Settings</span>"
+msgstr "<span weight=\"bold\">Dodatne nastavitve</span>"
+
+#: ../interfaces/users.glade.in.h:7
+msgid "<span weight=\"bold\">Password Settings</span>"
+msgstr "<span weight=\"bold\">Nastavitve gesla</span>"
+
+#: ../interfaces/users.glade.in.h:8
+msgid "<span weight=\"bold\">Password</span>"
+msgstr "<span weight=\"bold\">Geslo</span>"
+
+#: ../interfaces/users.glade.in.h:9
+msgid "<span weight=\"bold\">Profile Settings</span>"
+msgstr "<span weight=\"bold\">Nastavitve profila</span>"
+
+#: ../interfaces/users.glade.in.h:10
+msgid "<span weight=\"bold\">System Defaults</span>"
+msgstr "<span weight=\"bold\">Privzete sistemske nastavitve</span>"
+
+#: ../interfaces/users.glade.in.h:11
+msgid "<span weight=\"bold\">User Profile</span>"
+msgstr "<span weight=\"bold\">Uporabniški profil</span>"
+
+#: ../interfaces/users.glade.in.h:12
+msgid "Account"
+msgstr "Račun"
+
+#: ../interfaces/users.glade.in.h:13
+msgid "Advanced"
+msgstr "Napredno"
+
+#: ../interfaces/users.glade.in.h:14
+msgid "Allow user to:"
+msgstr "Dovoli uporabniku da:"
+
+#: ../interfaces/users.glade.in.h:15
+msgid "Assign a random password by default"
+msgstr "Privzeto dodeli naključno geslo"
+
+#: ../interfaces/users.glade.in.h:16
+msgid "Check password _quality"
+msgstr "Preveri _kakovost gesla"
+
+#: ../interfaces/users.glade.in.h:17
+msgid "Con_firmation:"
+msgstr "Potr_ditev"
+
+#: ../interfaces/users.glade.in.h:18
+msgid "Days between warning and password expiration:"
+msgstr "Dnevi med opozorilom in pretekom gesla:"
+
+#: ../interfaces/users.glade.in.h:19
+msgid "Default _group:"
+msgstr "Privzeta _skupina:"
+
+#: ../interfaces/users.glade.in.h:20
+msgid "Default _shell:"
+msgstr "Privzeta _ukazna lupina:"
+
+#: ../interfaces/users.glade.in.h:22
+msgid "Generate _random password"
+msgstr "Generiraj _naključno geslo"
+
+#: ../interfaces/users.glade.in.h:23
+msgid "Group _ID:"
+msgstr "ID skupine:"
+
+#: ../interfaces/users.glade.in.h:24
+msgid "Group _members:"
+msgstr "Člani skupine:"
+
+#: ../interfaces/users.glade.in.h:25
+msgid "Group _name:"
+msgstr "_Ime skupine:"
+
+#: ../interfaces/users.glade.in.h:26
+msgid "Group properties"
+msgstr "Lastnosti skupine"
+
+#: ../interfaces/users.glade.in.h:27
+msgid "Groups"
+msgstr "Skupine"
+
+#: ../interfaces/users.glade.in.h:28
+msgid "Ma_ximum days a password may be used:"
+msgstr "Naj_večje število dni, ko se geslo lahko uporablja:"
+
+#: ../interfaces/users.glade.in.h:29
+msgid "Maximum UID:"
+msgstr "Največji UID:"
+
+#: ../interfaces/users.glade.in.h:30
+msgid "Mi_nimum days between password changes:"
+msgstr "Naj_manjše število dni med spremembami gesla:"
+
+#: ../interfaces/users.glade.in.h:31
+msgid "Minimum GID:"
+msgstr "Najmanjši GID:"
+
+#: ../interfaces/users.glade.in.h:32
+msgid "Minimum UID:"
+msgstr "Najmanjši UID:"
+
+#: ../interfaces/users.glade.in.h:33
+msgid "Minimum days allowed between password changes:"
+msgstr "Najmanjše dovoljeno število dni med spremembami gesla:"
+
+#: ../interfaces/users.glade.in.h:34
+msgid "Number of days that a password may be used:"
+msgstr "Število dni, ko se geslo lahko uporablja:"
+
+#: ../interfaces/users.glade.in.h:35
+msgid "O_ffice location:"
+msgstr "Mesto _pisarne:"
+
+#: ../interfaces/users.glade.in.h:36
+msgid "Password set to: "
+msgstr "Geslo nastavljeno na:"
+
+#: ../interfaces/users.glade.in.h:37
+msgid "Privileges"
+msgstr "Privilegiji"
+
+#: ../interfaces/users.glade.in.h:38
+msgid "Profile _name:"
+msgstr "Ime _profila:"
+
+#: ../interfaces/users.glade.in.h:39
+msgid "Set password b_y hand"
+msgstr "_Ročno nastavi geslo"
+
+#: ../interfaces/users.glade.in.h:40
+msgid "Show a_ll users and groups"
+msgstr "Prikaži v_se uporabnike in skupine"
+
+#: ../interfaces/users.glade.in.h:41
+msgid "User _ID:"
+msgstr "Uporabniški _ID:"
+
+#: ../interfaces/users.glade.in.h:42
+msgid "User _password:"
+msgstr "Uporabnikovo _geslo:"
+
+#: ../interfaces/users.glade.in.h:43
+msgid "User privileges"
+msgstr "Uporabniški privilegiji"
+
+#: ../interfaces/users.glade.in.h:44
+msgid "User profiles"
+msgstr "Uporabniški profili"
+
+#: ../interfaces/users.glade.in.h:45
+msgid "Users"
+msgstr "Uporabniki"
+
+#: ../interfaces/users.glade.in.h:46
+msgid "_Add Group..."
+msgstr "Dodaj _skupino ..."
+
+#: ../interfaces/users.glade.in.h:47
+msgid "_Add Profile..."
+msgstr "_Dodoaj profil ..."
+
+#: ../interfaces/users.glade.in.h:48
+msgid "_Add User..."
+msgstr "Dodaj _uporabnika ..."
+
+#: ../interfaces/users.glade.in.h:49
+msgid "_All users:"
+msgstr "_Vsi uporabniki:"
+
+#: ../interfaces/users.glade.in.h:50
+msgid "_Comments"
+msgstr "_Komentarji"
+
+#: ../interfaces/users.glade.in.h:51
+msgid "_Days between warning and password expiration:"
+msgstr "_Dnevi med opozorilom in pretekom gesla"
+
+#: ../interfaces/users.glade.in.h:52
+#: ../src/boot/table.c:54
+#: ../src/network/address-list.c:72
+#: ../src/network/hosts.c:39
+#: ../src/shares/table.c:42
+#: ../src/users/table.c:50
+msgid "_Delete"
+msgstr "_Izbriši"
+
+#: ../interfaces/users.glade.in.h:53
+msgid "_Edit User Profiles..."
+msgstr "_Uredi uporabniške profile ..."
+
+#: ../interfaces/users.glade.in.h:54
+msgid "_Generate"
+msgstr "_Generiraj"
+
+#: ../interfaces/users.glade.in.h:55
+msgid "_Home directory:"
+msgstr "_Domači imenik:"
+
+#: ../interfaces/users.glade.in.h:56
+msgid "_Home phone:"
+msgstr "_Domači telefon:"
+
+#: ../interfaces/users.glade.in.h:57
+msgid "_Main group:"
+msgstr "_Glavna skupina:"
+
+#: ../interfaces/users.glade.in.h:58
+msgid "_Profile:"
+msgstr "_Profil:"
+
+#: ../interfaces/users.glade.in.h:59
+msgid "_Real name:"
+msgstr "_Resnično ime:"
+
+#: ../interfaces/users.glade.in.h:60
+msgid "_Shell:"
+msgstr "_Ukazna lupina: "
+
+#: ../interfaces/users.glade.in.h:62
+msgid "_Work phone:"
+msgstr "_Delovni telefon:"
+
+#: ../src/boot/boot-append-gui.c:140
+msgid "32,768"
+msgstr "32,768"
+
+#: ../src/boot/boot-append-gui.c:141
+msgid "65,536"
+msgstr "65,536"
+
+#: ../src/boot/boot-append-gui.c:142
+msgid "16,777,216"
+msgstr "16,777,216"
+
+#: ../src/boot/boot-append-gui.c:253
+msgid "Invalid VGA value"
+msgstr "Neveljavna vrednost VGA"
+
+#: ../src/boot/boot-append-gui.c:255
+#, c-format
+msgid "\"%s\" is not a valid VGA value."
+msgstr "\"%s\" ni veljavna vrednost VGA"
+
+#: ../src/boot/boot-druid.c:113
+msgid "Error creating boot image"
+msgstr "Napaka pri ustvarjanju zagonske slike"
+
+#: ../src/boot/boot-druid.c:443
+#, c-format
+msgid "Creating a new boot image (%d of %d)"
+msgstr "Izdelovanje nove zagonske slike (%d od %d)"
+
+#: ../src/boot/boot-druid.c:444
+msgid "Finished creating a new boot image"
+msgstr "Zaključeno ustvarjanje nove zagonske slike"
+
+#: ../src/boot/boot-image.c:43
+msgid "Unknown"
+msgstr "Neznan"
+
+#: ../src/boot/boot-image.c:44
+msgid "Windows NT"
+msgstr "Windows NT"
+
+#: ../src/boot/boot-image.c:45
+msgid "Windows 9x"
+msgstr "Windows 9x"
+
+#: ../src/boot/boot-image.c:46
+msgid "Dos"
+msgstr "Dos"
+
+#: ../src/boot/boot-image.c:47
+msgid "Linux"
+msgstr "Linux"
+
+#: ../src/boot/boot-image.c:48
+msgid "Linux swap"
+msgstr "Linux swap"
+
+#: ../src/boot/boot-image.c:49
+msgid "GNU/Hurd"
+msgstr "GNU/Hurd"
+
+#: ../src/boot/boot-image.c:279
+#, c-format
+msgid "\"%s\" is an invalid path"
+msgstr "\"%s\" je neveljavna pot"
+
+#: ../src/boot/boot-image.c:295
+#, c-format
+msgid "\"%s\" already exists, please set another name."
+msgstr "\"%s\" že obstaja, prosim nastavite drugo ime."
+
+#: ../src/boot/boot-image.c:301
+#, c-format
+msgid "Invalid image name: \"%s\"."
+msgstr "Neveljavno ime slike: \"%s\"."
+
+#: ../src/boot/boot-image.c:314
+#, c-format
+msgid "Invalid image: \"%s\"."
+msgstr "Neveljavna slika: \"%s\"."
+
+#: ../src/boot/boot-image.c:332
+#, c-format
+msgid "Invalid root device: \"%s\"."
+msgstr "Neveljavna korenska naprava: \"%s\"."
+
+#: ../src/boot/boot-settings.c:45
+msgid "_Module path:"
+msgstr "_Pot do modula:"
+
+#: ../src/boot/boot-settings.c:407
+msgid "Password confirmation is not correct."
+msgstr "Potrditev gesla ni pravilna."
+
+#: ../src/boot/boot-settings.c:432
+msgid "Error modifying boot image"
+msgstr "Napaka pri spreminjanju zagonske slike"
+
+#: ../src/boot/boot.desktop.in.in.h:1
+msgid "Boot"
+msgstr "Zagon"
+
+#: ../src/boot/boot.desktop.in.in.h:2
+msgid "Configure the system boot process"
+msgstr "Nastavi proces zagona sistema"
+
+#: ../src/boot/callbacks.c:81
+msgid "Boot Image Editor"
+msgstr "Urejevalnik zagonske slike"
+
+#: ../src/boot/callbacks.c:179
+msgid "Boot Append Editor"
+msgstr "Urejevalnik zagonskih dodatkov"
+
+#: ../src/boot/callbacks.c:412
+msgid "Error deleting boot image"
+msgstr "Napaka pri brisanju zagonske slike"
+
+#: ../src/boot/callbacks.c:414
+msgid "Without at least one boot image your computer will not start."
+msgstr "Brez vsaj ene zagonske slike se vaš računalnik ne bo zagnal."
+
+#: ../src/boot/callbacks.c:433
+#, c-format
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr "Ali ste prepričani, da želite izbrisati \"%s\"?"
+
+#: ../src/boot/callbacks.c:435
+msgid "This may leave this operating system unbootable."
+msgstr "To lahko pusti ta sistem nezmožen zagona."
+
+#: ../src/boot/callbacks.c:464
+msgid "The configuration will show empty"
+msgstr "Nastavitev bo prikazana prazna"
+
+#: ../src/boot/callbacks.c:466
+#, c-format
+msgid "The file \"%s\" is missing or could not be read."
+msgstr "Datoteka \"%s\" manjka ali pa se je ne da prebrati."
+
+#: ../src/boot/table.c:43
+msgid "Name"
+msgstr "Ime"
+
+#: ../src/boot/table.c:44
+msgid "Default"
+msgstr "Privzeto"
+
+#: ../src/boot/table.c:45
+msgid "Type"
+msgstr "Vrsta"
+
+#: ../src/boot/table.c:46
+msgid "Kernel Image"
+msgstr "Slika jedra"
+
+#: ../src/boot/table.c:47
+msgid "Device"
+msgstr "Naprava"
+
+#: ../src/boot/table.c:52
+#: ../src/network/address-list.c:71
+#: ../src/network/hosts.c:37
+#: ../src/shares/table.c:40
+#: ../src/users/table.c:48
+msgid "_Add"
+msgstr "_Dodaj"
+
+#: ../src/boot/table.c:53
+#: ../src/network/hosts.c:38
+#: ../src/network/ifaces-list.c:33
+#: ../src/shares/table.c:41
+#: ../src/users/table.c:49
+msgid "_Properties"
+msgstr "_Lastnosti"
+
+#. the proccess was running ssh
+#: ../src/common/gst-auth.c:89
+msgid "The tool could not connect to the computer"
+msgstr "Orodje se ne more povezati z računalnikom"
+
+#: ../src/common/gst-auth.c:90
+msgid "Check that you have access to this network and that the computer is actually working and running the SSH daemon"
+msgstr "Preverite, ali imate dostop do tega omrežja in ali računalnik deluje in poganja demona SSH"
+
+#. the proccess was running su
+#: ../src/common/gst-auth.c:94
+msgid "The entered password is invalid"
+msgstr "Vnešeno geslo je neveljavno"
+
+#: ../src/common/gst-auth.c:95
+msgid "Check that you typed it correctly and that you haven't activated the \"caps lock\" key"
+msgstr "Preverite, ali ste ga pravilno vtipkali in da nimate vključene tipke \"caps lock\"."
+
+#: ../src/common/gst-auth.c:104
+#, c-format
+msgid "Could not run \"%s\""
+msgstr "Ni mogoče zagnati \"%s\""
+
+#: ../src/common/gst-auth.c:105
+msgid "Check that you have permissions to run this command"
+msgstr "Preverite, ali imate dovoljenja za zagon tega ukaza."
+
+#: ../src/common/gst-auth.c:107
+msgid "An unexpected error has occurred"
+msgstr "Prišlo je do nepričakovane napake"
+
+#: ../src/common/gst-auth.c:133
+#, fuzzy
+msgid "Could not execute the backend"
+msgstr "Ni mogoče izvesti hrbtenice"
+
+#: ../src/common/gst-auth.c:134
+msgid "There was an error creating the child process, the tool will close now."
+msgstr "Pri ustvarjanju podrejenega procesa je prišlo do napake, orodje se bo zdaj zaprlo."
+
+#: ../src/common/gst-dialog.c:60
+#, c-format
+msgid "Could not find widget: %s"
+msgstr "Ni mogoče najti gradnika: %s"
+
+#: ../src/common/gst-dialog.c:383
+msgid "There are changes which have not been applied"
+msgstr "Obstajajo spremembe, ki še niso bile uveljavljene"
+
+#: ../src/common/gst-dialog.c:385
+msgid "Apply them now?"
+msgstr "Ali jih želite uveljaviti?"
+
+#: ../src/common/gst-dialog.c:492
+#, fuzzy, c-format
+msgid "Error connection signal `%s' in widget `%s'"
+msgstr "Napaka pri povezovalnem signalu '%s' v gradniku '%s'"
+
+#: ../src/common/gst-tool.c:1026
+msgid "The configuration could not be loaded"
+msgstr "Ni mogoče naložiti nastavitve"
+
+#: ../src/common/gst-tool.c:1028
+#, fuzzy
+msgid "There was an error running the backend script"
+msgstr "Prišlo je do napake pri poganjanju hrbtenične skripte"
+
+#: ../src/common/gst-tool.c:1509
+#, c-format
+msgid "Welcome to the %s prerelease of the GNOME System Tools"
+msgstr "Dobrodošli v predizdaji %s programa GNOME Systems Tools"
+
+#: ../src/common/gst-tool.c:1511
+msgid "This is still a work in progress, and so it may have serious bugs. Due to the nature of these tools, bugs may render your computer <span weight=\"bold\">practically useless</span>, costing time, effort and sanity points. You have been warned. Thank you for trying out this prerelease of the GNOME System Tools!"
+msgstr "Delo je še vedno v teku in zato lahko program vsebuje resne hrošče. Zaradi narave takih orodij, lahko hrošči naredijo vaš računalnik <span weight=\"bold\">praktično neuporaben</span>, kar bi vas stalo veliko časa, truda in prištevnosti. Bili ste opozorjeni. Zahvaljujemo se vam za preizkus te predizdaje programa GNOME System Tools!"
+
+#: ../src/common/gst-tool.c:1532
+msgid "Warning"
+msgstr "Opozorilo"
+
+#: ../src/common/gst-tool.c:1552
+msgid "Don't show me this again"
+msgstr "Tega ne prikaži več"
+
+#: ../src/common/gst-tool.c:1609
+msgid "GNOME System Tools"
+msgstr "GNOME System Tools"
+
+#: ../src/common/gst-tool.c:1755
+msgid "Could not display help"
+msgstr "Ni mogoče prikazati pomoči"
+
+#: ../src/network/address-list.c:555
+msgid "Type address"
+msgstr "Vpišite naslov"
+
+#: ../src/network/callbacks.c:46
+#, c-format
+msgid "Could not enable the interface %s"
+msgstr "Ni mogoče vključiti vmesnika %s"
+
+#: ../src/network/callbacks.c:50
+msgid "Check that the settings are correct for this network and that the computer is correctly connected to it."
+msgstr "Preverite, ali so nastavitve za to omrežje pravilne in ali je računalnik pravilno povezan na to omrežje."
+
+#: ../src/network/callbacks.c:237
+msgid "Could not autodetect modem device"
+msgstr "Ni mogoče samodejno zaznati modema"
+
+#: ../src/network/callbacks.c:240
+msgid "Check that the device is not busy and that is correctly attached to the computer."
+msgstr "Preverite, da naprava ni zaposlena in da je pravilno povezana z računalnikom."
+
+#: ../src/network/callbacks.c:451
+msgid "The host name has changed"
+msgstr "Ime gostitelja se je spremenilo"
+
+#: ../src/network/callbacks.c:454
+msgid "This will prevent you from launching new applications, and so you will have to log in again. Continue anyway?"
+msgstr "To vam bo preprečilo zagon novih programov in tako se boste morali znova prijaviti. Ali želite vseeno nadaljevati?"
+
+#: ../src/network/callbacks.c:460
+msgid "Change _Host name"
+msgstr "Spremeni ime _gostitelja"
+
+#: ../src/network/hosts.c:92
+msgid "IP Address"
+msgstr "Naslov IP"
+
+#: ../src/network/hosts.c:100
+msgid "Aliases"
+msgstr "Vzdevki"
+
+#: ../src/network/location.c:145
+msgid "Create location"
+msgstr "Ustvari mesto"
+
+#: ../src/network/location.c:153
+msgid "Delete current location"
+msgstr "Izbriši trenutno mesto"
+
+#: ../src/network/location.c:367
+msgid "Do you want to remove this location?"
+msgstr "Ali želite izbrisati trenutno mesto?"
+
+#: ../src/network/location.c:440
+msgid "Changing profile"
+msgstr "Spreminjanje profila"
+
+#: ../src/network/main.c:110
+msgid "The interface does not exist"
+msgstr "Vmesnik ne obstaja"
+
+#: ../src/network/main.c:112
+msgid "Check that it is correctly typed and that it is correctly supported by your system."
+msgstr "Preverite, ali ste pravilno vpisali in ali je v vašem sistemu pravilno podprt."
+
+#: ../src/network/main.c:157
+msgid "Configure a network interface"
+msgstr "Nastavi mrežni vmesnik"
+
+#: ../src/network/main.c:157
+msgid "INTERFACE"
+msgstr "VMESNIK"
+
+#: ../src/network/main.c:158
+msgid "Configure the first network interface with a specific type"
+msgstr "Nastavi prvi mrežni vmesnik določene vrste"
+
+#: ../src/network/main.c:158
+msgid "TYPE"
+msgstr "VRSTA"
+
+#: ../src/network/main.c:165
+msgid "Network settings"
+msgstr "Nastavitve omrežja"
+
+#: ../src/network/network.desktop.in.in.h:1
+msgid "Configure network devices and connections"
+msgstr "Nastavite mrežne naprave in povezave"
+
+#: ../src/network/network.desktop.in.in.h:2
+msgid "Networking"
+msgstr "Omrežje"
+
+#: ../src/network/network-iface-ethernet.c:302
+msgid "Ethernet connection"
+msgstr "Povezava ethernet"
+
+#: ../src/network/network-iface-irlan.c:122
+msgid "Infrared connection"
+msgstr "Infrardeča povezava"
+
+#: ../src/network/network-iface-isdn.c:330
+msgid "ISDN connection"
+msgstr "Povezava ISDN"
+
+#: ../src/network/network-iface-modem.c:253
+msgid "Modem connection"
+msgstr "Modemska povezava"
+
+#: ../src/network/network-iface-plip.c:211
+msgid "Parallel port connection"
+msgstr "Povezava z vzporednimi vrati"
+
+#: ../src/network/network-iface-wireless.c:245
+msgid "Wireless connection"
+msgstr "Brezžična povezava"
+
+#: ../src/network/network-iface.c:410
+#, c-format
+msgid "Activating interface \"%s\""
+msgstr "Aktiviranje vmesnika \"%s\""
+
+#: ../src/network/network-iface.c:522
+#, c-format
+msgid "The interface %s is not configured"
+msgstr "Vmesnik %s ni nastavljen"
+
+#: ../src/network/network-iface.c:524
+#, c-format
+msgid "The interface %s is not active"
+msgstr "Vmesnik %s ni aktiven"
+
+#: ../src/network/network-iface.c:526
+#, c-format
+msgid "The interface %s is active"
+msgstr "Vmesnik %s je aktiven"
+
+#: ../src/services/callbacks.c:64
+#, c-format
+msgid "Settings for \"%s\""
+msgstr "Nastavitve za \"%s\""
+
+#. FIXME: put service name !!!
+#: ../src/services/callbacks.c:153
+msgid "Are you sure you want to deactivate this service?"
+msgstr "Ali ste prepričani, da želite izključiti to storitev?"
+
+#: ../src/services/callbacks.c:156
+msgid "This may affect your system behavior in several ways, possibly leading to data loss"
+msgstr "To lahko na različne načine vpliva na obnašanje vašega sistema, po možnosti vodi do izgube podatkov"
+
+#: ../src/services/main.c:55
+msgid "Services settings"
+msgstr "Nastavitve storitev"
+
+#: ../src/services/services.desktop.in.in.h:1
+msgid "Configure which services will be run when the system starts"
+msgstr "Nastavite, katere storitve naj se zaženejo, ko se zažene sistem"
+
+#: ../src/services/services.desktop.in.in.h:2
+msgid "Services"
+msgstr "Storitve"
+
+#: ../src/services/service.c:32
+msgid "Antivirus"
+msgstr "Protivirus"
+
+#: ../src/services/service.c:32
+msgid "Analyzes your incoming mail for virus"
+msgstr "Pregleduje prihajajočo pošto za virusi"
+
+#: ../src/services/service.c:33
+msgid "Volumes mounter"
+msgstr "Priklopnik nosilcev"
+
+#: ../src/services/service.c:33
+msgid "Mounts your volumes automatically"
+msgstr "Samodejno priklopi nosilce"
+
+#: ../src/services/service.c:34
+msgid "Actions scheduler"
+msgstr "Razporejevalnik dejanj"
+
+#: ../src/services/service.c:34
+msgid "Executes scheduled actions"
+msgstr "Izvaja načrtovana dejanja"
+
+#: ../src/services/service.c:35
+msgid "Database server"
+msgstr "Strežnik podatkovnih zbirk"
+
+#: ../src/services/service.c:35
+msgid "Data storage system"
+msgstr "Sistem za shranjevanje podatkov"
+
+#: ../src/services/service.c:36
+msgid "Graphical login manager"
+msgstr "Grafični upravitelj prijav"
+
+#: ../src/services/service.c:36
+msgid "Allows users to login graphically"
+msgstr "Dovoli uporabnikom, da se prijavijo grafično"
+
+#: ../src/services/service.c:37
+msgid "Folder sharing service"
+msgstr "Storitev deljenja map"
+
+#: ../src/services/service.c:37
+msgid "Shares folders over your network"
+msgstr "Deljenje map preko omrežja"
+
+#: ../src/services/service.c:38
+msgid "File sharing service"
+msgstr "Storitev deljenja datotek"
+
+#: ../src/services/service.c:38
+#: ../src/services/service.c:39
+msgid "Shares files over the Internet"
+msgstr "Deljenje datotek preko interneta"
+
+#: ../src/services/service.c:39
+msgid "FTP service"
+msgstr "Storitev FTP"
+
+#: ../src/services/service.c:40
+msgid "Mail fetcher"
+msgstr "Zajemalnik pošte"
+
+#: ../src/services/service.c:40
+msgid "Downloads your mail from remote accounts"
+msgstr "Prenos pošte iz oddaljenih računov"
+
+#: ../src/services/service.c:41
+msgid "Mail agent"
+msgstr "Poštni agent"
+
+#: ../src/services/service.c:41
+msgid "Delivers your outgoing mail"
+msgstr "Dostavlja vašo odhajajočo pošto"
+
+#: ../src/services/service.c:42
+msgid "Clock synchronization service"
+msgstr "Storitev sinhronizacije ure"
+
+#: ../src/services/service.c:42
+msgid "Synchronizes your computer clock with Internet time servers"
+msgstr "Sinhronizira računalniško uro z internetnimi časovnimi strežniki"
+
+#: ../src/services/service.c:43
+msgid "Printer service"
+msgstr "Storitev tiskanja"
+
+#: ../src/services/service.c:43
+msgid "Allows applications to use printers"
+msgstr "Omogoča programom uporabo tiskalnika"
+
+#: ../src/services/service.c:44
+msgid "Remote shell server"
+msgstr "Strežnik oddaljene ukazne lupine"
+
+#: ../src/services/service.c:44
+msgid "Secure shell server"
+msgstr "Strežnik Secure shell"
+
+#: ../src/services/service.c:45
+msgid "Computer activity logger"
+msgstr "Dnevnik dejavnosti računalnika"
+
+#: ../src/services/service.c:45
+msgid "Keeps a log of your computer activity"
+msgstr "Piše dnevnik dejavnosti računalnika"
+
+#: ../src/services/service.c:46
+msgid "Web server"
+msgstr "Spletni strežnik"
+
+#: ../src/services/service.c:46
+msgid "Shares your web pages over the Internet"
+msgstr "Deljenje vaših spletnih strani preko interneta"
+
+#: ../src/shares/callbacks.c:187
+msgid "Are you sure you want to delete this share?"
+msgstr "Ali ste prepričani, da želite izbrisati to deljenje?"
+
+#: ../src/shares/callbacks.c:189
+msgid "Other computers in your network will stop viewing this."
+msgstr "Ostali računalniki v omrežju ne bodo več videli tega."
+
+#: ../src/shares/main.c:90
+msgid "Add a shared path, modifies it if it already exists"
+msgstr "Doda deljeno pot, jo spremeni, če že obstaja"
+
+#: ../src/shares/main.c:90
+msgid "PATH"
+msgstr "POT"
+
+#: ../src/shares/main.c:97
+msgid "Shared folders settings"
+msgstr "Nastavitve deljenih map"
+
+#: ../src/shares/nautilus/nautilus-shares.c:129
+msgid "_Share folder"
+msgstr "_Deli mapo"
+
+#: ../src/shares/nautilus/nautilus-shares.c:130
+msgid "Share this folder with other computers"
+msgstr "Delite mapo z ostalimi računalniki"
+
+#: ../src/shares/nfs-acl-table.c:51
+msgid "Allowed host/network"
+msgstr "Dovoljen gostitelj/omrežje"
+
+#: ../src/shares/share-nfs-add-hosts.c:114
+#, c-format
+msgid "Hosts in the %s network"
+msgstr "Gostitelji v omrežju %s"
+
+#: ../src/shares/share-nfs-add-hosts.c:146
+msgid "Specify hostname"
+msgstr "Navedite ime gostitelja"
+
+#: ../src/shares/share-nfs-add-hosts.c:153
+msgid "Specify IP address"
+msgstr "Navedite naslov IP"
+
+#: ../src/shares/share-nfs-add-hosts.c:160
+msgid "Specify network"
+msgstr "Navedite omrežje"
+
+#: ../src/shares/share-settings.c:123
+msgid "Do not share"
+msgstr "Ne deli"
+
+#: ../src/shares/share-settings.c:131
+msgid "SMB"
+msgstr "SMB"
+
+#: ../src/shares/share-settings.c:139
+msgid "NFS"
+msgstr "NFS"
+
+#: ../src/shares/shares.desktop.in.in.h:1
+msgid "Configure which folders are available for your network neighborhood"
+msgstr "Nastavite, katere mape so na voljo za vašo mrežno soseščino"
+
+#: ../src/shares/shares.desktop.in.in.h:2
+msgid "Shared Folders"
+msgstr "Deljene mape"
+
+#: ../src/shares/transfer.c:44
+msgid "Sharing services are not installed"
+msgstr "Storitve deljenja niso nameščene"
+
+#: ../src/shares/transfer.c:46
+msgid "You need to install at least either Samba or NFS in order to share your folders. The tool will close now."
+msgstr "Namestiti morate vsaj Sambo ali NFS, da bi lahko delili mape. Orodje se bo zdaj zaprlo."
+
+#: ../src/time/main.c:464
+msgid "NTP support is not installed"
+msgstr "Podpora za NTP ni nameščena"
+
+#: ../src/time/main.c:466
+msgid "Please install and activate NTP support in the system to enable synchronization of your local time server with Internet time servers."
+msgstr "Prosim namestite in vključite podporo za NTP da bi vključili sinhronizacijo vašega lokalnega časovnega strežnika z internetnimi časovnimi strežniki."
+
+#: ../src/time/main.c:762
+msgid "Time and Date Settings"
+msgstr "Nastavitve časa in datuma"
+
+#: ../src/time/time.desktop.in.in.h:1
+msgid "Change system time, date, and timezone"
+msgstr "Spremenite sistemski čas, datum in časovni pas"
+
+#: ../src/time/time.desktop.in.in.h:2
+msgid "Time and Date"
+msgstr "Čas in datum"
+
+#: ../src/users/callbacks.c:571
+msgid "Error saving profile"
+msgstr "Napaka pri shranjevanju profila"
+
+#: ../src/users/callbacks.c:613
+msgid "Create New profile"
+msgstr "Ustvari nov profil"
+
+#: ../src/users/callbacks.c:649
+#, c-format
+msgid "Settings for profile %s"
+msgstr "Nastavitve za profil %s"
+
+#: ../src/users/group-settings.c:91
+msgid "Create New Group"
+msgstr "Ustvari novo skupino"
+
+#. Check if gid is available
+#: ../src/users/group-settings.c:164
+#: ../src/users/group-settings.c:172
+msgid "Invalid group ID"
+msgstr "Neveljaven ID skupine"
+
+#: ../src/users/group-settings.c:165
+msgid "Group ID must be a positive number"
+msgstr "ID skupine mora biti pozitivno število"
+
+#. if group is root
+#: ../src/users/group-settings.c:168
+msgid "Group ID of the \"root\" user should not be modified"
+msgstr "ID skupine uporabnika \"root\" ne sme biti spremenjen"
+
+#: ../src/users/group-settings.c:169
+#: ../src/users/group-settings.c:218
+#: ../src/users/group-settings.c:288
+msgid "This would leave the system unusable"
+msgstr "To bi naredilo sistem neuporaben"
+
+#: ../src/users/group-settings.c:173
+#, c-format
+msgid "Group ID %s already exists"
+msgstr "ID skupine %s že obstaja"
+
+#. If empty.
+#: ../src/users/group-settings.c:198
+msgid "Group name is empty"
+msgstr "Ime skupine je prazno"
+
+#: ../src/users/group-settings.c:199
+msgid "A group name must be specified"
+msgstr "Navedeno mora biti ime skupine"
+
+#. If too long.
+#: ../src/users/group-settings.c:202
+msgid "The group name is too long"
+msgstr "Ime skupine je predolgo"
+
+#: ../src/users/group-settings.c:203
+#, c-format
+msgid "To be valid, the group name should have less than %d character"
+msgid_plural "To be valid, the group name should have less than %d characters"
+msgstr[0] "Ime skupine mora imeti manj kot %d znak, da je veljavno."
+msgstr[1] "Ime skupine mora imeti manj kot %d znaka, da je veljavno."
+msgstr[2] "Ime skupine mora imeti manj kot %d znake, da je veljavno."
+msgstr[3] "Ime skupine mora imeti manj kot %d znakov, da je veljavno."
+
+#. if invalid.
+#: ../src/users/group-settings.c:209
+msgid "Group name has invalid characters"
+msgstr "Ime skupine vsebuje neveljavne znake"
+
+#: ../src/users/group-settings.c:210
+msgid "Please set a valid group name, using only lower case letters"
+msgstr "Prosim nastavite veljavno ime skupine, ki uporablja le male črke"
+
+#. if !exist.
+#: ../src/users/group-settings.c:213
+#, c-format
+msgid "Group \"%s\" already exists"
+msgstr "Skupina \"%s\" že obstaja."
+
+#: ../src/users/group-settings.c:214
+msgid "Please select a different group name"
+msgstr "Prosim izberite drugo ime skupine"
+
+#. if it's the root group
+#: ../src/users/group-settings.c:217
+msgid "Group name of the \"root\" user should not be modified"
+msgstr "Ime skupine uporabnika \"root\" ne sme biti spremenjeno"
+
+#: ../src/users/group-settings.c:287
+msgid "The group \"root\" should not be deleted"
+msgstr "Skupina \"root\" ne sme biti izbrisana"
+
+#: ../src/users/group-settings.c:302
+#, c-format
+msgid "Are you sure you want to delete group \"%s\"?"
+msgstr "Ali ste prepričani, da želite izbrisati skupino \"%s\"?"
+
+#: ../src/users/group-settings.c:304
+msgid "This may leave files with invalid group ID in the filesystem."
+msgstr "To lahko v datotečnem sistemu pusti datoteke z neveljavnim ID-jem skupine."
+
+#: ../src/users/group-settings.c:364
+#, c-format
+msgid "Settings for Group %s"
+msgstr "Nastavitve za skupino %s"
+
+#: ../src/users/groups-table.c:44
+msgid "Group"
+msgstr "Skupina"
+
+#: ../src/users/groups-table.c:45
+msgid "GID"
+msgstr "GID"
+
+#: ../src/users/main.c:123
+msgid "User name contains"
+msgstr "Uporabniško ime vsebuje"
+
+#: ../src/users/main.c:124
+msgid "User ID is"
+msgstr "Uporabniški ID je"
+
+#: ../src/users/main.c:125
+msgid "Group name contains"
+msgstr "Ime skupine vsebuje"
+
+#: ../src/users/main.c:126
+msgid "User GID is"
+msgstr "GID uporabnika je"
+
+#: ../src/users/main.c:245
+#: ../src/users/users.desktop.in.in.h:2
+msgid "Users and Groups"
+msgstr "Uporabniki in skupine"
+
+#: ../src/users/passwd.c:168
+msgid "Passwords do not match"
+msgstr "Gesli se ne ujemata"
+
+#: ../src/users/passwd.c:173
+#, c-format
+msgid ""
+"Bad password: %s.\n"
+"Please try with a new password"
+msgstr ""
+"Neveljavno geslo: %s.\n"
+"Prosim poskusite z novim geslom"
+
+#: ../src/users/profile-settings.c:125
+msgid "The profile must have a name"
+msgstr "Profil mora imeti ime"
+
+#: ../src/users/profile-settings.c:130
+msgid "The profile must have a default home"
+msgstr "Profil mora imeti privzeti dom"
+
+#: ../src/users/profile-settings.c:135
+#: ../src/users/profile-settings.c:140
+msgid "The profile must have a default shell"
+msgstr "Profil mora imeti privzeto ukazno lupino"
+
+#: ../src/users/profile-settings.c:208
+msgid "The default profile should not be deleted"
+msgstr "Privzeti profil ne sme biti izbrisan"
+
+#: ../src/users/profile-settings.c:209
+msgid "This profile is used for setting default data for new users"
+msgstr "Ta profil se uporablja za nastavljanje privzetih podatkov za nove uporabnike"
+
+#: ../src/users/profile-settings.c:218
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "Ali želite izbrisati profil \"%s\"?"
+
+#: ../src/users/profile-settings.c:220
+msgid "You will not be able to recover this profile after pressing \"apply\"."
+msgstr "Po pritisku gumba \"uveljavi\", tega profila ne boste več mogli dobiti nazaj."
+
+#. Column name,          Adv_state_show,	Basic_state_show
+#: ../src/users/profiles-table.c:39
+msgid "Profile"
+msgstr "Profil"
+
+#: ../src/users/profiles-table.c:40
+msgid "Comment"
+msgstr "Komentar"
+
+#: ../src/users/search-bar/search-bar.c:228
+msgid "C_lear"
+msgstr "Poči_sti"
+
+#: ../src/users/search-bar/search-bar.c:329
+msgid "Choice"
+msgstr "Izbira"
+
+#: ../src/users/search-bar/search-bar.c:339
+msgid "Text"
+msgstr "Besedilo"
+
+#: ../src/users/user-settings.c:73
+msgid "The \"root\" user should not be deleted"
+msgstr "Uporabnik \"root\" ne sme biti izbrisan"
+
+#: ../src/users/user-settings.c:74
+#: ../src/users/user-settings.c:311
+#: ../src/users/user-settings.c:406
+#: ../src/users/user-settings.c:442
+msgid "This would leave the system unusable."
+msgstr "To bi naredilo sistem neuporaben."
+
+#: ../src/users/user-settings.c:83
+#, c-format
+msgid "Are you sure you want to delete user \"%s\"?"
+msgstr "Ali ste prepričani, da želite izbrisati uporabnika \"%s\"?"
+
+#: ../src/users/user-settings.c:85
+msgid "This will disable this user's access to the system without deleting the user's home directory."
+msgstr "To bo onemogočilo dostop uporabnika do sistema, brez da bi izbrisali uporabnikov domači imenik."
+
+#: ../src/users/user-settings.c:189
+msgid "User Account Editor"
+msgstr "Urejevalnik uporabniških računov"
+
+#: ../src/users/user-settings.c:285
+msgid "The user name is empty"
+msgstr "Uporabniško ime je prazno"
+
+#: ../src/users/user-settings.c:286
+msgid "A user name must be specified."
+msgstr "Podano mora biti uporabniško ime."
+
+#. = sizeof (ut.ut_name)
+#: ../src/users/user-settings.c:292
+#: ../src/users/user-settings.c:300
+msgid "The user name is too long"
+msgstr "Uporabniško ime je predolgo"
+
+#: ../src/users/user-settings.c:293
+#: ../src/users/user-settings.c:301
+#, c-format
+msgid "To be valid, the user name should have less than %d character"
+msgid_plural "To be valid, the user name should have less than %d characters"
+msgstr[0] "Uporabniško ime mora vsebovati manj kot %d znak, da je veljavno."
+msgstr[1] "Uporabniško ime mora vsebovati manj kot %d znaka, da je veljavno."
+msgstr[2] "Uporabniško ime mora vsebovati manj kot %d znake, da je veljavno."
+msgstr[3] "Uporabniško ime mora vsebovati manj kot %d znakov, da je veljavno."
+
+#: ../src/users/user-settings.c:310
+msgid "User name for the \"root\" user should not be modified"
+msgstr "Uporabniško ime za uporabnika \"root\" ne sme biti spremenjeno"
+
+#: ../src/users/user-settings.c:316
+msgid "User name has invalid characters"
+msgstr "Uporabniško ime vsebuje neveljavne znake"
+
+#: ../src/users/user-settings.c:317
+msgid "Please set a valid user name consisting of a lower case letter followed by lower case letters and numbers."
+msgstr "Prosim, nastavite veljavno uporabniško ime, ki vsebuje malo črko, ki ji sledijo male črke in številke."
+
+#: ../src/users/user-settings.c:323
+#, c-format
+msgid "User name \"%s\" already exists"
+msgstr "Uporabniško ime \"%s\" že obstaja"
+
+#: ../src/users/user-settings.c:324
+msgid "Please select a different user name."
+msgstr "Prosim, izberite drugo uporabniško ime."
+
+#: ../src/users/user-settings.c:349
+#, c-format
+msgid "Invalid character \"%c\" in comment"
+msgstr "Neveljavni znak \"%c\" v komentarju"
+
+#: ../src/users/user-settings.c:350
+msgid "Check that this character is not used."
+msgstr "Preverite, ali ta znak že ni uporabljen."
+
+#: ../src/users/user-settings.c:398
+msgid "Home directory should not be empty"
+msgstr "Domači imenik ne sme biti prazen"
+
+#: ../src/users/user-settings.c:399
+msgid "Make sure you provide a home directory."
+msgstr "Prepričajte se, da ste podali domači imenik."
+
+#: ../src/users/user-settings.c:401
+msgid "Incomplete path in home directory"
+msgstr "Nepopolna pot v domači imenik"
+
+#: ../src/users/user-settings.c:402
+msgid ""
+"Please enter full path for home directory\n"
+"<span size=\"smaller\">i.e.: /home/john</span>."
+msgstr ""
+"Prosim vnesite celo pot za domači imenik\n"
+"<span size=\"smaller\">npr.: /home/janez</span>."
+
+#: ../src/users/user-settings.c:405
+msgid "Home directory of the \"root\" user should not be modified"
+msgstr "Domači imenik uporabnika \"root\" ne sme biti spremenjen"
+
+#: ../src/users/user-settings.c:438
+msgid "Invalid user ID"
+msgstr "Neveljaven uporabniški ID"
+
+#: ../src/users/user-settings.c:439
+msgid "User ID must be a positive number."
+msgstr "Uporabniški ID mora biti pozitivna številka."
+
+#: ../src/users/user-settings.c:441
+msgid "User ID of the \"root\" user should not be modified"
+msgstr "Uporabniški ID uporabnika \"root\" ne sme biti spremenjen"
+
+#: ../src/users/user-settings.c:459
+#, c-format
+msgid "User ID %s already exists"
+msgstr "Uporabniški ID %s že obstaja"
+
+#: ../src/users/user-settings.c:461
+msgid "Several users may share a single user ID, but it's not common and may lead to security problems."
+msgstr "Več uporabnikov si lahko deli isti uporabniški ID, ampak to ni običajno in lahko vodi v varnostne probleme."
+
+#: ../src/users/user-settings.c:479
+msgid "Incomplete path in shell"
+msgstr "Nepopolna pot v ukazni lupini"
+
+#: ../src/users/user-settings.c:480
+msgid ""
+"Please enter full path for shell\n"
+"<span size=\"smaller\">i.e.: /bin/sh</span>."
+msgstr ""
+"Prosim vpišite popolno pot za ukazno lupino\n"
+"<span size=\"smaller\">npr.: /bin/sh</span>."
+
+#: ../src/users/user-settings.c:502
+msgid "Password should not be empty"
+msgstr "Geslo ne sme biti prazno"
+
+#: ../src/users/user-settings.c:503
+msgid "A password must be provided."
+msgstr "Podati morate geslo."
+
+#: ../src/users/user-settings.c:505
+msgid "Password confirmation isn't correct"
+msgstr "Potrditev gesla ni pravilna."
+
+#: ../src/users/user-settings.c:506
+msgid "Check that you have provided the same password in both text fields."
+msgstr "Preverite, ali ste vpisali isto geslo v obe besedilni polji."
+
+#: ../src/users/user-settings.c:780
+#, c-format
+msgid "Settings for User %s"
+msgstr "Nastavitve za uporabnika %s"
+
+#: ../src/users/users-table.c:61
+msgid "User"
+msgstr "Uporabnik"
+
+#: ../src/users/users-table.c:62
+msgid "Home"
+msgstr "Dom"
+
+#: ../src/users/users-table.c:63
+msgid "User details"
+msgstr "Podrobnosti o uporabniku"
+
+#: ../src/users/users-table.c:64
+msgid "UID"
+msgstr "UID"
+
+#: ../src/users/users-table.c:65
+msgid "Shell"
+msgstr "Ukazna lupina"
+
+#: ../src/users/users.desktop.in.in.h:1
+msgid "Add or remove users and groups"
+msgstr "Dodajte ali odstranite uporabnike in skupine"
+
