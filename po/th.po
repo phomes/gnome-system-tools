@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools 1.1.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-31 18:45+0700\n"
-"PO-Revision-Date: 2006-01-31 18:48+0700\n"
+"POT-Creation-Date: 2006-08-27 16:53+0700\n"
+"PO-Revision-Date: 2006-08-27 16:55+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
@@ -1665,7 +1665,6 @@ msgstr "ชื่อกลุ่มผู้ใช้ยาวเกินไป
 msgid "To be valid, the group name should have less than %d character"
 msgid_plural "To be valid, the group name should have less than %d characters"
 msgstr[0] "ชื่อกลุ่มผู้ใช้ควรยาวไม่เกิน %d ตัวอักษร"
-msgstr[1] "ชื่อกลุ่มผู้ใช้ควรยาวไม่เกิน %d ตัวอักษร"
 
 #. if invalid.
 #: src/users/group-settings.c:209
@@ -1842,7 +1841,6 @@ msgstr "ชื่อผู้ใช้ยาวเกินไป"
 msgid "To be valid, the user name should have less than %d character"
 msgid_plural "To be valid, the user name should have less than %d characters"
 msgstr[0] "ชื่อผู้ใช้ควรยาวไม่เกิน %d ตัวอักษร"
-msgstr[1] "ชื่อผู้ใช้ควรยาวไม่เกิน %d ตัวอักษร"
 
 #: src/users/user-settings.c:310
 msgid "User name for the \"root\" user should not be modified"
