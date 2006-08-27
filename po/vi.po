@@ -1,77 +1,79 @@
 # Vietnamese Translation for Gnome System Tools.
-# Copyright © 2002-2006 Gnome i18n Project for Vietnamese.
-# T.M.THANH <tmthanh@yahoo.com>, 2002 - 2003.
-# Clytie Siddall <clytie@riverland.net.au>, 2005, 2006.
+# Copyright © 2006 Gnome i18n Project for Vietnamese.
+# T.M.Thanh <tmthanh@yahoo.com>, 2002 - 2003.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2006.
 msgid ""
 ""
-msgstr "Project-Id-Version: gnome-system-tools 2.13.1 Gnome HEAD\n"
+msgstr "Project-Id-Version: gnome-system-tools 2.13.1 Gnome 2.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-31 23:11+0100\n"
-"PO-Revision-Date: 2006-02-01 16:43+1030\n"
+"PO-Revision-Date: 2006-08-27 22:40+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: LocFactoryEditor 1.6b36\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.6fc1\n"
 
-#:../gnome-system-tools.schemas.in.h:1
+#: ../gnome-system-tools.schemas.in.h:1
 msgid ""
 "Comma separated list of hosts that the GST will be able to access when the "
 "remote configuration option is enabled"
 msgstr "Danh sách các máy (định giới bằng dấu phẩy) mà GST sẽ có thể truy cập khi "
-"bật chạy tùy chọn cấu hình từ xa."
+"tùy chọn cấu hình từ xa được bật"
 
-#:../gnome-system-tools.schemas.in.h:2
+#: ../gnome-system-tools.schemas.in.h:2
 msgid "Last GST version executed"
-msgstr "Phiên bản GST mới nhất được thực thi"
+msgstr "Phiên bản GST được thực thi cuối cùng"
 
-#:../gnome-system-tools.schemas.in.h:3
+#: ../gnome-system-tools.schemas.in.h:3
 msgid "Preferred bootloader that boot-admin will configure"
-msgstr "Trình tải khởi động mà trình « boot-admin » (quản lý khởi động) sẽ cấu hình"
+msgstr "Bộ tải khởi động ưa thích mà trình « boot-admin » (quản lý khởi động) sẽ cấu "
+"hình"
 
-#:../gnome-system-tools.schemas.in.h:4
+#: ../gnome-system-tools.schemas.in.h:4
 msgid "Remote hosts"
 msgstr "Máy ở xa"
 
-#:../gnome-system-tools.schemas.in.h:5
+#: ../gnome-system-tools.schemas.in.h:5
 msgid ""
 "The GST are able to do remote configuration through SSH, enable this option "
 "to use this feature"
-msgstr "GST có cấu hình được từ xa thông qua SSH: hãy bật tùy chọn này để dùng chức "
-"năng này."
+msgstr "GST có khả năng cấu hình từ xa thông qua SSH: hãy bật tùy chọn này để dùng "
+"chức năng này"
 
-#:../gnome-system-tools.schemas.in.h:6
+#: ../gnome-system-tools.schemas.in.h:6
 msgid "The last GST version that this computer has run"
-msgstr "Phiên bản GST mới nhất mà máy tính này đã chạy."
+msgstr "Phiên bản GST được máy tính này chạy cuối cùng"
 
-#:../gnome-system-tools.schemas.in.h:7
+#: ../gnome-system-tools.schemas.in.h:7
 msgid ""
 "This key stores the bootloader that boot-admin will configure if there are "
 "more than one installed, if it's not set or isn't valid, then boot-admin "
 "will ask the user"
-msgstr "Khóa này cất giữ trình tải khởi động mà trình boot-admin (quản lý khởi động) "
-"sẽ cấu hình nếu có nhiều trình tải khởi động đã cài đặt. Nếu chưa lập hay "
-"không hợp lệ thì boot-admin sẽ hỏi người dùng."
+msgstr "Khóa này cất giữ bộ tải khởi động mà trình « boot-admin » (quản lý khởi "
+"động) sẽ cấu hình nếu có nhiều bộ tải khởi động đã cài đặt. Nếu chưa đặt nó "
+"hay nó không hợp lệ, « boot-admin » sẽ hỏi người dùng."
 
-#:../gnome-system-tools.schemas.in.h:8
+#: ../gnome-system-tools.schemas.in.h:8
 msgid "Whether the tools will use remote administration or not"
-msgstr "Có nên công cụ sẽ dùng quản trị từ xa hay không"
+msgstr "Công cụ có nên dùng khả năng quản trị từ xa hay không"
 
-#:../gnome-system-tools.schemas.in.h:9
+#: ../gnome-system-tools.schemas.in.h:9
 msgid "Whether the users-admin tool should show all users and groups or not"
-msgstr "Có nên công cụ quản trị người dùng hiển thị mọi người dùng và nhóm hay không"
+msgstr "Công cụ quản trị người dùng (users-admin) nên hiển thị mọi người dùng và "
+"nhóm hay không"
 
-#:../gnome-system-tools.schemas.in.h:10
+#: ../gnome-system-tools.schemas.in.h:10
 msgid "Whether the warning dialog should be shown or not"
-msgstr "Có nên hộp thoại cảnh báo hiện ra hay không"
+msgstr "Có nên hiển thị hộp thoại cảnh báo hay không"
 
-#:../interfaces/boot.glade.in.h:1
+#: ../interfaces/boot.glade.in.h:1
 msgid "<b>Security</b>"
 msgstr "<b>Bảo mật</b>"
 
-#:../interfaces/boot.glade.in.h:2
+#: ../interfaces/boot.glade.in.h:2
 msgid ""
 "<span size=\"larger\" weight=\"bold\">Several bootloaders have been found</"
 "span>\n"
@@ -82,31 +84,33 @@ msgstr "<span size=\"larger\" weight=\"bold\">Tìm thấy vài trình tải kh�
 "\n"
 "hãy chọn trình nào bạn muốn cấu hình."
 
-#:../interfaces/boot.glade.in.h:5 ../interfaces/users.glade.in.h:3
+#: ../interfaces/boot.glade.in.h:5
+#: ../interfaces/users.glade.in.h:3
 msgid "<span weight=\"bold\">Basic Settings</span>"
 msgstr "<span weight=\"bold\">Thiết lập cơ bản</span>"
 
-#:../interfaces/boot.glade.in.h:6
+#: ../interfaces/boot.glade.in.h:6
 msgid "<span weight=\"bold\">Image Settings</span>"
 msgstr "<span weight=\"bold\">Thiết lập ảnh</span>"
 
-#:../interfaces/boot.glade.in.h:7
+#: ../interfaces/boot.glade.in.h:7
 msgid "<span weight=\"bold\">Other Settings</span>"
 msgstr "<span weight=\"bold\">Thiết lập khác</span>"
 
-#:../interfaces/boot.glade.in.h:8
+#: ../interfaces/boot.glade.in.h:8
 msgid "<span weight=\"bold\">Starting the Computer</span>"
-msgstr "<span weight=\"bold\">Khởi động máy tính</span>"
+msgstr "<span weight=\"bold\">Mở máy tính</span>"
 
-#:../interfaces/boot.glade.in.h:9
+#: ../interfaces/boot.glade.in.h:9
 msgid "Ask at boot"
 msgstr "Hỏi lúc khởi động"
 
-#:../interfaces/boot.glade.in.h:10 ../src/boot/main.c:71
+#: ../interfaces/boot.glade.in.h:10
+#: ../src/boot/main.c:71
 msgid "Boot Manager Settings"
-msgstr "Thiết lập trình quản lý khởi động"
+msgstr "Thiết lập bộ quản lý khởi động"
 
-#:../interfaces/boot.glade.in.h:11
+#: ../interfaces/boot.glade.in.h:11
 msgid ""
 "Choose a kernel image to boot, and a partition to mount as the root "
 "partition. Optionally, you may also enter parameters passed to the kernel at "
@@ -115,296 +119,300 @@ msgstr "Hãy chọn ảnh hạt nhân cần khởi động, và phân vùng cầ
 "gốc. Tùy ý bạn, cũng có thể nhập các tham số đã được gởi vào hạt nhân khi "
 "khởi động."
 
-#:../interfaces/boot.glade.in.h:12
+#: ../interfaces/boot.glade.in.h:12
 msgid "Click \"Forward\" to continue"
 msgstr "Nhấn « Tiếp theo » để tiếp tục"
 
-#:../interfaces/boot.glade.in.h:13
+#: ../interfaces/boot.glade.in.h:13
 msgid "Confirmation"
-msgstr "Khẳng định"
+msgstr "Xác nhận"
 
 #.set window title
-#:../interfaces/boot.glade.in.h:14 ../src/boot/boot-druid.c:442
-#:../src/boot/boot-druid.c:454
+#: ../interfaces/boot.glade.in.h:14
+#: ../src/boot/boot-druid.c:442
+#: ../src/boot/boot-druid.c:454
 msgid "Creating a new boot image"
 msgstr "Tạo ảnh khởi động mới"
 
-#:../interfaces/boot.glade.in.h:15
+#: ../interfaces/boot.glade.in.h:15
 msgid "Don't ask me again"
 msgstr "Không hỏi lại nữa"
 
-#:../interfaces/boot.glade.in.h:16
+#: ../interfaces/boot.glade.in.h:16
 msgid "Enable IDE SCSI emulation"
 msgstr "Bật chạy mô phỏng IDE SCSI"
 
-#:../interfaces/boot.glade.in.h:17
+#: ../interfaces/boot.glade.in.h:17
 msgid ""
 "Enter a name for the boot image, and specify what kind of operating system "
 "it is."
 msgstr "Hãy nhập tên cho ảnh khởi động, và chỉ rõ loại hệ điều hành."
 
-#:../interfaces/boot.glade.in.h:18
+#: ../interfaces/boot.glade.in.h:18
 msgid "Finished"
 msgstr "Hoàn thành."
 
-#:../interfaces/boot.glade.in.h:19
+#: ../interfaces/boot.glade.in.h:19
 msgid "Manual"
 msgstr "Thủ công"
 
-#:../interfaces/boot.glade.in.h:20
+#: ../interfaces/boot.glade.in.h:20
 msgid "Number of colors:"
 msgstr "Số màu:"
 
-#:../interfaces/boot.glade.in.h:21
+#: ../interfaces/boot.glade.in.h:21
 msgid "Other parameters:"
 msgstr "Tham số khác:"
 
-#:../interfaces/boot.glade.in.h:22
+#: ../interfaces/boot.glade.in.h:22
 msgid "Password"
 msgstr "Mật khẩu"
 
-#:../interfaces/boot.glade.in.h:23
+#: ../interfaces/boot.glade.in.h:23
 msgid "Protect with password"
 msgstr "Bảo vệ bằng mật khẩu"
 
-#:../interfaces/boot.glade.in.h:24
+#: ../interfaces/boot.glade.in.h:24
 msgid "Resolution:"
 msgstr "Độ phân giải:"
 
-#:../interfaces/boot.glade.in.h:25
+#: ../interfaces/boot.glade.in.h:25
 msgid "Seconds to wait before loading default kernel or OS"
 msgstr "Số giây chờ trước khi tải hạt nhân mặc định hay hệ điều hành"
 
-#:../interfaces/boot.glade.in.h:26
+#: ../interfaces/boot.glade.in.h:26
 msgid "Select a kernel image"
 msgstr "Chọn ảnh hạt nhân"
 
-#:../interfaces/boot.glade.in.h:27
+#: ../interfaces/boot.glade.in.h:27
 msgid "Select an initrd image"
-msgstr "Chọn ảnh initrd"
+msgstr "Chọn một ảnh initrd"
 
-#:../interfaces/boot.glade.in.h:28
+#: ../interfaces/boot.glade.in.h:28
 msgid "Specify the partition on which the operating system is installed."
 msgstr "Chỉ rõ phân vùng đã cài đặt hệ điều hành."
 
-#:../interfaces/boot.glade.in.h:29
+#: ../interfaces/boot.glade.in.h:29
 msgid ""
 "The new boot image has been added. Please click \"Apply\" to save your "
 "changes."
 msgstr "Ảnh khởi động mới đã được thêm vào. Hãy nhấn « Áp dụng » để lưu các thay "
 "đổi. "
 
-#:../interfaces/boot.glade.in.h:30
+#: ../interfaces/boot.glade.in.h:30
 msgid ""
 "This assistant is designed to help you quickly and easily add a new boot "
 "image to your system."
 msgstr "Trợ giúp này được thiết kế nhằm giúp việc thêm ảnh khởi động mới vào hệ "
 "thống nhanh và dễ dàng."
 
-#:../interfaces/boot.glade.in.h:31
+#: ../interfaces/boot.glade.in.h:31
 msgid "Video modes (only frame buffer)"
 msgstr "Chế độ ảnh động (chỉ bộ đệm khung)"
 
-#:../interfaces/boot.glade.in.h:32
+#: ../interfaces/boot.glade.in.h:32
 msgid "_Add..."
-msgstr "_Thêm..."
+msgstr "Thê_m..."
 
-#:../interfaces/boot.glade.in.h:33
+#: ../interfaces/boot.glade.in.h:33
 msgid "_Device:"
-msgstr "_Thiết bị:"
+msgstr "Thiết _bị:"
 
-#:../interfaces/boot.glade.in.h:34
+#: ../interfaces/boot.glade.in.h:34
 msgid "_Edit"
 msgstr "_Hiệu chỉnh"
 
-#:../interfaces/boot.glade.in.h:35 ../src/boot/boot-settings.c:44
+#: ../interfaces/boot.glade.in.h:35
+#: ../src/boot/boot-settings.c:44
 msgid "_Initrd image path:"
 msgstr "Đường dẫn ảnh _Initrd:"
 
-#:../interfaces/boot.glade.in.h:36
+#: ../interfaces/boot.glade.in.h:36
 msgid "_Kernel image path:"
 msgstr "Đường dẫn ảnh _hạt nhân:"
 
-#:../interfaces/boot.glade.in.h:37
+#: ../interfaces/boot.glade.in.h:37
 msgid "_Name:"
-msgstr "_Tên:"
+msgstr "Tê_n:"
 
-#:../interfaces/boot.glade.in.h:38
+#: ../interfaces/boot.glade.in.h:38
 msgid "_Operating system:"
 msgstr "_Hệ điều hành:"
 
-#:../interfaces/boot.glade.in.h:39
+#: ../interfaces/boot.glade.in.h:39
 msgid "_Parameters:"
-msgstr "Th_am số:"
+msgstr "Tham _số :"
 
-#:../interfaces/boot.glade.in.h:40
+#: ../interfaces/boot.glade.in.h:40
 msgid "_Root file system device:"
 msgstr "Thiết bị hệ thống tập tin _gốc:"
 
-#:../interfaces/common.glade.in.h:1
+#: ../interfaces/common.glade.in.h:1
 msgid ""
 "<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
-msgstr "<span weight=\"bold\">Hãy nhập mật khẩu chủ</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Hãy nhập mật khẩu chủ</span>"
 
-#:../interfaces/common.glade.in.h:2
+#: ../interfaces/common.glade.in.h:2
 msgid ""
 "<span weight=\"bold\" size=\"larger\">The platform you are running is not "
 "supported by this tool</span>"
-msgstr "<span weight=\"bold\" size=\"larger\">Công cụ này không hỗ trợ hệ nền mà bạn "
-"có chạy.</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Công cụ này không hỗ trợ hệ nền bạn chạy.</span>"
 
-#:../interfaces/common.glade.in.h:3
+#: ../interfaces/common.glade.in.h:3
 msgid "Enter Password"
 msgstr "Nhập mật khẩu"
 
-#:../interfaces/common.glade.in.h:4
+#: ../interfaces/common.glade.in.h:4
 msgid ""
 "If you know for sure that it works like one of the platforms listed below, "
 "you can select that and continue. Note, however, that this might damage the "
 "system configuration or downright cripple your computer."
-msgstr "Nếu bạn chắc là nó làm việc giống như một trong những hệ nền được liệt kê "
-"dưới đây, bạn có thể chọn và tiếp tục. Lưu ý: điều đó có thể làm hỏng cấu "
-"hình hệ thống hoặc phá máy tính của bạn."
+msgstr "Nếu bạn chắc là nó hoạt động giống như một trong những hệ nền được liệt kê "
+"dưới đây, bạn có thể chọn nó và tiếp tục. Tuy nhiên, ghi chú rằng điều đó có "
+"thể làm hỏng cấu hình hệ thống hoặc phá máy tính của bạn."
 
-#:../interfaces/common.glade.in.h:5
+#: ../interfaces/common.glade.in.h:5
 msgid "Remote administration"
-msgstr "Quản trị từ xa"
+msgstr "Quản lý từ xa"
 
-#:../interfaces/common.glade.in.h:6
+#: ../interfaces/common.glade.in.h:6
 msgid "Run _Without Password"
-msgstr "Chạy _không cần mật khẩu"
+msgstr "Chạy mà _không có mật khẩu"
 
-#:../interfaces/common.glade.in.h:7
+#: ../interfaces/common.glade.in.h:7
 msgid "Unsupported Platform"
-msgstr "Hệ nền không hỗ trợ"
+msgstr "Hệ nền không được hỗ trợ"
 
-#:../interfaces/common.glade.in.h:8
+#: ../interfaces/common.glade.in.h:8
 msgid "Use this window to select the computer you wish to configure"
 msgstr "Dùng cửa sổ này để chọn máy tính bạn muốn cấu hình."
 
-#:../interfaces/common.glade.in.h:9
+#: ../interfaces/common.glade.in.h:9
 msgid ""
 "You need administrator privileges to use this tool. Enter a password to "
 "modify your system configuration."
-msgstr "Để chạy công cụ này, bạn cần có đặc quyền của nhà quản trị. Hãy nhập mật khẩu để sửa đổi cấu hình hệ thống."
+msgstr "Để chạy công cụ này, bạn cần có quyền của nhà quản trị. Hãy nhập mật khẩu để sửa đổi cấu hình hệ thống."
 
-#:../interfaces/common.glade.in.h:10
+#: ../interfaces/common.glade.in.h:10
 msgid "_Password:"
-msgstr "_Mật khẩu:"
+msgstr "_Mật khẩu :"
 
-#:../interfaces/network.glade.in.h:1
+#: ../interfaces/network.glade.in.h:1
 msgid "<b>Account data</b>"
 msgstr "<b>Dữ liệu tài khoản</b>"
 
-#:../interfaces/network.glade.in.h:2
+#: ../interfaces/network.glade.in.h:2
 msgid "<b>Connection settings</b>"
 msgstr "<b>Thiết lập kết nối</b>"
 
-#:../interfaces/network.glade.in.h:3
+#: ../interfaces/network.glade.in.h:3
 msgid "<b>Connection</b>"
 msgstr "<b>Kết nối</b>"
 
-#:../interfaces/network.glade.in.h:4
+#: ../interfaces/network.glade.in.h:4
 msgid "<b>DNS Servers</b>"
 msgstr "<b>Máy phục vụ DNS</b>"
 
-#:../interfaces/network.glade.in.h:5
+#: ../interfaces/network.glade.in.h:5
 msgid "<b>Host Settings</b>"
-msgstr "<b>Thiết lập của máy</b>"
+msgstr "<b>Thiết lập máy</b>"
 
-#:../interfaces/network.glade.in.h:6
+#: ../interfaces/network.glade.in.h:6
 msgid "<b>Internet service provider data</b>"
-msgstr "<span weight=\"bold\">Dữ liệu nhà cung cấp dịch vụ Mạng</span>"
+msgstr "<b>Dữ liệu về nhà cung cấp dịch vụ Mạng</b>"
 
-#:../interfaces/network.glade.in.h:7
+#: ../interfaces/network.glade.in.h:7
 msgid "<b>Modem settings</b>"
-msgstr "<b>Thiết lập modem</b>"
+msgstr "<b>Thiết lập bộ điều giải</b>"
 
-#:../interfaces/network.glade.in.h:8
+#: ../interfaces/network.glade.in.h:8
 msgid "<b>Search Domains</b>"
 msgstr "<b>Miền tìm kiếm</b>"
 
-#:../interfaces/network.glade.in.h:9
+#: ../interfaces/network.glade.in.h:9
 msgid "<b>Wireless settings</b>"
 msgstr "<b>Thiết lập vô tuyến</b>"
 
-#:../interfaces/network.glade.in.h:10
+#: ../interfaces/network.glade.in.h:10
 msgid "Aliases:"
-msgstr "Biệt hiệu:"
+msgstr "Biệt hiệu :"
 
-#:../interfaces/network.glade.in.h:11
+#: ../interfaces/network.glade.in.h:11
 msgid "C_onfiguration:"
 msgstr "_Cấu hình:"
 
-#:../interfaces/network.glade.in.h:12
+#: ../interfaces/network.glade.in.h:12
 msgid "Connections"
 msgstr "Kết nối"
 
-#:../interfaces/network.glade.in.h:13
+# Name: don't translate / Tên: đừng dịch
+#: ../interfaces/network.glade.in.h:13
 msgid "DNS"
 msgstr "DNS"
 
-#:../interfaces/network.glade.in.h:14
+#: ../interfaces/network.glade.in.h:14
 msgid "D_omain name:"
 msgstr "Tên _miền:"
 
-#:../interfaces/network.glade.in.h:15
+#: ../interfaces/network.glade.in.h:15
 msgid "Default _gateway device:"
-msgstr "Thiết bị _cổng ra mặc định:"
+msgstr "Thiết bị cổn_g ra mặc định:"
 
-#:../interfaces/network.glade.in.h:16
+#: ../interfaces/network.glade.in.h:16
 msgid "Device:"
 msgstr "Thiết bị:"
 
-#:../interfaces/network.glade.in.h:17
+#: ../interfaces/network.glade.in.h:17
 msgid "E_nable this connection"
-msgstr "Bật sự kết nối này"
+msgstr "Bật sự kết _nối này"
 
-#:../interfaces/network.glade.in.h:18 ../interfaces/users.glade.in.h:21
+#: ../interfaces/network.glade.in.h:18
+#: ../interfaces/users.glade.in.h:21
 msgid "General"
 msgstr "Chung"
 
-#:../interfaces/network.glade.in.h:19
+#: ../interfaces/network.glade.in.h:19
 msgid "Host alias settings"
 msgstr "Thiết lập biệt hiệu máy"
 
-#:../interfaces/network.glade.in.h:20
+#: ../interfaces/network.glade.in.h:20
 msgid "Hosts"
 msgstr "Máy"
 
-#:../interfaces/network.glade.in.h:21 ../interfaces/shares.glade.in.h:15
+#: ../interfaces/network.glade.in.h:21
+#: ../interfaces/shares.glade.in.h:15
 msgid "IP address:"
 msgstr "Địa chỉ IP:"
 
-#:../interfaces/network.glade.in.h:22
+#: ../interfaces/network.glade.in.h:22
 msgid "Interface name:"
 msgstr "Tên giao diện:"
 
-#:../interfaces/network.glade.in.h:23
+#: ../interfaces/network.glade.in.h:23
 msgid "Interface properties"
-msgstr "Thuộc tính giao diện"
+msgstr "Tài sản giao diện"
 
-#:../interfaces/network.glade.in.h:24
+#: ../interfaces/network.glade.in.h:24
 msgid "Key _type:"
 msgstr "_Loại khóa"
 
-#:../interfaces/network.glade.in.h:25
+#: ../interfaces/network.glade.in.h:25
 msgid "Location name:"
 msgstr "Tên vị trí:"
 
-#:../interfaces/network.glade.in.h:26
+#: ../interfaces/network.glade.in.h:26
 msgid "Location:"
 msgstr "Vị trí:"
 
-#:../interfaces/network.glade.in.h:27
+#: ../interfaces/network.glade.in.h:27
 msgid "Modem"
-msgstr "Modem"
+msgstr "Bộ điều giải"
 
-#:../interfaces/network.glade.in.h:28
+#: ../interfaces/network.glade.in.h:28
 msgid "Network name (_ESSID):"
 msgstr "Tên mạng (_ESSID):"
 
-#:../interfaces/network.glade.in.h:29
+#: ../interfaces/network.glade.in.h:29
 msgid ""
 "Off\n"
 "Low\n"
@@ -415,699 +423,711 @@ msgstr "Tắt\n"
 "Vừa\n"
 "To"
 
-#:../interfaces/network.glade.in.h:33
+#: ../interfaces/network.glade.in.h:33
 msgid "Options"
 msgstr "Tùy chọn"
 
-#:../interfaces/network.glade.in.h:34
+#: ../interfaces/network.glade.in.h:34
 msgid "P_assword"
 msgstr "_Mật khẩu"
 
-#:../interfaces/network.glade.in.h:35
+#: ../interfaces/network.glade.in.h:35
 msgid ""
 "Plain (ASCII)\n"
 "Hexadecimal"
 msgstr "Thô (ASCII)\n"
 "Thập lục"
 
-#:../interfaces/network.glade.in.h:37
+#: ../interfaces/network.glade.in.h:37
 msgid "Select location name"
-msgstr "Chọn tên vị trí"
+msgstr "Chọn tên địa điểm"
 
-#:../interfaces/network.glade.in.h:38
+#: ../interfaces/network.glade.in.h:38
 msgid ""
 "Static IP address\n"
 "DHCP"
 msgstr "Địa chỉ IP tĩnh\n"
 "DHCP"
 
-#:../interfaces/network.glade.in.h:40
+#: ../interfaces/network.glade.in.h:40
 msgid ""
 "Tones\n"
 "Pulses"
 msgstr "Giọng\n"
 "Mạch"
 
-#:../interfaces/network.glade.in.h:42
+#: ../interfaces/network.glade.in.h:42
 msgid "Use the Internet service provider nameservers"
 msgstr "Dùng các máy phục vụ tên của nhà cung cấp dịch vụ Mạng"
 
-#:../interfaces/network.glade.in.h:43
+#: ../interfaces/network.glade.in.h:43
 msgid "WEP _key:"
 msgstr "_Khóa WEP"
 
-#:../interfaces/network.glade.in.h:44 ../src/network/ifaces-list.c:34
+#: ../interfaces/network.glade.in.h:44
+#: ../src/network/ifaces-list.c:34
 msgid "_Activate"
-msgstr "_Hoạt hóa"
+msgstr "_Bật"
 
-#:../interfaces/network.glade.in.h:45
+#: ../interfaces/network.glade.in.h:45
 msgid "_Autodetect"
 msgstr "_Phát hiện tự động"
 
-#:../interfaces/network.glade.in.h:46 ../src/network/ifaces-list.c:35
+#: ../interfaces/network.glade.in.h:46
+#: ../src/network/ifaces-list.c:35
 msgid "_Deactivate"
-msgstr "_Bất hoạt"
+msgstr "_Tắt"
 
-#:../interfaces/network.glade.in.h:47
+#: ../interfaces/network.glade.in.h:47
 msgid "_Dial prefix:"
-msgstr "Tiền tố _quay số:"
+msgstr "Tiền tố _quay số :"
 
-#:../interfaces/network.glade.in.h:48
+#: ../interfaces/network.glade.in.h:48
 msgid "_Dial type:"
-msgstr "Kiểu _quay số:"
+msgstr "Kiểu _quay số :"
 
-#:../interfaces/network.glade.in.h:49
+#: ../interfaces/network.glade.in.h:49
 msgid "_Gateway address:"
-msgstr "Đị_a chỉ cổng ra:"
+msgstr "Địa chỉ cổn_g ra:"
 
-#:../interfaces/network.glade.in.h:50
+#: ../interfaces/network.glade.in.h:50
 msgid "_Hostname:"
-msgstr "_Tên máy:"
+msgstr "Tên _máy:"
 
-#:../interfaces/network.glade.in.h:51
+#: ../interfaces/network.glade.in.h:51
 msgid "_IP address:"
-msgstr "Đị_a chỉ IP:"
+msgstr "Địa chỉ _IP:"
 
-#:../interfaces/network.glade.in.h:52
+#: ../interfaces/network.glade.in.h:52
 msgid "_Local IP:"
-msgstr "_IP cục bộ:"
+msgstr "IP _cục bộ :"
 
-#:../interfaces/network.glade.in.h:53
+#: ../interfaces/network.glade.in.h:53
 msgid "_Modem port:"
-msgstr "_Cổng modem:"
+msgstr "_Cổng bộ điều giải:"
 
-#:../interfaces/network.glade.in.h:54
+#: ../interfaces/network.glade.in.h:54
 msgid "_Phone number:"
-msgstr "Số đ_iện thoại:"
+msgstr "_Số điện thoại:"
 
-#:../interfaces/network.glade.in.h:55
+#: ../interfaces/network.glade.in.h:55
 msgid "_Remote IP:"
-msgstr "_IP ở xa:"
+msgstr "IP ở _xa:"
 
-#:../interfaces/network.glade.in.h:56
+#: ../interfaces/network.glade.in.h:56
 msgid "_Retry if the connection breaks or fails to start"
-msgstr "T_hử lại nếu kết nối rớt hay không khởi chạy được"
+msgstr "Thử lại nếu kết nối _rớt hay không khởi chạy được"
 
-#:../interfaces/network.glade.in.h:57
+#: ../interfaces/network.glade.in.h:57
 msgid "_Set modem as default route to internet"
-msgstr "Lập modem này là _quyến mặc định lên Mạng"
+msgstr "Đặt bộ điề_u giải này là tuyến mặc định lên Mạng"
 
-#:../interfaces/network.glade.in.h:58
+#: ../interfaces/network.glade.in.h:58
 msgid "_Subnet mask:"
 msgstr "_Mặt nạ mang cấp dưới:"
 
-#:../interfaces/network.glade.in.h:59 ../interfaces/users.glade.in.h:61
+#: ../interfaces/network.glade.in.h:59
+#: ../interfaces/users.glade.in.h:61
 msgid "_Username:"
 msgstr "_Tên người dùng:"
 
-#:../interfaces/network.glade.in.h:60
+#: ../interfaces/network.glade.in.h:60
 msgid "_Volume:"
 msgstr "Â_m lượng:"
 
-#:../interfaces/services.glade.in.h:1
+#: ../interfaces/services.glade.in.h:1
 msgid "Advanced settings:"
 msgstr "Thiết lập cấp cao:"
 
-#:../interfaces/services.glade.in.h:2
+#: ../interfaces/services.glade.in.h:2
 msgid "Select the services that you wish to activate:"
-msgstr "Hãy chọn các dịch vụ muốn hoạt hóa:"
+msgstr "Hãy chọn các dịch vụ muốn kích hoạt:"
 
-#:../interfaces/shares.glade.in.h:1
+#: ../interfaces/shares.glade.in.h:1
 msgid "<b>Allowed hosts</b>"
 msgstr "<b>Máy được phép</b>"
 
-#:../interfaces/shares.glade.in.h:2
+#: ../interfaces/shares.glade.in.h:2
 msgid "<b>Hosts settings</b>"
 msgstr "<b>Thiết lập máy</b>"
 
-#:../interfaces/shares.glade.in.h:3
+#: ../interfaces/shares.glade.in.h:3
 msgid "<b>Share properties</b>"
-msgstr "<b>Thuộc tính dùng chung</b>"
+msgstr "<b>Tài sản chia sẻ</b>"
 
-#:../interfaces/shares.glade.in.h:4
+#: ../interfaces/shares.glade.in.h:4
 msgid "<b>Shared folder</b>"
 msgstr "<b>Thư mục dùng chung</b>"
 
-#:../interfaces/shares.glade.in.h:5
+#: ../interfaces/shares.glade.in.h:5
 msgid "<b>WINS server</b>"
 msgstr "<b>Máy phục vụ WINS</b>"
 
-#:../interfaces/shares.glade.in.h:6
+#: ../interfaces/shares.glade.in.h:6
 msgid "<b>Windows sharing Settings</b>"
-msgstr "<b>Thiết lập dùng chung Windows</b>"
+msgstr "<b>Thiết lập chia sẻ Windows</b>"
 
-#:../interfaces/shares.glade.in.h:7
+#: ../interfaces/shares.glade.in.h:7
 msgid "Add allowed hosts"
 msgstr "Thêm máy được phép"
 
-#:../interfaces/shares.glade.in.h:8
+#: ../interfaces/shares.glade.in.h:8
 msgid "Allow _browsing folder"
 msgstr "Cho phép _duyệt thư mục"
 
-#:../interfaces/shares.glade.in.h:9
+#: ../interfaces/shares.glade.in.h:9
 msgid "Allowed hosts:"
 msgstr "Máy được phép:"
 
-#:../interfaces/shares.glade.in.h:10
+#: ../interfaces/shares.glade.in.h:10
 msgid "Comment:"
-msgstr "Chú thích:"
+msgstr "Ghi chú :"
 
-#:../interfaces/shares.glade.in.h:11
+#: ../interfaces/shares.glade.in.h:11
 msgid "Do not use WINS server"
 msgstr "Không dùng máy phục vụ WINS"
 
-#:../interfaces/shares.glade.in.h:12
+#: ../interfaces/shares.glade.in.h:12
 msgid "Domain / _Workgroup"
-msgstr "Miền / _Nhóm làm việc:"
+msgstr "Miền/Nhóm làm _việc"
 
-#:../interfaces/shares.glade.in.h:13
+#: ../interfaces/shares.glade.in.h:13
 msgid "General Windows sharing settings"
 msgstr "Thiết lập dùng chung Windows chung"
 
-#:../interfaces/shares.glade.in.h:14
+#: ../interfaces/shares.glade.in.h:14
 msgid "Host name:"
 msgstr "Tên máy:"
 
-#:../interfaces/shares.glade.in.h:16
+#: ../interfaces/shares.glade.in.h:16
 msgid "Name:"
 msgstr "Tên:"
 
-#:../interfaces/shares.glade.in.h:17
+#: ../interfaces/shares.glade.in.h:17
 msgid "Netmask:"
 msgstr "Mặt nạ mạng:"
 
-#:../interfaces/shares.glade.in.h:18
+#: ../interfaces/shares.glade.in.h:18
 msgid "Network:"
 msgstr "Mạng:"
 
-#:../interfaces/shares.glade.in.h:19 ../src/shares/nfs-acl-table.c:57
+#: ../interfaces/shares.glade.in.h:19
+#: ../src/shares/nfs-acl-table.c:57
 msgid "Read only"
 msgstr "Chỉ đọc"
 
-#:../interfaces/shares.glade.in.h:20
+#: ../interfaces/shares.glade.in.h:20
 msgid "Share folder"
-msgstr "Thư mục dùng chung"
+msgstr "Thư mục chia sẻ"
 
-#:../interfaces/shares.glade.in.h:21
+#: ../interfaces/shares.glade.in.h:21
 msgid "Share with:"
-msgstr "Dùng cùng với"
+msgstr "Chia sẻ với:"
 
-#:../interfaces/shares.glade.in.h:22
+#: ../interfaces/shares.glade.in.h:22
 msgid "This computer is a WINS server"
 msgstr "Máy tính này là máy phục vụ WINS"
 
-#:../interfaces/shares.glade.in.h:23
+#: ../interfaces/shares.glade.in.h:23
 msgid "Use WINS Server"
-msgstr "Dùng máy phục vụ WINS"
+msgstr "Dùng máy phục vụ WINS:"
 
-#:../interfaces/shares.glade.in.h:24
+#: ../interfaces/shares.glade.in.h:24
 msgid "Windows sharing settings"
-msgstr "Thiết lập dùng chung Windows"
+msgstr "Thiết lập chia sẻ Windows"
 
-#:../interfaces/shares.glade.in.h:25
+#: ../interfaces/shares.glade.in.h:25
 msgid "_Add host"
-msgstr "_Thêm máy"
+msgstr "Thê_m máy"
 
-#:../interfaces/shares.glade.in.h:26
+#: ../interfaces/shares.glade.in.h:26
 msgid "_Host description:"
 msgstr "_Mô tả máy:"
 
-#:../interfaces/shares.glade.in.h:27
+#: ../interfaces/shares.glade.in.h:27
 msgid "_Path:"
 msgstr "Đường _dẫn:"
 
-#:../interfaces/shares.glade.in.h:28
+#: ../interfaces/shares.glade.in.h:28
 msgid "_Read only"
 msgstr "Chỉ đọ_c"
 
-#:../interfaces/time.glade.in.h:1
+#: ../interfaces/time.glade.in.h:1
 msgid "(unconfigured)"
 msgstr "(chưa cấu hình)"
 
-#:../interfaces/time.glade.in.h:2
+#: ../interfaces/time.glade.in.h:2
 msgid "<b>Selection</b>"
 msgstr "<b>Vùng chọn</b>"
 
-#:../interfaces/time.glade.in.h:3
+#: ../interfaces/time.glade.in.h:3
 msgid "<b>Time zone</b>"
 msgstr "<b>Múi giờ</b>"
 
-#:../interfaces/time.glade.in.h:4
+#: ../interfaces/time.glade.in.h:4
 msgid "Add NTP Server"
 msgstr "Thêm máy phục vụ NTP"
 
-#:../interfaces/time.glade.in.h:5
+#: ../interfaces/time.glade.in.h:5
 msgid "NTP server"
 msgstr "Máy phục vụ NTP"
 
-#:../interfaces/time.glade.in.h:6
+#: ../interfaces/time.glade.in.h:6
 msgid "S_ynchronize clock with Internet servers:"
-msgstr "Đồ_ng bộ hoá đồng hồ với máy phục vụ Mạng:"
+msgstr "Đồng bộ hoá đồng hồ với má_y phục vụ Mạng:"
 
-#:../interfaces/time.glade.in.h:7
+#: ../interfaces/time.glade.in.h:7
 msgid "Se_lect Servers..."
-msgstr "_Chọn máy phục vụ..."
+msgstr "Chọn máy _phục vụ..."
 
-#:../interfaces/time.glade.in.h:8
+#: ../interfaces/time.glade.in.h:8
 msgid "Time servers"
 msgstr "Máy phục vụ thời gian"
 
-#:../interfaces/time.glade.in.h:9
+#: ../interfaces/time.glade.in.h:9
 msgid "Time zone"
 msgstr "Múi giờ"
 
-#:../interfaces/time.glade.in.h:10
+#: ../interfaces/time.glade.in.h:10
 msgid "Time zone:"
-msgstr "Múi giờ:"
+msgstr "Múi giờ :"
 
-#:../interfaces/time.glade.in.h:11
+#: ../interfaces/time.glade.in.h:11
 msgid "_Date:"
 msgstr "_Ngày:"
 
-#:../interfaces/time.glade.in.h:12
+#: ../interfaces/time.glade.in.h:12
 msgid "_Select Time Zone..."
 msgstr "_Chọn múi giờ..."
 
-#:../interfaces/time.glade.in.h:13
+#: ../interfaces/time.glade.in.h:13
 msgid "_Time:"
-msgstr "_Thời gia_n:"
+msgstr "_Thời gian:"
 
-#:../interfaces/users.glade.in.h:1
+#: ../interfaces/users.glade.in.h:1
 msgid "<span weight=\"bold\">Advanced Settings</span>"
-msgstr "<span weight=\"bold\">Thiết lập nâng cao</span>"
+msgstr "<span weight=\"bold\">Thiết lập cấp cao</span>"
 
-#:../interfaces/users.glade.in.h:2
+#: ../interfaces/users.glade.in.h:2
 msgid "<span weight=\"bold\">Automatic UID/GID</span>"
 msgstr "<span weight=\"bold\">UID/GID tự động</span>"
 
-#:../interfaces/users.glade.in.h:4
+#: ../interfaces/users.glade.in.h:4
 msgid "<span weight=\"bold\">Contact Information</span>"
 msgstr "<span weight=\"bold\">Thông tin liên lạc</span>"
 
-#:../interfaces/users.glade.in.h:5
+#: ../interfaces/users.glade.in.h:5
 msgid "<span weight=\"bold\">Group Members</span>"
 msgstr "<span weight=\"bold\">Thành viên nhóm</span>"
 
-#:../interfaces/users.glade.in.h:6
+#: ../interfaces/users.glade.in.h:6
 msgid "<span weight=\"bold\">Optional Settings</span>"
 msgstr "<span weight=\"bold\">Thiết lập tùy chọn</span>"
 
-#:../interfaces/users.glade.in.h:7
+#: ../interfaces/users.glade.in.h:7
 msgid "<span weight=\"bold\">Password Settings</span>"
 msgstr "<span weight=\"bold\">Thiết lập mật khẩu</span>"
 
-#:../interfaces/users.glade.in.h:8
+#: ../interfaces/users.glade.in.h:8
 msgid "<span weight=\"bold\">Password</span>"
 msgstr "<span weight=\"bold\">Mật khẩu</span>"
 
-#:../interfaces/users.glade.in.h:9
+#: ../interfaces/users.glade.in.h:9
 msgid "<span weight=\"bold\">Profile Settings</span>"
-msgstr "<span weight=\"bold\">Thiết lập tiểu sử sơ lược</span>"
+msgstr "<span weight=\"bold\">Thiết lập hồ sơ</span>"
 
-#:../interfaces/users.glade.in.h:10
+#: ../interfaces/users.glade.in.h:10
 msgid "<span weight=\"bold\">System Defaults</span>"
 msgstr "<span weight=\"bold\">Mặc định hệ thống</span>"
 
-#:../interfaces/users.glade.in.h:11
+#: ../interfaces/users.glade.in.h:11
 msgid "<span weight=\"bold\">User Profile</span>"
-msgstr "<span weight=\"bold\">Tiểu sử sơ lược người dùng</span>"
+msgstr "<span weight=\"bold\">Hồ sơ người dùng</span>"
 
-#:../interfaces/users.glade.in.h:12
+#: ../interfaces/users.glade.in.h:12
 msgid "Account"
 msgstr "Tài khoản"
 
-#:../interfaces/users.glade.in.h:13
+#: ../interfaces/users.glade.in.h:13
 msgid "Advanced"
-msgstr "Nâng cao"
+msgstr "Cấp cao"
 
-#:../interfaces/users.glade.in.h:14
+#: ../interfaces/users.glade.in.h:14
 msgid "Allow user to:"
 msgstr "Cho phép người dùng:"
 
-#:../interfaces/users.glade.in.h:15
+#: ../interfaces/users.glade.in.h:15
 msgid "Assign a random password by default"
-msgstr "Ấn định mật khẩu ngẫu nhiên theo mặc định"
+msgstr "Gán mật khẩu ngẫu nhiên theo mặc định"
 
-#:../interfaces/users.glade.in.h:16
+#: ../interfaces/users.glade.in.h:16
 msgid "Check password _quality"
-msgstr "Kiểm tra chất lượng _mật khẩu"
+msgstr "_Kiểm tra chất lượng mật khẩu"
 
-#:../interfaces/users.glade.in.h:17
+#: ../interfaces/users.glade.in.h:17
 msgid "Con_firmation:"
-msgstr "_Khẳng định:"
+msgstr "_Xác nhận:"
 
-#:../interfaces/users.glade.in.h:18
+#: ../interfaces/users.glade.in.h:18
 msgid "Days between warning and password expiration:"
-msgstr "Số ngày giữa cảnh báo và hết hạn dùng mật khẩu:"
+msgstr "Số ngày giữa cảnh báo và hết hạn dùng mật khẩu :"
 
-#:../interfaces/users.glade.in.h:19
+#: ../interfaces/users.glade.in.h:19
 msgid "Default _group:"
 msgstr "_Nhóm mặc định:"
 
-#:../interfaces/users.glade.in.h:20
+#: ../interfaces/users.glade.in.h:20
 msgid "Default _shell:"
-msgstr "Hệ _vỏ mặc định:"
+msgstr "Trình _bao mặc định:"
 
-#:../interfaces/users.glade.in.h:22
+#: ../interfaces/users.glade.in.h:22
 msgid "Generate _random password"
-msgstr "Tạo ra mật _khẩu ngẫu nhiên"
+msgstr "Tạo _ra mật khẩu ngẫu nhiên"
 
-#:../interfaces/users.glade.in.h:23
+#: ../interfaces/users.glade.in.h:23
 msgid "Group _ID:"
 msgstr "_ID Nhóm:"
 
-#:../interfaces/users.glade.in.h:24
+#: ../interfaces/users.glade.in.h:24
 msgid "Group _members:"
-msgstr "Thành viên _nhóm:"
+msgstr "Thành viên nhó_m:"
 
-#:../interfaces/users.glade.in.h:25
+#: ../interfaces/users.glade.in.h:25
 msgid "Group _name:"
-msgstr "Tê_n Nhóm:"
+msgstr "Tê_n nhóm:"
 
-#:../interfaces/users.glade.in.h:26
+#: ../interfaces/users.glade.in.h:26
 msgid "Group properties"
-msgstr "Thuộc tính nhóm"
+msgstr "Tài sản nhóm"
 
-#:../interfaces/users.glade.in.h:27
+#: ../interfaces/users.glade.in.h:27
 msgid "Groups"
 msgstr "Nhóm"
 
-#:../interfaces/users.glade.in.h:28
+#: ../interfaces/users.glade.in.h:28
 msgid "Ma_ximum days a password may be used:"
-msgstr "Số ngày tối đ_a có thể dùng một mật khẩu nào đó:"
+msgstr "Số ngày tối đ_a có thể dùng mỗi mật khẩu :"
 
-#:../interfaces/users.glade.in.h:29
+#: ../interfaces/users.glade.in.h:29
 msgid "Maximum UID:"
 msgstr "UID tối đa:"
 
-#:../interfaces/users.glade.in.h:30
+#: ../interfaces/users.glade.in.h:30
 msgid "Mi_nimum days between password changes:"
-msgstr "Số ngày tối th_iểu giữa các lần đổi mật khẩu:"
+msgstr "Số _ngày tối thiểu giữa hai lần đổi mật khẩu :"
 
-#:../interfaces/users.glade.in.h:31
+#: ../interfaces/users.glade.in.h:31
 msgid "Minimum GID:"
 msgstr "GID tối thiểu:"
 
-#:../interfaces/users.glade.in.h:32
+#: ../interfaces/users.glade.in.h:32
 msgid "Minimum UID:"
-msgstr "UID tối thiểu:"
+msgstr "UID tối thiểu :"
 
-#:../interfaces/users.glade.in.h:33
+#: ../interfaces/users.glade.in.h:33
 msgid "Minimum days allowed between password changes:"
-msgstr "Số ngày tối thiểu được phép giữa những lần thay đổi mật khẩu:"
+msgstr "Số ngày tối thiểu được phép giữa hai lần thay đổi mật khẩu :"
 
-#:../interfaces/users.glade.in.h:34
+#: ../interfaces/users.glade.in.h:34
 msgid "Number of days that a password may be used:"
-msgstr "Sô ngày có dùng được một mật khẩu:"
+msgstr "Sô ngày có thể dùng mỗi mật khẩu :"
 
-#:../interfaces/users.glade.in.h:35
+#: ../interfaces/users.glade.in.h:35
 msgid "O_ffice location:"
-msgstr "Địa điểm văn _phòng:"
+msgstr "Vị trí văn _phòng:"
 
-#:../interfaces/users.glade.in.h:36
+#: ../interfaces/users.glade.in.h:36
 msgid "Password set to: "
-msgstr "Mật khẩu lập cho: "
+msgstr "Mật khẩu lập cho : "
 
-#:../interfaces/users.glade.in.h:37
+#: ../interfaces/users.glade.in.h:37
 msgid "Privileges"
 msgstr "Quyền"
 
-#:../interfaces/users.glade.in.h:38
+#: ../interfaces/users.glade.in.h:38
 msgid "Profile _name:"
-msgstr "_Tên tiểu sử sơ lược:"
+msgstr "Tê_n hồ sơ :"
 
-#:../interfaces/users.glade.in.h:39
+#: ../interfaces/users.glade.in.h:39
 msgid "Set password b_y hand"
-msgstr "Tự _lập mật khẩu"
+msgstr "_Tự đặt mật khẩu"
 
-#:../interfaces/users.glade.in.h:40
+#: ../interfaces/users.glade.in.h:40
 msgid "Show a_ll users and groups"
-msgstr "Hiển thị mọ_i người dùng và nhóm"
+msgstr "Hiện _mọi người dùng và nhóm"
 
-#:../interfaces/users.glade.in.h:41
+#: ../interfaces/users.glade.in.h:41
 msgid "User _ID:"
 msgstr "_ID người dùng:"
 
-#:../interfaces/users.glade.in.h:42
+#: ../interfaces/users.glade.in.h:42
 msgid "User _password:"
-msgstr "Mật _khẩu người dùng:"
+msgstr "_Mật khẩu người dùng:"
 
-#:../interfaces/users.glade.in.h:43
+#: ../interfaces/users.glade.in.h:43
 msgid "User privileges"
 msgstr "Quyền người dùng"
 
-#:../interfaces/users.glade.in.h:44
+#: ../interfaces/users.glade.in.h:44
 msgid "User profiles"
-msgstr "Tiểu sử sơ lược người dùng"
+msgstr "Hồ sơ người dùng"
 
-#:../interfaces/users.glade.in.h:45
+#: ../interfaces/users.glade.in.h:45
 msgid "Users"
 msgstr "Người dùng"
 
-#:../interfaces/users.glade.in.h:46
+#: ../interfaces/users.glade.in.h:46
 msgid "_Add Group..."
-msgstr "T_hêm nhóm..."
+msgstr "Thê_m nhóm..."
 
-#:../interfaces/users.glade.in.h:47
+#: ../interfaces/users.glade.in.h:47
 msgid "_Add Profile..."
-msgstr "T_hêm tiểu sử sơ lược..."
+msgstr "Thê_m hồ sơ..."
 
-#:../interfaces/users.glade.in.h:48
+#: ../interfaces/users.glade.in.h:48
 msgid "_Add User..."
-msgstr "T_hêm người dùng..."
+msgstr "Thê_m người dùng..."
 
-#:../interfaces/users.glade.in.h:49
+#: ../interfaces/users.glade.in.h:49
 msgid "_All users:"
-msgstr "Mọ_i người dùng:"
+msgstr "_Mọi người dùng:"
 
-#:../interfaces/users.glade.in.h:50
+#: ../interfaces/users.glade.in.h:50
 msgid "_Comments"
-msgstr "Gh_i chú"
+msgstr "Ghi _chú"
 
-#:../interfaces/users.glade.in.h:51
+#: ../interfaces/users.glade.in.h:51
 msgid "_Days between warning and password expiration:"
-msgstr "Số _ngày giữa lần cảnh báo và hết hạn dùng mật khẩu:"
+msgstr "Số ngày giữa cảnh báo và hết hạn _dùng mật khẩu :"
 
-#:../interfaces/users.glade.in.h:52 ../src/boot/table.c:54
-#:../src/network/address-list.c:72 ../src/network/hosts.c:39
-#:../src/shares/table.c:42 ../src/users/table.c:50
+#: ../interfaces/users.glade.in.h:52
+#: ../src/boot/table.c:54
+#: ../src/network/address-list.c:72
+#: ../src/network/hosts.c:39
+#: ../src/shares/table.c:42
+#: ../src/users/table.c:50
 msgid "_Delete"
 msgstr "_Xóa bỏ"
 
-#:../interfaces/users.glade.in.h:53
+#: ../interfaces/users.glade.in.h:53
 msgid "_Edit User Profiles..."
-msgstr "_Sửa đổi tiểu sử sơ lược người dùng..."
+msgstr "_Sửa hồ sơ người dùng..."
 
-#:../interfaces/users.glade.in.h:54
+#: ../interfaces/users.glade.in.h:54
 msgid "_Generate"
 msgstr "_Tạo ra"
 
-#:../interfaces/users.glade.in.h:55
+#: ../interfaces/users.glade.in.h:55
 msgid "_Home directory:"
-msgstr "Thư mục _chính:"
+msgstr "T_hư mục chính:"
 
-#:../interfaces/users.glade.in.h:56
+#: ../interfaces/users.glade.in.h:56
 msgid "_Home phone:"
-msgstr "Đ_iện thoại ở nhà:"
+msgstr "Điện t_hoại ở nhà:"
 
-#:../interfaces/users.glade.in.h:57
+#: ../interfaces/users.glade.in.h:57
 msgid "_Main group:"
-msgstr "Nhóm c_hính:"
+msgstr "Nhó_m chính:"
 
-#:../interfaces/users.glade.in.h:58
+#: ../interfaces/users.glade.in.h:58
 msgid "_Profile:"
-msgstr "Tiểu sử _sơ lược:"
+msgstr "Hồ _sơ :"
 
-#:../interfaces/users.glade.in.h:59
+#: ../interfaces/users.glade.in.h:59
 msgid "_Real name:"
 msgstr "Tên t_hật:"
 
-#:../interfaces/users.glade.in.h:60
+#: ../interfaces/users.glade.in.h:60
 msgid "_Shell:"
-msgstr "Hệ _vỏ:"
+msgstr "Trình _bao :"
 
-#:../interfaces/users.glade.in.h:62
+#: ../interfaces/users.glade.in.h:62
 msgid "_Work phone:"
-msgstr "Đ_iện thoại chỗ làm:"
+msgstr "Điện thoại chỗ _làm:"
 
-#:../src/boot/boot-append-gui.c:140
+#: ../src/boot/boot-append-gui.c:140
 msgid "32,768"
 msgstr "32 768"
 
-#:../src/boot/boot-append-gui.c:141
+#: ../src/boot/boot-append-gui.c:141
 msgid "65,536"
 msgstr "65 536"
 
-#:../src/boot/boot-append-gui.c:142
+#: ../src/boot/boot-append-gui.c:142
 msgid "16,777,216"
 msgstr "16 777 216"
 
-#:../src/boot/boot-append-gui.c:253
+#: ../src/boot/boot-append-gui.c:253
 msgid "Invalid VGA value"
 msgstr "Giá trị VGA không hợp lệ"
 
-#:../src/boot/boot-append-gui.c:255
-#,c-format
+#: ../src/boot/boot-append-gui.c:255
+#, c-format
 msgid "\"%s\" is not a valid VGA value."
 msgstr "« %s » không phải là giá trị VGA hợp lệ"
 
-#:../src/boot/boot-druid.c:113
+#: ../src/boot/boot-druid.c:113
 msgid "Error creating boot image"
 msgstr "Gặp lỗi khi tạo ảnh khởi động."
 
-#:../src/boot/boot-druid.c:443
-#,c-format
+#: ../src/boot/boot-druid.c:443
+#, c-format
 msgid "Creating a new boot image (%d of %d)"
 msgstr "Đang tạo ảnh khởi động mới (%d trên %d)"
 
-#:../src/boot/boot-druid.c:444
+#: ../src/boot/boot-druid.c:444
 msgid "Finished creating a new boot image"
 msgstr "Đã tạo xong một ảnh khởi động mới."
 
-#:../src/boot/boot-image.c:43
+#: ../src/boot/boot-image.c:43
 msgid "Unknown"
 msgstr "Không biết"
 
-#:../src/boot/boot-image.c:44
+#: ../src/boot/boot-image.c:44
 msgid "Windows NT"
 msgstr "Windows NT"
 
-#:../src/boot/boot-image.c:45
+#: ../src/boot/boot-image.c:45
 msgid "Windows 9x"
 msgstr "Windows 9x"
 
-#:../src/boot/boot-image.c:46
+#: ../src/boot/boot-image.c:46
 msgid "Dos"
 msgstr "Dos"
 
-#:../src/boot/boot-image.c:47
+#: ../src/boot/boot-image.c:47
 msgid "Linux"
 msgstr "Linux"
 
-#:../src/boot/boot-image.c:48
+#: ../src/boot/boot-image.c:48
 msgid "Linux swap"
 msgstr "Linux trao đổi"
 
-#:../src/boot/boot-image.c:49
+#: ../src/boot/boot-image.c:49
 msgid "GNU/Hurd"
 msgstr "GNU/Hurd"
 
-#:../src/boot/boot-image.c:279
-#,c-format
+#: ../src/boot/boot-image.c:279
+#, c-format
 msgid "\"%s\" is an invalid path"
 msgstr "« %s » là đường dẫn không hợp lệ."
 
-#:../src/boot/boot-image.c:295
-#,c-format
+#: ../src/boot/boot-image.c:295
+#, c-format
 msgid "\"%s\" already exists, please set another name."
 msgstr "Đã có « %s ». Hãy lập một tên khác."
 
-#:../src/boot/boot-image.c:301
-#,c-format
+#: ../src/boot/boot-image.c:301
+#, c-format
 msgid "Invalid image name: \"%s\"."
 msgstr "Tên ảnh không hợp lệ: « %s »"
 
-#:../src/boot/boot-image.c:314
-#,c-format
+#: ../src/boot/boot-image.c:314
+#, c-format
 msgid "Invalid image: \"%s\"."
 msgstr "Ảnh không hợp lệ: « %s »"
 
-#:../src/boot/boot-image.c:332
-#,c-format
+#: ../src/boot/boot-image.c:332
+#, c-format
 msgid "Invalid root device: \"%s\"."
 msgstr "Thiết bị gốc không hợp lệ: « %s »"
 
-#:../src/boot/boot-settings.c:45
+#: ../src/boot/boot-settings.c:45
 msgid "_Module path:"
-msgstr "Đường dẫn _Mô-đun:"
+msgstr "Đường dẫn _mô-đun:"
 
-#:../src/boot/boot-settings.c:407
+#: ../src/boot/boot-settings.c:407
 msgid "Password confirmation is not correct."
-msgstr "Xác nhận mật khẩu không đúng."
+msgstr "Xác nhận sai mật khẩu."
 
-#:../src/boot/boot-settings.c:432
+#: ../src/boot/boot-settings.c:432
 msgid "Error modifying boot image"
 msgstr "Gặp lỗi khi sửa đổi ảnh khởi động."
 
-#:../src/boot/boot.desktop.in.in.h:1
+#: ../src/boot/boot.desktop.in.in.h:1
 msgid "Boot"
 msgstr "Khởi động"
 
-#:../src/boot/boot.desktop.in.in.h:2
+#: ../src/boot/boot.desktop.in.in.h:2
 msgid "Configure the system boot process"
 msgstr "Cấu hình tiến trình khởi động hệ thông"
 
-#:../src/boot/callbacks.c:81
+#: ../src/boot/callbacks.c:81
 msgid "Boot Image Editor"
 msgstr "Trình biên soạn ảnh khởi động"
 
-#:../src/boot/callbacks.c:179
+#: ../src/boot/callbacks.c:179
 msgid "Boot Append Editor"
 msgstr "Trình biên soạn phụ thêm vào khởi động"
 
-#:../src/boot/callbacks.c:412
+#: ../src/boot/callbacks.c:412
 msgid "Error deleting boot image"
 msgstr "Gặp lỗi khi xóa bỏ ảnh khởi động."
 
-#:../src/boot/callbacks.c:414
+#: ../src/boot/callbacks.c:414
 msgid "Without at least one boot image your computer will not start."
 msgstr "Nếu không có ít nhất một ảnh khởi động, hệ thống sẽ không chạy được."
 
-#:../src/boot/callbacks.c:433
-#,c-format
+#: ../src/boot/callbacks.c:433
+#, c-format
 msgid "Are you sure you want to delete \"%s\"?"
-msgstr "Bạn có chắc muốn xóa bỏ « %s » không?"
+msgstr "Bạn có chắc là muốn xoá bỏ « %s » không?"
 
-#:../src/boot/callbacks.c:435
+#: ../src/boot/callbacks.c:435
 msgid "This may leave this operating system unbootable."
-msgstr "Vậy có lẽ sẽ không thể khởi động hệ điều hành này."
+msgstr "Hành động này có thể làm cho hệ thống không thể khởi động."
 
-#:../src/boot/callbacks.c:464
+#: ../src/boot/callbacks.c:464
 msgid "The configuration will show empty"
 msgstr "Cấu hình sẽ xuất hiện trống."
 
-#:../src/boot/callbacks.c:466
-#,c-format
+#: ../src/boot/callbacks.c:466
+#, c-format
 msgid "The file \"%s\" is missing or could not be read."
 msgstr "Thiếu hay không đọc được tập tin « %s »."
 
-#:../src/boot/table.c:43
+#: ../src/boot/table.c:43
 msgid "Name"
 msgstr "Tên"
 
-#:../src/boot/table.c:44
+#: ../src/boot/table.c:44
 msgid "Default"
 msgstr "Mặc định"
 
-#:../src/boot/table.c:45
+#: ../src/boot/table.c:45
 msgid "Type"
 msgstr "Kiểu"
 
-#:../src/boot/table.c:46
+#: ../src/boot/table.c:46
 msgid "Kernel Image"
 msgstr "Ảnh hạt nhân"
 
-#:../src/boot/table.c:47
+#: ../src/boot/table.c:47
 msgid "Device"
 msgstr "Thiết bị"
 
-#:../src/boot/table.c:52 ../src/network/address-list.c:71
-#:../src/network/hosts.c:37 ../src/shares/table.c:40 ../src/users/table.c:48
+#: ../src/boot/table.c:52
+#: ../src/network/address-list.c:71
+#: ../src/network/hosts.c:37
+#: ../src/shares/table.c:40
+#: ../src/users/table.c:48
 msgid "_Add"
-msgstr "_Thêm"
+msgstr "Thê_m"
 
-#:../src/boot/table.c:53 ../src/network/hosts.c:38
-#:../src/network/ifaces-list.c:33 ../src/shares/table.c:41
-#:../src/users/table.c:49
+#: ../src/boot/table.c:53
+#: ../src/network/hosts.c:38
+#: ../src/network/ifaces-list.c:33
+#: ../src/shares/table.c:41
+#: ../src/users/table.c:49
 msgid "_Properties"
-msgstr "_Thuộc tính"
+msgstr "Tài _sản"
 
 #.the proccess was running ssh
-#:../src/common/gst-auth.c:89
+#: ../src/common/gst-auth.c:89
 msgid "The tool could not connect to the computer"
-msgstr "Công cụ không thể kết nối đến máy tính."
+msgstr "Công cụ không thể kết nối đến máy tính"
 
-#:../src/common/gst-auth.c:90
+#: ../src/common/gst-auth.c:90
 msgid ""
 "Check that you have access to this network and that the computer is actually "
 "working and running the SSH daemon"
@@ -1115,69 +1135,69 @@ msgstr "Hãy kiểm tra có truy cập tới mạng này, và máy tính thật 
 "chay trình nền SSH."
 
 #.the proccess was running su
-#:../src/common/gst-auth.c:94
+#: ../src/common/gst-auth.c:94
 msgid "The entered password is invalid"
 msgstr "Mật khẩu nhập vào không hợp lệ."
 
-#:../src/common/gst-auth.c:95
+#: ../src/common/gst-auth.c:95
 msgid ""
 "Check that you typed it correctly and that you haven't activated the \"caps "
 "lock\" key"
 msgstr "Hãy kiểm tra đã gõ nó cho đúng, và phím CapsLock (chữ hoa luôn) đã tắt."
 
-#:../src/common/gst-auth.c:104
-#,c-format
+#: ../src/common/gst-auth.c:104
+#, c-format
 msgid "Could not run \"%s\""
 msgstr "Không chạy được « %s »."
 
-#:../src/common/gst-auth.c:105
+#: ../src/common/gst-auth.c:105
 msgid "Check that you have permissions to run this command"
 msgstr "Hãy kiểm tra có đủ quyền chạy lệnh này."
 
-#:../src/common/gst-auth.c:107
+#: ../src/common/gst-auth.c:107
 msgid "An unexpected error has occurred"
 msgstr "Gặp lỗi bất ngờ."
 
-#:../src/common/gst-auth.c:133
+#: ../src/common/gst-auth.c:133
 msgid "Could not execute the backend"
-msgstr "Không thưc hiện được hậu phương."
+msgstr "Không thể thực hiện hậu phương"
 
-#:../src/common/gst-auth.c:134
+#: ../src/common/gst-auth.c:134
 msgid "There was an error creating the child process, the tool will close now."
 msgstr "Gặp lỗi khi tạo tiến trình con nên công cụ sẽ đóng ngay bây giờ."
 
-#:../src/common/gst-dialog.c:60
-#,c-format
+#: ../src/common/gst-dialog.c:60
+#, c-format
 msgid "Could not find widget: %s"
 msgstr "Không tìm thấy ô điều khiển: %s"
 
-#:../src/common/gst-dialog.c:383
+#: ../src/common/gst-dialog.c:383
 msgid "There are changes which have not been applied"
 msgstr "Có những thay đổi chưa được áp dụng."
 
-#:../src/common/gst-dialog.c:385
+#: ../src/common/gst-dialog.c:385
 msgid "Apply them now?"
 msgstr "Thế áp dụng chúng ngay bây giờ chứ?"
 
-#:../src/common/gst-dialog.c:492
-#,c-format
+#: ../src/common/gst-dialog.c:492
+#, c-format
 msgid "Error connection signal `%s' in widget `%s'"
 msgstr "Tín hiệu kết nối lỗi « %s » trong ô điều khiển « %s »."
 
-#:../src/common/gst-tool.c:1026
+#: ../src/common/gst-tool.c:1026
 msgid "The configuration could not be loaded"
 msgstr "Không tải được cấu hình ấy."
 
-#:../src/common/gst-tool.c:1028
+#: ../src/common/gst-tool.c:1028
 msgid "There was an error running the backend script"
 msgstr "Gặp lỗi khi chạy tập lệnh hậu phương."
 
-#:../src/common/gst-tool.c:1509
-#,c-format
+#: ../src/common/gst-tool.c:1509
+#, c-format
 msgid "Welcome to the %s prerelease of the GNOME System Tools"
 msgstr "Chứng mừng dung phiên bản trước %s của Công cu Hệ thống GNOME."
 
-#:../src/common/gst-tool.c:1511
+#: ../src/common/gst-tool.c:1511
 msgid ""
 "This is still a work in progress, and so it may have serious bugs. Due to "
 "the nature of these tools, bugs may render your computer <span weight=\"bold"
@@ -1190,788 +1210,796 @@ msgstr "Nó vẫn còn đang được phát triển thì có thể có lỗi tr�
 "được cảnh báo. Cảm ơn bạn chạy thử bản tiền phát hành của Công cụ Hệ thống "
 "Gnome!"
 
-#:../src/common/gst-tool.c:1532
+#: ../src/common/gst-tool.c:1532
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#:../src/common/gst-tool.c:1552
+#: ../src/common/gst-tool.c:1552
 msgid "Don't show me this again"
 msgstr "Không hiển thị lại nữa"
 
-#:../src/common/gst-tool.c:1609
+#: ../src/common/gst-tool.c:1609
 msgid "GNOME System Tools"
-msgstr "Công cụ Hệ thống GNOME"
+msgstr "Công Cụ Hệ Thống GNOME"
 
-#:../src/common/gst-tool.c:1755
+#: ../src/common/gst-tool.c:1755
 msgid "Could not display help"
-msgstr "Không hiển thị được trợ giúp."
+msgstr "Không thể hiển thị trợ giúp"
 
-#:../src/network/address-list.c:555
+#: ../src/network/address-list.c:555
 msgid "Type address"
 msgstr "Gõ địa chỉ"
 
-#:../src/network/callbacks.c:46
-#,c-format
+#: ../src/network/callbacks.c:46
+#, c-format
 msgid "Could not enable the interface %s"
 msgstr "Không bật chạy được giao diện « %s »."
 
-#:../src/network/callbacks.c:50
+#: ../src/network/callbacks.c:50
 msgid ""
 "Check that the settings are correct for this network and that the computer "
 "is correctly connected to it."
-msgstr "Hãy kiểm tra xem thiết lập có thích hợp với mạng này, và có máy tính kết nối "
-"đúng đến nó."
+msgstr "Hãy kiểm tra xem thiết lập là đúng cho mạng này, và máy tính được kết nối đúng với nó."
 
-#:../src/network/callbacks.c:237
+#: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
-msgstr "Không thể tự động phát hiện thiết bị modem."
+msgstr "Không thể phát hiện tự đông thiết bị bộ điều giải"
 
-#:../src/network/callbacks.c:240
+#: ../src/network/callbacks.c:240
 msgid ""
 "Check that the device is not busy and that is correctly attached to the "
 "computer."
-msgstr "Hãy kiểm tra xem thiết bị không bận, và có kết nối đúng đến máy tính."
+msgstr "Hãy kiểm tra xem thiết bị không bận, cũng có kết nối đúng đến máy tính."
 
-#:../src/network/callbacks.c:451
+#: ../src/network/callbacks.c:451
 msgid "The host name has changed"
-msgstr "Tên máy đã thay đổi."
+msgstr "Tên máy đã thay đổi"
 
-#:../src/network/callbacks.c:454
+#: ../src/network/callbacks.c:454
 msgid ""
 "This will prevent you from launching new applications, and so you will have "
 "to log in again. Continue anyway?"
-msgstr "Điều này sẽ ngăn bạn chạy các ứng dụng mới, như vậy là bạn phải đăng nhập "
-"lại. Tiếp tục bằng mọi cách?"
+msgstr "Điều này sẽ chặn bạn chạy ứng dụng mới, như vậy là bạn phải đăng nhập lại. "
+"Vẫn muốn tiếp tục không?"
 
-#:../src/network/callbacks.c:460
+#: ../src/network/callbacks.c:460
 msgid "Change _Host name"
 msgstr "Đổi tên _máy"
 
-#:../src/network/hosts.c:92
+#: ../src/network/hosts.c:92
 msgid "IP Address"
 msgstr "Địa chỉ IP"
 
-#:../src/network/hosts.c:100
+#: ../src/network/hosts.c:100
 msgid "Aliases"
 msgstr "Biệt hiệu"
 
-#:../src/network/location.c:145
+#: ../src/network/location.c:145
 msgid "Create location"
 msgstr "Tạo địa điểm"
 
-#:../src/network/location.c:153
+#: ../src/network/location.c:153
 msgid "Delete current location"
-msgstr "Xóa bỏ địa điểmhiện thời"
+msgstr "Xoá bỏ địa điểm hiện thời"
 
-#:../src/network/location.c:367
+#: ../src/network/location.c:367
 msgid "Do you want to remove this location?"
-msgstr "Bạn có muốn loại bỏ địa điểm này không?"
+msgstr "Bạn có muốn gỡ bỏ địa điểm này không?"
 
-#:../src/network/location.c:440
+#: ../src/network/location.c:440
 msgid "Changing profile"
 msgstr "Đang thay đổi tiểu sử sơ lược"
 
-#:../src/network/main.c:110
+#: ../src/network/main.c:110
 msgid "The interface does not exist"
-msgstr "Không có giao diện này."
+msgstr "Giao diện này không tồn tại"
 
-#:../src/network/main.c:112
+#: ../src/network/main.c:112
 msgid ""
 "Check that it is correctly typed and that it is correctly supported by your "
 "system."
-msgstr "Hãy kiểm tra xem đã gõ nó cho đúng, và hệ thống bạn hỗ trợ nó hoàn thành."
+msgstr "Hãy kiểm tra xem bạn đã gõ đúng nó, cũng rằng hệ thống bạn hỗ trợ nó một "
+"cách đúng."
 
-#:../src/network/main.c:157
+#: ../src/network/main.c:157
 msgid "Configure a network interface"
 msgstr "Cấu hình giao diện mạng"
 
-#:../src/network/main.c:157
+#: ../src/network/main.c:157
 msgid "INTERFACE"
 msgstr "GIAO DIỆN"
 
-#:../src/network/main.c:158
+#: ../src/network/main.c:158
 msgid "Configure the first network interface with a specific type"
-msgstr "Cấu hình giao diện mạng thứ nhất với một kiểu nào đó"
+msgstr "Cấu hình giao diện mạng thứ nhất với kiểu riêng"
 
-#:../src/network/main.c:158
+#: ../src/network/main.c:158
 msgid "TYPE"
 msgstr "KIỂU"
 
-#:../src/network/main.c:165
+#: ../src/network/main.c:165
 msgid "Network settings"
 msgstr "Thiết lập mạng"
 
-#:../src/network/network.desktop.in.in.h:1
+#: ../src/network/network.desktop.in.in.h:1
 msgid "Configure network devices and connections"
 msgstr "Cấu hình thiết bị và kết nối mạng"
 
-#:../src/network/network.desktop.in.in.h:2
+#: ../src/network/network.desktop.in.in.h:2
 msgid "Networking"
-msgstr "Mạng làm việc"
+msgstr "Chạy mạng"
 
-#:../src/network/network-iface-ethernet.c:302
+#: ../src/network/network-iface-ethernet.c:302
 msgid "Ethernet connection"
 msgstr "Kết nối Ethernet"
 
-#:../src/network/network-iface-irlan.c:122
+#: ../src/network/network-iface-irlan.c:122
 msgid "Infrared connection"
 msgstr "Kết nối hồng ngoại"
 
-#:../src/network/network-iface-isdn.c:330
+#: ../src/network/network-iface-isdn.c:330
 msgid "ISDN connection"
 msgstr "Kết nối ISDN"
 
-#:../src/network/network-iface-modem.c:253
+#: ../src/network/network-iface-modem.c:253
 msgid "Modem connection"
-msgstr "Kết nối modem"
+msgstr "Kết nối bộ điều giải"
 
-#:../src/network/network-iface-plip.c:211
+#: ../src/network/network-iface-plip.c:211
 msgid "Parallel port connection"
 msgstr "Kết nối cổng nối tiếp"
 
-#:../src/network/network-iface-wireless.c:245
+#: ../src/network/network-iface-wireless.c:245
 msgid "Wireless connection"
 msgstr "Kết nối vô tuyến"
 
-#:../src/network/network-iface.c:410
-#,c-format
+#: ../src/network/network-iface.c:410
+#, c-format
 msgid "Activating interface \"%s\""
-msgstr "Kích hoạt giao diện « %s »"
+msgstr "Đang kích hoạt giao diện « %s »"
 
-#:../src/network/network-iface.c:522
-#,c-format
+#: ../src/network/network-iface.c:522
+#, c-format
 msgid "The interface %s is not configured"
-msgstr "Chưa cấu hình giao diện « %s »."
+msgstr "Giao diện %s chưa được cấu hình"
 
-#:../src/network/network-iface.c:524
-#,c-format
+#: ../src/network/network-iface.c:524
+#, c-format
 msgid "The interface %s is not active"
-msgstr "Giao diện « %s » không hoạt động."
+msgstr "Giao diện %s không phải là hoạt động"
 
-#:../src/network/network-iface.c:526
-#,c-format
+#: ../src/network/network-iface.c:526
+#, c-format
 msgid "The interface %s is active"
-msgstr "Giao diện « %s » hoạt động."
+msgstr "Giao diện %s là hoạt động"
 
-#:../src/services/callbacks.c:64
-#,c-format
+#: ../src/services/callbacks.c:64
+#, c-format
 msgid "Settings for \"%s\""
-msgstr "Thiết lập cho người dùng « %s »"
+msgstr "Thiết lập cho « %s »"
 
 #.FIXME: put service name !!!
-#:../src/services/callbacks.c:153
+#: ../src/services/callbacks.c:153
 msgid "Are you sure you want to deactivate this service?"
-msgstr "Bạn có chắc là muốn xóa bỏ dịch vụ này?"
+msgstr "Bạn có chắc muốn tắt dịch vụ này không?"
 
-#:../src/services/callbacks.c:156
+#: ../src/services/callbacks.c:156
 msgid ""
 "This may affect your system behavior in several ways, possibly leading to "
 "data loss"
-msgstr "Đây có thể tác động lên hành vi hệ thống bạn bằng vài cách, có lẽ mất dữ "
-"liệu."
+msgstr "Hành động này có thể tác động lên hành vi hệ thống bạn bằng vài cách, có lẽ gây ra dữ liệu bị mất."
 
-#:../src/services/main.c:55
+#: ../src/services/main.c:55
 msgid "Services settings"
-msgstr "Thiết lập dịch vụ:"
+msgstr "Thiết lập dịch vụ"
 
-#:../src/services/services.desktop.in.in.h:1
+#: ../src/services/services.desktop.in.in.h:1
 msgid "Configure which services will be run when the system starts"
-msgstr "Cấu hình sẽ chạy những dịch vụ nào khi hệ thống khởi động."
+msgstr "Cấu hình những dịch vụ nào sẽ được chạy khi hệ thống khởi động."
 
-#:../src/services/services.desktop.in.in.h:2
+#: ../src/services/services.desktop.in.in.h:2
 msgid "Services"
 msgstr "Dịch vụ"
 
-#:../src/services/service.c:32
+#: ../src/services/service.c:32
 msgid "Antivirus"
 msgstr "Chống vi-rút"
 
-#:../src/services/service.c:32
+#: ../src/services/service.c:32
 msgid "Analyzes your incoming mail for virus"
-msgstr "Phân tích thư gởi đến có vi-rút"
+msgstr "Phân tích thư gởi đến tìm vi-rút"
 
-#:../src/services/service.c:33
+#: ../src/services/service.c:33
 msgid "Volumes mounter"
 msgstr "Bộ gắn kết khối tin"
 
-#:../src/services/service.c:33
+#: ../src/services/service.c:33
 msgid "Mounts your volumes automatically"
-msgstr "Tự động gắn kết khối tin bạn"
+msgstr "Gắn kết tự động các khối tin của bạn"
 
-#:../src/services/service.c:34
+#: ../src/services/service.c:34
 msgid "Actions scheduler"
 msgstr "Bộ lập lịch hành động"
 
-#:../src/services/service.c:34
+#: ../src/services/service.c:34
 msgid "Executes scheduled actions"
-msgstr "Thực hiện các hành động đã định."
+msgstr "Thực hiện các hành động đã định"
 
-#:../src/services/service.c:35
+#: ../src/services/service.c:35
 msgid "Database server"
 msgstr "Máy phục vụ cơ sở dữ liệu"
 
-#:../src/services/service.c:35
+#: ../src/services/service.c:35
 msgid "Data storage system"
 msgstr "Hệ thống cất giữ dữ liệu"
 
-#:../src/services/service.c:36
+#: ../src/services/service.c:36
 msgid "Graphical login manager"
 msgstr "Bộ quản lý đăng nhập đồ họa"
 
-#:../src/services/service.c:36
+#: ../src/services/service.c:36
 msgid "Allows users to login graphically"
 msgstr "Cho phép người dùng đăng nhập một cách đồ họa"
 
-#:../src/services/service.c:37
+#: ../src/services/service.c:37
 msgid "Folder sharing service"
-msgstr "Dịch vụ dùng chung thư mục"
+msgstr "Dịch vụ chia sẻ thư mục"
 
-#:../src/services/service.c:37
+#: ../src/services/service.c:37
 msgid "Shares folders over your network"
-msgstr "Chia sẻ thư mục qua mạng bạn"
+msgstr "Chia sẻ thư mục qua mạng của bạn"
 
-#:../src/services/service.c:38
+#: ../src/services/service.c:38
 msgid "File sharing service"
-msgstr "Dịch vụ dùng chung thư mục"
+msgstr "Dịch vụ chia sẻ thư mục"
 
-#:../src/services/service.c:38 ../src/services/service.c:39
+#: ../src/services/service.c:38
+#: ../src/services/service.c:39
 msgid "Shares files over the Internet"
 msgstr "Chia sẻ tập tin qua Mạng"
 
-#:../src/services/service.c:39
+#: ../src/services/service.c:39
 msgid "FTP service"
 msgstr "Dịch vụ FTP"
 
-#:../src/services/service.c:40
+#: ../src/services/service.c:40
 msgid "Mail fetcher"
 msgstr "Bộ lấy thư"
 
-#:../src/services/service.c:40
+#: ../src/services/service.c:40
 msgid "Downloads your mail from remote accounts"
-msgstr "Tải thư bạn xuống tài khoản từ xa"
+msgstr "Tải các thư của bạn xuống tài khoản từ xa"
 
-#:../src/services/service.c:41
+#: ../src/services/service.c:41
 msgid "Mail agent"
 msgstr "Tác nhân thư"
 
-#:../src/services/service.c:41
+#: ../src/services/service.c:41
 msgid "Delivers your outgoing mail"
-msgstr "Phát thư đi ra của bạn"
+msgstr "Phát các thư gởi ra của bạn"
 
-#:../src/services/service.c:42
+#: ../src/services/service.c:42
 msgid "Clock synchronization service"
 msgstr "Dịch vụ đồng bộ hóa đồng hồ"
 
-#:../src/services/service.c:42
+#: ../src/services/service.c:42
 msgid "Synchronizes your computer clock with Internet time servers"
-msgstr "Đồng bộ hoá đồng hồ máy tính với máy phục vụ thời gian Mạng."
+msgstr "Đồng bộ hoá đồng hồ máy tính với máy phục vụ thời gian Mạng"
 
-#:../src/services/service.c:43
+#: ../src/services/service.c:43
 msgid "Printer service"
 msgstr "Dịch vụ máy in"
 
-#:../src/services/service.c:43
+#: ../src/services/service.c:43
 msgid "Allows applications to use printers"
 msgstr "Cho phép ứng dụng dùng máy in"
 
-#:../src/services/service.c:44
+#: ../src/services/service.c:44
 msgid "Remote shell server"
-msgstr "Máy phục vụ hệ vỏ từ xa"
+msgstr "Máy phục vụ trình bao từ xa"
 
-#:../src/services/service.c:44
+#: ../src/services/service.c:44
 msgid "Secure shell server"
-msgstr "Máy phục vụ hệ vỏ bảo mật"
+msgstr "Máy phục vụ trình bao bảo mật"
 
-#:../src/services/service.c:45
+#: ../src/services/service.c:45
 msgid "Computer activity logger"
 msgstr "Bộ ghi lưu hoạt động máy tính"
 
-#:../src/services/service.c:45
+#: ../src/services/service.c:45
 msgid "Keeps a log of your computer activity"
-msgstr "Ghi lưu các hoạt động của máy tính bạn"
+msgstr "Ghi lưu các hoạt động của máy tính của bạn"
 
-#:../src/services/service.c:46
+#: ../src/services/service.c:46
 msgid "Web server"
 msgstr "Máy phục vụ Mạng"
 
-#:../src/services/service.c:46
+#: ../src/services/service.c:46
 msgid "Shares your web pages over the Internet"
 msgstr "Chia sẻ các trang Mạng của bạn qua Mạng"
 
-#:../src/shares/callbacks.c:187
+#: ../src/shares/callbacks.c:187
 msgid "Are you sure you want to delete this share?"
-msgstr "Bạn có chắc là muốn xóa bỏ phần chia này?"
+msgstr "Bạn có chắc là muốn xóa bỏ phần chia này không?"
 
-#:../src/shares/callbacks.c:189
+#: ../src/shares/callbacks.c:189
 msgid "Other computers in your network will stop viewing this."
-msgstr "Các máy tính khác trên mạng bạn sẽ ngừng xem điều này."
+msgstr "Các máy tính khác nằm trên mạng của bạn sẽ ngừng xem điều này."
 
-#:../src/shares/main.c:90
+#: ../src/shares/main.c:90
 msgid "Add a shared path, modifies it if it already exists"
-msgstr "Thêm đường dẫn dùng chung, sửa đổi nó nếu đã có."
+msgstr "Thêm đường dẫn dùng chung, sửa đổi nó nếu đã tồn tại"
 
-#:../src/shares/main.c:90
+#: ../src/shares/main.c:90
 msgid "PATH"
 msgstr "ĐƯỜNG DẪN"
 
-#:../src/shares/main.c:97
+#: ../src/shares/main.c:97
 msgid "Shared folders settings"
-msgstr "Thiết lập của thư mục dùng chung"
+msgstr "Thiết lập thư mục dùng chung"
 
-#:../src/shares/nautilus/nautilus-shares.c:129
+#: ../src/shares/nautilus/nautilus-shares.c:129
 msgid "_Share folder"
-msgstr "_Chia sẻ thư mục"
+msgstr "Thư mục chia _sẻ"
 
-#:../src/shares/nautilus/nautilus-shares.c:130
+#: ../src/shares/nautilus/nautilus-shares.c:130
 msgid "Share this folder with other computers"
-msgstr "Dùng thư mục này cùng với máy tính khác."
+msgstr "Dùng thư mục này chung với máy tính khác"
 
-#:../src/shares/nfs-acl-table.c:51
+#: ../src/shares/nfs-acl-table.c:51
 msgid "Allowed host/network"
-msgstr "Máy/mạng cho phép"
+msgstr "Máy/mạng được phép"
 
-#:../src/shares/share-nfs-add-hosts.c:114
-#,c-format
+#: ../src/shares/share-nfs-add-hosts.c:114
+#, c-format
 msgid "Hosts in the %s network"
-msgstr "Các máy trong mạng « %s »"
+msgstr "Các máy trên mạng %s"
 
-#:../src/shares/share-nfs-add-hosts.c:146
+#: ../src/shares/share-nfs-add-hosts.c:146
 msgid "Specify hostname"
 msgstr "Ghi rõ tên máy"
 
-#:../src/shares/share-nfs-add-hosts.c:153
+#: ../src/shares/share-nfs-add-hosts.c:153
 msgid "Specify IP address"
 msgstr "Ghi rõ địa chỉ IP"
 
-#:../src/shares/share-nfs-add-hosts.c:160
+#: ../src/shares/share-nfs-add-hosts.c:160
 msgid "Specify network"
 msgstr "Ghi rõ mạng"
 
-#:../src/shares/share-settings.c:123
+#: ../src/shares/share-settings.c:123
 msgid "Do not share"
-msgstr "Đừng dùng chung"
+msgstr "Đừng chia sẻ"
 
-#:../src/shares/share-settings.c:131
+#: ../src/shares/share-settings.c:131
 msgid "SMB"
 msgstr "SMB"
 
-#:../src/shares/share-settings.c:139
+# Name: don't translate / Tên: đừng dịch
+#: ../src/shares/share-settings.c:139
 msgid "NFS"
 msgstr "NFS"
 
-#:../src/shares/shares.desktop.in.in.h:1
+#: ../src/shares/shares.desktop.in.in.h:1
 msgid "Configure which folders are available for your network neighborhood"
-msgstr "Cấu hình những thư mục nào công bố cho mạng địa phương."
+msgstr "Cấu hình những thư mục nào công bố cho mạng cục bộ"
 
-#:../src/shares/shares.desktop.in.in.h:2
+#: ../src/shares/shares.desktop.in.in.h:2
 msgid "Shared Folders"
 msgstr "Thư mục dùng chung"
 
-#:../src/shares/transfer.c:44
+#: ../src/shares/transfer.c:44
 msgid "Sharing services are not installed"
-msgstr "Chưa cài đặt dịch vụ dùng chung"
+msgstr "Chưa cài đặt dịch vụ chia sẻ"
 
-#:../src/shares/transfer.c:46
+#: ../src/shares/transfer.c:46
 msgid ""
 "You need to install at least either Samba or NFS in order to share your "
 "folders. The tool will close now."
 msgstr "Bạn cần phải cài đặt ít nhất hoặc Samba hoặc NFS để có khả năng dùng danh "
 "mục bạn cùng với người khác. Công cụ sẽ đóng ngay bây giờ."
 
-#:../src/time/main.c:464
+#: ../src/time/main.c:464
 msgid "NTP support is not installed"
-msgstr "Chưa cài đặt cách hỗ trợ NTP."
+msgstr "Chưa cài đặt khả năng hỗ trợ NTP"
 
-#:../src/time/main.c:466
+#: ../src/time/main.c:466
 msgid ""
 "Please install and activate NTP support in the system to enable "
 "synchronization of your local time server with Internet time servers."
-msgstr "Hãy cài đặt rồi hoạt hóa cách hỗ trợ NTP trong hệ thống này, để hiệụ lực "
-"đồng bộ hóa máy phục vụ thời gian địa phương với máy phục vụ Mạng."
+msgstr "Hãy cài đặt rồi kích hoạt khả năng hỗ trợ NTP trong hệ thống này, để hiệu lực đồng bộ hóa máy phục vụ thời gian cục bộ với máy phục vụ thời gian Mạng."
 
-#:../src/time/main.c:762
+#: ../src/time/main.c:762
 msgid "Time and Date Settings"
 msgstr "Thiết lập Ngày và Giờ"
 
-#:../src/time/time.desktop.in.in.h:1
+#: ../src/time/time.desktop.in.in.h:1
 msgid "Change system time, date, and timezone"
 msgstr "Sửa đổi thời gian, ngày và múi giờ trong hệ thống"
 
-#:../src/time/time.desktop.in.in.h:2
+#: ../src/time/time.desktop.in.in.h:2
 msgid "Time and Date"
 msgstr "Ngày và Giờ"
 
-#:../src/users/callbacks.c:571
+#: ../src/users/callbacks.c:571
 msgid "Error saving profile"
 msgstr "Gặp lỗi khi lưu tiểu sử sơ lược."
 
-#:../src/users/callbacks.c:613
+#: ../src/users/callbacks.c:613
 msgid "Create New profile"
 msgstr "Tạo tiểu sử sơ lược mới"
 
-#:../src/users/callbacks.c:649
-#,c-format
+#: ../src/users/callbacks.c:649
+#, c-format
 msgid "Settings for profile %s"
-msgstr "Thiết lập cho tiểu sử sơ lược « %s »"
+msgstr "Thiết lập cho hồ sơ %s"
 
-#:../src/users/group-settings.c:91
+#: ../src/users/group-settings.c:91
 msgid "Create New Group"
 msgstr "Tạo nhóm mới"
 
 #.Check if gid is available
-#:../src/users/group-settings.c:164 ../src/users/group-settings.c:172
+#: ../src/users/group-settings.c:164
+#: ../src/users/group-settings.c:172
 msgid "Invalid group ID"
 msgstr "ID nhóm không hợp lệ"
 
-#:../src/users/group-settings.c:165
+#: ../src/users/group-settings.c:165
 msgid "Group ID must be a positive number"
 msgstr "ID nhóm phải là một số dương."
 
 #.if group is root
-#:../src/users/group-settings.c:168
+#: ../src/users/group-settings.c:168
 msgid "Group ID of the \"root\" user should not be modified"
-msgstr "Không nên sửa đổi ID nhóm của người dùng « chủ »."
+msgstr "Không nên sửa đổi ID nhóm của người dùng « root » (người chủ)"
 
-#:../src/users/group-settings.c:169 ../src/users/group-settings.c:218
-#:../src/users/group-settings.c:288
+#: ../src/users/group-settings.c:169
+#: ../src/users/group-settings.c:218
+#: ../src/users/group-settings.c:288
 msgid "This would leave the system unusable"
-msgstr "Hành động này sẽ làm cho hệ thống vô ích."
+msgstr "Hành động này sẽ làm cho hệ thống vô ích"
 
-#:../src/users/group-settings.c:173
-#,c-format
+#: ../src/users/group-settings.c:173
+#, c-format
 msgid "Group ID %s already exists"
-msgstr "Đã có ID nhóm « %s »."
+msgstr "ID nhóm %s đã có"
 
 #.If empty.
-#:../src/users/group-settings.c:198
+#: ../src/users/group-settings.c:198
 msgid "Group name is empty"
-msgstr "Tên nhóm rỗng."
+msgstr "Tên nhóm rỗng"
 
-#:../src/users/group-settings.c:199
+#: ../src/users/group-settings.c:199
 msgid "A group name must be specified"
-msgstr "Cần phải ghi rõ tên nhóm."
+msgstr "Phải ghi rõ tên nhóm"
 
 #.If too long.
-#:../src/users/group-settings.c:202
+#: ../src/users/group-settings.c:202
 msgid "The group name is too long"
-msgstr "Tên nhóm quá dài."
+msgstr "Tên nhóm quá dài"
 
-#:../src/users/group-settings.c:203
-#,c-format
+#: ../src/users/group-settings.c:203
+#, c-format
 msgid "To be valid, the group name should have less than %d character"
 msgid_plural "To be valid, the group name should have less than %d characters"
 msgstr[0] "Tên nhóm hợp lệ nên chứa ít hơn %d ký tự."
 
 #.if invalid.
-#:../src/users/group-settings.c:209
+#: ../src/users/group-settings.c:209
 msgid "Group name has invalid characters"
-msgstr "Tên nhóm chứa ký tự không hợp lệ."
+msgstr "Tên nhóm chứa ký tự không hợp lệ"
 
-#:../src/users/group-settings.c:210
+#: ../src/users/group-settings.c:210
 msgid "Please set a valid group name, using only lower case letters"
-msgstr "Hãy lập tên nhóm hợp lệ, chỉ dùng chữ cái thường."
+msgstr "Hãy đặt một tên nhóm hợp lệ chứa chỉ chữ thường"
 
 #.if !exist.
-#:../src/users/group-settings.c:213
-#,c-format
+#: ../src/users/group-settings.c:213
+#, c-format
 msgid "Group \"%s\" already exists"
-msgstr "Đã có nhóm « %s »."
+msgstr "Nhóm « %s » đã có"
 
-#:../src/users/group-settings.c:214
+#: ../src/users/group-settings.c:214
 msgid "Please select a different group name"
-msgstr "Hãy chọn một tên nhóm khác."
+msgstr "Hãy chọn một tên nhóm khác"
 
 #.if it's the root group
-#:../src/users/group-settings.c:217
+#: ../src/users/group-settings.c:217
 msgid "Group name of the \"root\" user should not be modified"
-msgstr "Không nên sửa đổi tên nhóm của người dùng « chủ »."
+msgstr "Không nên sửa đổi tên nhóm của người dùng « root » (người chủ)"
 
-#:../src/users/group-settings.c:287
+#: ../src/users/group-settings.c:287
 msgid "The group \"root\" should not be deleted"
 msgstr "Không nên xóa bỏ nhóm « chủ »"
 
-#:../src/users/group-settings.c:302
-#,c-format
+#: ../src/users/group-settings.c:302
+#, c-format
 msgid "Are you sure you want to delete group \"%s\"?"
 msgstr "Bạn có chắc là muốn xoá bỏ nhóm « %s » không?"
 
-#:../src/users/group-settings.c:304
+#: ../src/users/group-settings.c:304
 msgid "This may leave files with invalid group ID in the filesystem."
 msgstr "Hành động này có thể làm cho hệ thống tập tin chứa tập tin có ID nhóm không "
 "hợp lệ."
 
-#:../src/users/group-settings.c:364
-#,c-format
+#: ../src/users/group-settings.c:364
+#, c-format
 msgid "Settings for Group %s"
-msgstr "Thiết lập cho nhóm « %s »"
+msgstr "Thiết lập cho nhóm %s"
 
-#:../src/users/groups-table.c:44
+#: ../src/users/groups-table.c:44
 msgid "Group"
 msgstr "Nhóm"
 
-#:../src/users/groups-table.c:45
+#: ../src/users/groups-table.c:45
 msgid "GID"
 msgstr "GID (ID Nhóm)"
 
-#:../src/users/main.c:123
+#: ../src/users/main.c:123
 msgid "User name contains"
 msgstr "Tên người dùng chứa"
 
-#:../src/users/main.c:124
+#: ../src/users/main.c:124
 msgid "User ID is"
 msgstr "ID người dùng là"
 
-#:../src/users/main.c:125
+#: ../src/users/main.c:125
 msgid "Group name contains"
-msgstr "Tên nhóm có chứa"
+msgstr "Tên nhóm chứa"
 
-#:../src/users/main.c:126
+#: ../src/users/main.c:126
 msgid "User GID is"
-msgstr "GID của người dùng là"
+msgstr "GID người dùng là"
 
-#:../src/users/main.c:245 ../src/users/users.desktop.in.in.h:2
+#: ../src/users/main.c:245
+#: ../src/users/users.desktop.in.in.h:2
 msgid "Users and Groups"
 msgstr "Người dùng và Nhóm"
 
-#:../src/users/passwd.c:168
+#: ../src/users/passwd.c:168
 msgid "Passwords do not match"
-msgstr "Mật khẩu không khớp."
+msgstr "Hai mật khẩu không trùng"
 
-#:../src/users/passwd.c:173
-#,c-format
+#: ../src/users/passwd.c:173
+#, c-format
 msgid ""
 "Bad password: %s.\n"
 "Please try with a new password"
 msgstr "Mật khẩu tồi: %s.\n"
 "Hãy thử một mật khẩu mới."
 
-#:../src/users/profile-settings.c:125
+#: ../src/users/profile-settings.c:125
 msgid "The profile must have a name"
 msgstr "Tiểu sử sơ lược phải có tên."
 
-#:../src/users/profile-settings.c:130
+#: ../src/users/profile-settings.c:130
 msgid "The profile must have a default home"
 msgstr "Tiểu sử sơ lược phải có thư mục chính mặc định."
 
-#:../src/users/profile-settings.c:135 ../src/users/profile-settings.c:140
+#: ../src/users/profile-settings.c:135
+#: ../src/users/profile-settings.c:140
 msgid "The profile must have a default shell"
 msgstr "Tiểu sử sơ lược phải có hệ vỏ mặc định."
 
-#:../src/users/profile-settings.c:208
+#: ../src/users/profile-settings.c:208
 msgid "The default profile should not be deleted"
 msgstr "Không nên xóa bỏ tiểu sử sơ lược mặc định."
 
-#:../src/users/profile-settings.c:209
+#: ../src/users/profile-settings.c:209
 msgid "This profile is used for setting default data for new users"
 msgstr "Tiểu sử sơ lược này được dùng để lập dữ liệu mặc định cho người dùng mới."
 
-#:../src/users/profile-settings.c:218
-#,c-format
+#: ../src/users/profile-settings.c:218
+#, c-format
 msgid "Delete profile \"%s\"?"
-msgstr "Xóa bỏ tiểu sử sơ lược « %s » không?"
+msgstr "Xoá bỏ hồ sơ « %s » không?"
 
-#:../src/users/profile-settings.c:220
+#: ../src/users/profile-settings.c:220
 msgid "You will not be able to recover this profile after pressing \"apply\"."
 msgstr "Sau khi bấm nút « Áp dụng » thì bạn sẽ không thể phục hồi tiểu sử sơ lược "
 "này."
 
 #.Column name,          Adv_state_show,	Basic_state_show
-#:../src/users/profiles-table.c:39
+#: ../src/users/profiles-table.c:39
 msgid "Profile"
-msgstr "Tiểu sử sơ lược"
+msgstr "Hồ sơ"
 
-#:../src/users/profiles-table.c:40
+#: ../src/users/profiles-table.c:40
 msgid "Comment"
-msgstr "Chú thích"
+msgstr "Ghi chú"
 
-#:../src/users/search-bar/search-bar.c:228
+#: ../src/users/search-bar/search-bar.c:228
 msgid "C_lear"
 msgstr "_Xóa"
 
-#:../src/users/search-bar/search-bar.c:329
+#: ../src/users/search-bar/search-bar.c:329
 msgid "Choice"
 msgstr "Lựa chọn"
 
-#:../src/users/search-bar/search-bar.c:339
+#: ../src/users/search-bar/search-bar.c:339
 msgid "Text"
 msgstr "Chữ"
 
-#:../src/users/user-settings.c:73
+#: ../src/users/user-settings.c:73
 msgid "The \"root\" user should not be deleted"
 msgstr "Không nên xóa bỏ người dùng « chủ »."
 
-#:../src/users/user-settings.c:74 ../src/users/user-settings.c:311
-#:../src/users/user-settings.c:406 ../src/users/user-settings.c:442
+#: ../src/users/user-settings.c:74
+#: ../src/users/user-settings.c:311
+#: ../src/users/user-settings.c:406
+#: ../src/users/user-settings.c:442
 msgid "This would leave the system unusable."
 msgstr "Hành động này sẽ làm cho hệ thống vô ích."
 
-#:../src/users/user-settings.c:83
-#,c-format
+#: ../src/users/user-settings.c:83
+#, c-format
 msgid "Are you sure you want to delete user \"%s\"?"
-msgstr "Bạn có chắc là muốn xóa bỏ người dùng « %s » không?"
+msgstr "Bạn có chắc là muốn xoá bỏ người dùng « %s » không?"
 
-#:../src/users/user-settings.c:85
+#: ../src/users/user-settings.c:85
 msgid ""
 "This will disable this user's access to the system without deleting the "
 "user's home directory."
-msgstr "Hành động này sẽ ngăn cản người dùng truy cập hệ thông, mà sẽ không xóa bỏ "
-"thư mục chính của anh ta."
+msgstr "Hành động này sẽ tắt khả năng truy cập hệ thống của người dùng này, mà không "
+"xoá bỏ thư mục chính của họ."
 
-#:../src/users/user-settings.c:189
+#: ../src/users/user-settings.c:189
 msgid "User Account Editor"
 msgstr "Bộ biên soạn tài khoản người dùng"
 
-#:../src/users/user-settings.c:285
+#: ../src/users/user-settings.c:285
 msgid "The user name is empty"
-msgstr "Tên người dùng trống."
+msgstr "Tên người dùng rỗng"
 
-#:../src/users/user-settings.c:286
+#: ../src/users/user-settings.c:286
 msgid "A user name must be specified."
-msgstr "Cần phải ghi rõ một tên người dùng."
+msgstr "Phải ghi rõ một tên người dùng."
 
 #.= sizeof (ut.ut_name)
-#:../src/users/user-settings.c:292 ../src/users/user-settings.c:300
+#: ../src/users/user-settings.c:292
+#: ../src/users/user-settings.c:300
 msgid "The user name is too long"
-msgstr "Tên người dùng quá dài."
+msgstr "Tên người dùng quá dài"
 
-#:../src/users/user-settings.c:293 ../src/users/user-settings.c:301
-#,c-format
+#: ../src/users/user-settings.c:293
+#: ../src/users/user-settings.c:301
+#, c-format
 msgid "To be valid, the user name should have less than %d character"
 msgid_plural "To be valid, the user name should have less than %d characters"
 msgstr[0] "Tên người dùng hợp lệ nên chứa ít hơn %d ký tự."
 
-#:../src/users/user-settings.c:310
+#: ../src/users/user-settings.c:310
 msgid "User name for the \"root\" user should not be modified"
-msgstr "Không nên sửa đổi tên người dùng của người dùng « chủ »."
+msgstr "Không nên sửa đổi tên người dùng của người dùng « root » (người chủ)"
 
-#:../src/users/user-settings.c:316
+#: ../src/users/user-settings.c:316
 msgid "User name has invalid characters"
-msgstr "Tên người dùng chứa ký tự không hợp lệ."
+msgstr "Tên người dùng chứa ký tự không hợp lệ"
 
-#:../src/users/user-settings.c:317
+#: ../src/users/user-settings.c:317
 msgid ""
 "Please set a valid user name consisting of a lower case letter followed by "
 "lower case letters and numbers."
-msgstr "Hãy lập một tên người dùng hợp lệ chứa một chữ cái thường đứng đầu và các "
+msgstr "Hãy đặt một tên người dùng hợp lệ chứa một chữ cái thường đứng đầu và các "
 "chữ cái thường và số đứng sau."
 
-#:../src/users/user-settings.c:323
-#,c-format
+#: ../src/users/user-settings.c:323
+#, c-format
 msgid "User name \"%s\" already exists"
-msgstr "Đã có tên người dùng « %s »."
+msgstr "Tên người dùng « %s » đã có"
 
-#:../src/users/user-settings.c:324
+#: ../src/users/user-settings.c:324
 msgid "Please select a different user name."
 msgstr "Hãy chọn một tên người dùng khác."
 
-#:../src/users/user-settings.c:349
-#,c-format
+#: ../src/users/user-settings.c:349
+#, c-format
 msgid "Invalid character \"%c\" in comment"
-msgstr "Chú thích chứa ký tự không hợp lệ « %c »."
+msgstr "Chú thích chứa ký tự không hợp lệ « %c »"
 
-#:../src/users/user-settings.c:350
+#: ../src/users/user-settings.c:350
 msgid "Check that this character is not used."
-msgstr "Hãy kiểm tra không dùng ký tự này."
+msgstr "Hãy kiểm tra xem bạn không dùng ký tự này."
 
-#:../src/users/user-settings.c:398
+#: ../src/users/user-settings.c:398
 msgid "Home directory should not be empty"
-msgstr "Thư mục chính phải không được rỗng."
+msgstr "Không nên có thư mục chính rỗng"
 
-#:../src/users/user-settings.c:399
+#: ../src/users/user-settings.c:399
 msgid "Make sure you provide a home directory."
 msgstr "Hãy đảm bảo đả cung cấp một thư mục chính."
 
-#:../src/users/user-settings.c:401
+#: ../src/users/user-settings.c:401
 msgid "Incomplete path in home directory"
-msgstr "Có đường dẫn chưa hoàn thành trong thư mục chính."
+msgstr "Có đường dẫn chưa hoàn thành nằm trong thư mục chính"
 
-#:../src/users/user-settings.c:402
+#: ../src/users/user-settings.c:402
 msgid ""
 "Please enter full path for home directory\n"
 "<span size=\"smaller\">i.e.: /home/john</span>."
-msgstr "Hãy nhập đường dẫn đầy đủ tới thư mục chính\n"
+msgstr "Hãy nhập đường dẫn đầy đủ đến thư mục chính\n"
 "<span size=\"smaller\">v.d.: /chính/mìnhtuấn</span>"
 
-#:../src/users/user-settings.c:405
+#: ../src/users/user-settings.c:405
 msgid "Home directory of the \"root\" user should not be modified"
-msgstr "Không nên sửa đổi thư mục chính của người dùng « chủ »."
+msgstr "Không nên sửa đổi thư mục chính của người dùng « root » (người chủ)"
 
-#:../src/users/user-settings.c:438
+#: ../src/users/user-settings.c:438
 msgid "Invalid user ID"
 msgstr "ID người dùng không hợp lệ."
 
-#:../src/users/user-settings.c:439
+#: ../src/users/user-settings.c:439
 msgid "User ID must be a positive number."
 msgstr "ID người dùng phải là một số dương."
 
-#:../src/users/user-settings.c:441
+#: ../src/users/user-settings.c:441
 msgid "User ID of the \"root\" user should not be modified"
-msgstr "Không nên sửa đổi ID người dùng của tên người dùng « chủ »."
+msgstr "Không nên sửa đổi ID người dùng (UID) của người dùng « root » (người chủ)"
 
-#:../src/users/user-settings.c:459
-#,c-format
+#: ../src/users/user-settings.c:459
+#, c-format
 msgid "User ID %s already exists"
-msgstr "Đã có ID người dùng « %s »."
+msgstr "ID người dùng (UID) %s đã có"
 
-#:../src/users/user-settings.c:461
+#: ../src/users/user-settings.c:461
 msgid ""
 "Several users may share a single user ID, but it's not common and may lead "
 "to security problems."
 msgstr "Nhiều người dùng có thể dùng cùng một ID người dùng riêng lẻ, nhưng mà làm "
 "như thế không thường, và có thể đưa tới vấn đề bảo mật. "
 
-#:../src/users/user-settings.c:479
+#: ../src/users/user-settings.c:479
 msgid "Incomplete path in shell"
-msgstr "Đường dẫn chưa hoàn thành trong hệ vỏ."
+msgstr "Đường dẫn chưa hoàn thành trong trình bao"
 
-#:../src/users/user-settings.c:480
+#: ../src/users/user-settings.c:480
 msgid ""
 "Please enter full path for shell\n"
 "<span size=\"smaller\">i.e.: /bin/sh</span>."
-msgstr "Hãy nhập đường dẫn đầy đủ cho hệ vỏ\n"
+msgstr "Hãy nhập đường dẫn đầy đủ đến trình bao\n"
 "<span size=\"smaller\">tức là: /bin/sh</span>"
 
-#:../src/users/user-settings.c:502
+#: ../src/users/user-settings.c:502
 msgid "Password should not be empty"
-msgstr "Mật khẩu không được trống."
+msgstr "Không nên có mật khẩu rỗng"
 
-#:../src/users/user-settings.c:503
+#: ../src/users/user-settings.c:503
 msgid "A password must be provided."
-msgstr "Cần phải cung cấp một mật khẩu."
+msgstr "Phải cung cấp một mật khẩu."
 
-#:../src/users/user-settings.c:505
+#: ../src/users/user-settings.c:505
 msgid "Password confirmation isn't correct"
-msgstr "Xác nhận mật khẩu không đúng."
+msgstr "Xác nhận sai mật khẩu"
 
-#:../src/users/user-settings.c:506
+#: ../src/users/user-settings.c:506
 msgid "Check that you have provided the same password in both text fields."
-msgstr "Hãy kiểm tra đã nhập cùng một mật khẩu vào cả hai trường nhập chữ."
+msgstr "Hãy kiểm tra xem bạn đã nhập cùng một mật khẩu vào cả hai trường nhập chữ."
 
-#:../src/users/user-settings.c:780
-#,c-format
+#: ../src/users/user-settings.c:780
+#, c-format
 msgid "Settings for User %s"
-msgstr "Thiết lập cho người dùng « %s »"
+msgstr "Thiết lập cho người dùng %s"
 
-#:../src/users/users-table.c:61
+#: ../src/users/users-table.c:61
 msgid "User"
 msgstr "Người dùng"
 
-#:../src/users/users-table.c:62
+#: ../src/users/users-table.c:62
 msgid "Home"
 msgstr "Thư mục cá nhân"
 
-#:../src/users/users-table.c:63
+#: ../src/users/users-table.c:63
 msgid "User details"
 msgstr "Chi tiết người dùng"
 
-#:../src/users/users-table.c:64
+#: ../src/users/users-table.c:64
 msgid "UID"
 msgstr "UID"
 
-#:../src/users/users-table.c:65
+#: ../src/users/users-table.c:65
 msgid "Shell"
-msgstr "Hệ vỏ"
+msgstr "Trình bao"
 
-#:../src/users/users.desktop.in.in.h:1
+#: ../src/users/users.desktop.in.in.h:1
 msgid "Add or remove users and groups"
-msgstr "Thêm hay loại bỏ người dùng và nhóm"
+msgstr "Thêm hay gỡ bỏ người dùng và nhóm"
