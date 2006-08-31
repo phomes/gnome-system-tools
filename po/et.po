@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools 2.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-02-26 09:43+0100\n"
-"PO-Revision-Date: 2006-06-13 23:23+0300\n"
+"PO-Revision-Date: 2006-08-31 17:16+0300\n"
 "Last-Translator: Priit Laes <amd@store20.com>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -279,7 +279,7 @@ msgstr "Toetamata platvorm"
 
 #: ../interfaces/common.glade.in.h:8
 msgid "Use this window to select the computer you wish to configure"
-msgstr ""
+msgstr "Kasuta seda akent sinu poolt seadistatava arvuti seadistamiseks"
 
 #: ../interfaces/common.glade.in.h:9
 msgid ""
@@ -615,7 +615,7 @@ msgstr "Kataloogi jagamine"
 
 #: ../interfaces/shares.glade.in.h:21
 msgid "Share with:"
-msgstr ""
+msgstr "Kellele jagatud:"
 
 #: ../interfaces/shares.glade.in.h:22
 msgid "This computer is a WINS server"
@@ -1069,7 +1069,7 @@ msgstr "See võib teha operatsioonisüsteemi alglaadimise võimatuks."
 
 #: ../src/boot/callbacks.c:464
 msgid "The configuration will show empty"
-msgstr ""
+msgstr "Sätteid näidatakse tühjana"
 
 #: ../src/boot/callbacks.c:466
 #, c-format
@@ -1130,6 +1130,8 @@ msgid ""
 "Check that you typed it correctly and that you haven't activated the \"caps "
 "lock\" key"
 msgstr ""
+"Veendu, et sa sisestasid selle ilma vigadeta ja sul polnud sisestamise ajal "
+"\"caps lock\" klahv aktiveeritud"
 
 #: ../src/common/gst-auth.c:104
 #, c-format
@@ -1146,11 +1148,11 @@ msgstr "Tekkis ootamatu viga"
 
 #: ../src/common/gst-auth.c:133
 msgid "Could not execute the backend"
-msgstr ""
+msgstr "Taustaprogrammi pole võimalik käivitada"
 
 #: ../src/common/gst-auth.c:134
 msgid "There was an error creating the child process, the tool will close now."
-msgstr ""
+msgstr "Viga lapsprotsessi loomisel, see tööriist lõpetab nüüd oma töö."
 
 #: ../src/common/gst-dialog.c:60
 #, c-format
@@ -1168,7 +1170,7 @@ msgstr "Kas rakendada need nüüd?"
 #: ../src/common/gst-dialog.c:492
 #, c-format
 msgid "Error connection signal `%s' in widget `%s'"
-msgstr ""
+msgstr "Vigane ühendumissignaal `%s' vidinas `%s'"
 
 #: ../src/common/gst-tool.c:1026
 msgid "The configuration could not be loaded"
@@ -1176,7 +1178,7 @@ msgstr "Seadistusi pole võimalik laadida"
 
 #: ../src/common/gst-tool.c:1028
 msgid "There was an error running the backend script"
-msgstr ""
+msgstr "Taustaskripti töös tekkis viga"
 
 #: ../src/common/gst-tool.c:1509
 #, c-format
@@ -1191,6 +1193,12 @@ msgid ""
 "have been warned. Thank you for trying out this prerelease of the GNOME "
 "System Tools!"
 msgstr ""
+"Kuna nende tööriistade kallal töö alles käib, siis võivad need vahendid "
+"sisaldada tõsiseid vigu. Nende tööriistade iseloomu tõttu võivad ilmnenud "
+"vead muuta sinu arvuti <span weight=\"bold\">praktiliselt "
+"kasutamiskõlbmatuks</span> ja selle olukorra kõrvaldamiseks tuleb kulutada "
+"aega, jõudu ja mõistust. Sind on hoiatatud. Ole aga siiski tänatud "
+"kasutamast GNOME Süsteemitööriistade beetaversiooni!"
 
 #: ../src/common/gst-tool.c:1532
 msgid "Warning"
@@ -1222,6 +1230,8 @@ msgid ""
 "Check that the settings are correct for this network and that the computer "
 "is correctly connected to it."
 msgstr ""
+"Veendu, et selle võrgu kohta käivad sätted on õiged ja et arvuti on "
+"korralikult võrku ühendatud."
 
 #: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
@@ -1368,6 +1378,8 @@ msgid ""
 "This may affect your system behavior in several ways, possibly leading to "
 "data loss"
 msgstr ""
+"See võib mitmeti mõjutada sinu süsteemi käitumist, ei saa välistada ka "
+"andmete kadumist"
 
 #: ../src/services/main.c:55
 msgid "Services settings"
@@ -1775,6 +1787,7 @@ msgstr "Eemaldada profiil \"%s\"?"
 #: ../src/users/profile-settings.c:220
 msgid "You will not be able to recover this profile after pressing \"apply\"."
 msgstr ""
+"Peale \"Rakenda\" nupu vajutamise pole seda profiili enam võimalik taastada."
 
 #. Column name,          Adv_state_show,	Basic_state_show
 #: ../src/users/profiles-table.c:39
