@@ -1,30 +1,29 @@
 # translation of or.po to Oriya
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Subhransu Behera <arya_subhransu@yahoo.co.in>, 2006.
 #
+# Subhransu Behera <arya_subhransu@yahoo.co.in>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-18 00:18+0200\n"
-"PO-Revision-Date: 2006-08-18 09:44+0530\n"
+"PO-Revision-Date: 2006-09-25 18:18+0530\n"
 "Last-Translator: Subhransu Behera <arya_subhransu@yahoo.co.in>\n"
 "Language-Team: Oriya <oriya-group@lists.sarovar.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
 "\n"
 
 #: ../gnome-system-tools.schemas.in.h:1
 msgid ""
 "Comma separated list of hosts that the GST will be able to access when the "
 "remote configuration option is enabled"
-msgstr ""
-"କମା ଦ୍ବାରା ପ୍ରୁଥକ ଆଧାର ମାନଙ୍କର ତାଲିକା ଯାହାକୁ ଦୂର ବିନ୍ଯାସ ବିକଲ୍ପର ସକ୍ରିୟଣ ସମୟରେ GST ଅଭିଗମ "
-"କରିବ"
+msgstr "କମା ଦ୍ବାରା ପୃଥକ ଆଧାର ମାନଙ୍କର ତାଲିକା ଯାହାକୁ ଦୂର ବିନ୍ଯାସ ବିକଲ୍ପର ସକ୍ରିୟଣ ସମୟରେ GST ଅଭିଗମ କରିପାରିବ"
 
 #: ../gnome-system-tools.schemas.in.h:2
 msgid "Last GST version executed"
@@ -84,6 +83,10 @@ msgid ""
 "\n"
 "please select which do you want to configure"
 msgstr ""
+"<span size=\"larger\" weight=\"bold\">ଅନେକ ବୁଟ-ଲୋଗର ମିଳିଲା</"
+"span>\n"
+"\n"
+"ଦୟାକରି ଆପଣ ବିନ୍ଯାସ କରିବାକୁ ଚାହୁଁଥିବା ବୁଟ-ଲୋଡରକୁ ଚୟନ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:5 ../interfaces/users.glade.in.h:3
 msgid "<span weight=\"bold\">Basic Settings</span>"
@@ -106,7 +109,7 @@ msgstr "<span weight=\"bold\">ସମୂହ ସଦସ୍ଯ</span>"
 
 #: ../interfaces/boot.glade.in.h:9
 msgid "Ask at boot"
-msgstr ""
+msgstr "ବୁଟ ସମୟରେ ପଚାରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:10 ../src/boot/main.c:71
 #, fuzzy
@@ -119,10 +122,13 @@ msgid ""
 "partition. Optionally, you may also enter parameters passed to the kernel at "
 "boot time."
 msgstr ""
+"ବୁଟ କରିବା ପାଇଁ ଗୋଟିଏ କର୍ଣ୍ଣଲ ପ୍ରତିଛବିକୁ, ଏବଂ ରୁଟ ବିଭାଜନ ଭାବରେ ଆରୋହଣ କରିବା "
+"ପାଇଁ ଗୋଟିଏ ବିଭାଜନକୁ ଚୟନ କରନ୍ତୁ। ଇଚ୍ଛାନୁସାରେ, ବୁଟ ସମୟରେ ଆପଣ ପାରାମିଟର ମାନଙ୍କୁ "
+"କର୍ଣ୍ଣଲକୁ ପଠାଇ ପାରିବେ।"
 
 #: ../interfaces/boot.glade.in.h:12
 msgid "Click \"Forward\" to continue"
-msgstr ""
+msgstr "ଆଗକୁ ବଢିବା ପାଇଁ \"ପରବର୍ତ୍ତୀ\" ବଟନକୁ ଦବାନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:13
 #, fuzzy
@@ -133,37 +139,39 @@ msgstr "ଅନୁମୋଦନ (_f):"
 #: ../interfaces/boot.glade.in.h:14 ../src/boot/boot-druid.c:442
 #: ../src/boot/boot-druid.c:454
 msgid "Creating a new boot image"
-msgstr ""
+msgstr "ଗୋଟିଏ ନୂତନ ବୁଟ ପ୍ରତିଛବି ସୃଷ୍ଟି କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:15
 msgid "Don't ask me again"
-msgstr ""
+msgstr "ମୋତେ ପୁନର୍ବାର ପଚାରନ୍ତୁ ନାହିଁ"
 
 #: ../interfaces/boot.glade.in.h:16
 msgid "Enable IDE SCSI emulation"
-msgstr ""
+msgstr "IDE SCSI ଯନ୍ତ୍ରାନୁକରଣ ପ୍ରକ୍ରିୟାକୁ ସକ୍ରିୟ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:17
 msgid ""
 "Enter a name for the boot image, and specify what kind of operating system "
 "it is."
 msgstr ""
+"ବୁଟ ପ୍ରତିଛବି ପାଇଁ ଗୋଟିଏ ନାମ ଭରଣ କରନ୍ତୁ, ଏବଂ ଏହା କେଉଁ ପ୍ରକାରର ପ୍ରଚାଳନ "
+"ତନ୍ତ୍ର ତାହା ଉଲ୍ଲେଖ କରନ୍ତୁ।"
 
 #: ../interfaces/boot.glade.in.h:18
 msgid "Finished"
-msgstr ""
+msgstr "ସମାପ୍ତ"
 
 #: ../interfaces/boot.glade.in.h:19
 msgid "Manual"
-msgstr ""
+msgstr "ମେନ୍ଯୁଆଲ"
 
 #: ../interfaces/boot.glade.in.h:20
 msgid "Number of colors:"
-msgstr ""
+msgstr "ରଙ୍ଗ ମାନଙ୍କ ସଂଖ୍ଯା:"
 
 #: ../interfaces/boot.glade.in.h:21
 msgid "Other parameters:"
-msgstr ""
+msgstr "ଅନ୍ଯାନ୍ଯ ପାରାମିଟର:"
 
 #: ../interfaces/boot.glade.in.h:22
 #, fuzzy
@@ -182,11 +190,11 @@ msgstr "ଅବସ୍ଥାନକୁ ଅପସାରଣ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:25
 msgid "Seconds to wait before loading default kernel or OS"
-msgstr ""
+msgstr "କର୍ଣ୍ଣଲ କିମ୍ବା ପ୍ରଚାଳନ ତନ୍ତ୍ରକୁ ଧାରାଣ କରିବା ପୂର୍ବରୁ କେତେ ସେକେଣ୍ଡ ଅପେକ୍ଷା କରିବ"
 
 #: ../interfaces/boot.glade.in.h:26
 msgid "Select a kernel image"
-msgstr ""
+msgstr "ଗୋଟିଏ କର୍ଣ୍ଣଲ ପ୍ରତିଛବିକୁ ଚୟନ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:27
 #, fuzzy
@@ -195,23 +203,27 @@ msgstr "ଅବସ୍ଥାନ ନାମକୁ ଚୟନ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:28
 msgid "Specify the partition on which the operating system is installed."
-msgstr ""
+msgstr "ପ୍ରଚାଳନ ସ୍ଥାପିତ ହୋଇଥିବା ବିଭାଜନକୁ ଉଲ୍ଲେଖ କରନ୍ତୁ।"
 
 #: ../interfaces/boot.glade.in.h:29
 msgid ""
 "The new boot image has been added. Please click \"Apply\" to save your "
 "changes."
 msgstr ""
+"ନୂତନ ବୁଟ ପ୍ରତିଛବିକୁ ଯୋଗ କରାଗଲା। ଆପଣଙ୍କ ପରିବର୍ତ୍ତନ ମାନଙ୍କୁ ସଂରକ୍ଷଣ କରିବା ପାଇଁ "
+"\"ପ୍ରୟୋଗ କରନ୍ତୁ\" ବଟନକୁ ଦବାନ୍ତୁ।"
 
 #: ../interfaces/boot.glade.in.h:30
 msgid ""
 "This assistant is designed to help you quickly and easily add a new boot "
 "image to your system."
 msgstr ""
+"ଗୋଟିଏ ନୂତନ ବୁଟ ପ୍ରତିଛବିକୁ ଆପଣଙ୍କ ତନ୍ତ୍ରରେ ଶୀଘ୍ର ଏବଂ ସହଜରେ ଯୋଗ କରିବା ସମୟରେ "
+"ଆବଶ୍ଯକ ସହାୟତା ପ୍ରଦାନ କରିବା ପାଇଁ ଏହି ସହକାରୀକୁ ପ୍ରସ୍ତୁତ କରାଯାଇଛି।"
 
 #: ../interfaces/boot.glade.in.h:31
 msgid "Video modes (only frame buffer)"
-msgstr ""
+msgstr "ଭିଡିଓ ଧାରା (କେବଳ ଫ୍ରେମ ବଫର)"
 
 #: ../interfaces/boot.glade.in.h:32
 #, fuzzy
@@ -225,15 +237,15 @@ msgstr "ସେବା ମାନ"
 
 #: ../interfaces/boot.glade.in.h:34
 msgid "_Edit"
-msgstr ""
+msgstr "ସମ୍ପାଦନ କରନ୍ତୁ (_E)"
 
 #: ../interfaces/boot.glade.in.h:35 ../src/boot/boot-settings.c:44
 msgid "_Initrd image path:"
-msgstr ""
+msgstr "_Initrd ପ୍ରତିଛବି ପଥ:"
 
 #: ../interfaces/boot.glade.in.h:36
 msgid "_Kernel image path:"
-msgstr ""
+msgstr "କର୍ଣ୍ଣଲ ପ୍ରତିଛବି ପଥ (_K):"
 
 #: ../interfaces/boot.glade.in.h:37
 #, fuzzy
@@ -242,7 +254,7 @@ msgstr "ନାମ:"
 
 #: ../interfaces/boot.glade.in.h:38
 msgid "_Operating system:"
-msgstr ""
+msgstr "ପ୍ରଚାଳନ ତନ୍ତ୍ର (_O):"
 
 #: ../interfaces/boot.glade.in.h:39
 #, fuzzy
@@ -251,11 +263,10 @@ msgstr "ଗୁଣଧର୍ମ (_P)"
 
 #: ../interfaces/boot.glade.in.h:40
 msgid "_Root file system device:"
-msgstr ""
+msgstr "ରୁଟ ଫାଇଲ ତନ୍ତ୍ର ଉପକରଣ (_R):"
 
 #: ../interfaces/common.glade.in.h:1
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
+msgid "<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
 msgstr ""
 "<span weight=\"bold\" size=\"larger\">ଦୟାକରି ପ୍ରମୂଖ ଚାଳକର ପ୍ରବେଶ ସଙ୍କେତକୁ ଭରଣ "
 "କରନ୍ତୁ</span>"
@@ -297,6 +308,8 @@ msgstr "ଅସହାୟକ ପ୍ଲାଟଫର୍ମ"
 #: ../interfaces/common.glade.in.h:8
 msgid "Use this window to select the computer you wish to configure"
 msgstr ""
+"ଆପଣ ବିନ୍ଯାସ କରିବାକୁ ଚାହୁଁଥିବା କମ୍ପୁଟରକୁ ଚୟନ କରିବା ପାଇଁ "
+"ଏହି ୱିଣ୍ଡୋକୁ ବ୍ଯବହାର କରନ୍ତୁ"
 
 #: ../interfaces/common.glade.in.h:9
 #, fuzzy
@@ -409,7 +422,7 @@ msgstr "ଅନ୍ତରାପ୍ରୁଷ୍ଠ ଗୁଣଧର୍ମ"
 
 #: ../interfaces/network.glade.in.h:24
 msgid "Key _type:"
-msgstr ""
+msgstr "ଚାବି ପ୍ରକାର (_t):"
 
 #: ../interfaces/network.glade.in.h:25
 msgid "Location name:"
@@ -480,7 +493,7 @@ msgstr "ଇଣ୍ଟରନେଟ ସେବା ପ୍ରଦାନକର୍ତା�
 
 #: ../interfaces/network.glade.in.h:43
 msgid "WEP _key:"
-msgstr ""
+msgstr "WEP ଚାବି (_k):"
 
 #: ../interfaces/network.glade.in.h:44 ../src/network/ifaces-list.c:34
 msgid "_Activate"
@@ -597,7 +610,7 @@ msgstr "ଅନୁମତି ପ୍ରାପ୍ତ ଆଧାର ମାନଙ୍କ
 
 #: ../interfaces/shares.glade.in.h:8
 msgid "Allow _browsing folder"
-msgstr ""
+msgstr "ଫୋଲଡର ବ୍ରାଉଜ କରିବା ପାଇଁ ଅନୁମତି ପ୍ରଦାନ କରନ୍ତୁ (_b)"
 
 #: ../interfaces/shares.glade.in.h:9
 msgid "Allowed hosts:"
@@ -619,7 +632,7 @@ msgstr "ପରିସର / କାର୍ଯ୍ଯସମୂହ (_W):"
 
 #: ../interfaces/shares.glade.in.h:13
 msgid "General Windows sharing settings"
-msgstr ""
+msgstr "ସାଧାରଣ ୱିଣ୍ଡୋ ସହଭାଗ ବିନ୍ଯାସ"
 
 #: ../interfaces/shares.glade.in.h:14
 msgid "Host name:"
@@ -673,7 +686,7 @@ msgstr "ଚାଳକକୁ ଯୋଗ କରନ୍ତୁ (_A)"
 
 #: ../interfaces/shares.glade.in.h:26
 msgid "_Host description:"
-msgstr ""
+msgstr "ଆଧାର ବର୍ଣ୍ଣନା (_H):"
 
 #: ../interfaces/shares.glade.in.h:27
 msgid "_Path:"
@@ -988,90 +1001,90 @@ msgstr "କାର୍ଯ୍ଯୋପଯୋଗୀ ଫୋନ (_W):"
 
 #: ../src/boot/boot-append-gui.c:140
 msgid "32,768"
-msgstr ""
+msgstr "୩୨,୭୬୮"
 
 #: ../src/boot/boot-append-gui.c:141
 msgid "65,536"
-msgstr ""
+msgstr "୬୫,୫୩୬"
 
 #: ../src/boot/boot-append-gui.c:142
 msgid "16,777,216"
-msgstr ""
+msgstr "୧୬,୭୭୭,୨୧୬"
 
 #: ../src/boot/boot-append-gui.c:253
 msgid "Invalid VGA value"
-msgstr ""
+msgstr "ଅବୈଧ VGA ମୂଲ୍ଯ"
 
 #: ../src/boot/boot-append-gui.c:255
 #, c-format
 msgid "\"%s\" is not a valid VGA value."
-msgstr ""
+msgstr "\"%s\" ଗୋଟିଏ ବୈଧ VGA ମୂଲ୍ଯ ନୁହେଁ।"
 
 #: ../src/boot/boot-druid.c:113
 msgid "Error creating boot image"
-msgstr ""
+msgstr "ବୁଟ ପ୍ରତିଛବି ସୃଷ୍ଟି କରିବା ସମୟରେ ତୃଟି"
 
 #: ../src/boot/boot-druid.c:443
 #, c-format
 msgid "Creating a new boot image (%d of %d)"
-msgstr ""
+msgstr "ଗୋଟିଏ ନୂତନ ବୁଟ ପ୍ରତିଛବି ସୃଷ୍ଟି କରୁଅଛି (%d %d ର)"
 
 #: ../src/boot/boot-druid.c:444
 msgid "Finished creating a new boot image"
-msgstr ""
+msgstr "ଗୋଟିଏ ନୂତନ ବୁଟ ପ୍ରତିଛବିର ପ୍ରସ୍ତୁତିକରଣ ସମାପ୍ତ ହେଲା।"
 
 #: ../src/boot/boot-image.c:43
 msgid "Unknown"
-msgstr ""
+msgstr "ଅଜଣା"
 
 #: ../src/boot/boot-image.c:44
 msgid "Windows NT"
-msgstr ""
+msgstr "Windows NT"
 
 #: ../src/boot/boot-image.c:45
 msgid "Windows 9x"
-msgstr ""
+msgstr "Windows 9x"
 
 #: ../src/boot/boot-image.c:46
 msgid "Dos"
-msgstr ""
+msgstr "Dos"
 
 #: ../src/boot/boot-image.c:47
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../src/boot/boot-image.c:48
 msgid "Linux swap"
-msgstr ""
+msgstr "Linux ସ୍ବାପ"
 
 #: ../src/boot/boot-image.c:49
 msgid "GNU/Hurd"
-msgstr ""
+msgstr "GNU/Hurd"
 
 #: ../src/boot/boot-image.c:279
 #, c-format
 msgid "\"%s\" is an invalid path"
-msgstr ""
+msgstr "\"%s\" ଗୋଟିଏ ଅବୈଧ ପଥ ଅଟେ"
 
 #: ../src/boot/boot-image.c:295
 #, c-format
 msgid "\"%s\" already exists, please set another name."
-msgstr ""
+msgstr "\"%s\" ନାମ ପୂର୍ବରୁ ଦିଆଯାଇଛି, ଦୟାକରି ଅନ୍ଯ ଗୋଟିଏ ନାମ ଦିଅନ୍ତୁ।"
 
 #: ../src/boot/boot-image.c:301
 #, c-format
 msgid "Invalid image name: \"%s\"."
-msgstr ""
+msgstr "ଅବୈଧ ପ୍ରତିଛବି ନାମ: \"%s\"।"
 
 #: ../src/boot/boot-image.c:314
 #, c-format
 msgid "Invalid image: \"%s\"."
-msgstr ""
+msgstr "ଅବୈଧ ପ୍ରତିଛବି: \"%s\"।"
 
 #: ../src/boot/boot-image.c:332
 #, c-format
 msgid "Invalid root device: \"%s\"."
-msgstr ""
+msgstr "ଅବୈଧ ରୁଟ ଉପକରଣ: \"%s\"।"
 
 #: ../src/boot/boot-settings.c:45
 #, fuzzy
@@ -1085,31 +1098,31 @@ msgstr "ପ୍ରବେଶ ସଙ୍କେତ ଅନୁମୋଦନଟି ସଠ
 
 #: ../src/boot/boot-settings.c:432
 msgid "Error modifying boot image"
-msgstr ""
+msgstr "ବୁଟ ପ୍ରତିଛବିକୁ ବଦଳାଇବା ସମୟରେ ତୃଟି"
 
 #: ../src/boot/boot.desktop.in.in.h:1
 msgid "Boot"
-msgstr ""
+msgstr "ବୁଟ କରନ୍ତୁ"
 
 #: ../src/boot/boot.desktop.in.in.h:2
 msgid "Configure the system boot process"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ବୁଟ ପ୍ରକ୍ରିୟାକୁ ବିନ୍ଯାସ କରନ୍ତୁ"
 
 #: ../src/boot/callbacks.c:81
 msgid "Boot Image Editor"
-msgstr ""
+msgstr "ବୁଟ ପ୍ରତିଛବି ସମ୍ପାଦକ"
 
 #: ../src/boot/callbacks.c:179
 msgid "Boot Append Editor"
-msgstr ""
+msgstr "ବୁଟ ସଂଲଗ୍ନ ସମ୍ପାଦକ"
 
 #: ../src/boot/callbacks.c:412
 msgid "Error deleting boot image"
-msgstr ""
+msgstr "ବୁଟ ପ୍ରତିଛବିକୁ ଅପସାରଣ କରିବା ସମୟରେ ତୃଟି"
 
 #: ../src/boot/callbacks.c:414
 msgid "Without at least one boot image your computer will not start."
-msgstr ""
+msgstr "ଅତିକମରେ ଗୋଟିଏ ବୁଟ ପ୍ରତିଛବି ବିନା ଆପଣଙ୍କ କମ୍ପୁଟର ପ୍ରାରମ୍ଭ ହେବ ନାହିଁ।"
 
 #: ../src/boot/callbacks.c:433
 #, fuzzy, c-format
@@ -1123,12 +1136,12 @@ msgstr "ଏହା ତନ୍ତ୍ରକୁ ଅବ୍ଯବହାର୍ଯ୍ଯ 
 
 #: ../src/boot/callbacks.c:464
 msgid "The configuration will show empty"
-msgstr ""
+msgstr "ବିନ୍ଯାସଟି କିଛି ପ୍ରଦର୍ଶନ କରିବ ନାହିଁ"
 
 #: ../src/boot/callbacks.c:466
 #, c-format
 msgid "The file \"%s\" is missing or could not be read."
-msgstr ""
+msgstr "\"%s\" ଫାଇଲଟି ଅନୁପସ୍ଥିତ ଅଛି କିମ୍ବା ଏହାକୁ ପଢିହେବ ନାହିଁ।"
 
 #: ../src/boot/table.c:43
 msgid "Name"
@@ -1141,11 +1154,11 @@ msgstr "ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଆବରଣ (_s):"
 
 #: ../src/boot/table.c:45
 msgid "Type"
-msgstr ""
+msgstr "ପ୍ରକାର"
 
 #: ../src/boot/table.c:46
 msgid "Kernel Image"
-msgstr ""
+msgstr "କର୍ଣ୍ଣଲ ପ୍ରତିଛବି"
 
 #: ../src/boot/table.c:47
 #, fuzzy
@@ -1174,30 +1187,34 @@ msgid ""
 "Check that you have access to this network and that the computer is actually "
 "working and running the SSH daemon"
 msgstr ""
+"ଆପଣଙ୍କ ନିକଟରେ ନେଟୱାର୍କ ଅଭିଗମ ଅଛି ଏବଂ କମ୍ପୁଟରଟି ପ୍ରକୃତରେ କାର୍ଯ୍ଯ କରୁଅଛି "
+"ଏବଂ SSH ଡେମନଟି ଚାଲୁଅଛି ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ"
 
 #. the proccess was running su
 #: ../src/common/gst-auth.c:94
 msgid "The entered password is invalid"
-msgstr ""
+msgstr "ଭରଣ କରାଯାଇଥିବା ପ୍ରବେଶ ସଙ୍କେତଟି ଅବୈଧ ଅଟେ"
 
 #: ../src/common/gst-auth.c:95
 msgid ""
 "Check that you typed it correctly and that you haven't activated the \"caps "
 "lock\" key"
 msgstr ""
+"ଆପଣ ଏହାକୁ ସଠିକ ରୂପରେ ଟାଇପ କରିଛନ୍ତି ଏବଂ ଆପଣ \"caps lock\" ଚାବିକୁ ସକ୍ରିୟ "
+"କରିନାହାଁନ୍ତି ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ"
 
 #: ../src/common/gst-auth.c:104
 #, c-format
 msgid "Could not run \"%s\""
-msgstr ""
+msgstr "\"%s\" କୁ ଚଳାଇ ପାରିଲା ନାହିଁ"
 
 #: ../src/common/gst-auth.c:105
 msgid "Check that you have permissions to run this command"
-msgstr ""
+msgstr "ଏହି ନିର୍ଦ୍ଦେଶକୁ ଚଳାଇବା ପାଇଁ ଆପଣଙ୍କ ନିକଟରେ ଅନୁମତି ଅଛି ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ"
 
 #: ../src/common/gst-auth.c:107
 msgid "An unexpected error has occurred"
-msgstr ""
+msgstr "ଗୋଟିଏ ଅପ୍ରତ୍ଯାଶିତ ତୃଟି ପରିଲିଖିତ ହେଲା"
 
 #: ../src/common/gst-auth.c:133
 #, fuzzy
@@ -1207,19 +1224,21 @@ msgstr "ମୋଡେମ ଉପକରଣକୁ ଆପେଆପେ ଖୋଜି �
 #: ../src/common/gst-auth.c:134
 msgid "There was an error creating the child process, the tool will close now."
 msgstr ""
+"ନିର୍ଭରକ ପ୍ରକ୍ରିୟାକୁ ସୃଷ୍ଟି କରିବା ସମୟରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା, ଉପକରଣଟି "
+"ବର୍ତ୍ତମାନ ବନ୍ଦ ହୋଇଯିବ।"
 
 #: ../src/common/gst-dialog.c:60
 #, c-format
 msgid "Could not find widget: %s"
-msgstr ""
+msgstr "ୱିଜେଟକୁ ପାଇ ପାରିଲା ନାହିଁ: %s"
 
 #: ../src/common/gst-dialog.c:383
 msgid "There are changes which have not been applied"
-msgstr ""
+msgstr "ସେଠାରେ ଏପରି ପରିବର୍ତ୍ତନ ମାନ ଅଛି ଯାହାକୁ ପ୍ରୟୋଗ କରାଯାଇ ନାହିଁ"
 
 #: ../src/common/gst-dialog.c:385
 msgid "Apply them now?"
-msgstr ""
+msgstr "ସେମାନଙ୍କୁ ବର୍ତ୍ତମାନ ପ୍ରୟୋଗ କରିବେ କି?"
 
 #: ../src/common/gst-dialog.c:492
 #, c-format
@@ -1278,8 +1297,7 @@ msgstr ""
 msgid ""
 "Check that the settings are correct for this network and that the computer "
 "is correctly connected to it."
-msgstr ""
-"ଏହାକୁ ସଠିକ ରୂପରେ ଟାଇପ କରାଯାଇଛି ଏବଂ ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ର ଦ୍ବାରା ସମର୍ଥିତ ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ।"
+msgstr "ଏହାକୁ ସଠିକ ରୂପରେ ଟାଇପ କରାଯାଇଛି ଏବଂ ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ର ଦ୍ବାରା ସମର୍ଥିତ ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ।"
 
 #: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
@@ -1342,8 +1360,7 @@ msgstr "ଅନ୍ତରାପ୍ରୁଷ୍ଠଟି ଅବସ୍ଥିତ ନ�
 msgid ""
 "Check that it is correctly typed and that it is correctly supported by your "
 "system."
-msgstr ""
-"ଏହାକୁ ସଠିକ ରୂପରେ ଟାଇପ କରାଯାଇଛି ଏବଂ ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ର ଦ୍ବାରା ସମର୍ଥିତ ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ।"
+msgstr "ଏହାକୁ ସଠିକ ରୂପରେ ଟାଇପ କରାଯାଇଛି ଏବଂ ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ର ଦ୍ବାରା ସମର୍ଥିତ ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ।"
 
 #: ../src/network/main.c:157
 msgid "Configure a network interface"
@@ -1435,8 +1452,7 @@ msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ %s କୁ ନିଷ୍�
 msgid ""
 "This may affect your system behavior in several ways, possibly leading to "
 "data loss"
-msgstr ""
-"ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ରର ଆଚରଣକୁ ବିଭିନ୍ନ ରୂପରେ ପ୍ରଭାବିତ କରିପାରେ, ଯାହାକି ତଥ୍ଯ ହାନିର କାରଣ ହୋଇପାରେ।"
+msgstr "ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ରର ଆଚରଣକୁ ବିଭିନ୍ନ ରୂପରେ ପ୍ରଭାବିତ କରିପାରେ, ଯାହାକି ତଥ୍ଯ ହାନିର କାରଣ ହୋଇପାରେ।"
 
 #: ../src/services/main.c:55
 msgid "Services settings"
@@ -1576,8 +1592,7 @@ msgstr "ଆପଣଙ୍କ ନେଟଓ୍ବାର୍କରେ ଥିବା ଅ
 
 #: ../src/shares/main.c:90
 msgid "Add a shared path, modifies it if it already exists"
-msgstr ""
-"ଗୋଟିଏ ସହଭାଗ ପଥକୁ ଯୋଗ କରନ୍ତୁ, ଯଦି ଏହା ପୂର୍ବରୁ ଅପସ୍ଥିତ ଥାଏ ତାହାହେଲେ ଏହାକୁ ରୂପାନ୍ତରିତ କରନ୍ତୁ"
+msgstr "ଗୋଟିଏ ସହଭାଗ ପଥକୁ ଯୋଗ କରନ୍ତୁ, ଯଦି ଏହା ପୂର୍ବରୁ ଅପସ୍ଥିତ ଥାଏ ତାହାହେଲେ ଏହାକୁ ରୂପାନ୍ତରିତ କରନ୍ତୁ"
 
 #: ../src/shares/main.c:90
 msgid "PATH"
@@ -2077,154 +2092,3 @@ msgstr "ଆବରଣ (_S)"
 msgid "Add or remove users and groups"
 msgstr "ଚାଳକ ଏବଂ ସମୂହ ମାନଙ୍କୁ ଯୋଗ କିମ୍ବା ଅପସାରଣ କରନ୍ତୁ"
 
-#~ msgid ""
-#~ "/dev/modem\n"
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3"
-#~ msgstr ""
-#~ "/dev/modem\n"
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3"
-
-#~ msgid "Add location"
-#~ msgstr "ଅବସ୍ଥାନକୁ ଯୋଗ କରନ୍ତୁ"
-
-#~ msgid ""
-#~ "Automatic Configuration (DHCP)\n"
-#~ "Static IP address"
-#~ msgstr ""
-#~ "ସ୍ବତଃ ବିନ୍ଯାସ (DHCP)\n"
-#~ "ଅପରିବର୍ତ୍ତିତ ଆଇ.ପି. ଠିକଣା"
-
-#~ msgid "Password _type:"
-#~ msgstr "ପ୍ରବେଶ ସଙ୍କେତର ପ୍ରକାର (_t):"
-
-#~ msgid "General Properties"
-#~ msgstr "ସାଧାରଣ ଗୁଣଧର୍ମ"
-
-#~ msgid ":"
-#~ msgstr ":"
-
-#~ msgid "Groups settings"
-#~ msgstr "ସମୂହ ବିନ୍ଯାସ"
-
-#~ msgid "_Manage Groups"
-#~ msgstr "ସମୂହ ମାନଙ୍କର ପରିଚାଳନା କରନ୍ତୁ (_M)"
-
-#~ msgid "The platform you are running is not supported by this tool"
-#~ msgstr "ଆପଣ ଚଳାଉଥିବା ପ୍ଲାଟଫର୍ମଟି ଏହି ଉପକରଣ ଦ୍ବାରା ସହାୟକ ନୁହେଁ"
-
-#~ msgid "Unsupported platform"
-#~ msgstr "ଅସହାୟକ ପ୍ଲାଟଫର୍ମ"
-
-#~ msgid "Changing interface configuration"
-#~ msgstr "ଅନ୍ତରାପ୍ରୁଷ୍ଠ ବିନ୍ଯାସକୁ ପରିବର୍ତନ କରୁଅଛି"
-
-#~ msgid "<b>Essid:</b> %s "
-#~ msgstr "<b>Essid:</b> %s "
-
-#~ msgid "<b>Address:</b> %s <b>Subnet mask:</b> %s"
-#~ msgstr "<b>ଠିକଣା:</b> %s <b>ସବନେଟ ମାସ୍କ:</b> %s"
-
-#~ msgid "<b>Address:</b> DHCP"
-#~ msgstr "<b>ଠିକଣା:</b> DHCP"
-
-#~ msgid "<b>Address:</b> %s <b>Remote address:</b> %s"
-#~ msgstr "<b>ଠିକଣା:</b> %s <b>ଦୂର ଠିକଣା:</b> %s"
-
-#~ msgid "<b>Phone number:</b> %s <b>Login:</b> %s"
-#~ msgstr "<b>ଫୋନ ନମ୍ବର:</b> %s <b>ଲଗଇନ୍:</b> %s"
-
-#~ msgid "Start"
-#~ msgstr "ପ୍ରାରମ୍ଭ"
-
-#~ msgid "Stop"
-#~ msgstr "ବନ୍ଦ କରନ୍ତୁ"
-
-#~ msgid "Ignore"
-#~ msgstr "ଆଗ୍ରହ୍ଯ କରିଦିଅନ୍ତୁ"
-
-#~ msgid "Runlevel"
-#~ msgstr "ଚାଳନ ସ୍ତର"
-
-#~ msgid "Status"
-#~ msgstr "ସ୍ଥିତି"
-
-#~ msgid "Priority"
-#~ msgstr "ଅଗ୍ରାଧିକାର"
-
-#~ msgid "File System"
-#~ msgstr "ଫାଇଲ ତନ୍ତ୍ର"
-
-#~ msgid "Windows networks (SMB)"
-#~ msgstr "Windows ନେଟଓ୍ବାର୍କ ମାନ (SMB)"
-
-#~ msgid "Unix networks (NFS)"
-#~ msgstr "Unix ନେଟଓ୍ବାର୍କ ମାନ (SMB)"
-
-#~ msgid "Administrator group can not be deleted"
-#~ msgstr "ପ୍ରଶାସନିକ ସମୂହକୁ ଅପସାରିତ କରିହେବ ନାହିଁ"
-
-#~ msgid "Group '%s' Properties"
-#~ msgstr "'%s' ସମୂହର ଗୁଣଧର୍ମ"
-
-#~ msgid "Group ID of the Administrator account should not be modified"
-#~ msgstr "ପ୍ରଶାସକଙ୍କ ହିସାବ ଖାତାର ସମୂହ ପରିଚୟକୁ ରୂପାନ୍ତରିତ କରିବା ଉଚିତ ନୁହେଁ"
-
-#~ msgid "Monitor system logs"
-#~ msgstr "ତନ୍ତ୍ରର ଲଗ ଉପରେ ଦ୍ରୁଷ୍ଟି ରଖନ୍ତୁ"
-
-#~ msgid "Administer the system"
-#~ msgstr "ତନ୍ତ୍ରର ତଦାରଖ କରନ୍ତୁ"
-
-#~ msgid "Use audio devices"
-#~ msgstr "ଧ୍ବନି ଉପକରଣ ମାନଙ୍କୁ ବ୍ଯବହାର କରନ୍ତୁ"
-
-#~ msgid "Use CD-ROM drives"
-#~ msgstr "ସି.ଡି.- ରମ୍ ଡ୍ରାଇଭକୁ ବ୍ଯବହାର କରନ୍ତୁ"
-
-#~ msgid "Use modems"
-#~ msgstr "ମୋଡେମକୁ ବ୍ଯବହାର କରନ୍ତୁ"
-
-#~ msgid "Connect to Internet using a modem"
-#~ msgstr "ଗୋଟିଏ ମୋଡେମ ବ୍ଯବହାର କରି ଇଣ୍ଟରନେଟ ସହିତ ସଂଯୋଗ କରନ୍ତୁ"
-
-#~ msgid "Send and receive faxes"
-#~ msgstr "ଫାକ୍ସ ମାନଙ୍କୁ ପଠାନ୍ତୁ ଏବଂ ପ୍ରାପ୍ତ କରନ୍ତୁ"
-
-#~ msgid "Use floppy drives"
-#~ msgstr "ଫ୍ଲପି ଡ୍ରାଇଭକୁ ବ୍ଯବହାର କରନ୍ତୁ"
-
-#~ msgid "Access external storage devices automatically"
-#~ msgstr "ବାହ୍ଯ ସଂରକ୍ଷଣ ଉପକରଣ ମାନଙ୍କୁ ସ୍ବତଃ ଅଭିଗମ କରନ୍ତୁ"
-
-#~ msgid "Use scanners"
-#~ msgstr "କ୍ରମବୀକ୍ଷଣ ଯନ୍ତ୍ରକୁ ବ୍ଯବହାର କରନ୍ତୁ"
-
-#~ msgid "Use tape drives"
-#~ msgstr "ଟେପ ଡ୍ରାଇଭକୁ ବ୍ଯବହାର କରନ୍ତୁ"
-
-#~ msgid "Be able to get administrator privileges"
-#~ msgstr "ପ୍ରଶାସକଙ୍କ ଅଧିକାରକୁ ପାଇବରେ ସମର୍ଥ ହେବା ଉଚିତ"
-
-#~ msgid "Administrator account can not be deleted"
-#~ msgstr "ପ୍ରଶାସକଙ୍କ ହିସାବ ଖାତାକୁ ଅପସାରିତ କରିହେବ ନାହିଁ"
-
-#~ msgid "Are you sure you want to delete account \"%s\"?"
-#~ msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ \"%s\" ଖାତାକୁ ଅପସାରିତ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
-
-#~ msgid "New user account"
-#~ msgstr "ଚାଳକର ନୂତନ ହିସାବ ଖାତା"
-
-#~ msgid "Account '%s' Properties"
-#~ msgstr "'%s' ହିସାବ ଖାତାର ଗୁଣଧର୍ମ"
-
-#~ msgid "Login name"
-#~ msgstr "ଲଗଇନ୍ ନାମ"
-
-#~ msgid "Home directory"
-#~ msgstr "ମୂଳସ୍ଥାନ ପଞ୍ଜିକା"
