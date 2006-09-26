@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-18 00:18+0200\n"
-"PO-Revision-Date: 2006-09-25 23:10+0530\n"
+"PO-Revision-Date: 2006-09-26 11:56+0530\n"
 "Last-Translator: Subhransu Behera <arya_subhransu@yahoo.co.in>\n"
 "Language-Team: Oriya <oriya-group@lists.sarovar.org>\n"
 "MIME-Version: 1.0\n"
@@ -73,9 +73,8 @@ msgid "Whether the warning dialog should be shown or not"
 msgstr "ଚେତାବନୀ ସଂଳାପଟି ଦେଖାଯିବା ଉଚିତ ନା ନୁହେଁ"
 
 #: ../interfaces/boot.glade.in.h:1
-#, fuzzy
 msgid "<b>Security</b>"
-msgstr "<b>ଚୟନ</b>"
+msgstr "<b>ସୁରକ୍ଷା</b>"
 
 #: ../interfaces/boot.glade.in.h:2
 msgid ""
@@ -94,28 +93,24 @@ msgid "<span weight=\"bold\">Basic Settings</span>"
 msgstr "<span weight=\"bold\">ମୌଳିକ ବିନ୍ଯାସ</span>"
 
 #: ../interfaces/boot.glade.in.h:6
-#, fuzzy
 msgid "<span weight=\"bold\">Image Settings</span>"
-msgstr "<span weight=\"bold\">ମୌଳିକ ବିନ୍ଯାସ</span>"
+msgstr "<span weight=\"bold\">ପ୍ରତିଛବି ବିନ୍ଯାସ</span>"
 
 #: ../interfaces/boot.glade.in.h:7
-#, fuzzy
 msgid "<span weight=\"bold\">Other Settings</span>"
-msgstr "<span weight=\"bold\">ଇଚ୍ଛାଧୀନ ବିନ୍ଯାସ</span>"
+msgstr "<span weight=\"bold\">ଅନ୍ଯାନ୍ଯ ବିନ୍ଯାସ</span>"
 
 #: ../interfaces/boot.glade.in.h:8
-#, fuzzy
 msgid "<span weight=\"bold\">Starting the Computer</span>"
-msgstr "<span weight=\"bold\">ସମୂହ ସଦସ୍ଯ</span>"
+msgstr "<span weight=\"bold\">କମ୍ପୁଟରକୁ ପ୍ରାରମ୍ଭ କରୁଅଛି</span>"
 
 #: ../interfaces/boot.glade.in.h:9
 msgid "Ask at boot"
 msgstr "ବୁଟ ସମୟରେ ପଚାରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:10 ../src/boot/main.c:71
-#, fuzzy
 msgid "Boot Manager Settings"
-msgstr "ସମୟ ଏବଂ ତାରିଖ ବିନ୍ଯାସ"
+msgstr "ବୁଟ ପରିଚାଳକ ବିନ୍ଯାସ"
 
 #: ../interfaces/boot.glade.in.h:11
 msgid ""
@@ -132,9 +127,8 @@ msgid "Click \"Forward\" to continue"
 msgstr "ଆଗକୁ ବଢିବା ପାଇଁ \"ପରବର୍ତ୍ତୀ\" ବଟନକୁ ଦବାନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:13
-#, fuzzy
 msgid "Confirmation"
-msgstr "ଅନୁମୋଦନ (_f):"
+msgstr "ଅନୁମୋଦନ"
 
 #. set window title
 #: ../interfaces/boot.glade.in.h:14 ../src/boot/boot-druid.c:442
@@ -175,19 +169,16 @@ msgid "Other parameters:"
 msgstr "ଅନ୍ଯାନ୍ଯ ପାରାମିଟର:"
 
 #: ../interfaces/boot.glade.in.h:22
-#, fuzzy
 msgid "Password"
-msgstr "ପ୍ରବେଶ ସଙ୍କେତ (_a)"
+msgstr "ପ୍ରବେଶ ସଙ୍କେତ"
 
 #: ../interfaces/boot.glade.in.h:23
-#, fuzzy
 msgid "Protect with password"
-msgstr "ନେଟୱାର୍କ ପ୍ରବେଶ ସଙ୍କେତ (_p):"
+msgstr "ପ୍ରବେଶ ସଙ୍କେତ ଦ୍ବାରା ସୁରକ୍ଷିତ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:24
-#, fuzzy
 msgid "Resolution:"
-msgstr "ଅବସ୍ଥାନକୁ ଅପସାରଣ କରନ୍ତୁ"
+msgstr "ବିଭେଦନ:"
 
 #: ../interfaces/boot.glade.in.h:25
 msgid "Seconds to wait before loading default kernel or OS"
@@ -198,9 +189,8 @@ msgid "Select a kernel image"
 msgstr "ଗୋଟିଏ କର୍ଣ୍ଣଲ ପ୍ରତିଛବିକୁ ଚୟନ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:27
-#, fuzzy
 msgid "Select an initrd image"
-msgstr "ଅବସ୍ଥାନ ନାମକୁ ଚୟନ କରନ୍ତୁ"
+msgstr "ଗୋଟିଏ initrd ପ୍ରତିଛବିକୁ ଚୟନ କରନ୍ତୁ"
 
 #: ../interfaces/boot.glade.in.h:28
 msgid "Specify the partition on which the operating system is installed."
@@ -227,14 +217,12 @@ msgid "Video modes (only frame buffer)"
 msgstr "ଭିଡିଓ ଧାରା (କେବଳ ଫ୍ରେମ ବଫର)"
 
 #: ../interfaces/boot.glade.in.h:32
-#, fuzzy
 msgid "_Add..."
-msgstr "ଯୋଗ କରନ୍ତୁ (_A)"
+msgstr "ଯୋଗ କରନ୍ତୁ (_A) ..."
 
 #: ../interfaces/boot.glade.in.h:33
-#, fuzzy
 msgid "_Device:"
-msgstr "ସେବା ମାନ"
+msgstr "ଉପକରଣ (_D):"
 
 #: ../interfaces/boot.glade.in.h:34
 msgid "_Edit"
@@ -249,18 +237,16 @@ msgid "_Kernel image path:"
 msgstr "କର୍ଣ୍ଣଲ ପ୍ରତିଛବି ପଥ (_K):"
 
 #: ../interfaces/boot.glade.in.h:37
-#, fuzzy
 msgid "_Name:"
-msgstr "ନାମ:"
+msgstr "ନାମ (_N):"
 
 #: ../interfaces/boot.glade.in.h:38
 msgid "_Operating system:"
 msgstr "ପ୍ରଚାଳନ ତନ୍ତ୍ର (_O):"
 
 #: ../interfaces/boot.glade.in.h:39
-#, fuzzy
 msgid "_Parameters:"
-msgstr "ଗୁଣଧର୍ମ (_P)"
+msgstr "ପାରାମିଟର (_P):"
 
 #: ../interfaces/boot.glade.in.h:40
 msgid "_Root file system device:"
@@ -313,14 +299,13 @@ msgstr ""
 "ଏହି ୱିଣ୍ଡୋକୁ ବ୍ଯବହାର କରନ୍ତୁ"
 
 #: ../interfaces/common.glade.in.h:9
-#, fuzzy
 msgid ""
 "You need administrator privileges to use this tool. Enter a password to "
 "modify your system configuration."
 msgstr ""
-"ଏହି ଉପକରଣକୁ ବ୍ଯବହାର କରିବା ପାଇଁ ଆପଣଙ୍କ ନିକଟରେ ପ୍ରଶାସକଙ୍କ ବିଶେଷ ଅଧିକାର ଥିବା ଉଚିତ। ଆପଣଙ୍କ "
-"ତନ୍ତ୍ରର ବିନ୍ଯାସକୁ ବଦଳାଇବା ପାଇଁ\n"
-"ଗୋଟିଏ ପ୍ରବେଶ ସଙ୍କେତ ଭରଣ କରନ୍ତୁ।"
+"ଏହି ଉପକରଣକୁ ବ୍ଯବହାର କରିବା ପାଇଁ ଆପଣଙ୍କ ନିକଟରେ ପ୍ରଶାସକଙ୍କ ବିଶେଷ ଅଧିକାର "
+"ଥିବା ଉଚିତ। ଆପଣଙ୍କ ତନ୍ତ୍ରର ବିନ୍ଯାସକୁ ବଦଳାଇବା ପାଇଁ ଗୋଟିଏ ପ୍ରବେଶ ସଙ୍କେତ "
+"ଭରଣ କରନ୍ତୁ।"
 
 #: ../interfaces/common.glade.in.h:10
 msgid "_Password:"
@@ -335,9 +320,8 @@ msgid "<b>Connection settings</b>"
 msgstr "<b>ସଂଯୋଗ ବିନ୍ଯାସ</b>"
 
 #: ../interfaces/network.glade.in.h:3
-#, fuzzy
 msgid "<b>Connection</b>"
-msgstr "<b>ସଂଯୋଗ ବିନ୍ଯାସ</b>"
+msgstr "<b>ସଂଯୋଗ</b>"
 
 #: ../interfaces/network.glade.in.h:4
 msgid "<b>DNS Servers</b>"
@@ -388,9 +372,8 @@ msgid "Default _gateway device:"
 msgstr "ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଗେଟ-ଓ୍ବେ ଉପକରଣ (_g):"
 
 #: ../interfaces/network.glade.in.h:16
-#, fuzzy
 msgid "Device:"
-msgstr "ସେବା ମାନ"
+msgstr "ଉପକରଣ:"
 
 #: ../interfaces/network.glade.in.h:17
 msgid "E_nable this connection"
@@ -413,9 +396,8 @@ msgid "IP address:"
 msgstr "ଆଇ.ପି. ଠିକଣା:"
 
 #: ../interfaces/network.glade.in.h:22
-#, fuzzy
 msgid "Interface name:"
-msgstr "ଅନ୍ତରାପୃଷ୍ଠ ଗୁଣଧର୍ମ"
+msgstr "ଅନ୍ତରାପୃଷ୍ଠ ନାମ:"
 
 #: ../interfaces/network.glade.in.h:23
 msgid "Interface properties"
@@ -474,11 +456,12 @@ msgid "Select location name"
 msgstr "ଅବସ୍ଥାନ ନାମକୁ ଚୟନ କରନ୍ତୁ"
 
 #: ../interfaces/network.glade.in.h:38
-#, fuzzy
 msgid ""
 "Static IP address\n"
 "DHCP"
-msgstr "ଆଇ.ପି. ଠିକଣାକୁ ନିର୍ଦ୍ଦିଷ୍ଟ କରନ୍ତୁ"
+msgstr ""
+"ଅପରିବର୍ତ୍ତନୀୟ ଆଇ.ପି. ଠିକଣାକୁ\n"
+"DHCP"
 
 #: ../interfaces/network.glade.in.h:40
 msgid ""
@@ -521,7 +504,6 @@ msgid "_Gateway address:"
 msgstr "ଗେଟ-ଓ୍ବେ ଠିକଣା (_G):"
 
 #: ../interfaces/network.glade.in.h:50
-#, fuzzy
 msgid "_Hostname:"
 msgstr "ଆଧାର ନାମ (_H):"
 
@@ -576,34 +558,28 @@ msgid "Select the services that you wish to activate:"
 msgstr "ଆପଣ ସକ୍ରିୟ କରିବାକୁ ଚାହୁଁଥିବା ସେବା ମାନଙ୍କୁ ଚୟନ କରନ୍ତୁ:"
 
 #: ../interfaces/shares.glade.in.h:1
-#, fuzzy
 msgid "<b>Allowed hosts</b>"
-msgstr "<b>ଅନୁମତି ପ୍ରାପ୍ତ ଆଧାର</b>"
+msgstr "<b>ସ୍ବୀକୃତିପ୍ରାପ୍ତ ଆଧାର</b>"
 
 #: ../interfaces/shares.glade.in.h:2
-#, fuzzy
 msgid "<b>Hosts settings</b>"
 msgstr "<b>ଆଧାର ବିନ୍ଯାସ</b>"
 
 #: ../interfaces/shares.glade.in.h:3
-#, fuzzy
 msgid "<b>Share properties</b>"
-msgstr "<b>ସହଭାଗର ଗୁଣଧର୍ମ</b>"
+msgstr "<b>ଗୁଣଧର୍ମ ମାନଙ୍କୁ ଭାଗ କରନ୍ତୁ</b>"
 
 #: ../interfaces/shares.glade.in.h:4
-#, fuzzy
 msgid "<b>Shared folder</b>"
-msgstr "<b>ସହଭାଗ ଫୋଲଡର</b>"
+msgstr "<b>ସହଭାଜ୍ଯ ଫୋଲଡର</b>"
 
 #: ../interfaces/shares.glade.in.h:5
-#, fuzzy
 msgid "<b>WINS server</b>"
-msgstr "<b>DNS ସେବକ</b>"
+msgstr "<b>ୱିନ୍ସ ସେବକ</b>"
 
 #: ../interfaces/shares.glade.in.h:6
-#, fuzzy
 msgid "<b>Windows sharing Settings</b>"
-msgstr "<b>ଓ୍ବିଣ୍ଡୋଜ ବଣ୍ଟନ</b>"
+msgstr "<b>ୱିଣ୍ଡୋଜ ବଣ୍ଟନ ବିନ୍ଯାସ</b>"
 
 #: ../interfaces/shares.glade.in.h:7
 msgid "Add allowed hosts"
@@ -622,14 +598,12 @@ msgid "Comment:"
 msgstr "ଟିପ୍ପଣୀ:"
 
 #: ../interfaces/shares.glade.in.h:11
-#, fuzzy
 msgid "Do not use WINS server"
-msgstr "ଏହି କମ୍ପୁଟରଟି ଗୋଟିଏ ଓ୍ବିନ୍ସ ସେବକ ଅଟେ (_W)"
+msgstr "ୱିନ୍ସ ସେବକକୁ ବ୍ଯବହାର କରନ୍ତୁ ନାହିଁ"
 
 #: ../interfaces/shares.glade.in.h:12
-#, fuzzy
 msgid "Domain / _Workgroup"
-msgstr "ପରିସର / କାର୍ଯ୍ଯସମୂହ (_W):"
+msgstr "ପରିସର / କାର୍ଯ୍ଯସମୂହ (_W)"
 
 #: ../interfaces/shares.glade.in.h:13
 msgid "General Windows sharing settings"
@@ -656,34 +630,28 @@ msgid "Read only"
 msgstr "କେବଳ ପଠନୀୟ"
 
 #: ../interfaces/shares.glade.in.h:20
-#, fuzzy
 msgid "Share folder"
-msgstr "ବଣ୍ଟା ଯାଇଥିବା ଫୋଲଡର (_S)"
+msgstr "ବଣ୍ଟା ଯାଇଥିବା ଫୋଲଡର"
 
 #: ../interfaces/shares.glade.in.h:21
-#, fuzzy
 msgid "Share with:"
 msgstr "ଏହା ସହିତ ଭାଗ କରନ୍ତୁ:"
 
 #: ../interfaces/shares.glade.in.h:22
-#, fuzzy
 msgid "This computer is a WINS server"
-msgstr "ଏହି କମ୍ପୁଟରଟି ଗୋଟିଏ ଓ୍ବିନ୍ସ ସେବକ ଅଟେ (_W)"
+msgstr "ଏହି କମ୍ପୁଟରଟି ଗୋଟିଏ ୱିନ୍ସ ସେବକ ଅଟେ"
 
 #: ../interfaces/shares.glade.in.h:23
-#, fuzzy
 msgid "Use WINS Server"
-msgstr "ଓ୍ବିନ୍ସ ସେବକ (_s):"
+msgstr "ୱିନ୍ସ ସେବକକୁ ବ୍ଯବହାର କରନ୍ତୁ"
 
 #: ../interfaces/shares.glade.in.h:24
-#, fuzzy
 msgid "Windows sharing settings"
-msgstr "<b>ଓ୍ବିଣ୍ଡୋଜ ବଣ୍ଟନ</b>"
+msgstr "ୱିଣ୍ଡୋଜ ବଣ୍ଟନ ବିନ୍ଯାସ"
 
 #: ../interfaces/shares.glade.in.h:25
-#, fuzzy
 msgid "_Add host"
-msgstr "ଚାଳକକୁ ଯୋଗ କରନ୍ତୁ (_A)"
+msgstr "ଆଧାର ଯୋଗ କରନ୍ତୁ (_A)"
 
 #: ../interfaces/shares.glade.in.h:26
 msgid "_Host description:"
@@ -706,7 +674,6 @@ msgid "<b>Selection</b>"
 msgstr "<b>ଚୟନ</b>"
 
 #: ../interfaces/time.glade.in.h:3
-#, fuzzy
 msgid "<b>Time zone</b>"
 msgstr "<b>ସମୟ ମଣ୍ଡଳ</b>"
 
@@ -723,9 +690,8 @@ msgid "S_ynchronize clock with Internet servers:"
 msgstr "ଇଣ୍ଟରନେଟ ସେବକ ସହିତ ଘଡିକୁ ସମକାଳୀତ କରନ୍ତୁ (_y):"
 
 #: ../interfaces/time.glade.in.h:7
-#, fuzzy
 msgid "Se_lect Servers..."
-msgstr "ସେବକ ମାନଙ୍କୁ ଚୟନ କରନ୍ତୁ (_l)"
+msgstr "ସେବକ ମାନଙ୍କୁ ଚୟନ କରନ୍ତୁ (_l) ..."
 
 #: ../interfaces/time.glade.in.h:8
 msgid "Time servers"
@@ -800,9 +766,8 @@ msgid "Advanced"
 msgstr "ଉନ୍ନତ"
 
 #: ../interfaces/users.glade.in.h:14
-#, fuzzy
 msgid "Allow user to:"
-msgstr "ଅନୁମତି ପ୍ରାପ୍ତ ଆଧାର:"
+msgstr "ଏହା କରିବା ପାଇଁ ଚାଳକକୁ ଅନୁମତି ପ୍ରଦାନ କରନ୍ତୁ:"
 
 #: ../interfaces/users.glade.in.h:15
 msgid "Assign a random password by default"
@@ -837,9 +802,8 @@ msgid "Group _ID:"
 msgstr "ସମୂହର ପରିଚୟ (_I)"
 
 #: ../interfaces/users.glade.in.h:24
-#, fuzzy
 msgid "Group _members:"
-msgstr "ସମୂହର ନାମ (_n):"
+msgstr "ସମୂହର ସଦସ୍ଯ (_m):"
 
 #: ../interfaces/users.glade.in.h:25
 msgid "Group _name:"
@@ -850,9 +814,8 @@ msgid "Group properties"
 msgstr "ସମୂହର ଗୁଣଧର୍ମ"
 
 #: ../interfaces/users.glade.in.h:27
-#, fuzzy
 msgid "Groups"
-msgstr "ସମୂହର ପରିଚୟ (_I)"
+msgstr "ସମୂହ"
 
 #: ../interfaces/users.glade.in.h:28
 msgid "Ma_ximum days a password may be used:"
@@ -903,21 +866,18 @@ msgid "Set password b_y hand"
 msgstr "ପ୍ରବେଶ ସଙ୍କେତକୁ ହାତରେ ବିନ୍ଯାସ କରନ୍ତୁ (_y)"
 
 #: ../interfaces/users.glade.in.h:40
-#, fuzzy
 msgid "Show a_ll users and groups"
-msgstr "ଚାଳକ ଏବଂ ସମୂହ ମାନଙ୍କୁ ଯୋଗ କିମ୍ବା ଅପସାରଣ କରନ୍ତୁ"
+msgstr "ସମସ୍ତ ଚାଳକ ଏବଂ ସମୂହ ମାନଙ୍କୁ ଦେଖନ୍ତୁ"
 
 #: ../interfaces/users.glade.in.h:41
-#, fuzzy
 msgid "User _ID:"
-msgstr "ଚାଳକର ପରିଚୟ:"
+msgstr "ଚାଳକର ପରିଚୟ (_I):"
 
 #: ../interfaces/users.glade.in.h:42
 msgid "User _password:"
 msgstr "ଚାଳକର ପ୍ରବେଶ ସଙ୍କେତ (_p):"
 
 #: ../interfaces/users.glade.in.h:43
-#, fuzzy
 msgid "User privileges"
 msgstr "ଚାଳକର ଅଧିକାର"
 
@@ -926,29 +886,24 @@ msgid "User profiles"
 msgstr "ଚାଳକର ରୂପରେଖ"
 
 #: ../interfaces/users.glade.in.h:45
-#, fuzzy
 msgid "Users"
-msgstr "ଚାଳକର ପରିଚୟ:"
+msgstr "ଚାଳକ ମାନେ"
 
 #: ../interfaces/users.glade.in.h:46
-#, fuzzy
 msgid "_Add Group..."
-msgstr "ସମୂହକୁ ଯୋଗ କରନ୍ତୁ (_A)"
+msgstr "ସମୂହ ଯୋଗ କରନ୍ତୁ (_A) ..."
 
 #: ../interfaces/users.glade.in.h:47
-#, fuzzy
 msgid "_Add Profile..."
-msgstr "ରୂପରେଖକୁ ଯୋଗ କରନ୍ତୁ (_A)"
+msgstr "ରୂପରେଖ ଯୋଗ କରନ୍ତୁ (_A) ..."
 
 #: ../interfaces/users.glade.in.h:48
-#, fuzzy
 msgid "_Add User..."
-msgstr "ଚାଳକକୁ ଯୋଗ କରନ୍ତୁ (_A)"
+msgstr "ଚାଳକ ଯୋଗ କରନ୍ତୁ (_A) ..."
 
 #: ../interfaces/users.glade.in.h:49
-#, fuzzy
 msgid "_All users:"
-msgstr "ଉପନାମ:"
+msgstr "ସମସ୍ତ ଚାଳକ (_A):"
 
 #: ../interfaces/users.glade.in.h:50
 msgid "_Comments"
@@ -1088,14 +1043,12 @@ msgid "Invalid root device: \"%s\"."
 msgstr "ଅବୈଧ ରୁଟ ଉପକରଣ: \"%s\"।"
 
 #: ../src/boot/boot-settings.c:45
-#, fuzzy
 msgid "_Module path:"
-msgstr "ମୋଡେମ ସଂଯୋଗିକୀ (_M):"
+msgstr "ଏକକାଂଶ ପଥ (_M):"
 
 #: ../src/boot/boot-settings.c:407
-#, fuzzy
 msgid "Password confirmation is not correct."
-msgstr "ପ୍ରବେଶ ସଙ୍କେତ ଅନୁମୋଦନଟି ସଠିକ ନୁହେଁ"
+msgstr "ପ୍ରବେଶ ସଙ୍କେତ ଅନୁମୋଦନଟି ସଠିକ ନୁହେଁ।"
 
 #: ../src/boot/boot-settings.c:432
 msgid "Error modifying boot image"
@@ -1126,9 +1079,9 @@ msgid "Without at least one boot image your computer will not start."
 msgstr "ଅତିକମରେ ଗୋଟିଏ ବୁଟ ପ୍ରତିଛବି ବିନା ଆପଣଙ୍କ କମ୍ପୁଟର ପ୍ରାରମ୍ଭ ହେବ ନାହିଁ।"
 
 #: ../src/boot/callbacks.c:433
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete \"%s\"?"
-msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ \"%s\" ସମୂହକୁ ଅପସାରିତ କରିବା ପାଇଁ ଚାହାଁନ୍ତି?"
+msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ \"%s\" କୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
 
 #: ../src/boot/callbacks.c:435
 msgid "This may leave this operating system unbootable."
@@ -1262,6 +1215,11 @@ msgid ""
 "have been warned. Thank you for trying out this prerelease of the GNOME "
 "System Tools!"
 msgstr ""
+"ଏହା ତଥାପି ଗୋଟିଏ ପ୍ରଗତି ମୂଳକ କାର୍ଯ୍ଯ ଅଟେ, ଏବଂ ତେଣୁ ଏହା ଗୋଟିଏ ଗୁରୁତ୍ବପୂର୍ଣ୍ଣ "
+"ତୃଟି ହୋଇପାରେ। ଏହି ଉପକରଣ ମାନଙ୍କର ପ୍ରକୃତି ଯୋଗୁଁ, ତୃଟି ଗୁଡିକ ଆପଣଙ୍କ କମ୍ପୁଟରକୁ "
+"ଏପରି ଭାବରେ ଚିତ୍ରଣ କରିପାରେ ଯାହାକି <span weight=\"bold\">କାର୍ଯ୍ଯତଃ ଅନୁପଯୋଗୀ</span>, "
+"ଏବଂ ଯାହା ଅଧିକ ସମୟ, ପ୍ରଚେଷ୍ଟା ଏବଂ ମାନସିକ ସୁସ୍ଥତା ଆବଶ୍ଯକ କରିଥାଏ। ଆପଣଙ୍କୁ ଚେତାବନୀ "
+"ଦିଆଯାଇଛି। ନୋମ ତନ୍ତ୍ର ଉପକରଣର ଉପସଂସ୍କରଣକୁ ବ୍ଯବହାର କରିଥିବାରୁ ଧନ୍ଯବାଦ!"
 
 #: ../src/common/gst-tool.c:1532
 msgid "Warning"
@@ -1289,11 +1247,12 @@ msgid "Could not enable the interface %s"
 msgstr "%s ଅନ୍ତରାପୃଷ୍ଠକୁ ସକ୍ରିୟ କରିପାରିଲା ନାହିଁ"
 
 #: ../src/network/callbacks.c:50
-#, fuzzy
 msgid ""
 "Check that the settings are correct for this network and that the computer "
 "is correctly connected to it."
-msgstr "ଏହାକୁ ସଠିକ ରୂପରେ ଟାଇପ କରାଯାଇଛି ଏବଂ ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ର ଦ୍ବାରା ସମର୍ଥିତ ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ।"
+msgstr ""
+"ଏହି ନେଟୱାର୍କ ପାଇଁ ବିନ୍ଯାସ ସଠିକ ଅଛି ଏବଂ କମ୍ପୁଟରଟି ସଠିକ ରୂପରେ ସଂଯୋଗ କରାଯାଇଛି "
+"ବୋଲି ଯାଞ୍ଚ କରନ୍ତୁ।"
 
 #: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
@@ -1330,19 +1289,16 @@ msgid "Aliases"
 msgstr "ଉପନାମ"
 
 #: ../src/network/location.c:145
-#, fuzzy
 msgid "Create location"
-msgstr "ଅବସ୍ଥାନକୁ ଅପସାରଣ କରନ୍ତୁ"
+msgstr "ଅବସ୍ଥାନ ସୃଷ୍ଟି କରନ୍ତୁ"
 
 #: ../src/network/location.c:153
-#, fuzzy
 msgid "Delete current location"
-msgstr "ଅବସ୍ଥାନ ନାମକୁ ଚୟନ କରନ୍ତୁ"
+msgstr "ବର୍ତ୍ତମାନ ଅବସ୍ଥାନକୁ ଅପସାରଣ କରନ୍ତୁ"
 
 #: ../src/network/location.c:367
-#, fuzzy
 msgid "Do you want to remove this location?"
-msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଏହି ସହଭାଗକୁ ଅପସାରିତ କରିବା ପାଇଁ ଚାହାଁନ୍ତି?"
+msgstr "ଆପଣ ଏହି ଅବସ୍ଥାନକୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି କି?"
 
 #: ../src/network/location.c:440
 msgid "Changing profile"
@@ -1375,7 +1331,6 @@ msgid "TYPE"
 msgstr "ପ୍ରକାର"
 
 #: ../src/network/main.c:165
-#, fuzzy
 msgid "Network settings"
 msgstr "ନେଟୱାର୍କ ବିନ୍ଯାସ"
 
@@ -1388,9 +1343,8 @@ msgid "Networking"
 msgstr "ନେଟୱାର୍କିଙ୍ଗ"
 
 #: ../src/network/network-iface-ethernet.c:302
-#, fuzzy
 msgid "Ethernet connection"
-msgstr "ତାର ଦ୍ବାରା ସଂଯୋଗ"
+msgstr "ଇଥରନେଟ ସଂଯୋଗ"
 
 #: ../src/network/network-iface-irlan.c:122
 msgid "Infrared connection"
@@ -1413,9 +1367,9 @@ msgid "Wireless connection"
 msgstr "ବେତାର ସଂଯୋଗ"
 
 #: ../src/network/network-iface.c:410
-#, fuzzy, c-format
+#, c-format
 msgid "Activating interface \"%s\""
-msgstr "ନେଟୱାର୍କ ଅନ୍ତରାପୃଷ୍ଠକୁ ସକ୍ରିୟ କରୁଅଛି"
+msgstr "\"%s\" ଅନ୍ତରାପୃଷ୍ଠକୁ ସକ୍ରିୟ କରୁଅଛି"
 
 #: ../src/network/network-iface.c:522
 #, c-format
@@ -1439,16 +1393,16 @@ msgstr "\"%s\" ପାଇଁ ବିନ୍ଯାସ"
 
 #. FIXME: put service name !!!
 #: ../src/services/callbacks.c:153
-#, fuzzy
 msgid "Are you sure you want to deactivate this service?"
-msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ %s କୁ ନିଷ୍କ୍ରିୟ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଏହି ସେବାକୁ ନିଷ୍କ୍ରିୟ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
 
 #: ../src/services/callbacks.c:156
-#, fuzzy
 msgid ""
 "This may affect your system behavior in several ways, possibly leading to "
 "data loss"
-msgstr "ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ରର ଆଚରଣକୁ ବିଭିନ୍ନ ରୂପରେ ପ୍ରଭାବିତ କରିପାରେ, ଯାହାକି ତଥ୍ଯ ହାନିର କାରଣ ହୋଇପାରେ।"
+msgstr ""
+"ଏହା ଆପଣଙ୍କ ତନ୍ତ୍ରର ଆଚରଣକୁ ବିଭିନ୍ନ ରୂପରେ ପ୍ରଭାବିତ କରିପାରେ, ଯାହାକି ତଥ୍ଯ "
+"ହାନିର କାରଣ ହୋଇପାରେ।"
 
 #: ../src/services/main.c:55
 msgid "Services settings"
@@ -1664,13 +1618,12 @@ msgid "NTP support is not installed"
 msgstr "NTP ସହାୟତା ସ୍ଥାପିତ ହୋଇନାହିଁ"
 
 #: ../src/time/main.c:466
-#, fuzzy
 msgid ""
 "Please install and activate NTP support in the system to enable "
 "synchronization of your local time server with Internet time servers."
 msgstr ""
-"ଆପଣଙ୍କର ସ୍ଥାନୀୟ ସମୟ ସେବକକୁ ଇଣ୍ଟରନେଟ ସମୟ ସେବକ ସହିତ ଏକକାଳୀନ ସେବା କୁ ସକ୍ରିୟ କରିବା ପାଇଁ "
-"ଦୟାକରି ଆପଣଙ୍କ ତନ୍ତ୍ରରେ NTP ସହାୟତାକୁ ସ୍ଥାପନ ଏବଂ ସକ୍ରିୟଣ କରନ୍ତୁ।"
+"ଆପଣଙ୍କର ସ୍ଥାନୀୟ ସମୟ ସେବକକୁ ଇଣ୍ଟରନେଟ ସମୟ ସେବକ ସହିତ ଏକକାଳୀନ "
+"କରିବା ପାଇଁ ଦୟାକରି ଆପଣଙ୍କ ତନ୍ତ୍ରରେ NTP ସହାୟତାକୁ ସ୍ଥାପନ ଏବଂ ସକ୍ରିୟଣ କରନ୍ତୁ।"
 
 #: ../src/time/main.c:762
 msgid "Time and Date Settings"
