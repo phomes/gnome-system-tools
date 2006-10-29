@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-10-26 00:06+0200\n"
-"PO-Revision-Date: 2006-10-26 00:06+0200\n"
+"POT-Creation-Date: 2006-10-29 22:57+0100\n"
+"PO-Revision-Date: 2006-10-29 22:57+0100\n"
 "Last-Translator: Åsmund Skjæveland <aasmunds@fys.uio.no>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../gnome-system-tools.schemas.in.h:1
@@ -271,29 +271,33 @@ msgid ""
 "you can select that and continue. Note, however, that this might damage the "
 "system configuration or downright cripple your computer."
 msgstr ""
+"Dersom du er sikker på at det virkar på ein av plattformane under, kan du "
+"velja det og halda fram. Merk at dette kan skada systemoppsettet og gjera "
+"datamaskinen ikkje virkar som han skal."
 
 #: ../interfaces/common.glade.in.h:5
 msgid "Remote administration"
-msgstr ""
+msgstr "Fjernadministrering"
 
 #: ../interfaces/common.glade.in.h:6
 msgid "Run _Without Password"
 msgstr "Køyr _utan passord"
 
 #: ../interfaces/common.glade.in.h:7
-#, fuzzy
 msgid "Unsupported Platform"
-msgstr "Ustøtta sti %1"
+msgstr "Ikkje støtta plattform"
 
 #: ../interfaces/common.glade.in.h:8
 msgid "Use this window to select the computer you wish to configure"
-msgstr ""
+msgstr "Bruk dette vindauget til å velja kva for ein maskin du vil stilla inn."
 
 #: ../interfaces/common.glade.in.h:9
 msgid ""
 "You need administrator privileges to use this tool. Enter a password to "
 "modify your system configuration."
 msgstr ""
+"Du treng administratorprivilegier for å bruka dette verktøyet. Skriv eit "
+"passord for å endra systemoppsettet."
 
 #: ../interfaces/common.glade.in.h:10
 msgid "_Password:"
@@ -301,12 +305,11 @@ msgstr "_Passord:"
 
 #: ../interfaces/network.glade.in.h:1
 msgid "<b>Account data</b>"
-msgstr ""
+msgstr "<b>Kontodata</b>"
 
 #: ../interfaces/network.glade.in.h:2
-#, fuzzy
 msgid "<b>Connection settings</b>"
-msgstr "Innstillingar for handlingar"
+msgstr "<b>Tilkoplingsinnstillingar</b>"
 
 #: ../interfaces/network.glade.in.h:3
 msgid "<b>Connection</b>"
@@ -318,36 +321,31 @@ msgstr "<b>DNS-tenarar</b>"
 
 #: ../interfaces/network.glade.in.h:5
 msgid "<b>Host Settings</b>"
-msgstr ""
+msgstr "<b>Vertsinnstillingar</b>"
 
 #: ../interfaces/network.glade.in.h:6
 msgid "<b>Internet service provider data</b>"
-msgstr ""
+msgstr "<b>Internettleverandør-data</b>"
 
 #: ../interfaces/network.glade.in.h:7
-#, fuzzy
 msgid "<b>Modem settings</b>"
-msgstr "Startrom"
+msgstr "<b>Modeminnstillingar</b>"
 
 #: ../interfaces/network.glade.in.h:8
-#, fuzzy
 msgid "<b>Search Domains</b>"
-msgstr "Søk i"
+msgstr "<b>Søkedomener</b>"
 
 #: ../interfaces/network.glade.in.h:9
-#, fuzzy
 msgid "<b>Wireless settings</b>"
-msgstr "Startrom"
+msgstr "<b>Innstillingar for trådlaust nettverk</b>"
 
 #: ../interfaces/network.glade.in.h:10
-#, fuzzy
 msgid "Aliases:"
-msgstr "Alias"
+msgstr "Alias:"
 
 #: ../interfaces/network.glade.in.h:11
-#, fuzzy
 msgid "C_onfiguration:"
-msgstr "Oppsett:"
+msgstr "_Oppsett:"
 
 #: ../interfaces/network.glade.in.h:12
 msgid "Connections"
@@ -370,48 +368,40 @@ msgid "Device:"
 msgstr "Eining:"
 
 #: ../interfaces/network.glade.in.h:17
-#, fuzzy
 msgid "E_nable this connection"
-msgstr "Kodeplassering"
+msgstr "B_ruk denne tilkoplinga"
 
 #: ../interfaces/network.glade.in.h:18 ../interfaces/users.glade.in.h:21
 msgid "General"
 msgstr "Generelt"
 
 #: ../interfaces/network.glade.in.h:19
-#, fuzzy
 msgid "Host alias settings"
-msgstr "Innstillingar for KArchie"
+msgstr "Vertsalias-innstillingar"
 
 #: ../interfaces/network.glade.in.h:20
-#, fuzzy
 msgid "Hosts"
-msgstr "Kostnad"
+msgstr "Vertar"
 
 #: ../interfaces/network.glade.in.h:21 ../interfaces/shares.glade.in.h:15
-#, fuzzy
 msgid "IP address:"
 msgstr "IP-adresse:"
 
 #: ../interfaces/network.glade.in.h:22
-#, fuzzy
 msgid "Interface name:"
-msgstr "Profil"
+msgstr "Namn på eining:"
 
 #: ../interfaces/network.glade.in.h:23
-#, fuzzy
 msgid "Interface properties"
-msgstr "Hovudinnstillingar"
+msgstr "Eigenskapar for eining"
 
 #: ../interfaces/network.glade.in.h:24
-#, fuzzy
 msgid "Key _type:"
-msgstr "Ingen type"
+msgstr "Nøkkel_type:"
 
 #: ../interfaces/network.glade.in.h:25
-#, fuzzy
 msgid "Location name:"
-msgstr "Profilbehandling"
+msgstr "Namn på plassering:"
 
 #: ../interfaces/network.glade.in.h:26
 msgid "Location:"
@@ -419,11 +409,11 @@ msgstr "Stad:"
 
 #: ../interfaces/network.glade.in.h:27
 msgid "Modem"
-msgstr ""
+msgstr "Modem"
 
 #: ../interfaces/network.glade.in.h:28
 msgid "Network name (_ESSID):"
-msgstr ""
+msgstr "Nettverksnamn (_ESSID):"
 
 #: ../interfaces/network.glade.in.h:29
 msgid ""
@@ -432,202 +422,182 @@ msgid ""
 "Medium\n"
 "Loud"
 msgstr ""
+"Av\n"
+"Lågt\n"
+"Middels\n"
+"Høgt"
 
 #: ../interfaces/network.glade.in.h:33
 msgid "Options"
 msgstr "Val"
 
 #: ../interfaces/network.glade.in.h:34
-#, fuzzy
 msgid "P_assword"
-msgstr "Passord"
+msgstr "P_assord"
 
 #: ../interfaces/network.glade.in.h:35
 msgid ""
 "Plain (ASCII)\n"
 "Hexadecimal"
 msgstr ""
+"Normal (ASCII)\n"
+"Heksadesimal"
 
 #: ../interfaces/network.glade.in.h:37
-#, fuzzy
 msgid "Select location name"
-msgstr "Profilbehandling"
+msgstr "Vel namn på plassering"
 
 #: ../interfaces/network.glade.in.h:38
-#, fuzzy
 msgid ""
 "Static IP address\n"
 "DHCP"
-msgstr "IP-adresse:"
+msgstr ""
+"Statisk IP-adresse\n"
+"DHCP"
 
 #: ../interfaces/network.glade.in.h:40
-#, fuzzy
 msgid ""
 "Tones\n"
 "Pulses"
-msgstr "Alias"
+msgstr ""
+"Tonar\n"
+"Pulsar"
 
 #: ../interfaces/network.glade.in.h:42
 msgid "Use the Internet service provider nameservers"
-msgstr ""
+msgstr "Bruk namnetenarane til internettleverandøren"
 
 #: ../interfaces/network.glade.in.h:43
 msgid "WEP _key:"
-msgstr ""
+msgstr "WEB-_nøkkel:"
 
 #: ../interfaces/network.glade.in.h:44 ../src/network/ifaces-list.c:34
-#, fuzzy
 msgid "_Activate"
-msgstr "_Aktiver"
+msgstr "_Bruk"
 
 #: ../interfaces/network.glade.in.h:45
 msgid "_Autodetect"
-msgstr ""
+msgstr "_Oppdag"
 
 #: ../interfaces/network.glade.in.h:46 ../src/network/ifaces-list.c:35
-#, fuzzy
 msgid "_Deactivate"
-msgstr "_Deaktiver"
+msgstr "_Ikkje bruk"
 
 #: ../interfaces/network.glade.in.h:47
-#, fuzzy
 msgid "_Dial prefix:"
-msgstr "Papirtype:"
+msgstr "_Bylinje-nummer:"
 
 #: ../interfaces/network.glade.in.h:48
-#, fuzzy
 msgid "_Dial type:"
-msgstr "Papirtype:"
+msgstr "_Ringetype:"
 
 #: ../interfaces/network.glade.in.h:49
-#, fuzzy
 msgid "_Gateway address:"
-msgstr ""
-"IP-adresse\n"
-"til gateway:"
+msgstr "Adresse til portnar:"
 
 #: ../interfaces/network.glade.in.h:50
-#, fuzzy
 msgid "_Hostname:"
-msgstr "Vertsnamn:"
+msgstr "_Vertsnamn:"
 
 #: ../interfaces/network.glade.in.h:51
-#, fuzzy
 msgid "_IP address:"
-msgstr "IP-adresse:"
+msgstr "_IP-adresse:"
 
 #: ../interfaces/network.glade.in.h:52
-#, fuzzy
 msgid "_Local IP:"
-msgstr "Lokal IP-adresse:"
+msgstr "Lokal IP:"
 
 #: ../interfaces/network.glade.in.h:53
-#, fuzzy
 msgid "_Modem port:"
-msgstr "Tidsgrense for modem:"
+msgstr "_Modemport:"
 
 #: ../interfaces/network.glade.in.h:54
-#, fuzzy
 msgid "_Phone number:"
-msgstr "Telefonnummer:"
+msgstr "_Telefonnummer:"
 
 #: ../interfaces/network.glade.in.h:55
-#, fuzzy
 msgid "_Remote IP:"
-msgstr "Leverandør-telefonnummer:"
+msgstr "_Ekstern IP:"
 
 #: ../interfaces/network.glade.in.h:56
 msgid "_Retry if the connection breaks or fails to start"
-msgstr ""
+msgstr "_Prøv på nytt dersom tilkoplinga vert broten eller ikkje opna"
 
 #: ../interfaces/network.glade.in.h:57
-#, fuzzy
 msgid "_Set modem as default route to internet"
-msgstr "Bruk som standard"
+msgstr "_Bruk modem som standard veg til internett"
 
 #: ../interfaces/network.glade.in.h:58
-#, fuzzy
 msgid "_Subnet mask:"
-msgstr "Subnettmaske:"
+msgstr "_Subnettmaske:"
 
 #: ../interfaces/network.glade.in.h:59 ../interfaces/users.glade.in.h:61
-#, fuzzy
 msgid "_Username:"
 msgstr "Br_ukarnamn:"
 
 #: ../interfaces/network.glade.in.h:60
-#, fuzzy
 msgid "_Volume:"
-msgstr "Tidsgrense for modem:"
+msgstr "_Lydstyrke:"
 
 #: ../interfaces/services.glade.in.h:1
-#, fuzzy
 msgid "Advanced settings:"
-msgstr "Avanserte innstillingar"
+msgstr "Avanserte innstillingar:"
 
 #: ../interfaces/services.glade.in.h:2
 msgid "Select the services that you wish to activate:"
-msgstr ""
+msgstr "Vel tenestane du vil bruka:"
 
 #: ../interfaces/shares.glade.in.h:1
 msgid "<b>Allowed hosts</b>"
-msgstr ""
+msgstr "<b>Tillatne vertar</b>"
 
 #: ../interfaces/shares.glade.in.h:2
-#, fuzzy
 msgid "<b>Hosts settings</b>"
-msgstr "Startrom"
+msgstr "<b>Vertsinnstillingar</b>"
 
 #: ../interfaces/shares.glade.in.h:3
-#, fuzzy
 msgid "<b>Share properties</b>"
-msgstr "Hovudinnstillingar"
+msgstr "<b>Eigenskapar for deling</b>"
 
 #: ../interfaces/shares.glade.in.h:4
 msgid "<b>Shared folder</b>"
-msgstr ""
+msgstr "<b>Delt mappe</b>"
 
 #: ../interfaces/shares.glade.in.h:5
-#, fuzzy
 msgid "<b>WINS server</b>"
-msgstr "Tenar:"
+msgstr "<b>WINS-tenar</b>"
 
 #: ../interfaces/shares.glade.in.h:6
-#, fuzzy
 msgid "<b>Windows sharing Settings</b>"
-msgstr "Startrom"
+msgstr "<b>Innstillingar for Windows-deling</b>"
 
 #: ../interfaces/shares.glade.in.h:7
 msgid "Add allowed hosts"
-msgstr ""
+msgstr "Legg til tillaten vert"
 
 #: ../interfaces/shares.glade.in.h:8
 msgid "Allow _browsing folder"
-msgstr ""
+msgstr "Tillat å _bla gjennom mappa"
 
 #: ../interfaces/shares.glade.in.h:9
 msgid "Allowed hosts:"
-msgstr ""
+msgstr "Tillatne vertar:"
 
 #: ../interfaces/shares.glade.in.h:10
-#, fuzzy
 msgid "Comment:"
 msgstr "Merknad:"
 
 #: ../interfaces/shares.glade.in.h:11
-#, fuzzy
 msgid "Do not use WINS server"
-msgstr "vel XIM-tenar."
+msgstr "Ikkje bruk WINS-tenar"
 
 #: ../interfaces/shares.glade.in.h:12
-#, fuzzy
 msgid "Domain / _Workgroup"
-msgstr "Arbeidsgruppe:"
+msgstr "Domene/_arbeidsgruppe:"
 
 #: ../interfaces/shares.glade.in.h:13
-#, fuzzy
 msgid "General Windows sharing settings"
-msgstr "Dra vindauge"
+msgstr "Allmenne innstillingar for Windows-deling"
 
 #: ../interfaces/shares.glade.in.h:14
 msgid "Host name:"
@@ -638,242 +608,201 @@ msgid "Name:"
 msgstr "Namn:"
 
 #: ../interfaces/shares.glade.in.h:17
-#, fuzzy
 msgid "Netmask:"
-msgstr "Subnettmaske:"
+msgstr "Nettmaske:"
 
 #: ../interfaces/shares.glade.in.h:18
-#, fuzzy
 msgid "Network:"
-msgstr "Nettverk"
+msgstr "Nettverk:"
 
 #: ../interfaces/shares.glade.in.h:19 ../src/shares/nfs-acl-table.c:57
 msgid "Read only"
-msgstr ""
+msgstr "Skrivebeskytta"
 
 #: ../interfaces/shares.glade.in.h:20
 msgid "Share folder"
-msgstr ""
+msgstr "Delt mappe"
 
 #: ../interfaces/shares.glade.in.h:21
-#, fuzzy
 msgid "Share with:"
-msgstr "Kontrast:"
+msgstr "Del med:"
 
 #: ../interfaces/shares.glade.in.h:22
-#, fuzzy
 msgid "This computer is a WINS server"
-msgstr "vel XIM-tenar."
+msgstr "Denne maskinen er ein WINS-tenar"
 
 #: ../interfaces/shares.glade.in.h:23
-#, fuzzy
 msgid "Use WINS Server"
-msgstr "vel XIM-tenar."
+msgstr "Bruk WINS-tenar"
 
 #: ../interfaces/shares.glade.in.h:24
-#, fuzzy
 msgid "Windows sharing settings"
-msgstr "Innstillingar for historie"
+msgstr "Innstillingar for Windows-deling"
 
 #: ../interfaces/shares.glade.in.h:25
-#, fuzzy
 msgid "_Add host"
-msgstr "&Legg til >>"
+msgstr "_Legg til vert"
 
 #: ../interfaces/shares.glade.in.h:26
-#, fuzzy
 msgid "_Host description:"
-msgstr "Skildring:"
+msgstr "_Vertsskildring:"
 
 #: ../interfaces/shares.glade.in.h:27
-#, fuzzy
 msgid "_Path:"
 msgstr "_Sti:"
 
 #: ../interfaces/shares.glade.in.h:28
 msgid "_Read only"
-msgstr ""
+msgstr "_Skrivebeskytta"
 
 #: ../interfaces/time.glade.in.h:1
-#, fuzzy
 msgid "(unconfigured)"
-msgstr "Ingen sett opp"
+msgstr "(ikkje stilt inn)"
 
 #: ../interfaces/time.glade.in.h:2
 #, fuzzy
 msgid "<b>Selection</b>"
-msgstr "Utval:"
+msgstr "<b>Utval</b>"
 
 #: ../interfaces/time.glade.in.h:3
-#, fuzzy
 msgid "<b>Time zone</b>"
-msgstr "Tidssone:"
+msgstr "<b>Tidssone</b>"
 
 #: ../interfaces/time.glade.in.h:4
-#, fuzzy
 msgid "Add NTP Server"
-msgstr "DNS-tenarar"
+msgstr "Legg til NTP-tenar"
 
 #: ../interfaces/time.glade.in.h:5
-#, fuzzy
 msgid "NTP server"
-msgstr "Ny tenar ..."
+msgstr "NTP-tenar"
 
 #: ../interfaces/time.glade.in.h:6
-#, fuzzy
 msgid "S_ynchronize clock with Internet servers:"
-msgstr "Kopla til den valde tenaren"
+msgstr "_Still klokka etter den valde tenaren:"
 
 #: ../interfaces/time.glade.in.h:7
-#, fuzzy
 msgid "Se_lect Servers..."
-msgstr "Slett teneste ..."
+msgstr "Vel tenarar ..."
 
 #: ../interfaces/time.glade.in.h:8
-#, fuzzy
 msgid "Time servers"
-msgstr "Finger-tenar"
+msgstr "Tidstenarar"
 
 #: ../interfaces/time.glade.in.h:9
-#, fuzzy
 msgid "Time zone"
-msgstr "Tidssone:"
+msgstr "Tidssone"
 
 #: ../interfaces/time.glade.in.h:10
-#, fuzzy
 msgid "Time zone:"
 msgstr "Tidssone:"
 
 #: ../interfaces/time.glade.in.h:11
-#, fuzzy
 msgid "_Date:"
-msgstr "Dato"
+msgstr "_Dato:"
 
 #: ../interfaces/time.glade.in.h:12
-#, fuzzy
 msgid "_Select Time Zone..."
-msgstr "Tidssone: "
+msgstr "Vel tids_sone ..."
 
 #: ../interfaces/time.glade.in.h:13
-#, fuzzy
 msgid "_Time:"
 msgstr "_Tid:"
 
 #: ../interfaces/users.glade.in.h:1
-#, fuzzy
 msgid "<span weight=\"bold\">Advanced Settings</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Avanserte innstillingar</span>"
 
 #: ../interfaces/users.glade.in.h:2
 msgid "<span weight=\"bold\">Automatic UID/GID</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">Automatisk UID/GID</span>"
 
 #: ../interfaces/users.glade.in.h:4
-#, fuzzy
 msgid "<span weight=\"bold\">Contact Information</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Kontaktinformasjon</span>"
 
 #: ../interfaces/users.glade.in.h:5
-#, fuzzy
 msgid "<span weight=\"bold\">Group Members</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Gruppemedlemmer</span>"
 
 #: ../interfaces/users.glade.in.h:6
-#, fuzzy
 msgid "<span weight=\"bold\">Optional Settings</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Valfrie innstillingar</span>"
 
 #: ../interfaces/users.glade.in.h:7
-#, fuzzy
 msgid "<span weight=\"bold\">Password Settings</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Passordinnstillingar</span>"
 
 #: ../interfaces/users.glade.in.h:8
 msgid "<span weight=\"bold\">Password</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">Passord</span>"
 
 #: ../interfaces/users.glade.in.h:9
-#, fuzzy
 msgid "<span weight=\"bold\">Profile Settings</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Profilinnstillingar</span>"
 
 #: ../interfaces/users.glade.in.h:10
-#, fuzzy
 msgid "<span weight=\"bold\">System Defaults</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Standardval for systemet</span>"
 
 #: ../interfaces/users.glade.in.h:11
-#, fuzzy
 msgid "<span weight=\"bold\">User Profile</span>"
-msgstr "Startrom"
+msgstr "<span weight=\"bold\">Brukarprofil</span>"
 
 #: ../interfaces/users.glade.in.h:12
 msgid "Account"
 msgstr "Konto"
 
 #: ../interfaces/users.glade.in.h:13
-#, fuzzy
 msgid "Advanced"
 msgstr "Avansert"
 
 #: ../interfaces/users.glade.in.h:14
-#, fuzzy
 msgid "Allow user to:"
-msgstr "Alle brukarar"
+msgstr "Tillat brukar å:"
 
 #: ../interfaces/users.glade.in.h:15
 msgid "Assign a random password by default"
-msgstr ""
+msgstr "Gje eit tilfeldig passord som standard"
 
 #: ../interfaces/users.glade.in.h:16
-#, fuzzy
 msgid "Check password _quality"
-msgstr "Sjekk passordet til anonym:"
+msgstr "Kontroller passord_kvaliteten"
 
 #: ../interfaces/users.glade.in.h:17
-#, fuzzy
 msgid "Con_firmation:"
-msgstr "Oppsett:"
+msgstr "Stad_festing:"
 
 #: ../interfaces/users.glade.in.h:18
-#, fuzzy
 msgid "Days between warning and password expiration:"
-msgstr "Dato når passordet sluttar"
+msgstr "Dagar mellom åtvaring og forelding av passord:"
 
 #: ../interfaces/users.glade.in.h:19
-#, fuzzy
 msgid "Default _group:"
-msgstr "(standard)"
+msgstr "Standard_gruppe:"
 
 #: ../interfaces/users.glade.in.h:20
-#, fuzzy
 msgid "Default _shell:"
-msgstr "&Standard storleik"
+msgstr "Standard_skal:"
 
 #: ../interfaces/users.glade.in.h:22
-#, fuzzy
 msgid "Generate _random password"
-msgstr "Oppgi brukarnamn og passord"
+msgstr "Lag _tilfeldig passord"
 
 #: ../interfaces/users.glade.in.h:23
-#, fuzzy
 msgid "Group _ID:"
-msgstr "Gruppe"
+msgstr "Gruppe-_ID:"
 
 #: ../interfaces/users.glade.in.h:24
-#, fuzzy
 msgid "Group _members:"
-msgstr "Gruppemedlemmar"
+msgstr "Gruppe_medlemmar:"
 
 #: ../interfaces/users.glade.in.h:25
-#, fuzzy
 msgid "Group _name:"
-msgstr "Gruppenamn:"
+msgstr "Gruppe_namn:"
 
 #: ../interfaces/users.glade.in.h:26
-#, fuzzy
 msgid "Group properties"
-msgstr "Proxy-innstillingar"
+msgstr "Gruppeeigenskapar"
 
 #: ../interfaces/users.glade.in.h:27
 msgid "Groups"
@@ -881,319 +810,282 @@ msgstr "Grupper"
 
 #: ../interfaces/users.glade.in.h:28
 msgid "Ma_ximum days a password may be used:"
-msgstr ""
+msgstr "St_ørste tal på dagar eit passord kan brukast:"
 
 #: ../interfaces/users.glade.in.h:29
-#, fuzzy
 msgid "Maximum UID:"
-msgstr "Høgaste verdi:"
+msgstr "Største UID:"
 
 #: ../interfaces/users.glade.in.h:30
-#, fuzzy
 msgid "Mi_nimum days between password changes:"
-msgstr "Siste passordendring"
+msgstr "Mi_nste tal på dagar mellom passordbytte:"
 
 #: ../interfaces/users.glade.in.h:31
-#, fuzzy
 msgid "Minimum GID:"
-msgstr "&Minimumslengd:"
+msgstr "Minste GID:"
 
 #: ../interfaces/users.glade.in.h:32
-#, fuzzy
 msgid "Minimum UID:"
-msgstr "&Minimumslengd:"
+msgstr "Minste UID:"
 
 #: ../interfaces/users.glade.in.h:33
 msgid "Minimum days allowed between password changes:"
-msgstr ""
+msgstr "Minste tal på dagar tillate mellom passordbytte:"
 
 #: ../interfaces/users.glade.in.h:34
 msgid "Number of days that a password may be used:"
-msgstr ""
+msgstr "Tal på dagar eit passord kan brukast:"
 
 #: ../interfaces/users.glade.in.h:35
-#, fuzzy
 msgid "O_ffice location:"
-msgstr "Kontorplassering"
+msgstr "K_ontorplassering:"
 
 #: ../interfaces/users.glade.in.h:36
-#, fuzzy
 msgid "Password set to: "
-msgstr "Passord:"
+msgstr "Passord sett til:"
 
 #: ../interfaces/users.glade.in.h:37
 msgid "Privileges"
-msgstr ""
+msgstr "Privilegier"
 
 #: ../interfaces/users.glade.in.h:38
-#, fuzzy
 msgid "Profile _name:"
 msgstr "Profil_namn:"
 
 #: ../interfaces/users.glade.in.h:39
-#, fuzzy
 msgid "Set password b_y hand"
-msgstr "Set passord"
+msgstr "Set passord _manuelt"
 
 #: ../interfaces/users.glade.in.h:40
-#, fuzzy
 msgid "Show a_ll users and groups"
-msgstr "Vis &heile meldingshovudet"
+msgstr "Vis a_lle brukarane og gruppene"
 
 #: ../interfaces/users.glade.in.h:41
-#, fuzzy
 msgid "User _ID:"
-msgstr "Brukar-ID"
+msgstr "Brukar-_ID:"
 
 #: ../interfaces/users.glade.in.h:42
-#, fuzzy
 msgid "User _password:"
-msgstr "Passord"
+msgstr "Brukar_passord:"
 
 #: ../interfaces/users.glade.in.h:43
 msgid "User privileges"
-msgstr ""
+msgstr "Brukarprivilegier"
 
 #: ../interfaces/users.glade.in.h:44
-#, fuzzy
 msgid "User profiles"
-msgstr "Ny profil"
+msgstr "Brukarprofilar"
 
 #: ../interfaces/users.glade.in.h:45
 msgid "Users"
 msgstr "Brukarar"
 
 #: ../interfaces/users.glade.in.h:46
-#, fuzzy
 msgid "_Add Group..."
-msgstr "Legg til gruppe ..."
+msgstr "_Legg til gruppe ..."
 
 #: ../interfaces/users.glade.in.h:47
-#, fuzzy
 msgid "_Add Profile..."
-msgstr "lastar fil"
+msgstr "_Legg til profil ..."
 
 #: ../interfaces/users.glade.in.h:48
-#, fuzzy
 msgid "_Add User..."
-msgstr "Legg til mappe ..."
+msgstr "_Legg til brukar ..."
 
 #: ../interfaces/users.glade.in.h:49
-#, fuzzy
 msgid "_All users:"
-msgstr "Alle brukarar"
+msgstr "_Alle brukarane:"
 
 #: ../interfaces/users.glade.in.h:50
-#, fuzzy
 msgid "_Comments"
-msgstr "Kommentar"
+msgstr "_Kommentar"
 
 #: ../interfaces/users.glade.in.h:51
-#, fuzzy
 msgid "_Days between warning and password expiration:"
-msgstr "Dato når passordet sluttar"
+msgstr "_Dagar mellom åtvaring og forelding av passord:"
 
 #: ../interfaces/users.glade.in.h:52 ../src/boot/table.c:54
 #: ../src/network/address-list.c:72 ../src/network/hosts.c:39
 #: ../src/shares/table.c:42 ../src/users/table.c:50
-#, fuzzy
 msgid "_Delete"
 msgstr "_Slett"
 
 #: ../interfaces/users.glade.in.h:53
-#, fuzzy
 msgid "_Edit User Profiles..."
-msgstr "lastar fil"
+msgstr "R_ediger brukarprofilar ..."
 
 #: ../interfaces/users.glade.in.h:54
-#, fuzzy
 msgid "_Generate"
-msgstr "Generelt"
+msgstr "_Lag"
 
 #: ../interfaces/users.glade.in.h:55
-#, fuzzy
 msgid "_Home directory:"
-msgstr "Heimekatalog"
+msgstr "_Heimekatalog:"
 
 #: ../interfaces/users.glade.in.h:56
-#, fuzzy
 msgid "_Home phone:"
-msgstr "Heimetelefon"
+msgstr "_Heimetelefon:"
 
 #: ../interfaces/users.glade.in.h:57
-#, fuzzy
 msgid "_Main group:"
-msgstr "Eigargruppe"
+msgstr "_Hovudgruppe:"
 
 #: ../interfaces/users.glade.in.h:58
-#, fuzzy
 msgid "_Profile:"
-msgstr "Profil"
+msgstr "_Profil:"
 
 #: ../interfaces/users.glade.in.h:59
-#, fuzzy
 msgid "_Real name:"
-msgstr "Verkeleg namn"
+msgstr "_Verkeleg namn:"
 
 #: ../interfaces/users.glade.in.h:60
-#, fuzzy
 msgid "_Shell:"
-msgstr "Skal"
+msgstr "_Skal:"
 
 #: ../interfaces/users.glade.in.h:62
-#, fuzzy
 msgid "_Work phone:"
-msgstr "Heimetelefon"
+msgstr "_Kontortelefon:"
 
 #: ../src/boot/boot-append-gui.c:140
 msgid "32,768"
-msgstr ""
+msgstr "32 768"
 
 #: ../src/boot/boot-append-gui.c:141
 msgid "65,536"
-msgstr ""
+msgstr "65 536"
 
 #: ../src/boot/boot-append-gui.c:142
 msgid "16,777,216"
-msgstr ""
+msgstr "16 777 216"
 
 #: ../src/boot/boot-append-gui.c:253
 msgid "Invalid VGA value"
-msgstr ""
+msgstr "Ugyldig VGA-verdi"
 
 #: ../src/boot/boot-append-gui.c:255
 #, c-format
 msgid "\"%s\" is not a valid VGA value."
-msgstr ""
+msgstr "«%s» er ikkje ein gyldig VGA-verdi."
 
 #: ../src/boot/boot-druid.c:113
 msgid "Error creating boot image"
-msgstr ""
+msgstr "Feil under oppretting av oppstartsbilete"
 
 #: ../src/boot/boot-druid.c:443
 #, c-format
 msgid "Creating a new boot image (%d of %d)"
-msgstr ""
+msgstr "Lagar nytt oppstartsbilete (%d av %d)"
 
 #: ../src/boot/boot-druid.c:444
 msgid "Finished creating a new boot image"
-msgstr ""
+msgstr "Nytt oppstartsbilete ferdig"
 
 #: ../src/boot/boot-image.c:43
-#, fuzzy
 msgid "Unknown"
 msgstr "Ukjend"
 
 #: ../src/boot/boot-image.c:44
-#, fuzzy
 msgid "Windows NT"
-msgstr "Nettverk"
+msgstr "Windows NT"
 
 #: ../src/boot/boot-image.c:45
 msgid "Windows 9x"
-msgstr ""
+msgstr "Windows 9x"
 
 #: ../src/boot/boot-image.c:46
 msgid "Dos"
-msgstr ""
+msgstr "DOS"
 
 #: ../src/boot/boot-image.c:47
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../src/boot/boot-image.c:48
 msgid "Linux swap"
-msgstr ""
+msgstr "Linux veksleminne"
 
 #: ../src/boot/boot-image.c:49
 msgid "GNU/Hurd"
-msgstr ""
+msgstr "GNU/Hurd"
 
 #: ../src/boot/boot-image.c:279
 #, c-format
 msgid "\"%s\" is an invalid path"
-msgstr ""
+msgstr "«%s» er ein ugyldig sti"
 
 #: ../src/boot/boot-image.c:295
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" already exists, please set another name."
-msgstr ""
-"Det tenarnamnet finst alt.\n"
-"Vel eit nytt."
+msgstr "«%s» finst frå før. Vel eit anna namn."
 
 #: ../src/boot/boot-image.c:301
 #, c-format
 msgid "Invalid image name: \"%s\"."
-msgstr ""
+msgstr "Ugyldig biletenamn: «%s»."
 
 #: ../src/boot/boot-image.c:314
 #, c-format
 msgid "Invalid image: \"%s\"."
-msgstr ""
+msgstr "Ugyldig bilete: «%s»."
 
 #: ../src/boot/boot-image.c:332
 #, c-format
 msgid "Invalid root device: \"%s\"."
-msgstr ""
+msgstr "Ugyldig roteining: «%s»."
 
 #: ../src/boot/boot-settings.c:45
-#, fuzzy
 msgid "_Module path:"
-msgstr "Tidsgrense for modem:"
+msgstr "_Sti til modular:"
 
 #: ../src/boot/boot-settings.c:407
 msgid "Password confirmation is not correct."
-msgstr ""
+msgstr "Passordstadfestinga er ikkje rett."
 
 #: ../src/boot/boot-settings.c:432
 msgid "Error modifying boot image"
-msgstr ""
+msgstr "Feil under endring av oppstartsbilete"
 
 #: ../src/boot/boot.desktop.in.in.h:1
-#, fuzzy
 msgid "Boot"
-msgstr "Begge"
+msgstr "Oppstart"
 
 #: ../src/boot/boot.desktop.in.in.h:2
 msgid "Configure the system boot process"
-msgstr ""
+msgstr "Still inn systemoppstarten"
 
 #: ../src/boot/callbacks.c:81
-#, fuzzy
 msgid "Boot Image Editor"
-msgstr "Behandlar"
+msgstr "Oppstartsbileteredigering"
 
 #: ../src/boot/callbacks.c:179
-#, fuzzy
 msgid "Boot Append Editor"
-msgstr "Behandlar"
+msgstr ""
 
 #: ../src/boot/callbacks.c:412
 msgid "Error deleting boot image"
-msgstr ""
+msgstr "Feil under sletting av oppstartsbilete"
 
 #: ../src/boot/callbacks.c:414
 msgid "Without at least one boot image your computer will not start."
-msgstr ""
+msgstr "Datamaskinen vil ikkje starta utan minst eitt oppstartsbilete."
 
 #: ../src/boot/callbacks.c:433
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete \"%s\"?"
-msgstr "Er du sikker på at du vil sletta %1?"
+msgstr "Er du sikker på at du vil sletta «%s»?"
 
 #: ../src/boot/callbacks.c:435
 msgid "This may leave this operating system unbootable."
-msgstr ""
+msgstr "Dette kan gjera maskinen ute av stand til å starta."
 
 #: ../src/boot/callbacks.c:464
-#, fuzzy
 msgid "The configuration will show empty"
-msgstr "Sender oppsett ..."
+msgstr "Oppsettet vil visast tomt"
 
 #: ../src/boot/callbacks.c:466
 #, c-format
 msgid "The file \"%s\" is missing or could not be read."
-msgstr ""
+msgstr "Fila «%s» manglar eller kunne ikkje lesast."
 
 #: ../src/boot/table.c:43
 msgid "Name"
@@ -1208,9 +1100,8 @@ msgid "Type"
 msgstr "Type"
 
 #: ../src/boot/table.c:46
-#, fuzzy
 msgid "Kernel Image"
-msgstr "Opna bilete"
+msgstr "Kjernebilete"
 
 #: ../src/boot/table.c:47
 msgid "Device"
@@ -1218,67 +1109,64 @@ msgstr "Eining"
 
 #: ../src/boot/table.c:52 ../src/network/address-list.c:71
 #: ../src/network/hosts.c:37 ../src/shares/table.c:40 ../src/users/table.c:48
-#, fuzzy
 msgid "_Add"
 msgstr "_Legg til"
 
 #: ../src/boot/table.c:53 ../src/network/hosts.c:38
 #: ../src/network/ifaces-list.c:33 ../src/shares/table.c:41
 #: ../src/users/table.c:49
-#, fuzzy
 msgid "_Properties"
 msgstr "_Eigenskapar"
 
 #. the proccess was running ssh
 #: ../src/common/gst-auth.c:89
-#, fuzzy
 msgid "The tool could not connect to the computer"
-msgstr "Kan ikkje kopla til daemon"
+msgstr "Verktøyet kunne ikkje kopla til datamaskinen"
 
 #: ../src/common/gst-auth.c:90
 msgid ""
 "Check that you have access to this network and that the computer is actually "
 "working and running the SSH daemon"
 msgstr ""
+"Kontroller at du har adgang til dette nettverket og at maskinen fungerer og "
+"har SSH-nissen køyrande."
 
 #. the proccess was running su
 #: ../src/common/gst-auth.c:94
-#, fuzzy
 msgid "The entered password is invalid"
-msgstr "Oppgitt passord er feil."
+msgstr "Oppgjeve passord er feil"
 
 #: ../src/common/gst-auth.c:95
 msgid ""
 "Check that you typed it correctly and that you haven't activated the \"caps "
 "lock\" key"
-msgstr ""
+msgstr "Kontroller at du skreiv det rett og at Caps Lock er av."
 
 #: ../src/common/gst-auth.c:104
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run \"%s\""
-msgstr "Fann ikkje bilete %1"
+msgstr "Klarte ikkje køyra «%s»"
 
 #: ../src/common/gst-auth.c:105
 msgid "Check that you have permissions to run this command"
-msgstr ""
+msgstr "Kontroller at du har lov til å utføra denne kommandoen."
 
 #: ../src/common/gst-auth.c:107
 msgid "An unexpected error has occurred"
-msgstr ""
+msgstr "Ein uventa feil har oppstått."
 
 #: ../src/common/gst-auth.c:133
 msgid "Could not execute the backend"
-msgstr ""
+msgstr "Klarte ikkje starta motoren."
 
 #: ../src/common/gst-auth.c:134
-#, fuzzy
 msgid "There was an error creating the child process, the tool will close now."
-msgstr "Feil ved kommunisering med aRts-demonen."
+msgstr ""
 
 #: ../src/common/gst-dialog.c:60
-#, fuzzy, c-format
+#, c-format
 msgid "Could not find widget: %s"
-msgstr "Fann ikkje bilete %1"
+msgstr ""
 
 #: ../src/common/gst-dialog.c:383
 msgid "There are changes which have not been applied"
@@ -1298,12 +1186,8 @@ msgid "The configuration could not be loaded"
 msgstr ""
 
 #: ../src/common/gst-tool.c:1028
-#, fuzzy
 msgid "There was an error running the backend script"
 msgstr ""
-"Feil ved lasting av bilete:\n"
-"%1\n"
-"Det vert ikkje lagra..."
 
 #: ../src/common/gst-tool.c:1509
 #, c-format
@@ -1320,33 +1204,29 @@ msgid ""
 msgstr ""
 
 #: ../src/common/gst-tool.c:1532
-#, fuzzy
 msgid "Warning"
 msgstr "Åtvaring"
 
 #: ../src/common/gst-tool.c:1552
-#, fuzzy
 msgid "Don't show me this again"
-msgstr "Ikkje vis dette tipset igjen"
+msgstr "Ikkje vis dette igjen"
 
 #: ../src/common/gst-tool.c:1609
 msgid "GNOME System Tools"
 msgstr ""
 
 #: ../src/common/gst-tool.c:1755
-#, fuzzy
 msgid "Could not display help"
-msgstr "Kunne ikkje visa hjelp"
+msgstr "Klarte ikkje visa hjelp"
 
 #: ../src/network/address-list.c:555
-#, fuzzy
 msgid "Type address"
-msgstr "IP-adresse:"
+msgstr ""
 
 #: ../src/network/callbacks.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Could not enable the interface %s"
-msgstr "Er du sikker på at du vil sletta %1?"
+msgstr ""
 
 #: ../src/network/callbacks.c:50
 msgid ""
@@ -1375,38 +1255,32 @@ msgid ""
 msgstr ""
 
 #: ../src/network/callbacks.c:460
-#, fuzzy
 msgid "Change _Host name"
-msgstr "finn ikkje vertsnamn"
+msgstr "Endra _vertsnamn"
 
 #: ../src/network/hosts.c:92
-#, fuzzy
 msgid "IP Address"
-msgstr "IP-adresse:"
+msgstr "IP-adresse"
 
 #: ../src/network/hosts.c:100
 msgid "Aliases"
 msgstr "Alias"
 
 #: ../src/network/location.c:145
-#, fuzzy
 msgid "Create location"
-msgstr "Lagar eit nytt prosjekt"
+msgstr ""
 
 #: ../src/network/location.c:153
-#, fuzzy
 msgid "Delete current location"
-msgstr "Stopp tidtaking av den valte oppgåva"
+msgstr ""
 
 #: ../src/network/location.c:367
-#, fuzzy
 msgid "Do you want to remove this location?"
-msgstr "Er du sikker på at du vil fjerna %1?"
+msgstr ""
 
 #: ../src/network/location.c:440
-#, fuzzy
 msgid "Changing profile"
-msgstr "lastar fil"
+msgstr "Endrar profilen"
 
 #: ../src/network/main.c:110
 msgid "The interface does not exist"
@@ -1419,9 +1293,8 @@ msgid ""
 msgstr ""
 
 #: ../src/network/main.c:157
-#, fuzzy
 msgid "Configure a network interface"
-msgstr "Set opp %1"
+msgstr "Still inn eit nettverksgrensesnitt"
 
 #: ../src/network/main.c:157
 msgid "INTERFACE"
@@ -1432,58 +1305,49 @@ msgid "Configure the first network interface with a specific type"
 msgstr ""
 
 #: ../src/network/main.c:158
-#, fuzzy
 msgid "TYPE"
 msgstr "TYPE"
 
 #: ../src/network/main.c:165
-#, fuzzy
 msgid "Network settings"
 msgstr "Nettverksinnstillingar"
 
 #: ../src/network/network.desktop.in.in.h:1
-#, fuzzy
 msgid "Configure network devices and connections"
-msgstr "Nyleg brukte samband"
+msgstr ""
 
 #: ../src/network/network.desktop.in.in.h:2
 msgid "Networking"
 msgstr "Nettverk"
 
 #: ../src/network/network-iface-ethernet.c:302
-#, fuzzy
 msgid "Ethernet connection"
-msgstr "Nyleg brukte samband"
+msgstr "Ethernet-samband"
 
 #: ../src/network/network-iface-irlan.c:122
-#, fuzzy
 msgid "Infrared connection"
-msgstr "Aktive tenarsamband"
+msgstr "Infraraudt samband"
 
 #: ../src/network/network-iface-isdn.c:330
-#, fuzzy
 msgid "ISDN connection"
-msgstr "Samband"
+msgstr "ISDN-samband"
 
 #: ../src/network/network-iface-modem.c:253
-#, fuzzy
 msgid "Modem connection"
-msgstr "Nettverkssamband til %1:%2 ..."
+msgstr "Modemsamband"
 
 #: ../src/network/network-iface-plip.c:211
-#, fuzzy
 msgid "Parallel port connection"
-msgstr "Oppgi IP-adressa til den nye virtuelle verten her."
+msgstr "Parallellport-samband"
 
 #: ../src/network/network-iface-wireless.c:245
-#, fuzzy
 msgid "Wireless connection"
-msgstr "Aktive tenarsamband"
+msgstr "Trådlaust samband"
 
 #: ../src/network/network-iface.c:410
-#, fuzzy, c-format
+#, c-format
 msgid "Activating interface \"%s\""
-msgstr "iCalendar ..."
+msgstr ""
 
 #: ../src/network/network-iface.c:522
 #, c-format
@@ -1501,15 +1365,14 @@ msgid "The interface %s is active"
 msgstr ""
 
 #: ../src/services/callbacks.c:64
-#, fuzzy, c-format
+#, c-format
 msgid "Settings for \"%s\""
-msgstr "Set modus til %1"
+msgstr ""
 
 #. FIXME: put service name !!!
 #: ../src/services/callbacks.c:153
-#, fuzzy
 msgid "Are you sure you want to deactivate this service?"
-msgstr "Er du sikker på at du vil sletta %1?"
+msgstr ""
 
 #: ../src/services/callbacks.c:156
 msgid ""
@@ -1518,18 +1381,16 @@ msgid ""
 msgstr ""
 
 #: ../src/services/main.c:55
-#, fuzzy
 msgid "Services settings"
-msgstr "Nettverksinnstillingar"
+msgstr ""
 
 #: ../src/services/services.desktop.in.in.h:1
 msgid "Configure which services will be run when the system starts"
 msgstr ""
 
 #: ../src/services/services.desktop.in.in.h:2
-#, fuzzy
 msgid "Services"
-msgstr "Eining"
+msgstr ""
 
 #: ../src/services/service.c:32
 msgid "Antivirus"
@@ -1556,9 +1417,8 @@ msgid "Executes scheduled actions"
 msgstr ""
 
 #: ../src/services/service.c:35
-#, fuzzy
 msgid "Database server"
-msgstr "Finger-tenar"
+msgstr ""
 
 #: ../src/services/service.c:35
 msgid "Data storage system"
@@ -1589,9 +1449,8 @@ msgid "Shares files over the Internet"
 msgstr ""
 
 #: ../src/services/service.c:39
-#, fuzzy
 msgid "FTP service"
-msgstr "Eining"
+msgstr ""
 
 #: ../src/services/service.c:40
 msgid "Mail fetcher"
@@ -1614,24 +1473,20 @@ msgid "Clock synchronization service"
 msgstr ""
 
 #: ../src/services/service.c:42
-#, fuzzy
 msgid "Synchronizes your computer clock with Internet time servers"
-msgstr "Kopla til den valde tenaren"
+msgstr ""
 
 #: ../src/services/service.c:43
-#, fuzzy
 msgid "Printer service"
-msgstr "Skrivaroppsett"
+msgstr ""
 
 #: ../src/services/service.c:43
-#, fuzzy
 msgid "Allows applications to use printers"
-msgstr "Kommunikasjonskontrollerarar"
+msgstr ""
 
 #: ../src/services/service.c:44
-#, fuzzy
 msgid "Remote shell server"
-msgstr "Finger-tenar"
+msgstr ""
 
 #: ../src/services/service.c:44
 msgid "Secure shell server"
@@ -1646,18 +1501,16 @@ msgid "Keeps a log of your computer activity"
 msgstr ""
 
 #: ../src/services/service.c:46
-#, fuzzy
 msgid "Web server"
-msgstr "Ny tenar ..."
+msgstr ""
 
 #: ../src/services/service.c:46
 msgid "Shares your web pages over the Internet"
 msgstr ""
 
 #: ../src/shares/callbacks.c:187
-#, fuzzy
 msgid "Are you sure you want to delete this share?"
-msgstr "Er du sikker på at du vil sletta %1?"
+msgstr ""
 
 #: ../src/shares/callbacks.c:189
 msgid "Other computers in your network will stop viewing this."
@@ -1668,14 +1521,12 @@ msgid "Add a shared path, modifies it if it already exists"
 msgstr ""
 
 #: ../src/shares/main.c:90
-#, fuzzy
 msgid "PATH"
 msgstr "STI"
 
 #: ../src/shares/main.c:97
-#, fuzzy
 msgid "Shared folders settings"
-msgstr "Avanserte innstillingar"
+msgstr ""
 
 #: ../src/shares/nautilus/nautilus-shares.c:129
 msgid "_Share folder"
@@ -1699,9 +1550,8 @@ msgid "Specify hostname"
 msgstr ""
 
 #: ../src/shares/share-nfs-add-hosts.c:153
-#, fuzzy
 msgid "Specify IP address"
-msgstr "IP-adresse:"
+msgstr "Oppgje IP-adresse"
 
 #: ../src/shares/share-nfs-add-hosts.c:160
 msgid "Specify network"
@@ -1712,14 +1562,12 @@ msgid "Do not share"
 msgstr ""
 
 #: ../src/shares/share-settings.c:131
-#, fuzzy
 msgid "SMB"
-msgstr "MB"
+msgstr "SMB"
 
 #: ../src/shares/share-settings.c:139
-#, fuzzy
 msgid "NFS"
-msgstr "DNS"
+msgstr "NFS"
 
 #: ../src/shares/shares.desktop.in.in.h:1
 msgid "Configure which folders are available for your network neighborhood"
@@ -1750,39 +1598,33 @@ msgid ""
 msgstr ""
 
 #: ../src/time/main.c:762
-#, fuzzy
 msgid "Time and Date Settings"
-msgstr "Tid og dato"
+msgstr "Innstillingar for tid og dato"
 
 #: ../src/time/time.desktop.in.in.h:1
-#, fuzzy
 msgid "Change system time, date, and timezone"
-msgstr "Dato og tid"
+msgstr ""
 
 #: ../src/time/time.desktop.in.in.h:2
-#, fuzzy
 msgid "Time and Date"
 msgstr "Tid og dato"
 
 #: ../src/users/callbacks.c:571
-#, fuzzy
 msgid "Error saving profile"
-msgstr "lastar fil"
+msgstr ""
 
 #: ../src/users/callbacks.c:613
-#, fuzzy
 msgid "Create New profile"
-msgstr "Lag &ny"
+msgstr "Lag ny profil"
 
 #: ../src/users/callbacks.c:649
-#, fuzzy, c-format
+#, c-format
 msgid "Settings for profile %s"
-msgstr "Set modus til %1"
+msgstr ""
 
 #: ../src/users/group-settings.c:91
-#, fuzzy
 msgid "Create New Group"
-msgstr "Lag &ny"
+msgstr "Lag ny gruppe"
 
 #. Check if gid is available
 #: ../src/users/group-settings.c:164 ../src/users/group-settings.c:172
@@ -1795,9 +1637,8 @@ msgstr ""
 
 #. if group is root
 #: ../src/users/group-settings.c:168
-#, fuzzy
 msgid "Group ID of the \"root\" user should not be modified"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/group-settings.c:169 ../src/users/group-settings.c:218
 #: ../src/users/group-settings.c:288
@@ -1805,15 +1646,14 @@ msgid "This would leave the system unusable"
 msgstr ""
 
 #: ../src/users/group-settings.c:173
-#, fuzzy, c-format
+#, c-format
 msgid "Group ID %s already exists"
-msgstr "Det finst alt ei gruppe med gid %1."
+msgstr ""
 
 #. If empty.
 #: ../src/users/group-settings.c:198
-#, fuzzy
 msgid "Group name is empty"
-msgstr "Brukarnamnet er tomt."
+msgstr ""
 
 #: ../src/users/group-settings.c:199
 msgid "A group name must be specified"
@@ -1821,9 +1661,8 @@ msgstr ""
 
 #. If too long.
 #: ../src/users/group-settings.c:202
-#, fuzzy
 msgid "The group name is too long"
-msgstr "Filnamnet til utfila er tomt."
+msgstr ""
 
 #: ../src/users/group-settings.c:203
 #, c-format
@@ -1834,9 +1673,8 @@ msgstr[1] ""
 
 #. if invalid.
 #: ../src/users/group-settings.c:209
-#, fuzzy
 msgid "Group name has invalid characters"
-msgstr "Datoen er ugyldig."
+msgstr ""
 
 #: ../src/users/group-settings.c:210
 msgid "Please set a valid group name, using only lower case letters"
@@ -1844,41 +1682,36 @@ msgstr ""
 
 #. if !exist.
 #: ../src/users/group-settings.c:213
-#, fuzzy, c-format
+#, c-format
 msgid "Group \"%s\" already exists"
-msgstr "Det finst alt ei gruppe med gid %1."
+msgstr ""
 
 #: ../src/users/group-settings.c:214
-#, fuzzy
 msgid "Please select a different group name"
 msgstr ""
-"Det tenarnamnet finst alt.\n"
-"Vel eit nytt."
 
 #. if it's the root group
 #: ../src/users/group-settings.c:217
-#, fuzzy
 msgid "Group name of the \"root\" user should not be modified"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/group-settings.c:287
-#, fuzzy
 msgid "The group \"root\" should not be deleted"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/group-settings.c:302
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete group \"%s\"?"
-msgstr "Er du sikker på at du vil sletta gruppa %1?"
+msgstr "Er du sikker på at du vil sletta gruppa «%s»?"
 
 #: ../src/users/group-settings.c:304
 msgid "This may leave files with invalid group ID in the filesystem."
 msgstr ""
 
 #: ../src/users/group-settings.c:364
-#, fuzzy, c-format
+#, c-format
 msgid "Settings for Group %s"
-msgstr "Set modus til %1"
+msgstr ""
 
 #: ../src/users/groups-table.c:44
 msgid "Group"
@@ -1889,41 +1722,35 @@ msgid "GID"
 msgstr "GID"
 
 #: ../src/users/main.c:123
-#, fuzzy
 msgid "User name contains"
-msgstr "Spørjinga inneheld"
+msgstr "Brukarnamnet inneheld"
 
 #: ../src/users/main.c:124
-#, fuzzy
 msgid "User ID is"
-msgstr "Brukar-ID"
+msgstr "Brukar-ID er"
 
 #: ../src/users/main.c:125
-#, fuzzy
 msgid "Group name contains"
-msgstr "Gruppenamn"
+msgstr "Gruppenamn inneheld"
 
 #: ../src/users/main.c:126
-#, fuzzy
 msgid "User GID is"
-msgstr "Brukar-ID"
+msgstr "Brukar-ID er"
 
 #: ../src/users/main.c:245 ../src/users/users.desktop.in.in.h:2
-#, fuzzy
 msgid "Users and Groups"
-msgstr "Brukarar i gruppe"
+msgstr "Brukarar og grupper"
 
 #: ../src/users/passwd.c:168
-#, fuzzy
 msgid "Passwords do not match"
-msgstr "Avsluttinga passar ikkje innleiinga"
+msgstr "Passorda stemmer ikkje overeins"
 
 #: ../src/users/passwd.c:173
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Bad password: %s.\n"
 "Please try with a new password"
-msgstr "Oppgi ditt nye passord."
+msgstr ""
 
 #: ../src/users/profile-settings.c:125
 msgid "The profile must have a name"
@@ -1938,18 +1765,17 @@ msgid "The profile must have a default shell"
 msgstr ""
 
 #: ../src/users/profile-settings.c:208
-#, fuzzy
 msgid "The default profile should not be deleted"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/profile-settings.c:209
 msgid "This profile is used for setting default data for new users"
 msgstr ""
 
 #: ../src/users/profile-settings.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "Delete profile \"%s\"?"
-msgstr "Sletta profilane «%s»?"
+msgstr "Sletta profilen «%s»?"
 
 #: ../src/users/profile-settings.c:220
 msgid "You will not be able to recover this profile after pressing \"apply\"."
@@ -1965,7 +1791,6 @@ msgid "Comment"
 msgstr "Kommentar"
 
 #: ../src/users/search-bar/search-bar.c:228
-#, fuzzy
 msgid "C_lear"
 msgstr "T_øm"
 
@@ -1974,14 +1799,12 @@ msgid "Choice"
 msgstr ""
 
 #: ../src/users/search-bar/search-bar.c:339
-#, fuzzy
 msgid "Text"
 msgstr "Tekst"
 
 #: ../src/users/user-settings.c:73
-#, fuzzy
 msgid "The \"root\" user should not be deleted"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/user-settings.c:74 ../src/users/user-settings.c:311
 #: ../src/users/user-settings.c:406 ../src/users/user-settings.c:442
@@ -1989,9 +1812,9 @@ msgid "This would leave the system unusable."
 msgstr ""
 
 #: ../src/users/user-settings.c:83
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete user \"%s\"?"
-msgstr "Er du sikker på at du vil sletta %1?"
+msgstr "Er du sikker på at du vil sletta brukaren «%s»?"
 
 #: ../src/users/user-settings.c:85
 msgid ""
@@ -2000,28 +1823,21 @@ msgid ""
 msgstr ""
 
 #: ../src/users/user-settings.c:189
-#, fuzzy
 msgid "User Account Editor"
-msgstr "KDE Brukarbehandlar"
+msgstr ""
 
 #: ../src/users/user-settings.c:285
-#, fuzzy
 msgid "The user name is empty"
-msgstr "Filnamnet til utfila er tomt."
+msgstr ""
 
 #: ../src/users/user-settings.c:286
-#, fuzzy
 msgid "A user name must be specified."
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #. = sizeof (ut.ut_name)
 #: ../src/users/user-settings.c:292 ../src/users/user-settings.c:300
-#, fuzzy
 msgid "The user name is too long"
 msgstr ""
-"Området\n"
-"%1\n"
-"er for stort"
 
 #: ../src/users/user-settings.c:293 ../src/users/user-settings.c:301
 #, c-format
@@ -2031,9 +1847,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: ../src/users/user-settings.c:310
-#, fuzzy
 msgid "User name for the \"root\" user should not be modified"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/user-settings.c:316
 msgid "User name has invalid characters"
@@ -2046,52 +1861,44 @@ msgid ""
 msgstr ""
 
 #: ../src/users/user-settings.c:323
-#, fuzzy, c-format
+#, c-format
 msgid "User name \"%s\" already exists"
-msgstr "Det finst alt ein brukar med namnet %1."
+msgstr ""
 
 #: ../src/users/user-settings.c:324
-#, fuzzy
 msgid "Please select a different user name."
 msgstr ""
-"Det tenarnamnet finst alt.\n"
-"Vel eit nytt."
 
 #: ../src/users/user-settings.c:349
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid character \"%c\" in comment"
-msgstr "Ugyldig konto."
+msgstr ""
 
 #: ../src/users/user-settings.c:350
 msgid "Check that this character is not used."
 msgstr ""
 
 #: ../src/users/user-settings.c:398
-#, fuzzy
 msgid "Home directory should not be empty"
-msgstr "Heimekatalogen er ikkje tilgjengeleg."
+msgstr ""
 
 #: ../src/users/user-settings.c:399
-#, fuzzy
 msgid "Make sure you provide a home directory."
-msgstr "Oppgi eit namn for skrivaren"
+msgstr ""
 
 #: ../src/users/user-settings.c:401
-#, fuzzy
 msgid "Incomplete path in home directory"
-msgstr "Oppgi eit namn for skrivaren"
+msgstr ""
 
 #: ../src/users/user-settings.c:402
-#, fuzzy
 msgid ""
 "Please enter full path for home directory\n"
 "<span size=\"smaller\">i.e.: /home/john</span>."
-msgstr "Oppgi eit namn for skrivaren"
+msgstr ""
 
 #: ../src/users/user-settings.c:405
-#, fuzzy
 msgid "Home directory of the \"root\" user should not be modified"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/user-settings.c:438
 msgid "Invalid user ID"
@@ -2102,14 +1909,13 @@ msgid "User ID must be a positive number."
 msgstr ""
 
 #: ../src/users/user-settings.c:441
-#, fuzzy
 msgid "User ID of the \"root\" user should not be modified"
-msgstr "Denne mappa kan ikkje slettast."
+msgstr ""
 
 #: ../src/users/user-settings.c:459
-#, fuzzy, c-format
+#, c-format
 msgid "User ID %s already exists"
-msgstr "Det finst alt ein brukar med namnet %1."
+msgstr ""
 
 #: ../src/users/user-settings.c:461
 msgid ""
@@ -2128,14 +1934,12 @@ msgid ""
 msgstr ""
 
 #: ../src/users/user-settings.c:502
-#, fuzzy
 msgid "Password should not be empty"
-msgstr "Klassenamnet kan ikkje vera tomt."
+msgstr ""
 
 #: ../src/users/user-settings.c:503
-#, fuzzy
 msgid "A password must be provided."
-msgstr "Klassenamnet kan ikkje vera tomt."
+msgstr ""
 
 #: ../src/users/user-settings.c:505
 msgid "Password confirmation isn't correct"
@@ -2146,9 +1950,9 @@ msgid "Check that you have provided the same password in both text fields."
 msgstr ""
 
 #: ../src/users/user-settings.c:780
-#, fuzzy, c-format
+#, c-format
 msgid "Settings for User %s"
-msgstr "Set modus til %1"
+msgstr ""
 
 #: ../src/users/users-table.c:61
 msgid "User"
@@ -2159,9 +1963,8 @@ msgid "Home"
 msgstr "Heim"
 
 #: ../src/users/users-table.c:63
-#, fuzzy
 msgid "User details"
-msgstr "Spørjinga inneheld"
+msgstr ""
 
 #: ../src/users/users-table.c:64
 msgid "UID"
@@ -2172,6 +1975,5 @@ msgid "Shell"
 msgstr "Skal"
 
 #: ../src/users/users.desktop.in.in.h:1
-#, fuzzy
 msgid "Add or remove users and groups"
-msgstr "Vis &heile meldingshovudet"
+msgstr ""
