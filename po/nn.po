@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-10-29 22:57+0100\n"
-"PO-Revision-Date: 2006-10-29 22:57+0100\n"
+"POT-Creation-Date: 2006-11-04 00:27+0100\n"
+"PO-Revision-Date: 2006-11-04 00:27+0100\n"
 "Last-Translator: Åsmund Skjæveland <aasmunds@fys.uio.no>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -1162,37 +1162,38 @@ msgstr "Klarte ikkje starta motoren."
 #: ../src/common/gst-auth.c:134
 msgid "There was an error creating the child process, the tool will close now."
 msgstr ""
+"Ein feil oppstod under oppstart av barneprosessen. Verktøyet avsluttar."
 
 #: ../src/common/gst-dialog.c:60
 #, c-format
 msgid "Could not find widget: %s"
-msgstr ""
+msgstr "Fann ikkje element: %s"
 
 #: ../src/common/gst-dialog.c:383
 msgid "There are changes which have not been applied"
-msgstr ""
+msgstr "Det er gjort endringar som ikkje er sette i verk."
 
 #: ../src/common/gst-dialog.c:385
 msgid "Apply them now?"
-msgstr ""
+msgstr "Setja i verk no?"
 
 #: ../src/common/gst-dialog.c:492
 #, c-format
 msgid "Error connection signal `%s' in widget `%s'"
-msgstr ""
+msgstr "Feil under tilkopling av signalet «%s» til elementet «%s»"
 
 #: ../src/common/gst-tool.c:1026
 msgid "The configuration could not be loaded"
-msgstr ""
+msgstr "Klarte ikkje lasta oppsett"
 
 #: ../src/common/gst-tool.c:1028
 msgid "There was an error running the backend script"
-msgstr ""
+msgstr "Feil under køyring av motorskriptet"
 
 #: ../src/common/gst-tool.c:1509
 #, c-format
 msgid "Welcome to the %s prerelease of the GNOME System Tools"
-msgstr ""
+msgstr "Velkommen til førutgåve %s av GNOME System Tools"
 
 #: ../src/common/gst-tool.c:1511
 msgid ""
@@ -1202,6 +1203,11 @@ msgid ""
 "have been warned. Thank you for trying out this prerelease of the GNOME "
 "System Tools!"
 msgstr ""
+"Denne verktøykassa vert framleis utvikla, og kan ha vesentlege feil. På "
+"grunn av bruksområdet til desse verktøya kan feil gjera datamaskinen din "
+"<span weight=\"bold\">praktisk talt ubrukeleg</span>, og du kan risikera å "
+"kasta vekk tid, arbeid og sinnsro. Du er med dette åtvart. Takk for at du "
+"prøver denne førutgåva av GNOME System Tools."
 
 #: ../src/common/gst-tool.c:1532
 msgid "Warning"
@@ -1213,7 +1219,7 @@ msgstr "Ikkje vis dette igjen"
 
 #: ../src/common/gst-tool.c:1609
 msgid "GNOME System Tools"
-msgstr ""
+msgstr "GNOME System Tools"
 
 #: ../src/common/gst-tool.c:1755
 msgid "Could not display help"
@@ -1221,38 +1227,44 @@ msgstr "Klarte ikkje visa hjelp"
 
 #: ../src/network/address-list.c:555
 msgid "Type address"
-msgstr ""
+msgstr "Skriv adresse"
 
 #: ../src/network/callbacks.c:46
 #, c-format
 msgid "Could not enable the interface %s"
-msgstr ""
+msgstr "Klarte ikkje slå på grensesnittet %s"
 
 #: ../src/network/callbacks.c:50
 msgid ""
 "Check that the settings are correct for this network and that the computer "
 "is correctly connected to it."
 msgstr ""
+"Kontroller at instillingane er rette for dette nettverket, og at "
+"datamaskinen er kopla til på rett måte."
 
 #: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
-msgstr ""
+msgstr "Klarte ikkje oppdaga modemeining."
 
 #: ../src/network/callbacks.c:240
 msgid ""
 "Check that the device is not busy and that is correctly attached to the "
 "computer."
 msgstr ""
+"Kontroller at eininga ikkje er oppteken og at ho er kopla til datamaskinen "
+"på rett måte."
 
 #: ../src/network/callbacks.c:451
 msgid "The host name has changed"
-msgstr ""
+msgstr "Vertsnamnet er endra."
 
 #: ../src/network/callbacks.c:454
 msgid ""
 "This will prevent you from launching new applications, and so you will have "
 "to log in again. Continue anyway?"
 msgstr ""
+"Dette vil hindra deg i å starta nye program, slik at du vert nøydd til å "
+"logga inn igjen. Halda fram likevel?"
 
 #: ../src/network/callbacks.c:460
 msgid "Change _Host name"
@@ -1284,13 +1296,14 @@ msgstr "Endrar profilen"
 
 #: ../src/network/main.c:110
 msgid "The interface does not exist"
-msgstr ""
+msgstr "Eininga finst ikkje"
 
 #: ../src/network/main.c:112
 msgid ""
 "Check that it is correctly typed and that it is correctly supported by your "
 "system."
 msgstr ""
+"Kontroller at ho er rett skrive inn og at ho er støtta av systemet ditt."
 
 #: ../src/network/main.c:157
 msgid "Configure a network interface"
@@ -1298,11 +1311,11 @@ msgstr "Still inn eit nettverksgrensesnitt"
 
 #: ../src/network/main.c:157
 msgid "INTERFACE"
-msgstr ""
+msgstr "EINING"
 
 #: ../src/network/main.c:158
 msgid "Configure the first network interface with a specific type"
-msgstr ""
+msgstr "Still inn den fyrste nettverkseininga som ein bestemt type"
 
 #: ../src/network/main.c:158
 msgid "TYPE"
@@ -1314,7 +1327,7 @@ msgstr "Nettverksinnstillingar"
 
 #: ../src/network/network.desktop.in.in.h:1
 msgid "Configure network devices and connections"
-msgstr ""
+msgstr "Still inn nettverkseiningar og tilkoplingar"
 
 #: ../src/network/network.desktop.in.in.h:2
 msgid "Networking"
@@ -1347,58 +1360,60 @@ msgstr "Trådlaust samband"
 #: ../src/network/network-iface.c:410
 #, c-format
 msgid "Activating interface \"%s\""
-msgstr ""
+msgstr "Startar eininga «%s»"
 
 #: ../src/network/network-iface.c:522
 #, c-format
 msgid "The interface %s is not configured"
-msgstr ""
+msgstr "Eininga %s er ikkje stilt inn"
 
 #: ../src/network/network-iface.c:524
 #, c-format
 msgid "The interface %s is not active"
-msgstr ""
+msgstr "Eininga %s er av"
 
 #: ../src/network/network-iface.c:526
 #, c-format
 msgid "The interface %s is active"
-msgstr ""
+msgstr "Eininga %s er på"
 
 #: ../src/services/callbacks.c:64
 #, c-format
 msgid "Settings for \"%s\""
-msgstr ""
+msgstr "Innstillingar for «%s»"
 
 #. FIXME: put service name !!!
 #: ../src/services/callbacks.c:153
 msgid "Are you sure you want to deactivate this service?"
-msgstr ""
+msgstr "Er du sikker på at du vil slå av denne eininga?"
 
 #: ../src/services/callbacks.c:156
 msgid ""
 "This may affect your system behavior in several ways, possibly leading to "
 "data loss"
 msgstr ""
+"Dette kan påverka korleis systemet ditt fungerer på fleire måtar, og kan "
+"kanskje føra til tap av data"
 
 #: ../src/services/main.c:55
 msgid "Services settings"
-msgstr ""
+msgstr "Innstillingar for tenester"
 
 #: ../src/services/services.desktop.in.in.h:1
 msgid "Configure which services will be run when the system starts"
-msgstr ""
+msgstr "Still inn kva for tenester som vil køyra når systemet startar"
 
 #: ../src/services/services.desktop.in.in.h:2
 msgid "Services"
-msgstr ""
+msgstr "Tenester"
 
 #: ../src/services/service.c:32
 msgid "Antivirus"
-msgstr ""
+msgstr "Antivirus"
 
 #: ../src/services/service.c:32
 msgid "Analyzes your incoming mail for virus"
-msgstr ""
+msgstr "Ser etter virus i e-posten din"
 
 #: ../src/services/service.c:33
 msgid "Volumes mounter"
