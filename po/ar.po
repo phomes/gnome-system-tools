@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools.gnome-2-14.ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-04 08:14+0200\n"
-"PO-Revision-Date: 2006-10-27 16:58+0200\n"
+"PO-Revision-Date: 2006-11-03 00:55+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -90,11 +90,11 @@ msgstr "<span weight=\"bold\">إعدادات أخرىة</span>"
 
 #: ../interfaces/boot.glade.in.h:8
 msgid "<span weight=\"bold\">Starting the Computer</span>"
-msgstr "<span weight=\"bold\">جاري بدأ الحاسوب</span>"
+msgstr "<span weight=\"bold\">بدأ الحاسوب</span>"
 
 #: ../interfaces/boot.glade.in.h:9
 msgid "Ask at boot"
-msgstr "اسأل أثناء الإقلاع:"
+msgstr "اسأل أثناء الإقلاع"
 
 #: ../interfaces/boot.glade.in.h:10
 #: ../src/boot/main.c:71
@@ -103,11 +103,11 @@ msgstr "إعدادات مدير الإقلاع"
 
 #: ../interfaces/boot.glade.in.h:11
 msgid "Choose a kernel image to boot, and a partition to mount as the root partition. Optionally, you may also enter parameters passed to the kernel at boot time."
-msgstr "اختر صورة النواة للإقلاع، والقسم الذي سيضم كقسم جذر \"root\". اختياريا، يمكنك إدخال المُعامِلات التي ستمرر للنواة وقت الإقلاع."
+msgstr "اختر صورة نواة للإقلاع، والقسم الذي سيضم كقسم جذر \"root\". اختياريا، يمكنك إدخال المُعامِلات التي ستمرر للنواة وقت الإقلاع."
 
 #: ../interfaces/boot.glade.in.h:12
 msgid "Click \"Forward\" to continue"
-msgstr "انقر \"أمام\" لتكمل"
+msgstr "انقر \"أمام\" لتُكمل"
 
 #: ../interfaces/boot.glade.in.h:13
 msgid "Confirmation"
