@@ -119,8 +119,8 @@ on_bootproto_changed (GtkWidget *widget, gpointer data)
   gtk_widget_set_sensitive (dialog->gateway, enabled);
 }
 
-void
-on_connection_cancel_clicked (GtkWidget *widget, gpointer data)
+static void
+cancel_connection_dialog (GstTool *tool)
 {
   GstConnectionDialog *dialog;
 
@@ -132,8 +132,8 @@ on_connection_cancel_clicked (GtkWidget *widget, gpointer data)
     gtk_main_quit ();
 }
 
-void
-on_connection_ok_clicked (GtkWidget *widget, gpointer data)
+static void
+accept_connection_dialog (GstTool *tool)
 {
   GstConnectionDialog *dialog;
   GtkTreeSelection    *selection;
@@ -153,7 +153,7 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 	  g_signal_emit_by_name (G_OBJECT (selection), "changed");
 	}
 
-      gst_tool_commit_async (tool, GST_NETWORK_TOOL (tool)->ifaces_config,
+      gst_tool_commit_async (tool, OOBS_OBJECT (GST_NETWORK_TOOL (tool)->ifaces_config),
 			     _("Changing interface configuration"));
     }
 
@@ -161,6 +161,20 @@ on_connection_ok_clicked (GtkWidget *widget, gpointer data)
 
   if (dialog->standalone)
     gtk_main_quit ();
+}
+
+void
+on_connection_response (GtkWidget *widget,
+			gint       response,
+			gpointer   data)
+{
+  GstDialog *dialog = GST_DIALOG (data);
+  GstTool *tool = gst_dialog_get_tool (dialog);
+
+  if (response == GTK_RESPONSE_OK)
+    accept_connection_dialog (tool);
+  else
+    cancel_connection_dialog (tool);
 }
 
 void
@@ -439,13 +453,6 @@ on_gateway_combo_changed (GtkWidget *widget, gpointer data)
 */
 }
 
-gboolean
-on_connection_dialog_close (GtkWidget *widget, GdkEvent *event, gpointer data)
-{
-  gtk_widget_hide (widget);
-  return TRUE;
-}
-
 void
 on_iface_toggled (GtkCellRendererToggle *renderer,
 		  gchar                 *path_str,
@@ -475,7 +482,7 @@ on_iface_toggled (GtkCellRendererToggle *renderer,
 	  oobs_iface_set_auto (iface, active);
 	  ifaces_model_modify_interface_at_iter (&iter);
 
-	  gst_tool_commit_async (tool, GST_NETWORK_TOOL (tool)->ifaces_config,
+	  gst_tool_commit_async (tool, OOBS_OBJECT (GST_NETWORK_TOOL (tool)->ifaces_config),
 				 _("Activating network interface"));
 	}
 
