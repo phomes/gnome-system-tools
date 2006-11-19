@@ -1,0 +1,425 @@
+# French translation of gnome-system-tools-boot documentation.
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-system-tools
+# documentation package.
+#
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+# Marc Lorber <Lorber-Linux@club-internet.fr>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-system-tools-boot doc fr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-19 17:10+0100\n"
+"PO-Revision-Date: 2006-11-19 17:09+0100\n"
+"Last-Translator: Marc Lorber <Lorber-Linux@club-internet.fr>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/boot-admin.xml:126(None)
+msgid "@@image: 'figures/boot-tool.png'; md5=c723f835b284245ac13a4a72368859cc"
+msgstr ""
+
+#: ../C/boot-admin.xml:22(title)
+msgid "Bootloader Administration Tool Manual"
+msgstr "Manuel de l'outil d'administration du chargeur"
+
+#: ../C/boot-admin.xml:24(year)
+msgid "2004"
+msgstr "2004"
+
+#: ../C/boot-admin.xml:25(holder) ../C/boot-admin.xml:36(publishername)
+msgid "Carlos Garnacho Parro"
+msgstr "Carlos Garnacho Parro"
+
+#: ../C/boot-admin.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Permission vous est donnée de copier, distribuer et/ou modifier ce document "
+"selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
+"ou ultérieure publiée par la Free Software Foundation sans section "
+"inaltérable, sans texte de première page de couverture ni texte de dernière "
+"page de couverture. Vous trouverez un exemplaire de cette licence en suivant "
+"ce <ulink type=\"help\" url=\"ghelp:fdl\">lien</ulink> ou dans le fichier "
+"COPYING-DOCS fourni avec le présent manuel."
+
+#: ../C/boot-admin.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Ce manuel fait partie de la collection de manuels GNOME distribués selon les "
+"termes de la licence de documentation libre GNU. Si vous souhaitez "
+"distribuer ce manuel indépendamment de la collection, vous devez joindre un "
+"exemplaire de la licence au document, comme indiqué dans la section 6 de "
+"celle-ci."
+
+#: ../C/boot-admin.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"La plupart des noms utilisés par les entreprises pour distinguer leurs "
+"produits et services sont des marques déposées. Lorsque ces noms "
+"apparaissent dans la documentation GNOME et que les membres du projet de "
+"Documentation GNOME sont informés de l'existence de ces marques déposées, "
+"soit ces noms entiers, soit leur première lettre est en majuscule."
+
+#: ../C/boot-admin.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE "
+"OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ "
+"MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU "
+"DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA "
+"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE "
+"MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
+"L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE "
+"PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU "
+"CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE "
+"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE "
+"SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
+"SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; "
+
+#: ../C/boot-admin.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
+"S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE "
+"OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT ET TOUT "
+"DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION DE MISE À JOUR AINSI QUE TOUT "
+"FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS "
+"RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, "
+"PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES "
+"DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX "
+"DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE "
+"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE "
+"À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
+"TELS DOMMAGES."
+
+#: ../C/boot-admin.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES "
+"DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <placeholder-1/>"
+
+#: ../C/boot-admin.xml:46(firstname)
+msgid "Carlos"
+msgstr "Carlos"
+
+#: ../C/boot-admin.xml:47(surname)
+msgid "Garnacho Parro"
+msgstr "Garnacho Parro"
+
+#: ../C/boot-admin.xml:65(revnumber)
+msgid "Bootloader Administration Tool Manual V0.35"
+msgstr "Outil d'administration du chargeur de démarrage V0.35"
+
+#: ../C/boot-admin.xml:66(date)
+msgid "June 2004"
+msgstr "Juin 2004"
+
+#: ../C/boot-admin.xml:68(para) ../C/boot-admin.xml:69(para)
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
+
+#: ../C/boot-admin.xml:74(releaseinfo)
+msgid "This manual describes version 0.35 of Bootloader Administration Tool."
+msgstr ""
+"Ce manuel décrit la version 0.35 de l'outil d'administration du chargeur de "
+"démarrage."
+
+#: ../C/boot-admin.xml:77(title)
+msgid "Feedback"
+msgstr "Votre avis"
+
+#: ../C/boot-admin.xml:78(para)
+msgid ""
+"To report a bug or make a suggestion regarding the Bootloader Administration "
+"Tool or this manual, follow the directions in the <ulink url=\"ghelp:gnome-"
+"feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Pour rapporter une anomalie ou émettre une suggestion concernant l'outil "
+"d'administration chargeur de démarrage ou sur ce manuel, consultez la <ulink "
+"url=\"ghelp:gnome-feedback\" type=\"help\">page de réactions sur GNOME</"
+"ulink>."
+
+#: ../C/boot-admin.xml:81(para)
+msgid ""
+"The Bootloader Administration Tool allows you to specify the operative "
+"systems and linux images that the bootloader will be able to load at boot "
+"time"
+msgstr ""
+"L'outil d'administration du Chargeur vous permet de définir aussi bien le "
+"système d'exploitation que l'image linux depuis lequel le chargeur démarre."
+
+#: ../C/boot-admin.xml:87(primary)
+msgid "Bootloader Administration Tool"
+msgstr "Outil d'administration du chargeur de démarrage"
+
+#: ../C/boot-admin.xml:92(title)
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../C/boot-admin.xml:93(para)
+msgid ""
+"The <application>Bootloader Administration Tool</application> allows you to "
+"specify the operative systems and linux images that the bootloader will be "
+"able to load at boot time."
+msgstr ""
+"L'<application>outil d'administration du chargeur de démarrage</application> "
+"permet de définir aussi bien le système d'exploitation que l'image linux "
+"depuis lequel le chargeur démarre."
+
+#: ../C/boot-admin.xml:97(title)
+msgid "Getting started"
+msgstr "Premiers pas"
+
+#: ../C/boot-admin.xml:99(para)
+msgid ""
+"You can start <application>Bootloader Administration Tool</application> in "
+"the following ways:"
+msgstr ""
+"L'<application>outil d'administration du chargeur de démarrage</application> "
+"peut être démarré de différentes manières :"
+
+#: ../C/boot-admin.xml:103(term)
+msgid "<guimenu>Applications</guimenu> menu"
+msgstr "Menu <guimenu>Applications</guimenu>"
+
+#: ../C/boot-admin.xml:105(para)
+msgid ""
+"Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>Boot</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"Choisissez <menuchoice><guisubmenu>Outils système</"
+"guisubmenu><guimenuitem>Démarrage</guimeneitem></menuchoice>."
+
+#: ../C/boot-admin.xml:110(term)
+msgid "Command line"
+msgstr "Ligne de commande"
+
+#: ../C/boot-admin.xml:112(para)
+msgid "Execute the following command: <command>boot-admin</command>"
+msgstr "Exécutez la commande suivante : <command>boot-admin</command>"
+
+#: ../C/boot-admin.xml:117(para)
+msgid ""
+"When you start <application>Bootloader Administration Tool</application>, "
+"you will be prompted for the administrator password, this is necessary "
+"because the changes done with this tool will affect the whole system."
+msgstr ""
+"Au lancement de l'<application>outil d'administration du chargeur de "
+"démarrage</application>, vous aurez à entrer le mot de passe administrateur. "
+"Ceci est nécessaire dans la mesure où tout changement effectué à l'aide de "
+"cet outil impacte le système entier."
+
+#: ../C/boot-admin.xml:119(para)
+msgid ""
+"After entering the administrator password, the following window is displayed."
+msgstr ""
+"Après avoir saisi le mot de passe administrateur, la fenêtre suivante "
+"apparaît."
+
+#: ../C/boot-admin.xml:122(title)
+msgid "Bootloader Administration Tool main window"
+msgstr ""
+"Fenêtre principale de l'outil d'administration du chargeur de démarrage"
+
+#: ../C/boot-admin.xml:129(phrase)
+msgid "Shows Bootloader Administration Tool main window."
+msgstr ""
+"Montre la fenêtre principale de l'outil d'administration du chargeur de "
+"démarrage."
+
+#: ../C/boot-admin.xml:135(para)
+msgid ""
+"The <application>Bootloader Administration Tool</application> main window "
+"contains the following elements:"
+msgstr ""
+"La fenêtre principale de l'<application>outil d'administration du chargeur "
+"de démarrage</application> contient les éléments suivants :"
+
+#: ../C/boot-admin.xml:139(term)
+msgid "Images list"
+msgstr "Liste des images"
+
+#: ../C/boot-admin.xml:141(para)
+msgid ""
+"This is a list of the current options in your bootloader menu, beside the "
+"list there are buttons for adding new options, and modifying or deleting the "
+"already created ones.x"
+msgstr ""
+"Liste des options actuelles dans le menu du chargeur de démarrage. À côté de "
+"cette liste figurent des boutons permettant d'ajouter de nouvelles options, "
+"et de supprimer ou de modifier des options déjà existantes."
+
+#: ../C/boot-admin.xml:146(term)
+msgid "\"Starting your computer\" section"
+msgstr "Section « Démarrage de votre ordinateur »"
+
+#: ../C/boot-admin.xml:148(para)
+msgid ""
+"This let's you specify the time that the bootloader menu will be displayed "
+"before running the default image."
+msgstr ""
+"Ce champ vous permet de définir le délai d'attente au menu de démarrage "
+"avant que le chargeur utilise l'image par défaut."
+
+#: ../C/boot-admin.xml:155(title)
+msgid "Usage"
+msgstr "Utilisation"
+
+#: ../C/boot-admin.xml:158(title)
+msgid "To create a new menu entry"
+msgstr "Création d'une nouvelle entrée de menu"
+
+#: ../C/boot-admin.xml:159(para)
+msgid ""
+"Press the <guilabel>Add</guilabel> button, an assistant will appear, "
+"depending on the menu entry type you want to add, you will be asked for "
+"different data."
+msgstr ""
+"Appuyez sur le bouton <guilabel>Ajout</guilabel>, un assistant d'édition "
+"apparaît pour vous permettre de saisir des données, en fonction du type "
+"d'entrée de menu à ajouter."
+
+#: ../C/boot-admin.xml:163(term)
+msgid "For Linux entries"
+msgstr "Pour des entrées Linux"
+
+#: ../C/boot-admin.xml:165(para)
+msgid ""
+"You will be asked for the name that will be shown in the menu, the path to "
+"the kernel image you want to boot and the partition that will be the root "
+"file system, optionally you can also set the contents of the initial RAM "
+"disk (initrd) and the parameters to pass to the kernel."
+msgstr ""
+"Il faut saisir le nom à afficher dans le menu, le chemin d'accès vers "
+"l'image du noyau à démarrer et la partition à utiliser comme système de "
+"fichiers racine. Vous pouvez également définir le contenu du disque RAM "
+"initial (initrd) et les paramètres à passer au noyau."
+
+#: ../C/boot-admin.xml:170(term)
+msgid "For Hurd entries"
+msgstr "Pour des entrées Hurd"
+
+#: ../C/boot-admin.xml:172(para)
+msgid ""
+"You will be asked for the name that will be shown in the menu, the path to "
+"the kernel image you want to boot and the partition that will be the root "
+"file system, optionally you can also set the modules path."
+msgstr ""
+"Il faut saisir le nom à afficher dans le menu, le chemin d'accès vers "
+"l'image disque à démarrer et la partition à utiliser comme système de "
+"fichiers racine. Vous pouvez également définir le chemin d'accès aux modules."
+
+#: ../C/boot-admin.xml:177(term)
+msgid "For other entry types"
+msgstr "Pour des entrées de tout autre type"
+
+#: ../C/boot-admin.xml:179(para)
+msgid ""
+"You will be asked for the name that will be shown in the menu and the "
+"partition that contains the operating system you want to boot."
+msgstr ""
+"Il faut saisir le nom à afficher dans le menu et la partition qui contient "
+"le système d'exploitation à démarrer."
+
+#: ../C/boot-admin.xml:186(title)
+msgid "To modify an already existing menu entry"
+msgstr "Pour modifier une entrée déjà existante du menu"
+
+#: ../C/boot-admin.xml:187(para)
+msgid ""
+"Press the <guilabel>Properties</guilabel> button, a new window will appear, "
+"depending on the menu entry type you want to modify, you will be able to "
+"modify different data."
+msgstr ""
+"Cliquez sur le bouton <guilabel>Propriétés</guilabel>, une nouvelle fenêtre "
+"apparaît. Suivant le type d'entrée à modifier, vous pourrez modifier "
+"différents champs."
+
+#: ../C/boot-admin.xml:191(title)
+msgid "To delete a menu entry"
+msgstr "Suppresion d'une entrée du menu"
+
+#: ../C/boot-admin.xml:192(para)
+msgid ""
+"Select the image you want to delete and press the <guilabel>Delete</"
+"guilabel> button"
+msgstr ""
+"Sélectionnez l'image à supprimer, puis cliquez sur le bouton "
+"<guilabel>Supprimer</guilabel>"
+
+#: ../C/boot-admin.xml:196(title)
+msgid "To change the ammount of time that the bootloader will be displayed"
+msgstr "Changement du délai d'apparition du menu du chargeur de démarrage"
+
+#: ../C/boot-admin.xml:197(para)
+msgid "Change the spin button in the main window."
+msgstr ""
+"Il suffit de changer la valeur dans la zone de sélection numérique dans la "
+"fenêtre principale."
+
+#: ../C/boot-admin.xml:201(title)
+msgid "To change the options that are passed to the kernel"
+msgstr "Changement des options à passer au noyau"
+
+#: ../C/boot-admin.xml:202(para)
+msgid ""
+"You can add they by hand in the <guilabel>Parameters</guilabel> text entry, "
+"optionally, you can press the <guilabel>Edit</guilabel> button beside the "
+"text entry, a window will appear, letting you modify the most usual "
+"parameters that are passed to the kernel."
+msgstr ""
+"Ajoutez les paramètres dans le champ de saisie <guilable>Paramètres</"
+"guilabel>. Vous pouvez aussi cliquer sur le bouton <guilabel>Éditer</"
+"guilabel> à côté du champ de saisie. Une fenêtre apparaît alors, vous "
+"permettant de modifier les paramètres les plus courants passés au noyau."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: ../C/boot-admin.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.\n"
+"Marc Lorber <Lorber-Linux@club-internet.fr>, 2006."
