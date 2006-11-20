@@ -1,3 +1,7 @@
+2006-11-20  Carlos Garnacho  <carlosg@gnome.org>
+
+	* main.c: do not destroy the connection dialog on ::delete-event.
+
 2006-11-17  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.[ch] (on_connection_cancel_clicked)
