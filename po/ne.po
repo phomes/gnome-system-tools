@@ -1746,11 +1746,11 @@ msgstr "GID"
 
 #: ../src/users/main.c:123
 msgid "User name contains"
-msgstr "प्रयोगकर्ता नामले समाविष्ठ गर्दछ"
+msgstr "प्रयोगकर्ता नाममा समाविष्ट"
 
 #: ../src/users/main.c:124
 msgid "User ID is"
-msgstr "प्रयोगकर्ता आइ डि"
+msgstr "प्रयोगकर्ता आई डी"
 
 #: ../src/users/main.c:125
 msgid "Group name contains"
@@ -1762,7 +1762,7 @@ msgstr "प्रयोगकर्ता GID"
 
 #: ../src/users/main.c:245 ../src/users/users.desktop.in.in.h:2
 msgid "Users and Groups"
-msgstr "प्रयोगकर्ताहरू र समूहहरू"
+msgstr "प्रयोगकर्ता र समूहहरू"
 
 #: ../src/users/passwd.c:168
 msgid "Passwords do not match"
@@ -1774,7 +1774,7 @@ msgid ""
 "Bad password: %s.\n"
 "Please try with a new password"
 msgstr ""
-"गल्तत पासवर्ड: %s.\n"
+"गलत पासवर्ड: %s.\n"
 "कृपया नयाँ पासवर्ड कोशिस गर्नुहोस्"
 
 #: ../src/users/profile-settings.c:125
