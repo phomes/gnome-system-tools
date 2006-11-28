@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-26 10:13+0300\n"
-"PO-Revision-Date: 2006-10-26 10:21+0300\n"
+"PO-Revision-Date: 2006-11-28 22:18+0300\n"
 "Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -445,11 +445,11 @@ msgstr "Aikapalvelimet"
 
 #: ../interfaces/time.glade.in.h:11
 msgid "Time zone"
-msgstr "Aika_vyöhyke"
+msgstr "Aikavyöhyke"
 
 #: ../interfaces/time.glade.in.h:12
 msgid "Time zone:"
-msgstr "Aika_vyöhyke:"
+msgstr "Aikavyöhyke:"
 
 #: ../interfaces/time.glade.in.h:13
 msgid "_Date:"
