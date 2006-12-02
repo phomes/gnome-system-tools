@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools-boot doc fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-19 17:10+0100\n"
+"POT-Creation-Date: 2006-12-02 12:33+0100\n"
 "PO-Revision-Date: 2006-11-19 17:09+0100\n"
 "Last-Translator: Marc Lorber <Lorber-Linux@club-internet.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -381,7 +381,7 @@ msgstr ""
 
 #: ../C/boot-admin.xml:191(title)
 msgid "To delete a menu entry"
-msgstr "Suppresion d'une entrée du menu"
+msgstr "Suppression d'une entrée du menu"
 
 #: ../C/boot-admin.xml:192(para)
 msgid ""
