@@ -1,3 +1,7 @@
+2006-12-05  Carlos Garnacho  <carlosg@gnome.org>
+
+        * network-locations.c: save config-method for wireless interfaces.
+
 2006-11-20  Carlos Garnacho  <carlosg@gnome.org>
 
 	* main.c: do not destroy the connection dialog on ::delete-event.

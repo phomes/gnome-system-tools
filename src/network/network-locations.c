@@ -80,6 +80,7 @@ PropType wireless_properties[] = {
   { "essid", TYPE_STRING },
   { "key", TYPE_STRING },
   { "key-type", TYPE_INT },
+  { "config-method", TYPE_INT },
   { "ip_address", TYPE_STRING },
   { "ip_mask", TYPE_STRING },
   { "gateway-address", TYPE_STRING },
