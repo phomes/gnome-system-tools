@@ -1,25 +1,25 @@
 # Hungarian translation of gnome-system-tools.
-# Copyright (C) 2000, 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
+# Copyright (C) 2000, 2001, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-system-tools package.
+#
 # Robert Vanyi <robi@mora.u-szeged.hu>, 2000, 2001.
 # Emese Kovacs <emese@gnome.hu>, 2000, 2001.
 # Andras Timar <timar@gnome.hu>, 2001, 2003.
 # Laszlo Dvornik <dvornik@gnome.hu>, 2004.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2004, 2005.
-#
+# Gabor Kelemen <kelemeng@gnome.hu>, 2004, 2005, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools.HEAD.hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-17 08:25+0100\n"
-"PO-Revision-Date: 2005-08-14 23:22+0200\n"
+"POT-Creation-Date: 2006-12-12 11:06+0100\n"
+"PO-Revision-Date: 2006-12-13 12:24+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.1\n"
-"Plural-Forms:  nplurals=1; plural=0;\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../gnome-system-tools.schemas.in.h:1
 msgid ""
@@ -304,8 +304,8 @@ msgid ""
 "You need administrator privileges to use this tool. Enter a password to "
 "modify your system configuration."
 msgstr ""
-"Ezen eszköz használatához rendszergazdai jogosultság szükséges. "
-"Adja meg a jelszót a rendszer beállításainak módosításához."
+"Ezen eszköz használatához rendszergazdai jogosultság szükséges. Adja meg a "
+"jelszót a rendszer beállításainak módosításához."
 
 #: ../interfaces/common.glade.in.h:10
 msgid "_Password:"
@@ -393,7 +393,7 @@ msgstr "Gépek"
 
 #: ../interfaces/network.glade.in.h:21 ../interfaces/shares.glade.in.h:15
 msgid "IP address:"
-msgstr "IP cím:"
+msgstr "IP-cím:"
 
 #: ../interfaces/network.glade.in.h:22
 msgid "Interface name:"
@@ -460,7 +460,7 @@ msgid ""
 "Static IP address\n"
 "DHCP"
 msgstr ""
-"Rögzített IP cím\n"
+"Rögzített IP-cím\n"
 "DHCP"
 
 #: ../interfaces/network.glade.in.h:40
@@ -509,7 +509,7 @@ msgstr "_Gépnév:"
 
 #: ../interfaces/network.glade.in.h:51
 msgid "_IP address:"
-msgstr "_IP cím:"
+msgstr "_IP-cím:"
 
 #: ../interfaces/network.glade.in.h:52
 msgid "_Local IP:"
@@ -1147,7 +1147,9 @@ msgstr "A megadott jelszó érvénytelen"
 msgid ""
 "Check that you typed it correctly and that you haven't activated the \"caps "
 "lock\" key"
-msgstr "Ellenőrizze, hogy helyesen írta-e be és a caps lock billentyű nincs bekapcsolva"
+msgstr ""
+"Ellenőrizze, hogy helyesen írta-e be és a caps lock billentyű nincs "
+"bekapcsolva"
 
 #: ../src/common/gst-auth.c:104
 #, c-format
@@ -1280,7 +1282,7 @@ msgstr "_Gépnév megváltoztatása"
 
 #: ../src/network/hosts.c:92
 msgid "IP Address"
-msgstr "IP cím"
+msgstr "IP-cím"
 
 #: ../src/network/hosts.c:100
 msgid "Aliases"
@@ -1573,7 +1575,7 @@ msgstr "Adja meg a gépnevet"
 
 #: ../src/shares/share-nfs-add-hosts.c:153
 msgid "Specify IP address"
-msgstr "Adja meg az IP címet"
+msgstr "Adja meg az IP-címet"
 
 #: ../src/shares/share-nfs-add-hosts.c:160
 msgid "Specify network"
@@ -1620,8 +1622,8 @@ msgid ""
 "Please install and activate NTP support in the system to enable "
 "synchronization of your local time server with Internet time servers."
 msgstr ""
-"Telepítse és aktiválja az NTP támogatást a rendszerén a helyi "
-"időkiszolgáló szinkronizálásához internetes időkiszolgálókkal."
+"Telepítse és aktiválja az NTP támogatást a rendszerén a helyi időkiszolgáló "
+"szinkronizálásához internetes időkiszolgálókkal."
 
 #: ../src/time/main.c:762
 msgid "Time and Date Settings"
@@ -1875,8 +1877,12 @@ msgstr "A felhasználónév túl hosszú"
 #, c-format
 msgid "To be valid, the user name should have less than %d character"
 msgid_plural "To be valid, the user name should have less than %d characters"
-msgstr[0] "Az érvényességhez a felhasználónévnek kevesebb, mint %d karakterből kell állnia"
-msgstr[1] "Az érvényességhez a felhasználónévnek kevesebb, mint %d karakterből kell állnia"
+msgstr[0] ""
+"Az érvényességhez a felhasználónévnek kevesebb, mint %d karakterből kell "
+"állnia"
+msgstr[1] ""
+"Az érvényességhez a felhasználónévnek kevesebb, mint %d karakterből kell "
+"állnia"
 
 #: ../src/users/user-settings.c:310
 msgid "User name for the \"root\" user should not be modified"
