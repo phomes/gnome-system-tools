@@ -1,3 +1,7 @@
+2007-04-15  Ihar Hrachyshka <iharh@gnome.org>
+
+	* configure.in: Added 'be@latin' to ALL_LINGUAS.
+
 2006-09-01  Abel Cheung  <abel@oaka.org>
 
 	* configure.in: Added 'fa' to ALL_LINGUAS.
