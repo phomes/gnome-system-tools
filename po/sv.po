@@ -1,10 +1,10 @@
 # Swedish messages for GNOME System Tools.
-# Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
-# Daniel Nylander <po@danielnylander.se>, 2006.
+# Copyright (C) 2000-2007 Free Software Foundation, Inc.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2007.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2003.
 #
-# $Id$
+# $Id: sv.po,v 1.116 2006/08/16 05:59:58 dnylande Exp $
 #
 # FIXME: Internet should be spelled uppercase. That should be bug reported.
 #
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-15 16:53+0200\n"
-"PO-Revision-Date: 2006-08-15 19:55+0100\n"
+"POT-Creation-Date: 2007-08-02 00:44+0200\n"
+"PO-Revision-Date: 2007-08-02 00:45+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -146,35 +146,34 @@ msgid "Default _gateway device:"
 msgstr "Standard_gatewayenhet:"
 
 #: ../interfaces/network.glade.in.h:17
+msgid "Delete current location"
+msgstr "Ta bort aktuell plats"
+
+#: ../interfaces/network.glade.in.h:18
 msgid "E_nable this connection"
 msgstr "A_ktivera denna anslutning"
 
-#: ../interfaces/network.glade.in.h:18
-#: ../interfaces/users.glade.in.h:20
+#: ../interfaces/network.glade.in.h:19
+#: ../interfaces/users.glade.in.h:19
 msgid "General"
 msgstr "Allmänt"
 
-#: ../interfaces/network.glade.in.h:19
+#: ../interfaces/network.glade.in.h:20
 msgid "Host alias settings"
 msgstr "Värdaliasinställningar"
 
-#: ../interfaces/network.glade.in.h:20
+#: ../interfaces/network.glade.in.h:21
 msgid "Hosts"
 msgstr "Värdar"
 
-#: ../interfaces/network.glade.in.h:21
+#: ../interfaces/network.glade.in.h:22
 #: ../interfaces/shares.glade.in.h:12
 msgid "IP address:"
 msgstr "IP-adress:"
 
-#: ../interfaces/network.glade.in.h:22
+#: ../interfaces/network.glade.in.h:23
 msgid "Interface properties"
 msgstr "Gränssnittsegenskaper"
-
-#: ../interfaces/network.glade.in.h:23
-#: ../src/network/locations-combo.c:304
-msgid "Location name:"
-msgstr "Platsnamn:"
 
 #: ../interfaces/network.glade.in.h:24
 msgid "Location:"
@@ -225,18 +224,10 @@ msgstr ""
 "Hexadecimal"
 
 #: ../interfaces/network.glade.in.h:37
-msgid "Remove location"
-msgstr "Ta bort plats"
-
-#: ../interfaces/network.glade.in.h:38
 msgid "Save current network configuration as a location"
 msgstr "Spara aktuell nätverkskonfiguration som en plats"
 
-#: ../interfaces/network.glade.in.h:39
-msgid "Select location name"
-msgstr "Välj platsnamn"
-
-#: ../interfaces/network.glade.in.h:40
+#: ../interfaces/network.glade.in.h:38
 msgid ""
 "Tones\n"
 "Pulses"
@@ -244,68 +235,68 @@ msgstr ""
 "Toner\n"
 "Pulser"
 
-#: ../interfaces/network.glade.in.h:42
+#: ../interfaces/network.glade.in.h:40
 msgid "Use the Internet service provider nameservers"
 msgstr "Använd Internetleverantörens namnservrar"
 
-#: ../interfaces/network.glade.in.h:43
+#: ../interfaces/network.glade.in.h:41
 msgid "_Autodetect"
 msgstr "_Detektera automatiskt"
 
-#: ../interfaces/network.glade.in.h:44
+#: ../interfaces/network.glade.in.h:42
 msgid "_Dial prefix:"
 msgstr "_Uppringningsprefix:"
 
-#: ../interfaces/network.glade.in.h:45
+#: ../interfaces/network.glade.in.h:43
 msgid "_Dial type:"
 msgstr "_Uppringningstyp:"
 
-#: ../interfaces/network.glade.in.h:46
+#: ../interfaces/network.glade.in.h:44
 msgid "_Gateway address:"
 msgstr "_Gateway-adress:"
 
-#: ../interfaces/network.glade.in.h:47
+#: ../interfaces/network.glade.in.h:45
 msgid "_Host name:"
 msgstr "_Värdnamn:"
 
-#: ../interfaces/network.glade.in.h:48
+#: ../interfaces/network.glade.in.h:46
 msgid "_IP address:"
 msgstr "_IP-adress:"
 
-#: ../interfaces/network.glade.in.h:49
+#: ../interfaces/network.glade.in.h:47
 msgid "_Local IP:"
 msgstr "_Lokalt IP:"
 
-#: ../interfaces/network.glade.in.h:50
+#: ../interfaces/network.glade.in.h:48
 msgid "_Modem port:"
 msgstr "_Modemport:"
 
-#: ../interfaces/network.glade.in.h:51
+#: ../interfaces/network.glade.in.h:49
 msgid "_Phone number:"
 msgstr "_Telefonnummer:"
 
-#: ../interfaces/network.glade.in.h:52
+#: ../interfaces/network.glade.in.h:50
 msgid "_Remote IP:"
 msgstr "_Fjärr-IP:"
 
-#: ../interfaces/network.glade.in.h:53
+#: ../interfaces/network.glade.in.h:51
 msgid "_Retry if the connection breaks or fails to start"
 msgstr "_Försök igen om anslutningen bryts eller inte startar"
 
-#: ../interfaces/network.glade.in.h:54
+#: ../interfaces/network.glade.in.h:52
 msgid "_Set modem as default route to internet"
 msgstr "_Ställ in modemet som standardrutt till Internet"
 
-#: ../interfaces/network.glade.in.h:55
+#: ../interfaces/network.glade.in.h:53
 msgid "_Subnet mask:"
 msgstr "_Subnätmask:"
 
-#: ../interfaces/network.glade.in.h:56
-#: ../interfaces/users.glade.in.h:57
+#: ../interfaces/network.glade.in.h:54
+#: ../interfaces/users.glade.in.h:55
 msgid "_Username:"
 msgstr "_Användarnamn:"
 
-#: ../interfaces/network.glade.in.h:57
+#: ../interfaces/network.glade.in.h:55
 msgid "_Volume:"
 msgstr "_Volym:"
 
@@ -384,7 +375,7 @@ msgstr "Dela genom:"
 
 #: ../interfaces/shares.glade.in.h:18
 #: ../src/shares/shares.desktop.in.in.h:2
-#: ../src/shares/shares-tool.c:158
+#: ../src/shares/shares-tool.c:207
 msgid "Shared Folders"
 msgstr "Delade mappar"
 
@@ -421,38 +412,46 @@ msgid "Add NTP Server"
 msgstr "Lägg till NTP-server"
 
 #: ../interfaces/time.glade.in.h:5
-msgid "NTP server"
-msgstr "NTP-server"
+msgid "Keep clock s_ynchronized with Internet servers:"
+msgstr "Håll klockan synkroniserad med Internetservrar:"
 
 #: ../interfaces/time.glade.in.h:6
-msgid "S_ynchronize clock with Internet servers:"
-msgstr "S_ynkronisera klockan med Internetservrar:"
+msgid "NTP server"
+msgstr "NTP-server"
 
 #: ../interfaces/time.glade.in.h:7
 msgid "Se_lect Servers"
 msgstr "Vä_lj servrar"
 
 #: ../interfaces/time.glade.in.h:8
+msgid "Synchronize _Now"
+msgstr "Synkronisera _nu"
+
+#: ../interfaces/time.glade.in.h:9
+msgid "Synchronize only once with Internet servers:"
+msgstr "Synkronisera endast en gång med Internetservrar:"
+
+#: ../interfaces/time.glade.in.h:10
 msgid "Time servers"
 msgstr "Tidsservrar"
 
-#: ../interfaces/time.glade.in.h:9
+#: ../interfaces/time.glade.in.h:11
 msgid "Time zone"
 msgstr "Tidszon"
 
-#: ../interfaces/time.glade.in.h:10
+#: ../interfaces/time.glade.in.h:12
 msgid "Time zone:"
 msgstr "Tidszon:"
 
-#: ../interfaces/time.glade.in.h:11
+#: ../interfaces/time.glade.in.h:13
 msgid "_Date:"
 msgstr "_Datum:"
 
-#: ../interfaces/time.glade.in.h:12
+#: ../interfaces/time.glade.in.h:14
 msgid "_Select Time Zone..."
 msgstr "_Välj tidszon..."
 
-#: ../interfaces/time.glade.in.h:13
+#: ../interfaces/time.glade.in.h:15
 msgid "_Time:"
 msgstr "_Tid:"
 
@@ -497,146 +496,142 @@ msgid "<span weight=\"bold\">System Defaults</span>"
 msgstr "<span weight=\"bold\">Systemstandardalternativ</span>"
 
 #: ../interfaces/users.glade.in.h:11
-msgid "<span weight=\"bold\">User Profile</span>"
-msgstr "<span weight=\"bold\">Användarprofil</span>"
-
-#: ../interfaces/users.glade.in.h:12
 msgid "Account"
 msgstr "Konto"
 
-#: ../interfaces/users.glade.in.h:13
+#: ../interfaces/users.glade.in.h:12
 msgid "Advanced"
 msgstr "Avancerat"
 
-#: ../interfaces/users.glade.in.h:14
+#: ../interfaces/users.glade.in.h:13
 msgid "Assign a random password by default"
 msgstr "Tilldela ett slumpmässigt lösenord som standard"
 
-#: ../interfaces/users.glade.in.h:15
+#: ../interfaces/users.glade.in.h:14
 msgid "Check password _quality"
 msgstr "_Kontrollera lösenordskvalitet"
 
-#: ../interfaces/users.glade.in.h:16
+#: ../interfaces/users.glade.in.h:15
 msgid "Con_firmation:"
 msgstr "_Bekräftelse:"
 
-#: ../interfaces/users.glade.in.h:17
+#: ../interfaces/users.glade.in.h:16
 msgid "Days between warning and password expiration:"
 msgstr "Antalet dagar mellan varning och utgång av lösenord:"
 
-#: ../interfaces/users.glade.in.h:18
+#: ../interfaces/users.glade.in.h:17
 msgid "Default _group:"
 msgstr "Standard_grupp:"
 
-#: ../interfaces/users.glade.in.h:19
+#: ../interfaces/users.glade.in.h:18
 msgid "Default _shell:"
 msgstr "Standard_skal:"
 
-#: ../interfaces/users.glade.in.h:21
+#: ../interfaces/users.glade.in.h:20
 msgid "Generate _random password"
 msgstr "Generera _slumpmässigt lösenord"
 
-#: ../interfaces/users.glade.in.h:22
+#: ../interfaces/users.glade.in.h:21
 msgid "Group _ID:"
 msgstr "Grupp-_id:"
 
-#: ../interfaces/users.glade.in.h:23
+#: ../interfaces/users.glade.in.h:22
 msgid "Group _name:"
 msgstr "Grupp_namn:"
 
-#: ../interfaces/users.glade.in.h:24
+#: ../interfaces/users.glade.in.h:23
 msgid "Group properties"
 msgstr "Gruppegenskaper"
 
-#: ../interfaces/users.glade.in.h:25
+#: ../interfaces/users.glade.in.h:24
 msgid "Groups settings"
 msgstr "Gruppinställningar"
 
-#: ../interfaces/users.glade.in.h:26
+#: ../interfaces/users.glade.in.h:25
 msgid "Ma_ximum days a password may be used:"
 msgstr "Ma_ximalt antal dagar som ett lösenord kan användas:"
 
-#: ../interfaces/users.glade.in.h:27
+#: ../interfaces/users.glade.in.h:26
 msgid "Maximum UID:"
 msgstr "Högsta UID:"
 
-#: ../interfaces/users.glade.in.h:28
+#: ../interfaces/users.glade.in.h:27
 msgid "Mi_nimum days between password changes:"
 msgstr "Mi_nsta antalet dagar mellan lösenordsbyten:"
 
-#: ../interfaces/users.glade.in.h:29
+#: ../interfaces/users.glade.in.h:28
 msgid "Minimum GID:"
 msgstr "Lägsta GID:"
 
-#: ../interfaces/users.glade.in.h:30
+#: ../interfaces/users.glade.in.h:29
 msgid "Minimum UID:"
 msgstr "Lägsta UID:"
 
-#: ../interfaces/users.glade.in.h:31
+#: ../interfaces/users.glade.in.h:30
 msgid "Minimum days allowed between password changes:"
 msgstr "Minsta antalet dagar mellan lösenordsbyten:"
 
-#: ../interfaces/users.glade.in.h:32
+#: ../interfaces/users.glade.in.h:31
 msgid "Number of days that a password may be used:"
 msgstr "Antalet dagar som ett lösenord får användas:"
 
-#: ../interfaces/users.glade.in.h:33
+#: ../interfaces/users.glade.in.h:32
 msgid "O_ffice location:"
 msgstr "_Kontorsadress:"
 
-#: ../interfaces/users.glade.in.h:34
+#: ../interfaces/users.glade.in.h:33
 msgid "Password set to: "
 msgstr "Lösenordet sattes till: "
 
-#: ../interfaces/users.glade.in.h:35
+#: ../interfaces/users.glade.in.h:34
 msgid "Privileges"
 msgstr "Rättigheter"
 
-#: ../interfaces/users.glade.in.h:36
+#: ../interfaces/users.glade.in.h:35
 msgid "Profile _name:"
 msgstr "Profil_namn:"
 
-#: ../interfaces/users.glade.in.h:37
+#: ../interfaces/users.glade.in.h:36
 msgid "Set password b_y hand"
 msgstr "Ange lösenord f_ör hand"
 
-#: ../interfaces/users.glade.in.h:38
+#: ../interfaces/users.glade.in.h:37
 msgid "User ID:"
 msgstr "Användar-id:"
 
-#: ../interfaces/users.glade.in.h:39
+#: ../interfaces/users.glade.in.h:38
 msgid "User Privileges"
 msgstr "Användarprivilegier"
 
-#: ../interfaces/users.glade.in.h:40
+#: ../interfaces/users.glade.in.h:39
 msgid "User _password:"
 msgstr "Användar_lösenord:"
 
-#: ../interfaces/users.glade.in.h:41
+#: ../interfaces/users.glade.in.h:40
 msgid "User profiles"
 msgstr "Användarprofiler"
 
-#: ../interfaces/users.glade.in.h:42
+#: ../interfaces/users.glade.in.h:41
 msgid "_Add Group"
 msgstr "_Lägg till grupp"
 
-#: ../interfaces/users.glade.in.h:43
+#: ../interfaces/users.glade.in.h:42
 msgid "_Add Profile"
 msgstr "_Lägg till profil"
 
-#: ../interfaces/users.glade.in.h:44
+#: ../interfaces/users.glade.in.h:43
 msgid "_Add User"
 msgstr "_Lägg till användare"
 
-#: ../interfaces/users.glade.in.h:45
+#: ../interfaces/users.glade.in.h:44
 msgid "_Comments"
 msgstr "_Kommentarer"
 
-#: ../interfaces/users.glade.in.h:46
+#: ../interfaces/users.glade.in.h:45
 msgid "_Days between warning and password expiration:"
 msgstr "Antalet _dagar mellan varning och utgång av lösenord:"
 
-#: ../interfaces/users.glade.in.h:47
+#: ../interfaces/users.glade.in.h:46
 #: ../src/network/address-list.c:77
 #: ../src/network/hosts.c:39
 #: ../src/shares/table.c:40
@@ -644,43 +639,39 @@ msgstr "Antalet _dagar mellan varning och utgång av lösenord:"
 msgid "_Delete"
 msgstr "_Ta bort"
 
-#: ../interfaces/users.glade.in.h:48
-msgid "_Edit User Profiles..."
-msgstr "_Redigera användarprofiler..."
-
-#: ../interfaces/users.glade.in.h:49
+#: ../interfaces/users.glade.in.h:47
 msgid "_Generate"
 msgstr "_Skapa"
 
-#: ../interfaces/users.glade.in.h:50
+#: ../interfaces/users.glade.in.h:48
 msgid "_Home directory:"
 msgstr "_Hemkatalog:"
 
-#: ../interfaces/users.glade.in.h:51
+#: ../interfaces/users.glade.in.h:49
 msgid "_Home phone:"
 msgstr "_Hemtelefon:"
 
-#: ../interfaces/users.glade.in.h:52
+#: ../interfaces/users.glade.in.h:50
 msgid "_Main group:"
 msgstr "_Huvudgrupp:"
 
-#: ../interfaces/users.glade.in.h:53
+#: ../interfaces/users.glade.in.h:51
 msgid "_Manage Groups"
 msgstr "_Hantera grupper"
 
-#: ../interfaces/users.glade.in.h:54
+#: ../interfaces/users.glade.in.h:52
 msgid "_Profile:"
 msgstr "_Profil:"
 
-#: ../interfaces/users.glade.in.h:55
+#: ../interfaces/users.glade.in.h:53
 msgid "_Real name:"
 msgstr "_Verkligt namn:"
 
-#: ../interfaces/users.glade.in.h:56
+#: ../interfaces/users.glade.in.h:54
 msgid "_Shell:"
 msgstr "_Skal:"
 
-#: ../interfaces/users.glade.in.h:58
+#: ../interfaces/users.glade.in.h:56
 msgid "_Work phone:"
 msgstr "_Jobbtelefon:"
 
@@ -697,11 +688,19 @@ msgstr "Om du är säker på att det fungerar som en av de plattformar som anges
 msgid "Unsupported platform"
 msgstr "Plattformen stöds inte"
 
-#: ../src/common/gst-tool.c:1228
+#: ../src/common/gst-tool.c:179
+msgid "The configuration could not be loaded"
+msgstr "Konfigurationen kunde inte läsas in"
+
+#: ../src/common/gst-tool.c:181
+msgid "You are not allowed to access the system configuration."
+msgstr "Du tillåts inte komma åt systemkonfigurationen."
+
+#: ../src/common/gst-tool.c:1247
 msgid "GNOME System Tools"
 msgstr "GNOME-systemverktygen"
 
-#: ../src/common/gst-tool.c:1249
+#: ../src/common/gst-tool.c:1271
 msgid "Could not display help"
 msgstr "Kunde inte visa hjälp"
 
@@ -720,27 +719,27 @@ msgstr "Typadress"
 msgid "Changing interface configuration"
 msgstr "Ändrar gränssnittskonfiguration"
 
-#: ../src/network/callbacks.c:200
+#: ../src/network/callbacks.c:214
 msgid "Could not autodetect modem device"
 msgstr "Kunde inte automatiskt detektera modemenheten"
 
-#: ../src/network/callbacks.c:203
+#: ../src/network/callbacks.c:217
 msgid "Check that the device is not busy and that is correctly attached to the computer."
 msgstr "Kontrollera att enheten inte är upptagen och att den är korrekt ansluten till datorn."
 
-#: ../src/network/callbacks.c:479
+#: ../src/network/callbacks.c:486
 msgid "Activating network interface"
 msgstr "Aktiverar nätverksgränssnitt"
 
-#: ../src/network/callbacks.c:514
+#: ../src/network/callbacks.c:521
 msgid "The host name has changed"
 msgstr "Värdnamnet har ändrats"
 
-#: ../src/network/callbacks.c:517
+#: ../src/network/callbacks.c:524
 msgid "This will prevent you from launching new applications, and so you will have to log in again. Continue anyway?"
 msgstr "Detta kommer att hindra dig från att starta nya program, och därför kommer du att behöva logga in igen. Fortsätta ändå?"
 
-#: ../src/network/callbacks.c:523
+#: ../src/network/callbacks.c:530
 msgid "Change _Host name"
 msgstr "Ändra _värdnamnet"
 
@@ -767,55 +766,55 @@ msgstr "_Aktivera"
 msgid "_Deactivate"
 msgstr "_Inaktivera"
 
-#: ../src/network/ifaces-list.c:315
+#: ../src/network/ifaces-list.c:316
 msgid "This network interface is not configured"
 msgstr "Detta nätverksgränssnitt är inte konfigurerat"
 
-#: ../src/network/ifaces-list.c:319
+#: ../src/network/ifaces-list.c:320
 #, c-format
 msgid "<b>Essid:</b> %s "
 msgstr "<b>Essid:</b> %s "
 
-#: ../src/network/ifaces-list.c:323
+#: ../src/network/ifaces-list.c:324
 #, c-format
 msgid "<b>Address:</b> %s <b>Subnet mask:</b> %s"
 msgstr "<b>Adress:</b> %s <b>Subnätmask:</b> %s"
 
-#: ../src/network/ifaces-list.c:327
+#: ../src/network/ifaces-list.c:328
 msgid "<b>Address:</b> DHCP"
 msgstr "<b>Adress:</b> DHCP"
 
-#: ../src/network/ifaces-list.c:331
+#: ../src/network/ifaces-list.c:332
 #, c-format
 msgid "<b>Address:</b> %s <b>Remote address:</b> %s"
 msgstr "<b>Adress:</b> %s <b>Fjärradress:</b> %s"
 
-#: ../src/network/ifaces-list.c:337
+#: ../src/network/ifaces-list.c:338
 #, c-format
 msgid "<b>Phone number:</b> %s <b>Login:</b> %s"
 msgstr "<b>Telefonnummer:</b> %s <b>Inloggningsnamn:</b> %s"
 
-#: ../src/network/ifaces-list.c:356
+#: ../src/network/ifaces-list.c:357
 msgid "Wireless connection"
 msgstr "Trådlös anslutning"
 
-#: ../src/network/ifaces-list.c:358
+#: ../src/network/ifaces-list.c:359
 msgid "Infrared connection"
 msgstr "Infraröd anslutning"
 
-#: ../src/network/ifaces-list.c:360
+#: ../src/network/ifaces-list.c:361
 msgid "Wired connection"
 msgstr "Kabelanslutning"
 
-#: ../src/network/ifaces-list.c:362
+#: ../src/network/ifaces-list.c:363
 msgid "Parallel port connection"
 msgstr "Parallellportsanslutning"
 
-#: ../src/network/ifaces-list.c:364
+#: ../src/network/ifaces-list.c:365
 msgid "Modem connection"
 msgstr "Modemanslutning"
 
-#: ../src/network/ifaces-list.c:366
+#: ../src/network/ifaces-list.c:367
 msgid "ISDN connection"
 msgstr "ISDN-anslutning"
 
@@ -823,44 +822,48 @@ msgstr "ISDN-anslutning"
 msgid "Changing network location"
 msgstr "Ändrar nätverksplats"
 
-#: ../src/network/locations-combo.c:270
-msgid "There is already a location with that name"
+#: ../src/network/locations-combo.c:268
+msgid "There is already a location with the same name"
 msgstr "Det finns redan en plats med detta namn"
 
-#: ../src/network/locations-combo.c:272
+#: ../src/network/locations-combo.c:270
 msgid "Overwrite it?"
 msgstr "Skriv över den?"
 
-#: ../src/network/locations-combo.c:294
-msgid "Add new location"
-msgstr "Lägg till ny plats"
+#: ../src/network/locations-combo.c:360
+msgid "Save location"
+msgstr "Spara plats"
 
-#: ../src/network/locations-combo.c:350
+#: ../src/network/locations-combo.c:375
+msgid "_Location name:"
+msgstr "P_latsnamn:"
+
+#: ../src/network/locations-combo.c:427
 #, c-format
-msgid "Do you want to remove location \"%s\"?"
+msgid "Do you want to delete location \"%s\"?"
 msgstr "Vill du ta bort platsen \"%s\"?"
 
-#: ../src/network/main.c:109
+#: ../src/network/main.c:111
 msgid "The interface does not exist"
 msgstr "Gränssnittet finns inte"
 
-#: ../src/network/main.c:111
+#: ../src/network/main.c:113
 msgid "Check that it is correctly typed and that it is correctly supported by your system."
 msgstr "Kontrollera att det är korrekt angivet och att det stöds korrekt av ditt system."
 
-#: ../src/network/main.c:157
+#: ../src/network/main.c:159
 msgid "Configure a network interface"
 msgstr "Konfigurera ett nätverksgränssnitt"
 
-#: ../src/network/main.c:157
+#: ../src/network/main.c:159
 msgid "INTERFACE"
 msgstr "GRÄNSSNITT"
 
-#: ../src/network/main.c:158
+#: ../src/network/main.c:160
 msgid "Configure the first network interface with a specific type"
 msgstr "Konfigurera det första nätverksgränssnittet med en viss typ"
 
-#: ../src/network/main.c:158
+#: ../src/network/main.c:160
 msgid "TYPE"
 msgstr "TYP"
 
@@ -872,7 +875,7 @@ msgstr "Konfigurera nätverksenheter och nätverksanslutningar"
 msgid "Networking"
 msgstr "Nätverk"
 
-#: ../src/network/network-tool.c:270
+#: ../src/network/network-tool.c:289
 msgid "Network Settings"
 msgstr "Nätverksinställningar"
 
@@ -891,121 +894,409 @@ msgid "This may affect your system behavior in several ways, possibly leading to
 msgstr "Detta kan påverka ditt systems beteende på många sätt, och kan möjligen leda till förlust av data."
 
 #: ../src/services/service.c:32
-msgid "Antivirus"
-msgstr "Antivirus"
-
-#: ../src/services/service.c:32
-msgid "Analyzes your incoming mail for virus"
-msgstr "Analyserar om din inkommande e-post innehåller virus"
-
-#: ../src/services/service.c:33
-msgid "Volumes mounter"
-msgstr "Volymmonterare"
-
-#: ../src/services/service.c:33
-msgid "Mounts your volumes automatically"
-msgstr "Monterar automatiskt dina volymer"
-
-#: ../src/services/service.c:34
-msgid "Actions scheduler"
-msgstr "Åtgärdsschemaläggare"
-
-#: ../src/services/service.c:34
-msgid "Executes scheduled actions"
-msgstr "Utför schemalagda åtgärder"
-
-#: ../src/services/service.c:35
-msgid "Database server"
-msgstr "Databasserver"
-
-#: ../src/services/service.c:35
-msgid "Data storage system"
-msgstr "Datalagringssystem"
-
-#: ../src/services/service.c:36
-msgid "Graphical login manager"
-msgstr "Grafisk inloggningshanterare"
-
-#: ../src/services/service.c:36
-msgid "Allows users to login graphically"
-msgstr "Låter användare logga in grafiskt"
-
-#: ../src/services/service.c:37
-msgid "Folder sharing service"
-msgstr "Mappdelningstjänst"
-
-#: ../src/services/service.c:37
-msgid "Shares folders over your network"
-msgstr "Delar mappar över ditt nätverk"
-
-#: ../src/services/service.c:38
-msgid "File sharing service"
-msgstr "Fildelningstjänst"
-
-#: ../src/services/service.c:38
-#: ../src/services/service.c:39
-msgid "Shares files over the Internet"
-msgstr "Delar filer över Internet"
-
-#: ../src/services/service.c:39
-msgid "FTP service"
-msgstr "FTP-tjänst"
-
-#: ../src/services/service.c:40
-msgid "Mail fetcher"
-msgstr "E-posthämtare"
-
-#: ../src/services/service.c:40
-msgid "Downloads your mail from remote accounts"
-msgstr "Hämtar din e-post från fjärrkonton"
-
-#: ../src/services/service.c:41
-msgid "Mail agent"
-msgstr "E-postagent"
-
-#: ../src/services/service.c:41
-msgid "Delivers your outgoing mail"
-msgstr "Levererar din utgående post"
-
-#: ../src/services/service.c:42
-msgid "Clock synchronization service"
-msgstr "Klocksynkroniseringstjänst"
-
-#: ../src/services/service.c:42
-msgid "Synchronizes your computer clock with Internet time servers"
-msgstr "Synkroniserar din datorklocka med Internettidsservrar"
-
-#: ../src/services/service.c:43
-msgid "Printer service"
-msgstr "Skrivartjänst"
-
-#: ../src/services/service.c:43
-msgid "Allows applications to use printers"
-msgstr "Låter program använda skrivare"
-
-#: ../src/services/service.c:44
-msgid "Remote shell server"
-msgstr "Server för fjärrskal"
-
-#: ../src/services/service.c:44
-msgid "Secure shell server"
-msgstr "Server för säkert skal"
-
-#: ../src/services/service.c:45
-msgid "Computer activity logger"
-msgstr "Datoraktivitetsloggare"
-
-#: ../src/services/service.c:45
-msgid "Keeps a log of your computer activity"
-msgstr "För en logg av din datoraktivitet"
-
-#: ../src/services/service.c:46
 msgid "Web server"
 msgstr "Webbserver"
 
-#: ../src/services/service.c:46
+#: ../src/services/service.c:32
 msgid "Shares your web pages over the Internet"
 msgstr "Delar ut dina webbsidor över Internet"
+
+#. GST_ROLE_WEB_SERVER
+#: ../src/services/service.c:33
+msgid "Actions scheduler"
+msgstr "Åtgärdsschemaläggare"
+
+#: ../src/services/service.c:33
+msgid "Executes scheduled actions"
+msgstr "Utför schemalagda åtgärder"
+
+#. GST_ROLE_COMMAND_SCHEDULER
+#: ../src/services/service.c:34
+msgid "Printer service"
+msgstr "Skrivartjänst"
+
+#: ../src/services/service.c:34
+msgid "Allows applications to use printers"
+msgstr "Låter program använda skrivare"
+
+#. GST_ROLE_PRINTER_SERVICE
+#: ../src/services/service.c:35
+msgid "Mail agent"
+msgstr "E-postagent"
+
+#: ../src/services/service.c:35
+msgid "Delivers your outgoing mail"
+msgstr "Levererar din utgående post"
+
+#. GST_ROLE_MTA
+#: ../src/services/service.c:36
+msgid "MTA authentication service"
+msgstr "MTA-autentiseringstjänst"
+
+#. GST_ROLE_MTA_AUTH
+#: ../src/services/service.c:37
+msgid "Mail fetcher"
+msgstr "E-posthämtare"
+
+#: ../src/services/service.c:37
+msgid "Downloads your mail from remote accounts"
+msgstr "Hämtar din e-post från fjärrkonton"
+
+#. GST_ROLE_MAIL_FETCHER
+#: ../src/services/service.c:38
+msgid "Graphical login manager"
+msgstr "Grafisk inloggningshanterare"
+
+#: ../src/services/service.c:38
+msgid "Allows users to login graphically"
+msgstr "Låter användare logga in grafiskt"
+
+#. GST_ROLE_DISPLAY_MANAGER
+#: ../src/services/service.c:39
+msgid "Database server"
+msgstr "Databasserver"
+
+#: ../src/services/service.c:39
+msgid "Data storage system"
+msgstr "Datalagringssystem"
+
+#. GST_ROLE_DATABASE_SERVER
+#. GST_ROLE_FILE_SERVER_SMB
+#. GST_ROLE_FILE_SERVER_FTP
+#: ../src/services/service.c:40
+#: ../src/services/service.c:41
+#: ../src/services/service.c:43
+msgid "Folder sharing service"
+msgstr "Mappdelningstjänst"
+
+#: ../src/services/service.c:40
+#: ../src/services/service.c:41
+msgid "Shares folders over your network"
+msgstr "Delar mappar över ditt nätverk"
+
+#. GST_ROLE_FILE_SERVER_NFS
+#: ../src/services/service.c:42
+msgid "FTP service"
+msgstr "FTP-tjänst"
+
+#: ../src/services/service.c:42
+#: ../src/services/service.c:43
+msgid "Shares folders over the Internet"
+msgstr "Delar mappar över Internet"
+
+#. GST_ROLE_FILE_SERVER_TFTP
+#: ../src/services/service.c:44
+msgid "Clock synchronization service"
+msgstr "Klocksynkroniseringstjänst"
+
+#: ../src/services/service.c:44
+msgid "Synchronizes your computer clock with Internet time servers"
+msgstr "Synkroniserar din datorklocka med Internettidsservrar"
+
+#. GST_ROLE_NTP_SERVER
+#: ../src/services/service.c:46
+msgid "Antivirus"
+msgstr "Antivirus"
+
+#: ../src/services/service.c:46
+msgid "Analyzes your incoming mail for virus"
+msgstr "Analyserar om din inkommande e-post innehåller virus"
+
+#. GST_ROLE_ANTIVIRUS
+#: ../src/services/service.c:47
+msgid "Firewall"
+msgstr "Brandvägg"
+
+#: ../src/services/service.c:47
+msgid "Blocks undesired network access to your computer"
+msgstr "Blockerar oönskad nätverksåtkomst till din dator"
+
+#. GST_ROLE_FIREWALL_MANAGEMENT
+#: ../src/services/service.c:49
+msgid "Dictionary server"
+msgstr "Ordboksserver"
+
+#. GST_ROLE_DICTIONARY_SERVER
+#: ../src/services/service.c:50
+msgid "Speech synthesis support"
+msgstr "Stöd för talsyntes"
+
+#. GST_ROLE_SPEECH_SYNTHESIS
+#: ../src/services/service.c:51
+msgid "Computer activity logger"
+msgstr "Datoraktivitetsloggare"
+
+#: ../src/services/service.c:51
+msgid "Keeps a log of your computer activity"
+msgstr "För en logg av din datoraktivitet"
+
+#. GST_ROLE_SYSTEM_LOGGER
+#: ../src/services/service.c:52
+msgid "Remote backup server"
+msgstr "Fjärrserver för säkerhetskopiering"
+
+#. GST_ROLE_REMOTE_BACKUP
+#: ../src/services/service.c:53
+msgid "Spam filter"
+msgstr "Skräppostfilter"
+
+#. GST_ROLE_SPAM_FILTER
+#: ../src/services/service.c:54
+msgid "Remote shell server"
+msgstr "Server för fjärrskal"
+
+#: ../src/services/service.c:54
+msgid "Secure shell server"
+msgstr "Server för säkert skal"
+
+#. GST_ROLE_SECURE_SHELL_SERVER
+#: ../src/services/service.c:55
+msgid "Application server"
+msgstr "Programserver"
+
+#. GST_ROLE_APPLICATION_SERVER
+#: ../src/services/service.c:56
+msgid "Automated crash reports support"
+msgstr "Stöd för automatiserade kraschrapporter"
+
+#. GST_ROLE_AUTOMATED_CRASH_REPORTS_MANAGEMENT
+#: ../src/services/service.c:57
+msgid "System communication bus"
+msgstr "Systemkommunikationsbuss"
+
+#. GST_ROLE_DBUS,
+#: ../src/services/service.c:58
+msgid "System configuration manager"
+msgstr "Systemkonfigurationshanterare"
+
+#. GST_ROLE_SYSTEM_CONFIGURATION_MANAGEMENT
+#: ../src/services/service.c:59
+msgid "School management platform"
+msgstr "Skolhanteringsplattform"
+
+#. GST_ROLE_SCHOOL_MANAGEMENT_PLATFORM
+#: ../src/services/service.c:60
+msgid "Network security auditor"
+msgstr "Nätverkssäkerhetsrevisor"
+
+#. GST_ROLE_SECURITY_AUDITING
+#: ../src/services/service.c:61
+msgid "Web calendar server"
+msgstr "Webbkalenderserver"
+
+#. GST_ROLE_WEB_CALENDAR_SERVER
+#: ../src/services/service.c:62
+msgid "OEM configuration manager"
+msgstr "OEM-konfigurationshanterare"
+
+#. GST_ROLE_OEM_CONFIGURATION_MANAGEMENT
+#: ../src/services/service.c:63
+msgid "Terminal multiplexor"
+msgstr "Terminalproxy"
+
+#. GST_ROLE_TERMINAL_MULTIPLEXOR
+#: ../src/services/service.c:64
+msgid "Disk quota activation"
+msgstr "Aktivering av diskkvot"
+
+#. GST_ROLE_QUOTA_MANAGEMENT
+#: ../src/services/service.c:65
+msgid "Package index monitor"
+msgstr "Paketindexövervakare"
+
+#. GST_ROLE_PACKAGE_INDEX_MONITORING
+#: ../src/services/service.c:66
+msgid "Network service"
+msgstr "Nätverkstjänst"
+
+#. GST_ROLE_NETWORK
+#: ../src/services/service.c:67
+msgid "Dynamic DNS services updater"
+msgstr "Uppdaterare för dynamiska DNS-tjänster"
+
+#. GST_ROLE_DYNAMIC_DNS_SERVICE
+#: ../src/services/service.c:68
+msgid "DHCP server"
+msgstr "DHCP-server"
+
+#. GST_ROLE_DHCP_SERVER
+#: ../src/services/service.c:69
+msgid "Domain name server"
+msgstr "Domännamnsserver"
+
+#. GST_ROLE_DNS
+#: ../src/services/service.c:70
+msgid "Proxy cache service"
+msgstr "Proxycachetjänst"
+
+#. GST_ROLE_PROXY_CACHE
+#: ../src/services/service.c:71
+msgid "LDAP server"
+msgstr "LDAP-server"
+
+#. GST_ROLE_LDAP_SERVER
+#: ../src/services/service.c:72
+msgid "Mailing lists manager"
+msgstr "Hanterare för sändlistor"
+
+#. GST_ROLE_MAILING_LISTS_MANAGER
+#: ../src/services/service.c:73
+msgid "Multicast DNS service discovery"
+msgstr "Identifiera Multicast DNS-tjänst"
+
+#. GST_ROLE_RENDEZVOUS
+#: ../src/services/service.c:74
+msgid "Account information resolver"
+msgstr "Uppslag för kontoinformation"
+
+#. GST_ROLE_NSS
+#: ../src/services/service.c:75
+msgid "Virtual Private Network server"
+msgstr "Server för virtuellt privat nätverk"
+
+#. GST_ROLE_VPN_SERVER
+#: ../src/services/service.c:76
+msgid "Router advertisement server"
+msgstr "Routerannonseringsserver"
+
+#. GST_ROLE_ROUTER_ADVERTISEMENT_SERVER
+#: ../src/services/service.c:77
+msgid "IPSec key exchange server"
+msgstr "Server för utväxling av IPSec-nycklar"
+
+#. GST_ROLE_IPSEC_KEY_EXCHANGE_SERVER
+#: ../src/services/service.c:78
+msgid "Disk server"
+msgstr "Diskserver"
+
+#. GST_ROLE_DISK_SERVER
+#: ../src/services/service.c:79
+msgid "Disk client"
+msgstr "Diskklient"
+
+#. GST_ROLE_DISK_CLIENT
+#: ../src/services/service.c:80
+msgid "Route server"
+msgstr "Vägserver"
+
+#. GST_ROLE_ROUTE_SERVER
+#: ../src/services/service.c:81
+msgid "RPC mapper"
+msgstr "RPC-mappare"
+
+#. GST_ROLE_RPC_MAPPER
+#: ../src/services/service.c:82
+msgid "SNMP server"
+msgstr "SNMP-server"
+
+#. GST_ROLE_SNMP_SERVER
+#: ../src/services/service.c:83
+msgid "Terminal server client"
+msgstr "Terminalserverklient"
+
+#. GST_ROLE_LTSP_CLIENT
+#: ../src/services/service.c:84
+msgid "Audio settings management"
+msgstr "Hantering av ljudinställningar"
+
+#. GST_ROLE_AUDIO_MANAGEMENT
+#: ../src/services/service.c:85
+msgid "Volumes mounter"
+msgstr "Volymmonterare"
+
+#: ../src/services/service.c:85
+msgid "Mounts your volumes automatically"
+msgstr "Monterar automatiskt dina volymer"
+
+#. GST_ROLE_AUTOMOUNTER
+#: ../src/services/service.c:86
+msgid "Infrared port management"
+msgstr "Hantering av infraröd port"
+
+#. GST_ROLE_INFRARED_MANAGEMENT
+#: ../src/services/service.c:87
+msgid "Braille display management"
+msgstr "Hantering av Braille-skärm"
+
+#. GST_ROLE_BRAILLE_DISPLAY_MANAGEMENT
+#: ../src/services/service.c:88
+msgid "Bluetooth device management"
+msgstr "Hantering av blåtandsenheter"
+
+#. GST_ROLE_BLUETOOTH_MANAGEMENT
+#: ../src/services/service.c:89
+msgid "Hard disk tuning"
+msgstr "Hårddiskjustering"
+
+#. GST_ROLE_HDD_MANAGEMENT
+#: ../src/services/service.c:90
+msgid "Hotkeys management"
+msgstr "Hantering av snabbtangenter"
+
+#. GST_ROLE_HOTKEYS_MANAGEMENT
+#: ../src/services/service.c:91
+msgid "Power management"
+msgstr "Strömhantering"
+
+#. GST_ROLE_POWER_MANAGEMENT
+#: ../src/services/service.c:92
+msgid "Logical volume management"
+msgstr "Hantering av logiska volymer"
+
+#. GST_ROLE_LVM_MANAGEMENT
+#: ../src/services/service.c:93
+msgid "Cluster management tool"
+msgstr "Verktyg för klusterhantering"
+
+#. GST_ROLE_CLUSTER_MANAGEMENT
+#: ../src/services/service.c:94
+msgid "Fax settings management"
+msgstr "Hantering av faxinställningar"
+
+#. GST_ROLE_FAX_MANAGEMENT
+#: ../src/services/service.c:95
+msgid "RAID disks management"
+msgstr "Hantering av RAID-diskar"
+
+#. GST_ROLE_RAID_MANAGEMENT
+#: ../src/services/service.c:96
+msgid "Graphic tablets management"
+msgstr "Hantering av grafiska ritbrädor"
+
+#. GST_ROLE_GRAPHIC_TABLETS_MANAGEMENT
+#: ../src/services/service.c:97
+msgid "CPU Frequency manager"
+msgstr "Hanterare för processorfrekvens"
+
+#. GST_ROLE_CPUFREQ_MANAGEMENT
+#: ../src/services/service.c:98
+msgid "Eagle USB ADSL modems manager"
+msgstr "Hanterare för Eagle USB ADSL-modem"
+
+#. GST_ROLE_EAGLE_USB_MODEMS_MANAGEMENT
+#: ../src/services/service.c:99
+msgid "Serial port settings management"
+msgstr "Hantering av serieportsinställningar"
+
+#. GST_ROLE_SERIAL_PORTS_MANAGEMENT
+#: ../src/services/service.c:100
+msgid "ISDN modems manager"
+msgstr "Hanterare för ISDN-modem"
+
+#. GST_ROLE_ISDN_MANAGEMENT
+#: ../src/services/service.c:101
+msgid "Telstra Bigpond Cable Network client"
+msgstr "Klient för Telstra Bigpond-kabelnätverk"
+
+#. GST_ROLE_TELSTRA_BIGPOND_NETWORK_CLIENT
+#: ../src/services/service.c:102
+msgid "Hardware monitor"
+msgstr "Hårdvaruövervakare"
+
+#. GST_ROLE_HARDWARE_MONITORING
+#: ../src/services/service.c:103
+msgid "System monitor"
+msgstr "Systemövervakare"
 
 #: ../src/services/services.desktop.in.in.h:1
 msgid "Configure which services will be run when the system starts"
@@ -1044,23 +1335,23 @@ msgstr "Status"
 msgid "Priority"
 msgstr "Prioritet"
 
-#: ../src/services/services-tool.c:89
+#: ../src/services/services-tool.c:100
 msgid "Services settings"
 msgstr "Tjänstinställningar"
 
-#: ../src/shares/callbacks.c:194
+#: ../src/shares/callbacks.c:196
 msgid "Are you sure you want to delete this share?"
 msgstr "Är du säker på att du vill ta bort denna utdelning?"
 
-#: ../src/shares/callbacks.c:196
+#: ../src/shares/callbacks.c:198
 msgid "Other computers in your network will stop viewing this."
 msgstr "Andra datorer i ditt nätverk kommer att sluta visa detta."
 
-#: ../src/shares/main.c:90
+#: ../src/shares/main.c:92
 msgid "Add a shared path, modifies it if it already exists"
 msgstr "Lägg till en delad sökväg, ändrar det om det redan finns"
 
-#: ../src/shares/main.c:90
+#: ../src/shares/main.c:92
 msgid "PATH"
 msgstr "SÖKVÄG"
 
@@ -1097,21 +1388,29 @@ msgstr "Ange nätverk"
 msgid "Configure which folders are available for your network neighborhood"
 msgstr "Konfigurera vilka mappar som är tillgängliga för ditt nätverk"
 
-#: ../src/shares/share-settings.c:63
+#: ../src/shares/share-settings.c:61
 msgid "File System"
 msgstr "Filsystem"
 
-#: ../src/shares/share-settings.c:147
+#: ../src/shares/share-settings.c:144
 msgid "Do not share"
 msgstr "Dela inte"
 
-#: ../src/shares/share-settings.c:155
+#: ../src/shares/share-settings.c:152
 msgid "Windows networks (SMB)"
 msgstr "Windows-nätverk (SMB)"
 
-#: ../src/shares/share-settings.c:163
+#: ../src/shares/share-settings.c:160
 msgid "Unix networks (NFS)"
 msgstr "Unix-nätverk (NFS)"
+
+#: ../src/shares/shares-tool.c:125
+msgid "Sharing services are not installed"
+msgstr "Utdelningstjänster är inte installerade"
+
+#: ../src/shares/shares-tool.c:127
+msgid "You need to install at least either Samba or NFS in order to share your folders."
+msgstr "Du måste åtminstone installera antingen Samba eller NFS för att kunna dela dina mappar."
 
 #: ../src/time/time.desktop.in.in.h:1
 msgid "Change system time, date, and timezone"
@@ -1121,15 +1420,19 @@ msgstr "Ändra systemtid, datum och tidszon."
 msgid "Time and Date"
 msgstr "Tid och datum"
 
-#: ../src/time/time-tool.c:357
+#: ../src/time/time-tool.c:366
 msgid "NTP support is not installed"
 msgstr "Stöd för NTP är inte installerat"
 
-#: ../src/time/time-tool.c:359
+#: ../src/time/time-tool.c:368
 msgid "Please install and activate NTP support in the system to enable synchronization of your local time server with internet time servers."
 msgstr "Installera och aktivera NTP-stöd på systemet för att aktivera synkronisering av din lokala tidsserver med Internet-tidsservrar."
 
-#: ../src/time/time-tool.c:480
+#: ../src/time/time-tool.c:406
+msgid "Synchronizing system clock"
+msgstr "Synkroniserar systemklocka"
+
+#: ../src/time/time-tool.c:546
 msgid "Time and Date Settings"
 msgstr "Inställningar för tid och datum"
 
@@ -1140,9 +1443,9 @@ msgstr "Administratörsgruppen kan inte tas bort"
 #: ../src/users/group-settings.c:55
 #: ../src/users/group-settings.c:278
 #: ../src/users/group-settings.c:302
-#: ../src/users/user-settings.c:59
-#: ../src/users/user-settings.c:416
-#: ../src/users/user-settings.c:486
+#: ../src/users/user-settings.c:60
+#: ../src/users/user-settings.c:442
+#: ../src/users/user-settings.c:512
 msgid "This would leave the system unusable."
 msgstr "Detta skulle lämna systemet i ett oanvändbart tillstånd."
 
@@ -1190,7 +1493,7 @@ msgid "Group \"%s\" already exists"
 msgstr "Gruppen \"%s\" finns redan"
 
 #: ../src/users/group-settings.c:286
-#: ../src/users/user-settings.c:424
+#: ../src/users/user-settings.c:450
 msgid "Please select a different user name."
 msgstr "Välj ett annat användarnamn."
 
@@ -1202,51 +1505,51 @@ msgstr "Grupp-id för administratörskontot bör inte ändras"
 msgid "Group name"
 msgstr "Gruppnamn"
 
-#: ../src/users/privileges-table.c:48
+#: ../src/users/privileges-table.c:49
 msgid "Monitor system logs"
 msgstr "Övervaka systemloggar"
 
-#: ../src/users/privileges-table.c:49
+#: ../src/users/privileges-table.c:50
 msgid "Administer the system"
 msgstr "Administrera systemet"
 
-#: ../src/users/privileges-table.c:50
+#: ../src/users/privileges-table.c:51
 msgid "Use audio devices"
 msgstr "Använd ljudenheter"
 
-#: ../src/users/privileges-table.c:51
+#: ../src/users/privileges-table.c:52
 msgid "Use CD-ROM drives"
 msgstr "Använd cd-rom-enheter"
 
-#: ../src/users/privileges-table.c:52
+#: ../src/users/privileges-table.c:53
 msgid "Use modems"
 msgstr "Använd modem"
 
-#: ../src/users/privileges-table.c:53
+#: ../src/users/privileges-table.c:54
 msgid "Connect to Internet using a modem"
 msgstr "Anslut till Internet med ett modem"
 
-#: ../src/users/privileges-table.c:54
+#: ../src/users/privileges-table.c:55
 msgid "Send and receive faxes"
 msgstr "Skicka och ta emot fax"
 
-#: ../src/users/privileges-table.c:55
+#: ../src/users/privileges-table.c:56
 msgid "Use floppy drives"
 msgstr "Använd diskettenheter"
 
-#: ../src/users/privileges-table.c:56
+#: ../src/users/privileges-table.c:57
 msgid "Access external storage devices automatically"
 msgstr "Kom åt externa lagringsenheter automatiskt"
 
-#: ../src/users/privileges-table.c:57
+#: ../src/users/privileges-table.c:58
 msgid "Use scanners"
 msgstr "Använd bildläsare"
 
-#: ../src/users/privileges-table.c:58
+#: ../src/users/privileges-table.c:59
 msgid "Use tape drives"
 msgstr "Använd bandenheter"
 
-#: ../src/users/privileges-table.c:59
+#: ../src/users/privileges-table.c:60
 msgid "Be able to get administrator privileges"
 msgstr "Möjligheten att få administratörsprivilegier"
 
@@ -1258,67 +1561,67 @@ msgstr "Lägg till eller ta bort användare och grupper"
 msgid "Users and Groups"
 msgstr "Användare och grupper"
 
-#: ../src/users/user-settings.c:56
+#: ../src/users/user-settings.c:57
 msgid "Administrator account can not be deleted"
 msgstr "Administratörskontot kan inte tas bort"
 
-#: ../src/users/user-settings.c:72
+#: ../src/users/user-settings.c:73
 #, c-format
 msgid "Are you sure you want to delete account \"%s\"?"
 msgstr "Är du säker på att du vill ta bort kontot \"%s\"?"
 
-#: ../src/users/user-settings.c:75
+#: ../src/users/user-settings.c:76
 msgid "This will disable this user's access to the system without deleting the user's home directory."
 msgstr "Detta kommer att inaktivera användarens åtkomst till systemet utan att användarens hemkatalog tas bort."
 
-#: ../src/users/user-settings.c:266
+#: ../src/users/user-settings.c:285
 msgid "New user account"
 msgstr "Nytt användarkonto"
 
-#: ../src/users/user-settings.c:278
+#: ../src/users/user-settings.c:300
 #, c-format
 msgid "Account '%s' Properties"
 msgstr "Egenskaper för kontot \"%s\""
 
-#: ../src/users/user-settings.c:412
+#: ../src/users/user-settings.c:438
 msgid "User name is empty"
 msgstr "Användarnamnet är tomt"
 
-#: ../src/users/user-settings.c:413
+#: ../src/users/user-settings.c:439
 msgid "A user name must be specified."
 msgstr "Ett användarnamn måste anges."
 
-#: ../src/users/user-settings.c:415
+#: ../src/users/user-settings.c:441
 msgid "User name of the administrator account should not be modified"
 msgstr "Användarnamnet för administratörskontot bör inte ändras"
 
-#: ../src/users/user-settings.c:418
+#: ../src/users/user-settings.c:444
 msgid "User name has invalid characters"
 msgstr "Användarnamnet har ogiltiga tecken"
 
-#: ../src/users/user-settings.c:419
+#: ../src/users/user-settings.c:445
 msgid "Please set a valid user name consisting of a lower case letter followed by lower case letters and numbers."
 msgstr "Ställ in ett giltigt användarnamn som består av en liten bokstav följt av små bokstäver och siffror."
 
-#: ../src/users/user-settings.c:423
+#: ../src/users/user-settings.c:449
 #, c-format
 msgid "User name \"%s\" already exists"
 msgstr "Användarnamnet \"%s\" finns redan"
 
-#: ../src/users/user-settings.c:450
+#: ../src/users/user-settings.c:476
 #, c-format
 msgid "Invalid character \"%c\" in comment"
 msgstr "Ogiltigt tecken \"%c\" i kommentar"
 
-#: ../src/users/user-settings.c:451
+#: ../src/users/user-settings.c:477
 msgid "Check that this character is not used."
 msgstr "Kontrollera att detta tecken inte används."
 
-#: ../src/users/user-settings.c:468
+#: ../src/users/user-settings.c:494
 msgid "Incomplete path in home directory"
 msgstr "Ofullständig sökväg i hemkatalogen"
 
-#: ../src/users/user-settings.c:469
+#: ../src/users/user-settings.c:495
 msgid ""
 "Please enter full path for home directory\n"
 "<span size=\"smaller\">i.e.: /home/john</span>."
@@ -1326,15 +1629,15 @@ msgstr ""
 "Ange fullständig sökväg till hemkatalogen\n"
 "<span size=\"smaller\">t.ex.: /home/johan</span>."
 
-#: ../src/users/user-settings.c:485
+#: ../src/users/user-settings.c:511
 msgid "User ID of the administrator account should not be modified"
 msgstr "Användar-id för administratörskontot bör inte ändras"
 
-#: ../src/users/user-settings.c:501
+#: ../src/users/user-settings.c:527
 msgid "Incomplete path in shell"
 msgstr "Ofullständig sökväg i skal"
 
-#: ../src/users/user-settings.c:502
+#: ../src/users/user-settings.c:528
 msgid ""
 "Please enter full path for shell\n"
 "<span size=\"smaller\">i.e.: /bin/bash</span>."
@@ -1342,19 +1645,19 @@ msgstr ""
 "Ange fullständig sökväg till skalet\n"
 "<span size=\"smaller\">t.ex.: /bin/bash</span>."
 
-#: ../src/users/user-settings.c:521
+#: ../src/users/user-settings.c:556
 msgid "Password should not be empty"
 msgstr "Lösenord kan inte vara tomt"
 
-#: ../src/users/user-settings.c:522
+#: ../src/users/user-settings.c:557
 msgid "A password must be provided."
 msgstr "Ett lösenord måste anges."
 
-#: ../src/users/user-settings.c:524
+#: ../src/users/user-settings.c:559
 msgid "Password confirmation isn't correct"
 msgstr "Lösenordsbekräftelsen är inte korrekt"
 
-#: ../src/users/user-settings.c:525
+#: ../src/users/user-settings.c:560
 msgid "Check that you have provided the same password in both text fields."
 msgstr "Kontrollera att du har angett samma lösenord i båda textfälten."
 
@@ -1370,10 +1673,60 @@ msgstr "Inloggningsnamn"
 msgid "Home directory"
 msgstr "Hemkatalog"
 
-#: ../src/users/users-tool.c:155
+#: ../src/users/users-tool.c:191
 msgid "Users settings"
 msgstr "Användarinställningar"
 
+#~ msgid "E_nable roaming mode"
+#~ msgstr "A_ktivera roaming-läge"
+#~ msgid "Time servers:"
+#~ msgstr "Tidsservrar:"
+#~ msgid "_Configuration:"
+#~ msgstr "_Konfiguration:"
+#~ msgid "Local Zeroconf network (IPv4 LL)"
+#~ msgstr "Lokalt Zeroconf-nätverk (IPv4 LL)"
+#~ msgid "Static IP address"
+#~ msgstr "Statisk IP-adress"
+#~ msgid "WEP key (ascii)"
+#~ msgstr "WEP-nyckel (ascii)"
+#~ msgid "WEP key (hexadecimal)"
+#~ msgstr "WEP-nyckel (hexadecimal)"
+#~ msgid "WPA"
+#~ msgstr "WPA"
+#~ msgid "Roaming mode enabled"
+#~ msgstr "Roaming-läget aktiverat"
+#~ msgid "Network"
+#~ msgstr "Nätverk"
+#~ msgid "Enabling NTP"
+#~ msgstr "Aktiverar NTP"
+#~ msgid "Disabling NTP"
+#~ msgstr "Inaktiverar NTP"
+#~ msgid "Manual"
+#~ msgstr "Manuell"
+#~ msgid "Administrator account's user name should not be modified"
+#~ msgstr "Användarnamnet för administratörskontot bör inte ändras"
+#~ msgid "Administrator account's user ID should not be modified"
+#~ msgstr "Användar-id för administratörskontot bör inte ändras"
+#~ msgid "Password is too short"
+#~ msgstr "Lösenordet är för kort"
+#~ msgid ""
+#~ "User passwords must be longer than 6 characters and preferably formed by "
+#~ "numbers, letters and special characters."
+#~ msgstr ""
+#~ "Användarlösenord måste vara längre än 6 tecken och föredragsvis "
+#~ "konstruerade av siffror, bokstäver och specialtecken."
+#~ msgid "Password confirmation is not correct"
+#~ msgstr "Lösenordsbekräftelsen är inte korrekt"
+#~ msgid "Select location name"
+#~ msgstr "Välj platsnamn"
+#~ msgid "<span weight=\"bold\">User Profile</span>"
+#~ msgstr "<span weight=\"bold\">Användarprofil</span>"
+#~ msgid "_Edit User Profiles..."
+#~ msgstr "_Redigera användarprofiler..."
+#~ msgid "Add new location"
+#~ msgstr "Lägg till ny plats"
+#~ msgid "File sharing service"
+#~ msgstr "Fildelningstjänst"
 #~ msgid ""
 #~ "<span weight=\"bold\" size=\"larger\">The platform you are running is not "
 #~ "supported by this tool</span>"
@@ -1448,8 +1801,6 @@ msgstr "Användarinställningar"
 #~ "det är."
 #~ msgid "Finished"
 #~ msgstr "Klart"
-#~ msgid "Manual"
-#~ msgstr "Manuell"
 #~ msgid "Number of colors:"
 #~ msgstr "Antal färger:"
 #~ msgid "Other parameters:"
@@ -1517,12 +1868,6 @@ msgstr "Användarinställningar"
 #~ msgstr "Gränssnittsnamn:"
 #~ msgid "Key _type:"
 #~ msgstr "_Nyckeltyp:"
-#~ msgid ""
-#~ "Static IP address\n"
-#~ "DHCP"
-#~ msgstr ""
-#~ "Statisk IP-adress\n"
-#~ "DHCP"
 #~ msgid "WEP _key:"
 #~ msgstr "_WEP-nyckel:"
 #~ msgid "_Hostname:"
@@ -1537,8 +1882,6 @@ msgstr "Användarinställningar"
 #~ msgstr "Använd inte WINS-server"
 #~ msgid "General Windows sharing settings"
 #~ msgstr "Allmänna inställningar för Windows-delning"
-#~ msgid "Share folder"
-#~ msgstr "Dela mapp"
 #~ msgid "Windows sharing settings"
 #~ msgstr "Inställningar för Windows-delning"
 #~ msgid "_Add host"
@@ -1599,8 +1942,6 @@ msgstr "Användarinställningar"
 #~ msgstr "Ogiltig rotenhet: \"%s\"."
 #~ msgid "_Module path:"
 #~ msgstr "_Modulsökväg:"
-#~ msgid "Password confirmation is not correct."
-#~ msgstr "Lösenordsbekräftelsen är inte korrekt."
 #~ msgid "Error modifying boot image"
 #~ msgstr "Fel vid ändring av startavbild"
 #~ msgid "Boot"
@@ -1666,8 +2007,6 @@ msgstr "Användarinställningar"
 #~ msgstr "Verkställ dem nu?"
 #~ msgid "Error connection signal `%s' in widget `%s'"
 #~ msgstr "Fel anslutningssignal \"%s\" i widgeten \"%s\""
-#~ msgid "The configuration could not be loaded"
-#~ msgstr "Konfigurationen kunde inte läsas in"
 #~ msgid "There was an error running the backend script"
 #~ msgstr "Det uppstod ett fel vid körning av bakändesskriptet"
 #~ msgid "Welcome to the %s prerelease of the GNOME System Tools"
@@ -1696,8 +2035,6 @@ msgstr "Användarinställningar"
 #~ msgstr ""
 #~ "Kontrollera att inställningarna är korrekta för detta nätverk och att "
 #~ "datorn är korrekt ansluten till det."
-#~ msgid "Delete current location"
-#~ msgstr "Ta bort aktuell plats"
 #~ msgid "Changing profile"
 #~ msgstr "Ändrar profil"
 #~ msgid "Ethernet connection"
@@ -1716,14 +2053,6 @@ msgstr "Användarinställningar"
 #~ msgstr "SMB"
 #~ msgid "NFS"
 #~ msgstr "NFS"
-#~ msgid "Sharing services are not installed"
-#~ msgstr "Utdelningstjänster är inte installerade"
-#~ msgid ""
-#~ "You need to install at least either Samba or NFS in order to share your "
-#~ "folders. The tool will close now."
-#~ msgstr ""
-#~ "Du måste åtminstone installera antingen Samba eller NFS för att kunna "
-#~ "dela dina mappar. Verktyget kommer nu att stängas."
 #~ msgid ""
 #~ "Please install and activate NTP support in the system to enable "
 #~ "synchronization of your local time server with Internet time servers."
