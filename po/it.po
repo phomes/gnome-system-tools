@@ -1,4 +1,4 @@
-# Italian localisation for gnome-system-tools
+# Italian translation of gnome-system-tools.
 # Copyright (C) 2000 Free Software Foundation, Inc.
 # Christopher R. Gabriel <cgabriel@softwarelibero.org>, 2000.
 # Roberto Rosselli Del Turco <rosselli@ling.unipi.it>, 2004.
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools 0.31.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-23 16:02+0200\n"
-"PO-Revision-Date: 2007-04-23 16:02+0200\n"
+"POT-Creation-Date: 2007-09-17 10:19+0200\n"
+"PO-Revision-Date: 2007-08-26 18:58+0200\n"
 "Last-Translator: Francesco Marletta <francesco.marletta@tiscali.it>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -53,8 +53,8 @@ msgid "<b>Account data</b>"
 msgstr "<b>Dati account</b>"
 
 #: ../interfaces/network.glade.in.h:2
-msgid "<b>Connection settings</b>"
-msgstr "<b>Impostazioni di connessione</b>"
+msgid "<b>Connection Settings</b>"
+msgstr "<b>Impostazioni connessione</b>"
 
 #: ../interfaces/network.glade.in.h:3
 msgid "<b>DNS Servers</b>"
@@ -69,7 +69,7 @@ msgid "<b>Internet service provider data</b>"
 msgstr "<b>Dati del fornitore di servizi Internet (ISP)</b>"
 
 #: ../interfaces/network.glade.in.h:6
-msgid "<b>Modem settings</b>"
+msgid "<b>Modem Settings</b>"
 msgstr "<b>Impostazioni modem</b>"
 
 #: ../interfaces/network.glade.in.h:7
@@ -77,7 +77,7 @@ msgid "<b>Search Domains</b>"
 msgstr "<b>Domini di ricerca</b>"
 
 #: ../interfaces/network.glade.in.h:8
-msgid "<b>Wireless settings</b>"
+msgid "<b>Wireless Settings</b>"
 msgstr "<b>Impostazioni wireless</b>"
 
 #: ../interfaces/network.glade.in.h:9
@@ -116,10 +116,9 @@ msgstr "A_bilitare questa connessione"
 msgid "General"
 msgstr "Generale"
 
-# [NdT] o "Nomi alternaviti dell'host" ?
 #: ../interfaces/network.glade.in.h:18
-msgid "Host alias settings"
-msgstr "Impostazioni alias dell'host"
+msgid "Host Alias Properties"
+msgstr "Proprietà alias dell'host"
 
 #: ../interfaces/network.glade.in.h:19
 msgid "Hosts"
@@ -649,11 +648,7 @@ msgid "You are not allowed to access the system configuration."
 msgstr ""
 "Non si dispone del permesso per accedere alla configurazione di sistema."
 
-#: ../src/common/gst-tool.c:358
-msgid "GNOME System Tools"
-msgstr "GNOME System Tools"
-
-#: ../src/common/gst-tool.c:415
+#: ../src/common/gst-tool.c:403
 msgid "Could not display help"
 msgstr "Impossibile visualizzare la guida"
 
@@ -666,15 +661,15 @@ msgstr "A_ggiungi"
 msgid "Type address"
 msgstr "Digitare l'indirizzo"
 
-#: ../src/network/callbacks.c:185 ../src/network/callbacks.c:431
+#: ../src/network/callbacks.c:186 ../src/network/callbacks.c:432
 msgid "Changing interface configuration"
 msgstr "Cambiamento configurazione dell'interfaccia"
 
-#: ../src/network/callbacks.c:243
+#: ../src/network/callbacks.c:244
 msgid "Could not autodetect modem device"
 msgstr "Impossibile riconoscere automaticamente il dispositivo modem"
 
-#: ../src/network/callbacks.c:246
+#: ../src/network/callbacks.c:247
 msgid ""
 "Check that the device is not busy and that is correctly attached to the "
 "computer."
@@ -682,19 +677,19 @@ msgstr ""
 "Controllare che il dispositivo non sia occupato e che sia correttamente "
 "collegato al computer."
 
-#: ../src/network/callbacks.c:467
+#: ../src/network/callbacks.c:468
 msgid "The host name has changed"
 msgstr "Il nome dell'host è cambiato"
 
-#: ../src/network/callbacks.c:470
+#: ../src/network/callbacks.c:471
 msgid ""
 "This will prevent you from launching new applications, and so you will have "
 "to log in again. Continue anyway?"
 msgstr ""
 "Questo impedirà l'avvio di nuove applicazioni, pertanto sarà necessario "
-"effettuare un nuovo login. Continuare comunque?"
+"effettuare un nuovo accesso. Continuare comunque?"
 
-#: ../src/network/callbacks.c:476
+#: ../src/network/callbacks.c:477
 msgid "Change _Host name"
 msgstr "Cambia nome _host"
 
@@ -719,8 +714,17 @@ msgid "WEP key (hexadecimal)"
 msgstr "Chiave WEP (esadecimale)"
 
 #: ../src/network/connection.c:47
-msgid "WPA"
-msgstr "WPA"
+msgid "WPA Personal"
+msgstr "WPA personale"
+
+#: ../src/network/connection.c:48
+msgid "WPA2 Personal"
+msgstr "WPA2 personale"
+
+#: ../src/network/connection.c:622
+#, c-format
+msgid "%s Properties\n"
+msgstr "Proprietà di %s\n"
 
 #: ../src/network/hosts.c:32 ../src/network/ifaces-list.c:33
 #: ../src/shares/table.c:39 ../src/users/table.c:39
@@ -815,7 +819,7 @@ msgstr "Nome della _postazione:"
 #: ../src/network/locations-combo.c:425
 #, c-format
 msgid "Do you want to delete location \"%s\"?"
-msgstr "Si vuole rimuovere la postazione \"%s\"?"
+msgstr "Rimuovere la postazione \"%s\"?"
 
 #: ../src/network/main.c:112
 msgid "The interface does not exist"
@@ -864,18 +868,18 @@ msgstr "Impostazioni di rete"
 msgid "Settings for service \"%s\""
 msgstr "Impostazioni per il servizio \"%s\""
 
-#: ../src/services/callbacks.c:110
+#: ../src/services/callbacks.c:111
 #, c-format
 msgid "Are you sure you want to deactivate %s?"
-msgstr "Si vuole veramente disattivare %s?"
+msgstr "Disattivare veramente %s?"
 
-#: ../src/services/callbacks.c:114
+#: ../src/services/callbacks.c:115
 msgid ""
 "This may affect your system behavior in several ways, possibly leading to "
 "data loss."
 msgstr ""
 "Questo può influenzare il comportamento del sistema in vari modi, "
-"possibilmente causando perdita di dati."
+"probabilmente causando perdita di dati."
 
 #: ../src/services/service.c:32
 msgid "Web server"
@@ -883,7 +887,7 @@ msgstr "Server web"
 
 #: ../src/services/service.c:32
 msgid "Shares your web pages over the Internet"
-msgstr "Condivisione della pagine web su Internet"
+msgstr "Condivisione delle pagine web su Internet"
 
 #. GST_ROLE_WEB_SERVER
 #: ../src/services/service.c:33
@@ -1019,7 +1023,7 @@ msgstr "Server backup remoto"
 #. GST_ROLE_REMOTE_BACKUP
 #: ../src/services/service.c:53
 msgid "Spam filter"
-msgstr "Filtro spam"
+msgstr "Filtro spazzatura"
 
 #. GST_ROLE_SPAM_FILTER
 #: ../src/services/service.c:54
@@ -1028,7 +1032,7 @@ msgstr "Server di shell remota"
 
 #: ../src/services/service.c:54
 msgid "Secure shell server"
-msgstr "Server di shell sicura"
+msgstr "Server di shell sicura (SSH)"
 
 #. GST_ROLE_SECURE_SHELL_SERVER
 #: ../src/services/service.c:55
@@ -1134,7 +1138,7 @@ msgstr "Risolutore informazioni di account"
 #. GST_ROLE_NSS
 #: ../src/services/service.c:75
 msgid "Virtual Private Network server"
-msgstr "Server per Reti Private Virtuali"
+msgstr "Server per reti private virtuali (VPN)"
 
 # [NdT] dare un'occhiata a: http://www.networksorcery.com/enp/protocol/icmp/msg9.htm
 #. GST_ROLE_VPN_SERVER
@@ -1176,7 +1180,7 @@ msgstr "Server SNMP"
 #. GST_ROLE_SNMP_SERVER
 #: ../src/services/service.c:83
 msgid "Terminal server client"
-msgstr "Client server di terminale"
+msgstr "Client «Terminal server»"
 
 #. GST_ROLE_LTSP_CLIENT
 #: ../src/services/service.c:84
@@ -1325,7 +1329,7 @@ msgstr "Impostazioni servizi"
 
 #: ../src/shares/callbacks.c:196
 msgid "Are you sure you want to delete this share?"
-msgstr "Si vuole davvero eliminare questa condivisione?"
+msgstr "Eliminare veramente questa condivisione?"
 
 # [NdT] si riferisce ad una "condivisione", quindi femminile
 #: ../src/shares/callbacks.c:198
@@ -1394,7 +1398,7 @@ msgid ""
 "You need to install at least either Samba or NFS in order to share your "
 "folders."
 msgstr ""
-"È necessario installare o Samba o NFS per poter condividere le proprie "
+"È necessario installare Samba oppure NFS per poter condividere le proprie "
 "cartelle."
 
 #: ../src/time/time.desktop.in.in.h:1
@@ -1414,7 +1418,7 @@ msgid ""
 "Please install and activate NTP support in the system to enable "
 "synchronization of your local time server with internet time servers."
 msgstr ""
-"Installare ed attivare il supporto NTP nel sistema per abilitare la "
+"Installare e attivare il supporto NTP nel sistema per abilitare la "
 "sincronizzazione del server orario locale con i server orari di internet."
 
 #: ../src/time/time-tool.c:409
@@ -1458,7 +1462,7 @@ msgstr "Questo lascerà il sistema inutilizzabile."
 #: ../src/users/group-settings.c:68
 #, c-format
 msgid "Are you sure you want to delete group \"%s\"?"
-msgstr "Si vuole davvero eliminare il gruppo \"%s\"?"
+msgstr "Eliminare veramente il gruppo \"%s\"?"
 
 #: ../src/users/group-settings.c:71
 msgid "This may leave files with invalid group ID in the filesystem."
@@ -1485,9 +1489,7 @@ msgstr "Deve essere specificato il nome del gruppo."
 
 #: ../src/users/group-settings.c:280
 msgid "Group name of the administrator group user should not be modified"
-msgstr ""
-"Il nome del gruppo del gruppo di amministrazione non dovrebbe essere "
-"modificato"
+msgstr "Il nome del gruppo di amministrazione non dovrebbe essere modificato"
 
 #: ../src/users/group-settings.c:283
 msgid "Group name has invalid characters"
@@ -1542,7 +1544,7 @@ msgstr "Usare i modem"
 
 #: ../src/users/privileges-table.c:54
 msgid "Connect to Internet using a modem"
-msgstr "Connettere ad Internet usando un modem"
+msgstr "Connettere a Internet usando un modem"
 
 #: ../src/users/privileges-table.c:55
 msgid "Send and receive faxes"
@@ -1583,7 +1585,7 @@ msgstr "L'account di amministrazione non può essere eliminato"
 #: ../src/users/user-settings.c:73
 #, c-format
 msgid "Are you sure you want to delete account \"%s\"?"
-msgstr "Si vuole davvero eliminare l'account \"%s\"?"
+msgstr "Eliminare veramente l'account \"%s\"?"
 
 # [NdT] questo messaggio si riferisce a quello appena qui sopra
 #: ../src/users/user-settings.c:76
@@ -1689,7 +1691,7 @@ msgstr "La password di conferma non è corretta"
 
 #: ../src/users/user-settings.c:565
 msgid "Check that you have provided the same password in both text fields."
-msgstr "Controllare che si sia fornita la stessa password in entrambi i campi."
+msgstr "Controllare di aver fornito la stessa password in entrambi i campi."
 
 #: ../src/users/users-table.c:44
 msgid "Name"
@@ -1703,6 +1705,9 @@ msgstr "Nome accesso"
 msgid "Home directory"
 msgstr "Directory home"
 
-#: ../src/users/users-tool.c:191
+#: ../src/users/users-tool.c:214
 msgid "Users settings"
 msgstr "Impostazioni utenti"
+
+#~ msgid "GNOME System Tools"
+#~ msgstr "Strumenti di sistema GNOME"
