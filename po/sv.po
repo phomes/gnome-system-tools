@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-13 01:41+0200\n"
-"PO-Revision-Date: 2007-08-13 01:41+0100\n"
+"POT-Creation-Date: 2007-10-17 00:15+0200\n"
+"PO-Revision-Date: 2007-10-17 00:16+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -642,11 +642,7 @@ msgstr "Konfigurationen kunde inte läsas in"
 msgid "You are not allowed to access the system configuration."
 msgstr "Du tillåts inte komma åt systemkonfigurationen."
 
-#: ../src/common/gst-tool.c:358
-msgid "GNOME System Tools"
-msgstr "GNOME-systemverktygen"
-
-#: ../src/common/gst-tool.c:415
+#: ../src/common/gst-tool.c:403
 msgid "Could not display help"
 msgstr "Kunde inte visa hjälp"
 
@@ -1189,7 +1185,7 @@ msgstr "Hantering av infraröd port"
 #. GST_ROLE_INFRARED_MANAGEMENT
 #: ../src/services/service.c:87
 msgid "Braille display management"
-msgstr "Hantering av Braille-skärm"
+msgstr "Hantering av blindskriftsskärm"
 
 #. GST_ROLE_BRAILLE_DISPLAY_MANAGEMENT
 #: ../src/services/service.c:88
@@ -1661,10 +1657,12 @@ msgstr "Inloggningsnamn"
 msgid "Home directory"
 msgstr "Hemkatalog"
 
-#: ../src/users/users-tool.c:191
+#: ../src/users/users-tool.c:214
 msgid "Users settings"
 msgstr "Användarinställningar"
 
+#~ msgid "GNOME System Tools"
+#~ msgstr "GNOME-systemverktygen"
 #~ msgid "WPA"
 #~ msgstr "WPA"
 #~ msgid ""
