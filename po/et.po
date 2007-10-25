@@ -12,9 +12,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-system-tools HEAD\n"
+"Project-Id-Version: gnome-system-tools 2.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-27 04:47+0100\n"
+"POT-Creation-Date: 2007-09-14 04:04+0100\n"
 "PO-Revision-Date: 2007-08-30 21:59+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
@@ -651,11 +651,7 @@ msgstr "Seadistusi pole võimalik laadida"
 msgid "You are not allowed to access the system configuration."
 msgstr "Sul pole lubatud süsteemi sätetele ligi pääseda."
 
-#: ../src/common/gst-tool.c:358
-msgid "GNOME System Tools"
-msgstr "GNOME'i süsteemitööriistad"
-
-#: ../src/common/gst-tool.c:415
+#: ../src/common/gst-tool.c:403
 msgid "Could not display help"
 msgstr "Abiteavet pole võimalik kuvada"
 
@@ -1695,6 +1691,6 @@ msgstr "Sisselogimisnimi"
 msgid "Home directory"
 msgstr "Kodukataloog"
 
-#: ../src/users/users-tool.c:191
+#: ../src/users/users-tool.c:214
 msgid "Users settings"
 msgstr "Kasutajate sätted"
