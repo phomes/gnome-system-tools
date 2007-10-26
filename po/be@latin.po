@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-01 09:01+0300\n"
+"POT-Creation-Date: 2007-10-27 01:17+0300\n"
 "PO-Revision-Date: 2007-04-14 23:19+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian Latin <i18n@mova.org>\n"
@@ -270,15 +270,15 @@ msgstr "<b>Nałady hostaŭ</b>"
 
 #: ../interfaces/shares.glade.in.h:3
 msgid "<b>Share Properties</b>"
-msgstr "<b>Ułaścivaści ahulnych resursaŭ</b>"
+msgstr "<b>Ułaścivaści supolnaha resursu</b>"
 
 #: ../interfaces/shares.glade.in.h:4
 msgid "<b>Shared Folder</b>"
-msgstr "<b>Ahulny kataloh</b>"
+msgstr "<b>Supolny kataloh</b>"
 
 #: ../interfaces/shares.glade.in.h:5
 msgid "<b>Windows sharing</b>"
-msgstr "<b>Ahulnyja resursy Windows</b>"
+msgstr "<b>Supolny dostup Windows</b>"
 
 #: ../interfaces/shares.glade.in.h:6
 msgid "Add allowed hosts"
@@ -322,12 +322,12 @@ msgstr "Tolki čytać"
 
 #: ../interfaces/shares.glade.in.h:17
 msgid "Share through:"
-msgstr "Abahulniaj praz:"
+msgstr "Zrabi supolnym dla:"
 
 #: ../interfaces/shares.glade.in.h:18 ../src/shares/shares.desktop.in.in.h:2
 #: ../src/shares/shares-tool.c:207
 msgid "Shared Folders"
-msgstr "Ahulnyja katalohi"
+msgstr "Supolnyja katalohi"
 
 #: ../interfaces/shares.glade.in.h:19
 msgid "This computer is a _WINS server"
@@ -641,11 +641,7 @@ msgstr "Niemahčyma pračytać kanfihuracyju"
 msgid "You are not allowed to access the system configuration."
 msgstr "Dla ciabie nie dazvoleny dostup da kanfihuravańnia systemy."
 
-#: ../src/common/gst-tool.c:358
-msgid "GNOME System Tools"
-msgstr "Systemnyja pryłady GNOME"
-
-#: ../src/common/gst-tool.c:415
+#: ../src/common/gst-tool.c:403
 msgid "Could not display help"
 msgstr "Niemahčyma pakazać dapamohu"
 
@@ -946,11 +942,11 @@ msgstr "Systema zachoŭvańnia źviestak"
 #: ../src/services/service.c:40 ../src/services/service.c:41
 #: ../src/services/service.c:43
 msgid "Folder sharing service"
-msgstr "Pasłuha abahulnieńnia katalohaŭ"
+msgstr "Pasłuha supolnych katalohaŭ"
 
 #: ../src/services/service.c:40 ../src/services/service.c:41
 msgid "Shares folders over your network"
-msgstr "Abahulniaje katalohi ŭ sietcy"
+msgstr "Robić katalohi supolnadastupnymi ŭ sietcy"
 
 #. GST_ROLE_FILE_SERVER_NFS
 #: ../src/services/service.c:42
@@ -959,7 +955,7 @@ msgstr "Pasłuha FTP"
 
 #: ../src/services/service.c:42 ../src/services/service.c:43
 msgid "Shares folders over the Internet"
-msgstr "Abahulniaje katalohi ŭ Internecie"
+msgstr "Robić katalohi supolnadastupnymi ŭ Internecie"
 
 #. GST_ROLE_FILE_SERVER_TFTP
 #: ../src/services/service.c:44
@@ -1319,7 +1315,7 @@ msgstr "Nałady pasłuh"
 
 #: ../src/shares/callbacks.c:196
 msgid "Are you sure you want to delete this share?"
-msgstr "Ty sapraŭdy chočaš vydalić hety ahulny resurs?"
+msgstr "Ty sapraŭdy chočaš vydalić hety supolny resurs?"
 
 #: ../src/shares/callbacks.c:198
 msgid "Other computers in your network will stop viewing this."
@@ -1327,7 +1323,7 @@ msgstr "Inšyja kamputary z tvajoj sietki nia zmohuć prahladać jaho."
 
 #: ../src/shares/main.c:92
 msgid "Add a shared path, modifies it if it already exists"
-msgstr "Dadaje ahulnuju ściežku, madyfikuje jaje, kali taja ŭžo isnuje"
+msgstr "Dadaje supolnuju ściežku, madyfikuje jaje, kali taja ŭžo isnuje"
 
 #: ../src/shares/main.c:92
 msgid "PATH"
@@ -1335,11 +1331,11 @@ msgstr "ŚCIEŽKA"
 
 #: ../src/shares/nautilus/nautilus-shares.c:124
 msgid "_Share folder"
-msgstr "_Abahulniaj kataloh"
+msgstr "_Zrabi kataloh supolnym"
 
 #: ../src/shares/nautilus/nautilus-shares.c:125
 msgid "Share this folder with other computers"
-msgstr "Abahulniaj hety kataloh ź inšymi kamputarami"
+msgstr "Zrabi hety kataloh supolnadastupnym ź inšymi kamputarami"
 
 #: ../src/shares/nfs-acl-table.c:50
 msgid "Allowed host/network"
@@ -1367,7 +1363,7 @@ msgstr "Fajłavaja systema"
 
 #: ../src/shares/share-settings.c:144
 msgid "Do not share"
-msgstr "Nie abahulniaj"
+msgstr "Nie rabi supolnym"
 
 #: ../src/shares/share-settings.c:152
 msgid "Windows networks (SMB)"
@@ -1379,15 +1375,15 @@ msgstr "Sietki Unix (NFS)"
 
 #: ../src/shares/shares-tool.c:125
 msgid "Sharing services are not installed"
-msgstr "Pasłuhi abahulnieńnia nie zainstalavanyja"
+msgstr "Pasłuhi supolnaha dostupu nie zainstalavanyja"
 
 #: ../src/shares/shares-tool.c:127
 msgid ""
 "You need to install at least either Samba or NFS in order to share your "
 "folders."
 msgstr ""
-"Ty musiš zaisntalavać chacia b albo Samba, albo NFS, kab zmahčy abahulniać "
-"svaje katalohi."
+"Ty musiš zaisntalavać chacia b albo Samba, albo NFS, kab zmahčy rabić "
+"supolnadastupnymi svaje katalohi."
 
 #: ../src/time/time.desktop.in.in.h:1
 msgid "Change system time, date, and timezone"
@@ -1689,9 +1685,12 @@ msgstr "Nazva karystalnika dla ŭvachodu"
 msgid "Home directory"
 msgstr "Chatni kataloh"
 
-#: ../src/users/users-tool.c:191
+#: ../src/users/users-tool.c:214
 msgid "Users settings"
 msgstr "Nałady karystalnikaŭ"
+
+#~ msgid "GNOME System Tools"
+#~ msgstr "Systemnyja pryłady GNOME"
 
 #~ msgid "WPA"
 #~ msgstr "WPA"
