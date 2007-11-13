@@ -80,7 +80,6 @@ privilege_search (const gchar *group)
 						       sizeof (PrivilegeDescription), compare_groups);
 }
 
-
 static void
 on_user_privilege_toggled (GtkCellRendererToggle *cell, gchar *path_str, gpointer data)
 {
@@ -260,4 +259,13 @@ privileges_table_save (OobsUser *user)
 
 		valid = gtk_tree_model_iter_next (model, &iter);
 	}
+}
+
+void
+privileges_table_clear (void)
+{
+	GtkWidget *table = gst_dialog_get_widget (tool->main_dialog, "user_privileges");
+	GtkTreeModel *model = gtk_tree_view_get_model (GTK_TREE_VIEW (table));
+
+	gtk_list_store_clear (GTK_LIST_STORE (model));
 }

@@ -1,3 +1,12 @@
+2007-11-12  Carlos Garnacho  <carlosg@gnome.org>
+
+	* privileges-table.[ch], users-table.[ch], users-tool.c, table.h:
+	prepare to clear some GUI before reloading the configuration.
+	* callbacks.c: update config after any change to it, workarounds the
+	problem caused by having IDs mismatch between the configuration stored
+	locally and the one it's compared with when sent to s-t-b. Fixes
+	#489187.
+
 2007-09-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.20.0

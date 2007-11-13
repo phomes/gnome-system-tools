@@ -207,6 +207,9 @@ on_user_new_clicked (GtkButton *button, gpointer user_data)
 		users_table_add_user (user, &list_iter);
 		oobs_object_commit (GST_USERS_TOOL (tool)->users_config);
 		oobs_object_commit (GST_USERS_TOOL (tool)->groups_config);
+
+		gst_tool_update_config (tool);
+		gst_tool_update_gui (tool);
 	}
 }
 
@@ -246,6 +249,9 @@ on_user_settings_clicked (GtkButton *button, gpointer user_data)
 		users_table_set_user (user, list_iter, &filter_iter);
 		oobs_object_commit (GST_USERS_TOOL (tool)->users_config);
 		oobs_object_commit (GST_USERS_TOOL (tool)->groups_config);
+
+		gst_tool_update_config (tool);
+		gst_tool_update_gui (tool);
 	}
 
 	g_object_unref (user);
@@ -274,6 +280,10 @@ on_user_delete_clicked (GtkButton *button, gpointer user_data)
 	g_list_free (list);
 
 	oobs_object_commit (GST_USERS_TOOL (tool)->users_config);
+	oobs_object_commit (GST_USERS_TOOL (tool)->groups_config);
+
+	gst_tool_update_config (tool);
+	gst_tool_update_gui (tool);
 }
 
 void
@@ -316,7 +326,11 @@ on_group_new_clicked (GtkButton *button, gpointer user_data)
 		oobs_list_set (groups_list, &list_iter, group);
 
 		groups_table_add_group (group, &list_iter);
+		oobs_object_commit (GST_USERS_TOOL (tool)->users_config);
 		oobs_object_commit (GST_USERS_TOOL (tool)->groups_config);
+
+		gst_tool_update_config (tool);
+		gst_tool_update_gui (tool);
 	}
 }
 
@@ -356,7 +370,11 @@ on_group_settings_clicked (GtkButton *button, gpointer user_data)
 								  &filter_iter, &iter);
 		group_settings_dialog_get_data (group);
 		groups_table_set_group (group, list_iter, &filter_iter);
+		oobs_object_commit (GST_USERS_TOOL (tool)->users_config);
 		oobs_object_commit (GST_USERS_TOOL (tool)->groups_config);
+
+		gst_tool_update_config (tool);
+		gst_tool_update_gui (tool);
 	}
 
 	g_object_unref (group);
@@ -384,7 +402,11 @@ on_group_delete_clicked (GtkButton *button, gpointer user_data)
 	g_list_foreach (list, (GFunc) gtk_tree_row_reference_free, NULL);
 	g_list_free (list);
 
+	oobs_object_commit (GST_USERS_TOOL (tool)->users_config);
 	oobs_object_commit (GST_USERS_TOOL (tool)->groups_config);
+
+	gst_tool_update_config (tool);
+	gst_tool_update_gui (tool);
 }
 
 /* User settings callbacks */
