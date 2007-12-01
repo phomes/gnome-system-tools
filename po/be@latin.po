@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-27 01:17+0300\n"
+"POT-Creation-Date: 2007-12-01 11:42+0200\n"
 "PO-Revision-Date: 2007-04-14 23:19+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian Latin <i18n@mova.org>\n"
@@ -102,7 +102,7 @@ msgstr "Vydal dziejnaje pałažeńnie"
 
 #: ../interfaces/network.glade.in.h:15
 msgid "E_nable roaming mode"
-msgstr "_Uklučy režym roŭminhu"
+msgstr "_Uklučy režym roamingu"
 
 #: ../interfaces/network.glade.in.h:16
 msgid "E_nable this connection"
@@ -737,7 +737,7 @@ msgstr "Hety sietkavy interfejs nie skanfihuravany"
 
 #: ../src/network/ifaces-list.c:284
 msgid "Roaming mode enabled"
-msgstr "Režym roŭminhu ŭklučany"
+msgstr "Režym roamingu ŭklučany"
 
 #: ../src/network/ifaces-list.c:291
 #, c-format
@@ -1439,7 +1439,7 @@ msgstr "Niemahčyma vydalić administratarskuju hrupu"
 
 #: ../src/users/group-settings.c:55 ../src/users/group-settings.c:281
 #: ../src/users/group-settings.c:305 ../src/users/user-settings.c:60
-#: ../src/users/user-settings.c:446 ../src/users/user-settings.c:516
+#: ../src/users/user-settings.c:450 ../src/users/user-settings.c:520
 msgid "This would leave the system unusable."
 msgstr "Hetaja aperacyja zrobić niemahčymym karystańnie systemaj."
 
@@ -1493,7 +1493,7 @@ msgstr ""
 msgid "Group \"%s\" already exists"
 msgstr "Hrupa \"%s\" užo isnuje"
 
-#: ../src/users/group-settings.c:289 ../src/users/user-settings.c:454
+#: ../src/users/group-settings.c:289 ../src/users/user-settings.c:458
 msgid "Please select a different user name."
 msgstr "Abiary inšuju nazvu karystalnika."
 
@@ -1578,32 +1578,32 @@ msgstr ""
 "Hetaja aperacyja adklučyć mahčymaść dostupu da systemy hetaha karystalnika, "
 "nie vydalajučy jaho chatniaha katalohu."
 
-#: ../src/users/user-settings.c:289
+#: ../src/users/user-settings.c:293
 msgid "New user account"
 msgstr "Novy kont karystalnika"
 
-#: ../src/users/user-settings.c:304
+#: ../src/users/user-settings.c:308
 #, c-format
 msgid "Account '%s' Properties"
 msgstr "Ułaścivaści kontu '%s'"
 
-#: ../src/users/user-settings.c:442
+#: ../src/users/user-settings.c:446
 msgid "User name is empty"
 msgstr "Nazva karystalnika pustaja"
 
-#: ../src/users/user-settings.c:443
+#: ../src/users/user-settings.c:447
 msgid "A user name must be specified."
 msgstr "Treba vyznačyć nazvu karystalnika."
 
-#: ../src/users/user-settings.c:445
+#: ../src/users/user-settings.c:449
 msgid "Administrator account's user name should not be modified"
 msgstr "Nielha madyfikavać nazvu karystalnika dla kontu Administratara"
 
-#: ../src/users/user-settings.c:448
+#: ../src/users/user-settings.c:452
 msgid "User name has invalid characters"
 msgstr "Nazva karystalnika ŭtrymlivaje niapravilnyja znaki"
 
-#: ../src/users/user-settings.c:449
+#: ../src/users/user-settings.c:453
 msgid ""
 "Please set a valid user name consisting of a lower case letter followed by "
 "lower case letters and numbers."
@@ -1611,25 +1611,25 @@ msgstr ""
 "Akreśli pravilnuju nazvu karystalnika, što ŭjaŭlaje małuju litaru, za jakoj "
 "idzie paśladoŭnaść małych litar i ličbaŭ."
 
-#: ../src/users/user-settings.c:453
+#: ../src/users/user-settings.c:457
 #, c-format
 msgid "User name \"%s\" already exists"
 msgstr "Nazva karystalnika \"%s\" užo isnuje"
 
-#: ../src/users/user-settings.c:480
+#: ../src/users/user-settings.c:484
 #, c-format
 msgid "Invalid character \"%c\" in comment"
 msgstr "Niapravilny znak \"%c\" u kamentary"
 
-#: ../src/users/user-settings.c:481
+#: ../src/users/user-settings.c:485
 msgid "Check that this character is not used."
 msgstr "Pravier, kab hety znak nie ŭžyvaŭsia."
 
-#: ../src/users/user-settings.c:498
+#: ../src/users/user-settings.c:502
 msgid "Incomplete path in home directory"
 msgstr "Niapoŭnaja ściežka ŭ chatnim katalohu"
 
-#: ../src/users/user-settings.c:499
+#: ../src/users/user-settings.c:503
 msgid ""
 "Please enter full path for home directory\n"
 "<span size=\"smaller\">i.e.: /home/john</span>."
@@ -1637,15 +1637,15 @@ msgstr ""
 "Uviadzi poŭnuju ściežku dla chatniaha katalohu\n"
 "<span size=\"smaller\">napr.: /home/janka</span>."
 
-#: ../src/users/user-settings.c:515
+#: ../src/users/user-settings.c:519
 msgid "Administrator account's user ID should not be modified"
 msgstr "Nielha madyfikavać ID karystalnika dla kontu Administratara"
 
-#: ../src/users/user-settings.c:531
+#: ../src/users/user-settings.c:535
 msgid "Incomplete path in shell"
 msgstr "Niapoŭnaja ściežka da abałonki"
 
-#: ../src/users/user-settings.c:532
+#: ../src/users/user-settings.c:536
 msgid ""
 "Please enter full path for shell\n"
 "<span size=\"smaller\">i.e.: /bin/bash</span>."
@@ -1653,11 +1653,11 @@ msgstr ""
 "Uviadzi poŭnuju ściežku da abałonki\n"
 "<span size=\"smaller\">napr.: /bin/bash</span>."
 
-#: ../src/users/user-settings.c:560
+#: ../src/users/user-settings.c:564
 msgid "Password is too short"
 msgstr "Parol nadta mały"
 
-#: ../src/users/user-settings.c:561
+#: ../src/users/user-settings.c:565
 msgid ""
 "User passwords must be longer than 6 characters and preferably formed by "
 "numbers, letters and special characters."
@@ -1665,11 +1665,11 @@ msgstr ""
 "Paroli karystalnikaŭ musiać być daŭžejšymi za 6 znakaŭ i, pažadana, "
 "składacca ź ličbaŭ, litaraŭ i specyjalnych znakaŭ."
 
-#: ../src/users/user-settings.c:564
+#: ../src/users/user-settings.c:568
 msgid "Password confirmation is not correct"
 msgstr "Paćvierdžańnie parolu niapravilnaje"
 
-#: ../src/users/user-settings.c:565
+#: ../src/users/user-settings.c:569
 msgid "Check that you have provided the same password in both text fields."
 msgstr "Pravier, kab u abodvuch palach byŭ uviedzieny adzin parol."
 
@@ -1685,7 +1685,7 @@ msgstr "Nazva karystalnika dla ŭvachodu"
 msgid "Home directory"
 msgstr "Chatni kataloh"
 
-#: ../src/users/users-tool.c:214
+#: ../src/users/users-tool.c:216
 msgid "Users settings"
 msgstr "Nałady karystalnikaŭ"
 
