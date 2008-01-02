@@ -1,3 +1,8 @@
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
+
+	* shares.glade.in: Do not impose a width on the "Edit share" dialog. 
+	Fixes #478654.
+
 2007-09-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.20.0
