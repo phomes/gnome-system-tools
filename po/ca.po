@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-25 01:37+0100\n"
-"PO-Revision-Date: 2008-02-25 01:39+0100\n"
+"PO-Revision-Date: 2009-08-24 21:09+0200\n"
 "Last-Translator: Josep Puigdemont i Casamajó <josep.puigdemont@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -1082,7 +1082,7 @@ msgstr "Registre de l'activitat de l'ordinador"
 
 #: ../src/services/service.c:51
 msgid "Keeps a log of your computer activity"
-msgstr "Manté un registre de les activitat d'aquest ordinador"
+msgstr "Manté un registre de les activitats d'aquest ordinador"
 
 #. GST_ROLE_SYSTEM_LOGGER
 #: ../src/services/service.c:52
