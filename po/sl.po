@@ -7,10 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-22 16:34+0200\n"
-"PO-Revision-Date: 2006-08-25 10:43+0100\n"
-"Last-Translator: Matic Žgur <mr.zgur@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-system-tools&component=general\n"
+"POT-Creation-Date: 2009-04-17 14:42+0000\n"
+"PO-Revision-Date: 2009-11-14 10:30+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -134,7 +134,6 @@ msgid "Finished"
 msgstr "Zaključeno"
 
 #: ../interfaces/boot.glade.in.h:19
-#, fuzzy
 msgid "Manual"
 msgstr "Ročno"
 
@@ -1123,7 +1122,6 @@ msgid "An unexpected error has occurred"
 msgstr "Prišlo je do nepričakovane napake"
 
 #: ../src/common/gst-auth.c:133
-#, fuzzy
 msgid "Could not execute the backend"
 msgstr "Ni mogoče izvesti hrbtenice"
 
@@ -1145,7 +1143,7 @@ msgid "Apply them now?"
 msgstr "Ali jih želite uveljaviti?"
 
 #: ../src/common/gst-dialog.c:492
-#, fuzzy, c-format
+#, c-format
 msgid "Error connection signal `%s' in widget `%s'"
 msgstr "Napaka pri povezovalnem signalu '%s' v gradniku '%s'"
 
@@ -1154,7 +1152,6 @@ msgid "The configuration could not be loaded"
 msgstr "Ni mogoče naložiti nastavitve"
 
 #: ../src/common/gst-tool.c:1028
-#, fuzzy
 msgid "There was an error running the backend script"
 msgstr "Prišlo je do napake pri poganjanju hrbtenične skripte"
 
