@@ -1,17 +1,17 @@
 # translation of eu.po to Basque
 # Basque translation of gnome-system-tools.
-# Copyright (C) 2003, 2004, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2004, 2006, 2007, 2008, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-system-tools package.
 #
 # Eneko Lacunza <enlar@enlar.net>, 2003.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2004, 2005, 2006, 2007, 2008.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2004, 2005, 2006, 2007, 2008, 2010.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-16 18:46+0100\n"
-"PO-Revision-Date: 2008-02-16 17:19+0100\n"
+"PO-Revision-Date: 2010-03-23 17:17+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -27,8 +27,7 @@ msgstr ""
 "ala ez"
 
 #: ../interfaces/common.ui.h:1
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
+msgid "<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
 msgstr ""
 "<span weight=\"bold\" size=\"larger\">Sartu supererabiltzailearen pasahitza</"
 "span>"
@@ -847,7 +846,7 @@ msgstr "Hari gabeko konexioa."
 
 #: ../src/network/ifaces-list.c:348
 msgid "Infrared connection"
-msgstr "Azpigorria konexioa"
+msgstr "Konexio infragorria"
 
 #: ../src/network/ifaces-list.c:350
 msgid "Wired connection"
@@ -1042,7 +1041,7 @@ msgstr "Erlojua interneteko ordu-zerbitzariekin sinkronizatzen du"
 #. GST_ROLE_NTP_SERVER
 #: ../src/services/service.c:46
 msgid "Antivirus"
-msgstr "Anti-birusa"
+msgstr "Antibirusa"
 
 #: ../src/services/service.c:46
 msgid "Analyzes your incoming mail for virus"
@@ -1257,7 +1256,7 @@ msgstr "Bolumenak automatikoki muntatzen ditu"
 #. GST_ROLE_AUTOMOUNTER
 #: ../src/services/service.c:86
 msgid "Infrared port management"
-msgstr "Ataka azpigorriaren kudeaketa"
+msgstr "Ataka infragorriaren kudeaketa"
 
 #. GST_ROLE_INFRARED_MANAGEMENT
 #: ../src/services/service.c:87
@@ -1427,8 +1426,7 @@ msgstr "Zehaztu sarea"
 
 #: ../src/shares/shares.desktop.in.in.h:1
 msgid "Configure which folders are available for your network neighborhood"
-msgstr ""
-"Konfiguratu zein karpeta egongo diren eskuragarri zure sareko auzotarrentzako"
+msgstr "Konfiguratu zein karpeta egongo diren eskuragarri zure sareko auzotarrentzako"
 
 #: ../src/shares/share-settings.c:61
 msgid "File System"
@@ -1454,8 +1452,7 @@ msgstr "Partekatzeko zerbitzua ez dago instalatuta"
 msgid ""
 "You need to install at least either Samba or NFS in order to share your "
 "folders."
-msgstr ""
-"Samba edo NFS instalatu behar duzu zure karpetak partekatu ahal izateko."
+msgstr "Samba edo NFS instalatu behar duzu zure karpetak partekatu ahal izateko."
 
 #: ../src/time/time.desktop.in.in.h:1
 msgid "Change system time, date, and timezone"
@@ -1518,8 +1515,7 @@ msgstr "Ziur \"%s\" taldea ezabatu nahi duzula?"
 
 #: ../src/users/group-settings.c:71
 msgid "This may leave files with invalid group ID in the filesystem."
-msgstr ""
-"Honek fitxategiak taldearen ID baliogabearekin utziko ditu fitxategi-sisteman"
+msgstr "Honek fitxategiak taldearen ID baliogabearekin utziko ditu fitxategi-sisteman"
 
 #: ../src/users/group-settings.c:167
 msgid "New group"
@@ -1762,3 +1758,4 @@ msgstr "Etxea direktorioa"
 #: ../src/users/users-tool.c:216
 msgid "Users Settings"
 msgstr "Erabiltzaileen ezarpenak"
+
