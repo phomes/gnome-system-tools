@@ -18,8 +18,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-system-tools\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-22 11:31-0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"system-tools&component=general\n"
+"POT-Creation-Date: 2010-06-13 20:42+0000\n"
 "PO-Revision-Date: 2010-03-22 11:29-0300\n"
 "Last-Translator: Jonh Wendell <jwendell@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
@@ -38,8 +39,8 @@ msgstr ""
 msgid ""
 "Whether the users-admin tool should show the root user in the users list"
 msgstr ""
-"Mostrar o usário root na lista de usuários da ferramenta de administração de "
-"usuários"
+"Mostrar o usuário root na lista de usuários da ferramenta de administração "
+"de usuários"
 
 #: ../interfaces/network.ui.h:1
 msgid "<b>Account data</b>"
@@ -207,7 +208,7 @@ msgstr "Usar os servidores de nome do provedor de Internet"
 
 #: ../interfaces/network.ui.h:42
 msgid "_Autodetect"
-msgstr "_Auto-detectar"
+msgstr "_Autodetectar"
 
 #: ../interfaces/network.ui.h:43
 msgid "_Dial prefix:"
@@ -398,7 +399,7 @@ msgstr "Se_lecionar servidores"
 
 #: ../interfaces/time.ui.h:6
 msgid "Synchronize now"
-msgstr "Sincroniza agora"
+msgstr "Sincronizar agora"
 
 #: ../interfaces/time.ui.h:7
 msgid "Time servers"
@@ -465,20 +466,20 @@ msgid "<span weight=\"bold\">System Defaults</span>"
 msgstr "<span weight=\"bold\">Padrões do sistema</span>"
 
 #: ../interfaces/users.ui.h:9
-msgid "Account _type:"
-msgstr "_Tipo de conta:"
-
-#: ../interfaces/users.ui.h:10
-msgid "Advanced"
-msgstr "Avançado"
-
-#: ../interfaces/users.ui.h:11
 msgid ""
-"A user with this name already exists. Please choose a different short "
-"name for the new user."
+"A user with this name already exists. Please choose a different short name "
+"for the new user."
 msgstr ""
 "Já existe um usuário com este nome. Favor escolher um nome diferente para o "
 "novo usuário."
+
+#: ../interfaces/users.ui.h:10
+msgid "Account _type:"
+msgstr "_Tipo de conta:"
+
+#: ../interfaces/users.ui.h:11
+msgid "Advanced"
+msgstr "Avançado"
 
 #: ../interfaces/users.ui.h:12
 msgid "Assign a random password by default"
@@ -546,11 +547,11 @@ msgstr "_Shell padrão:"
 
 #: ../interfaces/users.ui.h:28
 msgid "Disable _account"
-msgstr "Disabilitar cont_a"
+msgstr "Desabilitar cont_a"
 
 #: ../interfaces/users.ui.h:29
 msgid "Don't ask for password on _login"
-msgstr "_Não perguntar pela senha no início sa sessão"
+msgstr "_Não perguntar pela senha no início da sessão"
 
 #: ../interfaces/users.ui.h:30
 msgid ""
@@ -654,7 +655,7 @@ msgstr ""
 "O nome de usuário deve consistir de:\n"
 "  ➣ letras minúsculas do alfabeto inglês\n"
 "  ➣ dígitos\n"
-"  ➣ qualquer um dos caracteres \".\", \"-\" and \"_\""
+"  ➣ qualquer um dos caracteres \".\", \"-\" e \"_\""
 
 #: ../interfaces/users.ui.h:57
 msgid "Short name must start with a letter!"
@@ -662,7 +663,7 @@ msgstr "O nome de usuário deve começar com uma letra!"
 
 #: ../interfaces/users.ui.h:58
 msgid "This account is disabled."
-msgstr "Esta conta está disabilitada."
+msgstr "Esta conta está desabilitada."
 
 #: ../interfaces/users.ui.h:59
 msgid ""
@@ -723,7 +724,7 @@ msgstr "_Habilitar conta"
 
 #: ../interfaces/users.ui.h:72
 msgid "_Encrypt home folder to protect sensitive data"
-msgstr "_Codificar pasta pessoal para proteger dados sensitíveis"
+msgstr "_Criptografar pasta pessoal para proteger dados importantes"
 
 #: ../interfaces/users.ui.h:73
 msgid "_Generate"
@@ -957,7 +958,7 @@ msgstr "<b>Essid:</b> %s "
 #: ../src/network/ifaces-list.c:295
 #, c-format
 msgid "<b>Address:</b> %s <b>Subnet mask:</b> %s"
-msgstr "<b>Endereço:</b> %s <b>Máscara de subrede:</b> %s"
+msgstr "<b>Endereço:</b> %s <b>Máscara de sub-rede:</b> %s"
 
 #: ../src/network/ifaces-list.c:299
 #, c-format
@@ -999,7 +1000,7 @@ msgstr "Conexão infravermelho"
 
 #: ../src/network/ifaces-list.c:350
 msgid "Wired connection"
-msgstr "Conexão por fio"
+msgstr "Conexão cabeada"
 
 #: ../src/network/ifaces-list.c:352
 msgid "Parallel port connection"
@@ -1752,6 +1753,15 @@ msgstr "Favor escolher um identificar numérico diferente para o grupo \"%s\"."
 msgid "Group name"
 msgstr "Nome do grupo"
 
+#. TRANSLATORS:  This applies to a password. Keep the string short.
+#: ../src/users/main.c:74 ../src/users/user-settings.c:347
+msgid "Not asked on login"
+msgstr "Não perguntar ao conectar"
+
+#: ../src/users/main.c:74 ../src/users/user-settings.c:349
+msgid "Asked on login"
+msgstr "Perguntar ao conectar"
+
 #: ../src/users/privileges-table.c:53
 msgid "Monitor system logs"
 msgstr "Monitorar registros do sistema"
@@ -1864,37 +1874,37 @@ msgstr "Usuário da área de trabalho"
 msgid "Authentication failed"
 msgstr "Falha de autenticação"
 
-#: ../src/users/run-passwd.c:494
+#: ../src/users/run-passwd.c:496
 #, c-format
 msgid "The new password is too short"
 msgstr "A nova senha é muito curta"
 
-#: ../src/users/run-passwd.c:499
+#: ../src/users/run-passwd.c:501
 #, c-format
 msgid "The new password is too simple"
 msgstr "A nova senha é muito simples"
 
-#: ../src/users/run-passwd.c:503
+#: ../src/users/run-passwd.c:507
 #, c-format
 msgid "The old and new passwords are too similar"
 msgstr "A nova senha e a antiga são muito similares"
 
-#: ../src/users/run-passwd.c:506
+#: ../src/users/run-passwd.c:510
 #, c-format
 msgid "The new password must contain numeric or special characters"
 msgstr "A nova senha deve conter caracteres numéricos e especiais"
 
-#: ../src/users/run-passwd.c:510
+#: ../src/users/run-passwd.c:514
 #, c-format
 msgid "The old and new passwords are the same"
 msgstr "A nova senha e a antiga são idênticas"
 
-#: ../src/users/run-passwd.c:514
+#: ../src/users/run-passwd.c:518
 #, c-format
 msgid "Your password has been changed since you initially authenticated!"
-msgstr "Sua senha foi modificada desde que vocẽ se autenticou!"
+msgstr "Sua senha foi modificada desde que você se autenticou!"
 
-#: ../src/users/run-passwd.c:518
+#: ../src/users/run-passwd.c:522
 #, c-format
 msgid "Unknown error"
 msgstr "Erro desconhecido"
@@ -2008,15 +2018,6 @@ msgstr "Personalizado"
 msgid "None"
 msgstr "Nenhuma"
 
-#. TRANSLATORS:  This applies to a password. Keep the string short.
-#: ../src/users/user-settings.c:347
-msgid "Not asked on login"
-msgstr "Não perguntar ao conectar"
-
-#: ../src/users/user-settings.c:349
-msgid "Asked on login"
-msgstr "Perguntar ao conectar"
-
 #: ../src/users/user-settings.c:393
 #, c-format
 msgid "Invalid character \"%c\" in comment"
@@ -2115,7 +2116,7 @@ msgstr ""
 msgid "Give up administration rights"
 msgstr "Renunciar direitos administrativos"
 
-#: ../src/users/users-tool.c:284
+#: ../src/users/users-tool.c:285
 msgid "Users Settings"
 msgstr "Configurações de usuários"
 
